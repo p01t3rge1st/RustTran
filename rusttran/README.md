@@ -507,3 +507,18 @@ With a recovered session loaded, **View → Live simulation mimic…** shows cur
 computed pressures, temperature, levels and coolant flows in the original-style
 layout. Unconnected readouts/device states show —; stored IC values are not used
 as fallback. Continue stepping and controlling the session in Simulation.
+
+
+## Install/update the latest published build
+
+Linux x86_64, glibc >=2.28, Python 3 and a desktop with OpenGL:
+
+```sh
+gh api --hostname github.com -H 'Accept: application/vnd.github.raw+json' repos/p01t3rge1st/RustTran/contents/install.sh | bash
+```
+
+The private repository requires access and `gh auth login` once. Run the same
+command to update. The installer downloads a successful release, verifies SHA-256
+and installs the GUI/CLI plus a Plasma/GNOME menu icon for the current user.
+Windows binaries and the Debian package are available from
+[Releases](https://github.com/p01t3rge1st/RustTran/releases/latest).

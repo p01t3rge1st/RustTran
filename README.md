@@ -72,7 +72,40 @@ cargo clippy --manifest-path rusttran/Cargo.toml --all-targets -- -D warnings
 
 `scripts/rea_session.py` utrzymuje sesję MCP REA na czas kilku zapytań. Czyta wiersze JSON ze stdin; parametr `save` zachowuje pełny wynik. Najpierw użyj `open_binary` z absolutną ścieżką do EXE i `provider_id: "ghidra"`, potem zapytań analizy, na końcu `close_binary`. Pseudokod nie jest odzyskanym oryginalnym źródłem VB6: wymagane jest sprawdzenie sygnatur, kolejności parametrów i stałych w instrukcjach.
 
-## Instalacja Linux
+## Instalacja i aktualizacja z GitHuba
+
+Linux x86_64 (glibc 2.28 lub nowsza), z ikoną w menu Plasma/GNOME:
+
+```bash
+gh api --hostname github.com -H 'Accept: application/vnd.github.raw+json' repos/p01t3rge1st/RustTran/contents/install.sh | bash
+```
+
+**Ta sama komenda instaluje lub aktualizuje do najnowszego opublikowanego builda.**
+Repozytorium jest prywatne, więc potrzebujesz dostępu oraz jednorazowego logowania
+`gh auth login --hostname github.com --git-protocol https --web`.
+Na Debian/Ubuntu GitHub CLI można zainstalować przez `sudo apt install gh`.
+
+Instalator pobiera gotowe binaria, weryfikuje SHA-256 i instaluje program dla
+bieżącego użytkownika, bez sudo. Pliki wykonywalne trafiają do `~/.local/bin`,
+a skrót i ikona do `~/.local/share`. Wymagane są Bash, Python 3 i środowisko
+pulpitowe z OpenGL. Dane programu są wbudowane w binaria.
+
+Po zmianie widoczności repozytorium na publiczne dostępna będzie także komenda
+bez logowania:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/p01t3rge1st/RustTran/main/install.sh | bash
+```
+
+[Gotowe wydania Windows/Linux](https://github.com/p01t3rge1st/RustTran/releases/latest)
+zawierają także `RustTran.exe`, ZIP Windows i pakiet `.deb`.
+Windows: pobierz `RustTran.exe` albo `rusttran-windows-x86_64.zip`.
+
+Nowe buildy powstają automatycznie po zmianach kodu na `main`, po testach i
+udanej kompilacji Linux/Windows. Instalator wybiera ostatnie poprawnie
+opublikowane wydanie; nie instaluje nieukończonego builda.
+
+Instalacja lokalnie zbudowanej paczki nadal działa:
 
 ```bash
 bash dist/rusttran-linux-x86_64/install.sh
@@ -80,11 +113,9 @@ bash dist/rusttran-linux-x86_64/install.sh
 sudo apt install ./dist/rusttran_0.1.0_amd64.deb
 ```
 
-Instalacja użytkownika dodaje RustTran do menu Plasma/GNOME z własną ikoną.
-Dane są wbudowane w pliki wykonywalne. Nazwa oryginału w dokumentacji analizy
-oznacza źródło danych, a nie nazwę nowej aplikacji.
-
-Windows: `dist/RustTran.exe`. Pełny silnik symulacji nadal wymaga rekonstrukcji.
+Szczegóły publikowania: [packaging/RELEASES.md](packaging/RELEASES.md).
+Program nadal jest częściowym portem; wydanie instalatora nie oznacza pełnej
+zgodności z PCTran.
 
 ## Porównania funkcji liczbowych
 

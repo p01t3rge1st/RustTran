@@ -1,0 +1,12 @@
+test_bad_checksum_preserves_existing_install (__main__.InstallerTests.test_bad_checksum_preserves_existing_install) ... ok
+test_does_not_replace_unowned_executable (__main__.InstallerTests.test_does_not_replace_unowned_executable) ... ok
+test_download_failure_installs_nothing (__main__.InstallerTests.test_download_failure_installs_nothing) ... ok
+test_private_install_update_and_desktop_icon (__main__.InstallerTests.test_private_install_update_and_desktop_icon) ... ok
+test_public_download_fallback (__main__.InstallerTests.test_public_download_fallback) ... ok
+test_rejects_unsafe_archive_without_installing (__main__.InstallerTests.test_rejects_unsafe_archive_without_installing) ... ok
+test_rejects_unsupported_architecture (__main__.InstallerTests.test_rejects_unsupported_architecture) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.837s
+
+OK
