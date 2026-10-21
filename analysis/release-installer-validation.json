@@ -1,0 +1,14 @@
+{
+  "installer": "install.sh",
+  "offline_tests": 7,
+  "workflow_lint": "actionlint 1.7.12 passed",
+  "first_manual_release": "build-20261021-3e5b616",
+  "automatic_release": "build-1-3e5b616",
+  "source_commit": "3e5b616b4877d5db8d7a6e6bf9b50f9dbb8f4dbd",
+  "ci_run": 39567545976,
+  "ci_result": "success",
+  "real_manual_release_install": "analysis/release-installer-github-smoke.json",
+  "real_ci_release_install": "analysis/release-installer-ci-smoke.json",
+  "repository_visibility": "private; authenticated gh bootstrap tested",
+  "scope": "Packaging and installation; complete PCTran scenario equivalence remains unvalidated"
+}

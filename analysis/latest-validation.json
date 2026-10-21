@@ -59,14 +59,14 @@
     "recovered-session-run"
   ],
   "linux_max_glibc": "2.28",
-  "windows": "x86_64 GUI and CLI compiled; not executed on Windows",
+  "windows": "Local GNU GUI/CLI cross-compiled; GitHub Actions MSVC GUI/CLI built with static CRT and CLI --help executed on Windows. Windows GUI and original scenarios remain unvalidated.",
   "original_application_end_to_end": "not validated",
   "integrator_ic_restoration": "12 authenticated IC state sources; explicit image-layer defaults available for two accumulators and history before application init; restored scenarios and startup/Reset dispatcher still require validation",
   "main_output_equations": "14/14; upstream dependencies incomplete",
   "release_sha256": {
     "dist/RustTran.exe": "2b852d03d65f77194d7e1ffa5f86869ba873d1ee09b8de8b7842712f30196a4c",
     "dist/RustTran-cli.exe": "2eb4fc6c34f96f9284d32482a42e3f95d6c7eeeec39d32ec4e0ec52ab9e4d02c",
-    "dist/rusttran_0.1.0_amd64.deb": "868afb862874fb3e9318ba2522cd8b3e65ed8a5a05362e08140374fe814df4c7",
+    "dist/rusttran_0.1.0_amd64.deb": "10a3a6a990528b09264bd72a4261e759f99b7243e3595f66461d54097772f5c3",
     "dist/rusttran-linux-x86_64/rusttran": "c649d082e0ce599909ef0396f12147523d1c1d61f260a21a332ed3e6e6c5a7ea",
     "dist/rusttran-linux-x86_64/rusttran-cli": "6b4f7ca4ad072a72a0d91ebdb56f4377788a6d9d137d4ef8f2f045d3940b2d80"
   },
@@ -276,5 +276,16 @@
   },
   "double_json_roundtrip": "serde_json float_roundtrip enabled; state/arrays survive serialization unchanged",
   "fresh_state_evidence": "analysis/FRESH_STATE_AND_DOUBLE_INITIALIZATION.md",
-  "fresh_state_release_smoke": "analysis/fresh-state-release-smoke.json"
+  "fresh_state_release_smoke": "analysis/fresh-state-release-smoke.json",
+  "github_installer": {
+    "bootstrap": "install.sh",
+    "tests": 7,
+    "real_download_install_and_update": "passed in isolated directories",
+    "evidence": "analysis/release-installer-github-smoke.json",
+    "release": "https://github.com/p01t3rge1st/RustTran/releases/tag/build-1-3e5b616",
+    "ci_workflow": ".github/workflows/release.yml",
+    "workflow_result": "success: Linux tests/build/package, native Windows build/CLI help, automatic publication",
+    "workflow_run": "https://github.com/p01t3rge1st/RustTran/actions/runs/39567545976",
+    "ci_download_evidence": "analysis/release-installer-ci-smoke.json"
+  }
 }

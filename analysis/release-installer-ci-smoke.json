@@ -1,0 +1,22 @@
+{
+  "release": {
+    "tagName": "build-1-3e5b616",
+    "url": "https://github.com/p01t3rge1st/RustTran/releases/tag/build-1-3e5b616"
+  },
+  "bootstrap_from_private_github": true,
+  "install_and_update": true,
+  "desktop_menu_and_icon": true,
+  "gui_and_cli_help": true,
+  "maximum_glibc": {
+    "rusttran-cli": "2.28",
+    "rusttran": "2.28"
+  },
+  "fresh_initialized_singles": 290,
+  "alternate_arrays": 12,
+  "recovered_session_updates": 8,
+  "whole_original_scenarios": "not validated",
+  "output": [
+    "RustTran installed. Open RustTran from the application menu.\nRustTran installed from p01t3rge1st/RustTran (build-1-3e5b616).\nRun this installer again to update to the latest release.\n",
+    "RustTran installed. Open RustTran from the application menu.\nRustTran installed from p01t3rge1st/RustTran (build-1-3e5b616).\nRun this installer again to update to the latest release.\n"
+  ]
+}

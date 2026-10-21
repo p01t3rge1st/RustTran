@@ -1,0 +1,14 @@
+{
+  "real_github_bootstrap": true,
+  "real_release_download": true,
+  "install_then_update": true,
+  "checksum_verified": true,
+  "desktop_menu_and_icon": true,
+  "installed_cli_matches_validated_binary": true,
+  "installation_scope": "Isolated per-user directories; no HOME changes",
+  "command": "set -o pipefail; gh api --hostname github.com -H 'Accept: application/vnd.github.raw+json' repos/p01t3rge1st/RustTran/contents/install.sh | bash",
+  "output": [
+    "RustTran installed. Open RustTran from the application menu.\nRustTran installed from p01t3rge1st/RustTran (build-20261021-3e5b616).\nRun this installer again to update to the latest release.\n",
+    "RustTran installed. Open RustTran from the application menu.\nRustTran installed from p01t3rge1st/RustTran (build-20261021-3e5b616).\nRun this installer again to update to the latest release.\n"
+  ]
+}
