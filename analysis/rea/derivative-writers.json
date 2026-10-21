@@ -1,0 +1,149 @@
+[
+  {
+    "index": 5,
+    "derivative_va": "0x54b788",
+    "instruction_va": "0x50b5d8",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50b5d8:\td9 1d 88 b7 54 00    \tfstp   DWORD PTR ds:0x54b788"
+  },
+  {
+    "index": 5,
+    "derivative_va": "0x54b788",
+    "instruction_va": "0x50b5f2",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50b5f2:\t89 1d 88 b7 54 00    \tmov    DWORD PTR ds:0x54b788,ebx"
+  },
+  {
+    "index": 5,
+    "derivative_va": "0x54b788",
+    "instruction_va": "0x50b609",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50b609:\t89 1d 88 b7 54 00    \tmov    DWORD PTR ds:0x54b788,ebx"
+  },
+  {
+    "index": 1,
+    "derivative_va": "0x54b77c",
+    "instruction_va": "0x50cd1b",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50cd1b:\td9 1d 7c b7 54 00    \tfstp   DWORD PTR ds:0x54b77c"
+  },
+  {
+    "index": 4,
+    "derivative_va": "0x54b774",
+    "instruction_va": "0x50ce5d",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50ce5d:\td9 1d 74 b7 54 00    \tfstp   DWORD PTR ds:0x54b774"
+  },
+  {
+    "index": 2,
+    "derivative_va": "0x54b770",
+    "instruction_va": "0x50ceee",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50ceee:\td9 1d 70 b7 54 00    \tfstp   DWORD PTR ds:0x54b770"
+  },
+  {
+    "index": 3,
+    "derivative_va": "0x54b784",
+    "instruction_va": "0x50cf9e",
+    "nearest_preceding_procedure": "0x50af30",
+    "instruction": "50cf9e:\td9 1d 84 b7 54 00    \tfstp   DWORD PTR ds:0x54b784"
+  },
+  {
+    "index": 1,
+    "derivative_va": "0x54b77c",
+    "instruction_va": "0x51b2f7",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b2f7:\t89 3d 7c b7 54 00    \tmov    DWORD PTR ds:0x54b77c,edi"
+  },
+  {
+    "index": 2,
+    "derivative_va": "0x54b770",
+    "instruction_va": "0x51b303",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b303:\t89 3d 70 b7 54 00    \tmov    DWORD PTR ds:0x54b770,edi"
+  },
+  {
+    "index": 3,
+    "derivative_va": "0x54b784",
+    "instruction_va": "0x51b309",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b309:\t89 3d 84 b7 54 00    \tmov    DWORD PTR ds:0x54b784,edi"
+  },
+  {
+    "index": 4,
+    "derivative_va": "0x54b774",
+    "instruction_va": "0x51b30f",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b30f:\t89 3d 74 b7 54 00    \tmov    DWORD PTR ds:0x54b774,edi"
+  },
+  {
+    "index": 5,
+    "derivative_va": "0x54b788",
+    "instruction_va": "0x51b315",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b315:\t89 3d 88 b7 54 00    \tmov    DWORD PTR ds:0x54b788,edi"
+  },
+  {
+    "index": 6,
+    "derivative_va": "0x54b7d0",
+    "instruction_va": "0x51b321",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b321:\t89 3d d0 b7 54 00    \tmov    DWORD PTR ds:0x54b7d0,edi"
+  },
+  {
+    "index": 7,
+    "derivative_va": "0x54b7d4",
+    "instruction_va": "0x51b327",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b327:\t89 3d d4 b7 54 00    \tmov    DWORD PTR ds:0x54b7d4,edi"
+  },
+  {
+    "index": 8,
+    "derivative_va": "0x54b7d8",
+    "instruction_va": "0x51b32d",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b32d:\t89 3d d8 b7 54 00    \tmov    DWORD PTR ds:0x54b7d8,edi"
+  },
+  {
+    "index": 9,
+    "derivative_va": "0x54b7dc",
+    "instruction_va": "0x51b333",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b333:\t89 3d dc b7 54 00    \tmov    DWORD PTR ds:0x54b7dc,edi"
+  },
+  {
+    "index": 10,
+    "derivative_va": "0x54b7e0",
+    "instruction_va": "0x51b339",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b339:\t89 3d e0 b7 54 00    \tmov    DWORD PTR ds:0x54b7e0,edi"
+  },
+  {
+    "index": 11,
+    "derivative_va": "0x54b7e4",
+    "instruction_va": "0x51b33f",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b33f:\t89 3d e4 b7 54 00    \tmov    DWORD PTR ds:0x54b7e4,edi"
+  },
+  {
+    "index": 12,
+    "derivative_va": "0x54b674",
+    "instruction_va": "0x51b345",
+    "nearest_preceding_procedure": "0x51afe0",
+    "instruction": "51b345:\t89 3d 74 b6 54 00    \tmov    DWORD PTR ds:0x54b674,edi"
+  },
+  {
+    "index": 12,
+    "derivative_va": "0x54b674",
+    "instruction_va": "0x523dd4",
+    "nearest_preceding_procedure": "0x51d3d0",
+    "instruction": "523dd4:\td9 1d 74 b6 54 00    \tfstp   DWORD PTR ds:0x54b674"
+  },
+  {
+    "index": 13,
+    "derivative_va": "0x54b4b8",
+    "instruction_va": "0x523dfe",
+    "nearest_preceding_procedure": "0x51d3d0",
+    "instruction": "523dfe:\td9 1d b8 b4 54 00    \tfstp   DWORD PTR ds:0x54b4b8"
+  }
+]

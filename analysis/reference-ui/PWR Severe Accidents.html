@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>PCTRAN Benchmark of GNPS MAAP Severe Accident Management Analyses</title>
+	<meta name="generator" content="LibreOffice 26.2.6.3 (Linux)"/>
+	<meta name="author" content="Preferred Customer"/>
+	<meta name="created" content="2004-07-25T18:00:00"/>
+	<meta name="changedby" content="Li-chi Cliff Po"/>
+	<meta name="changed" content="2010-11-24T03:11:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 0.5in }
+		p { direction: ltr; widows: 2; color: #000000; orphans: 2; text-align: center; background: transparent }
+		p.western { font-family: "Times New Roman", serif; font-weight: bold; font-size: 14pt }
+		p.cjk { font-weight: bold; font-size: 14pt; font-family: "Times New Roman", serif }
+		p.ctl { font-weight: bold; font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+		h1 { direction: ltr; color: #000000; widows: 2; orphans: 2; background: transparent; page-break-after: avoid }
+		h1.western { font-weight: bold; font-size: 12pt; font-family: "Times New Roman", serif }
+		h1.cjk { font-weight: bold; font-size: 12pt; font-family: "Times New Roman", serif }
+		h1.ctl { font-weight: bold; font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+	</style>
+</head>
+<body lang="en-US" text="#000000" link="#000080" vlink="#800000" dir="ltr"><p class="western">
+PCTRAN Simulator</p>
+<p class="western">By</p>
+<p class="western">Micro-Simulation Technology</p>
+<p class="western">2010</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">By
+going into “Restart” and choose “Initial Condition” with
+comment of severe accident condition, you may observe the plant at
+various stages of degraded conditions.  There is even one for
+hydrogen burn. You may also activate any mitigation devices such as
+ECCS, PORV, containment spray, SG PORV, AFW, etc. and witness their
+impact and consequences.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<h1 class="western">Severe Accident Management 
+</h1>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">For
+introduction of PCTRAN for applications in Severe Accident Management
+Guideline (SAMG), we have completed extensive benchmark against other
+analyses.  The scenarios cover LOCA, ATWS, LOFW, SGTR, LOP and loss
+of DC power and auxiliary feedwater (station blackout).  </font>
+</p>
+<p class="western" align="left"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+Maanshan plant is a 3-loop PWR of Westinghouse design.  The PCTRAN
+model was constructed to show its steady state full power
+configuration.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">At
+full power of 2900 MW thermal, the core average temperature is 311<font face="Symbol, serif"></font>C.
+One of the coolant loops with the pressurizer is modeled at left, and
+the remaining two are lumped into one at right.  The normal operation
+plant control panels are at the right hand side.  The ECCS panels are
+at the left.  Initiation of a run, introduction of malfunctions, and
+control of individual pumps, valves, switches, etc. are conducted
+interactively using Windows graphic user interface (GUI).  </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left"><font size="3" style="font-size: 12pt"><b>Category
+1	LOCA Scenarios</b></font></p>
+<p class="western" align="left"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">A
+double-ended cold leg break is simulated by 2000 cm2 break in the
+cold leg (malfunction #2).  After all ECCS components start, only one
+train of charging (HPSI), LPI and containment spray are left running.
+ The accumulated break flow and energy are shown below:</font></p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_db52be00.png" name="LOCA1" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">In
+the first 30 seconds, PCTRAN reproduced the accumulated break flow
+about 1.5E5 Kg and energy about 250,000 MJ.  </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+containment pressure and temperature from PCTRAN are shown below</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_e3018772.png" name="Loca2" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_375131b8.png" name="Loca3" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p align="center" style="font-weight: normal; margin-left: 0.5in"><br/>
+
+</p>
+<p class="western" align="center" style="font-weight: normal; margin-left: 0.5in">
+<br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">For
+the SAMG event, both trains of ECCS were assumed to run for maximum
+rate of depletion of the RWST.  At about 1000 seconds after the
+double-ended break, recirculation from the sump was assumed to be
+lost.  The core subsequently became uncovered, melt, collapsed and
+eventually debris penetrated the vessel. The degraded core mimic is
+shown below:</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_91640bc5.png" name="Image1" align="bottom" width="575" height="432" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">
+</font><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_6b468d51.png" name="Loca4" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+RWST level is shown below.  Two trains of ECCS draws water rapidly in
+1000 seconds.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_6e403678.png" name="Loca6" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">Without
+sump recirculation, the core is soon uncovered and the clad and fuel
+temperatures start to heat up.  At about 5,000 the core melts and
+later collapses to the vessel bottom.  At about 10,000 seconds the
+vessel penetrates to drop the debris into the cavity.  The
+containment pressure and temperature then rise steadily.  We did not
+extend the run longer because later on the event is relatively
+monotonic.  Note the containment hydrogen once reached 5% by volume,
+it would be set to burn because presence of ignition sources. 
+Hydrogen burned a few times until all zirconium in the core was
+consumed in the metal-water interaction.  When hydrogen is burning in
+the containment, the background color changes to red and orange for a
+few seconds with a “bang” sound generated by the computer.  This
+is in agreement with the TMI-2 event There are pressure spikes
+recorded but the containment does not breach.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">At
+about 9,800 seconds into the transient, the vessel breaks through and
+the corium debris falls into the cavity.  Sudden evaporation of the
+water pressurizes the containment to another elevated level.  These
+are vividly demonstrated by the graphic mimics and transient plots. </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_95dbbb4d.png" name="Image2" align="bottom" width="575" height="429" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">Hydrogen
+burn takes place (note the concentration exceeds 5% and the
+background color change)</font></p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_1a5024d4.png" name="Image3" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_cee2eb41.png" name="Image4" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_edc45640.png" name="Image5" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_fa5d5f92.png" name="Image6" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_58b575e0.png" name="Image7" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="center" style="font-weight: normal; margin-left: 0.5in">
+<br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<h1 class="western" style="font-weight: normal">For other sizes of
+cold leg and hot leg breaks with or without sump recirculation, we
+can conduct any combination of analyses.  In general a smaller break
+depressurizes the primary side slower and consumes less of the RWST
+inventory.  Upon a late loss of recirculation, the core-melt and
+containment heat-up will be deferred late, too.  The time frame could
+be tens of hours or days after the initiating event.</h1>
+<h1 class="western" style="font-weight: normal"></h1>
+<h1 class="western">Category 2 		ATWS Scenario</h1>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">PCTRAN
+has the kinetics model and malfunction mechanism to simulate an ATWS
+event.  By initiating Malfunction 8 all RPS functions are disabled. 
+He we try to benchmark the loss of feedwater event in the reference
+report.  After loss of feedwater, the steam generator level decreases
+that should have trip the reactor by low SG level signal.  Without a
+reactor trip the primary coolant temperature goes up.  Negative
+moderator temperature reactivity coefficient feedback reduces the
+reactor power.  The RCS pressure increases to lift the PORV.  The
+following figures show the transient results.</font></p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">
+</font><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_c78b2b95.png" name="AWTS1" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_90e91d5a.png" name="Awts2" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="page-break-before: always"><font size="4" style="font-size: 14pt"><b>Category
+3		Loss of Feedwater and Auxiliary Feedwater</b></font></p>
+<p class="western" align="left"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">We
+simulate this by closing all main and auxiliary feedwater isolation
+valves.  We can also trip the main feedwater first stead; but that
+would trip the reactor and later on the auxiliary feedwater pumps
+would be started by automatic control system.  Steam loss reduces the
+SG level to the low set point for reactor in 55 seconds.  The SG
+secondary is then boiled dry.  The primary RC coolant pressure
+increases to lift the PORV and expand the pressurizer level to the
+top.  One PORV’s capacity cannot relieve over-pressurization, so
+the second and the safety valves open, too.  Liquid discharge from
+the top of the pressurizer enters the drain tank and soon ruptures
+its disk.  The containment pressure and temperature then rise.  The
+high containment pressure set point starts the spray pumps that draw
+water from the RWST.  The reactor maintains at high pressure when
+coolant is continuously lost through the pressurizer valves till core
+uncovery.  </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">
+</font><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">After
+core collapse and vessel break, the reactor is depressurized.  If the
+LPSI is not available from the depleted RWST, debris would continue
+to drop into the reactor cavity and heat up the containment.  These
+are all reproduced by PCTRAN.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+following figures show the reactor coolant pressure stays up at the
+relief valve’s set point.  The SG secondary is boiled dry in about
+1,000 seconds.  Fuel heat up starts at about 3,000 seconds and the
+primary coolant is boiled dry in about 5,200 seconds.  </font>
+</p>
+<p class="western" align="left" style="font-weight: normal; page-break-before: always">
+<font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_e616dd8.png" name="LOFW1" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_14dbf207.png" name="Lofw2" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_d7ee2563.png" name="Lofw3" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_7cfc084a.png" name="Lofw4" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="page-break-before: always"><font size="4" style="font-size: 14pt"><b>Category
+4		Steam Generator Tube Rupture</b></font></p>
+<p class="western" align="left"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">SGTR
+is the mostly likely event to occur in actual plant operation with
+possible dose release.  It is however, not a serious threat to become
+a severe accident with catastrophic consequence.  In the history of
+nuclear industry, numerous incidents have occurred already.  To name
+a few, 1980 at the Ginna plant in New York, USA, 1985 at Mihama in
+Japan, and recently at Indian Point in New York (2001), all have
+double-ended single tube rupture events.  So understanding the
+transient of a SGTR is very important for plant operation and
+accident mitigation.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+ETS SGTR1 case was run with a double-ended SGTR in a single loop “A”
+side.  The reactor is automatically tripped at about 350 seconds on
+low pressurizer level.  Soon the pressurizer loses its level.  High
+pressure injection makes up coolant loss in the primary side.  The
+broken loop is filled up to the top of the steam generator.  Steam to
+the turbine/condenser is blocked, so relief to the atmosphere is
+through the main steam safety valves in the broken side.  Following
+is the plant configuration at about 4,000 seconds after tube rupture.
+ Note the broken side SG is almost filled. </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_44050c8d.png" name="Image8" align="bottom" width="575" height="432" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal; page-break-before: always">
+<font size="3" style="font-size: 12pt">The pressures of RC and SG
+secondary sides are shown below.  They are in close agreement with
+Figure 8.1-1.</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_4e2ded71.png" name="Image9" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="center" style="font-weight: normal; margin-left: 0.5in">
+<font size="3" style="font-size: 12pt">Figure 8.1-1: Pressure History
+from SGTR1.INP</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">We
+also plot the pressurizer and SG levels, HPSI, SGTR, and SG safety
+valve flows as below:</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_a547131a.png" name="Image10" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_893bcfd9.png" name="Image11" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">After
+the broken loop fill-up, the SG safety valve flow would turn into
+liquid.  It takes considerable time for the HPSI to deplete the RWST
+(in the order of 30,000 seconds) and subsequent core melt.  These are
+very much anticipated and predictable, so we did not continue the
+run.</font></p>
+<p class="western" align="left" style="page-break-before: always"><font size="4" style="font-size: 14pt"><b>Category
+5		Loss of Offsite Power (Station Blackout)</b></font></p>
+<p class="western" align="left"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt">The
+fifth category is loss of both AC and DC power supplemented with a
+reactor coolant pump seal LOCA.  The break flow rate of 153,000 kg/hr
+corresponds to a 1,000 cm2 cold leg LOCA.  In PCTRAN run we start
+with a LOOP and disable both emergency buses “A” and “B”. 
+This will cause an immediate reactor scram, loss of all AC-powered
+RCP, HPSI, LPSI, AFW and containment spray pumps, pressurizer heater
+and steam dump to the condenser capability.  Only the passive
+accumulators and turbine-driven AFW pumps are available for primary
+and secondary coolant makeup.  In the following mimic representation,
+please note that the pressurizer heater indication in yellow means
+disabled. For pumps and valves, a red rectangle around white also
+means disabled.  </font>
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_7c80ee25.png" name="Image12" align="bottom" width="575" height="432" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal; page-break-before: always">
+<br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_446020c.png" name="Image13" align="bottom" width="576" height="364" border="0"/>
+<img src="PWR%20Severe%20Accidents_html_d59c908.png" name="Image14" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><font size="3" style="font-size: 12pt"><img src="PWR%20Severe%20Accidents_html_4b1e34c4.png" name="Image15" align="bottom" width="576" height="364" border="0"/>
+</font></p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<p class="western" align="left" style="font-weight: normal"><br/>
+
+</p>
+<div title="footer"><p align="left" style="margin-top: 0.46in; font-weight: normal; margin-right: 0.25in">
+	<span id="Frame1" dir="ltr" style="position: absolute; top: 0in; left: 0in; width: 0.1in; border: none; padding: 0in; background: #ffffff"><p align="left" style="font-weight: normal">
+		<font size="3" style="font-size: 12pt"><span style="background: #c0c0c0"><sdfield type=PAGE subtype=RANDOM format=PAGE>20</sdfield></span></font></p>
+	</span><br/>
+
+	</p>
+</div>
+</body>
+</html>

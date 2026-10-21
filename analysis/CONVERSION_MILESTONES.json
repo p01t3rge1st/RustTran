@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "scope_policy": "Stable acceptance milestones, not an estimate from procedure or test counts. Newly discovered subproblems stay under their milestone; genuinely new scope must be recorded explicitly.",
+  "milestones": [
+    {
+      "id": "INIT",
+      "name": "Pełna inicjalizacja i odtwarzanie",
+      "status": "partial",
+      "done": "Wczytywanie modelu i większości IC; 130 wartości Single i 15 flag świeżego startu dla 110 par model/IC; późne odniesienia poziomów/przepływów, parametry cieplne i entalpia zasilania; osobna warstwa danych obrazu procesu. Przeniesiono 11 zapisów początkowych historii sterowania z jawnym trybem awarii. Odzyskano gałąź odtworzonych zegara/odniesień i 20 czasów zdarzeń, z zachowaniem zapisanych historii. Podłączono współczynnik wymiany cieplnej i przelicznik jednostek z odzyskanego początku inicjalizacji. Odzyskano 20 stałych Single i flagę początkową oraz geometrię: sumę objętości akumulatora, stosunek próbkowania i dwa wyzerowania (321 przypadków instrukcji oryginału). Odzyskano numeryczną inicjalizację modelu Double: 33 zapisy, 12 tablic i temperatury początkowe; 240 ciągłych wykonań oryginału. Złożony stan zachowuje 290 Singles i 28 pól całkowitych dla 110 par oraz Double i tablice. Przelicznik kroku czasu I16 zweryfikowano z oryginalną biblioteką VB6 (240 przypadków).",
+      "remaining": "Pełny wybór ścieżki świeżej/odtworzonej i odczyt oryginalnych zapisów, pozostałe historie/tablice oraz kompletne Reset/restore; pięć nierozstrzygniętych pól IC. Numeryczna inicjalizacja modelu Double jest przeniesiona; jego ewolucja pozostaje w STEP.",
+      "acceptance": "Każdy obsługiwany start/Reset/odczyt tworzy kompletny, zweryfikowany stan potrzebny do pierwszego kroku, bez zgadywanych wartości."
+    },
+    {
+      "id": "AUTO",
+      "name": "Automatyka urządzeń i zabezpieczeń",
+      "status": "partial",
+      "done": "Grzałki, natrysk, uzupełnianie/upust/wtrysk oraz ich przeniesione blokady; numeryczne bloki pomp, zaworów i SG. Przełączenia RCP, znaczniki czasu i docelowe przepływy połączone z blokiem liczbowym. Początkowe sterowanie SG: rozruch zasilania, regulator poziomu/ciśnienia, gałęzie awarii i podział ciepła dla obu stron. Zamknięcia SG/zasilania, obie grupy zaworów z histerezą i blokadą ręczną oraz awaryjne gałęzie przepływu. Dalsza regulacja zasilania SG i pełna odzyskana sekwencja liczbowa/sterowania SG połączone; dokładna aktywacja flagami ==1 i ważenie dwóch poleceń. Odzyskano początkowe historie regulatorów SG i dokładną gałąź inicjalizacji wyjść przy fladze awarii −1. Opcjonalna tablica zdarzeń dostarcza odzyskane czasy RCP/SG i właściwe flagi sterowania SG. Aktywacja akumulatora, blokady zaworów i opróżnianie połączone we wspólną aktualizację; zachowane ręczne zamknięcia po aktywacji. Pełny odzyskany blok 0x510850 zasilania/wtrysku/recyrkulacji i chłodzenia połączony. Polecenia grzałek/natrysku oraz pozostałych przeniesionych urządzeń są zachowywane pomiędzy aktualizacjami sesji. Kontrolki rzeczywistej sesji GUI przekazują polecenia RCP, SG, zasilania/wtrysku, akumulatora, grzałek i natrysku do tego samego silnika co CLI. Kliknięcie ręcznej grzałki 25% porównano ze stanem CLI.",
+      "remaining": "Pozostałe zabezpieczenia i skutki zdarzeń, pełny harmonogram oraz kompletna zgodność callbacków oryginału. Kontrolki odzyskanych urządzeń działają w widoku Simulation; wskazania na oryginalnym schemacie nadal dotyczą zapisanych IC.",
+      "acceptance": "Polecenia ręczne i automatyczne zmieniają właściwe urządzenia, przepływy i zatrzaski zgodnie z oryginałem."
+    },
+    {
+      "id": "STEP",
+      "name": "Kompletny krok całej instalacji",
+      "status": "partial",
+      "done": "Połączone fragmenty obiegu, obu SG, automatyki, bilansu i 14-stanowego integratora. Początkowe sterowanie obu SG działa przed ich wymianą, zachowując wspólny znacznik czasu i kontrolkę awarii; wytwarza entalpie używane w bilansie strumieni. Producent wypływu SG uwzględnia zawory, znak przepływu A/B, limit masy i korektę ciepła. Zamknięto lukę regulacji zasilania obu SG; cały odzyskany blok SG porównany z ciągłym wykonaniem instrukcji oryginału. Backend świeżego startu dostarcza teraz późne odniesienia i właściwości cieplne potrzebne odzyskanym układom. Powiązano odzyskane wejścia zdarzeń z RCP, SG i dalszą integracją, z wycofaniem całego kroku przy błędzie. Opcjonalna ścieżka modelu normalnego wytwarza bieżące ciepło, poziomy i historie obu pętli przed SG oraz bilansem/integracją; wartości te nie muszą być dostarczane jako zapisane wyniki. Akumulator przed sumowaniem źródeł dostarcza aktualny przepływ, stan gazu i zapas wody do dalszych obliczeń. Zasilanie, chłodzenie i recyrkulacja dostarczają aktualne przepływy oraz entalpię przed akumulatorem i bilansem. Stateful session łączy kolejne kroki z zachowaniem poleceń. Połączono późne sprzężenie temperatur gorących/zimnych gałęzi i czterech historii filtra (0x50d1f8–0x50d867), w tym przepływ wsteczny i ograniczenia; 640 przypadków i 16 ośmiokrokowych łańcuchów oryginalnych fragmentów.",
+      "remaining": "Pozostali producenci wejść, w tym późne modele obudowy/źródeł pomocniczych (0x502480, 0x5034b0), inne ścieżki transportu i alternatywny model; pozostała kolejność układów oraz pełny dispatcher. Zasilanie/recyrkulacja, normalna wymiana, akumulator i późne sprzężenie temperatur są już podłączone.",
+      "acceptance": "Kolejny krok otrzymuje wyłącznie kompletny stan, model i polecenia; nie wymaga ręcznie podawanych brakujących wyników innych układów."
+    },
+    {
+      "id": "EVENTS",
+      "name": "Awarie i scenariusze w czasie",
+      "status": "partial",
+      "done": "Odzyskane ustawienia scenariuszy, wybrane warunki czasowe i zatrzaski. Przeliczanie 20 czasów zdarzeń przy odtworzeniu; czasy RCP/SG i wybrane flagi SG są wiązane z odzyskanym krokiem. Flaga zdarzenia 7 i wspólny czas zdarzenia 8 sterują odzyskaną normalną wymianą cieplną obu pętli.",
+      "remaining": "Pełny harmonogram awarii, opóźnienia, rampy, sekwencje zabezpieczeń i ich powiązanie z krokiem.",
+      "acceptance": "Zadany scenariusz wywołuje te same zdarzenia i skutki w odpowiadających chwilach."
+    },
+    {
+      "id": "GUI",
+      "name": "Przebiegi i sterowanie z GUI",
+      "status": "partial",
+      "done": "Schemat i angielski interfejs, odczyt IC, panel odzyskanej inicjalizacji; paczki i ikona Linux. Widok Simulation wykonuje rzeczywiste kroki odzyskanego silnika: Start/Pause/Step/Reset, prędkość, polecenia urządzeń, aktualne wskazania, wykresy, zapis/odczyt JSON i CSV. Wbudowany syntetyczny przykład uruchamia się bez plików zewnętrznych. Automatyczne kliknięcia X11 potwierdzają działanie i zgodność pełnego stanu po ręcznej zmianie grzałki z CLI. Panel inicjalizacji korzysta ze złożonego stanu z modelem Double i tablicami, zachowuje widok IC oraz eksportuje typowany JSON przyciskiem Save initialized state. Jest to stan odzyskanej inicjalizacji, jeszcze nie gotowa sesja całej instalacji. Dodano Live simulation mimic: oryginalny układ schematu pokazuje bieżące obliczone ciśnienia, temperaturę, poziomy i przepływy. Jednostki odwracają źródłowe konwersje IC; brakujące odczyty i urządzenia pokazują —, bez zapasowych danych IC. Otwarcie schematu sprawdzono rzeczywistymi kliknięciami.",
+      "remaining": "Kompletny start scenariusza bezpośrednio z IC, odczyt oryginalnych zapisów oraz brakujące źródła odczytów/urządzeń i scenariusze awarii. Odrębny widok IC pozostaje zapisanym stanem; Live simulation mimic pokazuje odzyskane bieżące zmienne. Przykład Simulation nie zastępuje pełnego uruchomienia reaktora.",
+      "acceptance": "Użytkownik uruchamia, zatrzymuje i steruje rzeczywistą symulacją; wskazania pochodzą z aktualnego stanu obliczeń."
+    },
+    {
+      "id": "HISTORY",
+      "name": "Historia, wykresy i raporty przebiegów",
+      "status": "partial",
+      "done": "Osobny wykres funkcji DECAY i infrastruktura eksportów/porównań komponentów. Eksport rzeczywistych aktualizacji odzyskanej sesji do JSON i CSV oraz osobny interaktywny raport HTML z wykresami ciśnień, temperatur, poziomów i przepływów. Widok Simulation zbiera rzeczywiste próbki, pokazuje 16 szeregów i eksportuje CSV w jednostkach oryginału. Historia GUI zachowuje ostatnie 50 000 próbek z jawnym oznaczeniem; osobny raport CLI nadal eksportuje cały zadany przebieg.",
+      "remaining": "Historie i końcowe raporty kompletnych scenariuszy, pełny zakres zmiennych instalacji oraz porównanie z oryginałem. Historia odzyskanej sesji z dostarczonego stanu i syntetycznego przykładu nie stanowi pełnego przebiegu PCTran.",
+      "acceptance": "Wykresy i eksporty przedstawiają rzeczywiste, odtwarzalne wyniki uruchomionego scenariusza."
+    },
+    {
+      "id": "E2E",
+      "name": "Porównanie całych scenariuszy z PCTran",
+      "status": "not_validated",
+      "done": "Porównania oryginalnych bloków x86 i złożonych fragmentów; plan w END_TO_END_VALIDATION.md.",
+      "remaining": "Uruchomienia oryginalnej aplikacji Windows, zgodne warunki i próbki 0–300 s: stan ustalony, sterowanie, awarie i zadania z handbooka.",
+      "acceptance": "Całe uzgodnione scenariusze spełniają ustalone tolerancje wyników i zgodność zdarzeń na oryginale i RustTran."
+    }
+  ],
+  "changes": [
+    {
+      "id": "2026-10-20-primary-devices",
+      "milestones": [
+        "INIT",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Dodano automatykę upustu/uzupełniania/wtrysku, dynamiczne odniesienia i 25 zapisów inicjalizacji; połączono je z odzyskanym krokiem.",
+      "evidence": "PRIMARY_DEVICE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-rcp-control",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Zamknięto producent przełączeń/celów przepływu RCP i podłączono go do odzyskanego kroku: 768 przypadków oraz 32 połączone aktualizacje. Pozostałe zadania zostają pod dotychczasowymi etapami.",
+      "evidence": "RCP_CONTROL_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-control-prefix",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono początkowy blok sterowania obu SG (960 przypadków) i podłączono go do odzyskanego kroku (32 dodatkowe porównania). Entalpie SG są obliczane w kroku; wspólny czas i stan awarii przechodzą z A do B. Dalsza automatyka SG pozostaje w dotychczasowych etapach.",
+      "evidence": "STEAM_CONTROL_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-valves",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono decyzje urządzeń/zaworów SG i połączono produkcję wypływu z bilansem/integratorem: 1200 przypadków i 32 dodatkowe połączone aktualizacje. Pozostała granica SG zawęża się do 0x50a8a6–0x50ac31; etapy i kryteria odbioru pozostają te same.",
+      "evidence": "STEAM_VALVE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-auxiliary-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Zamknięto pozostałą lukę regulacji zasilania SG: 640 przypadków pomocniczych, 320 ciągłych wykonań oryginalnego bloku SG i 32 dodatkowe połączone aktualizacje. Zweryfikowano też, że obie ścieżki końcowego bilansu korzystają z przepływu całkowitego; skorygowano wcześniejszą notatkę.",
+      "evidence": "STEAM_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-late-thermal-initialization",
+      "milestones": [
+        "INIT",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono 28 późnych wartości i trzy flagi inicjalizacji (320 przypadków); backend GUI/CLI rozszerzono do 105 Singles i 14 flag dla 110 par model/IC. Dodano osobny etap 11 początkowych historii sterowania z jawną flagą awarii (320 przypadków). Pełny Reset/restore i zewnętrzny model pozostają otwarte.",
+      "evidence": "LATE_THERMAL_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-20-restored-controls-events",
+      "milestones": [
+        "INIT",
+        "EVENTS",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Odzyskano przywrócenie zegara/odniesień oraz przeliczanie 20 czasów zdarzeń (400 przypadków), zachowując zapisany bor i historie. Czasy i flagi z tablic zdarzeń połączono z RCP/SG i integratorem (32 dodatkowe porównania). Pełny odczyt zapisów, Reset/restore i dispatcher pozostają otwarte.",
+      "evidence": "RESTORED_CONTROLS_AND_EVENTS.md"
+    },
+    {
+      "id": "2026-10-20-connected-normal-thermal",
+      "milestones": [
+        "INIT",
+        "STEP",
+        "EVENTS"
+      ],
+      "status": "validated",
+      "description": "Podłączono normalne obliczenia cieplne obu pętli przed SG/bilansem/integracją, wraz z oryginalnym wspólnym czasem zdarzenia i kopią odniesienia A do B: 128 porównań bez zapisanych wyników ciepła/poziomów. Backend inicjalizacji rozszerzono o odzyskany współczynnik i przelicznik: 107 Singles i 14 flag dla wszystkich 110 par. Zewnętrzny model i pełny dispatcher nadal pozostają otwarte.",
+      "evidence": "CONNECTED_THERMAL_TRANSFER.md"
+    },
+    {
+      "id": "2026-10-21-accumulator-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Połączono aktywację, zawory, opróżnianie i ciśnienie gazu akumulatora z oryginalnymi globalnymi stanami: 640 ciągłych przypadków x86 oraz 64 połączone aktualizacje. Aktualny wypływ trafia do sumy źródeł i bilansu; ręczne zamknięcia oraz wycofanie przy błędzie są zachowane.",
+      "evidence": "ACCUMULATOR_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-supply-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono cały odzyskany blok zasilania/wtrysku/recyrkulacji/chłodzenia: 960 ciągłych przypadków x86 i 96 połączonych aktualizacji. Sterowanie, ciepło, przepływ i entalpia trafiają do dalszych obliczeń.",
+      "evidence": "SUPPLY_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-stateful-sessions",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Dodano sesję zachowującą polecenia wszystkich przeniesionych urządzeń, w tym grzałek i natrysku w ich właściwej fazie obliczeń. 12 ośmiokrokowych łańcuchów oryginalnych fragmentów; zapis/wznowienie i wycofanie całej serii przy błędzie.",
+      "evidence": "RECOVERED_SESSION_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-session-history",
+      "milestones": [
+        "HISTORY"
+      ],
+      "status": "validated",
+      "description": "Dodano wykonanie sesji z eksportem faktycznych próbek do JSON/CSV i interaktywnego raportu HTML. Pełna inicjalizacja, GUI i długie scenariusze pozostają otwarte.",
+      "evidence": "RECOVERED_SESSION_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-startup-primitives",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Odzyskano stałe początkowe oraz geometrię (321 przypadków); backend świeżego startu dostarcza 130 Singles i 15 flag dla wszystkich 110 par model/IC.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-loop-thermal-feedback",
+      "milestones": [
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Połączono późne temperatury obu gałęzi i historie filtrów po bilansie pierwotnym, przed bilansem strumieni/integracją: 640 ciągłych przypadków i 16 ośmiokrokowych łańcuchów.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-simulation-workspace",
+      "milestones": [
+        "GUI",
+        "AUTO",
+        "HISTORY"
+      ],
+      "status": "validated",
+      "description": "Podłączono odzyskane kroki do rzeczywistego Start/Pause/Step/Reset, kontrolek urządzeń, wykresów i zapisu sesji. Wbudowany syntetyczny przykład; rzeczywiste kliknięcia i identyczny stan ręcznej grzałki w GUI/CLI. Pełny start IC i całe scenariusze pozostają otwarte.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-startup-clock",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Odzyskano oryginalne DT/0.001 i floor do I16, z 240 porównaniami rzeczywistej biblioteki VB6 oraz odrzucaniem przepełnienia.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-double-model-initialization",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono ciągły numeryczny inicjalizator sześciowęzłowego modelu: 33 Double, 12 tablic, dwa początkowe zapisy temperatur i Variant Double zero. 240 przypadków; ewolucja pozostaje otwarta.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-assembled-fresh-state",
+      "milestones": [
+        "INIT",
+        "GUI"
+      ],
+      "status": "validated",
+      "description": "Połączono wszystkie przeniesione zapisy i zachowano odniesienia: 290 Singles/28 pól całkowitych oraz Double/tablice dla 110 par źródłowych. GUI oblicza i zapisuje ten stan. Włączono dokładny odczyt Double z JSON. Pełny start i odtworzenie scenariuszy pozostają otwarte.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-live-simulation-mimic",
+      "milestones": [
+        "GUI"
+      ],
+      "status": "validated",
+      "description": "Podłączono obliczone ciśnienia/temperaturę/poziomy/przepływy do schematu podobnego do oryginału. Brakujące wskazania pozostają nieznane, bez podstawiania danych IC. Test mapowania i rzeczywiste kliknięcia otwierające Live simulation mimic przeszły.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    }
+  ],
+  "scope_discoveries": [],
+  "estimate": {
+    "overall_percent": null,
+    "remaining_hours": null,
+    "reason": "Lista i zależności zachowań oryginału nie są zamknięte. Pozostało siedem dużych kryteriów odbioru, częściowo rozpoczętych; nie jest to siedem równych zadań ani siedem pojedynczych zmian."
+  }
+}

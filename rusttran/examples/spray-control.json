@@ -1,0 +1,13 @@
+{
+  "signal": 1800.0,
+  "lower_threshold": 1900.0,
+  "upper_threshold": 2100.0,
+  "interlock_signal": 89.0,
+  "pump_a": 0,
+  "pump_b": 0,
+  "spray_manual": false,
+  "spray_percent": 0,
+  "auxiliary_percent": 0,
+  "spray_capacity": 727.5074462890625,
+  "auxiliary_capacity": 174.84385681152344
+}

@@ -1,0 +1,12 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running tests/steam_system.rs (rusttran/target/debug/deps/steam_system-49b057e0dac2f510)
+
+running 5 tests
+test auxiliary_stage_requires_the_original_valve_outflow_predecessor ... ok
+test auxiliary_matches_native_exact_activation_flags_and_weighted_commands ... ok
+test late_auxiliary_and_saturated_errors_do_not_commit_earlier_controls ... ok
+test complete_sg_stages_connect_to_primary_integration_with_atomic_rollback ... ok
+test continuous_sg_native_body_matches_all_stages_and_total_outflow_on_both_paths ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+

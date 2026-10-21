@@ -1,0 +1,8167 @@
+{
+  "method": "Execute accumulator activation/latch and valve decisions in original x86.\nCOM/I16/Boolean reads are supplied; UI writes are captured as integer commands.\nObject/variant cleanup is bypassed. Native comparisons, latch/time writes,\nBoolean decision instructions and opening=100 assignments execute unchanged.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261025,
+  "cases": [
+    {
+      "inputs": {
+        "system_pressure": 976.1324462890625,
+        "trigger_pressure": 975.1324462890625,
+        "activation": 0,
+        "clock": 202.8917236328125,
+        "event_time": 171.39694213867188,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 171.39694213867188,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2165.614501953125,
+        "trigger_pressure": 2166.614501953125,
+        "activation": 0,
+        "clock": 15.412409782409668,
+        "event_time": 132.38336181640625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 15.412409782409668,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1597.7640380859375,
+        "trigger_pressure": 1597.7640380859375,
+        "activation": -1,
+        "clock": 178.44166564941406,
+        "event_time": 276.1078796386719,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 276.1078796386719,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1084.169677734375,
+        "trigger_pressure": 1083.169677734375,
+        "activation": 2,
+        "clock": 12.065767288208008,
+        "event_time": 205.45652770996094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 205.45652770996094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 628.374755859375,
+        "trigger_pressure": 628.374755859375,
+        "activation": 0,
+        "clock": 40.12841033935547,
+        "event_time": 137.05130004882812,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 40.12841033935547,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1431.328125,
+        "trigger_pressure": 1430.328125,
+        "activation": 1,
+        "clock": 49.39711380004883,
+        "event_time": 196.8998565673828,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 196.8998565673828,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1282.5152587890625,
+        "trigger_pressure": 1282.5152587890625,
+        "activation": 2,
+        "clock": 17.421905517578125,
+        "event_time": 272.0097351074219,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 272.0097351074219,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1411.3447265625,
+        "trigger_pressure": 1412.3447265625,
+        "activation": 1,
+        "clock": 154.3427276611328,
+        "event_time": 116.90057373046875,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 116.90057373046875,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1594.84423828125,
+        "trigger_pressure": 1593.84423828125,
+        "activation": -1,
+        "clock": 226.74002075195312,
+        "event_time": 61.641448974609375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 61.641448974609375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2219.857666015625,
+        "trigger_pressure": 2219.857666015625,
+        "activation": 0,
+        "clock": 0.4422532618045807,
+        "event_time": 183.6689910888672,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 0.4422532618045807,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1803.3929443359375,
+        "trigger_pressure": 1803.3929443359375,
+        "activation": 0,
+        "clock": 73.38227081298828,
+        "event_time": 214.6076202392578,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 73.38227081298828,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2258.8212890625,
+        "trigger_pressure": 2259.8212890625,
+        "activation": 0,
+        "clock": 196.89015197753906,
+        "event_time": 48.692874908447266,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 196.89015197753906,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1034.856689453125,
+        "trigger_pressure": 1034.856689453125,
+        "activation": -1,
+        "clock": 72.47911071777344,
+        "event_time": 131.48829650878906,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 131.48829650878906,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2142.06787109375,
+        "trigger_pressure": 2143.06787109375,
+        "activation": 0,
+        "clock": 159.50230407714844,
+        "event_time": 151.47470092773438,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 159.50230407714844,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 726.1143798828125,
+        "trigger_pressure": 727.1143798828125,
+        "activation": 0,
+        "clock": 174.8074493408203,
+        "event_time": 150.44342041015625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 174.8074493408203,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1561.72998046875,
+        "trigger_pressure": 1561.72998046875,
+        "activation": 2,
+        "clock": 57.65647888183594,
+        "event_time": 23.718364715576172,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 23.718364715576172,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 457.33734130859375,
+        "trigger_pressure": 458.33734130859375,
+        "activation": 0,
+        "clock": 224.08973693847656,
+        "event_time": 81.16419219970703,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 224.08973693847656,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1714.3074951171875,
+        "trigger_pressure": 1713.3074951171875,
+        "activation": -1,
+        "clock": 175.02682495117188,
+        "event_time": 188.45677185058594,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 188.45677185058594,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 145.76646423339844,
+        "trigger_pressure": 145.76646423339844,
+        "activation": -1,
+        "clock": 54.413082122802734,
+        "event_time": 96.50619506835938,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 96.50619506835938,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 265.3406982421875,
+        "trigger_pressure": 266.3406982421875,
+        "activation": 1,
+        "clock": 273.4610290527344,
+        "event_time": 2.2431113719940186,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 2.2431113719940186,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1436.3243408203125,
+        "trigger_pressure": 1437.3243408203125,
+        "activation": 2,
+        "clock": 53.93043518066406,
+        "event_time": 200.5238800048828,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 200.5238800048828,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 935.1107788085938,
+        "trigger_pressure": 934.1107788085938,
+        "activation": 2,
+        "clock": 276.9712829589844,
+        "event_time": 269.08587646484375,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 269.08587646484375,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1479.99365234375,
+        "trigger_pressure": 1480.99365234375,
+        "activation": 1,
+        "clock": 100.3061752319336,
+        "event_time": 195.87393188476562,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 195.87393188476562,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1311.860595703125,
+        "trigger_pressure": 1311.860595703125,
+        "activation": 1,
+        "clock": 88.5597152709961,
+        "event_time": 292.7793273925781,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 292.7793273925781,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2118.30517578125,
+        "trigger_pressure": 2118.30517578125,
+        "activation": 1,
+        "clock": 238.17196655273438,
+        "event_time": 296.05450439453125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 296.05450439453125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 275.91796875,
+        "trigger_pressure": 276.91796875,
+        "activation": 2,
+        "clock": 192.68734741210938,
+        "event_time": 193.37738037109375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 193.37738037109375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1460.5308837890625,
+        "trigger_pressure": 1459.5308837890625,
+        "activation": 1,
+        "clock": 72.63924407958984,
+        "event_time": 143.77978515625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 143.77978515625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1331.4150390625,
+        "trigger_pressure": 1330.4150390625,
+        "activation": -1,
+        "clock": 131.20664978027344,
+        "event_time": 176.73841857910156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 176.73841857910156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 944.8711547851562,
+        "trigger_pressure": 944.8711547851562,
+        "activation": 1,
+        "clock": 234.10858154296875,
+        "event_time": 11.65608024597168,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 11.65608024597168,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 264.01654052734375,
+        "trigger_pressure": 264.01654052734375,
+        "activation": 0,
+        "clock": 81.44957733154297,
+        "event_time": 55.321807861328125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 81.44957733154297,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 342.5135192871094,
+        "trigger_pressure": 342.5135192871094,
+        "activation": 1,
+        "clock": 287.4799499511719,
+        "event_time": 176.57322692871094,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 176.57322692871094,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1562.208740234375,
+        "trigger_pressure": 1563.208740234375,
+        "activation": 0,
+        "clock": 113.543701171875,
+        "event_time": 286.56549072265625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 113.543701171875,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1959.9141845703125,
+        "trigger_pressure": 1958.9141845703125,
+        "activation": -1,
+        "clock": 297.852783203125,
+        "event_time": 204.41702270507812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 204.41702270507812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 708.6212158203125,
+        "trigger_pressure": 709.6212158203125,
+        "activation": 1,
+        "clock": 107.17576599121094,
+        "event_time": 192.42250061035156,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 192.42250061035156,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 79.36815643310547,
+        "trigger_pressure": 78.36815643310547,
+        "activation": 0,
+        "clock": 226.62472534179688,
+        "event_time": 148.99581909179688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 148.99581909179688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 406.4638366699219,
+        "trigger_pressure": 406.4638366699219,
+        "activation": 2,
+        "clock": 260.04107666015625,
+        "event_time": 216.54029846191406,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 216.54029846191406,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 739.4857177734375,
+        "trigger_pressure": 739.4857177734375,
+        "activation": -1,
+        "clock": 116.06507873535156,
+        "event_time": 236.66258239746094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 236.66258239746094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1769.5828857421875,
+        "trigger_pressure": 1768.5828857421875,
+        "activation": -1,
+        "clock": 282.9042053222656,
+        "event_time": 81.352783203125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 81.352783203125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 720.7091674804688,
+        "trigger_pressure": 719.7091674804688,
+        "activation": 1,
+        "clock": 270.5240478515625,
+        "event_time": 268.09832763671875,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 268.09832763671875,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2050.524169921875,
+        "trigger_pressure": 2051.524169921875,
+        "activation": 1,
+        "clock": 267.1401062011719,
+        "event_time": 89.44523620605469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 89.44523620605469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 865.2669067382812,
+        "trigger_pressure": 864.2669067382812,
+        "activation": 1,
+        "clock": 169.19720458984375,
+        "event_time": 242.4803924560547,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 242.4803924560547,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1414.345703125,
+        "trigger_pressure": 1414.345703125,
+        "activation": 2,
+        "clock": 157.39718627929688,
+        "event_time": 207.65870666503906,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 207.65870666503906,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 805.64208984375,
+        "trigger_pressure": 805.64208984375,
+        "activation": -1,
+        "clock": 11.998720169067383,
+        "event_time": 19.749467849731445,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 19.749467849731445,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2225.608642578125,
+        "trigger_pressure": 2226.608642578125,
+        "activation": 0,
+        "clock": 81.97676849365234,
+        "event_time": 15.46607780456543,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 81.97676849365234,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1005.9380493164062,
+        "trigger_pressure": 1006.9380493164062,
+        "activation": 0,
+        "clock": 53.366355895996094,
+        "event_time": 68.46464538574219,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 53.366355895996094,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1148.3651123046875,
+        "trigger_pressure": 1148.3651123046875,
+        "activation": 1,
+        "clock": 146.05108642578125,
+        "event_time": 135.1562042236328,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 135.1562042236328,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1650.260498046875,
+        "trigger_pressure": 1650.260498046875,
+        "activation": 2,
+        "clock": 159.4851837158203,
+        "event_time": 100.57767486572266,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 100.57767486572266,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1854.23388671875,
+        "trigger_pressure": 1855.23388671875,
+        "activation": 1,
+        "clock": 296.0774841308594,
+        "event_time": 199.36570739746094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 199.36570739746094,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1378.547119140625,
+        "trigger_pressure": 1377.547119140625,
+        "activation": 0,
+        "clock": 112.81099700927734,
+        "event_time": 226.30088806152344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 226.30088806152344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 638.2425537109375,
+        "trigger_pressure": 637.2425537109375,
+        "activation": -1,
+        "clock": 94.186767578125,
+        "event_time": 243.52243041992188,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 243.52243041992188,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 974.2478637695312,
+        "trigger_pressure": 975.2478637695312,
+        "activation": 1,
+        "clock": 121.81828308105469,
+        "event_time": 211.506103515625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 211.506103515625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1346.9404296875,
+        "trigger_pressure": 1345.9404296875,
+        "activation": 0,
+        "clock": 63.682430267333984,
+        "event_time": 50.541751861572266,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 50.541751861572266,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1819.1038818359375,
+        "trigger_pressure": 1819.1038818359375,
+        "activation": 1,
+        "clock": 277.95184326171875,
+        "event_time": 78.7627182006836,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 78.7627182006836,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 118.89336395263672,
+        "trigger_pressure": 119.89336395263672,
+        "activation": -1,
+        "clock": 10.88380241394043,
+        "event_time": 180.83624267578125,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 180.83624267578125,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 890.4822387695312,
+        "trigger_pressure": 889.4822387695312,
+        "activation": 0,
+        "clock": 197.9017791748047,
+        "event_time": 137.5222930908203,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 137.5222930908203,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 738.1864624023438,
+        "trigger_pressure": 738.1864624023438,
+        "activation": 0,
+        "clock": 10.637252807617188,
+        "event_time": 186.43492126464844,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 10.637252807617188,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1618.87890625,
+        "trigger_pressure": 1617.87890625,
+        "activation": 2,
+        "clock": 110.06523132324219,
+        "event_time": 5.836582183837891,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 5.836582183837891,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 908.4901733398438,
+        "trigger_pressure": 908.4901733398438,
+        "activation": 2,
+        "clock": 93.52439880371094,
+        "event_time": 173.064697265625,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 173.064697265625,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1175.4478759765625,
+        "trigger_pressure": 1174.4478759765625,
+        "activation": 0,
+        "clock": 270.17388916015625,
+        "event_time": 223.11293029785156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 223.11293029785156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1338.8426513671875,
+        "trigger_pressure": 1337.8426513671875,
+        "activation": 0,
+        "clock": 17.824602127075195,
+        "event_time": 29.83125114440918,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 29.83125114440918,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 496.8705749511719,
+        "trigger_pressure": 497.8705749511719,
+        "activation": -1,
+        "clock": 51.638877868652344,
+        "event_time": 294.4296569824219,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 294.4296569824219,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 56.26972198486328,
+        "trigger_pressure": 55.26972198486328,
+        "activation": 0,
+        "clock": 233.6729736328125,
+        "event_time": 19.458938598632812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 19.458938598632812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2246.968017578125,
+        "trigger_pressure": 2247.968017578125,
+        "activation": 0,
+        "clock": 22.680315017700195,
+        "event_time": 276.7532958984375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 22.680315017700195,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2296.504150390625,
+        "trigger_pressure": 2295.504150390625,
+        "activation": 1,
+        "clock": 23.56951332092285,
+        "event_time": 109.79500579833984,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 109.79500579833984,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1995.2911376953125,
+        "trigger_pressure": 1994.2911376953125,
+        "activation": -1,
+        "clock": 209.2393798828125,
+        "event_time": 11.572854995727539,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 11.572854995727539,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 144.96556091308594,
+        "trigger_pressure": 145.96556091308594,
+        "activation": 1,
+        "clock": 133.98226928710938,
+        "event_time": 49.05513000488281,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 49.05513000488281,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1940.276123046875,
+        "trigger_pressure": 1939.276123046875,
+        "activation": 1,
+        "clock": 227.2642059326172,
+        "event_time": 292.9039306640625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 292.9039306640625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 222.4552764892578,
+        "trigger_pressure": 222.4552764892578,
+        "activation": 2,
+        "clock": 123.40800476074219,
+        "event_time": 174.7623748779297,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 174.7623748779297,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1118.2403564453125,
+        "trigger_pressure": 1119.2403564453125,
+        "activation": 2,
+        "clock": 178.14508056640625,
+        "event_time": 182.41061401367188,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 182.41061401367188,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1124.907470703125,
+        "trigger_pressure": 1123.907470703125,
+        "activation": 1,
+        "clock": 274.78704833984375,
+        "event_time": 259.2208251953125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 259.2208251953125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1850.098388671875,
+        "trigger_pressure": 1851.098388671875,
+        "activation": -1,
+        "clock": 42.491024017333984,
+        "event_time": 290.7043151855469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 290.7043151855469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 391.7577209472656,
+        "trigger_pressure": 392.7577209472656,
+        "activation": 2,
+        "clock": 7.843328952789307,
+        "event_time": 195.115478515625,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 195.115478515625,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1551.130126953125,
+        "trigger_pressure": 1551.130126953125,
+        "activation": 1,
+        "clock": 105.18351745605469,
+        "event_time": 240.1544189453125,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 240.1544189453125,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1307.841064453125,
+        "trigger_pressure": 1306.841064453125,
+        "activation": 1,
+        "clock": 226.4388885498047,
+        "event_time": 3.544727325439453,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 3.544727325439453,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1586.56982421875,
+        "trigger_pressure": 1585.56982421875,
+        "activation": 0,
+        "clock": 268.7720947265625,
+        "event_time": 283.6765441894531,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 283.6765441894531,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 637.97216796875,
+        "trigger_pressure": 637.97216796875,
+        "activation": 0,
+        "clock": 207.543701171875,
+        "event_time": 175.25784301757812,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 207.543701171875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1528.3365478515625,
+        "trigger_pressure": 1528.3365478515625,
+        "activation": 1,
+        "clock": 72.9059066772461,
+        "event_time": 125.73774719238281,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 125.73774719238281,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 976.8480224609375,
+        "trigger_pressure": 977.8480224609375,
+        "activation": 1,
+        "clock": 219.669921875,
+        "event_time": 122.36312103271484,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 122.36312103271484,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 350.6785888671875,
+        "trigger_pressure": 350.6785888671875,
+        "activation": -1,
+        "clock": 271.6222839355469,
+        "event_time": 60.391822814941406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 60.391822814941406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 791.369384765625,
+        "trigger_pressure": 791.369384765625,
+        "activation": 1,
+        "clock": 167.13076782226562,
+        "event_time": 17.156259536743164,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 17.156259536743164,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1330.07421875,
+        "trigger_pressure": 1331.07421875,
+        "activation": 2,
+        "clock": 265.6525573730469,
+        "event_time": 225.46446228027344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 225.46446228027344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1239.309326171875,
+        "trigger_pressure": 1238.309326171875,
+        "activation": -1,
+        "clock": 77.23622131347656,
+        "event_time": 2.581122875213623,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 2.581122875213623,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1657.9661865234375,
+        "trigger_pressure": 1658.9661865234375,
+        "activation": -1,
+        "clock": 222.78952026367188,
+        "event_time": 286.1237487792969,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 286.1237487792969,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 135.2599639892578,
+        "trigger_pressure": 135.2599639892578,
+        "activation": 1,
+        "clock": 127.86705017089844,
+        "event_time": 121.9518814086914,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 121.9518814086914,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 71.96296691894531,
+        "trigger_pressure": 71.96296691894531,
+        "activation": 0,
+        "clock": 16.607463836669922,
+        "event_time": 55.377315521240234,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 16.607463836669922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 565.2136840820312,
+        "trigger_pressure": 565.2136840820312,
+        "activation": 1,
+        "clock": 276.50665283203125,
+        "event_time": 145.70408630371094,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 145.70408630371094,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2190.5654296875,
+        "trigger_pressure": 2190.5654296875,
+        "activation": -1,
+        "clock": 31.48703956604004,
+        "event_time": 161.8152313232422,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 161.8152313232422,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2249.30078125,
+        "trigger_pressure": 2250.30078125,
+        "activation": -1,
+        "clock": 179.03773498535156,
+        "event_time": 223.3299102783203,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 223.3299102783203,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 351.59405517578125,
+        "trigger_pressure": 352.59405517578125,
+        "activation": 1,
+        "clock": 214.57073974609375,
+        "event_time": 290.4832763671875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 290.4832763671875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1001.3161010742188,
+        "trigger_pressure": 1000.3161010742188,
+        "activation": 0,
+        "clock": 230.27252197265625,
+        "event_time": 77.3150405883789,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 77.3150405883789,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1363.7252197265625,
+        "trigger_pressure": 1362.7252197265625,
+        "activation": 0,
+        "clock": 185.10023498535156,
+        "event_time": 90.96395874023438,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 90.96395874023438,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1947.2122802734375,
+        "trigger_pressure": 1948.2122802734375,
+        "activation": 1,
+        "clock": 168.0064697265625,
+        "event_time": 111.86341857910156,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 111.86341857910156,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 650.7499389648438,
+        "trigger_pressure": 651.7499389648438,
+        "activation": 1,
+        "clock": 185.24485778808594,
+        "event_time": 260.5635986328125,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 260.5635986328125,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1264.62158203125,
+        "trigger_pressure": 1264.62158203125,
+        "activation": 0,
+        "clock": 56.960655212402344,
+        "event_time": 215.41966247558594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 56.960655212402344,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 835.0638427734375,
+        "trigger_pressure": 836.0638427734375,
+        "activation": -1,
+        "clock": 258.30224609375,
+        "event_time": 222.7537384033203,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 222.7537384033203,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 191.20347595214844,
+        "trigger_pressure": 190.20347595214844,
+        "activation": 2,
+        "clock": 279.6471862792969,
+        "event_time": 79.00743865966797,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 79.00743865966797,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1029.6280517578125,
+        "trigger_pressure": 1028.6280517578125,
+        "activation": -1,
+        "clock": 41.93197250366211,
+        "event_time": 185.9499969482422,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 185.9499969482422,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1878.39306640625,
+        "trigger_pressure": 1877.39306640625,
+        "activation": -1,
+        "clock": 145.58795166015625,
+        "event_time": 275.2355651855469,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 275.2355651855469,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 886.4140625,
+        "trigger_pressure": 885.4140625,
+        "activation": 0,
+        "clock": 133.50624084472656,
+        "event_time": 188.09579467773438,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 188.09579467773438,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 141.77911376953125,
+        "trigger_pressure": 140.77911376953125,
+        "activation": 0,
+        "clock": 9.42917251586914,
+        "event_time": 169.40760803222656,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 169.40760803222656,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2037.7987060546875,
+        "trigger_pressure": 2037.7987060546875,
+        "activation": 2,
+        "clock": 199.04776000976562,
+        "event_time": 113.42269134521484,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 113.42269134521484,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 871.5350952148438,
+        "trigger_pressure": 871.5350952148438,
+        "activation": 2,
+        "clock": 171.6571044921875,
+        "event_time": 123.21589660644531,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 123.21589660644531,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1047.684326171875,
+        "trigger_pressure": 1046.684326171875,
+        "activation": 2,
+        "clock": 1.8628294467926025,
+        "event_time": 256.10614013671875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 256.10614013671875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1129.45751953125,
+        "trigger_pressure": 1130.45751953125,
+        "activation": -1,
+        "clock": 284.067626953125,
+        "event_time": 188.19358825683594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 188.19358825683594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 620.5247192382812,
+        "trigger_pressure": 621.5247192382812,
+        "activation": -1,
+        "clock": 50.139408111572266,
+        "event_time": 265.96258544921875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 265.96258544921875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 906.6732788085938,
+        "trigger_pressure": 905.6732788085938,
+        "activation": 0,
+        "clock": 215.51089477539062,
+        "event_time": 184.25953674316406,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 184.25953674316406,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1422.5096435546875,
+        "trigger_pressure": 1422.5096435546875,
+        "activation": 1,
+        "clock": 252.03778076171875,
+        "event_time": 97.41242980957031,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 97.41242980957031,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 720.3834228515625,
+        "trigger_pressure": 719.3834228515625,
+        "activation": 1,
+        "clock": 290.3612060546875,
+        "event_time": 191.38340759277344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 191.38340759277344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 139.7188720703125,
+        "trigger_pressure": 139.7188720703125,
+        "activation": 2,
+        "clock": 153.97210693359375,
+        "event_time": 34.701263427734375,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 34.701263427734375,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1192.2725830078125,
+        "trigger_pressure": 1192.2725830078125,
+        "activation": 2,
+        "clock": 221.7423553466797,
+        "event_time": 0.8250775933265686,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 0.8250775933265686,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 286.1036376953125,
+        "trigger_pressure": 287.1036376953125,
+        "activation": -1,
+        "clock": 122.96788024902344,
+        "event_time": 83.16104888916016,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 83.16104888916016,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2143.65625,
+        "trigger_pressure": 2142.65625,
+        "activation": 0,
+        "clock": 269.0755920410156,
+        "event_time": 40.750274658203125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 40.750274658203125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 302.6745300292969,
+        "trigger_pressure": 302.6745300292969,
+        "activation": 0,
+        "clock": 120.9025650024414,
+        "event_time": 267.8094787597656,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 120.9025650024414,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1191.7862548828125,
+        "trigger_pressure": 1191.7862548828125,
+        "activation": 1,
+        "clock": 41.435081481933594,
+        "event_time": 64.65618896484375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 64.65618896484375,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 756.08203125,
+        "trigger_pressure": 755.08203125,
+        "activation": 1,
+        "clock": 272.8433837890625,
+        "event_time": 243.38758850097656,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 243.38758850097656,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1211.36279296875,
+        "trigger_pressure": 1211.36279296875,
+        "activation": -1,
+        "clock": 42.05783462524414,
+        "event_time": 161.1504364013672,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 161.1504364013672,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1310.092041015625,
+        "trigger_pressure": 1309.092041015625,
+        "activation": 1,
+        "clock": 183.7378387451172,
+        "event_time": 295.9971923828125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 295.9971923828125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1547.3040771484375,
+        "trigger_pressure": 1548.3040771484375,
+        "activation": 0,
+        "clock": 203.71539306640625,
+        "event_time": 225.2666015625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 203.71539306640625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1535.515625,
+        "trigger_pressure": 1535.515625,
+        "activation": 2,
+        "clock": 138.81092834472656,
+        "event_time": 212.52249145507812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 212.52249145507812,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1240.4000244140625,
+        "trigger_pressure": 1241.4000244140625,
+        "activation": 2,
+        "clock": 200.49998474121094,
+        "event_time": 40.54487228393555,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 40.54487228393555,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 65.6505126953125,
+        "trigger_pressure": 66.6505126953125,
+        "activation": 1,
+        "clock": 96.2331771850586,
+        "event_time": 29.89910888671875,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 29.89910888671875,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1671.5819091796875,
+        "trigger_pressure": 1671.5819091796875,
+        "activation": 1,
+        "clock": 196.20010375976562,
+        "event_time": 32.86601257324219,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 32.86601257324219,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1319.197509765625,
+        "trigger_pressure": 1319.197509765625,
+        "activation": 0,
+        "clock": 92.80825805664062,
+        "event_time": 214.20086669921875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 92.80825805664062,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1556.9146728515625,
+        "trigger_pressure": 1557.9146728515625,
+        "activation": 2,
+        "clock": 207.30125427246094,
+        "event_time": 180.068115234375,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 180.068115234375,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1462.7802734375,
+        "trigger_pressure": 1463.7802734375,
+        "activation": 0,
+        "clock": 222.0713653564453,
+        "event_time": 198.8675079345703,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 222.0713653564453,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 971.7361450195312,
+        "trigger_pressure": 971.7361450195312,
+        "activation": -1,
+        "clock": 149.16627502441406,
+        "event_time": 134.80133056640625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 134.80133056640625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 484.26837158203125,
+        "trigger_pressure": 483.26837158203125,
+        "activation": -1,
+        "clock": 253.09164428710938,
+        "event_time": 267.30084228515625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 267.30084228515625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 986.4879150390625,
+        "trigger_pressure": 986.4879150390625,
+        "activation": 0,
+        "clock": 115.32862091064453,
+        "event_time": 259.0667724609375,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 115.32862091064453,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 133.6908721923828,
+        "trigger_pressure": 133.6908721923828,
+        "activation": 0,
+        "clock": 235.12403869628906,
+        "event_time": 107.13970947265625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 235.12403869628906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 209.32872009277344,
+        "trigger_pressure": 208.32872009277344,
+        "activation": 0,
+        "clock": 141.35101318359375,
+        "event_time": 129.9713897705078,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 129.9713897705078,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 37.97257614135742,
+        "trigger_pressure": 38.97257614135742,
+        "activation": 0,
+        "clock": 149.7884063720703,
+        "event_time": 3.4202582836151123,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 149.7884063720703,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1104.8963623046875,
+        "trigger_pressure": 1103.8963623046875,
+        "activation": 0,
+        "clock": 265.7408752441406,
+        "event_time": 262.7108459472656,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 262.7108459472656,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1245.575927734375,
+        "trigger_pressure": 1246.575927734375,
+        "activation": 2,
+        "clock": 290.1253967285156,
+        "event_time": 251.24147033691406,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 251.24147033691406,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 613.3849487304688,
+        "trigger_pressure": 612.3849487304688,
+        "activation": 2,
+        "clock": 173.65518188476562,
+        "event_time": 178.39219665527344,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 178.39219665527344,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1768.4588623046875,
+        "trigger_pressure": 1767.4588623046875,
+        "activation": 0,
+        "clock": 116.35966491699219,
+        "event_time": 134.19076538085938,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 134.19076538085938,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 7.199181079864502,
+        "trigger_pressure": 7.199181079864502,
+        "activation": 2,
+        "clock": 221.8197479248047,
+        "event_time": 296.04638671875,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 296.04638671875,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 147.9106903076172,
+        "trigger_pressure": 147.9106903076172,
+        "activation": 2,
+        "clock": 227.80133056640625,
+        "event_time": 217.59181213378906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 217.59181213378906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1718.406005859375,
+        "trigger_pressure": 1717.406005859375,
+        "activation": 0,
+        "clock": 168.83901977539062,
+        "event_time": 209.99288940429688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 209.99288940429688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2061.37060546875,
+        "trigger_pressure": 2060.37060546875,
+        "activation": -1,
+        "clock": 186.5720672607422,
+        "event_time": 4.774201393127441,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 4.774201393127441,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 36.54518508911133,
+        "trigger_pressure": 35.54518508911133,
+        "activation": 2,
+        "clock": 250.59400939941406,
+        "event_time": 193.88726806640625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 193.88726806640625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1726.905029296875,
+        "trigger_pressure": 1727.905029296875,
+        "activation": 2,
+        "clock": 200.51080322265625,
+        "event_time": 182.798828125,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 182.798828125,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 127.38589477539062,
+        "trigger_pressure": 128.38589477539062,
+        "activation": 2,
+        "clock": 130.71998596191406,
+        "event_time": 271.1539306640625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 271.1539306640625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1328.531494140625,
+        "trigger_pressure": 1327.531494140625,
+        "activation": 1,
+        "clock": 273.5581970214844,
+        "event_time": 286.9586486816406,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 286.9586486816406,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 462.44830322265625,
+        "trigger_pressure": 463.44830322265625,
+        "activation": 1,
+        "clock": 8.377111434936523,
+        "event_time": 71.53643035888672,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 71.53643035888672,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 564.1846923828125,
+        "trigger_pressure": 563.1846923828125,
+        "activation": 1,
+        "clock": 216.66265869140625,
+        "event_time": 67.54856872558594,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 67.54856872558594,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 275.5840759277344,
+        "trigger_pressure": 276.5840759277344,
+        "activation": 2,
+        "clock": 98.40438842773438,
+        "event_time": 81.88798522949219,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 81.88798522949219,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1654.7562255859375,
+        "trigger_pressure": 1653.7562255859375,
+        "activation": 0,
+        "clock": 232.12139892578125,
+        "event_time": 143.76351928710938,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 143.76351928710938,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 48.53711700439453,
+        "trigger_pressure": 47.53711700439453,
+        "activation": 0,
+        "clock": 187.2339324951172,
+        "event_time": 180.7085418701172,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 180.7085418701172,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 94.59677124023438,
+        "trigger_pressure": 95.59677124023438,
+        "activation": 1,
+        "clock": 144.62339782714844,
+        "event_time": 83.55078125,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 83.55078125,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 661.2017211914062,
+        "trigger_pressure": 660.2017211914062,
+        "activation": 0,
+        "clock": 177.7721405029297,
+        "event_time": 199.44883728027344,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 199.44883728027344,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2137.00439453125,
+        "trigger_pressure": 2137.00439453125,
+        "activation": 2,
+        "clock": 26.316883087158203,
+        "event_time": 41.27522659301758,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 41.27522659301758,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1986.3193359375,
+        "trigger_pressure": 1986.3193359375,
+        "activation": 2,
+        "clock": 171.64608764648438,
+        "event_time": 97.67498779296875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 97.67498779296875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 267.6414794921875,
+        "trigger_pressure": 267.6414794921875,
+        "activation": 1,
+        "clock": 118.42603302001953,
+        "event_time": 156.2795867919922,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 156.2795867919922,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1430.2156982421875,
+        "trigger_pressure": 1429.2156982421875,
+        "activation": 2,
+        "clock": 156.23834228515625,
+        "event_time": 244.09629821777344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 244.09629821777344,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1639.3646240234375,
+        "trigger_pressure": 1639.3646240234375,
+        "activation": -1,
+        "clock": 125.25479125976562,
+        "event_time": 250.62863159179688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 250.62863159179688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 11.812302589416504,
+        "trigger_pressure": 10.812302589416504,
+        "activation": 2,
+        "clock": 70.41632080078125,
+        "event_time": 268.49444580078125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 268.49444580078125,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 663.4091796875,
+        "trigger_pressure": 664.4091796875,
+        "activation": 1,
+        "clock": 77.57573699951172,
+        "event_time": 151.85748291015625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 151.85748291015625,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1529.5858154296875,
+        "trigger_pressure": 1529.5858154296875,
+        "activation": 2,
+        "clock": 220.68023681640625,
+        "event_time": 237.18565368652344,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 237.18565368652344,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 913.1410522460938,
+        "trigger_pressure": 913.1410522460938,
+        "activation": 2,
+        "clock": 38.427940368652344,
+        "event_time": 192.78236389160156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 192.78236389160156,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1274.6240234375,
+        "trigger_pressure": 1275.6240234375,
+        "activation": 0,
+        "clock": 10.872926712036133,
+        "event_time": 54.41334915161133,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 10.872926712036133,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 680.2396240234375,
+        "trigger_pressure": 679.2396240234375,
+        "activation": 0,
+        "clock": 196.4346160888672,
+        "event_time": 129.53668212890625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 129.53668212890625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 221.8224334716797,
+        "trigger_pressure": 221.8224334716797,
+        "activation": 1,
+        "clock": 233.1595458984375,
+        "event_time": 276.1939392089844,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 276.1939392089844,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1498.648193359375,
+        "trigger_pressure": 1497.648193359375,
+        "activation": 0,
+        "clock": 204.971923828125,
+        "event_time": 168.49110412597656,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 168.49110412597656,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1341.46826171875,
+        "trigger_pressure": 1340.46826171875,
+        "activation": 2,
+        "clock": 129.7556915283203,
+        "event_time": 38.40227127075195,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 38.40227127075195,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1331.405517578125,
+        "trigger_pressure": 1331.405517578125,
+        "activation": 1,
+        "clock": 0.5090750455856323,
+        "event_time": 29.72823715209961,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 29.72823715209961,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 293.7122497558594,
+        "trigger_pressure": 294.7122497558594,
+        "activation": 2,
+        "clock": 7.023352146148682,
+        "event_time": 23.10952377319336,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 23.10952377319336,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2019.99853515625,
+        "trigger_pressure": 2019.99853515625,
+        "activation": 2,
+        "clock": 174.2021942138672,
+        "event_time": 176.39077758789062,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 176.39077758789062,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1803.0008544921875,
+        "trigger_pressure": 1803.0008544921875,
+        "activation": 1,
+        "clock": 179.6419677734375,
+        "event_time": 273.7354431152344,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 273.7354431152344,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1390.19384765625,
+        "trigger_pressure": 1390.19384765625,
+        "activation": 1,
+        "clock": 238.43003845214844,
+        "event_time": 94.84261322021484,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 94.84261322021484,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 83.18486022949219,
+        "trigger_pressure": 84.18486022949219,
+        "activation": -1,
+        "clock": 78.21321105957031,
+        "event_time": 73.97077941894531,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 73.97077941894531,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1719.7186279296875,
+        "trigger_pressure": 1719.7186279296875,
+        "activation": 1,
+        "clock": 96.93619537353516,
+        "event_time": 62.49972152709961,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 62.49972152709961,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1609.522216796875,
+        "trigger_pressure": 1610.522216796875,
+        "activation": 1,
+        "clock": 9.86476993560791,
+        "event_time": 259.9744873046875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 259.9744873046875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 140.6891632080078,
+        "trigger_pressure": 141.6891632080078,
+        "activation": 1,
+        "clock": 3.8986072540283203,
+        "event_time": 205.90798950195312,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 205.90798950195312,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1171.18798828125,
+        "trigger_pressure": 1171.18798828125,
+        "activation": 1,
+        "clock": 146.25534057617188,
+        "event_time": 234.9346466064453,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 234.9346466064453,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 224.2727813720703,
+        "trigger_pressure": 223.2727813720703,
+        "activation": 1,
+        "clock": 82.71806335449219,
+        "event_time": 134.95034790039062,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 134.95034790039062,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 74.39176940917969,
+        "trigger_pressure": 73.39176940917969,
+        "activation": 1,
+        "clock": 1.5288891792297363,
+        "event_time": 109.51384735107422,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 109.51384735107422,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 799.153564453125,
+        "trigger_pressure": 800.153564453125,
+        "activation": 1,
+        "clock": 108.98037719726562,
+        "event_time": 283.69158935546875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 283.69158935546875,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1900.463623046875,
+        "trigger_pressure": 1899.463623046875,
+        "activation": 1,
+        "clock": 110.59295654296875,
+        "event_time": 102.26541137695312,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 102.26541137695312,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 216.9202423095703,
+        "trigger_pressure": 215.9202423095703,
+        "activation": 0,
+        "clock": 77.88572692871094,
+        "event_time": 242.26947021484375,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 242.26947021484375,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 272.6420593261719,
+        "trigger_pressure": 273.6420593261719,
+        "activation": 2,
+        "clock": 206.52032470703125,
+        "event_time": 242.38671875,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 242.38671875,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2254.811279296875,
+        "trigger_pressure": 2253.811279296875,
+        "activation": 2,
+        "clock": 104.28910827636719,
+        "event_time": 36.76736831665039,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 36.76736831665039,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 182.2889862060547,
+        "trigger_pressure": 181.2889862060547,
+        "activation": 1,
+        "clock": 222.30264282226562,
+        "event_time": 90.67375946044922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 90.67375946044922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 636.5849609375,
+        "trigger_pressure": 636.5849609375,
+        "activation": -1,
+        "clock": 37.74211502075195,
+        "event_time": 43.701778411865234,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 43.701778411865234,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1716.77099609375,
+        "trigger_pressure": 1716.77099609375,
+        "activation": -1,
+        "clock": 11.80711841583252,
+        "event_time": 261.0646057128906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 261.0646057128906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1777.380859375,
+        "trigger_pressure": 1777.380859375,
+        "activation": 2,
+        "clock": 171.4127655029297,
+        "event_time": 242.36318969726562,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 242.36318969726562,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1208.7557373046875,
+        "trigger_pressure": 1208.7557373046875,
+        "activation": 1,
+        "clock": 86.55581665039062,
+        "event_time": 240.78543090820312,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 240.78543090820312,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 346.8144226074219,
+        "trigger_pressure": 346.8144226074219,
+        "activation": 0,
+        "clock": 103.00623321533203,
+        "event_time": 185.9152374267578,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 103.00623321533203,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 688.6708984375,
+        "trigger_pressure": 688.6708984375,
+        "activation": 2,
+        "clock": 198.28640747070312,
+        "event_time": 203.84837341308594,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 203.84837341308594,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 914.4639892578125,
+        "trigger_pressure": 915.4639892578125,
+        "activation": 2,
+        "clock": 135.79803466796875,
+        "event_time": 95.81703186035156,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 95.81703186035156,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1489.9400634765625,
+        "trigger_pressure": 1490.9400634765625,
+        "activation": 0,
+        "clock": 5.147618770599365,
+        "event_time": 270.7896728515625,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 5.147618770599365,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 447.32452392578125,
+        "trigger_pressure": 446.32452392578125,
+        "activation": 0,
+        "clock": 286.4483947753906,
+        "event_time": 74.02079010009766,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 74.02079010009766,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1457.248779296875,
+        "trigger_pressure": 1456.248779296875,
+        "activation": -1,
+        "clock": 183.25897216796875,
+        "event_time": 141.81967163085938,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 141.81967163085938,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1772.697265625,
+        "trigger_pressure": 1771.697265625,
+        "activation": 2,
+        "clock": 173.25904846191406,
+        "event_time": 260.5731506347656,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 260.5731506347656,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 127.2145767211914,
+        "trigger_pressure": 127.2145767211914,
+        "activation": 0,
+        "clock": 93.84903717041016,
+        "event_time": 289.0533142089844,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 93.84903717041016,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 647.7111206054688,
+        "trigger_pressure": 647.7111206054688,
+        "activation": 0,
+        "clock": 90.023193359375,
+        "event_time": 24.72838592529297,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 90.023193359375,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1936.7469482421875,
+        "trigger_pressure": 1937.7469482421875,
+        "activation": -1,
+        "clock": 254.28013610839844,
+        "event_time": 278.7110900878906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 278.7110900878906,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 65.50525665283203,
+        "trigger_pressure": 66.50525665283203,
+        "activation": 1,
+        "clock": 22.000900268554688,
+        "event_time": 239.78224182128906,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 239.78224182128906,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 26.427976608276367,
+        "trigger_pressure": 26.427976608276367,
+        "activation": 1,
+        "clock": 73.78665161132812,
+        "event_time": 133.52662658691406,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 133.52662658691406,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1651.1617431640625,
+        "trigger_pressure": 1650.1617431640625,
+        "activation": 2,
+        "clock": 167.1655731201172,
+        "event_time": 213.1797332763672,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 213.1797332763672,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1675.2340087890625,
+        "trigger_pressure": 1676.2340087890625,
+        "activation": -1,
+        "clock": 282.17913818359375,
+        "event_time": 127.37043762207031,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 127.37043762207031,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1127.7178955078125,
+        "trigger_pressure": 1127.7178955078125,
+        "activation": 2,
+        "clock": 36.027130126953125,
+        "event_time": 59.853050231933594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 59.853050231933594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 783.2799682617188,
+        "trigger_pressure": 784.2799682617188,
+        "activation": 1,
+        "clock": 227.22439575195312,
+        "event_time": 166.88546752929688,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 166.88546752929688,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1779.1480712890625,
+        "trigger_pressure": 1779.1480712890625,
+        "activation": 2,
+        "clock": 270.97479248046875,
+        "event_time": 176.12095642089844,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 176.12095642089844,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 154.70384216308594,
+        "trigger_pressure": 155.70384216308594,
+        "activation": 0,
+        "clock": 233.105712890625,
+        "event_time": 235.3290252685547,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 233.105712890625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 136.11439514160156,
+        "trigger_pressure": 135.11439514160156,
+        "activation": -1,
+        "clock": 251.77001953125,
+        "event_time": 238.5548553466797,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 238.5548553466797,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2259.97509765625,
+        "trigger_pressure": 2258.97509765625,
+        "activation": 0,
+        "clock": 289.2789306640625,
+        "event_time": 36.66020202636719,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 36.66020202636719,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2113.537353515625,
+        "trigger_pressure": 2114.537353515625,
+        "activation": -1,
+        "clock": 99.555419921875,
+        "event_time": 261.521728515625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 261.521728515625,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2026.9041748046875,
+        "trigger_pressure": 2025.9041748046875,
+        "activation": 0,
+        "clock": 280.0508117675781,
+        "event_time": 176.70932006835938,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 176.70932006835938,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 900.5374145507812,
+        "trigger_pressure": 900.5374145507812,
+        "activation": 2,
+        "clock": 205.79098510742188,
+        "event_time": 122.02108001708984,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 122.02108001708984,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 577.6571044921875,
+        "trigger_pressure": 576.6571044921875,
+        "activation": 2,
+        "clock": 272.9395751953125,
+        "event_time": 176.87939453125,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 176.87939453125,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1718.34375,
+        "trigger_pressure": 1718.34375,
+        "activation": 2,
+        "clock": 67.85894012451172,
+        "event_time": 257.5694885253906,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 257.5694885253906,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1268.0177001953125,
+        "trigger_pressure": 1268.0177001953125,
+        "activation": 0,
+        "clock": 137.4309539794922,
+        "event_time": 27.67442512512207,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 137.4309539794922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 980.7418212890625,
+        "trigger_pressure": 980.7418212890625,
+        "activation": 2,
+        "clock": 136.77215576171875,
+        "event_time": 167.0966339111328,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 167.0966339111328,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 511.2812194824219,
+        "trigger_pressure": 511.2812194824219,
+        "activation": -1,
+        "clock": 209.0958251953125,
+        "event_time": 274.5337219238281,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 274.5337219238281,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2261.694091796875,
+        "trigger_pressure": 2260.694091796875,
+        "activation": 0,
+        "clock": 64.88949584960938,
+        "event_time": 297.3374938964844,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 297.3374938964844,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1760.665283203125,
+        "trigger_pressure": 1760.665283203125,
+        "activation": 1,
+        "clock": 207.62779235839844,
+        "event_time": 48.433082580566406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 48.433082580566406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 87.9926528930664,
+        "trigger_pressure": 87.9926528930664,
+        "activation": 2,
+        "clock": 142.99688720703125,
+        "event_time": 47.81370544433594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 47.81370544433594,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1740.525390625,
+        "trigger_pressure": 1740.525390625,
+        "activation": 0,
+        "clock": 59.009090423583984,
+        "event_time": 124.6103744506836,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 59.009090423583984,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1973.2369384765625,
+        "trigger_pressure": 1972.2369384765625,
+        "activation": 1,
+        "clock": 139.0787811279297,
+        "event_time": 101.438720703125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 101.438720703125,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2094.720703125,
+        "trigger_pressure": 2095.720703125,
+        "activation": 0,
+        "clock": 49.34120559692383,
+        "event_time": 49.69926071166992,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 49.34120559692383,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 71.43787384033203,
+        "trigger_pressure": 71.43787384033203,
+        "activation": 1,
+        "clock": 112.7891845703125,
+        "event_time": 135.67572021484375,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 135.67572021484375,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 760.0115356445312,
+        "trigger_pressure": 760.0115356445312,
+        "activation": 0,
+        "clock": 59.300819396972656,
+        "event_time": 260.7199401855469,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 59.300819396972656,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": true
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1086.5498046875,
+        "trigger_pressure": 1085.5498046875,
+        "activation": -1,
+        "clock": 252.22616577148438,
+        "event_time": 290.6938171386719,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 290.6938171386719,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1667.4168701171875,
+        "trigger_pressure": 1667.4168701171875,
+        "activation": 1,
+        "clock": 266.9592590332031,
+        "event_time": 43.77676773071289,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 43.77676773071289,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1454.9879150390625,
+        "trigger_pressure": 1455.9879150390625,
+        "activation": -1,
+        "clock": 88.36756134033203,
+        "event_time": 130.59486389160156,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 130.59486389160156,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1692.04833984375,
+        "trigger_pressure": 1691.04833984375,
+        "activation": -1,
+        "clock": 238.7388153076172,
+        "event_time": 209.38058471679688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 209.38058471679688,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1479.63232421875,
+        "trigger_pressure": 1478.63232421875,
+        "activation": 2,
+        "clock": 78.74056243896484,
+        "event_time": 243.01992797851562,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 243.01992797851562,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 995.7572631835938,
+        "trigger_pressure": 994.7572631835938,
+        "activation": 1,
+        "clock": 40.17498016357422,
+        "event_time": 292.8099365234375,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 292.8099365234375,
+        "valves": [
+          {
+            "opening": 1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1824.41796875,
+        "trigger_pressure": 1825.41796875,
+        "activation": 2,
+        "clock": 183.2132568359375,
+        "event_time": 276.7604675292969,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 276.7604675292969,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 30.485031127929688,
+        "trigger_pressure": 31.485031127929688,
+        "activation": 1,
+        "clock": 111.33848571777344,
+        "event_time": 119.10884094238281,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 119.10884094238281,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 817.8067016601562,
+        "trigger_pressure": 818.8067016601562,
+        "activation": 2,
+        "clock": 238.3169403076172,
+        "event_time": 42.05950164794922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 42.05950164794922,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 408.7388916015625,
+        "trigger_pressure": 409.7388916015625,
+        "activation": -1,
+        "clock": 251.12820434570312,
+        "event_time": 270.4947814941406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 270.4947814941406,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 100,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2275.84033203125,
+        "trigger_pressure": 2274.84033203125,
+        "activation": 0,
+        "clock": 249.85284423828125,
+        "event_time": 248.87310791015625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 248.87310791015625,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1063.4412841796875,
+        "trigger_pressure": 1064.4412841796875,
+        "activation": 1,
+        "clock": 230.81394958496094,
+        "event_time": 34.17485427856445,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 34.17485427856445,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1872.7333984375,
+        "trigger_pressure": 1871.7333984375,
+        "activation": 0,
+        "clock": 277.6280822753906,
+        "event_time": 287.0509948730469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 0,
+        "event_time": 287.0509948730469,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": true
+          },
+          {
+            "opening": 0,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 447.9549255371094,
+        "trigger_pressure": 447.9549255371094,
+        "activation": -1,
+        "clock": 6.458356857299805,
+        "event_time": 133.17156982421875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 133.17156982421875,
+        "valves": [
+          {
+            "opening": 100,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1052.9049072265625,
+        "trigger_pressure": 1053.9049072265625,
+        "activation": 1,
+        "clock": 223.4804229736328,
+        "event_time": 26.464441299438477,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 1,
+        "event_time": 26.464441299438477,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": true
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1666.4471435546875,
+        "trigger_pressure": 1666.4471435546875,
+        "activation": 2,
+        "clock": 39.28323745727539,
+        "event_time": 112.25125885009766,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 112.25125885009766,
+        "valves": [
+          {
+            "opening": 50,
+            "inhibited": false
+          },
+          {
+            "opening": -1,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1790.0758056640625,
+        "trigger_pressure": 1789.0758056640625,
+        "activation": 2,
+        "clock": 161.53677368164062,
+        "event_time": 249.51870727539062,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ]
+      },
+      "expected": {
+        "activation": 2,
+        "event_time": 249.51870727539062,
+        "valves": [
+          {
+            "opening": 0,
+            "inhibited": false
+          },
+          {
+            "opening": 100,
+            "inhibited": true
+          }
+        ],
+        "activated": false
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 2144.609619140625,
+        "trigger_pressure": 2143.609619140625,
+        "activation": -1,
+        "clock": 91.092041015625,
+        "event_time": 66.80492401123047,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ]
+      },
+      "expected": {
+        "activation": -1,
+        "event_time": 66.80492401123047,
+        "valves": [
+          {
+            "opening": -1,
+            "inhibited": false
+          },
+          {
+            "opening": 50,
+            "inhibited": false
+          }
+        ],
+        "activated": false
+      }
+    }
+  ]
+}

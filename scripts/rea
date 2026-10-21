@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+node_directory="$project_root/.tools/node-v24.15.0-linux-x64/bin"
+if [[ ! -x "$node_directory/node" ]]; then
+  echo 'Missing task-local Node.js. See README.md for tool versions.' >&2
+  exit 1
+fi
+export PATH="$node_directory:$PATH"
+export GHIDRA_INSTALL_DIR="$project_root/.tools/ghidra_12.1.4_PUBLIC"
+exec "$project_root/.tools/rea/node_modules/.bin/rea" "$@"

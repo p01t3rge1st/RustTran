@@ -1,0 +1,10 @@
+{
+  "step_button": true,
+  "start_advances_numerical_state": true,
+  "pause_freezes_state": true,
+  "reset_restores_loaded_state": true,
+  "manual_heater_control": true,
+  "gui_state_matches_cli": true,
+  "embedded_sample_loading": true,
+  "paused_after_updates": 361
+}

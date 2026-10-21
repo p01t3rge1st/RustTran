@@ -1,0 +1,4086 @@
+{
+  "method": "Original 0x51b13c-0x51b174 and 0x51b196 store, including actual\nmsvbvm60 __vbaR8IntI2 machine code. Checks floor (not nearest rounding),\nsigned I16 endpoints and Single step values. DLL returns x87 control 0x133f;\nsubsequent initializer math is outside this isolated comparison.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 0.0
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 0
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 0.0005000000237487257
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 0
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -0.0005000000237487257
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -1
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 0.5
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 500
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 0.0010000000474974513
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 1.0
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1000
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -1.0
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -1000
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 32.766998291015625
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 32766
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -32.76750183105469
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -32768
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -2.5888824462890625
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -2589
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 13.520090103149414
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 13520
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 25.8043212890625
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 25804
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 32.64091110229492
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 32640
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 15.854116439819336
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 15854
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -20.428604125976562
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -20429
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -0.3977455198764801
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -398
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.418614387512207
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14418
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -32.22869110107422
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -32229
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 29.259403228759766
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 29259
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 32.29169845581055
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 32291
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -7.638176441192627
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -7639
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 6.807913780212402
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 6807
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 1.3977218866348267
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1397
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -16.34340476989746
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -16344
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -10.72558879852295
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -10726
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 20.074384689331055
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 20074
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.5466158390045166
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2546
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -29.95559310913086
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -29956
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -5.410476207733154
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -5411
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -23.03483009338379
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -23035
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -1.488387107849121
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -1489
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -30.247798919677734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -30248
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 22.99309730529785
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 22993
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 27.373022079467773
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 27373
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.605644226074219
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11605
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -13.209607124328613
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -13210
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 5.803872585296631
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 5803
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -8.04509449005127
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -8046
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.9118871688842773
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2911
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -31.690088272094727
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -31691
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -10.283836364746094
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -10284
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -22.56574821472168
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -22566
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -12.19688606262207
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -12197
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -12.104811668395996
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -12105
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -24.95798683166504
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -24958
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -5.7220258712768555
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -5723
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 20.336883544921875
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 20336
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 15.432351112365723
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 15432
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -10.353031158447266
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -10354
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -26.642606735229492
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -26643
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 3.606247901916504
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 3606
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 21.547073364257812
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 21547
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -7.5717902183532715
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -7572
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -2.470500946044922
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -2471
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -4.049049377441406
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -4050
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -10.92418098449707
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -10925
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 20.988210678100586
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 20988
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.706357955932617
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27707
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -9.929220199584961
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -9930
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -3.8237922191619873
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -3824
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 0.9529301524162292
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 952
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.556682586669922
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27557
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -5.658943176269531
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -5659
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -6.00750207901001
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -6008
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.862768173217773
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11862
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -20.94111442565918
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -20942
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -10.527369499206543
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -10528
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.186812400817871
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11187
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -17.496749877929688
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -17497
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 3.1184680461883545
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 3118
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 21.624147415161133
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 21624
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -31.601469039916992
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -31602
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 23.798288345336914
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 23798
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 6.036970138549805
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 6036
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -24.27589225769043
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -24276
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 30.6711368560791
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 30671
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -16.97570037841797
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -16976
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.2879638671875
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11287
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 9.91701889038086
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 9917
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.517706871032715
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14517
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 13.375703811645508
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 13375
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.9166154861450195
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2916
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 21.103290557861328
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 21103
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 1.3627694845199585
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1362
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 10.16283893585205
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 10162
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -26.201269149780273
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -26202
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 15.20966625213623
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 15209
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -5.655267238616943
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -5656
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 8.03072452545166
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 8030
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -0.26563820242881775
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -266
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -26.597936630249023
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -26598
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 22.89045524597168
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 22890
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -3.3733837604522705
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -3374
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -30.26907730102539
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -30270
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -2.7189929485321045
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -2719
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -21.593994140625
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -21594
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -7.496445178985596
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -7497
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.290200233459473
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14290
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -30.020214080810547
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -30021
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 7.473291873931885
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 7473
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.415496826171875
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11416
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -16.017683029174805
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -16018
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 31.160396575927734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 31160
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 3.0558717250823975
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 3055
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -25.813005447387695
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -25814
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -14.369852066040039
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -14370
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 17.12664222717285
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 17126
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 24.9093017578125
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 24909
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -9.340941429138184
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -9341
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 23.363679885864258
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 23363
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -31.012144088745117
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -31013
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.66025447845459
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11661
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 9.114123344421387
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 9114
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 23.029346466064453
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 23029
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -15.940803527832031
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -15941
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -25.90286636352539
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -25903
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 27.433704376220703
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 27433
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 27.569290161132812
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 27569
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -12.730454444885254
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -12731
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 24.37506866455078
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 24375
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.070366859436035
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14070
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 29.338411331176758
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 29338
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 13.05020809173584
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 13050
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 32.5028076171875
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 32502
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 15.795501708984375
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 15795
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.051896810531616
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2051
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -4.361447334289551
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -4362
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -26.155118942260742
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -26156
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -20.169591903686523
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -20170
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.542282104492188
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11543
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 29.464710235595703
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 29464
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -25.156391143798828
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -25157
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -21.49732208251953
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -21498
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 27.890932083129883
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 27890
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -28.475183486938477
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -28476
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -23.085689544677734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -23086
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -9.757579803466797
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -9758
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -20.34182357788086
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -20342
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -32.4237174987793
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -32424
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 5.7220330238342285
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 5722
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 21.14015007019043
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 21140
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 26.80888557434082
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 26808
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 28.710962295532227
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 28710
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -19.06259536743164
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -19063
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 29.45117950439453
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 29451
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 8.708573341369629
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 8708
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 18.036853790283203
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 18036
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 8.755568504333496
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 8755
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -17.543827056884766
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -17544
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 16.44853401184082
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 16448
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 24.584606170654297
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 24584
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.671687126159668
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2671
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -17.862165451049805
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -17863
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 12.887901306152344
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 12887
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.3843488693237305
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2384
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -22.995941162109375
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -22996
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -16.766998291015625
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -16767
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 4.970963478088379
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 4970
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -5.229317665100098
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -5230
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.572213172912598
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11572
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.3604180812835693
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2360
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 27.628524780273438
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 27628
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -29.131471633911133
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -29132
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -29.654190063476562
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -29655
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.5002665519714355
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2500
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 19.293737411499023
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 19293
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 17.58561134338379
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 17585
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.744413375854492
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14744
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -8.860591888427734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -8861
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -31.559648513793945
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -31560
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 18.18962287902832
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 18189
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 31.19178581237793
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 31191
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 7.889912128448486
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 7889
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 4.4036736488342285
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 4403
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -21.414119720458984
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -21415
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -3.679995536804199
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -3680
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -4.325697898864746
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -4326
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -1.5250991582870483
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -1526
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 26.585559844970703
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 26585
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -32.372798919677734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -32373
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.576611518859863
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11577
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -7.907923698425293
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -7908
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 29.701522827148438
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 29701
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -32.56392288208008
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -32564
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -1.3699243068695068
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -1370
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 1.425360083580017
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1425
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -23.883337020874023
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -23884
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.777873992919922
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11777
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -19.440444946289062
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -19441
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 17.667930603027344
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 17667
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 13.256621360778809
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 13256
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -7.9193243980407715
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -7920
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -3.110243320465088
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -3111
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -14.116190910339355
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -14117
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -25.362789154052734
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -25363
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 6.357264995574951
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 6357
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 28.321847915649414
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 28321
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 28.721101760864258
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 28721
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -17.20737648010254
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -17208
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -3.5678892135620117
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -3568
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 1.0201101303100586
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 1020
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -13.933672904968262
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -13934
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 25.825082778930664
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 25825
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 30.26223373413086
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 30262
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 4.211572170257568
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 4211
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 23.649429321289062
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 23649
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -25.078224182128906
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -25079
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -2.7172670364379883
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -2718
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.33868408203125
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14338
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 11.118755340576172
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 11118
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -6.600009441375732
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -6601
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -12.395872116088867
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -12396
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.89981460571289
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27900
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 8.078789710998535
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 8078
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 26.132360458374023
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 26132
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 16.380189895629883
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 16380
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 10.103266716003418
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 10103
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 21.679737091064453
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 21679
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.981524467468262
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11982
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 25.906816482543945
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 25906
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 30.311908721923828
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 30311
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -8.423157691955566
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -8424
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 4.831967830657959
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 4831
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.26400375366211
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27265
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.630550384521484
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27631
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 22.64910888671875
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 22649
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 14.031414031982422
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 14031
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -16.504074096679688
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -16505
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 2.7001149654388428
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 2700
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -29.83584976196289
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -29836
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 3.3813436031341553
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 3381
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -27.8670711517334
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -27868
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -23.569782257080078
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -23570
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 5.120430946350098
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 5120
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -21.963218688964844
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -21964
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -9.63022232055664
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -9631
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -17.099088668823242
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -17100
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": 25.42096710205078
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": 25420
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -11.7267484664917
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -11727
+      }
+    },
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "extra_singles": {
+          "0x54b414": -13.585681915283203
+        },
+        "stages": [
+          {
+            "kind": "startup_clock"
+          }
+        ]
+      },
+      "expected": {
+        "0x54b700": -13586
+      }
+    }
+  ]
+}

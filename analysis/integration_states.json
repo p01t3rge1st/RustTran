@@ -1,0 +1,484 @@
+{
+  "binary_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "core_entry_va": 5362640,
+  "euler_entry_va": 4827184,
+  "step_va": 5551124,
+  "variant_type_description": "VT_BYREF | VT_R4 (0x4004)",
+  "call_argument_order": [
+    "new_derivative_variant",
+    "previous_derivative_variant",
+    "step_variant",
+    "state_variant"
+  ],
+  "common_step_evidence": {
+    "instruction_va": 5390170,
+    "instruction_hex": "bf14b45400",
+    "description": "EDI=0x54b414; every call stores EDI into step variant payload atEBP-0x110"
+  },
+  "states": [
+    {
+      "index": 1,
+      "call_va": 5390237,
+      "state_va": 5551752,
+      "new_derivative_va": 5551996,
+      "previous_derivative_va": 5552996,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field X via native 0x54b4f0 alias",
+      "semantic_evidence_strength": "authenticated IC field plus native copy",
+      "semantic_evidence": "seed-bindings.json: X -> 0x54b4f0; native instructions at 0x51c0f8 and 0x51c12e copy to 0x54b688; integration_seed_fixtures.json checks all 22 conditions",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390177,
+          "instruction_hex": "c785e0feffff88b65400",
+          "global_va": 5551752
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390205,
+          "instruction_hex": "c78500ffffff64bb5400",
+          "global_va": 5552996
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390221,
+          "instruction_hex": "c78510ffffff7cb75400",
+          "global_va": 5551996
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "call_va": 5390342,
+      "state_va": 5551260,
+      "new_derivative_va": 5551984,
+      "previous_derivative_va": 5553000,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field TM",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: TM -> 0x54b49c; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390282,
+          "instruction_hex": "c785e0feffff9cb45400",
+          "global_va": 5551260
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390310,
+          "instruction_hex": "c78500ffffff68bb5400",
+          "global_va": 5553000
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390326,
+          "instruction_hex": "c78510ffffff70b75400",
+          "global_va": 5551984
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "call_va": 5390435,
+      "state_va": 5551276,
+      "new_derivative_va": 5552004,
+      "previous_derivative_va": 5553004,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field W3",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: W3 -> 0x54b4ac; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390375,
+          "instruction_hex": "c785e0feffffacb45400",
+          "global_va": 5551276
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390403,
+          "instruction_hex": "c78500ffffff6cbb5400",
+          "global_va": 5553004
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390419,
+          "instruction_hex": "c78510ffffff84b75400",
+          "global_va": 5552004
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "call_va": 5390528,
+      "state_va": 5551252,
+      "new_derivative_va": 5551988,
+      "previous_derivative_va": 5553008,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field P",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: P -> 0x54b494; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390468,
+          "instruction_hex": "c785e0feffff94b45400",
+          "global_va": 5551252
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390496,
+          "instruction_hex": "c78500ffffff70bb5400",
+          "global_va": 5553008
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390512,
+          "instruction_hex": "c78510ffffff74b75400",
+          "global_va": 5551988
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "call_va": 5390621,
+      "state_va": 5551268,
+      "new_derivative_va": 5552008,
+      "previous_derivative_va": 5553012,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field V",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: V -> 0x54b4a4; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390561,
+          "instruction_hex": "c785e0feffffa4b45400",
+          "global_va": 5551268
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390589,
+          "instruction_hex": "c78500ffffff74bb5400",
+          "global_va": 5553012
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390605,
+          "instruction_hex": "c78510ffffff88b75400",
+          "global_va": 5552008
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "call_va": 5390714,
+      "state_va": 5551364,
+      "new_derivative_va": 5552080,
+      "previous_derivative_va": 5553020,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field XSGA",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: XSGA -> 0x54b504; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390654,
+          "instruction_hex": "c785e0feffff04b55400",
+          "global_va": 5551364
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390682,
+          "instruction_hex": "c78500ffffff7cbb5400",
+          "global_va": 5553020
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390698,
+          "instruction_hex": "c78510ffffffd0b75400",
+          "global_va": 5552080
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "call_va": 5390832,
+      "state_va": 5551368,
+      "new_derivative_va": 5552084,
+      "previous_derivative_va": 5553024,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field XSGB",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: XSGB -> 0x54b508; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390772,
+          "instruction_hex": "c785e0feffff08b55400",
+          "global_va": 5551368
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390800,
+          "instruction_hex": "c78500ffffff80bb5400",
+          "global_va": 5553024
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390816,
+          "instruction_hex": "c78510ffffffd4b75400",
+          "global_va": 5552084
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "call_va": 5390950,
+      "state_va": 5551356,
+      "new_derivative_va": 5552088,
+      "previous_derivative_va": 5553028,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field PSGA",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: PSGA -> 0x54b4fc; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390890,
+          "instruction_hex": "c785e0fefffffcb45400",
+          "global_va": 5551356
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5390918,
+          "instruction_hex": "c78500ffffff84bb5400",
+          "global_va": 5553028
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5390934,
+          "instruction_hex": "c78510ffffffd8b75400",
+          "global_va": 5552088
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "call_va": 5391043,
+      "state_va": 5551360,
+      "new_derivative_va": 5552092,
+      "previous_derivative_va": 5553032,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field PSGB",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: PSGB -> 0x54b500; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5390983,
+          "instruction_hex": "c785e0feffff00b55400",
+          "global_va": 5551360
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391011,
+          "instruction_hex": "c78500ffffff88bb5400",
+          "global_va": 5553032
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391027,
+          "instruction_hex": "c78510ffffffdcb75400",
+          "global_va": 5552092
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "call_va": 5391136,
+      "state_va": 5551348,
+      "new_derivative_va": 5552096,
+      "previous_derivative_va": 5553036,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field MSGA",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: MSGA -> 0x54b4f4; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5391076,
+          "instruction_hex": "c785e0fefffff4b45400",
+          "global_va": 5551348
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391104,
+          "instruction_hex": "c78500ffffff8cbb5400",
+          "global_va": 5553036
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391120,
+          "instruction_hex": "c78510ffffffe0b75400",
+          "global_va": 5552096
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "call_va": 5391229,
+      "state_va": 5551352,
+      "new_derivative_va": 5552100,
+      "previous_derivative_va": 5553040,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field MSGB",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: MSGB -> 0x54b4f8; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5391169,
+          "instruction_hex": "c785e0fefffff8b45400",
+          "global_va": 5551352
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391197,
+          "instruction_hex": "c78500ffffff90bb5400",
+          "global_va": 5553040
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391213,
+          "instruction_hex": "c78510ffffffe4b75400",
+          "global_va": 5552100
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "call_va": 5391380,
+      "state_va": 5551284,
+      "new_derivative_va": 5551732,
+      "previous_derivative_va": 5553044,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "IC field MBK",
+      "semantic_evidence_strength": "authenticated IC field assignment",
+      "semantic_evidence": "analysis/rea/seed-bindings.json: MBK -> 0x54b4b4; arithmetic checked against original loader blocks in field_conversion_fixtures.json",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5391320,
+          "instruction_hex": "c785e0feffffb4b45400",
+          "global_va": 5551284
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391348,
+          "instruction_hex": "c78500ffffff94bb5400",
+          "global_va": 5553044
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391364,
+          "instruction_hex": "c78510ffffff74b65400",
+          "global_va": 5551732
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "call_va": 5391473,
+      "state_va": 5553056,
+      "new_derivative_va": 5551288,
+      "previous_derivative_va": 5553048,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "unresolved integrated state",
+      "semantic_evidence_strength": "unresolved",
+      "semantic_evidence": "no source field name established",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5391413,
+          "instruction_hex": "c785e0feffffa0bb5400",
+          "global_va": 5553056
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391441,
+          "instruction_hex": "c78500ffffff98bb5400",
+          "global_va": 5553048
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391457,
+          "instruction_hex": "c78510ffffffb8b45400",
+          "global_va": 5551288
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "call_va": 5391690,
+      "state_va": 5554072,
+      "new_derivative_va": 5551784,
+      "previous_derivative_va": 5554080,
+      "step_va": 5551124,
+      "variant_type": 16388,
+      "variable_candidate": "unresolved integrated state",
+      "semantic_evidence_strength": "unresolved",
+      "semantic_evidence": "no source field name established",
+      "address_mapping_evidence_strength": "exact native operands",
+      "operand_evidence": [
+        {
+          "role": "state",
+          "instruction_va": 5391630,
+          "instruction_hex": "c785e0feffff98bf5400",
+          "global_va": 5554072
+        },
+        {
+          "role": "previous_derivative",
+          "instruction_va": 5391658,
+          "instruction_hex": "c78500ffffffa0bf5400",
+          "global_va": 5554080
+        },
+        {
+          "role": "new_derivative",
+          "instruction_va": 5391674,
+          "instruction_hex": "c78510ffffffa8b65400",
+          "global_va": 5551784
+        }
+      ]
+    }
+  ],
+  "core_preintegration_helper_va": 5220576,
+  "source_evidence": "analysis/rea/0x51d3d0.c and analysis/core_integration_disassembly.txt"
+}

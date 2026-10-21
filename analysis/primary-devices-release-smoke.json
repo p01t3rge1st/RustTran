@@ -1,0 +1,31 @@
+{
+  "cwd": "/tmp",
+  "checks": [
+    {
+      "command": "primary-devices-step",
+      "example": "primary-devices-step",
+      "passed": true
+    },
+    {
+      "command": "native-stages",
+      "example": "primary-reference-stages",
+      "passed": true
+    },
+    {
+      "command": "native-stages",
+      "example": "fresh-auxiliary-stages",
+      "passed": true
+    },
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-devices-step",
+      "passed": true
+    },
+    {
+      "command": "fresh-thermal-startup",
+      "example": "fresh-thermal-startup",
+      "passed": true
+    }
+  ],
+  "max_glibc": "2.28"
+}

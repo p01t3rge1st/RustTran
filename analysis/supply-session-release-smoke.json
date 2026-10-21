@@ -1,0 +1,57 @@
+{
+  "cli_runs": [
+    {
+      "command": "supply-system-step",
+      "example": "supply-system-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "native-stages",
+      "example": "supply-system-stages.json",
+      "status": "passed"
+    },
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-supply-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "recovered-session-run",
+      "example": "recovered-session-run.json",
+      "status": "passed"
+    },
+    {
+      "command": "fresh-thermal-startup",
+      "example": "fresh-thermal-startup.json",
+      "status": "passed"
+    },
+    {
+      "command": "accumulator-system-step",
+      "example": "accumulator-system-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-thermal-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "steam-system-step",
+      "example": "steam-system-active-step.json",
+      "status": "passed"
+    }
+  ],
+  "stage_equals_standalone": true,
+  "three_plus_five_equals_eight": true,
+  "command_feedback": true,
+  "csv_samples_match_engine": true,
+  "report_html_rendered": "headless Firefox screenshot inspected",
+  "fresh_startup_singles": 107,
+  "fresh_startup_i16": 14,
+  "max_glibc": {
+    "rusttran": "2.28",
+    "rusttran-cli": "2.28"
+  },
+  "installed_binaries_match": true,
+  "windows": "GUI/CLI cross-compiled, not executed"
+}

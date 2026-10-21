@@ -1,0 +1,44 @@
+{
+  "method": "Original scalar startup constants and early geometry stores under 53-bit x87.\nThe native Double PI store and following property arrays are not exported here;\nB700 VB time-conversion flag is explicitly excluded, not filled with a default.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "stages": [
+          {
+            "kind": "startup_constants"
+          }
+        ]
+      },
+      "expected": {
+        "singles": {
+          "0x54b2f4": 0.05700000002980232,
+          "0x54b2f8": 0.10999999940395355,
+          "0x54b2fc": 14.503999710083008,
+          "0x54b300": 32.0,
+          "0x54b304": 1.7999999523162842,
+          "0x54b308": 0.612500011920929,
+          "0x54b30c": 0.4309999942779541,
+          "0x54b310": 3.2808001041412354,
+          "0x54b314": 3413000.0,
+          "0x54b318": 3600.0,
+          "0x54b31c": 0.30480000376701355,
+          "0x54b320": 10.763999938964844,
+          "0x54b324": 35.314998626708984,
+          "0x54b328": 17.777999877929688,
+          "0x54b32c": 2.2049999237060547,
+          "0x54b334": 0.1850000023841858,
+          "0x54b044": 37.0,
+          "0x54bb08": 0.05999999865889549,
+          "0x54b330": 948.0555419921875,
+          "0x54b70c": -4.999999987376214e-07
+        },
+        "integers": {
+          "0x54bfa8": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rea_npm": "6.4.0",
+  "rea_repository": "https://github.com/morluto/rea",
+  "rea_repository_commit": "c02fb0ea8055f98def2b12ad557aed0faefd3639",
+  "ghidra": "12.1.4",
+  "node": "24.15.0",
+  "java": 21,
+  "native_oracle": {
+    "pefile": "2024.8.26",
+    "unicorn": "2.1.4"
+  }
+}

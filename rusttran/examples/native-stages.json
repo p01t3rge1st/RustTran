@@ -1,0 +1,29 @@
+{
+  "model": "1",
+  "ic": "1",
+  "stages": [
+    {
+      "kind": "numeric_constants"
+    },
+    {
+      "kind": "primary_properties"
+    },
+    {
+      "kind": "primary_liquid"
+    },
+    {
+      "kind": "loop_reference"
+    },
+    {
+      "kind": "thermal_coefficient"
+    },
+    {
+      "kind": "normal_loops",
+      "clock": 0,
+      "failure_times": [
+        150,
+        300
+      ]
+    }
+  ]
+}

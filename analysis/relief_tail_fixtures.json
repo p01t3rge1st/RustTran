@@ -1,0 +1,3126 @@
+{
+  "method": "Original post-discharge numeric/UI decision paths 0x5103d3\u20130x510689.\nCOM state is explicit and command writes/log-branch selection are captured;\noriginal numerical comparisons and final flow copy execute. No UI/event log.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2529.479736328125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7788.60400390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 7788.60400390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5336.63818359375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 5336.63818359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2407.135498046875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3669.976806640625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 3669.976806640625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4072.19482421875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 4072.19482421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8743.982421875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7920.2080078125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 7920.2080078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3119.8740234375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 3119.8740234375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2960.692626953125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5893.65576171875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 5893.65576171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5769.7548828125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 5769.7548828125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8743.9951171875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 432.3141784667969,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 432.3141784667969
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4032.52392578125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 4032.52392578125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1441.321533203125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8651.064453125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 8651.064453125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 5962.7861328125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 5962.7861328125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3763.25830078125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2916.04638671875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2916.04638671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9562.005859375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 9562.005859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2848.382080078125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5745.75244140625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5745.75244140625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2605.037353515625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2605.037353515625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7786.83740234375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7101.4697265625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 7101.4697265625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 400.3446960449219,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 400.3446960449219
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 306.0419006347656,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 8483.919921875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 8483.919921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2725.72314453125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2725.72314453125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8662.3994140625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8237.2626953125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 8237.2626953125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7602.025390625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 7602.025390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1529.820068359375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 5184.84326171875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5184.84326171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6973.51318359375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 6973.51318359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5031.30224609375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7167.12890625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 7167.12890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5799.5771484375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 5799.5771484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6706.97900390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3216.2880859375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 3216.2880859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7445.28076171875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 7445.28076171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3014.393310546875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7059.970703125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 7059.970703125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 214.49485778808594,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 214.49485778808594
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7729.2255859375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1495.9735107421875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 1495.9735107421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9375.9345703125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 9375.9345703125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2269.971923828125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 965.1828002929688,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 965.1828002929688
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 366.4637145996094,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 366.4637145996094
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9128.1279296875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8109.88134765625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 8109.88134765625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6045.15380859375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 6045.15380859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7120.53125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 6468.89453125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 6468.89453125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5996.82177734375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5996.82177734375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7265.60888671875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 1822.078369140625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1822.078369140625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8372.642578125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 8372.642578125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6470.7548828125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 831.0689697265625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 831.0689697265625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1359.4268798828125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1359.4268798828125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2744.793701171875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7830.48388671875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 7830.48388671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2811.28173828125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2811.28173828125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4489.26416015625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4994.1982421875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 4994.1982421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5115.23193359375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5115.23193359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 789.5776977539062,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8446.0,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 8446.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1762.2935791015625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 1762.2935791015625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3155.38037109375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1877.12646484375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 1877.12646484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2558.941650390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 2558.941650390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5169.76953125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8392.1767578125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 8392.1767578125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 208.58316040039062,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 208.58316040039062
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6909.802734375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1198.28662109375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 1198.28662109375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4708.126953125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 4708.126953125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9392.9140625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2956.134765625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2956.134765625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2453.37841796875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2453.37841796875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5723.64990234375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6476.89990234375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 6476.89990234375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3164.06591796875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3164.06591796875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9306.267578125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1620.8778076171875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 1620.8778076171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4620.25146484375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 4620.25146484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5543.1455078125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2206.127685546875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2206.127685546875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1626.1484375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1626.1484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4482.171875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 361.8529052734375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 361.8529052734375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7861.74560546875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 7861.74560546875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6335.89306640625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 333.1990966796875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 333.1990966796875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4842.80859375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 4842.80859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1130.9527587890625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5030.24169921875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5030.24169921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2598.30322265625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2598.30322265625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9489.041015625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3289.86669921875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 3289.86669921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5643.123046875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5643.123046875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7830.71923828125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 5651.77001953125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5651.77001953125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8492.4326171875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 8492.4326171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7760.1689453125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4459.4013671875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 4459.4013671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 8523.99609375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 8523.99609375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9419.154296875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3668.52587890625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 3668.52587890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 755.35791015625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 755.35791015625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3125.162353515625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1600.2723388671875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 1600.2723388671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2789.968505859375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 2789.968505859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5646.53369140625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2224.482421875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2224.482421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 6980.150390625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 6980.150390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6004.18310546875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 867.896240234375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 867.896240234375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 1814.66455078125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 1814.66455078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 665.0372314453125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7396.607421875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 7396.607421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2630.766357421875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2630.766357421875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1801.51171875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3899.127685546875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 3899.127685546875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3657.63037109375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 3657.63037109375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7866.67822265625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7724.92138671875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 7724.92138671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9403.6396484375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 9403.6396484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6402.96923828125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 5306.5439453125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5306.5439453125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1990.6077880859375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1990.6077880859375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7548.05517578125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2150.917724609375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2150.917724609375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5005.95068359375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 5005.95068359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8250.689453125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3472.73291015625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 3472.73291015625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2341.095458984375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2341.095458984375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2754.788330078125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4343.33837890625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 4343.33837890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8702.4384765625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 8702.4384765625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3004.61328125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5492.45068359375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 5492.45068359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 6174.3388671875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 6174.3388671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6885.81201171875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 525.266845703125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 525.266845703125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 208.1614227294922,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 208.1614227294922
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6827.18212890625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2302.193603515625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 2302.193603515625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 8768.958984375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 8768.958984375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9283.392578125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4692.14501953125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 4692.14501953125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3378.4541015625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3378.4541015625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8208.9794921875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9096.2705078125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 9096.2705078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7621.4404296875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 7621.4404296875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9750.046875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3688.586669921875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3688.586669921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3020.4619140625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3020.4619140625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7958.703125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7793.5419921875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 7793.5419921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3201.586669921875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 3201.586669921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3598.843994140625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5028.6259765625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5028.6259765625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 5846.0712890625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5846.0712890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1198.20166015625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1562.2869873046875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1562.2869873046875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9592.4443359375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 9592.4443359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3636.13623046875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 6631.0546875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 6631.0546875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3282.620849609375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 3282.620849609375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 4559.52197265625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2578.908203125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 2578.908203125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 599.2320556640625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 599.2320556640625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4889.4189453125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9898.017578125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 9898.017578125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6380.845703125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 6380.845703125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9799.3798828125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7481.8125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 7481.8125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4277.375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 4277.375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3534.954345703125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3898.504150390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 3898.504150390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7152.9892578125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 7152.9892578125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4722.3994140625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9944.1123046875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 9944.1123046875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9145.0302734375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 9145.0302734375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3935.034912109375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3918.72705078125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3918.72705078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 9170.375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 9170.375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6254.61572265625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 3535.507568359375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 3535.507568359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 43.09368133544922,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 43.09368133544922
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 467.1119079589844,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 9799.740234375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 9799.740234375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6211.05078125,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 6211.05078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 8491.08203125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2035.9632568359375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2035.9632568359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1220.396728515625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1220.396728515625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2205.596923828125,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9108.12890625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 9108.12890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2667.3271484375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2667.3271484375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6068.4912109375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 5915.79541015625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 5915.79541015625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1719.960693359375,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 1719.960693359375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4421.7080078125,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7914.013671875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 7914.013671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 3780.302978515625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 3780.302978515625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9601.5859375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7476.712890625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 7476.712890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 6656.7294921875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 6656.7294921875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 3556.0546875,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 6513.26806640625,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 6513.26806640625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 1035.47802734375,
+        "control_state": -1
+      },
+      "expected": {
+        "control_state": -1,
+        "opened_event": false,
+        "g54bf9c": 1035.47802734375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5477.44775390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4498.89404296875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 4498.89404296875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 2299.0390625,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 2299.0390625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9929.0224609375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 454.34063720703125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 454.34063720703125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 1426.078125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 1426.078125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4903.74609375,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 4506.18798828125,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 4506.18798828125
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 7697.0263671875,
+        "control_state": 0
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": true,
+        "g54bf9c": 7697.0263671875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 1132.1458740234375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 5462.462890625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 5462.462890625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 7169.9873046875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 7169.9873046875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 7364.82177734375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2305.560302734375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2305.560302734375
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 9093.951171875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 9093.951171875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2541.37646484375,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2165.509765625,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2165.509765625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0000001192092896,
+        "g54b6a8": 2559.90185546875,
+        "control_state": 1
+      },
+      "expected": {
+        "control_state": 1,
+        "opened_event": false,
+        "g54bf9c": 2559.90185546875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 6317.14013671875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 4536.04296875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 4536.04296875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 0.9999999403953552,
+        "g54b6a8": 8171.76123046875,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 8171.76123046875
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 4999.99951171875,
+        "g54bf9c": 1.0,
+        "g54b6a8": 8588.244140625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 0,
+        "opened_event": false,
+        "g54bf9c": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.0,
+        "g54bf9c": 1.0,
+        "g54b6a8": 2247.562744140625,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 2247.562744140625
+      }
+    },
+    {
+      "inputs": {
+        "g54bf98": 5000.00048828125,
+        "g54bf9c": 1.0,
+        "g54b6a8": 882.0287475585938,
+        "control_state": 100
+      },
+      "expected": {
+        "control_state": 100,
+        "opened_event": false,
+        "g54bf9c": 882.0287475585938
+      }
+    }
+  ]
+}

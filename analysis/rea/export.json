@@ -1,0 +1,20 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":{\"path\":\"/home/mati/Documents/Projekty/REA/analysis/rea/session-evidence.json\",\"bytes\":13505414,\"records\":7,\"unknowns\":0}}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "path": "/home/mati/Documents/Projekty/REA/analysis/rea/session-evidence.json",
+        "bytes": 13505414,
+        "records": 7,
+        "unknowns": 0
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 12
+}

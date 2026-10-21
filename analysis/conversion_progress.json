@@ -1,0 +1,3180 @@
+{
+  "updated_date": "2026-10-21",
+  "overall_completion_percent": null,
+  "overall_reason": "Complete original behavior inventory is not established; procedure counts and field counts do not measure project completion.",
+  "original_native_non_thunk_procedures": 473,
+  "numeric_helpers_checked": 17,
+  "partial_procedures": 18,
+  "evidence_only_procedures": 0,
+  "other_unconverted_procedures": 438,
+  "scopes": [
+    {
+      "name": "Primary phase-flag branch numerical bodies",
+      "complete": 4,
+      "total": 4,
+      "remaining": 0,
+      "unit": "four zero/one flag combinations; not full plant dispatch"
+    },
+    {
+      "name": "Primary core connected derivative outputs",
+      "complete": 5,
+      "total": 5,
+      "remaining": 0,
+      "unit": "outputs with explicit cached upstream properties, command and heater heat"
+    },
+    {
+      "name": "IC thermodynamic field loading",
+      "complete": 104,
+      "total": 109,
+      "remaining": 5,
+      "unit": "source fields"
+    },
+    {
+      "name": "Basic model field loading",
+      "complete": 135,
+      "total": 135,
+      "remaining": 0,
+      "unit": "source fields"
+    },
+    {
+      "name": "Main integration stage",
+      "complete": 14,
+      "total": 14,
+      "remaining": 0,
+      "unit": "state updates, not derivative models"
+    },
+    {
+      "name": "Main derivative output equations",
+      "complete": 14,
+      "total": 14,
+      "remaining": 0,
+      "unit": "output equations; preceding component inputs still incomplete"
+    }
+  ],
+  "pending_ic_fields": [
+    {
+      "field": "FWERA0",
+      "reason": "no field-name reference located"
+    },
+    {
+      "field": "FWERB0",
+      "reason": "no field-name reference located"
+    },
+    {
+      "field": "PERA0",
+      "reason": "no field-name reference located"
+    },
+    {
+      "field": "PERB0",
+      "reason": "no field-name reference located"
+    },
+    {
+      "field": "ERL0",
+      "reason": "no field-name reference located"
+    }
+  ],
+  "pending_model_fields": [],
+  "procedures": [
+    {
+      "address": "0x404adc",
+      "original_name": "entry",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x41b0a4",
+      "original_name": "FUN_0041b0a4",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x41c514",
+      "original_name": "FUN_0041c514",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x41e368",
+      "original_name": "FUN_0041e368",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4206cc",
+      "original_name": "FUN_004206cc",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x420718",
+      "original_name": "FUN_00420718",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x42075c",
+      "original_name": "FUN_0042075c",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48bee0",
+      "original_name": "FUN_0048bee0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48bfd0",
+      "original_name": "FUN_0048bfd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c240",
+      "original_name": "FUN_0048c240",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c320",
+      "original_name": "FUN_0048c320",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c520",
+      "original_name": "FUN_0048c520",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c5b0",
+      "original_name": "FUN_0048c5b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c790",
+      "original_name": "FUN_0048c790",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48c810",
+      "original_name": "FUN_0048c810",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48ccd0",
+      "original_name": "FUN_0048ccd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48cda0",
+      "original_name": "FUN_0048cda0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48cfc0",
+      "original_name": "FUN_0048cfc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48d190",
+      "original_name": "FUN_0048d190",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48d210",
+      "original_name": "FUN_0048d210",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48d280",
+      "original_name": "FUN_0048d280",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48d3e0",
+      "original_name": "FUN_0048d3e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48d490",
+      "original_name": "FUN_0048d490",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48e140",
+      "original_name": "FUN_0048e140",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48ed30",
+      "original_name": "FUN_0048ed30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48ee60",
+      "original_name": "FUN_0048ee60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48f0c0",
+      "original_name": "FUN_0048f0c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48f8c0",
+      "original_name": "FUN_0048f8c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48f9e0",
+      "original_name": "FUN_0048f9e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48fd00",
+      "original_name": "FUN_0048fd00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48fd80",
+      "original_name": "FUN_0048fd80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48fe50",
+      "original_name": "FUN_0048fe50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x48fec0",
+      "original_name": "FUN_0048fec0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4900e0",
+      "original_name": "FUN_004900e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490150",
+      "original_name": "FUN_00490150",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490370",
+      "original_name": "FUN_00490370",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4903e0",
+      "original_name": "FUN_004903e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490460",
+      "original_name": "FUN_00490460",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4904d0",
+      "original_name": "FUN_004904d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490550",
+      "original_name": "FUN_00490550",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4906f0",
+      "original_name": "FUN_004906f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490870",
+      "original_name": "FUN_00490870",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490910",
+      "original_name": "FUN_00490910",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490ac0",
+      "original_name": "FUN_00490ac0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490c70",
+      "original_name": "FUN_00490c70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490db0",
+      "original_name": "FUN_00490db0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x490f60",
+      "original_name": "FUN_00490f60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491110",
+      "original_name": "FUN_00491110",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491a30",
+      "original_name": "FUN_00491a30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491aa0",
+      "original_name": "FUN_00491aa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491b10",
+      "original_name": "FUN_00491b10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491c30",
+      "original_name": "FUN_00491c30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491d30",
+      "original_name": "FUN_00491d30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491e50",
+      "original_name": "FUN_00491e50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491f50",
+      "original_name": "FUN_00491f50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x491fc0",
+      "original_name": "FUN_00491fc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x492040",
+      "original_name": "FUN_00492040",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4920b0",
+      "original_name": "FUN_004920b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x492110",
+      "original_name": "FUN_00492110",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4921e0",
+      "original_name": "FUN_004921e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4926f0",
+      "original_name": "FUN_004926f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x492d50",
+      "original_name": "FUN_00492d50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4934e0",
+      "original_name": "FUN_004934e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x493580",
+      "original_name": "FUN_00493580",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4935f0",
+      "original_name": "FUN_004935f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4936b0",
+      "original_name": "FUN_004936b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4938b0",
+      "original_name": "FUN_004938b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x493980",
+      "original_name": "FUN_00493980",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x493b20",
+      "original_name": "FUN_00493b20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x493c10",
+      "original_name": "FUN_00493c10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4940d0",
+      "original_name": "FUN_004940d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494420",
+      "original_name": "FUN_00494420",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4944a0",
+      "original_name": "FUN_004944a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494560",
+      "original_name": "FUN_00494560",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494630",
+      "original_name": "FUN_00494630",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494850",
+      "original_name": "FUN_00494850",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494a10",
+      "original_name": "FUN_00494a10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494b00",
+      "original_name": "FUN_00494b00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494d30",
+      "original_name": "FUN_00494d30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494f30",
+      "original_name": "FUN_00494f30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x494fc0",
+      "original_name": "FUN_00494fc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4950d0",
+      "original_name": "FUN_004950d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4951b0",
+      "original_name": "FUN_004951b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495280",
+      "original_name": "FUN_00495280",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495310",
+      "original_name": "FUN_00495310",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4956c0",
+      "original_name": "FUN_004956c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495810",
+      "original_name": "FUN_00495810",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495af0",
+      "original_name": "FUN_00495af0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495b60",
+      "original_name": "FUN_00495b60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495c90",
+      "original_name": "FUN_00495c90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495d10",
+      "original_name": "FUN_00495d10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495db0",
+      "original_name": "FUN_00495db0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x495f70",
+      "original_name": "FUN_00495f70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x496040",
+      "original_name": "FUN_00496040",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x496200",
+      "original_name": "FUN_00496200",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x496500",
+      "original_name": "FUN_00496500",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x496d10",
+      "original_name": "FUN_00496d10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x496f50",
+      "original_name": "FUN_00496f50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x497030",
+      "original_name": "FUN_00497030",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x497590",
+      "original_name": "FUN_00497590",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4991f0",
+      "original_name": "FUN_004991f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499340",
+      "original_name": "FUN_00499340",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4993b0",
+      "original_name": "FUN_004993b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499420",
+      "original_name": "FUN_00499420",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499a60",
+      "original_name": "FUN_00499a60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499ad0",
+      "original_name": "FUN_00499ad0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499b40",
+      "original_name": "FUN_00499b40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499bb0",
+      "original_name": "FUN_00499bb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499c20",
+      "original_name": "FUN_00499c20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499c90",
+      "original_name": "FUN_00499c90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499d00",
+      "original_name": "FUN_00499d00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499d70",
+      "original_name": "FUN_00499d70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499de0",
+      "original_name": "FUN_00499de0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499e90",
+      "original_name": "FUN_00499e90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x499fa0",
+      "original_name": "FUN_00499fa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49a2e0",
+      "original_name": "FUN_0049a2e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49a3f0",
+      "original_name": "FUN_0049a3f0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49a4f0",
+      "original_name": "FUN_0049a4f0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49a830",
+      "original_name": "FUN_0049a830",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49ab70",
+      "original_name": "FUN_0049ab70",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49ae10",
+      "original_name": "FUN_0049ae10",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49b140",
+      "original_name": "FUN_0049b140",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49b3a0",
+      "original_name": "FUN_0049b3a0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49b430",
+      "original_name": "FUN_0049b430",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49bde0",
+      "original_name": "FUN_0049bde0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49be30",
+      "original_name": "FUN_0049be30",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49be80",
+      "original_name": "FUN_0049be80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49beb0",
+      "original_name": "FUN_0049beb0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49bf00",
+      "original_name": "FUN_0049bf00",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49c190",
+      "original_name": "FUN_0049c190",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49c1e0",
+      "original_name": "FUN_0049c1e0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x49c230",
+      "original_name": "FUN_0049c230",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49c680",
+      "original_name": "FUN_0049c680",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49c750",
+      "original_name": "FUN_0049c750",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49c9c0",
+      "original_name": "FUN_0049c9c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49ca30",
+      "original_name": "FUN_0049ca30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49cb10",
+      "original_name": "FUN_0049cb10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49d070",
+      "original_name": "FUN_0049d070",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49ecd0",
+      "original_name": "FUN_0049ecd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49ee20",
+      "original_name": "FUN_0049ee20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49ef10",
+      "original_name": "FUN_0049ef10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f0e0",
+      "original_name": "FUN_0049f0e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f170",
+      "original_name": "FUN_0049f170",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f280",
+      "original_name": "FUN_0049f280",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f300",
+      "original_name": "FUN_0049f300",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f3e0",
+      "original_name": "FUN_0049f3e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f580",
+      "original_name": "FUN_0049f580",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f8e0",
+      "original_name": "FUN_0049f8e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49f970",
+      "original_name": "FUN_0049f970",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49fa80",
+      "original_name": "FUN_0049fa80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x49fb00",
+      "original_name": "FUN_0049fb00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a0280",
+      "original_name": "FUN_004a0280",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a0500",
+      "original_name": "FUN_004a0500",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a0710",
+      "original_name": "FUN_004a0710",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a0880",
+      "original_name": "FUN_004a0880",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a08c0",
+      "original_name": "FUN_004a08c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a09a0",
+      "original_name": "FUN_004a09a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1250",
+      "original_name": "FUN_004a1250",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a15c0",
+      "original_name": "FUN_004a15c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1640",
+      "original_name": "FUN_004a1640",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a16f0",
+      "original_name": "FUN_004a16f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a17a0",
+      "original_name": "FUN_004a17a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1850",
+      "original_name": "FUN_004a1850",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1900",
+      "original_name": "FUN_004a1900",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1a50",
+      "original_name": "FUN_004a1a50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1b30",
+      "original_name": "FUN_004a1b30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a1e50",
+      "original_name": "FUN_004a1e50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a2160",
+      "original_name": "FUN_004a2160",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a21e0",
+      "original_name": "FUN_004a21e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a26f0",
+      "original_name": "FUN_004a26f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a29d0",
+      "original_name": "FUN_004a29d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a2b90",
+      "original_name": "FUN_004a2b90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a2d60",
+      "original_name": "FUN_004a2d60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a2e20",
+      "original_name": "FUN_004a2e20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a2eb0",
+      "original_name": "FUN_004a2eb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3200",
+      "original_name": "FUN_004a3200",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3340",
+      "original_name": "FUN_004a3340",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a36d0",
+      "original_name": "FUN_004a36d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3910",
+      "original_name": "FUN_004a3910",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a39a0",
+      "original_name": "FUN_004a39a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3a10",
+      "original_name": "FUN_004a3a10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3bb0",
+      "original_name": "FUN_004a3bb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a3c40",
+      "original_name": "FUN_004a3c40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a40d0",
+      "original_name": "FUN_004a40d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4530",
+      "original_name": "FUN_004a4530",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a45a0",
+      "original_name": "FUN_004a45a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4610",
+      "original_name": "FUN_004a4610",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4680",
+      "original_name": "FUN_004a4680",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a46f0",
+      "original_name": "FUN_004a46f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4750",
+      "original_name": "FUN_004a4750",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4b40",
+      "original_name": "FUN_004a4b40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4bb0",
+      "original_name": "FUN_004a4bb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4c10",
+      "original_name": "FUN_004a4c10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4c80",
+      "original_name": "FUN_004a4c80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4ce0",
+      "original_name": "FUN_004a4ce0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a4d80",
+      "original_name": "FUN_004a4d80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a6ad0",
+      "original_name": "FUN_004a6ad0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a6c00",
+      "original_name": "FUN_004a6c00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a73f0",
+      "original_name": "FUN_004a73f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a8620",
+      "original_name": "FUN_004a8620",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a86a0",
+      "original_name": "FUN_004a86a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a8780",
+      "original_name": "FUN_004a8780",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4a87f0",
+      "original_name": "FUN_004a87f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4aaf70",
+      "original_name": "FUN_004aaf70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ab800",
+      "original_name": "FUN_004ab800",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ac090",
+      "original_name": "FUN_004ac090",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ac160",
+      "original_name": "FUN_004ac160",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ac240",
+      "original_name": "FUN_004ac240",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ac310",
+      "original_name": "FUN_004ac310",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4acbf0",
+      "original_name": "FUN_004acbf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4acc60",
+      "original_name": "FUN_004acc60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ad2d0",
+      "original_name": "FUN_004ad2d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ad380",
+      "original_name": "FUN_004ad380",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ad460",
+      "original_name": "FUN_004ad460",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ada80",
+      "original_name": "FUN_004ada80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4adb10",
+      "original_name": "FUN_004adb10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4adbe0",
+      "original_name": "FUN_004adbe0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4aded0",
+      "original_name": "FUN_004aded0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ae330",
+      "original_name": "FUN_004ae330",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ae420",
+      "original_name": "FUN_004ae420",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ae500",
+      "original_name": "FUN_004ae500",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ae770",
+      "original_name": "FUN_004ae770",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ae9b0",
+      "original_name": "FUN_004ae9b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4aeaf0",
+      "original_name": "FUN_004aeaf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4aebd0",
+      "original_name": "FUN_004aebd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4af2a0",
+      "original_name": "FUN_004af2a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4af4d0",
+      "original_name": "FUN_004af4d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4af550",
+      "original_name": "FUN_004af550",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4af850",
+      "original_name": "FUN_004af850",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4af950",
+      "original_name": "FUN_004af950",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4afbc0",
+      "original_name": "FUN_004afbc0",
+      "status": "partial",
+      "note": "IC field loading partly ported"
+    },
+    {
+      "address": "0x4b5030",
+      "original_name": "FUN_004b5030",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4b9d30",
+      "original_name": "FUN_004b9d30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ba9c0",
+      "original_name": "FUN_004ba9c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4bffd0",
+      "original_name": "FUN_004bffd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4c5260",
+      "original_name": "FUN_004c5260",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4c5bf0",
+      "original_name": "FUN_004c5bf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4c6a40",
+      "original_name": "FUN_004c6a40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4c6bd0",
+      "original_name": "FUN_004c6bd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4c7340",
+      "original_name": "FUN_004c7340",
+      "status": "partial",
+      "note": "all 135 BasicData field conversions checked; post-load derived globals and initialization incomplete"
+    },
+    {
+      "address": "0x4ce910",
+      "original_name": "FUN_004ce910",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4cf920",
+      "original_name": "FUN_004cf920",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d17a0",
+      "original_name": "FUN_004d17a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d6ce0",
+      "original_name": "FUN_004d6ce0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d6ff0",
+      "original_name": "FUN_004d6ff0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d7110",
+      "original_name": "FUN_004d7110",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d8350",
+      "original_name": "FUN_004d8350",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d8e00",
+      "original_name": "FUN_004d8e00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4d8f60",
+      "original_name": "FUN_004d8f60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4df030",
+      "original_name": "FUN_004df030",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4df240",
+      "original_name": "FUN_004df240",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4df7e0",
+      "original_name": "FUN_004df7e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e1f70",
+      "original_name": "FUN_004e1f70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e29f0",
+      "original_name": "FUN_004e29f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e2eb0",
+      "original_name": "FUN_004e2eb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e3190",
+      "original_name": "FUN_004e3190",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e4a40",
+      "original_name": "FUN_004e4a40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e7730",
+      "original_name": "FUN_004e7730",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e7820",
+      "original_name": "FUN_004e7820",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e7900",
+      "original_name": "FUN_004e7900",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4e7950",
+      "original_name": "FUN_004e7950",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4eadc0",
+      "original_name": "FUN_004eadc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4eb830",
+      "original_name": "FUN_004eb830",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4edea0",
+      "original_name": "FUN_004edea0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ee6c0",
+      "original_name": "FUN_004ee6c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4ef9e0",
+      "original_name": "FUN_004ef9e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4efe40",
+      "original_name": "FUN_004efe40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4efe80",
+      "original_name": "FUN_004efe80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f3040",
+      "original_name": "FUN_004f3040",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f3aa0",
+      "original_name": "FUN_004f3aa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f60d0",
+      "original_name": "FUN_004f60d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f68e0",
+      "original_name": "FUN_004f68e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f7c50",
+      "original_name": "FUN_004f7c50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f8120",
+      "original_name": "FUN_004f8120",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f8530",
+      "original_name": "FUN_004f8530",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f8920",
+      "original_name": "FUN_004f8920",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4f9250",
+      "original_name": "FUN_004f9250",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4fa450",
+      "original_name": "FUN_004fa450",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x4fa8e0",
+      "original_name": "FUN_004fa8e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5004d0",
+      "original_name": "FUN_005004d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x500950",
+      "original_name": "FUN_00500950",
+      "status": "partial",
+      "note": "spray selector numeric paths checked with original caller interlocks/manual-auto commands and flow in 640 cases; UI/error reporting excluded"
+    },
+    {
+      "address": "0x500bd0",
+      "original_name": "FUN_00500bd0",
+      "status": "partial",
+      "note": "heater numeric automatic/manual paths and low-level shutdown checked in 800 original-slice cases; explicit COM inputs, UI/error reporting excluded"
+    },
+    {
+      "address": "0x5011b0",
+      "original_name": "FUN_005011b0",
+      "status": "partial",
+      "note": "numeric vessel solver checked; native UI/error reporting not ported"
+    },
+    {
+      "address": "0x501e60",
+      "original_name": "FUN_00501e60",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x502480",
+      "original_name": "FUN_00502480",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5034b0",
+      "original_name": "FUN_005034b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x503f50",
+      "original_name": "FUN_00503f50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x504890",
+      "original_name": "FUN_00504890",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x504b80",
+      "original_name": "FUN_00504b80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x504e20",
+      "original_name": "FUN_00504e20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5050d0",
+      "original_name": "FUN_005050d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x505370",
+      "original_name": "FUN_00505370",
+      "status": "partial",
+      "note": "entire numeric loop-transfer body checked with original DLL power; normal driving and both caller bindings connected before SG/integration in 128 additional composed cases; shared event-8 time and A-to-B reference copy; Windows/UI/error context incomplete"
+    },
+    {
+      "address": "0x5059e0",
+      "original_name": "FUN_005059e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x508960",
+      "original_name": "FUN_00508960",
+      "status": "partial",
+      "note": "steam-generator final exchange, outflow limit and six derivative outputs checked; initial level/pressure/timed/fault control prefix checked in 960 cases and connected in 32 additional coordinator updates; shared timestamp, checkbox and fresh HGAS outputs preserved; device/valve/fault decisions and inventory-limited outflow producer checked in 1200 native cases plus 32 composed updates; auxiliary feedwater checked in 640 cases; complete recovered numerical/control body checked by 320 continuous native executions and 32 more composed updates; real COM callbacks/logging/error handling and plant dispatch remain excluded"
+    },
+    {
+      "address": "0x50af30",
+      "original_name": "FUN_0050af30",
+      "status": "partial",
+      "note": "connected primary numeric core checked in 160 original-frame cases, including heat capacity, phase state/flow, four flag branches and final derivatives; heater numeric control connected with 160 additional composed-slice cases; spray numerical/control paths connected with 160 composed cases; post-balance exchange/level/temperature feedback checked in 320 cases and connected pressure/control/balance/feedback cycle in 160 cases; late hot/cold loop-temperature feedback and four histories checked in 640 continuous native cases and 16 eight-update chains; complete upstream initialization and UI event dispatch remain incomplete"
+    },
+    {
+      "address": "0x50da40",
+      "original_name": "FUN_0050da40",
+      "status": "partial",
+      "note": "charging/letdown/injection numeric and control decisions checked in 960 original-slice cases; explicit stateful COM inputs, setter callbacks/log formatting/error dispatch excluded"
+    },
+    {
+      "address": "0x50f660",
+      "original_name": "FUN_0050f660",
+      "status": "partial",
+      "note": "relief numeric discharge and caller bindings checked in 300 + 300 cases; post-discharge state/log-branch selection checked in 240 cases; valve automation and full protection/event dispatch incomplete"
+    },
+    {
+      "address": "0x510850",
+      "original_name": "FUN_00510850",
+      "status": "partial",
+      "note": "supply-tank depletion checked in 200 cases; full recovered supply/injection/recirculation/cooling body checked in 960 continuous cases and connected in 96 updates; stateful controls retained across 12 eight-update chains; callbacks/logging/other source dispatch incomplete"
+    },
+    {
+      "address": "0x511b00",
+      "original_name": "FUN_00511b00",
+      "status": "partial",
+      "note": "discharge checked in 200 cases and activation/latch/valve decisions in 240 cases; continuous activation/discharge with original caller bindings checked in 640 more cases and connected to source sum/balance/integration in 64 composed updates; explicit valve COM properties, callbacks/logging and plant dispatch excluded"
+    },
+    {
+      "address": "0x512290",
+      "original_name": "FUN_00512290",
+      "status": "partial",
+      "note": "bounded PI numeric update checked in 300 cases; UI/error reporting excluded"
+    },
+    {
+      "address": "0x5124e0",
+      "original_name": "FUN_005124e0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x512520",
+      "original_name": "FUN_00512520",
+      "status": "partial",
+      "note": "RCP switching/timestamps/targets and flow sequence checked in 768 original-slice cases, plus 32 connected coordinator updates; explicit UI properties, scheduler, callbacks/logging/errors outside scope"
+    },
+    {
+      "address": "0x513890",
+      "original_name": "FUN_00513890",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x513990",
+      "original_name": "FUN_00513990",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x513a70",
+      "original_name": "FUN_00513a70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x513b60",
+      "original_name": "FUN_00513b60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x514200",
+      "original_name": "FUN_00514200",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x515200",
+      "original_name": "FUN_00515200",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x515570",
+      "original_name": "FUN_00515570",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x515c60",
+      "original_name": "FUN_00515c60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x517320",
+      "original_name": "FUN_00517320",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x517ff0",
+      "original_name": "FUN_00517ff0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x518130",
+      "original_name": "FUN_00518130",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5198a0",
+      "original_name": "FUN_005198a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x519fa0",
+      "original_name": "FUN_00519fa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x51afe0",
+      "original_name": "FUN_0051afe0",
+      "status": "partial",
+      "note": "pressurizer initial fractions/mass, loop startup heat, 15 reference globals and fresh pressure-reference/level-interlock initialization checked; fresh primary state/flags and connected inventory checked in 240+240 cases; GUI/CLI startup backend checked for all 110 model/operating-point pairs; fresh SG level/phase and feedwater initialization checked (320+300), connected thermal startup extended through 25 cached-state stores for all 110 model/operating-point pairs (79 Singles, 11 flags), plus 320 standalone fresh cached-state cases; late numeric reference/property slices checked in 320 cases and all 110 source pairs; early driving coefficient and unit factor now included (130 Singles, 15 flags; primitive constants and geometry included); 11 fresh control-history stores checked in 320 cases with explicit fault flag; restored control/time-reference branch and 20-event rebasing checked in 400 native cases; known event inputs connected in 32 more updates; Double/array numerical initializer now connected in assembled fresh-state output for all 110 source pairs, plus original floor-to-I16 clock; external model evolution, full restored loader/dispatch and complete initializer pending"
+    },
+    {
+      "address": "0x51c310",
+      "original_name": "FUN_0051c310",
+      "status": "partial",
+      "note": "20 Single startup constants and one I16 checked against original scalar stores; external Double/property-array initialization incomplete"
+    },
+    {
+      "address": "0x51d3d0",
+      "original_name": "FUN_0051d3d0",
+      "status": "partial",
+      "note": "14-state integration, primary properties and normal/external thermal branches, properties and recovered-stage composition checked; shared-state 14-state integration/event update checked against 36 original coordinator slices; source/flux preparation, relief/primary/SG/stream/integration updates connected with explicit remaining boundaries; process-birth image storage checked separately; stream derivative bindings connected; complete step coordinator incomplete"
+    },
+    {
+      "address": "0x524640",
+      "original_name": "FUN_00524640",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x524bb0",
+      "original_name": "FUN_00524bb0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x524ca0",
+      "original_name": "FUN_00524ca0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x525790",
+      "original_name": "FUN_00525790",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x526180",
+      "original_name": "FUN_00526180",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x526200",
+      "original_name": "FUN_00526200",
+      "status": "partial",
+      "note": "continuous numerical Double/array initializer 0x52624b-0x5269d2 checked in 240 cases; 33 Double writes, 12 arrays and fresh temperature stores; COM/UI tail and evolution remain separate"
+    },
+    {
+      "address": "0x526b40",
+      "original_name": "FUN_00526b40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52ba50",
+      "original_name": "FUN_0052ba50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52c130",
+      "original_name": "FUN_0052c130",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52c3a0",
+      "original_name": "FUN_0052c3a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52c590",
+      "original_name": "FUN_0052c590",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52c7a0",
+      "original_name": "FUN_0052c7a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52c9b0",
+      "original_name": "FUN_0052c9b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52cbc0",
+      "original_name": "FUN_0052cbc0",
+      "status": "numeric_helper_checked",
+      "note": "Valid numeric helper semantics only; original VB error paths outside scope"
+    },
+    {
+      "address": "0x52d300",
+      "original_name": "FUN_0052d300",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52d9d0",
+      "original_name": "FUN_0052d9d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52de60",
+      "original_name": "FUN_0052de60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52dfa0",
+      "original_name": "FUN_0052dfa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52ece0",
+      "original_name": "FUN_0052ece0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52ee50",
+      "original_name": "FUN_0052ee50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52ef20",
+      "original_name": "FUN_0052ef20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f060",
+      "original_name": "FUN_0052f060",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f1c0",
+      "original_name": "FUN_0052f1c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f2b0",
+      "original_name": "FUN_0052f2b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f3d0",
+      "original_name": "FUN_0052f3d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f6a0",
+      "original_name": "FUN_0052f6a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f740",
+      "original_name": "FUN_0052f740",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f830",
+      "original_name": "FUN_0052f830",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52f930",
+      "original_name": "FUN_0052f930",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52fa20",
+      "original_name": "FUN_0052fa20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52fac0",
+      "original_name": "FUN_0052fac0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x52fd80",
+      "original_name": "FUN_0052fd80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x530350",
+      "original_name": "FUN_00530350",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x530920",
+      "original_name": "FUN_00530920",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x530a20",
+      "original_name": "FUN_00530a20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5311e0",
+      "original_name": "FUN_005311e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x531480",
+      "original_name": "FUN_00531480",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x531590",
+      "original_name": "FUN_00531590",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5316a0",
+      "original_name": "FUN_005316a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532520",
+      "original_name": "FUN_00532520",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532590",
+      "original_name": "FUN_00532590",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532600",
+      "original_name": "FUN_00532600",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532670",
+      "original_name": "FUN_00532670",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5326e0",
+      "original_name": "FUN_005326e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532750",
+      "original_name": "FUN_00532750",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5327f0",
+      "original_name": "FUN_005327f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x532dd0",
+      "original_name": "FUN_00532dd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x533cf0",
+      "original_name": "FUN_00533cf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x534370",
+      "original_name": "FUN_00534370",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x534ab0",
+      "original_name": "FUN_00534ab0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x534ea0",
+      "original_name": "FUN_00534ea0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x534fd0",
+      "original_name": "FUN_00534fd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5350c0",
+      "original_name": "FUN_005350c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5351b0",
+      "original_name": "FUN_005351b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5352c0",
+      "original_name": "FUN_005352c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535590",
+      "original_name": "FUN_00535590",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535700",
+      "original_name": "FUN_00535700",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5358b0",
+      "original_name": "FUN_005358b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535a10",
+      "original_name": "FUN_00535a10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535ab0",
+      "original_name": "FUN_00535ab0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535ba0",
+      "original_name": "FUN_00535ba0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535cd0",
+      "original_name": "FUN_00535cd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535dd0",
+      "original_name": "FUN_00535dd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535ec0",
+      "original_name": "FUN_00535ec0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x535f60",
+      "original_name": "FUN_00535f60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536230",
+      "original_name": "FUN_00536230",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536550",
+      "original_name": "FUN_00536550",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536870",
+      "original_name": "FUN_00536870",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536b90",
+      "original_name": "FUN_00536b90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536d00",
+      "original_name": "FUN_00536d00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x536fa0",
+      "original_name": "FUN_00536fa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x537130",
+      "original_name": "FUN_00537130",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5373f0",
+      "original_name": "FUN_005373f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5379c0",
+      "original_name": "FUN_005379c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x537f90",
+      "original_name": "FUN_00537f90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x538090",
+      "original_name": "FUN_00538090",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x538850",
+      "original_name": "FUN_00538850",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x538b50",
+      "original_name": "FUN_00538b50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x539ad0",
+      "original_name": "FUN_00539ad0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x539da0",
+      "original_name": "FUN_00539da0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53cb30",
+      "original_name": "FUN_0053cb30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53ce50",
+      "original_name": "FUN_0053ce50",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53d170",
+      "original_name": "FUN_0053d170",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53d490",
+      "original_name": "FUN_0053d490",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53d7b0",
+      "original_name": "FUN_0053d7b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53dad0",
+      "original_name": "FUN_0053dad0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53ddf0",
+      "original_name": "FUN_0053ddf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53e110",
+      "original_name": "FUN_0053e110",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53e430",
+      "original_name": "FUN_0053e430",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53e750",
+      "original_name": "FUN_0053e750",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53ea20",
+      "original_name": "FUN_0053ea20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53ed00",
+      "original_name": "FUN_0053ed00",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53f490",
+      "original_name": "FUN_0053f490",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53f7b0",
+      "original_name": "FUN_0053f7b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53fad0",
+      "original_name": "FUN_0053fad0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x53fdf0",
+      "original_name": "FUN_0053fdf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x540110",
+      "original_name": "FUN_00540110",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x540430",
+      "original_name": "FUN_00540430",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x540750",
+      "original_name": "FUN_00540750",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x540a70",
+      "original_name": "FUN_00540a70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x540d90",
+      "original_name": "FUN_00540d90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5410b0",
+      "original_name": "FUN_005410b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5413d0",
+      "original_name": "FUN_005413d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5416f0",
+      "original_name": "FUN_005416f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x541940",
+      "original_name": "FUN_00541940",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x541b90",
+      "original_name": "FUN_00541b90",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x541f60",
+      "original_name": "FUN_00541f60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5422d0",
+      "original_name": "FUN_005422d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5426b0",
+      "original_name": "FUN_005426b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x542c60",
+      "original_name": "FUN_00542c60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x542fd0",
+      "original_name": "FUN_00542fd0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543340",
+      "original_name": "FUN_00543340",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543720",
+      "original_name": "FUN_00543720",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543af0",
+      "original_name": "FUN_00543af0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543cc0",
+      "original_name": "FUN_00543cc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543e60",
+      "original_name": "FUN_00543e60",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x543fa0",
+      "original_name": "FUN_00543fa0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5440e0",
+      "original_name": "FUN_005440e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544200",
+      "original_name": "FUN_00544200",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544740",
+      "original_name": "FUN_00544740",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544880",
+      "original_name": "FUN_00544880",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5449d0",
+      "original_name": "FUN_005449d0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544b20",
+      "original_name": "FUN_00544b20",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544c70",
+      "original_name": "FUN_00544c70",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544dc0",
+      "original_name": "FUN_00544dc0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x544f10",
+      "original_name": "FUN_00544f10",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545060",
+      "original_name": "FUN_00545060",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5451b0",
+      "original_name": "FUN_005451b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545300",
+      "original_name": "FUN_00545300",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545450",
+      "original_name": "FUN_00545450",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5455a0",
+      "original_name": "FUN_005455a0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5456f0",
+      "original_name": "FUN_005456f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545840",
+      "original_name": "FUN_00545840",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545990",
+      "original_name": "FUN_00545990",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545ae0",
+      "original_name": "FUN_00545ae0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545c30",
+      "original_name": "FUN_00545c30",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545d80",
+      "original_name": "FUN_00545d80",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x545ed0",
+      "original_name": "FUN_00545ed0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546020",
+      "original_name": "FUN_00546020",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546170",
+      "original_name": "FUN_00546170",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5462c0",
+      "original_name": "FUN_005462c0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546410",
+      "original_name": "FUN_00546410",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546560",
+      "original_name": "FUN_00546560",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5466b0",
+      "original_name": "FUN_005466b0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5467e0",
+      "original_name": "FUN_005467e0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546910",
+      "original_name": "FUN_00546910",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546a40",
+      "original_name": "FUN_00546a40",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546cf0",
+      "original_name": "FUN_00546cf0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x546de0",
+      "original_name": "FUN_00546de0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x548770",
+      "original_name": "FUN_00548770",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x5487f0",
+      "original_name": "FUN_005487f0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x548fe0",
+      "original_name": "FUN_00548fe0",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x549060",
+      "original_name": "FUN_00549060",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x549360",
+      "original_name": "FUN_00549360",
+      "status": "unconverted",
+      "note": ""
+    },
+    {
+      "address": "0x549460",
+      "original_name": "FUN_00549460",
+      "status": "unconverted",
+      "note": ""
+    }
+  ],
+  "milestones": [
+    {
+      "id": "INIT",
+      "name": "Pe\u0142na inicjalizacja i odtwarzanie",
+      "status": "partial",
+      "done": "Wczytywanie modelu i wi\u0119kszo\u015bci IC; 130 warto\u015bci Single i 15 flag \u015bwie\u017cego startu dla 110 par model/IC; p\u00f3\u017ane odniesienia poziom\u00f3w/przep\u0142yw\u00f3w, parametry cieplne i entalpia zasilania; osobna warstwa danych obrazu procesu. Przeniesiono 11 zapis\u00f3w pocz\u0105tkowych historii sterowania z jawnym trybem awarii. Odzyskano ga\u0142\u0105\u017a odtworzonych zegara/odniesie\u0144 i 20 czas\u00f3w zdarze\u0144, z zachowaniem zapisanych historii. Pod\u0142\u0105czono wsp\u00f3\u0142czynnik wymiany cieplnej i przelicznik jednostek z odzyskanego pocz\u0105tku inicjalizacji. Odzyskano 20 sta\u0142ych Single i flag\u0119 pocz\u0105tkow\u0105 oraz geometri\u0119: sum\u0119 obj\u0119to\u015bci akumulatora, stosunek pr\u00f3bkowania i dwa wyzerowania (321 przypadk\u00f3w instrukcji orygina\u0142u). Odzyskano numeryczn\u0105 inicjalizacj\u0119 modelu Double: 33 zapisy, 12 tablic i temperatury pocz\u0105tkowe; 240 ci\u0105g\u0142ych wykona\u0144 orygina\u0142u. Z\u0142o\u017cony stan zachowuje 290 Singles i 28 p\u00f3l ca\u0142kowitych dla 110 par oraz Double i tablice. Przelicznik kroku czasu I16 zweryfikowano z oryginaln\u0105 bibliotek\u0105 VB6 (240 przypadk\u00f3w).",
+      "remaining": "Pe\u0142ny wyb\u00f3r \u015bcie\u017cki \u015bwie\u017cej/odtworzonej i odczyt oryginalnych zapis\u00f3w, pozosta\u0142e historie/tablice oraz kompletne Reset/restore; pi\u0119\u0107 nierozstrzygni\u0119tych p\u00f3l IC. Numeryczna inicjalizacja modelu Double jest przeniesiona; jego ewolucja pozostaje w STEP.",
+      "acceptance": "Ka\u017cdy obs\u0142ugiwany start/Reset/odczyt tworzy kompletny, zweryfikowany stan potrzebny do pierwszego kroku, bez zgadywanych warto\u015bci."
+    },
+    {
+      "id": "AUTO",
+      "name": "Automatyka urz\u0105dze\u0144 i zabezpiecze\u0144",
+      "status": "partial",
+      "done": "Grza\u0142ki, natrysk, uzupe\u0142nianie/upust/wtrysk oraz ich przeniesione blokady; numeryczne bloki pomp, zawor\u00f3w i SG. Prze\u0142\u0105czenia RCP, znaczniki czasu i docelowe przep\u0142ywy po\u0142\u0105czone z blokiem liczbowym. Pocz\u0105tkowe sterowanie SG: rozruch zasilania, regulator poziomu/ci\u015bnienia, ga\u0142\u0119zie awarii i podzia\u0142 ciep\u0142a dla obu stron. Zamkni\u0119cia SG/zasilania, obie grupy zawor\u00f3w z histerez\u0105 i blokad\u0105 r\u0119czn\u0105 oraz awaryjne ga\u0142\u0119zie przep\u0142ywu. Dalsza regulacja zasilania SG i pe\u0142na odzyskana sekwencja liczbowa/sterowania SG po\u0142\u0105czone; dok\u0142adna aktywacja flagami ==1 i wa\u017cenie dw\u00f3ch polece\u0144. Odzyskano pocz\u0105tkowe historie regulator\u00f3w SG i dok\u0142adn\u0105 ga\u0142\u0105\u017a inicjalizacji wyj\u015b\u0107 przy fladze awarii \u22121. Opcjonalna tablica zdarze\u0144 dostarcza odzyskane czasy RCP/SG i w\u0142a\u015bciwe flagi sterowania SG. Aktywacja akumulatora, blokady zawor\u00f3w i opr\u00f3\u017cnianie po\u0142\u0105czone we wsp\u00f3ln\u0105 aktualizacj\u0119; zachowane r\u0119czne zamkni\u0119cia po aktywacji. Pe\u0142ny odzyskany blok 0x510850 zasilania/wtrysku/recyrkulacji i ch\u0142odzenia po\u0142\u0105czony. Polecenia grza\u0142ek/natrysku oraz pozosta\u0142ych przeniesionych urz\u0105dze\u0144 s\u0105 zachowywane pomi\u0119dzy aktualizacjami sesji. Kontrolki rzeczywistej sesji GUI przekazuj\u0105 polecenia RCP, SG, zasilania/wtrysku, akumulatora, grza\u0142ek i natrysku do tego samego silnika co CLI. Klikni\u0119cie r\u0119cznej grza\u0142ki 25% por\u00f3wnano ze stanem CLI.",
+      "remaining": "Pozosta\u0142e zabezpieczenia i skutki zdarze\u0144, pe\u0142ny harmonogram oraz kompletna zgodno\u015b\u0107 callback\u00f3w orygina\u0142u. Kontrolki odzyskanych urz\u0105dze\u0144 dzia\u0142aj\u0105 w widoku Simulation; wskazania na oryginalnym schemacie nadal dotycz\u0105 zapisanych IC.",
+      "acceptance": "Polecenia r\u0119czne i automatyczne zmieniaj\u0105 w\u0142a\u015bciwe urz\u0105dzenia, przep\u0142ywy i zatrzaski zgodnie z orygina\u0142em."
+    },
+    {
+      "id": "STEP",
+      "name": "Kompletny krok ca\u0142ej instalacji",
+      "status": "partial",
+      "done": "Po\u0142\u0105czone fragmenty obiegu, obu SG, automatyki, bilansu i 14-stanowego integratora. Pocz\u0105tkowe sterowanie obu SG dzia\u0142a przed ich wymian\u0105, zachowuj\u0105c wsp\u00f3lny znacznik czasu i kontrolk\u0119 awarii; wytwarza entalpie u\u017cywane w bilansie strumieni. Producent wyp\u0142ywu SG uwzgl\u0119dnia zawory, znak przep\u0142ywu A/B, limit masy i korekt\u0119 ciep\u0142a. Zamkni\u0119to luk\u0119 regulacji zasilania obu SG; ca\u0142y odzyskany blok SG por\u00f3wnany z ci\u0105g\u0142ym wykonaniem instrukcji orygina\u0142u. Backend \u015bwie\u017cego startu dostarcza teraz p\u00f3\u017ane odniesienia i w\u0142a\u015bciwo\u015bci cieplne potrzebne odzyskanym uk\u0142adom. Powi\u0105zano odzyskane wej\u015bcia zdarze\u0144 z RCP, SG i dalsz\u0105 integracj\u0105, z wycofaniem ca\u0142ego kroku przy b\u0142\u0119dzie. Opcjonalna \u015bcie\u017cka modelu normalnego wytwarza bie\u017c\u0105ce ciep\u0142o, poziomy i historie obu p\u0119tli przed SG oraz bilansem/integracj\u0105; warto\u015bci te nie musz\u0105 by\u0107 dostarczane jako zapisane wyniki. Akumulator przed sumowaniem \u017ar\u00f3de\u0142 dostarcza aktualny przep\u0142yw, stan gazu i zapas wody do dalszych oblicze\u0144. Zasilanie, ch\u0142odzenie i recyrkulacja dostarczaj\u0105 aktualne przep\u0142ywy oraz entalpi\u0119 przed akumulatorem i bilansem. Stateful session \u0142\u0105czy kolejne kroki z zachowaniem polece\u0144. Po\u0142\u0105czono p\u00f3\u017ane sprz\u0119\u017cenie temperatur gor\u0105cych/zimnych ga\u0142\u0119zi i czterech historii filtra (0x50d1f8\u20130x50d867), w tym przep\u0142yw wsteczny i ograniczenia; 640 przypadk\u00f3w i 16 o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w oryginalnych fragment\u00f3w.",
+      "remaining": "Pozostali producenci wej\u015b\u0107, w tym p\u00f3\u017ane modele obudowy/\u017ar\u00f3de\u0142 pomocniczych (0x502480, 0x5034b0), inne \u015bcie\u017cki transportu i alternatywny model; pozosta\u0142a kolejno\u015b\u0107 uk\u0142ad\u00f3w oraz pe\u0142ny dispatcher. Zasilanie/recyrkulacja, normalna wymiana, akumulator i p\u00f3\u017ane sprz\u0119\u017cenie temperatur s\u0105 ju\u017c pod\u0142\u0105czone.",
+      "acceptance": "Kolejny krok otrzymuje wy\u0142\u0105cznie kompletny stan, model i polecenia; nie wymaga r\u0119cznie podawanych brakuj\u0105cych wynik\u00f3w innych uk\u0142ad\u00f3w."
+    },
+    {
+      "id": "EVENTS",
+      "name": "Awarie i scenariusze w czasie",
+      "status": "partial",
+      "done": "Odzyskane ustawienia scenariuszy, wybrane warunki czasowe i zatrzaski. Przeliczanie 20 czas\u00f3w zdarze\u0144 przy odtworzeniu; czasy RCP/SG i wybrane flagi SG s\u0105 wi\u0105zane z odzyskanym krokiem. Flaga zdarzenia 7 i wsp\u00f3lny czas zdarzenia 8 steruj\u0105 odzyskan\u0105 normaln\u0105 wymian\u0105 ciepln\u0105 obu p\u0119tli.",
+      "remaining": "Pe\u0142ny harmonogram awarii, op\u00f3\u017anienia, rampy, sekwencje zabezpiecze\u0144 i ich powi\u0105zanie z krokiem.",
+      "acceptance": "Zadany scenariusz wywo\u0142uje te same zdarzenia i skutki w odpowiadaj\u0105cych chwilach."
+    },
+    {
+      "id": "GUI",
+      "name": "Przebiegi i sterowanie z GUI",
+      "status": "partial",
+      "done": "Schemat i angielski interfejs, odczyt IC, panel odzyskanej inicjalizacji; paczki i ikona Linux. Widok Simulation wykonuje rzeczywiste kroki odzyskanego silnika: Start/Pause/Step/Reset, pr\u0119dko\u015b\u0107, polecenia urz\u0105dze\u0144, aktualne wskazania, wykresy, zapis/odczyt JSON i CSV. Wbudowany syntetyczny przyk\u0142ad uruchamia si\u0119 bez plik\u00f3w zewn\u0119trznych. Automatyczne klikni\u0119cia X11 potwierdzaj\u0105 dzia\u0142anie i zgodno\u015b\u0107 pe\u0142nego stanu po r\u0119cznej zmianie grza\u0142ki z CLI. Panel inicjalizacji korzysta ze z\u0142o\u017conego stanu z modelem Double i tablicami, zachowuje widok IC oraz eksportuje typowany JSON przyciskiem Save initialized state. Jest to stan odzyskanej inicjalizacji, jeszcze nie gotowa sesja ca\u0142ej instalacji. Dodano Live simulation mimic: oryginalny uk\u0142ad schematu pokazuje bie\u017c\u0105ce obliczone ci\u015bnienia, temperatur\u0119, poziomy i przep\u0142ywy. Jednostki odwracaj\u0105 \u017ar\u00f3d\u0142owe konwersje IC; brakuj\u0105ce odczyty i urz\u0105dzenia pokazuj\u0105 \u2014, bez zapasowych danych IC. Otwarcie schematu sprawdzono rzeczywistymi klikni\u0119ciami.",
+      "remaining": "Kompletny start scenariusza bezpo\u015brednio z IC, odczyt oryginalnych zapis\u00f3w oraz brakuj\u0105ce \u017ar\u00f3d\u0142a odczyt\u00f3w/urz\u0105dze\u0144 i scenariusze awarii. Odr\u0119bny widok IC pozostaje zapisanym stanem; Live simulation mimic pokazuje odzyskane bie\u017c\u0105ce zmienne. Przyk\u0142ad Simulation nie zast\u0119puje pe\u0142nego uruchomienia reaktora.",
+      "acceptance": "U\u017cytkownik uruchamia, zatrzymuje i steruje rzeczywist\u0105 symulacj\u0105; wskazania pochodz\u0105 z aktualnego stanu oblicze\u0144."
+    },
+    {
+      "id": "HISTORY",
+      "name": "Historia, wykresy i raporty przebieg\u00f3w",
+      "status": "partial",
+      "done": "Osobny wykres funkcji DECAY i infrastruktura eksport\u00f3w/por\u00f3wna\u0144 komponent\u00f3w. Eksport rzeczywistych aktualizacji odzyskanej sesji do JSON i CSV oraz osobny interaktywny raport HTML z wykresami ci\u015bnie\u0144, temperatur, poziom\u00f3w i przep\u0142yw\u00f3w. Widok Simulation zbiera rzeczywiste pr\u00f3bki, pokazuje 16 szereg\u00f3w i eksportuje CSV w jednostkach orygina\u0142u. Historia GUI zachowuje ostatnie 50 000 pr\u00f3bek z jawnym oznaczeniem; osobny raport CLI nadal eksportuje ca\u0142y zadany przebieg.",
+      "remaining": "Historie i ko\u0144cowe raporty kompletnych scenariuszy, pe\u0142ny zakres zmiennych instalacji oraz por\u00f3wnanie z orygina\u0142em. Historia odzyskanej sesji z dostarczonego stanu i syntetycznego przyk\u0142adu nie stanowi pe\u0142nego przebiegu PCTran.",
+      "acceptance": "Wykresy i eksporty przedstawiaj\u0105 rzeczywiste, odtwarzalne wyniki uruchomionego scenariusza."
+    },
+    {
+      "id": "E2E",
+      "name": "Por\u00f3wnanie ca\u0142ych scenariuszy z PCTran",
+      "status": "not_validated",
+      "done": "Por\u00f3wnania oryginalnych blok\u00f3w x86 i z\u0142o\u017conych fragment\u00f3w; plan w END_TO_END_VALIDATION.md.",
+      "remaining": "Uruchomienia oryginalnej aplikacji Windows, zgodne warunki i pr\u00f3bki 0\u2013300 s: stan ustalony, sterowanie, awarie i zadania z handbooka.",
+      "acceptance": "Ca\u0142e uzgodnione scenariusze spe\u0142niaj\u0105 ustalone tolerancje wynik\u00f3w i zgodno\u015b\u0107 zdarze\u0144 na oryginale i RustTran."
+    }
+  ],
+  "changes": [
+    {
+      "id": "2026-10-20-primary-devices",
+      "milestones": [
+        "INIT",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Dodano automatyk\u0119 upustu/uzupe\u0142niania/wtrysku, dynamiczne odniesienia i 25 zapis\u00f3w inicjalizacji; po\u0142\u0105czono je z odzyskanym krokiem.",
+      "evidence": "PRIMARY_DEVICE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-rcp-control",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Zamkni\u0119to producent prze\u0142\u0105cze\u0144/cel\u00f3w przep\u0142ywu RCP i pod\u0142\u0105czono go do odzyskanego kroku: 768 przypadk\u00f3w oraz 32 po\u0142\u0105czone aktualizacje. Pozosta\u0142e zadania zostaj\u0105 pod dotychczasowymi etapami.",
+      "evidence": "RCP_CONTROL_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-control-prefix",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono pocz\u0105tkowy blok sterowania obu SG (960 przypadk\u00f3w) i pod\u0142\u0105czono go do odzyskanego kroku (32 dodatkowe por\u00f3wnania). Entalpie SG s\u0105 obliczane w kroku; wsp\u00f3lny czas i stan awarii przechodz\u0105 z A do B. Dalsza automatyka SG pozostaje w dotychczasowych etapach.",
+      "evidence": "STEAM_CONTROL_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-valves",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono decyzje urz\u0105dze\u0144/zawor\u00f3w SG i po\u0142\u0105czono produkcj\u0119 wyp\u0142ywu z bilansem/integratorem: 1200 przypadk\u00f3w i 32 dodatkowe po\u0142\u0105czone aktualizacje. Pozosta\u0142a granica SG zaw\u0119\u017ca si\u0119 do 0x50a8a6\u20130x50ac31; etapy i kryteria odbioru pozostaj\u0105 te same.",
+      "evidence": "STEAM_VALVE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-steam-auxiliary-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Zamkni\u0119to pozosta\u0142\u0105 luk\u0119 regulacji zasilania SG: 640 przypadk\u00f3w pomocniczych, 320 ci\u0105g\u0142ych wykona\u0144 oryginalnego bloku SG i 32 dodatkowe po\u0142\u0105czone aktualizacje. Zweryfikowano te\u017c, \u017ce obie \u015bcie\u017cki ko\u0144cowego bilansu korzystaj\u0105 z przep\u0142ywu ca\u0142kowitego; skorygowano wcze\u015bniejsz\u0105 notatk\u0119.",
+      "evidence": "STEAM_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-20-late-thermal-initialization",
+      "milestones": [
+        "INIT",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono 28 p\u00f3\u017anych warto\u015bci i trzy flagi inicjalizacji (320 przypadk\u00f3w); backend GUI/CLI rozszerzono do 105 Singles i 14 flag dla 110 par model/IC. Dodano osobny etap 11 pocz\u0105tkowych historii sterowania z jawn\u0105 flag\u0105 awarii (320 przypadk\u00f3w). Pe\u0142ny Reset/restore i zewn\u0119trzny model pozostaj\u0105 otwarte.",
+      "evidence": "LATE_THERMAL_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-20-restored-controls-events",
+      "milestones": [
+        "INIT",
+        "EVENTS",
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Odzyskano przywr\u00f3cenie zegara/odniesie\u0144 oraz przeliczanie 20 czas\u00f3w zdarze\u0144 (400 przypadk\u00f3w), zachowuj\u0105c zapisany bor i historie. Czasy i flagi z tablic zdarze\u0144 po\u0142\u0105czono z RCP/SG i integratorem (32 dodatkowe por\u00f3wnania). Pe\u0142ny odczyt zapis\u00f3w, Reset/restore i dispatcher pozostaj\u0105 otwarte.",
+      "evidence": "RESTORED_CONTROLS_AND_EVENTS.md"
+    },
+    {
+      "id": "2026-10-20-connected-normal-thermal",
+      "milestones": [
+        "INIT",
+        "STEP",
+        "EVENTS"
+      ],
+      "status": "validated",
+      "description": "Pod\u0142\u0105czono normalne obliczenia cieplne obu p\u0119tli przed SG/bilansem/integracj\u0105, wraz z oryginalnym wsp\u00f3lnym czasem zdarzenia i kopi\u0105 odniesienia A do B: 128 por\u00f3wna\u0144 bez zapisanych wynik\u00f3w ciep\u0142a/poziom\u00f3w. Backend inicjalizacji rozszerzono o odzyskany wsp\u00f3\u0142czynnik i przelicznik: 107 Singles i 14 flag dla wszystkich 110 par. Zewn\u0119trzny model i pe\u0142ny dispatcher nadal pozostaj\u0105 otwarte.",
+      "evidence": "CONNECTED_THERMAL_TRANSFER.md"
+    },
+    {
+      "id": "2026-10-21-accumulator-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Po\u0142\u0105czono aktywacj\u0119, zawory, opr\u00f3\u017cnianie i ci\u015bnienie gazu akumulatora z oryginalnymi globalnymi stanami: 640 ci\u0105g\u0142ych przypadk\u00f3w x86 oraz 64 po\u0142\u0105czone aktualizacje. Aktualny wyp\u0142yw trafia do sumy \u017ar\u00f3de\u0142 i bilansu; r\u0119czne zamkni\u0119cia oraz wycofanie przy b\u0142\u0119dzie s\u0105 zachowane.",
+      "evidence": "ACCUMULATOR_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-supply-system",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono ca\u0142y odzyskany blok zasilania/wtrysku/recyrkulacji/ch\u0142odzenia: 960 ci\u0105g\u0142ych przypadk\u00f3w x86 i 96 po\u0142\u0105czonych aktualizacji. Sterowanie, ciep\u0142o, przep\u0142yw i entalpia trafiaj\u0105 do dalszych oblicze\u0144.",
+      "evidence": "SUPPLY_SYSTEM_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-stateful-sessions",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Dodano sesj\u0119 zachowuj\u0105c\u0105 polecenia wszystkich przeniesionych urz\u0105dze\u0144, w tym grza\u0142ek i natrysku w ich w\u0142a\u015bciwej fazie oblicze\u0144. 12 o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w oryginalnych fragment\u00f3w; zapis/wznowienie i wycofanie ca\u0142ej serii przy b\u0142\u0119dzie.",
+      "evidence": "RECOVERED_SESSION_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-session-history",
+      "milestones": [
+        "HISTORY"
+      ],
+      "status": "validated",
+      "description": "Dodano wykonanie sesji z eksportem faktycznych pr\u00f3bek do JSON/CSV i interaktywnego raportu HTML. Pe\u0142na inicjalizacja, GUI i d\u0142ugie scenariusze pozostaj\u0105 otwarte.",
+      "evidence": "RECOVERED_SESSION_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-startup-primitives",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Odzyskano sta\u0142e pocz\u0105tkowe oraz geometri\u0119 (321 przypadk\u00f3w); backend \u015bwie\u017cego startu dostarcza 130 Singles i 15 flag dla wszystkich 110 par model/IC.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-loop-thermal-feedback",
+      "milestones": [
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Po\u0142\u0105czono p\u00f3\u017ane temperatury obu ga\u0142\u0119zi i historie filtr\u00f3w po bilansie pierwotnym, przed bilansem strumieni/integracj\u0105: 640 ci\u0105g\u0142ych przypadk\u00f3w i 16 o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-simulation-workspace",
+      "milestones": [
+        "GUI",
+        "AUTO",
+        "HISTORY"
+      ],
+      "status": "validated",
+      "description": "Pod\u0142\u0105czono odzyskane kroki do rzeczywistego Start/Pause/Step/Reset, kontrolek urz\u0105dze\u0144, wykres\u00f3w i zapisu sesji. Wbudowany syntetyczny przyk\u0142ad; rzeczywiste klikni\u0119cia i identyczny stan r\u0119cznej grza\u0142ki w GUI/CLI. Pe\u0142ny start IC i ca\u0142e scenariusze pozostaj\u0105 otwarte.",
+      "evidence": "SIMULATION_WORKSPACE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-10-21-startup-clock",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Odzyskano oryginalne DT/0.001 i floor do I16, z 240 por\u00f3wnaniami rzeczywistej biblioteki VB6 oraz odrzucaniem przepe\u0142nienia.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-double-model-initialization",
+      "milestones": [
+        "INIT"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono ci\u0105g\u0142y numeryczny inicjalizator sze\u015bciow\u0119z\u0142owego modelu: 33 Double, 12 tablic, dwa pocz\u0105tkowe zapisy temperatur i Variant Double zero. 240 przypadk\u00f3w; ewolucja pozostaje otwarta.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-assembled-fresh-state",
+      "milestones": [
+        "INIT",
+        "GUI"
+      ],
+      "status": "validated",
+      "description": "Po\u0142\u0105czono wszystkie przeniesione zapisy i zachowano odniesienia: 290 Singles/28 p\u00f3l ca\u0142kowitych oraz Double/tablice dla 110 par \u017ar\u00f3d\u0142owych. GUI oblicza i zapisuje ten stan. W\u0142\u0105czono dok\u0142adny odczyt Double z JSON. Pe\u0142ny start i odtworzenie scenariuszy pozostaj\u0105 otwarte.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-10-21-live-simulation-mimic",
+      "milestones": [
+        "GUI"
+      ],
+      "status": "validated",
+      "description": "Pod\u0142\u0105czono obliczone ci\u015bnienia/temperatur\u0119/poziomy/przep\u0142ywy do schematu podobnego do orygina\u0142u. Brakuj\u0105ce wskazania pozostaj\u0105 nieznane, bez podstawiania danych IC. Test mapowania i rzeczywiste klikni\u0119cia otwieraj\u0105ce Live simulation mimic przesz\u0142y.",
+      "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    }
+  ],
+  "progress_revision": 19,
+  "scope_discoveries": [],
+  "remaining_work_estimate": {
+    "overall_percent": null,
+    "remaining_hours": null,
+    "reason": "Lista i zale\u017cno\u015bci zachowa\u0144 orygina\u0142u nie s\u0105 zamkni\u0119te. Pozosta\u0142o siedem du\u017cych kryteri\u00f3w odbioru, cz\u0119\u015bciowo rozpocz\u0119tych; nie jest to siedem r\u00f3wnych zada\u0144 ani siedem pojedynczych zmian."
+  },
+  "validated_build": {
+    "component_cases_passed": 23912,
+    "component_output_checks_passed": 608507,
+    "rust_tests_passed": 170,
+    "original_application_end_to_end": "not validated"
+  }
+}

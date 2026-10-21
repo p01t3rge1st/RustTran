@@ -1,0 +1,13 @@
+{
+  "system_pressure": 612.4208984375,
+  "activation": 1,
+  "gas_pressure": 693.3029174804688,
+  "flow": 8.450350761413574,
+  "water_volume": 336.1373291015625,
+  "step": 1.0,
+  "gas_volume": 455.98394775390625,
+  "total_volume": 792.1212768554688,
+  "coefficient": 1.9440875053405762,
+  "valve_a": 100,
+  "valve_b": 25
+}

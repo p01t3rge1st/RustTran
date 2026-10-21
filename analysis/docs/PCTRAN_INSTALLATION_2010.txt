@@ -1,0 +1,48 @@
+﻿Installation & Quick Run (updated 1/2010)
+
+    1) Your computer has to be running the Microsoft Windows XP, Vista or System 7 operating system.  You must have System Administrator's right to register PCTRAN custom-controls into the Windows System directory. 
+    2) The MS Office 2000 or higher applications Access and Excel must be installed in your computer. 
+    3) Your monitor should be set to a resolution of SVGA.  If not, the full PCTRAN mimic will not be displayed properly.  To reset the monitor, you can go to “My Computer”,  “Control Panel”, “Display”, “Settings” and choose “1024 x 768” for the Desktop Area and a Font Size of “Normal”.  
+    4) In your CDROM or download zip file, choose the one closest to your plant or interest and extract its contents to your computer. Then run Setup.exe. The screen display will prompt you for the succeeding steps. Your computer’s operating system may have Windows dll’s newer than that to be installed.  Click “Yes” to keep your own.
+    5) You should see “Installation is succeeded”. Sometimes a message “Control olch2x7.ocx does not register properly” shows up. It is harmless just click “Ignore” and you will get the success message. Do not abort the installation.
+    6) The default directory is C:\Program Files\Pctran.  You can change it to any location of your choice.  The executable program PCTRAN will be displayed in the Start Menu.  You can make a short cut or copy it to your desktop.
+    7) After starting PCTRAN, the MST banner will be flashed for a few seconds followed by the PCTRAN Nuclear Steam Supply System (NSSS) of the plant mimic. There might be prompts of “There is unsaved plot (or dose) data. Do you want to save it?” Just answer No. You are ready to run PCTRAN. 
+    8) Click at the Maximize icon in the upper right corner of the Window to get full-screen display.  Then click at the “Code Control” and "Run" button or the "runner" icon to start a run.
+    9) Default run is in real-time, i.e. the same speed as the transient time.  You can click on the number 1 right next to the atom icon in the lower status bar to get fast time. Maximum speed is 16 times faster than real-time.
+    10) To get a complete tutorial, we suggest you to click on the “Help” button in the menu bar.  A complete sequence of instructions will be displayed by clicking by the >> key.   
+    11) For malfunctions, go to "Code Control" and "Malfunctions". For any of your chosen malfunction, enter a non-zero fraction, check "Activate" and close the window.  After the NSSS mimic reappears, click at "Run" again to see the effect of the malfunction.
+    12) The demo kit is full-capability, i.e. it has all the features and capability of the full-functioning package.  The only limit is its runtime is a few hundred seconds. 
+    13) At end of a run, you can either exit or respond “No” and go to the upper left “Restart” button and choose another IC (initial condition) from the window:
+
+
+
+
+
+
+IC	Date & Time	Power	RC Press	Tavg	SG Press	Time In Life	Description
+1	8/7/1996 2:51:30 PM	100	155	306.9	70	EOC	100% POWER EOC
+2	8/7/1996 2:51:30 PM	100	155	306.9	70	MOC	100% POWER MOC
+3	8/7/1996 2:51:30 PM	100	155	306.9	70	BOC	100% POWER BOC
+4	8/7/1996 2:51:30 PM	75	155	304.7	70	BOC	75% POWER BOC
+5	8/7/1996 2:51:30 PM	75	155	304.7	70	MOC	75% POWER MOC
+6	1/27/2000 7:54:27 PM	100.33	156.89	309.05	69.92	BOC	75% POWER EOC
+7	4/3/2009 4:52:07 PM	1.88	157.08	293.23	75.57	BOC	Hot shutdown 1.5 % power
+8	4/3/2009 4:53:26 PM	0.01	156.71	291.48	75.2	BOC	Hot zero power
+9	2/3/2010 9:42:32 AM	4.83	4.41	146.66	4.51	BOC	LOCA w/o ECCS core melt
+10	2/3/2010 9:45:00 AM	0.17	8.37	173.32	3.16	BOC	Core collapsed
+11	2/3/2010 9:46:04 AM	1.15	2.49	126.88	2.7	BOC	Vessel failed
+12	2/3/2010 9:46:41 AM	1.16	2.34	124.92	2.53	BOC	CCI Starts
+22	3/19/2009 9:16:12 AM	100.3	158.18	309.11	69.05	BOC	ic22
+
+You can run another transient from the default IC1 full-power EOC or any others. Some are even in severe accident core-melt or beyond. Click “Run”, “View” and “Dose mimic” to check the core and containment condition. 
+    14) A number of verification runs were conducted in the "Verification _xxx" file. You may try to reproduce that in your test.
+    15) You can get all variables displayed in transient plots by going to “View”, “Transient Plots”. Change the scale and range if necessary so as to get the full curves inside the frame. Choose “Transient Report” to see logs of major events.  
+
+
+
+
+
+10 Navajo Court
+Montville, New Jersey 07045, U.S.A.
+Tel 973-263-7327 
+info@microsimtech.com

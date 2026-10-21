@@ -1,0 +1,3006 @@
+{
+  "method": "Original fresh initializer slices: 0x51b988/0x51b9d4 copy model nominal\npressure into control reference; 0x51c0ec\u20130x51c0f8 and 0x51c10b store level*100.\nExplicit prepared model/level inputs; not the whole initialization procedure.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "nominal_pressure": 433.49664306640625,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 433.49664306640625,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1501.7261962890625,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 1501.7261962890625,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1759.8463134765625,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1759.8463134765625,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1125.524658203125,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 1125.524658203125,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 841.147705078125,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 841.147705078125,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 535.4762573242188,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 535.4762573242188,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1868.7734375,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1868.7734375,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2483.8876953125,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 2483.8876953125,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1415.9095458984375,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 1415.9095458984375,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1425.40966796875,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 1425.40966796875,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 232.6758575439453,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 232.6758575439453,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1917.0076904296875,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 1917.0076904296875,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2129.048095703125,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 2129.048095703125,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1669.0289306640625,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 1669.0289306640625,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2013.9715576171875,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 2013.9715576171875,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1707.9361572265625,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 1707.9361572265625,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 253.646728515625,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 253.646728515625,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 108.06830596923828,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 108.06830596923828,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2331.487548828125,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 2331.487548828125,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1280.240478515625,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 1280.240478515625,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1508.4757080078125,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 1508.4757080078125,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1760.883544921875,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 1760.883544921875,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2481.252685546875,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 2481.252685546875,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 999.3569946289062,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 999.3569946289062,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1085.9979248046875,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 1085.9979248046875,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 401.26885986328125,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 401.26885986328125,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1691.70751953125,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1691.70751953125,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 968.0999755859375,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 968.0999755859375,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1352.1407470703125,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 1352.1407470703125,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 678.6884765625,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 678.6884765625,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1863.3062744140625,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1863.3062744140625,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1287.33154296875,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 1287.33154296875,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1489.9246826171875,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 1489.9246826171875,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 884.2024536132812,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 884.2024536132812,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1997.7008056640625,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1997.7008056640625,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2010.4869384765625,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 2010.4869384765625,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 730.012939453125,
+        "liquid_level": 0.0
+      },
+      "expected": {
+        "pressure_reference": 730.012939453125,
+        "spray_level_percent": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2242.552001953125,
+        "liquid_level": 0.27000001072883606
+      },
+      "expected": {
+        "pressure_reference": 2242.552001953125,
+        "spray_level_percent": 27.000001907348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1448.3377685546875,
+        "liquid_level": 0.8999999761581421
+      },
+      "expected": {
+        "pressure_reference": 1448.3377685546875,
+        "spray_level_percent": 90.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2066.42041015625,
+        "liquid_level": 1.0
+      },
+      "expected": {
+        "pressure_reference": 2066.42041015625,
+        "spray_level_percent": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2320.199462890625,
+        "liquid_level": 0.7606117129325867
+      },
+      "expected": {
+        "pressure_reference": 2320.199462890625,
+        "spray_level_percent": 76.06117248535156
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1106.7384033203125,
+        "liquid_level": 0.4743278920650482
+      },
+      "expected": {
+        "pressure_reference": 1106.7384033203125,
+        "spray_level_percent": 47.43278884887695
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 811.8568725585938,
+        "liquid_level": 0.13678370416164398
+      },
+      "expected": {
+        "pressure_reference": 811.8568725585938,
+        "spray_level_percent": 13.678370475769043
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 404.8369445800781,
+        "liquid_level": 0.7623627185821533
+      },
+      "expected": {
+        "pressure_reference": 404.8369445800781,
+        "spray_level_percent": 76.23627471923828
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1676.4993896484375,
+        "liquid_level": 0.6287660002708435
+      },
+      "expected": {
+        "pressure_reference": 1676.4993896484375,
+        "spray_level_percent": 62.8765983581543
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1262.1387939453125,
+        "liquid_level": 0.5978517532348633
+      },
+      "expected": {
+        "pressure_reference": 1262.1387939453125,
+        "spray_level_percent": 59.78517532348633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1668.4365234375,
+        "liquid_level": 0.8831279277801514
+      },
+      "expected": {
+        "pressure_reference": 1668.4365234375,
+        "spray_level_percent": 88.31278991699219
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 908.6678466796875,
+        "liquid_level": 0.09144293516874313
+      },
+      "expected": {
+        "pressure_reference": 908.6678466796875,
+        "spray_level_percent": 9.144293785095215
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 257.37115478515625,
+        "liquid_level": 0.9673489928245544
+      },
+      "expected": {
+        "pressure_reference": 257.37115478515625,
+        "spray_level_percent": 96.73490142822266
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 263.65374755859375,
+        "liquid_level": 0.7146772742271423
+      },
+      "expected": {
+        "pressure_reference": 263.65374755859375,
+        "spray_level_percent": 71.46772766113281
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1830.7091064453125,
+        "liquid_level": 0.7959442138671875
+      },
+      "expected": {
+        "pressure_reference": 1830.7091064453125,
+        "spray_level_percent": 79.59442138671875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 419.6709899902344,
+        "liquid_level": 0.9263807535171509
+      },
+      "expected": {
+        "pressure_reference": 419.6709899902344,
+        "spray_level_percent": 92.63807678222656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 388.7421569824219,
+        "liquid_level": 0.18472734093666077
+      },
+      "expected": {
+        "pressure_reference": 388.7421569824219,
+        "spray_level_percent": 18.472734451293945
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1640.9364013671875,
+        "liquid_level": 0.3170837163925171
+      },
+      "expected": {
+        "pressure_reference": 1640.9364013671875,
+        "spray_level_percent": 31.708372116088867
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1200.628662109375,
+        "liquid_level": 0.1253492534160614
+      },
+      "expected": {
+        "pressure_reference": 1200.628662109375,
+        "spray_level_percent": 12.53492546081543
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1937.8985595703125,
+        "liquid_level": 0.5972436666488647
+      },
+      "expected": {
+        "pressure_reference": 1937.8985595703125,
+        "spray_level_percent": 59.724365234375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1621.765869140625,
+        "liquid_level": 0.2079276591539383
+      },
+      "expected": {
+        "pressure_reference": 1621.765869140625,
+        "spray_level_percent": 20.792766571044922
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1284.0123291015625,
+        "liquid_level": 0.6483809351921082
+      },
+      "expected": {
+        "pressure_reference": 1284.0123291015625,
+        "spray_level_percent": 64.83809661865234
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 163.74696350097656,
+        "liquid_level": 0.4886714220046997
+      },
+      "expected": {
+        "pressure_reference": 163.74696350097656,
+        "spray_level_percent": 48.86714172363281
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 259.7196350097656,
+        "liquid_level": 0.7895807027816772
+      },
+      "expected": {
+        "pressure_reference": 259.7196350097656,
+        "spray_level_percent": 78.95806884765625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 200.7362518310547,
+        "liquid_level": 0.9051957726478577
+      },
+      "expected": {
+        "pressure_reference": 200.7362518310547,
+        "spray_level_percent": 90.51957702636719
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1800.66162109375,
+        "liquid_level": 0.30973944067955017
+      },
+      "expected": {
+        "pressure_reference": 1800.66162109375,
+        "spray_level_percent": 30.97394371032715
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2493.289794921875,
+        "liquid_level": 0.9977651834487915
+      },
+      "expected": {
+        "pressure_reference": 2493.289794921875,
+        "spray_level_percent": 99.77651977539062
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2389.009765625,
+        "liquid_level": 0.4780147075653076
+      },
+      "expected": {
+        "pressure_reference": 2389.009765625,
+        "spray_level_percent": 47.80147171020508
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2427.18896484375,
+        "liquid_level": 0.4033721089363098
+      },
+      "expected": {
+        "pressure_reference": 2427.18896484375,
+        "spray_level_percent": 40.33721160888672
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2528.960693359375,
+        "liquid_level": 0.6461238861083984
+      },
+      "expected": {
+        "pressure_reference": 2528.960693359375,
+        "spray_level_percent": 64.61238861083984
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 881.4366455078125,
+        "liquid_level": 0.7470172643661499
+      },
+      "expected": {
+        "pressure_reference": 881.4366455078125,
+        "spray_level_percent": 74.70172882080078
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2220.119140625,
+        "liquid_level": 0.2438216209411621
+      },
+      "expected": {
+        "pressure_reference": 2220.119140625,
+        "spray_level_percent": 24.38216209411621
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2204.903564453125,
+        "liquid_level": 0.9760888814926147
+      },
+      "expected": {
+        "pressure_reference": 2204.903564453125,
+        "spray_level_percent": 97.60888671875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 975.968017578125,
+        "liquid_level": 0.02288120612502098
+      },
+      "expected": {
+        "pressure_reference": 975.968017578125,
+        "spray_level_percent": 2.2881205081939697
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 254.98524475097656,
+        "liquid_level": 0.8632648587226868
+      },
+      "expected": {
+        "pressure_reference": 254.98524475097656,
+        "spray_level_percent": 86.32648468017578
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1417.5841064453125,
+        "liquid_level": 0.23962615430355072
+      },
+      "expected": {
+        "pressure_reference": 1417.5841064453125,
+        "spray_level_percent": 23.962615966796875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 202.46847534179688,
+        "liquid_level": 0.5744086503982544
+      },
+      "expected": {
+        "pressure_reference": 202.46847534179688,
+        "spray_level_percent": 57.44086456298828
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 670.9210815429688,
+        "liquid_level": 0.18405196070671082
+      },
+      "expected": {
+        "pressure_reference": 670.9210815429688,
+        "spray_level_percent": 18.405195236206055
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1756.1123046875,
+        "liquid_level": 0.9371852874755859
+      },
+      "expected": {
+        "pressure_reference": 1756.1123046875,
+        "spray_level_percent": 93.7185287475586
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 598.939453125,
+        "liquid_level": 0.08185725659132004
+      },
+      "expected": {
+        "pressure_reference": 598.939453125,
+        "spray_level_percent": 8.185725212097168
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1826.886474609375,
+        "liquid_level": 0.1957329362630844
+      },
+      "expected": {
+        "pressure_reference": 1826.886474609375,
+        "spray_level_percent": 19.573293685913086
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 136.9733123779297,
+        "liquid_level": 0.2577684819698334
+      },
+      "expected": {
+        "pressure_reference": 136.9733123779297,
+        "spray_level_percent": 25.77684783935547
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 558.608154296875,
+        "liquid_level": 0.7020660638809204
+      },
+      "expected": {
+        "pressure_reference": 558.608154296875,
+        "spray_level_percent": 70.20660400390625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1490.312744140625,
+        "liquid_level": 0.9227287769317627
+      },
+      "expected": {
+        "pressure_reference": 1490.312744140625,
+        "spray_level_percent": 92.27288055419922
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1207.2669677734375,
+        "liquid_level": 0.06596852093935013
+      },
+      "expected": {
+        "pressure_reference": 1207.2669677734375,
+        "spray_level_percent": 6.5968523025512695
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1621.84619140625,
+        "liquid_level": 0.13841703534126282
+      },
+      "expected": {
+        "pressure_reference": 1621.84619140625,
+        "spray_level_percent": 13.841703414916992
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2412.046142578125,
+        "liquid_level": 0.826431930065155
+      },
+      "expected": {
+        "pressure_reference": 2412.046142578125,
+        "spray_level_percent": 82.64319610595703
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1869.363037109375,
+        "liquid_level": 0.8622680306434631
+      },
+      "expected": {
+        "pressure_reference": 1869.363037109375,
+        "spray_level_percent": 86.226806640625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 619.6411743164062,
+        "liquid_level": 0.10395112633705139
+      },
+      "expected": {
+        "pressure_reference": 619.6411743164062,
+        "spray_level_percent": 10.395112991333008
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1159.203857421875,
+        "liquid_level": 0.19409102201461792
+      },
+      "expected": {
+        "pressure_reference": 1159.203857421875,
+        "spray_level_percent": 19.409101486206055
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1089.9337158203125,
+        "liquid_level": 0.10865306854248047
+      },
+      "expected": {
+        "pressure_reference": 1089.9337158203125,
+        "spray_level_percent": 10.865306854248047
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2217.31689453125,
+        "liquid_level": 0.16249589622020721
+      },
+      "expected": {
+        "pressure_reference": 2217.31689453125,
+        "spray_level_percent": 16.249589920043945
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1746.5633544921875,
+        "liquid_level": 0.6646862030029297
+      },
+      "expected": {
+        "pressure_reference": 1746.5633544921875,
+        "spray_level_percent": 66.46862030029297
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2069.489501953125,
+        "liquid_level": 0.6532193422317505
+      },
+      "expected": {
+        "pressure_reference": 2069.489501953125,
+        "spray_level_percent": 65.32193756103516
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 541.341552734375,
+        "liquid_level": 0.1729712188243866
+      },
+      "expected": {
+        "pressure_reference": 541.341552734375,
+        "spray_level_percent": 17.297121047973633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 757.4905395507812,
+        "liquid_level": 0.3668096959590912
+      },
+      "expected": {
+        "pressure_reference": 757.4905395507812,
+        "spray_level_percent": 36.68096923828125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1499.0977783203125,
+        "liquid_level": 0.37415623664855957
+      },
+      "expected": {
+        "pressure_reference": 1499.0977783203125,
+        "spray_level_percent": 37.41562271118164
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1692.2076416015625,
+        "liquid_level": 0.5685022473335266
+      },
+      "expected": {
+        "pressure_reference": 1692.2076416015625,
+        "spray_level_percent": 56.850223541259766
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1461.4229736328125,
+        "liquid_level": 0.31052860617637634
+      },
+      "expected": {
+        "pressure_reference": 1461.4229736328125,
+        "spray_level_percent": 31.052860260009766
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1275.5830078125,
+        "liquid_level": 0.615209698677063
+      },
+      "expected": {
+        "pressure_reference": 1275.5830078125,
+        "spray_level_percent": 61.52096939086914
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 729.20068359375,
+        "liquid_level": 0.6378158330917358
+      },
+      "expected": {
+        "pressure_reference": 729.20068359375,
+        "spray_level_percent": 63.78158187866211
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2395.465576171875,
+        "liquid_level": 0.4164871275424957
+      },
+      "expected": {
+        "pressure_reference": 2395.465576171875,
+        "spray_level_percent": 41.648712158203125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 464.5361633300781,
+        "liquid_level": 0.02262859418988228
+      },
+      "expected": {
+        "pressure_reference": 464.5361633300781,
+        "spray_level_percent": 2.262859344482422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2472.153564453125,
+        "liquid_level": 0.5406578183174133
+      },
+      "expected": {
+        "pressure_reference": 2472.153564453125,
+        "spray_level_percent": 54.06578063964844
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 964.3157348632812,
+        "liquid_level": 0.4934423267841339
+      },
+      "expected": {
+        "pressure_reference": 964.3157348632812,
+        "spray_level_percent": 49.344234466552734
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1249.2889404296875,
+        "liquid_level": 0.1014392226934433
+      },
+      "expected": {
+        "pressure_reference": 1249.2889404296875,
+        "spray_level_percent": 10.143921852111816
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1366.6251220703125,
+        "liquid_level": 0.9647470116615295
+      },
+      "expected": {
+        "pressure_reference": 1366.6251220703125,
+        "spray_level_percent": 96.47470092773438
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1164.09423828125,
+        "liquid_level": 0.5900153517723083
+      },
+      "expected": {
+        "pressure_reference": 1164.09423828125,
+        "spray_level_percent": 59.00153350830078
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 849.3447875976562,
+        "liquid_level": 0.9061301350593567
+      },
+      "expected": {
+        "pressure_reference": 849.3447875976562,
+        "spray_level_percent": 90.6130142211914
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 192.8827667236328,
+        "liquid_level": 0.9356781244277954
+      },
+      "expected": {
+        "pressure_reference": 192.8827667236328,
+        "spray_level_percent": 93.56781005859375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1073.9083251953125,
+        "liquid_level": 0.9304496049880981
+      },
+      "expected": {
+        "pressure_reference": 1073.9083251953125,
+        "spray_level_percent": 93.04496002197266
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1660.307373046875,
+        "liquid_level": 0.8412679433822632
+      },
+      "expected": {
+        "pressure_reference": 1660.307373046875,
+        "spray_level_percent": 84.12679290771484
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 188.5609893798828,
+        "liquid_level": 0.029278792440891266
+      },
+      "expected": {
+        "pressure_reference": 188.5609893798828,
+        "spray_level_percent": 2.9278793334960938
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1732.013916015625,
+        "liquid_level": 0.17403146624565125
+      },
+      "expected": {
+        "pressure_reference": 1732.013916015625,
+        "spray_level_percent": 17.403146743774414
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 816.76171875,
+        "liquid_level": 0.889507532119751
+      },
+      "expected": {
+        "pressure_reference": 816.76171875,
+        "spray_level_percent": 88.95075225830078
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1663.2890625,
+        "liquid_level": 0.7985986471176147
+      },
+      "expected": {
+        "pressure_reference": 1663.2890625,
+        "spray_level_percent": 79.85986328125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 411.3790283203125,
+        "liquid_level": 0.7991484999656677
+      },
+      "expected": {
+        "pressure_reference": 411.3790283203125,
+        "spray_level_percent": 79.91484832763672
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1916.982421875,
+        "liquid_level": 0.25398337841033936
+      },
+      "expected": {
+        "pressure_reference": 1916.982421875,
+        "spray_level_percent": 25.398338317871094
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 970.668212890625,
+        "liquid_level": 0.3199695944786072
+      },
+      "expected": {
+        "pressure_reference": 970.668212890625,
+        "spray_level_percent": 31.996959686279297
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 995.1807250976562,
+        "liquid_level": 0.39900606870651245
+      },
+      "expected": {
+        "pressure_reference": 995.1807250976562,
+        "spray_level_percent": 39.90060806274414
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 118.22544860839844,
+        "liquid_level": 0.3661032021045685
+      },
+      "expected": {
+        "pressure_reference": 118.22544860839844,
+        "spray_level_percent": 36.610321044921875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1434.7059326171875,
+        "liquid_level": 0.5773371458053589
+      },
+      "expected": {
+        "pressure_reference": 1434.7059326171875,
+        "spray_level_percent": 57.73371505737305
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1610.52001953125,
+        "liquid_level": 0.04087138921022415
+      },
+      "expected": {
+        "pressure_reference": 1610.52001953125,
+        "spray_level_percent": 4.087139129638672
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1085.547119140625,
+        "liquid_level": 0.4267409145832062
+      },
+      "expected": {
+        "pressure_reference": 1085.547119140625,
+        "spray_level_percent": 42.67409133911133
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1326.5560302734375,
+        "liquid_level": 0.5688334703445435
+      },
+      "expected": {
+        "pressure_reference": 1326.5560302734375,
+        "spray_level_percent": 56.88334655761719
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2042.5018310546875,
+        "liquid_level": 0.38484135270118713
+      },
+      "expected": {
+        "pressure_reference": 2042.5018310546875,
+        "spray_level_percent": 38.484134674072266
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2423.4072265625,
+        "liquid_level": 0.361006498336792
+      },
+      "expected": {
+        "pressure_reference": 2423.4072265625,
+        "spray_level_percent": 36.100650787353516
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2033.789306640625,
+        "liquid_level": 0.4159110188484192
+      },
+      "expected": {
+        "pressure_reference": 2033.789306640625,
+        "spray_level_percent": 41.591102600097656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2218.65771484375,
+        "liquid_level": 0.9995121359825134
+      },
+      "expected": {
+        "pressure_reference": 2218.65771484375,
+        "spray_level_percent": 99.95121002197266
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 790.2807006835938,
+        "liquid_level": 0.9285739064216614
+      },
+      "expected": {
+        "pressure_reference": 790.2807006835938,
+        "spray_level_percent": 92.85739135742188
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2549.003173828125,
+        "liquid_level": 0.31074094772338867
+      },
+      "expected": {
+        "pressure_reference": 2549.003173828125,
+        "spray_level_percent": 31.074094772338867
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2439.749267578125,
+        "liquid_level": 0.278016597032547
+      },
+      "expected": {
+        "pressure_reference": 2439.749267578125,
+        "spray_level_percent": 27.801660537719727
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 536.9005126953125,
+        "liquid_level": 0.6109634637832642
+      },
+      "expected": {
+        "pressure_reference": 536.9005126953125,
+        "spray_level_percent": 61.09634780883789
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1155.36083984375,
+        "liquid_level": 0.2657976448535919
+      },
+      "expected": {
+        "pressure_reference": 1155.36083984375,
+        "spray_level_percent": 26.57976531982422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 558.2904663085938,
+        "liquid_level": 0.21176235377788544
+      },
+      "expected": {
+        "pressure_reference": 558.2904663085938,
+        "spray_level_percent": 21.17623519897461
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2093.139404296875,
+        "liquid_level": 0.5297423005104065
+      },
+      "expected": {
+        "pressure_reference": 2093.139404296875,
+        "spray_level_percent": 52.9742317199707
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1396.3096923828125,
+        "liquid_level": 0.5260604619979858
+      },
+      "expected": {
+        "pressure_reference": 1396.3096923828125,
+        "spray_level_percent": 52.60604476928711
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1903.92822265625,
+        "liquid_level": 0.6382476687431335
+      },
+      "expected": {
+        "pressure_reference": 1903.92822265625,
+        "spray_level_percent": 63.82476806640625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1102.75830078125,
+        "liquid_level": 0.019768595695495605
+      },
+      "expected": {
+        "pressure_reference": 1102.75830078125,
+        "spray_level_percent": 1.9768595695495605
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2418.268310546875,
+        "liquid_level": 0.6965270042419434
+      },
+      "expected": {
+        "pressure_reference": 2418.268310546875,
+        "spray_level_percent": 69.65270233154297
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1056.674072265625,
+        "liquid_level": 0.3766898810863495
+      },
+      "expected": {
+        "pressure_reference": 1056.674072265625,
+        "spray_level_percent": 37.66898727416992
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1409.21337890625,
+        "liquid_level": 0.2918798327445984
+      },
+      "expected": {
+        "pressure_reference": 1409.21337890625,
+        "spray_level_percent": 29.1879825592041
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2192.220703125,
+        "liquid_level": 0.350220650434494
+      },
+      "expected": {
+        "pressure_reference": 2192.220703125,
+        "spray_level_percent": 35.022064208984375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1071.8094482421875,
+        "liquid_level": 0.9549080729484558
+      },
+      "expected": {
+        "pressure_reference": 1071.8094482421875,
+        "spray_level_percent": 95.49080657958984
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2098.5712890625,
+        "liquid_level": 0.3610731363296509
+      },
+      "expected": {
+        "pressure_reference": 2098.5712890625,
+        "spray_level_percent": 36.10731506347656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1923.2237548828125,
+        "liquid_level": 0.04860657826066017
+      },
+      "expected": {
+        "pressure_reference": 1923.2237548828125,
+        "spray_level_percent": 4.860657691955566
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 912.9241943359375,
+        "liquid_level": 0.08089976012706757
+      },
+      "expected": {
+        "pressure_reference": 912.9241943359375,
+        "spray_level_percent": 8.08997631072998
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1176.5775146484375,
+        "liquid_level": 0.4608340859413147
+      },
+      "expected": {
+        "pressure_reference": 1176.5775146484375,
+        "spray_level_percent": 46.08340835571289
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 239.3343048095703,
+        "liquid_level": 0.5447684526443481
+      },
+      "expected": {
+        "pressure_reference": 239.3343048095703,
+        "spray_level_percent": 54.476844787597656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 234.64942932128906,
+        "liquid_level": 0.8780369162559509
+      },
+      "expected": {
+        "pressure_reference": 234.64942932128906,
+        "spray_level_percent": 87.8036880493164
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 171.17706298828125,
+        "liquid_level": 0.13529129326343536
+      },
+      "expected": {
+        "pressure_reference": 171.17706298828125,
+        "spray_level_percent": 13.529129028320312
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2051.089111328125,
+        "liquid_level": 0.3870938718318939
+      },
+      "expected": {
+        "pressure_reference": 2051.089111328125,
+        "spray_level_percent": 38.709388732910156
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 403.5128173828125,
+        "liquid_level": 0.2691327631473541
+      },
+      "expected": {
+        "pressure_reference": 403.5128173828125,
+        "spray_level_percent": 26.91327667236328
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2041.4849853515625,
+        "liquid_level": 0.3099510669708252
+      },
+      "expected": {
+        "pressure_reference": 2041.4849853515625,
+        "spray_level_percent": 30.995105743408203
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 522.5514526367188,
+        "liquid_level": 0.8096479773521423
+      },
+      "expected": {
+        "pressure_reference": 522.5514526367188,
+        "spray_level_percent": 80.96479797363281
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2041.2493896484375,
+        "liquid_level": 0.18679668009281158
+      },
+      "expected": {
+        "pressure_reference": 2041.2493896484375,
+        "spray_level_percent": 18.679668426513672
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2521.216796875,
+        "liquid_level": 0.24827659130096436
+      },
+      "expected": {
+        "pressure_reference": 2521.216796875,
+        "spray_level_percent": 24.827659606933594
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2481.1298828125,
+        "liquid_level": 0.36890044808387756
+      },
+      "expected": {
+        "pressure_reference": 2481.1298828125,
+        "spray_level_percent": 36.890045166015625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 702.9501953125,
+        "liquid_level": 0.4456533193588257
+      },
+      "expected": {
+        "pressure_reference": 702.9501953125,
+        "spray_level_percent": 44.565330505371094
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2532.427490234375,
+        "liquid_level": 0.4174228012561798
+      },
+      "expected": {
+        "pressure_reference": 2532.427490234375,
+        "spray_level_percent": 41.742279052734375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2591.76318359375,
+        "liquid_level": 0.5330596566200256
+      },
+      "expected": {
+        "pressure_reference": 2591.76318359375,
+        "spray_level_percent": 53.305965423583984
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 985.7068481445312,
+        "liquid_level": 0.9191622138023376
+      },
+      "expected": {
+        "pressure_reference": 985.7068481445312,
+        "spray_level_percent": 91.91622161865234
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2576.5625,
+        "liquid_level": 0.9210430979728699
+      },
+      "expected": {
+        "pressure_reference": 2576.5625,
+        "spray_level_percent": 92.10430908203125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1194.541748046875,
+        "liquid_level": 0.167323499917984
+      },
+      "expected": {
+        "pressure_reference": 1194.541748046875,
+        "spray_level_percent": 16.732349395751953
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1149.3017578125,
+        "liquid_level": 0.445998877286911
+      },
+      "expected": {
+        "pressure_reference": 1149.3017578125,
+        "spray_level_percent": 44.59988784790039
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 616.7053833007812,
+        "liquid_level": 0.23950906097888947
+      },
+      "expected": {
+        "pressure_reference": 616.7053833007812,
+        "spray_level_percent": 23.95090675354004
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 701.5433959960938,
+        "liquid_level": 0.6297522187232971
+      },
+      "expected": {
+        "pressure_reference": 701.5433959960938,
+        "spray_level_percent": 62.975223541259766
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2449.01123046875,
+        "liquid_level": 0.2837855815887451
+      },
+      "expected": {
+        "pressure_reference": 2449.01123046875,
+        "spray_level_percent": 28.378559112548828
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1914.9285888671875,
+        "liquid_level": 0.7047205567359924
+      },
+      "expected": {
+        "pressure_reference": 1914.9285888671875,
+        "spray_level_percent": 70.47205352783203
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 132.10821533203125,
+        "liquid_level": 0.42085251212120056
+      },
+      "expected": {
+        "pressure_reference": 132.10821533203125,
+        "spray_level_percent": 42.08525085449219
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 717.1094360351562,
+        "liquid_level": 0.28526464104652405
+      },
+      "expected": {
+        "pressure_reference": 717.1094360351562,
+        "spray_level_percent": 28.526464462280273
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2488.1015625,
+        "liquid_level": 0.053975194692611694
+      },
+      "expected": {
+        "pressure_reference": 2488.1015625,
+        "spray_level_percent": 5.397519588470459
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 783.6359252929688,
+        "liquid_level": 0.7831569910049438
+      },
+      "expected": {
+        "pressure_reference": 783.6359252929688,
+        "spray_level_percent": 78.3156967163086
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 761.3252563476562,
+        "liquid_level": 0.20512722432613373
+      },
+      "expected": {
+        "pressure_reference": 761.3252563476562,
+        "spray_level_percent": 20.51272201538086
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1279.83447265625,
+        "liquid_level": 0.4308277368545532
+      },
+      "expected": {
+        "pressure_reference": 1279.83447265625,
+        "spray_level_percent": 43.0827751159668
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 740.8396606445312,
+        "liquid_level": 0.7633655071258545
+      },
+      "expected": {
+        "pressure_reference": 740.8396606445312,
+        "spray_level_percent": 76.3365478515625
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 680.3972778320312,
+        "liquid_level": 0.9613593816757202
+      },
+      "expected": {
+        "pressure_reference": 680.3972778320312,
+        "spray_level_percent": 96.13594055175781
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 968.9459228515625,
+        "liquid_level": 0.567114531993866
+      },
+      "expected": {
+        "pressure_reference": 968.9459228515625,
+        "spray_level_percent": 56.71145248413086
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 363.0079650878906,
+        "liquid_level": 0.5771291851997375
+      },
+      "expected": {
+        "pressure_reference": 363.0079650878906,
+        "spray_level_percent": 57.71291732788086
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 699.5621948242188,
+        "liquid_level": 0.22858992218971252
+      },
+      "expected": {
+        "pressure_reference": 699.5621948242188,
+        "spray_level_percent": 22.858991622924805
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2403.0380859375,
+        "liquid_level": 0.9996966123580933
+      },
+      "expected": {
+        "pressure_reference": 2403.0380859375,
+        "spray_level_percent": 99.96965789794922
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2336.7412109375,
+        "liquid_level": 0.25240886211395264
+      },
+      "expected": {
+        "pressure_reference": 2336.7412109375,
+        "spray_level_percent": 25.240886688232422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1698.48095703125,
+        "liquid_level": 0.2018679678440094
+      },
+      "expected": {
+        "pressure_reference": 1698.48095703125,
+        "spray_level_percent": 20.186796188354492
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1832.258056640625,
+        "liquid_level": 0.5460370182991028
+      },
+      "expected": {
+        "pressure_reference": 1832.258056640625,
+        "spray_level_percent": 54.603702545166016
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1565.5498046875,
+        "liquid_level": 0.2719671428203583
+      },
+      "expected": {
+        "pressure_reference": 1565.5498046875,
+        "spray_level_percent": 27.196714401245117
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 590.2732543945312,
+        "liquid_level": 0.6256559491157532
+      },
+      "expected": {
+        "pressure_reference": 590.2732543945312,
+        "spray_level_percent": 62.56559371948242
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2244.321044921875,
+        "liquid_level": 0.5242888331413269
+      },
+      "expected": {
+        "pressure_reference": 2244.321044921875,
+        "spray_level_percent": 52.42888259887695
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2285.795166015625,
+        "liquid_level": 0.7928524017333984
+      },
+      "expected": {
+        "pressure_reference": 2285.795166015625,
+        "spray_level_percent": 79.28524017333984
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 118.16624450683594,
+        "liquid_level": 0.9916051030158997
+      },
+      "expected": {
+        "pressure_reference": 118.16624450683594,
+        "spray_level_percent": 99.16050720214844
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2146.978271484375,
+        "liquid_level": 0.0880325585603714
+      },
+      "expected": {
+        "pressure_reference": 2146.978271484375,
+        "spray_level_percent": 8.803256034851074
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2106.212158203125,
+        "liquid_level": 0.06787579506635666
+      },
+      "expected": {
+        "pressure_reference": 2106.212158203125,
+        "spray_level_percent": 6.787579536437988
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1482.7967529296875,
+        "liquid_level": 0.6992172598838806
+      },
+      "expected": {
+        "pressure_reference": 1482.7967529296875,
+        "spray_level_percent": 69.92172241210938
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2111.375244140625,
+        "liquid_level": 0.8437415361404419
+      },
+      "expected": {
+        "pressure_reference": 2111.375244140625,
+        "spray_level_percent": 84.37415313720703
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1890.590576171875,
+        "liquid_level": 0.6312989592552185
+      },
+      "expected": {
+        "pressure_reference": 1890.590576171875,
+        "spray_level_percent": 63.1298942565918
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 627.5513305664062,
+        "liquid_level": 0.7362788915634155
+      },
+      "expected": {
+        "pressure_reference": 627.5513305664062,
+        "spray_level_percent": 73.62789154052734
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2290.58154296875,
+        "liquid_level": 0.25750496983528137
+      },
+      "expected": {
+        "pressure_reference": 2290.58154296875,
+        "spray_level_percent": 25.750497817993164
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 887.8718872070312,
+        "liquid_level": 0.8230174779891968
+      },
+      "expected": {
+        "pressure_reference": 887.8718872070312,
+        "spray_level_percent": 82.30175018310547
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 785.76513671875,
+        "liquid_level": 0.6251749396324158
+      },
+      "expected": {
+        "pressure_reference": 785.76513671875,
+        "spray_level_percent": 62.517494201660156
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1693.41357421875,
+        "liquid_level": 0.31365999579429626
+      },
+      "expected": {
+        "pressure_reference": 1693.41357421875,
+        "spray_level_percent": 31.365999221801758
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 831.6941528320312,
+        "liquid_level": 0.12195892632007599
+      },
+      "expected": {
+        "pressure_reference": 831.6941528320312,
+        "spray_level_percent": 12.195892333984375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2260.00244140625,
+        "liquid_level": 0.6621779203414917
+      },
+      "expected": {
+        "pressure_reference": 2260.00244140625,
+        "spray_level_percent": 66.21778869628906
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1525.3759765625,
+        "liquid_level": 0.9586511254310608
+      },
+      "expected": {
+        "pressure_reference": 1525.3759765625,
+        "spray_level_percent": 95.8651123046875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 181.12123107910156,
+        "liquid_level": 0.06407319754362106
+      },
+      "expected": {
+        "pressure_reference": 181.12123107910156,
+        "spray_level_percent": 6.40731954574585
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1634.5555419921875,
+        "liquid_level": 0.21422336995601654
+      },
+      "expected": {
+        "pressure_reference": 1634.5555419921875,
+        "spray_level_percent": 21.42233657836914
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1617.23388671875,
+        "liquid_level": 0.6866047382354736
+      },
+      "expected": {
+        "pressure_reference": 1617.23388671875,
+        "spray_level_percent": 68.66047668457031
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 555.1925048828125,
+        "liquid_level": 0.939706563949585
+      },
+      "expected": {
+        "pressure_reference": 555.1925048828125,
+        "spray_level_percent": 93.97065734863281
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 714.2053833007812,
+        "liquid_level": 0.6301833987236023
+      },
+      "expected": {
+        "pressure_reference": 714.2053833007812,
+        "spray_level_percent": 63.018341064453125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 170.8358612060547,
+        "liquid_level": 0.22087372839450836
+      },
+      "expected": {
+        "pressure_reference": 170.8358612060547,
+        "spray_level_percent": 22.087373733520508
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1184.04443359375,
+        "liquid_level": 0.43038225173950195
+      },
+      "expected": {
+        "pressure_reference": 1184.04443359375,
+        "spray_level_percent": 43.03822326660156
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1524.6290283203125,
+        "liquid_level": 0.4445396363735199
+      },
+      "expected": {
+        "pressure_reference": 1524.6290283203125,
+        "spray_level_percent": 44.45396423339844
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2136.83544921875,
+        "liquid_level": 0.6153262853622437
+      },
+      "expected": {
+        "pressure_reference": 2136.83544921875,
+        "spray_level_percent": 61.53262710571289
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1812.055908203125,
+        "liquid_level": 0.04182649031281471
+      },
+      "expected": {
+        "pressure_reference": 1812.055908203125,
+        "spray_level_percent": 4.1826491355896
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 813.3875732421875,
+        "liquid_level": 0.6241629123687744
+      },
+      "expected": {
+        "pressure_reference": 813.3875732421875,
+        "spray_level_percent": 62.416290283203125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1130.509765625,
+        "liquid_level": 0.016317076981067657
+      },
+      "expected": {
+        "pressure_reference": 1130.509765625,
+        "spray_level_percent": 1.6317076683044434
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1832.6746826171875,
+        "liquid_level": 0.7228558659553528
+      },
+      "expected": {
+        "pressure_reference": 1832.6746826171875,
+        "spray_level_percent": 72.28558349609375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1856.82080078125,
+        "liquid_level": 0.30465808510780334
+      },
+      "expected": {
+        "pressure_reference": 1856.82080078125,
+        "spray_level_percent": 30.465808868408203
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1298.6878662109375,
+        "liquid_level": 0.3657313585281372
+      },
+      "expected": {
+        "pressure_reference": 1298.6878662109375,
+        "spray_level_percent": 36.57313537597656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2132.895751953125,
+        "liquid_level": 0.1000763401389122
+      },
+      "expected": {
+        "pressure_reference": 2132.895751953125,
+        "spray_level_percent": 10.007634162902832
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2011.1280517578125,
+        "liquid_level": 0.6908483505249023
+      },
+      "expected": {
+        "pressure_reference": 2011.1280517578125,
+        "spray_level_percent": 69.0848388671875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 301.68829345703125,
+        "liquid_level": 0.7471361756324768
+      },
+      "expected": {
+        "pressure_reference": 301.68829345703125,
+        "spray_level_percent": 74.71361541748047
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 243.0110626220703,
+        "liquid_level": 0.06684008985757828
+      },
+      "expected": {
+        "pressure_reference": 243.0110626220703,
+        "spray_level_percent": 6.684009075164795
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1593.3651123046875,
+        "liquid_level": 0.6349226832389832
+      },
+      "expected": {
+        "pressure_reference": 1593.3651123046875,
+        "spray_level_percent": 63.49226760864258
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2121.469970703125,
+        "liquid_level": 0.8524037003517151
+      },
+      "expected": {
+        "pressure_reference": 2121.469970703125,
+        "spray_level_percent": 85.24037170410156
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1538.9034423828125,
+        "liquid_level": 0.725151538848877
+      },
+      "expected": {
+        "pressure_reference": 1538.9034423828125,
+        "spray_level_percent": 72.51515197753906
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2225.5498046875,
+        "liquid_level": 0.9269922971725464
+      },
+      "expected": {
+        "pressure_reference": 2225.5498046875,
+        "spray_level_percent": 92.69922637939453
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1437.1197509765625,
+        "liquid_level": 0.4919164180755615
+      },
+      "expected": {
+        "pressure_reference": 1437.1197509765625,
+        "spray_level_percent": 49.19164276123047
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1707.07666015625,
+        "liquid_level": 0.12936970591545105
+      },
+      "expected": {
+        "pressure_reference": 1707.07666015625,
+        "spray_level_percent": 12.936970710754395
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 547.118408203125,
+        "liquid_level": 0.926412045955658
+      },
+      "expected": {
+        "pressure_reference": 547.118408203125,
+        "spray_level_percent": 92.64120483398438
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2139.946044921875,
+        "liquid_level": 0.5451252460479736
+      },
+      "expected": {
+        "pressure_reference": 2139.946044921875,
+        "spray_level_percent": 54.51252365112305
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2085.53466796875,
+        "liquid_level": 0.6728377938270569
+      },
+      "expected": {
+        "pressure_reference": 2085.53466796875,
+        "spray_level_percent": 67.28378295898438
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 668.0499267578125,
+        "liquid_level": 0.24528077244758606
+      },
+      "expected": {
+        "pressure_reference": 668.0499267578125,
+        "spray_level_percent": 24.528078079223633
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2407.343505859375,
+        "liquid_level": 0.05750202015042305
+      },
+      "expected": {
+        "pressure_reference": 2407.343505859375,
+        "spray_level_percent": 5.750202178955078
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1488.2215576171875,
+        "liquid_level": 0.4023236632347107
+      },
+      "expected": {
+        "pressure_reference": 1488.2215576171875,
+        "spray_level_percent": 40.232364654541016
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2484.893798828125,
+        "liquid_level": 0.26468363404273987
+      },
+      "expected": {
+        "pressure_reference": 2484.893798828125,
+        "spray_level_percent": 26.46836280822754
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1460.9013671875,
+        "liquid_level": 0.1492181420326233
+      },
+      "expected": {
+        "pressure_reference": 1460.9013671875,
+        "spray_level_percent": 14.92181396484375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1211.46044921875,
+        "liquid_level": 0.3289574682712555
+      },
+      "expected": {
+        "pressure_reference": 1211.46044921875,
+        "spray_level_percent": 32.895748138427734
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1173.37890625,
+        "liquid_level": 0.44499510526657104
+      },
+      "expected": {
+        "pressure_reference": 1173.37890625,
+        "spray_level_percent": 44.49951171875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2082.822021484375,
+        "liquid_level": 0.6400408148765564
+      },
+      "expected": {
+        "pressure_reference": 2082.822021484375,
+        "spray_level_percent": 64.00408172607422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 485.1700439453125,
+        "liquid_level": 0.8165417313575745
+      },
+      "expected": {
+        "pressure_reference": 485.1700439453125,
+        "spray_level_percent": 81.6541748046875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 179.83494567871094,
+        "liquid_level": 0.45500490069389343
+      },
+      "expected": {
+        "pressure_reference": 179.83494567871094,
+        "spray_level_percent": 45.50048828125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1356.6514892578125,
+        "liquid_level": 0.6878027319908142
+      },
+      "expected": {
+        "pressure_reference": 1356.6514892578125,
+        "spray_level_percent": 68.7802734375
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 972.5554809570312,
+        "liquid_level": 0.8070362210273743
+      },
+      "expected": {
+        "pressure_reference": 972.5554809570312,
+        "spray_level_percent": 80.70362091064453
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2324.74853515625,
+        "liquid_level": 0.7632768750190735
+      },
+      "expected": {
+        "pressure_reference": 2324.74853515625,
+        "spray_level_percent": 76.32769012451172
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2058.1279296875,
+        "liquid_level": 0.3135441243648529
+      },
+      "expected": {
+        "pressure_reference": 2058.1279296875,
+        "spray_level_percent": 31.354412078857422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1476.0574951171875,
+        "liquid_level": 0.585748016834259
+      },
+      "expected": {
+        "pressure_reference": 1476.0574951171875,
+        "spray_level_percent": 58.57480239868164
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1100.5948486328125,
+        "liquid_level": 0.7918808460235596
+      },
+      "expected": {
+        "pressure_reference": 1100.5948486328125,
+        "spray_level_percent": 79.1880874633789
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1169.041748046875,
+        "liquid_level": 0.7076109051704407
+      },
+      "expected": {
+        "pressure_reference": 1169.041748046875,
+        "spray_level_percent": 70.76109313964844
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2340.388427734375,
+        "liquid_level": 0.37975338101387024
+      },
+      "expected": {
+        "pressure_reference": 2340.388427734375,
+        "spray_level_percent": 37.975337982177734
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1119.8858642578125,
+        "liquid_level": 0.02202383615076542
+      },
+      "expected": {
+        "pressure_reference": 1119.8858642578125,
+        "spray_level_percent": 2.202383518218994
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 512.185546875,
+        "liquid_level": 0.7383145689964294
+      },
+      "expected": {
+        "pressure_reference": 512.185546875,
+        "spray_level_percent": 73.83145904541016
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 813.823974609375,
+        "liquid_level": 0.8852829933166504
+      },
+      "expected": {
+        "pressure_reference": 813.823974609375,
+        "spray_level_percent": 88.5282974243164
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 708.8197631835938,
+        "liquid_level": 0.47558948397636414
+      },
+      "expected": {
+        "pressure_reference": 708.8197631835938,
+        "spray_level_percent": 47.5589485168457
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1953.269287109375,
+        "liquid_level": 0.34908777475357056
+      },
+      "expected": {
+        "pressure_reference": 1953.269287109375,
+        "spray_level_percent": 34.90877914428711
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1235.5673828125,
+        "liquid_level": 0.5961886644363403
+      },
+      "expected": {
+        "pressure_reference": 1235.5673828125,
+        "spray_level_percent": 59.618865966796875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1444.9486083984375,
+        "liquid_level": 0.550234317779541
+      },
+      "expected": {
+        "pressure_reference": 1444.9486083984375,
+        "spray_level_percent": 55.02342987060547
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 737.9833984375,
+        "liquid_level": 0.3538035452365875
+      },
+      "expected": {
+        "pressure_reference": 737.9833984375,
+        "spray_level_percent": 35.38035583496094
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2226.900634765625,
+        "liquid_level": 0.6903828978538513
+      },
+      "expected": {
+        "pressure_reference": 2226.900634765625,
+        "spray_level_percent": 69.03829193115234
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1672.3184814453125,
+        "liquid_level": 0.2386125773191452
+      },
+      "expected": {
+        "pressure_reference": 1672.3184814453125,
+        "spray_level_percent": 23.861257553100586
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2107.896240234375,
+        "liquid_level": 0.03549952805042267
+      },
+      "expected": {
+        "pressure_reference": 2107.896240234375,
+        "spray_level_percent": 3.549952745437622
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1634.00390625,
+        "liquid_level": 0.30714085698127747
+      },
+      "expected": {
+        "pressure_reference": 1634.00390625,
+        "spray_level_percent": 30.714086532592773
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 344.8989562988281,
+        "liquid_level": 0.6671377420425415
+      },
+      "expected": {
+        "pressure_reference": 344.8989562988281,
+        "spray_level_percent": 66.71377563476562
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 638.7286376953125,
+        "liquid_level": 0.9527621269226074
+      },
+      "expected": {
+        "pressure_reference": 638.7286376953125,
+        "spray_level_percent": 95.27621459960938
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1122.1732177734375,
+        "liquid_level": 0.6012017130851746
+      },
+      "expected": {
+        "pressure_reference": 1122.1732177734375,
+        "spray_level_percent": 60.12017059326172
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 857.2385864257812,
+        "liquid_level": 0.695360004901886
+      },
+      "expected": {
+        "pressure_reference": 857.2385864257812,
+        "spray_level_percent": 69.53600311279297
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 254.08062744140625,
+        "liquid_level": 0.6242604851722717
+      },
+      "expected": {
+        "pressure_reference": 254.08062744140625,
+        "spray_level_percent": 62.426048278808594
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1661.173095703125,
+        "liquid_level": 0.831802248954773
+      },
+      "expected": {
+        "pressure_reference": 1661.173095703125,
+        "spray_level_percent": 83.18022155761719
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2335.61376953125,
+        "liquid_level": 0.15484009683132172
+      },
+      "expected": {
+        "pressure_reference": 2335.61376953125,
+        "spray_level_percent": 15.484009742736816
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 876.1522827148438,
+        "liquid_level": 0.9168909192085266
+      },
+      "expected": {
+        "pressure_reference": 876.1522827148438,
+        "spray_level_percent": 91.68909454345703
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2137.972412109375,
+        "liquid_level": 0.7350650429725647
+      },
+      "expected": {
+        "pressure_reference": 2137.972412109375,
+        "spray_level_percent": 73.50650787353516
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2530.77294921875,
+        "liquid_level": 0.3999100625514984
+      },
+      "expected": {
+        "pressure_reference": 2530.77294921875,
+        "spray_level_percent": 39.991004943847656
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2031.2239990234375,
+        "liquid_level": 0.15429113805294037
+      },
+      "expected": {
+        "pressure_reference": 2031.2239990234375,
+        "spray_level_percent": 15.429113388061523
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 312.703369140625,
+        "liquid_level": 0.059098489582538605
+      },
+      "expected": {
+        "pressure_reference": 312.703369140625,
+        "spray_level_percent": 5.909849166870117
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2537.23486328125,
+        "liquid_level": 0.03315690532326698
+      },
+      "expected": {
+        "pressure_reference": 2537.23486328125,
+        "spray_level_percent": 3.315690517425537
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 392.82421875,
+        "liquid_level": 0.5777410268783569
+      },
+      "expected": {
+        "pressure_reference": 392.82421875,
+        "spray_level_percent": 57.77410125732422
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 532.3912353515625,
+        "liquid_level": 0.19793835282325745
+      },
+      "expected": {
+        "pressure_reference": 532.3912353515625,
+        "spray_level_percent": 19.793834686279297
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2409.003662109375,
+        "liquid_level": 0.41063764691352844
+      },
+      "expected": {
+        "pressure_reference": 2409.003662109375,
+        "spray_level_percent": 41.06376647949219
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 964.6235961914062,
+        "liquid_level": 0.41022366285324097
+      },
+      "expected": {
+        "pressure_reference": 964.6235961914062,
+        "spray_level_percent": 41.02236557006836
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1446.75732421875,
+        "liquid_level": 0.04516681283712387
+      },
+      "expected": {
+        "pressure_reference": 1446.75732421875,
+        "spray_level_percent": 4.51668119430542
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2463.727294921875,
+        "liquid_level": 0.6404622197151184
+      },
+      "expected": {
+        "pressure_reference": 2463.727294921875,
+        "spray_level_percent": 64.04621887207031
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1507.2701416015625,
+        "liquid_level": 0.10257995128631592
+      },
+      "expected": {
+        "pressure_reference": 1507.2701416015625,
+        "spray_level_percent": 10.25799560546875
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 215.70651245117188,
+        "liquid_level": 0.6736158728599548
+      },
+      "expected": {
+        "pressure_reference": 215.70651245117188,
+        "spray_level_percent": 67.36158752441406
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 150.16357421875,
+        "liquid_level": 0.17573851346969604
+      },
+      "expected": {
+        "pressure_reference": 150.16357421875,
+        "spray_level_percent": 17.573850631713867
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1830.3922119140625,
+        "liquid_level": 0.6178709268569946
+      },
+      "expected": {
+        "pressure_reference": 1830.3922119140625,
+        "spray_level_percent": 61.78709411621094
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 228.3743896484375,
+        "liquid_level": 0.2920936048030853
+      },
+      "expected": {
+        "pressure_reference": 228.3743896484375,
+        "spray_level_percent": 29.209360122680664
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2557.072021484375,
+        "liquid_level": 0.7552451491355896
+      },
+      "expected": {
+        "pressure_reference": 2557.072021484375,
+        "spray_level_percent": 75.5245132446289
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 196.4353790283203,
+        "liquid_level": 0.9078059792518616
+      },
+      "expected": {
+        "pressure_reference": 196.4353790283203,
+        "spray_level_percent": 90.78060150146484
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1512.7578125,
+        "liquid_level": 0.5934257507324219
+      },
+      "expected": {
+        "pressure_reference": 1512.7578125,
+        "spray_level_percent": 59.34257507324219
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1236.263427734375,
+        "liquid_level": 0.2247048318386078
+      },
+      "expected": {
+        "pressure_reference": 1236.263427734375,
+        "spray_level_percent": 22.470483779907227
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1204.47021484375,
+        "liquid_level": 0.09757735580205917
+      },
+      "expected": {
+        "pressure_reference": 1204.47021484375,
+        "spray_level_percent": 9.757735252380371
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1135.0091552734375,
+        "liquid_level": 0.9284770488739014
+      },
+      "expected": {
+        "pressure_reference": 1135.0091552734375,
+        "spray_level_percent": 92.84770202636719
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2286.00048828125,
+        "liquid_level": 0.8501611351966858
+      },
+      "expected": {
+        "pressure_reference": 2286.00048828125,
+        "spray_level_percent": 85.01611328125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1157.0797119140625,
+        "liquid_level": 0.47461989521980286
+      },
+      "expected": {
+        "pressure_reference": 1157.0797119140625,
+        "spray_level_percent": 47.46199035644531
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2018.56640625,
+        "liquid_level": 0.06602779030799866
+      },
+      "expected": {
+        "pressure_reference": 2018.56640625,
+        "spray_level_percent": 6.602778911590576
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 792.4678344726562,
+        "liquid_level": 0.3322741985321045
+      },
+      "expected": {
+        "pressure_reference": 792.4678344726562,
+        "spray_level_percent": 33.227420806884766
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1649.1846923828125,
+        "liquid_level": 0.9992218017578125
+      },
+      "expected": {
+        "pressure_reference": 1649.1846923828125,
+        "spray_level_percent": 99.92218017578125
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2125.5029296875,
+        "liquid_level": 0.11692343652248383
+      },
+      "expected": {
+        "pressure_reference": 2125.5029296875,
+        "spray_level_percent": 11.692343711853027
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1702.9453125,
+        "liquid_level": 0.6165254712104797
+      },
+      "expected": {
+        "pressure_reference": 1702.9453125,
+        "spray_level_percent": 61.65254592895508
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1264.6678466796875,
+        "liquid_level": 0.15840165317058563
+      },
+      "expected": {
+        "pressure_reference": 1264.6678466796875,
+        "spray_level_percent": 15.840165138244629
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 2063.345947265625,
+        "liquid_level": 0.6157704591751099
+      },
+      "expected": {
+        "pressure_reference": 2063.345947265625,
+        "spray_level_percent": 61.57704544067383
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1574.780029296875,
+        "liquid_level": 0.6625130772590637
+      },
+      "expected": {
+        "pressure_reference": 1574.780029296875,
+        "spray_level_percent": 66.25130462646484
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1369.45654296875,
+        "liquid_level": 0.5759218335151672
+      },
+      "expected": {
+        "pressure_reference": 1369.45654296875,
+        "spray_level_percent": 57.59218215942383
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1948.6898193359375,
+        "liquid_level": 0.9342966079711914
+      },
+      "expected": {
+        "pressure_reference": 1948.6898193359375,
+        "spray_level_percent": 93.42965698242188
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1765.5018310546875,
+        "liquid_level": 0.9151151180267334
+      },
+      "expected": {
+        "pressure_reference": 1765.5018310546875,
+        "spray_level_percent": 91.51151275634766
+      }
+    },
+    {
+      "inputs": {
+        "nominal_pressure": 1564.0263671875,
+        "liquid_level": 0.11245739459991455
+      },
+      "expected": {
+        "pressure_reference": 1564.0263671875,
+        "spray_level_percent": 11.245738983154297
+      }
+    }
+  ]
+}

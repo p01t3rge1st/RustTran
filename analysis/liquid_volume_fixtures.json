@@ -1,0 +1,487 @@
+{
+  "method": "Execute original 0x49c1e0 volume wrapper, modeling callee return/cleanup.\nProperty results come from independently executed original VFLD/INTP prefixes.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261018,
+  "cases": [
+    {
+      "pressure": 1.0,
+      "temperature": 60.0,
+      "expected": 0.016140462830662727
+    },
+    {
+      "pressure": 1.0,
+      "temperature": 220.0,
+      "expected": 0.016148976981639862
+    },
+    {
+      "pressure": 1.0,
+      "temperature": 300.0,
+      "expected": 0.016174469143152237
+    },
+    {
+      "pressure": 1.0,
+      "temperature": 680.0,
+      "expected": 0.01749463565647602
+    },
+    {
+      "pressure": 14.699999809265137,
+      "temperature": 60.0,
+      "expected": 0.016711298376321793
+    },
+    {
+      "pressure": 14.699999809265137,
+      "temperature": 220.0,
+      "expected": 0.016719812527298927
+    },
+    {
+      "pressure": 14.699999809265137,
+      "temperature": 300.0,
+      "expected": 0.016745302826166153
+    },
+    {
+      "pressure": 14.699999809265137,
+      "temperature": 680.0,
+      "expected": 0.018065469339489937
+    },
+    {
+      "pressure": 70.0,
+      "temperature": 60.0,
+      "expected": 0.01744869165122509
+    },
+    {
+      "pressure": 70.0,
+      "temperature": 220.0,
+      "expected": 0.017457205802202225
+    },
+    {
+      "pressure": 70.0,
+      "temperature": 300.0,
+      "expected": 0.0174826979637146
+    },
+    {
+      "pressure": 70.0,
+      "temperature": 680.0,
+      "expected": 0.018802864477038383
+    },
+    {
+      "pressure": 158.1999969482422,
+      "temperature": 60.0,
+      "expected": 0.01807469315826893
+    },
+    {
+      "pressure": 158.1999969482422,
+      "temperature": 220.0,
+      "expected": 0.018083207309246063
+    },
+    {
+      "pressure": 158.1999969482422,
+      "temperature": 300.0,
+      "expected": 0.018108699470758438
+    },
+    {
+      "pressure": 158.1999969482422,
+      "temperature": 680.0,
+      "expected": 0.019428865984082222
+    },
+    {
+      "pressure": 265.0,
+      "temperature": 60.0,
+      "expected": 0.01860535889863968
+    },
+    {
+      "pressure": 265.0,
+      "temperature": 220.0,
+      "expected": 0.018613873049616814
+    },
+    {
+      "pressure": 265.0,
+      "temperature": 300.0,
+      "expected": 0.01863936521112919
+    },
+    {
+      "pressure": 265.0,
+      "temperature": 680.0,
+      "expected": 0.019959531724452972
+    },
+    {
+      "pressure": 500.0,
+      "temperature": 60.0,
+      "expected": 0.01949545554816723
+    },
+    {
+      "pressure": 500.0,
+      "temperature": 220.0,
+      "expected": 0.019503969699144363
+    },
+    {
+      "pressure": 500.0,
+      "temperature": 300.0,
+      "expected": 0.01952945999801159
+    },
+    {
+      "pressure": 500.0,
+      "temperature": 680.0,
+      "expected": 0.020849628373980522
+    },
+    {
+      "pressure": 2200.0,
+      "temperature": 60.0,
+      "expected": 0.025742869824171066
+    },
+    {
+      "pressure": 2200.0,
+      "temperature": 220.0,
+      "expected": 0.0257513839751482
+    },
+    {
+      "pressure": 2200.0,
+      "temperature": 300.0,
+      "expected": 0.025776874274015427
+    },
+    {
+      "pressure": 2200.0,
+      "temperature": 680.0,
+      "expected": 0.02709704078733921
+    },
+    {
+      "pressure": 3000.0,
+      "temperature": 60.0,
+      "expected": 0.031129349023103714
+    },
+    {
+      "pressure": 3000.0,
+      "temperature": 220.0,
+      "expected": 0.03113786317408085
+    },
+    {
+      "pressure": 3000.0,
+      "temperature": 300.0,
+      "expected": 0.031163355335593224
+    },
+    {
+      "pressure": 3000.0,
+      "temperature": 680.0,
+      "expected": 0.03248352184891701
+    },
+    {
+      "pressure": 2570.464599609375,
+      "temperature": 184.55308532714844,
+      "expected": 0.027957286685705185
+    },
+    {
+      "pressure": 2343.0615234375,
+      "temperature": 595.3837280273438,
+      "expected": 0.02728523686528206
+    },
+    {
+      "pressure": 1507.475341796875,
+      "temperature": 397.9104309082031,
+      "expected": 0.022882642224431038
+    },
+    {
+      "pressure": 347.6228942871094,
+      "temperature": 196.89947509765625,
+      "expected": 0.018949953839182854
+    },
+    {
+      "pressure": 168.98562622070312,
+      "temperature": 229.0388946533203,
+      "expected": 0.018145861104130745
+    },
+    {
+      "pressure": 1727.713134765625,
+      "temperature": 587.5098266601562,
+      "expected": 0.024277597665786743
+    },
+    {
+      "pressure": 557.89599609375,
+      "temperature": 394.5997009277344,
+      "expected": 0.0198166836053133
+    },
+    {
+      "pressure": 2768.013671875,
+      "temperature": 208.53907775878906,
+      "expected": 0.029338348656892776
+    },
+    {
+      "pressure": 2393.150390625,
+      "temperature": 616.5198364257812,
+      "expected": 0.027706734836101532
+    },
+    {
+      "pressure": 333.6531982421875,
+      "temperature": 424.9567565917969,
+      "expected": 0.0190530177205801
+    },
+    {
+      "pressure": 2783.6611328125,
+      "temperature": 436.2789306640625,
+      "expected": 0.02963131293654442
+    },
+    {
+      "pressure": 2456.138671875,
+      "temperature": 602.9370727539062,
+      "expected": 0.028008438646793365
+    },
+    {
+      "pressure": 1504.5733642578125,
+      "temperature": 605.893310546875,
+      "expected": 0.023558087646961212
+    },
+    {
+      "pressure": 290.2063903808594,
+      "temperature": 621.4464111328125,
+      "expected": 0.01961642876267433
+    },
+    {
+      "pressure": 1456.06005859375,
+      "temperature": 569.1928100585938,
+      "expected": 0.023194212466478348
+    },
+    {
+      "pressure": 1669.541015625,
+      "temperature": 487.16351318359375,
+      "expected": 0.02365759387612343
+    },
+    {
+      "pressure": 2356.923583984375,
+      "temperature": 447.826904296875,
+      "expected": 0.02682741917669773
+    },
+    {
+      "pressure": 2768.181884765625,
+      "temperature": 412.2197570800781,
+      "expected": 0.029475651681423187
+    },
+    {
+      "pressure": 97.60086059570312,
+      "temperature": 399.5723571777344,
+      "expected": 0.01780090481042862
+    },
+    {
+      "pressure": 2138.581298828125,
+      "temperature": 619.4163208007812,
+      "expected": 0.026311753317713737
+    },
+    {
+      "pressure": 292.83795166015625,
+      "temperature": 95.9032211303711,
+      "expected": 0.01872485876083374
+    },
+    {
+      "pressure": 2125.6279296875,
+      "temperature": 345.00421142578125,
+      "expected": 0.025419268757104874
+    },
+    {
+      "pressure": 685.8113403320312,
+      "temperature": 672.1632690429688,
+      "expected": 0.02138543501496315
+    },
+    {
+      "pressure": 1421.1763916015625,
+      "temperature": 377.74951171875,
+      "expected": 0.02256191335618496
+    },
+    {
+      "pressure": 2606.11865234375,
+      "temperature": 327.01348876953125,
+      "expected": 0.028241286054253578
+    },
+    {
+      "pressure": 593.6070556640625,
+      "temperature": 524.2456665039062,
+      "expected": 0.020235499367117882
+    },
+    {
+      "pressure": 2842.30859375,
+      "temperature": 414.7091979980469,
+      "expected": 0.030033085495233536
+    },
+    {
+      "pressure": 2478.2197265625,
+      "temperature": 182.46429443359375,
+      "expected": 0.027361510321497917
+    },
+    {
+      "pressure": 2954.701171875,
+      "temperature": 142.9405059814453,
+      "expected": 0.030764633789658546
+    },
+    {
+      "pressure": 354.979248046875,
+      "temperature": 310.81793212890625,
+      "expected": 0.01901278831064701
+    },
+    {
+      "pressure": 603.4281616210938,
+      "temperature": 614.5768432617188,
+      "expected": 0.02070394530892372
+    },
+    {
+      "pressure": 1123.4005126953125,
+      "temperature": 496.1825866699219,
+      "expected": 0.021830908954143524
+    },
+    {
+      "pressure": 612.8655395507812,
+      "temperature": 131.77516174316406,
+      "expected": 0.01987498812377453
+    },
+    {
+      "pressure": 1767.4368896484375,
+      "temperature": 445.6187438964844,
+      "expected": 0.023935751989483833
+    },
+    {
+      "pressure": 695.9625244140625,
+      "temperature": 153.35601806640625,
+      "expected": 0.020134035497903824
+    },
+    {
+      "pressure": 1518.58544921875,
+      "temperature": 109.54134368896484,
+      "expected": 0.022801168262958527
+    },
+    {
+      "pressure": 2893.5654296875,
+      "temperature": 282.59490966796875,
+      "expected": 0.03030639886856079
+    },
+    {
+      "pressure": 2062.203857421875,
+      "temperature": 314.27606201171875,
+      "expected": 0.025082021951675415
+    },
+    {
+      "pressure": 1199.088623046875,
+      "temperature": 632.42919921875,
+      "expected": 0.02271874248981476
+    },
+    {
+      "pressure": 1790.5985107421875,
+      "temperature": 336.3887939453125,
+      "expected": 0.023883378133177757
+    },
+    {
+      "pressure": 2427.681884765625,
+      "temperature": 219.13479614257812,
+      "expected": 0.027052566409111023
+    },
+    {
+      "pressure": 1140.91796875,
+      "temperature": 579.6088256835938,
+      "expected": 0.02221735194325447
+    },
+    {
+      "pressure": 961.39794921875,
+      "temperature": 73.45062255859375,
+      "expected": 0.02098221890628338
+    },
+    {
+      "pressure": 2726.128662109375,
+      "temperature": 86.16832733154297,
+      "expected": 0.02902781404554844
+    },
+    {
+      "pressure": 2714.967041015625,
+      "temperature": 403.4958801269531,
+      "expected": 0.02907671220600605
+    },
+    {
+      "pressure": 2179.923583984375,
+      "temperature": 649.9464721679688,
+      "expected": 0.026740306988358498
+    },
+    {
+      "pressure": 2982.330322265625,
+      "temperature": 87.98387908935547,
+      "expected": 0.030985865741968155
+    },
+    {
+      "pressure": 2313.073486328125,
+      "temperature": 305.5910949707031,
+      "expected": 0.026403704658150673
+    },
+    {
+      "pressure": 2254.3232421875,
+      "temperature": 294.3088073730469,
+      "expected": 0.026068098843097687
+    },
+    {
+      "pressure": 2454.05712890625,
+      "temperature": 551.3496704101562,
+      "expected": 0.02773517370223999
+    },
+    {
+      "pressure": 321.4167785644531,
+      "temperature": 336.7096862792969,
+      "expected": 0.018898023292422295
+    },
+    {
+      "pressure": 465.46929931640625,
+      "temperature": 123.744384765625,
+      "expected": 0.019345181062817574
+    },
+    {
+      "pressure": 608.6596069335938,
+      "temperature": 163.9731903076172,
+      "expected": 0.01986338011920452
+    },
+    {
+      "pressure": 2924.9912109375,
+      "temperature": 608.2583618164062,
+      "expected": 0.031347375363111496
+    },
+    {
+      "pressure": 2454.478759765625,
+      "temperature": 610.3137817382812,
+      "expected": 0.028041904792189598
+    },
+    {
+      "pressure": 146.66973876953125,
+      "temperature": 504.2021484375,
+      "expected": 0.018361041322350502
+    },
+    {
+      "pressure": 496.6156311035156,
+      "temperature": 442.24285888671875,
+      "expected": 0.019678082317113876
+    },
+    {
+      "pressure": 1830.558837890625,
+      "temperature": 443.7026672363281,
+      "expected": 0.024191370233893394
+    },
+    {
+      "pressure": 839.5325317382812,
+      "temperature": 271.705810546875,
+      "expected": 0.020610926672816277
+    },
+    {
+      "pressure": 1669.158447265625,
+      "temperature": 417.8463439941406,
+      "expected": 0.023500682786107063
+    },
+    {
+      "pressure": 2248.73779296875,
+      "temperature": 94.93578338623047,
+      "expected": 0.026006711646914482
+    },
+    {
+      "pressure": 529.3150634765625,
+      "temperature": 483.1873474121094,
+      "expected": 0.01990075223147869
+    },
+    {
+      "pressure": 950.34814453125,
+      "temperature": 543.8363647460938,
+      "expected": 0.021443715319037437
+    },
+    {
+      "pressure": 118.48567199707031,
+      "temperature": 678.1822509765625,
+      "expected": 0.019165538251399994
+    }
+  ]
+}

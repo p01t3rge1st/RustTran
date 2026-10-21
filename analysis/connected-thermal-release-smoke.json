@@ -1,0 +1,44 @@
+{
+  "cli_runs": [
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-thermal-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "native-stages",
+      "example": "recovered-thermal-stages.json",
+      "status": "passed"
+    },
+    {
+      "command": "fresh-thermal-startup",
+      "example": "fresh-thermal-startup.json",
+      "status": "passed"
+    },
+    {
+      "command": "restored-control-state",
+      "example": "restored-control-state.json",
+      "status": "passed"
+    },
+    {
+      "command": "normal-loops-step",
+      "example": "normal-loops-step.json",
+      "status": "passed"
+    },
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-restored-events-step.json",
+      "status": "passed"
+    }
+  ],
+  "stage_equals_standalone": true,
+  "scheduled_thermal_flag_overrides_fallback": true,
+  "fresh_startup_singles": 107,
+  "fresh_startup_i16": 14,
+  "max_glibc": {
+    "rusttran": "2.28",
+    "rusttran-cli": "2.28"
+  },
+  "installed_binaries_match": true,
+  "windows": "GUI/CLI cross-compiled, not executed"
+}

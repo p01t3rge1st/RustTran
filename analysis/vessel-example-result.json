@@ -1,0 +1,142 @@
+{
+  "scope": "Recovered vessel component; not a complete plant simulation",
+  "solution": {
+    "iterations": 16,
+    "state": {
+      "gas_pressure": 14.70003604888916,
+      "level": 0.009982424788177013,
+      "pressure": 82.96881866455078,
+      "temperature": 300.0019836425781
+    },
+    "trace": [
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 487036.96875,
+        "upper_temperature": 429.4012145996094
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 196105.84375,
+        "upper_temperature": 364.70062255859375
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 87570.875,
+        "upper_temperature": 332.3503112792969
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 41936.125,
+        "upper_temperature": 316.1751708984375
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 21346.03125,
+        "upper_temperature": 308.08758544921875
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 10241.3125,
+        "upper_temperature": 304.0437927246094
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 5036.75,
+        "upper_temperature": 302.02191162109375
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 2510.5625,
+        "upper_temperature": 301.0109558105469
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 1265.34375,
+        "upper_temperature": 300.5054931640625
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 646.96875,
+        "upper_temperature": 300.25274658203125
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 338.84375,
+        "upper_temperature": 300.1263732910156
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 185.0,
+        "upper_temperature": 300.06317138671875
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 108.1875,
+        "upper_temperature": 300.0315856933594
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 69.8125,
+        "upper_temperature": 300.01580810546875
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 50.625,
+        "upper_temperature": 300.0079040527344
+      },
+      {
+        "energy": 329588.96875,
+        "low_error": -162.75,
+        "low_temperature": 300.0,
+        "mass": 724.53515625,
+        "upper_error": 41.03125,
+        "upper_temperature": 300.00396728515625
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+Set,YMinimum,YMaximum,XSpan,XScroll,PlotStayOnTop,DisplayDateTime,DisplayLegend,DisplayPlotTitle,PrintLocation,ScalingMethod,PrintFormat,TimeScreenOut,TimePlotOut,TimeBackOut,ReportStayOnTop,SaveValveReports,SavePumpReports,SaveControlReports,SaveHXReports,SaveRupDskReports,SaveVacBkrReports,SaveMalfReports,MimicPrintOrientation,MimicPrintQuality,MimicPrintCopies,PTPlotSpan,PTPlotScroll,PTPlotStayOnTop,TimeDoseOut,TimeExcStart
+1,0,50,240,10,0,1,1,1,2,4,0,0.5,1,120,0,1,1,1,1,1,1,1,2,-4,1,100,20,1,120,"12/30/99 00:00:00"
+2,0,150,300,10,0,1,1,1,2,4,0,0.5,1,60,0,1,1,1,1,1,1,1,2,-4,1,600,60,1,10,
+3,0,150,300,10,0,1,1,1,2,4,0,0.5,1,60,0,1,1,1,1,1,1,1,2,-4,1,600,60,1,10,

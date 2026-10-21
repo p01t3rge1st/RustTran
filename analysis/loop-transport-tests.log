@@ -1,0 +1,10 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.20s
+     Running tests/loop_transport.rs (rusttran/target/debug/deps/loop_transport-23c734da9dea8260)
+
+running 2 tests
+test missing_history_or_zero_flow_cannot_partially_commit_feedback ... ok
+test full_native_thermal_transport_histories_and_reverse_flows_match ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+

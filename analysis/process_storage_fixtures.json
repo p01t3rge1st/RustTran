@@ -1,0 +1,147 @@
+{
+  "method": "Loader-mapped original PE bytes BEFORE application initialization: previous\nSingle derivatives, two integrated accumulators and two flow-history fields.\nThese are process-birth storage values, not proof of application fresh-start,\nrestored-IC or Reset semantics. No program instructions execute in this check.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "evidence": [
+    {
+      "address": "0x54bb64",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb68",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb6c",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb70",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb74",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb7c",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb80",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb84",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb88",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb8c",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb90",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb94",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bb98",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bfa0",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bba0",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bf98",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54b6d8",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    },
+    {
+      "address": "0x54bf9c",
+      "bytes": "00000000",
+      "section": ".data",
+      "virtual_zero_fill": false
+    }
+  ],
+  "cases": [
+    {
+      "inputs": {
+        "model": "1",
+        "ic": "1",
+        "stages": [
+          {
+            "kind": "new_process_storage"
+          }
+        ]
+      },
+      "expected": {
+        "0x54bb64": 0.0,
+        "0x54bb68": 0.0,
+        "0x54bb6c": 0.0,
+        "0x54bb70": 0.0,
+        "0x54bb74": 0.0,
+        "0x54bb7c": 0.0,
+        "0x54bb80": 0.0,
+        "0x54bb84": 0.0,
+        "0x54bb88": 0.0,
+        "0x54bb8c": 0.0,
+        "0x54bb90": 0.0,
+        "0x54bb94": 0.0,
+        "0x54bb98": 0.0,
+        "0x54bfa0": 0.0,
+        "0x54bba0": 0.0,
+        "0x54bf98": 0.0,
+        "0x54b6d8": 0.0,
+        "0x54bf9c": 0.0
+      }
+    }
+  ]
+}

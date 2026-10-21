@@ -1,0 +1,17 @@
+{
+  "pressure": 1630.827880859375,
+  "porv_area": 0.1639004647731781,
+  "safety_area": 0.39691588282585144,
+  "level": 0.5000010132789612,
+  "reset_level": 0.5,
+  "mixture_level": 0.9800000190734863,
+  "phase_flag": 0,
+  "liquid_flux": 4032.0537109375,
+  "vapor_flux": 3444.11279296875,
+  "liquid_enthalpy": 439.8196716308594,
+  "vapor_enthalpy": 903.3192749023438,
+  "g54b6ac": 99.9990005493164,
+  "porv_a": 100,
+  "porv_b": 0,
+  "safety_valve": 0
+}

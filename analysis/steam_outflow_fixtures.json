@@ -1,0 +1,5287 @@
+{
+  "method": "Execute SG outflow limit/heat correction 0x50a7ed\u20130x50a8a6 in original x86.\nEarlier flow contributions and enthalpies are injected. No arithmetic helpers\nor complete steam-generator, control or event dispatcher are modeled.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261027,
+  "cases": [
+    {
+      "inputs": {
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 890.9281616210938,
+        "feed_enthalpy": 116.61184692382812,
+        "heat_a": -15716.927734375,
+        "heat_b": 10852.4814453125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 99.9990005493164,
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "heat_a": -15716.927734375,
+        "heat_b": 10852.4814453125,
+        "feed_enthalpy": 116.61184692382812
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 882.818359375,
+        "feed_enthalpy": 330.7427978515625,
+        "heat_a": -65416.9765625,
+        "heat_b": -2941.3271484375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "heat_a": -65416.9765625,
+        "heat_b": -2941.3271484375,
+        "feed_enthalpy": 330.7427978515625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0009994506836,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 1134.829833984375,
+        "feed_enthalpy": 170.4459991455078,
+        "heat_a": -57071.05078125,
+        "heat_b": 88712.8359375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 100.0,
+        "heat_a": -57071.05078125,
+        "heat_b": 96438.3828125,
+        "feed_enthalpy": 170.4459991455078
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 1009.5119018554688,
+        "feed_enthalpy": 334.3597412109375,
+        "heat_a": 17030.986328125,
+        "heat_b": 42054.33203125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 99.9990005493164,
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "heat_a": 17030.986328125,
+        "heat_b": 42054.33203125,
+        "feed_enthalpy": 334.3597412109375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 1100.261962890625,
+        "feed_enthalpy": 569.3226318359375,
+        "heat_a": -29274.50390625,
+        "heat_b": 25414.421875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "heat_a": -29274.50390625,
+        "heat_b": 25414.421875,
+        "feed_enthalpy": 569.3226318359375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0009994506836,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 1118.474365234375,
+        "feed_enthalpy": 467.32177734375,
+        "heat_a": -88160.90625,
+        "heat_b": 26774.796875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 100.0,
+        "heat_a": -88160.90625,
+        "heat_b": 65115.2578125,
+        "feed_enthalpy": 467.32177734375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 897.0784301757812,
+        "feed_enthalpy": 447.8994140625,
+        "heat_a": 87802.953125,
+        "heat_b": -46772.9140625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 99.9990005493164,
+        "base_flow": 99.9990005493164,
+        "additional_flow": 0.0,
+        "heat_a": 87802.953125,
+        "heat_b": -46772.9140625,
+        "feed_enthalpy": 447.8994140625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 928.46435546875,
+        "feed_enthalpy": 419.8510437011719,
+        "heat_a": -23433.576171875,
+        "heat_b": -19234.8671875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 0.0,
+        "heat_a": -23433.576171875,
+        "heat_b": -19234.8671875,
+        "feed_enthalpy": 419.8510437011719
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 100.0009994506836,
+        "additional_flow": 0.0,
+        "external_flow": 0.0,
+        "inventory": 100.0,
+        "step": 1.0,
+        "discharge_enthalpy": 1012.3792114257812,
+        "feed_enthalpy": 413.97918701171875,
+        "heat_a": 98610.9609375,
+        "heat_b": -76723.265625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 100.0,
+        "base_flow": 100.0,
+        "additional_flow": 100.0,
+        "heat_a": 59840.00390625,
+        "heat_b": -76723.265625,
+        "feed_enthalpy": 413.97918701171875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 982.9135131835938,
+        "additional_flow": 7.328753471374512,
+        "external_flow": -89.63721466064453,
+        "inventory": 166.914794921875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1072.3956298828125,
+        "feed_enthalpy": 302.5176696777344,
+        "heat_a": -55959.50390625,
+        "heat_b": 944.0142211914062,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 900.6050415039062,
+        "base_flow": 982.9135131835938,
+        "additional_flow": 7.328753471374512,
+        "heat_a": -55959.50390625,
+        "heat_b": 944.0142211914062,
+        "feed_enthalpy": 302.5176696777344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 335.40618896484375,
+        "additional_flow": 58.407798767089844,
+        "external_flow": 36.44353485107422,
+        "inventory": 735.4227294921875,
+        "step": 1.0,
+        "discharge_enthalpy": 915.7096557617188,
+        "feed_enthalpy": 699.9860229492188,
+        "heat_a": 8591.818359375,
+        "heat_b": 98681.4609375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 430.25750732421875,
+        "base_flow": 335.40618896484375,
+        "additional_flow": 58.407798767089844,
+        "heat_a": 8591.818359375,
+        "heat_b": 98681.4609375,
+        "feed_enthalpy": 699.9860229492188
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1905.293212890625,
+        "additional_flow": 114.77025604248047,
+        "external_flow": 75.73528289794922,
+        "inventory": 767.3536987304688,
+        "step": 1.0,
+        "discharge_enthalpy": 1164.9293212890625,
+        "feed_enthalpy": 177.73011779785156,
+        "heat_a": -33565.1953125,
+        "heat_b": 34505.07421875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 767.3536987304688,
+        "base_flow": 767.3536987304688,
+        "additional_flow": 767.3536987304688,
+        "heat_a": 757530.9375,
+        "heat_b": 34505.07421875,
+        "feed_enthalpy": 177.73011779785156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 377.3849182128906,
+        "additional_flow": 158.3032684326172,
+        "external_flow": -37.79816818237305,
+        "inventory": 328.43280029296875,
+        "step": 0.5,
+        "discharge_enthalpy": 833.9244384765625,
+        "feed_enthalpy": 347.7054748535156,
+        "heat_a": -5060.67333984375,
+        "heat_b": 83238.1875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 497.8900146484375,
+        "base_flow": 377.3849182128906,
+        "additional_flow": 158.3032684326172,
+        "heat_a": -5060.67333984375,
+        "heat_b": 83238.1875,
+        "feed_enthalpy": 347.7054748535156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 218.25096130371094,
+        "additional_flow": -66.9033432006836,
+        "external_flow": 94.0496597290039,
+        "inventory": 833.3825073242188,
+        "step": 0.5,
+        "discharge_enthalpy": 841.3536987304688,
+        "feed_enthalpy": 664.4019165039062,
+        "heat_a": -72276.3203125,
+        "heat_b": 3957.8427734375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 245.39727783203125,
+        "base_flow": 218.25096130371094,
+        "additional_flow": -66.9033432006836,
+        "heat_a": -72276.3203125,
+        "heat_b": 3957.8427734375,
+        "feed_enthalpy": 664.4019165039062
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 419.0721740722656,
+        "additional_flow": 96.81888580322266,
+        "external_flow": -49.22616958618164,
+        "inventory": 801.0133056640625,
+        "step": 0.5,
+        "discharge_enthalpy": 913.4403686523438,
+        "feed_enthalpy": 505.3926086425781,
+        "heat_a": -64740.5546875,
+        "heat_b": -64661.68359375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 466.6648864746094,
+        "base_flow": 419.0721740722656,
+        "additional_flow": 96.81888580322266,
+        "heat_a": -64740.5546875,
+        "heat_b": -64661.68359375,
+        "feed_enthalpy": 505.3926086425781
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1200.803466796875,
+        "additional_flow": -52.23196792602539,
+        "external_flow": 17.726959228515625,
+        "inventory": 188.30860900878906,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1157.7044677734375,
+        "feed_enthalpy": 331.22576904296875,
+        "heat_a": -9398.9462890625,
+        "heat_b": -38394.3828125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1166.2984619140625,
+        "base_flow": 1200.803466796875,
+        "additional_flow": -52.23196792602539,
+        "heat_a": -9398.9462890625,
+        "heat_b": -38394.3828125,
+        "feed_enthalpy": 331.22576904296875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 150.19017028808594,
+        "additional_flow": -4.9031662940979,
+        "external_flow": 150.97430419921875,
+        "inventory": 640.9557495117188,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1190.486083984375,
+        "feed_enthalpy": 160.35865783691406,
+        "heat_a": -15692.4921875,
+        "heat_b": 43981.3515625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 296.2613220214844,
+        "base_flow": 150.19017028808594,
+        "additional_flow": -4.9031662940979,
+        "heat_a": -15692.4921875,
+        "heat_b": 43981.3515625,
+        "feed_enthalpy": 160.35865783691406
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1556.7701416015625,
+        "additional_flow": -3.7117021083831787,
+        "external_flow": 163.76034545898438,
+        "inventory": 101.64339447021484,
+        "step": 0.5,
+        "discharge_enthalpy": 1054.0933837890625,
+        "feed_enthalpy": 194.5402374267578,
+        "heat_a": 79183.5390625,
+        "heat_b": 68481.3046875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 203.2867889404297,
+        "base_flow": 203.2867889404297,
+        "additional_flow": 203.2867889404297,
+        "heat_a": 79183.5390625,
+        "heat_b": 174735.796875,
+        "feed_enthalpy": 194.5402374267578
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 164.2329864501953,
+        "additional_flow": 70.250732421875,
+        "external_flow": -73.49392700195312,
+        "inventory": 799.3976440429688,
+        "step": 0.5,
+        "discharge_enthalpy": 813.26318359375,
+        "feed_enthalpy": 203.6890411376953,
+        "heat_a": -64130.421875,
+        "heat_b": -30296.98828125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 160.9897918701172,
+        "base_flow": 164.2329864501953,
+        "additional_flow": 70.250732421875,
+        "heat_a": -64130.421875,
+        "heat_b": -30296.98828125,
+        "feed_enthalpy": 203.6890411376953
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1463.3499755859375,
+        "additional_flow": 170.6408233642578,
+        "external_flow": -86.0902328491211,
+        "inventory": 622.7919921875,
+        "step": 1.0,
+        "discharge_enthalpy": 939.3770141601562,
+        "feed_enthalpy": 209.15460205078125,
+        "heat_a": 15110.2822265625,
+        "heat_b": -44256.5703125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 622.7919921875,
+        "base_flow": 622.7919921875,
+        "additional_flow": 622.7919921875,
+        "heat_a": 15110.2822265625,
+        "heat_b": 454776.65625,
+        "feed_enthalpy": 209.15460205078125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 732.0906982421875,
+        "additional_flow": 41.47670364379883,
+        "external_flow": 134.67298889160156,
+        "inventory": 970.8540649414062,
+        "step": 1.0,
+        "discharge_enthalpy": 924.9856567382812,
+        "feed_enthalpy": 361.0713806152344,
+        "heat_a": 48810.3046875,
+        "heat_b": -10415.8046875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 908.2404174804688,
+        "base_flow": 732.0906982421875,
+        "additional_flow": 41.47670364379883,
+        "heat_a": 48810.3046875,
+        "heat_b": -10415.8046875,
+        "feed_enthalpy": 361.0713806152344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1688.9527587890625,
+        "additional_flow": 77.6132583618164,
+        "external_flow": -45.37838363647461,
+        "inventory": 562.6895141601562,
+        "step": 0.5,
+        "discharge_enthalpy": 1093.306640625,
+        "feed_enthalpy": 458.0933837890625,
+        "heat_a": 43599.97265625,
+        "heat_b": -60446.8203125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1125.3790283203125,
+        "base_flow": 1125.3790283203125,
+        "additional_flow": 1125.3790283203125,
+        "heat_a": 43599.97265625,
+        "heat_b": 714855.6875,
+        "feed_enthalpy": 458.0933837890625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 858.126953125,
+        "additional_flow": -90.09324645996094,
+        "external_flow": -94.55302429199219,
+        "inventory": 448.7545471191406,
+        "step": 0.5,
+        "discharge_enthalpy": 861.83349609375,
+        "feed_enthalpy": 659.98095703125,
+        "heat_a": -70374.890625,
+        "heat_b": -30852.650390625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 673.480712890625,
+        "base_flow": 858.126953125,
+        "additional_flow": -90.09324645996094,
+        "heat_a": -70374.890625,
+        "heat_b": -30852.650390625,
+        "feed_enthalpy": 659.98095703125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1309.969482421875,
+        "additional_flow": 37.28693389892578,
+        "external_flow": -93.11089324951172,
+        "inventory": 446.6614685058594,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 812.6079711914062,
+        "feed_enthalpy": 112.7911376953125,
+        "heat_a": 87967.3046875,
+        "heat_b": -84283.296875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1254.1455078125,
+        "base_flow": 1309.969482421875,
+        "additional_flow": 37.28693389892578,
+        "heat_a": 87967.3046875,
+        "heat_b": -84283.296875,
+        "feed_enthalpy": 112.7911376953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1515.934814453125,
+        "additional_flow": -84.85443878173828,
+        "external_flow": -92.54490661621094,
+        "inventory": 293.91302490234375,
+        "step": 0.5,
+        "discharge_enthalpy": 873.9720458984375,
+        "feed_enthalpy": 371.6300354003906,
+        "heat_a": -24419.23828125,
+        "heat_b": 8030.5810546875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 587.8260498046875,
+        "base_flow": 587.8260498046875,
+        "additional_flow": 587.8260498046875,
+        "heat_a": 295289.71875,
+        "heat_b": 8030.5810546875,
+        "feed_enthalpy": 371.6300354003906
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1730.4459228515625,
+        "additional_flow": 91.4921875,
+        "external_flow": 62.11144256591797,
+        "inventory": 718.4470825195312,
+        "step": 0.5,
+        "discharge_enthalpy": 996.2866821289062,
+        "feed_enthalpy": 446.3059997558594,
+        "heat_a": 70058.921875,
+        "heat_b": 32206.337890625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1436.8941650390625,
+        "base_flow": 1436.8941650390625,
+        "additional_flow": 1436.8941650390625,
+        "heat_a": 70058.921875,
+        "heat_b": 790264.0625,
+        "feed_enthalpy": 446.3059997558594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1901.334228515625,
+        "additional_flow": 183.13943481445312,
+        "external_flow": 133.1038055419922,
+        "inventory": 500.6687927246094,
+        "step": 0.5,
+        "discharge_enthalpy": 1114.915283203125,
+        "feed_enthalpy": 679.197998046875,
+        "heat_a": -73764.9765625,
+        "heat_b": 2052.676513671875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1001.3375854492188,
+        "base_flow": 1001.3375854492188,
+        "additional_flow": 1001.3375854492188,
+        "heat_a": -73764.9765625,
+        "heat_b": 436300.09375,
+        "feed_enthalpy": 679.197998046875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 451.2070617675781,
+        "additional_flow": 143.1837615966797,
+        "external_flow": 153.28854370117188,
+        "inventory": 995.8927001953125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1178.3516845703125,
+        "feed_enthalpy": 216.86746215820312,
+        "heat_a": 82049.5546875,
+        "heat_b": -80316.9140625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 747.6793823242188,
+        "base_flow": 451.2070617675781,
+        "additional_flow": 143.1837615966797,
+        "heat_a": 82049.5546875,
+        "heat_b": -80316.9140625,
+        "feed_enthalpy": 216.86746215820312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 609.6171875,
+        "additional_flow": -65.04977416992188,
+        "external_flow": 40.25307846069336,
+        "inventory": 51.61442947387695,
+        "step": 1.0,
+        "discharge_enthalpy": 800.7437744140625,
+        "feed_enthalpy": 521.6904907226562,
+        "heat_a": 47905.16796875,
+        "heat_b": -19818.05078125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 51.61442947387695,
+        "base_flow": 51.61442947387695,
+        "additional_flow": 51.61442947387695,
+        "heat_a": 14403.17578125,
+        "heat_b": -19818.05078125,
+        "feed_enthalpy": 521.6904907226562
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1878.7293701171875,
+        "additional_flow": -89.75914764404297,
+        "external_flow": -60.79398727416992,
+        "inventory": 90.29100799560547,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1115.33447265625,
+        "feed_enthalpy": 130.71615600585938,
+        "heat_a": 73533.7578125,
+        "heat_b": -35837.26171875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 902.9100952148438,
+        "base_flow": 902.9100952148438,
+        "additional_flow": 902.9100952148438,
+        "heat_a": 73533.7578125,
+        "heat_b": 889021.8125,
+        "feed_enthalpy": 130.71615600585938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1904.217041015625,
+        "additional_flow": -86.07466888427734,
+        "external_flow": 184.83763122558594,
+        "inventory": 92.92005157470703,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 979.3369750976562,
+        "feed_enthalpy": 367.54412841796875,
+        "heat_a": -47747.85546875,
+        "heat_b": 95021.359375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 929.2005004882812,
+        "base_flow": 929.2005004882812,
+        "additional_flow": 929.2005004882812,
+        "heat_a": -47747.85546875,
+        "heat_b": 568478.25,
+        "feed_enthalpy": 367.54412841796875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 853.2030639648438,
+        "additional_flow": -43.346588134765625,
+        "external_flow": 161.4033203125,
+        "inventory": 164.850830078125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1196.432861328125,
+        "feed_enthalpy": 194.79513549804688,
+        "heat_a": 9488.4609375,
+        "heat_b": 16813.232421875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 971.259765625,
+        "base_flow": 853.2030639648438,
+        "additional_flow": -43.346588134765625,
+        "heat_a": 9488.4609375,
+        "heat_b": 16813.232421875,
+        "feed_enthalpy": 194.79513549804688
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 799.8992309570312,
+        "additional_flow": -81.5505142211914,
+        "external_flow": 40.30292892456055,
+        "inventory": 476.25640869140625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1020.4365234375,
+        "feed_enthalpy": 221.00119018554688,
+        "heat_a": 85547.296875,
+        "heat_b": -85501.8515625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 758.6516723632812,
+        "base_flow": 799.8992309570312,
+        "additional_flow": -81.5505142211914,
+        "heat_a": 85547.296875,
+        "heat_b": -85501.8515625,
+        "feed_enthalpy": 221.00119018554688
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 563.1282958984375,
+        "additional_flow": 29.409908294677734,
+        "external_flow": -31.120990753173828,
+        "inventory": 531.6821899414062,
+        "step": 1.0,
+        "discharge_enthalpy": 1079.8692626953125,
+        "feed_enthalpy": 422.04730224609375,
+        "heat_a": 87430.5390625,
+        "heat_b": -79185.2890625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 531.6821899414062,
+        "base_flow": 531.6821899414062,
+        "additional_flow": 531.6821899414062,
+        "heat_a": 87430.5390625,
+        "heat_b": 349752.21875,
+        "feed_enthalpy": 422.04730224609375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1983.58056640625,
+        "additional_flow": -93.97504425048828,
+        "external_flow": -68.1795883178711,
+        "inventory": 724.399658203125,
+        "step": 0.5,
+        "discharge_enthalpy": 1128.1844482421875,
+        "feed_enthalpy": 414.82830810546875,
+        "heat_a": 32122.384765625,
+        "heat_b": 39462.515625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1448.79931640625,
+        "base_flow": 1448.79931640625,
+        "additional_flow": 1448.79931640625,
+        "heat_a": 32122.384765625,
+        "heat_b": 1033509.875,
+        "feed_enthalpy": 414.82830810546875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1271.5430908203125,
+        "additional_flow": 175.88433837890625,
+        "external_flow": 82.36285400390625,
+        "inventory": 689.2766723632812,
+        "step": 1.0,
+        "discharge_enthalpy": 978.6002197265625,
+        "feed_enthalpy": 529.0956420898438,
+        "heat_a": -15468.19140625,
+        "heat_b": 41737.6953125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 689.2766723632812,
+        "base_flow": 689.2766723632812,
+        "additional_flow": 689.2766723632812,
+        "heat_a": -15468.19140625,
+        "heat_b": 309833.03125,
+        "feed_enthalpy": 529.0956420898438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 411.9544677734375,
+        "additional_flow": 131.96104431152344,
+        "external_flow": -65.97589111328125,
+        "inventory": 93.93754577636719,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 848.2169189453125,
+        "feed_enthalpy": 512.2315673828125,
+        "heat_a": -90517.546875,
+        "heat_b": -99427.78125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 477.93963623046875,
+        "base_flow": 411.9544677734375,
+        "additional_flow": 131.96104431152344,
+        "heat_a": -90517.546875,
+        "heat_b": -99427.78125,
+        "feed_enthalpy": 512.2315673828125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1839.9791259765625,
+        "additional_flow": -98.11341094970703,
+        "external_flow": -7.689034938812256,
+        "inventory": 198.9946746826172,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 830.1953735351562,
+        "feed_enthalpy": 601.25634765625,
+        "heat_a": 59056.5546875,
+        "heat_b": -49019.59375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1734.1766357421875,
+        "base_flow": 1839.9791259765625,
+        "additional_flow": -98.11341094970703,
+        "heat_a": 59056.5546875,
+        "heat_b": -49019.59375,
+        "feed_enthalpy": 601.25634765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1288.220947265625,
+        "additional_flow": 187.68092346191406,
+        "external_flow": -49.07825469970703,
+        "inventory": 701.7044067382812,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 951.9187622070312,
+        "feed_enthalpy": 198.1509246826172,
+        "heat_a": -27314.076171875,
+        "heat_b": 46676.06640625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1426.8236083984375,
+        "base_flow": 1288.220947265625,
+        "additional_flow": 187.68092346191406,
+        "heat_a": -27314.076171875,
+        "heat_b": 46676.06640625,
+        "feed_enthalpy": 198.1509246826172
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1611.5595703125,
+        "additional_flow": -66.8897705078125,
+        "external_flow": -88.47087860107422,
+        "inventory": 149.39825439453125,
+        "step": 0.5,
+        "discharge_enthalpy": 1104.822998046875,
+        "feed_enthalpy": 199.7497100830078,
+        "heat_a": 64320.28125,
+        "heat_b": -54742.9921875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 298.7965087890625,
+        "base_flow": 298.7965087890625,
+        "additional_flow": 298.7965087890625,
+        "heat_a": 64320.28125,
+        "heat_b": 270432.75,
+        "feed_enthalpy": 199.7497100830078
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1825.7261962890625,
+        "additional_flow": 10.147187232971191,
+        "external_flow": -61.90068817138672,
+        "inventory": 493.2768249511719,
+        "step": 0.5,
+        "discharge_enthalpy": 842.1556396484375,
+        "feed_enthalpy": 532.985595703125,
+        "heat_a": -73519.3046875,
+        "heat_b": 9299.1611328125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 986.5536499023438,
+        "base_flow": 986.5536499023438,
+        "additional_flow": 986.5536499023438,
+        "heat_a": -73519.3046875,
+        "heat_b": 305012.84375,
+        "feed_enthalpy": 532.985595703125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -68.98452758789062,
+        "additional_flow": 183.3687744140625,
+        "external_flow": -89.77522277832031,
+        "inventory": 302.52691650390625,
+        "step": 1.0,
+        "discharge_enthalpy": 1188.212646484375,
+        "feed_enthalpy": 385.7564392089844,
+        "heat_a": -9573.87890625,
+        "heat_b": -72513.359375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 24.609024047851562,
+        "base_flow": -68.98452758789062,
+        "additional_flow": 183.3687744140625,
+        "heat_a": -9573.87890625,
+        "heat_b": -72513.359375,
+        "feed_enthalpy": 385.7564392089844
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1613.1583251953125,
+        "additional_flow": -91.82347106933594,
+        "external_flow": -35.719295501708984,
+        "inventory": 380.3005676269531,
+        "step": 1.0,
+        "discharge_enthalpy": 1061.236328125,
+        "feed_enthalpy": 211.4552764892578,
+        "heat_a": -98283.9765625,
+        "heat_b": -35727.22265625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 380.3005676269531,
+        "base_flow": 380.3005676269531,
+        "additional_flow": 380.3005676269531,
+        "heat_a": 323172.21875,
+        "heat_b": -35727.22265625,
+        "feed_enthalpy": 211.4552764892578
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1254.3419189453125,
+        "additional_flow": 129.27880859375,
+        "external_flow": -70.63087463378906,
+        "inventory": 593.7245483398438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1198.064208984375,
+        "feed_enthalpy": 149.0322723388672,
+        "heat_a": -38836.73046875,
+        "heat_b": -21764.41796875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1312.9898681640625,
+        "base_flow": 1254.3419189453125,
+        "additional_flow": 129.27880859375,
+        "heat_a": -38836.73046875,
+        "heat_b": -21764.41796875,
+        "feed_enthalpy": 149.0322723388672
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1242.510009765625,
+        "additional_flow": 112.91998291015625,
+        "external_flow": 27.745365142822266,
+        "inventory": 755.83544921875,
+        "step": 1.0,
+        "discharge_enthalpy": 1132.5184326171875,
+        "feed_enthalpy": 604.6353759765625,
+        "heat_a": -98280.25,
+        "heat_b": 92750.96875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 755.83544921875,
+        "base_flow": 755.83544921875,
+        "additional_flow": 755.83544921875,
+        "heat_a": -98280.25,
+        "heat_b": 398992.71875,
+        "feed_enthalpy": 604.6353759765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -75.62286376953125,
+        "additional_flow": 61.95075988769531,
+        "external_flow": 197.12806701660156,
+        "inventory": 555.3699340820312,
+        "step": 1.0,
+        "discharge_enthalpy": 1065.40380859375,
+        "feed_enthalpy": 657.3606567382812,
+        "heat_a": 52366.953125,
+        "heat_b": -97188.5625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 183.45596313476562,
+        "base_flow": -75.62286376953125,
+        "additional_flow": 61.95075988769531,
+        "heat_a": 52366.953125,
+        "heat_b": -97188.5625,
+        "feed_enthalpy": 657.3606567382812
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 395.5496826171875,
+        "additional_flow": -92.89765167236328,
+        "external_flow": -98.85317993164062,
+        "inventory": 26.42516326904297,
+        "step": 0.5,
+        "discharge_enthalpy": 921.7838134765625,
+        "feed_enthalpy": 328.71453857421875,
+        "heat_a": 75987.796875,
+        "heat_b": 45304.50390625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 52.85032653808594,
+        "base_flow": 52.85032653808594,
+        "additional_flow": 52.85032653808594,
+        "heat_a": 31343.904296875,
+        "heat_b": 45304.50390625,
+        "feed_enthalpy": 328.71453857421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1600.66845703125,
+        "additional_flow": -64.08506774902344,
+        "external_flow": -77.28240203857422,
+        "inventory": 618.9188232421875,
+        "step": 1.0,
+        "discharge_enthalpy": 1047.816162109375,
+        "feed_enthalpy": 508.4294738769531,
+        "heat_a": 78813.1953125,
+        "heat_b": 25944.98828125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 618.9188232421875,
+        "base_flow": 618.9188232421875,
+        "additional_flow": 618.9188232421875,
+        "heat_a": 333836.5625,
+        "heat_b": 25944.98828125,
+        "feed_enthalpy": 508.4294738769531
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 324.40802001953125,
+        "additional_flow": 118.00820922851562,
+        "external_flow": -6.490819931030273,
+        "inventory": 686.7383422851562,
+        "step": 0.5,
+        "discharge_enthalpy": 863.1259765625,
+        "feed_enthalpy": 683.5242309570312,
+        "heat_a": 11079.744140625,
+        "heat_b": -30991.13671875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 435.9254150390625,
+        "base_flow": 324.40802001953125,
+        "additional_flow": 118.00820922851562,
+        "heat_a": 11079.744140625,
+        "heat_b": -30991.13671875,
+        "feed_enthalpy": 683.5242309570312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 672.0928955078125,
+        "additional_flow": -33.08946228027344,
+        "external_flow": 180.81497192382812,
+        "inventory": 675.3316040039062,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 967.727294921875,
+        "feed_enthalpy": 540.1580200195312,
+        "heat_a": -10959.724609375,
+        "heat_b": -18941.5234375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 819.8184204101562,
+        "base_flow": 672.0928955078125,
+        "additional_flow": -33.08946228027344,
+        "heat_a": -10959.724609375,
+        "heat_b": -18941.5234375,
+        "feed_enthalpy": 540.1580200195312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 262.86285400390625,
+        "additional_flow": -93.5531234741211,
+        "external_flow": 106.56979370117188,
+        "inventory": 535.8532104492188,
+        "step": 0.5,
+        "discharge_enthalpy": 883.412841796875,
+        "feed_enthalpy": 154.82138061523438,
+        "heat_a": 7136.35986328125,
+        "heat_b": -72414.0859375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 275.8795166015625,
+        "base_flow": 262.86285400390625,
+        "additional_flow": -93.5531234741211,
+        "heat_a": 7136.35986328125,
+        "heat_b": -72414.0859375,
+        "feed_enthalpy": 154.82138061523438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1169.0074462890625,
+        "additional_flow": 148.82972717285156,
+        "external_flow": 42.02892303466797,
+        "inventory": 55.07220458984375,
+        "step": 0.5,
+        "discharge_enthalpy": 831.7470703125,
+        "feed_enthalpy": 414.7560119628906,
+        "heat_a": 90927.6015625,
+        "heat_b": -60822.2578125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 110.1444091796875,
+        "base_flow": 110.1444091796875,
+        "additional_flow": 110.1444091796875,
+        "heat_a": 45929.234375,
+        "heat_b": -60822.2578125,
+        "feed_enthalpy": 414.7560119628906
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 591.3053588867188,
+        "additional_flow": 135.46871948242188,
+        "external_flow": -82.74540710449219,
+        "inventory": 804.099853515625,
+        "step": 0.5,
+        "discharge_enthalpy": 1071.88525390625,
+        "feed_enthalpy": 624.3599853515625,
+        "heat_a": -37835.80078125,
+        "heat_b": -78267.5390625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 644.0286865234375,
+        "base_flow": 591.3053588867188,
+        "additional_flow": 135.46871948242188,
+        "heat_a": -37835.80078125,
+        "heat_b": -78267.5390625,
+        "feed_enthalpy": 624.3599853515625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 402.1626892089844,
+        "additional_flow": 78.17621612548828,
+        "external_flow": -98.86270904541016,
+        "inventory": 516.7489624023438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1197.881103515625,
+        "feed_enthalpy": 432.8497314453125,
+        "heat_a": 69294.6328125,
+        "heat_b": -51631.234375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 381.4761962890625,
+        "base_flow": 402.1626892089844,
+        "additional_flow": 78.17621612548828,
+        "heat_a": 69294.6328125,
+        "heat_b": -51631.234375,
+        "feed_enthalpy": 432.8497314453125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 634.599609375,
+        "additional_flow": 19.64156150817871,
+        "external_flow": 167.3440399169922,
+        "inventory": 531.5177001953125,
+        "step": 0.5,
+        "discharge_enthalpy": 927.656982421875,
+        "feed_enthalpy": 105.5647201538086,
+        "heat_a": 32365.888671875,
+        "heat_b": -79486.0,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 821.585205078125,
+        "base_flow": 634.599609375,
+        "additional_flow": 19.64156150817871,
+        "heat_a": 32365.888671875,
+        "heat_b": -79486.0,
+        "feed_enthalpy": 105.5647201538086
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1689.2713623046875,
+        "additional_flow": -75.95365142822266,
+        "external_flow": 111.9163589477539,
+        "inventory": 89.2225570678711,
+        "step": 1.0,
+        "discharge_enthalpy": 996.7233276367188,
+        "feed_enthalpy": 288.6690368652344,
+        "heat_a": 1084.231201171875,
+        "heat_b": 68302.046875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 89.2225570678711,
+        "base_flow": 89.2225570678711,
+        "additional_flow": 89.2225570678711,
+        "heat_a": 1084.231201171875,
+        "heat_b": 63174.4140625,
+        "feed_enthalpy": 288.6690368652344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -18.285808563232422,
+        "additional_flow": -6.701826572418213,
+        "external_flow": -7.900949001312256,
+        "inventory": 234.65390014648438,
+        "step": 1.0,
+        "discharge_enthalpy": 1175.24658203125,
+        "feed_enthalpy": 627.460693359375,
+        "heat_a": -19143.890625,
+        "heat_b": 91235.8515625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": -32.88858413696289,
+        "base_flow": -18.285808563232422,
+        "additional_flow": -6.701826572418213,
+        "heat_a": -19143.890625,
+        "heat_b": 91235.8515625,
+        "feed_enthalpy": 627.460693359375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1408.58056640625,
+        "additional_flow": 22.337690353393555,
+        "external_flow": 28.099512100219727,
+        "inventory": 640.8027954101562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 908.9290771484375,
+        "feed_enthalpy": 160.474853515625,
+        "heat_a": -2805.482421875,
+        "heat_b": -3816.43994140625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1459.017822265625,
+        "base_flow": 1408.58056640625,
+        "additional_flow": 22.337690353393555,
+        "heat_a": -2805.482421875,
+        "heat_b": -3816.43994140625,
+        "feed_enthalpy": 160.474853515625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1578.324462890625,
+        "additional_flow": 149.91033935546875,
+        "external_flow": 143.54031372070312,
+        "inventory": 473.4375,
+        "step": 0.5,
+        "discharge_enthalpy": 983.5465087890625,
+        "feed_enthalpy": 147.71270751953125,
+        "heat_a": -38754.40625,
+        "heat_b": 5018.45263671875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 946.875,
+        "base_flow": 946.875,
+        "additional_flow": 946.875,
+        "heat_a": 791430.125,
+        "heat_b": 5018.45263671875,
+        "feed_enthalpy": 147.71270751953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1750.2392578125,
+        "additional_flow": 144.01333618164062,
+        "external_flow": -43.90314483642578,
+        "inventory": 386.2013854980469,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1077.89892578125,
+        "feed_enthalpy": 134.44212341308594,
+        "heat_a": 93374.171875,
+        "heat_b": -59944.046875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1850.3494873046875,
+        "base_flow": 1750.2392578125,
+        "additional_flow": 144.01333618164062,
+        "heat_a": 93374.171875,
+        "heat_b": -59944.046875,
+        "feed_enthalpy": 134.44212341308594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 835.5242919921875,
+        "additional_flow": 66.00873565673828,
+        "external_flow": 31.65500831604004,
+        "inventory": 492.2273864746094,
+        "step": 1.0,
+        "discharge_enthalpy": 850.6242065429688,
+        "feed_enthalpy": 366.4367370605469,
+        "heat_a": -54914.05078125,
+        "heat_b": 91501.71875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 492.2273864746094,
+        "base_flow": 492.2273864746094,
+        "additional_flow": 492.2273864746094,
+        "heat_a": -54914.05078125,
+        "heat_b": 238330.328125,
+        "feed_enthalpy": 366.4367370605469
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 642.2022094726562,
+        "additional_flow": 147.26486206054688,
+        "external_flow": 0.16550542414188385,
+        "inventory": 609.5150146484375,
+        "step": 1.0,
+        "discharge_enthalpy": 821.0452270507812,
+        "feed_enthalpy": 269.0858154296875,
+        "heat_a": 92576.96875,
+        "heat_b": -52495.01171875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 609.5150146484375,
+        "base_flow": 609.5150146484375,
+        "additional_flow": 609.5150146484375,
+        "heat_a": 92576.96875,
+        "heat_b": 336427.5625,
+        "feed_enthalpy": 269.0858154296875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 153.53042602539062,
+        "additional_flow": 197.4123077392578,
+        "external_flow": -86.0669937133789,
+        "inventory": 317.99688720703125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 913.3673706054688,
+        "feed_enthalpy": 474.8763122558594,
+        "heat_a": -70944.7890625,
+        "heat_b": -21789.39453125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 264.875732421875,
+        "base_flow": 153.53042602539062,
+        "additional_flow": 197.4123077392578,
+        "heat_a": -70944.7890625,
+        "heat_b": -21789.39453125,
+        "feed_enthalpy": 474.8763122558594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1705.2916259765625,
+        "additional_flow": 36.10025405883789,
+        "external_flow": 119.06282806396484,
+        "inventory": 914.186279296875,
+        "step": 1.0,
+        "discharge_enthalpy": 842.5297241210938,
+        "feed_enthalpy": 551.6542358398438,
+        "heat_a": 14439.2578125,
+        "heat_b": 16251.1103515625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 914.186279296875,
+        "base_flow": 914.186279296875,
+        "additional_flow": 914.186279296875,
+        "heat_a": 14439.2578125,
+        "heat_b": 265914.375,
+        "feed_enthalpy": 551.6542358398438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 68.70508575439453,
+        "additional_flow": 110.09730529785156,
+        "external_flow": 1.5300673246383667,
+        "inventory": 131.40243530273438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1079.0130615234375,
+        "feed_enthalpy": 157.91163635253906,
+        "heat_a": -90946.4375,
+        "heat_b": -34900.4140625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 180.33245849609375,
+        "base_flow": 68.70508575439453,
+        "additional_flow": 110.09730529785156,
+        "heat_a": -90946.4375,
+        "heat_b": -34900.4140625,
+        "feed_enthalpy": 157.91163635253906
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 841.0136108398438,
+        "additional_flow": 170.5107421875,
+        "external_flow": 90.69457244873047,
+        "inventory": 173.43112182617188,
+        "step": 1.0,
+        "discharge_enthalpy": 1149.357421875,
+        "feed_enthalpy": 619.866455078125,
+        "heat_a": 95217.65625,
+        "heat_b": -41486.7421875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 173.43112182617188,
+        "base_flow": 173.43112182617188,
+        "additional_flow": 173.43112182617188,
+        "heat_a": 95217.65625,
+        "heat_b": 91830.2109375,
+        "feed_enthalpy": 619.866455078125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -29.688840866088867,
+        "additional_flow": -89.59442138671875,
+        "external_flow": -60.029075622558594,
+        "inventory": 416.77227783203125,
+        "step": 1.0,
+        "discharge_enthalpy": 898.535888671875,
+        "feed_enthalpy": 409.11053466796875,
+        "heat_a": 85045.6640625,
+        "heat_b": -34512.31640625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": -179.3123321533203,
+        "base_flow": -29.688840866088867,
+        "additional_flow": -89.59442138671875,
+        "heat_a": 85045.6640625,
+        "heat_b": -34512.31640625,
+        "feed_enthalpy": 409.11053466796875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1967.644287109375,
+        "additional_flow": -15.824542045593262,
+        "external_flow": -88.41058349609375,
+        "inventory": 501.3913879394531,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 861.1563720703125,
+        "feed_enthalpy": 148.2833709716797,
+        "heat_a": -65947.21875,
+        "heat_b": -56273.1015625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1863.4091796875,
+        "base_flow": 1967.644287109375,
+        "additional_flow": -15.824542045593262,
+        "heat_a": -65947.21875,
+        "heat_b": -56273.1015625,
+        "feed_enthalpy": 148.2833709716797
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 874.6478271484375,
+        "additional_flow": -99.6905288696289,
+        "external_flow": 146.67030334472656,
+        "inventory": 329.58905029296875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 809.4736938476562,
+        "feed_enthalpy": 474.0014343261719,
+        "heat_a": -20461.232421875,
+        "heat_b": 28374.8671875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 921.6276245117188,
+        "base_flow": 874.6478271484375,
+        "additional_flow": -99.6905288696289,
+        "heat_a": -20461.232421875,
+        "heat_b": 28374.8671875,
+        "feed_enthalpy": 474.0014343261719
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 273.1648864746094,
+        "additional_flow": 118.06777954101562,
+        "external_flow": -94.37194061279297,
+        "inventory": 766.0560302734375,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 916.686767578125,
+        "feed_enthalpy": 266.23406982421875,
+        "heat_a": 22453.421875,
+        "heat_b": 58275.58203125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 296.8607177734375,
+        "base_flow": 273.1648864746094,
+        "additional_flow": 118.06777954101562,
+        "heat_a": 22453.421875,
+        "heat_b": 58275.58203125,
+        "feed_enthalpy": 266.23406982421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 853.7095947265625,
+        "additional_flow": 90.61750030517578,
+        "external_flow": 38.65077209472656,
+        "inventory": 591.4771728515625,
+        "step": 1.0,
+        "discharge_enthalpy": 1025.3148193359375,
+        "feed_enthalpy": 131.40512084960938,
+        "heat_a": -67014.25,
+        "heat_b": -92588.6484375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 591.4771728515625,
+        "base_flow": 591.4771728515625,
+        "additional_flow": 591.4771728515625,
+        "heat_a": -67014.25,
+        "heat_b": 528727.1875,
+        "feed_enthalpy": 131.40512084960938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1274.4864501953125,
+        "additional_flow": 30.27664566040039,
+        "external_flow": 29.506317138671875,
+        "inventory": 475.76605224609375,
+        "step": 1.0,
+        "discharge_enthalpy": 876.2127685546875,
+        "feed_enthalpy": 219.53768920898438,
+        "heat_a": -14295.267578125,
+        "heat_b": -51062.2578125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 475.76605224609375,
+        "base_flow": 475.76605224609375,
+        "additional_flow": 475.76605224609375,
+        "heat_a": -14295.267578125,
+        "heat_b": 312423.71875,
+        "feed_enthalpy": 219.53768920898438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 80.22370910644531,
+        "additional_flow": -95.41757202148438,
+        "external_flow": 146.10507202148438,
+        "inventory": 318.1379089355469,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 999.9141235351562,
+        "feed_enthalpy": 515.1040649414062,
+        "heat_a": 65780.2890625,
+        "heat_b": 67955.9375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 130.9112091064453,
+        "base_flow": 80.22370910644531,
+        "additional_flow": -95.41757202148438,
+        "heat_a": 65780.2890625,
+        "heat_b": 67955.9375,
+        "feed_enthalpy": 515.1040649414062
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 708.731201171875,
+        "additional_flow": 73.01358032226562,
+        "external_flow": 59.630924224853516,
+        "inventory": 433.0550231933594,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1017.6253662109375,
+        "feed_enthalpy": 467.2972717285156,
+        "heat_a": -20438.314453125,
+        "heat_b": -26010.626953125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 841.375732421875,
+        "base_flow": 708.731201171875,
+        "additional_flow": 73.01358032226562,
+        "heat_a": -20438.314453125,
+        "heat_b": -26010.626953125,
+        "feed_enthalpy": 467.2972717285156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 718.6328735351562,
+        "additional_flow": -9.65086841583252,
+        "external_flow": -34.119049072265625,
+        "inventory": 519.97119140625,
+        "step": 1.0,
+        "discharge_enthalpy": 850.0469360351562,
+        "feed_enthalpy": 116.60143280029297,
+        "heat_a": -19809.26171875,
+        "heat_b": -43227.5859375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 519.97119140625,
+        "base_flow": 519.97119140625,
+        "additional_flow": 519.97119140625,
+        "heat_a": 381370.53125,
+        "heat_b": -43227.5859375,
+        "feed_enthalpy": 116.60143280029297
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 357.200439453125,
+        "additional_flow": 178.67996215820312,
+        "external_flow": -24.65302276611328,
+        "inventory": 925.0092163085938,
+        "step": 1.0,
+        "discharge_enthalpy": 993.0294189453125,
+        "feed_enthalpy": 656.7342529296875,
+        "heat_a": -97242.96875,
+        "heat_b": 70088.15625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 511.2273864746094,
+        "base_flow": 357.200439453125,
+        "additional_flow": 178.67996215820312,
+        "heat_a": -97242.96875,
+        "heat_b": 70088.15625,
+        "feed_enthalpy": 656.7342529296875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1640.8660888671875,
+        "additional_flow": 163.99896240234375,
+        "external_flow": 117.17076110839844,
+        "inventory": 165.4486541748047,
+        "step": 0.5,
+        "discharge_enthalpy": 950.3411254882812,
+        "feed_enthalpy": 173.86126708984375,
+        "heat_a": -31715.044921875,
+        "heat_b": -6915.3515625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 330.8973083496094,
+        "base_flow": 330.8973083496094,
+        "additional_flow": 330.8973083496094,
+        "heat_a": -31715.044921875,
+        "heat_b": 256935.09375,
+        "feed_enthalpy": 173.86126708984375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 415.03570556640625,
+        "additional_flow": 117.17520141601562,
+        "external_flow": -59.59691619873047,
+        "inventory": 562.3778686523438,
+        "step": 0.5,
+        "discharge_enthalpy": 1049.515380859375,
+        "feed_enthalpy": 467.5237731933594,
+        "heat_a": -37599.49609375,
+        "heat_b": 3010.6162109375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 472.6139831542969,
+        "base_flow": 415.03570556640625,
+        "additional_flow": 117.17520141601562,
+        "heat_a": -37599.49609375,
+        "heat_b": 3010.6162109375,
+        "feed_enthalpy": 467.5237731933594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1711.6060791015625,
+        "additional_flow": 32.97111129760742,
+        "external_flow": -2.3752524852752686,
+        "inventory": 179.74502563476562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1001.2225341796875,
+        "feed_enthalpy": 354.21038818359375,
+        "heat_a": 5171.95849609375,
+        "heat_b": 96384.328125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1742.201904296875,
+        "base_flow": 1711.6060791015625,
+        "additional_flow": 32.97111129760742,
+        "heat_a": 5171.95849609375,
+        "heat_b": 96384.328125,
+        "feed_enthalpy": 354.21038818359375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1236.4700927734375,
+        "additional_flow": 185.9060821533203,
+        "external_flow": 92.96504211425781,
+        "inventory": 541.6324462890625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 809.8827514648438,
+        "feed_enthalpy": 634.8900146484375,
+        "heat_a": -80982.7890625,
+        "heat_b": 65472.03125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1515.3411865234375,
+        "base_flow": 1236.4700927734375,
+        "additional_flow": 185.9060821533203,
+        "heat_a": -80982.7890625,
+        "heat_b": 65472.03125,
+        "feed_enthalpy": 634.8900146484375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1523.0865478515625,
+        "additional_flow": 59.68113327026367,
+        "external_flow": -74.30239868164062,
+        "inventory": 965.3489379882812,
+        "step": 0.5,
+        "discharge_enthalpy": 982.7327880859375,
+        "feed_enthalpy": 647.077880859375,
+        "heat_a": -31324.732421875,
+        "heat_b": 22546.22265625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1508.46533203125,
+        "base_flow": 1523.0865478515625,
+        "additional_flow": 59.68113327026367,
+        "heat_a": -31324.732421875,
+        "heat_b": 22546.22265625,
+        "feed_enthalpy": 647.077880859375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -92.04717254638672,
+        "additional_flow": 57.07561492919922,
+        "external_flow": 108.07344818115234,
+        "inventory": 770.8984375,
+        "step": 1.0,
+        "discharge_enthalpy": 929.409423828125,
+        "feed_enthalpy": 523.8028564453125,
+        "heat_a": 10215.2099609375,
+        "heat_b": 80011.9140625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 73.10189056396484,
+        "base_flow": -92.04717254638672,
+        "additional_flow": 57.07561492919922,
+        "heat_a": 10215.2099609375,
+        "heat_b": 80011.9140625,
+        "feed_enthalpy": 523.8028564453125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1678.353759765625,
+        "additional_flow": 34.405364990234375,
+        "external_flow": 114.0937728881836,
+        "inventory": 631.207275390625,
+        "step": 0.5,
+        "discharge_enthalpy": 987.28857421875,
+        "feed_enthalpy": 451.599365234375,
+        "heat_a": 54639.20703125,
+        "heat_b": 42074.015625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1262.41455078125,
+        "base_flow": 1262.41455078125,
+        "additional_flow": 1262.41455078125,
+        "heat_a": 54639.20703125,
+        "heat_b": 676261.875,
+        "feed_enthalpy": 451.599365234375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 112.04188537597656,
+        "additional_flow": 151.24093627929688,
+        "external_flow": -42.47887420654297,
+        "inventory": 881.5690307617188,
+        "step": 1.0,
+        "discharge_enthalpy": 1195.0086669921875,
+        "feed_enthalpy": 620.9976806640625,
+        "heat_a": 70736.359375,
+        "heat_b": 84832.7109375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 220.803955078125,
+        "base_flow": 112.04188537597656,
+        "additional_flow": 151.24093627929688,
+        "heat_a": 70736.359375,
+        "heat_b": 84832.7109375,
+        "feed_enthalpy": 620.9976806640625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1570.257568359375,
+        "additional_flow": 195.05018615722656,
+        "external_flow": -83.091796875,
+        "inventory": 424.011962890625,
+        "step": 0.5,
+        "discharge_enthalpy": 885.2084350585938,
+        "feed_enthalpy": 430.04522705078125,
+        "heat_a": 98217.109375,
+        "heat_b": 7293.5400390625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 848.02392578125,
+        "base_flow": 848.02392578125,
+        "additional_flow": 848.02392578125,
+        "heat_a": 98217.109375,
+        "heat_b": 385989.28125,
+        "feed_enthalpy": 430.04522705078125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 354.677978515625,
+        "additional_flow": 125.10726928710938,
+        "external_flow": -98.62727355957031,
+        "inventory": 202.4300994873047,
+        "step": 1.0,
+        "discharge_enthalpy": 1135.227294921875,
+        "feed_enthalpy": 190.4030303955078,
+        "heat_a": -64112.99609375,
+        "heat_b": -8639.1591796875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 202.4300994873047,
+        "base_flow": 202.4300994873047,
+        "additional_flow": 202.4300994873047,
+        "heat_a": -64112.99609375,
+        "heat_b": 191260.875,
+        "feed_enthalpy": 190.4030303955078
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1878.57470703125,
+        "additional_flow": 70.5334701538086,
+        "external_flow": 106.39529418945312,
+        "inventory": 284.76715087890625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1089.7501220703125,
+        "feed_enthalpy": 150.94866943359375,
+        "heat_a": -77264.765625,
+        "heat_b": 22131.326171875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 2055.50341796875,
+        "base_flow": 1878.57470703125,
+        "additional_flow": 70.5334701538086,
+        "heat_a": -77264.765625,
+        "heat_b": 22131.326171875,
+        "feed_enthalpy": 150.94866943359375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1920.17236328125,
+        "additional_flow": -30.518693923950195,
+        "external_flow": 3.0341074466705322,
+        "inventory": 113.20094299316406,
+        "step": 0.5,
+        "discharge_enthalpy": 1038.0028076171875,
+        "feed_enthalpy": 440.51202392578125,
+        "heat_a": 74878.625,
+        "heat_b": -31965.677734375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 226.40188598632812,
+        "base_flow": 226.40188598632812,
+        "additional_flow": 226.40188598632812,
+        "heat_a": 74878.625,
+        "heat_b": 135273.046875,
+        "feed_enthalpy": 440.51202392578125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1647.5570068359375,
+        "additional_flow": -23.845787048339844,
+        "external_flow": 120.27996826171875,
+        "inventory": 310.8952331542969,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 996.3236083984375,
+        "feed_enthalpy": 447.38751220703125,
+        "heat_a": -16049.85546875,
+        "heat_b": 2785.996337890625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1743.9912109375,
+        "base_flow": 1647.5570068359375,
+        "additional_flow": -23.845787048339844,
+        "heat_a": -16049.85546875,
+        "heat_b": 2785.996337890625,
+        "feed_enthalpy": 447.38751220703125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1873.5284423828125,
+        "additional_flow": 43.1091423034668,
+        "external_flow": 16.77185821533203,
+        "inventory": 738.6670532226562,
+        "step": 1.0,
+        "discharge_enthalpy": 1010.8742065429688,
+        "feed_enthalpy": 635.9462890625,
+        "heat_a": -32723.23828125,
+        "heat_b": -645.44677734375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 738.6670532226562,
+        "base_flow": 738.6670532226562,
+        "additional_flow": 738.6670532226562,
+        "heat_a": -32723.23828125,
+        "heat_b": 276946.90625,
+        "feed_enthalpy": 635.9462890625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 197.1117706298828,
+        "additional_flow": 132.42782592773438,
+        "external_flow": 46.590972900390625,
+        "inventory": 864.9055786132812,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 989.8984985351562,
+        "feed_enthalpy": 201.7864227294922,
+        "heat_a": 46125.125,
+        "heat_b": 1600.5164794921875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 376.13055419921875,
+        "base_flow": 197.1117706298828,
+        "additional_flow": 132.42782592773438,
+        "heat_a": 46125.125,
+        "heat_b": 1600.5164794921875,
+        "feed_enthalpy": 201.7864227294922
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 410.5277099609375,
+        "additional_flow": 70.20889282226562,
+        "external_flow": 151.3935546875,
+        "inventory": 667.1952514648438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 823.0861206054688,
+        "feed_enthalpy": 318.8432922363281,
+        "heat_a": 18811.0546875,
+        "heat_b": -68276.2578125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 632.130126953125,
+        "base_flow": 410.5277099609375,
+        "additional_flow": 70.20889282226562,
+        "heat_a": 18811.0546875,
+        "heat_b": -68276.2578125,
+        "feed_enthalpy": 318.8432922363281
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 284.44378662109375,
+        "additional_flow": -86.83846282958984,
+        "external_flow": -25.55537223815918,
+        "inventory": 112.54580688476562,
+        "step": 1.0,
+        "discharge_enthalpy": 1025.6060791015625,
+        "feed_enthalpy": 394.1762390136719,
+        "heat_a": 66365.3828125,
+        "heat_b": -36999.39453125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 112.54580688476562,
+        "base_flow": 112.54580688476562,
+        "additional_flow": 112.54580688476562,
+        "heat_a": 66365.3828125,
+        "heat_b": 71064.78125,
+        "feed_enthalpy": 394.1762390136719
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 192.0602264404297,
+        "additional_flow": 198.36776733398438,
+        "external_flow": 160.33192443847656,
+        "inventory": 129.42103576660156,
+        "step": 1.0,
+        "discharge_enthalpy": 804.7355346679688,
+        "feed_enthalpy": 475.2275390625,
+        "heat_a": 26042.01953125,
+        "heat_b": -36004.62109375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 129.42103576660156,
+        "base_flow": 129.42103576660156,
+        "additional_flow": 129.42103576660156,
+        "heat_a": 26042.01953125,
+        "heat_b": 42645.265625,
+        "feed_enthalpy": 475.2275390625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1394.2418212890625,
+        "additional_flow": 133.0858917236328,
+        "external_flow": -51.978271484375,
+        "inventory": 110.38203430175781,
+        "step": 1.0,
+        "discharge_enthalpy": 1181.1397705078125,
+        "feed_enthalpy": 343.5143737792969,
+        "heat_a": -81050.3046875,
+        "heat_b": 28818.115234375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 110.38203430175781,
+        "base_flow": 110.38203430175781,
+        "additional_flow": 110.38203430175781,
+        "heat_a": -81050.3046875,
+        "heat_b": 92458.796875,
+        "feed_enthalpy": 343.5143737792969
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1508.5692138671875,
+        "additional_flow": -22.23817253112793,
+        "external_flow": 87.09308624267578,
+        "inventory": 809.8426513671875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1099.5281982421875,
+        "feed_enthalpy": 166.3246612548828,
+        "heat_a": 89798.78125,
+        "heat_b": -86838.4375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1573.424072265625,
+        "base_flow": 1508.5692138671875,
+        "additional_flow": -22.23817253112793,
+        "heat_a": 89798.78125,
+        "heat_b": -86838.4375,
+        "feed_enthalpy": 166.3246612548828
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1946.791259765625,
+        "additional_flow": -52.32286071777344,
+        "external_flow": 154.94790649414062,
+        "inventory": 474.4986572265625,
+        "step": 0.5,
+        "discharge_enthalpy": 1184.2265625,
+        "feed_enthalpy": 665.2034912109375,
+        "heat_a": -24154.39453125,
+        "heat_b": -83301.234375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 948.997314453125,
+        "base_flow": 948.997314453125,
+        "additional_flow": 948.997314453125,
+        "heat_a": -24154.39453125,
+        "heat_b": 492551.5,
+        "feed_enthalpy": 665.2034912109375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 536.9116821289062,
+        "additional_flow": -44.294620513916016,
+        "external_flow": 21.99627113342285,
+        "inventory": 808.1245727539062,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1006.2174072265625,
+        "feed_enthalpy": 437.45599365234375,
+        "heat_a": 59327.5625,
+        "heat_b": 23279.41015625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 514.6133422851562,
+        "base_flow": 536.9116821289062,
+        "additional_flow": -44.294620513916016,
+        "heat_a": 59327.5625,
+        "heat_b": 23279.41015625,
+        "feed_enthalpy": 437.45599365234375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1027.210693359375,
+        "additional_flow": 36.0051155090332,
+        "external_flow": 153.1362762451172,
+        "inventory": 158.93853759765625,
+        "step": 1.0,
+        "discharge_enthalpy": 884.7981567382812,
+        "feed_enthalpy": 483.9496154785156,
+        "heat_a": -95516.625,
+        "heat_b": 61549.90234375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 158.93853759765625,
+        "base_flow": 158.93853759765625,
+        "additional_flow": 158.93853759765625,
+        "heat_a": 63710.28125,
+        "heat_b": 61549.90234375,
+        "feed_enthalpy": 483.9496154785156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1360.041015625,
+        "additional_flow": 58.114749908447266,
+        "external_flow": 94.55668640136719,
+        "inventory": 673.5350341796875,
+        "step": 0.5,
+        "discharge_enthalpy": 1064.31298828125,
+        "feed_enthalpy": 414.3636169433594,
+        "heat_a": -3139.897705078125,
+        "heat_b": 3151.703125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1347.070068359375,
+        "base_flow": 1347.070068359375,
+        "additional_flow": 1347.070068359375,
+        "heat_a": -3139.897705078125,
+        "heat_b": 875527.375,
+        "feed_enthalpy": 414.3636169433594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 867.6986694335938,
+        "additional_flow": 192.42453002929688,
+        "external_flow": -44.293548583984375,
+        "inventory": 241.04812622070312,
+        "step": 0.5,
+        "discharge_enthalpy": 1150.13232421875,
+        "feed_enthalpy": 307.10845947265625,
+        "heat_a": -86928.8671875,
+        "heat_b": 24000.646484375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 482.09625244140625,
+        "base_flow": 482.09625244140625,
+        "additional_flow": 482.09625244140625,
+        "heat_a": -86928.8671875,
+        "heat_b": 406418.65625,
+        "feed_enthalpy": 307.10845947265625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -95.77885437011719,
+        "additional_flow": 43.13839340209961,
+        "external_flow": -67.30218505859375,
+        "inventory": 487.3624267578125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1076.202392578125,
+        "feed_enthalpy": 273.6786193847656,
+        "heat_a": 77704.0625,
+        "heat_b": 70385.9453125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": -119.94264221191406,
+        "base_flow": -95.77885437011719,
+        "additional_flow": 43.13839340209961,
+        "heat_a": 77704.0625,
+        "heat_b": 70385.9453125,
+        "feed_enthalpy": 273.6786193847656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 227.0415496826172,
+        "additional_flow": -61.673519134521484,
+        "external_flow": 131.89625549316406,
+        "inventory": 938.6265869140625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1018.1428833007812,
+        "feed_enthalpy": 245.1864471435547,
+        "heat_a": -93321.8359375,
+        "heat_b": -95961.7890625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 297.2642822265625,
+        "base_flow": 227.0415496826172,
+        "additional_flow": -61.673519134521484,
+        "heat_a": -93321.8359375,
+        "heat_b": -95961.7890625,
+        "feed_enthalpy": 245.1864471435547
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 905.353271484375,
+        "additional_flow": 51.279266357421875,
+        "external_flow": 144.88229370117188,
+        "inventory": 997.0198364257812,
+        "step": 1.0,
+        "discharge_enthalpy": 1081.5263671875,
+        "feed_enthalpy": 651.7517700195312,
+        "heat_a": 85151.4375,
+        "heat_b": -70766.0,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 997.0198364257812,
+        "base_flow": 997.0198364257812,
+        "additional_flow": 997.0198364257812,
+        "heat_a": 428493.8125,
+        "heat_b": -70766.0,
+        "feed_enthalpy": 651.7517700195312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 494.58251953125,
+        "additional_flow": -42.52677917480469,
+        "external_flow": -59.68338394165039,
+        "inventory": 826.9182739257812,
+        "step": 0.5,
+        "discharge_enthalpy": 1149.9034423828125,
+        "feed_enthalpy": 138.53916931152344,
+        "heat_a": -9418.859375,
+        "heat_b": 28694.046875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 392.3723449707031,
+        "base_flow": 494.58251953125,
+        "additional_flow": -42.52677917480469,
+        "heat_a": -9418.859375,
+        "heat_b": 28694.046875,
+        "feed_enthalpy": 138.53916931152344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 696.4920043945312,
+        "additional_flow": 7.942668437957764,
+        "external_flow": 150.42401123046875,
+        "inventory": 386.6033020019531,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1196.72119140625,
+        "feed_enthalpy": 626.1041870117188,
+        "heat_a": -64668.140625,
+        "heat_b": 85390.3828125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 854.8587036132812,
+        "base_flow": 696.4920043945312,
+        "additional_flow": 7.942668437957764,
+        "heat_a": -64668.140625,
+        "heat_b": 85390.3828125,
+        "feed_enthalpy": 626.1041870117188
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 813.9795532226562,
+        "additional_flow": 78.52168273925781,
+        "external_flow": 121.91475677490234,
+        "inventory": 489.0312805175781,
+        "step": 0.5,
+        "discharge_enthalpy": 1034.638671875,
+        "feed_enthalpy": 273.26654052734375,
+        "heat_a": 71266.15625,
+        "heat_b": -69862.3828125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 978.0625610351562,
+        "base_flow": 978.0625610351562,
+        "additional_flow": 978.0625610351562,
+        "heat_a": 71266.15625,
+        "heat_b": 744669.5625,
+        "feed_enthalpy": 273.26654052734375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1191.6427001953125,
+        "additional_flow": -16.571561813354492,
+        "external_flow": 166.49476623535156,
+        "inventory": 486.1639099121094,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1189.64453125,
+        "feed_enthalpy": 261.8734436035156,
+        "heat_a": 26722.216796875,
+        "heat_b": -48265.32421875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1341.56591796875,
+        "base_flow": 1191.6427001953125,
+        "additional_flow": -16.571561813354492,
+        "heat_a": 26722.216796875,
+        "heat_b": -48265.32421875,
+        "feed_enthalpy": 261.8734436035156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1774.7850341796875,
+        "additional_flow": 106.08265686035156,
+        "external_flow": -88.0269546508789,
+        "inventory": 506.47625732421875,
+        "step": 0.5,
+        "discharge_enthalpy": 1157.731201171875,
+        "feed_enthalpy": 479.1573181152344,
+        "heat_a": 70347.3828125,
+        "heat_b": -44648.5,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1012.9525146484375,
+        "base_flow": 1012.9525146484375,
+        "additional_flow": 1012.9525146484375,
+        "heat_a": 70347.3828125,
+        "heat_b": 687363.125,
+        "feed_enthalpy": 479.1573181152344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 488.44891357421875,
+        "additional_flow": -85.54554748535156,
+        "external_flow": -44.79084396362305,
+        "inventory": 221.94686889648438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1025.082275390625,
+        "feed_enthalpy": 634.8703002929688,
+        "heat_a": -90969.84375,
+        "heat_b": 30838.263671875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 358.1125183105469,
+        "base_flow": 488.44891357421875,
+        "additional_flow": -85.54554748535156,
+        "heat_a": -90969.84375,
+        "heat_b": 30838.263671875,
+        "feed_enthalpy": 634.8703002929688
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 418.68756103515625,
+        "additional_flow": -65.55152130126953,
+        "external_flow": 83.4904556274414,
+        "inventory": 562.5302734375,
+        "step": 1.0,
+        "discharge_enthalpy": 1094.6607666015625,
+        "feed_enthalpy": 256.9105224609375,
+        "heat_a": -41425.44921875,
+        "heat_b": -3285.23193359375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 436.6264953613281,
+        "base_flow": 418.68756103515625,
+        "additional_flow": -65.55152130126953,
+        "heat_a": -41425.44921875,
+        "heat_b": -3285.23193359375,
+        "feed_enthalpy": 256.9105224609375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 79.15398406982422,
+        "additional_flow": 130.60220336914062,
+        "external_flow": 193.2261962890625,
+        "inventory": 803.091796875,
+        "step": 1.0,
+        "discharge_enthalpy": 902.4385986328125,
+        "feed_enthalpy": 641.3159790039062,
+        "heat_a": -6847.3671875,
+        "heat_b": 91567.6484375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 402.9823913574219,
+        "base_flow": 79.15398406982422,
+        "additional_flow": 130.60220336914062,
+        "heat_a": -6847.3671875,
+        "heat_b": 91567.6484375,
+        "feed_enthalpy": 641.3159790039062
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 602.2726440429688,
+        "additional_flow": 86.63227844238281,
+        "external_flow": 9.599260330200195,
+        "inventory": 433.4378967285156,
+        "step": 0.5,
+        "discharge_enthalpy": 883.391357421875,
+        "feed_enthalpy": 170.85252380371094,
+        "heat_a": -9829.6376953125,
+        "heat_b": -50783.3984375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 698.5042114257812,
+        "base_flow": 602.2726440429688,
+        "additional_flow": 86.63227844238281,
+        "heat_a": -9829.6376953125,
+        "heat_b": -50783.3984375,
+        "feed_enthalpy": 170.85252380371094
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 454.6728515625,
+        "additional_flow": -33.81938171386719,
+        "external_flow": 83.40629577636719,
+        "inventory": 588.9740600585938,
+        "step": 1.0,
+        "discharge_enthalpy": 1107.856689453125,
+        "feed_enthalpy": 307.6971435546875,
+        "heat_a": -74979.4375,
+        "heat_b": 51725.55859375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 504.259765625,
+        "base_flow": 454.6728515625,
+        "additional_flow": -33.81938171386719,
+        "heat_a": -74979.4375,
+        "heat_b": 51725.55859375,
+        "feed_enthalpy": 307.6971435546875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 658.9031372070312,
+        "additional_flow": -43.60195541381836,
+        "external_flow": 51.121395111083984,
+        "inventory": 392.8581237792969,
+        "step": 1.0,
+        "discharge_enthalpy": 1147.5887451171875,
+        "feed_enthalpy": 570.3970947265625,
+        "heat_a": 24558.8671875,
+        "heat_b": -32954.171875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 392.8581237792969,
+        "base_flow": 392.8581237792969,
+        "additional_flow": 392.8581237792969,
+        "heat_a": 24558.8671875,
+        "heat_b": 226754.421875,
+        "feed_enthalpy": 570.3970947265625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1530.073974609375,
+        "additional_flow": 104.74470520019531,
+        "external_flow": 154.03073120117188,
+        "inventory": 181.8323974609375,
+        "step": 1.0,
+        "discharge_enthalpy": 808.0975952148438,
+        "feed_enthalpy": 367.0977478027344,
+        "heat_a": -391.46209716796875,
+        "heat_b": -26578.154296875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 181.8323974609375,
+        "base_flow": 181.8323974609375,
+        "additional_flow": 181.8323974609375,
+        "heat_a": -391.46209716796875,
+        "heat_b": 80188.0625,
+        "feed_enthalpy": 367.0977478027344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 436.2056884765625,
+        "additional_flow": 134.76516723632812,
+        "external_flow": 189.9535675048828,
+        "inventory": 846.3553466796875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1116.296630859375,
+        "feed_enthalpy": 403.9342041015625,
+        "heat_a": -27223.259765625,
+        "heat_b": 43235.859375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 760.9244384765625,
+        "base_flow": 436.2056884765625,
+        "additional_flow": 134.76516723632812,
+        "heat_a": -27223.259765625,
+        "heat_b": 43235.859375,
+        "feed_enthalpy": 403.9342041015625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 468.5711975097656,
+        "additional_flow": 30.645177841186523,
+        "external_flow": 138.74085998535156,
+        "inventory": 864.7621459960938,
+        "step": 0.5,
+        "discharge_enthalpy": 1164.7420654296875,
+        "feed_enthalpy": 174.92056274414062,
+        "heat_a": 96883.0625,
+        "heat_b": 34747.359375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 637.9572143554688,
+        "base_flow": 468.5711975097656,
+        "additional_flow": 30.645177841186523,
+        "heat_a": 96883.0625,
+        "heat_b": 34747.359375,
+        "feed_enthalpy": 174.92056274414062
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 905.038330078125,
+        "additional_flow": -60.63836669921875,
+        "external_flow": 123.38728332519531,
+        "inventory": 531.164794921875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 909.0504760742188,
+        "feed_enthalpy": 672.8385009765625,
+        "heat_a": -57768.2421875,
+        "heat_b": 34250.4296875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 967.7872314453125,
+        "base_flow": 905.038330078125,
+        "additional_flow": -60.63836669921875,
+        "heat_a": -57768.2421875,
+        "heat_b": 34250.4296875,
+        "feed_enthalpy": 672.8385009765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 711.6633911132812,
+        "additional_flow": 0.43935999274253845,
+        "external_flow": 25.836143493652344,
+        "inventory": 874.1884765625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 936.3121948242188,
+        "feed_enthalpy": 173.96214294433594,
+        "heat_a": -21003.845703125,
+        "heat_b": 99006.7109375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 737.9389038085938,
+        "base_flow": 711.6633911132812,
+        "additional_flow": 0.43935999274253845,
+        "heat_a": -21003.845703125,
+        "heat_b": 99006.7109375,
+        "feed_enthalpy": 173.96214294433594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1825.21044921875,
+        "additional_flow": -74.49414825439453,
+        "external_flow": 88.87855529785156,
+        "inventory": 981.9376831054688,
+        "step": 0.5,
+        "discharge_enthalpy": 1095.3604736328125,
+        "feed_enthalpy": 117.23900604248047,
+        "heat_a": 51522.08203125,
+        "heat_b": 68575.8359375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1839.5948486328125,
+        "base_flow": 1825.21044921875,
+        "additional_flow": -74.49414825439453,
+        "heat_a": 51522.08203125,
+        "heat_b": 68575.8359375,
+        "feed_enthalpy": 117.23900604248047
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1006.5760498046875,
+        "additional_flow": 6.6753339767456055,
+        "external_flow": 132.5207977294922,
+        "inventory": 759.5014038085938,
+        "step": 1.0,
+        "discharge_enthalpy": 835.6053466796875,
+        "feed_enthalpy": 149.66976928710938,
+        "heat_a": 71289.5078125,
+        "heat_b": 76482.21875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 759.5014038085938,
+        "base_flow": 759.5014038085938,
+        "additional_flow": 759.5014038085938,
+        "heat_a": 520969.03125,
+        "heat_b": 76482.21875,
+        "feed_enthalpy": 149.66976928710938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -55.205318450927734,
+        "additional_flow": 150.24551391601562,
+        "external_flow": 134.16494750976562,
+        "inventory": 20.124828338623047,
+        "step": 0.5,
+        "discharge_enthalpy": 1048.3673095703125,
+        "feed_enthalpy": 495.0489501953125,
+        "heat_a": -69458.0859375,
+        "heat_b": -77497.140625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 40.249656677246094,
+        "base_flow": 40.249656677246094,
+        "additional_flow": 40.249656677246094,
+        "heat_a": -69458.0859375,
+        "heat_b": 22270.873046875,
+        "feed_enthalpy": 495.0489501953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 737.4024658203125,
+        "additional_flow": 173.2512969970703,
+        "external_flow": -8.687164306640625,
+        "inventory": 581.408203125,
+        "step": 1.0,
+        "discharge_enthalpy": 878.3497314453125,
+        "feed_enthalpy": 502.5101623535156,
+        "heat_a": 33997.84765625,
+        "heat_b": -7766.4111328125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 581.408203125,
+        "base_flow": 581.408203125,
+        "additional_flow": 581.408203125,
+        "heat_a": 218516.203125,
+        "heat_b": -7766.4111328125,
+        "feed_enthalpy": 502.5101623535156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1573.8345947265625,
+        "additional_flow": -86.53612518310547,
+        "external_flow": 196.87294006347656,
+        "inventory": 337.3282165527344,
+        "step": 1.0,
+        "discharge_enthalpy": 1126.8785400390625,
+        "feed_enthalpy": 669.8109130859375,
+        "heat_a": -39240.8046875,
+        "heat_b": 16329.4833984375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 337.3282165527344,
+        "base_flow": 337.3282165527344,
+        "additional_flow": 337.3282165527344,
+        "heat_a": -39240.8046875,
+        "heat_b": 154181.8125,
+        "feed_enthalpy": 669.8109130859375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1973.526611328125,
+        "additional_flow": 17.419326782226562,
+        "external_flow": -57.079505920410156,
+        "inventory": 164.91845703125,
+        "step": 0.5,
+        "discharge_enthalpy": 1148.41943359375,
+        "feed_enthalpy": 643.7874755859375,
+        "heat_a": 94599.1953125,
+        "heat_b": -41235.1328125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 329.8369140625,
+        "base_flow": 329.8369140625,
+        "additional_flow": 329.8369140625,
+        "heat_a": 166446.25,
+        "heat_b": -41235.1328125,
+        "feed_enthalpy": 643.7874755859375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1608.234619140625,
+        "additional_flow": 49.693214416503906,
+        "external_flow": 123.48739624023438,
+        "inventory": 864.8291015625,
+        "step": 1.0,
+        "discharge_enthalpy": 1091.1055908203125,
+        "feed_enthalpy": 643.71728515625,
+        "heat_a": -20999.373046875,
+        "heat_b": -13508.1162109375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 864.8291015625,
+        "base_flow": 864.8291015625,
+        "additional_flow": 864.8291015625,
+        "heat_a": -20999.373046875,
+        "heat_b": 386914.4375,
+        "feed_enthalpy": 643.71728515625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 182.69459533691406,
+        "additional_flow": 194.8813018798828,
+        "external_flow": -69.01834869384766,
+        "inventory": 505.7975769042969,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1027.2501220703125,
+        "feed_enthalpy": 640.0336303710938,
+        "heat_a": 71841.4140625,
+        "heat_b": 57797.515625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 308.55755615234375,
+        "base_flow": 182.69459533691406,
+        "additional_flow": 194.8813018798828,
+        "heat_a": 71841.4140625,
+        "heat_b": 57797.515625,
+        "feed_enthalpy": 640.0336303710938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 17.368288040161133,
+        "additional_flow": -34.656410217285156,
+        "external_flow": 36.21078872680664,
+        "inventory": 304.42059326171875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1080.26953125,
+        "feed_enthalpy": 352.0379333496094,
+        "heat_a": 50529.96484375,
+        "heat_b": -52703.63671875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 18.922666549682617,
+        "base_flow": 17.368288040161133,
+        "additional_flow": -34.656410217285156,
+        "heat_a": 50529.96484375,
+        "heat_b": -52703.63671875,
+        "feed_enthalpy": 352.0379333496094
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 869.5328369140625,
+        "additional_flow": 117.93964385986328,
+        "external_flow": -12.357660293579102,
+        "inventory": 14.777992248535156,
+        "step": 0.5,
+        "discharge_enthalpy": 994.0000610351562,
+        "feed_enthalpy": 195.7375030517578,
+        "heat_a": 63972.39453125,
+        "heat_b": 34797.26953125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 29.555984497070312,
+        "base_flow": 29.555984497070312,
+        "additional_flow": 29.555984497070312,
+        "heat_a": 63972.39453125,
+        "heat_b": 23593.435546875,
+        "feed_enthalpy": 195.7375030517578
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 268.2589111328125,
+        "additional_flow": 52.161651611328125,
+        "external_flow": 130.42015075683594,
+        "inventory": 907.4152221679688,
+        "step": 0.5,
+        "discharge_enthalpy": 820.124755859375,
+        "feed_enthalpy": 367.073974609375,
+        "heat_a": 17695.63671875,
+        "heat_b": 60464.5703125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 450.8406982421875,
+        "base_flow": 268.2589111328125,
+        "additional_flow": 52.161651611328125,
+        "heat_a": 17695.63671875,
+        "heat_b": 60464.5703125,
+        "feed_enthalpy": 367.073974609375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 925.15185546875,
+        "additional_flow": 12.30331802368164,
+        "external_flow": -34.24531555175781,
+        "inventory": 144.04544067382812,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 852.71240234375,
+        "feed_enthalpy": 235.2438507080078,
+        "heat_a": 3371.76416015625,
+        "heat_b": 31722.654296875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 903.2098388671875,
+        "base_flow": 925.15185546875,
+        "additional_flow": 12.30331802368164,
+        "heat_a": 3371.76416015625,
+        "heat_b": 31722.654296875,
+        "feed_enthalpy": 235.2438507080078
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1496.658203125,
+        "additional_flow": 118.83900451660156,
+        "external_flow": 146.85330200195312,
+        "inventory": 842.676025390625,
+        "step": 1.0,
+        "discharge_enthalpy": 996.4453735351562,
+        "feed_enthalpy": 105.10478210449219,
+        "heat_a": 76398.7578125,
+        "heat_b": -68529.3203125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 842.676025390625,
+        "base_flow": 842.676025390625,
+        "additional_flow": 842.676025390625,
+        "heat_a": 76398.7578125,
+        "heat_b": 751111.375,
+        "feed_enthalpy": 105.10478210449219
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 713.6640625,
+        "additional_flow": 24.40068244934082,
+        "external_flow": 8.5575532913208,
+        "inventory": 846.8104858398438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1195.1568603515625,
+        "feed_enthalpy": 660.8079223632812,
+        "heat_a": 97057.3984375,
+        "heat_b": -5576.2958984375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 746.622314453125,
+        "base_flow": 713.6640625,
+        "additional_flow": 24.40068244934082,
+        "heat_a": 97057.3984375,
+        "heat_b": -5576.2958984375,
+        "feed_enthalpy": 660.8079223632812
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 188.7490997314453,
+        "additional_flow": 110.5261459350586,
+        "external_flow": -39.02685546875,
+        "inventory": 710.5000610351562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1126.1666259765625,
+        "feed_enthalpy": 139.68641662597656,
+        "heat_a": 23167.201171875,
+        "heat_b": 99248.1328125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 260.2483825683594,
+        "base_flow": 188.7490997314453,
+        "additional_flow": 110.5261459350586,
+        "heat_a": 23167.201171875,
+        "heat_b": 99248.1328125,
+        "feed_enthalpy": 139.68641662597656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1786.421875,
+        "additional_flow": 73.76286315917969,
+        "external_flow": -83.78414154052734,
+        "inventory": 605.0548706054688,
+        "step": 0.5,
+        "discharge_enthalpy": 951.751708984375,
+        "feed_enthalpy": 273.7698059082031,
+        "heat_a": -84799.921875,
+        "heat_b": 83982.9375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1210.1097412109375,
+        "base_flow": 1210.1097412109375,
+        "additional_flow": 1210.1097412109375,
+        "heat_a": -84799.921875,
+        "heat_b": 820432.5,
+        "feed_enthalpy": 273.7698059082031
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 244.642578125,
+        "additional_flow": -70.01856231689453,
+        "external_flow": 101.93830108642578,
+        "inventory": 638.7971801757812,
+        "step": 0.5,
+        "discharge_enthalpy": 946.8523559570312,
+        "feed_enthalpy": 532.0990600585938,
+        "heat_a": 6207.49462890625,
+        "heat_b": -1910.5321044921875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 276.56231689453125,
+        "base_flow": 244.642578125,
+        "additional_flow": -70.01856231689453,
+        "heat_a": 6207.49462890625,
+        "heat_b": -1910.5321044921875,
+        "feed_enthalpy": 532.0990600585938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1832.36279296875,
+        "additional_flow": -0.7984588742256165,
+        "external_flow": -29.710229873657227,
+        "inventory": 301.5384826660156,
+        "step": 0.5,
+        "discharge_enthalpy": 825.3954467773438,
+        "feed_enthalpy": 674.8171997070312,
+        "heat_a": -85426.3828125,
+        "heat_b": -69747.28125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 603.0769653320312,
+        "base_flow": 603.0769653320312,
+        "additional_flow": 603.0769653320312,
+        "heat_a": -85426.3828125,
+        "heat_b": 90810.2734375,
+        "feed_enthalpy": 674.8171997070312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1799.94384765625,
+        "additional_flow": 30.14930534362793,
+        "external_flow": 84.47530364990234,
+        "inventory": 609.932373046875,
+        "step": 1.0,
+        "discharge_enthalpy": 946.0890502929688,
+        "feed_enthalpy": 208.45663452148438,
+        "heat_a": -58475.56640625,
+        "heat_b": 34797.65625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 609.932373046875,
+        "base_flow": 609.932373046875,
+        "additional_flow": 609.932373046875,
+        "heat_a": -58475.56640625,
+        "heat_b": 449905.875,
+        "feed_enthalpy": 208.45663452148438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1986.7735595703125,
+        "additional_flow": -13.906930923461914,
+        "external_flow": -63.00615692138672,
+        "inventory": 982.1575927734375,
+        "step": 0.5,
+        "discharge_enthalpy": 918.0529174804688,
+        "feed_enthalpy": 527.1932373046875,
+        "heat_a": 86199.953125,
+        "heat_b": -7716.03759765625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1909.8604736328125,
+        "base_flow": 1986.7735595703125,
+        "additional_flow": -13.906930923461914,
+        "heat_a": 86199.953125,
+        "heat_b": -7716.03759765625,
+        "feed_enthalpy": 527.1932373046875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1767.79931640625,
+        "additional_flow": -5.142640113830566,
+        "external_flow": 12.500097274780273,
+        "inventory": 679.2704467773438,
+        "step": 1.0,
+        "discharge_enthalpy": 909.8916015625,
+        "feed_enthalpy": 298.4659729003906,
+        "heat_a": 81319.3515625,
+        "heat_b": 95009.4140625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 679.2704467773438,
+        "base_flow": 679.2704467773438,
+        "additional_flow": 679.2704467773438,
+        "heat_a": 81319.3515625,
+        "heat_b": 415323.375,
+        "feed_enthalpy": 298.4659729003906
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 155.94627380371094,
+        "additional_flow": -78.0841293334961,
+        "external_flow": -46.428680419921875,
+        "inventory": 337.4053039550781,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 976.4664306640625,
+        "feed_enthalpy": 162.017822265625,
+        "heat_a": -80662.640625,
+        "heat_b": 1677.92236328125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 31.43346405029297,
+        "base_flow": 155.94627380371094,
+        "additional_flow": -78.0841293334961,
+        "heat_a": -80662.640625,
+        "heat_b": 1677.92236328125,
+        "feed_enthalpy": 162.017822265625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 549.5775146484375,
+        "additional_flow": 9.645946502685547,
+        "external_flow": -30.917587280273438,
+        "inventory": 159.21319580078125,
+        "step": 0.5,
+        "discharge_enthalpy": 1046.9154052734375,
+        "feed_enthalpy": 681.1580810546875,
+        "heat_a": -84217.4921875,
+        "heat_b": -60762.6875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 318.4263916015625,
+        "base_flow": 318.4263916015625,
+        "additional_flow": 318.4263916015625,
+        "heat_a": 116466.78125,
+        "heat_b": -60762.6875,
+        "feed_enthalpy": 681.1580810546875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 648.4494018554688,
+        "additional_flow": -7.071516036987305,
+        "external_flow": 46.9854736328125,
+        "inventory": 521.8801879882812,
+        "step": 0.5,
+        "discharge_enthalpy": 813.34130859375,
+        "feed_enthalpy": 231.2509307861328,
+        "heat_a": 62249.01953125,
+        "heat_b": 20977.1640625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 688.3633422851562,
+        "base_flow": 648.4494018554688,
+        "additional_flow": -7.071516036987305,
+        "heat_a": 62249.01953125,
+        "heat_b": 20977.1640625,
+        "feed_enthalpy": 231.2509307861328
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 764.8890991210938,
+        "additional_flow": -70.47657775878906,
+        "external_flow": 102.68218231201172,
+        "inventory": 854.6312255859375,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1017.9506225585938,
+        "feed_enthalpy": 549.6494750976562,
+        "heat_a": -23299.23828125,
+        "heat_b": 96257.46875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 797.0947265625,
+        "base_flow": 764.8890991210938,
+        "additional_flow": -70.47657775878906,
+        "heat_a": -23299.23828125,
+        "heat_b": 96257.46875,
+        "feed_enthalpy": 549.6494750976562
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 602.202880859375,
+        "additional_flow": 58.34160614013672,
+        "external_flow": 166.8499298095703,
+        "inventory": 921.39697265625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1173.07958984375,
+        "feed_enthalpy": 488.54168701171875,
+        "heat_a": 33049.26953125,
+        "heat_b": 28684.47265625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 827.3944091796875,
+        "base_flow": 602.202880859375,
+        "additional_flow": 58.34160614013672,
+        "heat_a": 33049.26953125,
+        "heat_b": 28684.47265625,
+        "feed_enthalpy": 488.54168701171875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 746.8554077148438,
+        "additional_flow": -87.21553802490234,
+        "external_flow": 165.30592346191406,
+        "inventory": 891.2127685546875,
+        "step": 1.0,
+        "discharge_enthalpy": 1141.267333984375,
+        "feed_enthalpy": 393.739013671875,
+        "heat_a": -75065.21875,
+        "heat_b": 68804.09375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 824.94580078125,
+        "base_flow": 746.8554077148438,
+        "additional_flow": -87.21553802490234,
+        "heat_a": -75065.21875,
+        "heat_b": 68804.09375,
+        "feed_enthalpy": 393.739013671875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 341.9337158203125,
+        "additional_flow": -82.42528533935547,
+        "external_flow": 155.67210388183594,
+        "inventory": 676.2610473632812,
+        "step": 0.5,
+        "discharge_enthalpy": 805.2078247070312,
+        "feed_enthalpy": 159.71218872070312,
+        "heat_a": -28854.275390625,
+        "heat_b": -95049.9609375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 415.1805419921875,
+        "base_flow": 341.9337158203125,
+        "additional_flow": -82.42528533935547,
+        "heat_a": -28854.275390625,
+        "heat_b": -95049.9609375,
+        "feed_enthalpy": 159.71218872070312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 905.3257446289062,
+        "additional_flow": 138.6690216064453,
+        "external_flow": 123.0848388671875,
+        "inventory": 619.7620849609375,
+        "step": 1.0,
+        "discharge_enthalpy": 1039.1966552734375,
+        "feed_enthalpy": 492.5112609863281,
+        "heat_a": -79638.5234375,
+        "heat_b": -68896.2734375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 619.7620849609375,
+        "base_flow": 619.7620849609375,
+        "additional_flow": 619.7620849609375,
+        "heat_a": 338814.875,
+        "heat_b": -68896.2734375,
+        "feed_enthalpy": 492.5112609863281
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1279.7757568359375,
+        "additional_flow": 165.25401306152344,
+        "external_flow": 163.3751678466797,
+        "inventory": 852.51220703125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1152.7091064453125,
+        "feed_enthalpy": 282.12261962890625,
+        "heat_a": 86751.234375,
+        "heat_b": 45352.01171875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1608.4049072265625,
+        "base_flow": 1279.7757568359375,
+        "additional_flow": 165.25401306152344,
+        "heat_a": 86751.234375,
+        "heat_b": 45352.01171875,
+        "feed_enthalpy": 282.12261962890625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 870.5853271484375,
+        "additional_flow": -11.692882537841797,
+        "external_flow": 191.97769165039062,
+        "inventory": 633.5263671875,
+        "step": 0.5,
+        "discharge_enthalpy": 1009.668212890625,
+        "feed_enthalpy": 287.76348876953125,
+        "heat_a": -3096.757080078125,
+        "heat_b": -26085.0703125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1050.8701171875,
+        "base_flow": 870.5853271484375,
+        "additional_flow": -11.692882537841797,
+        "heat_a": -3096.757080078125,
+        "heat_b": -26085.0703125,
+        "feed_enthalpy": 287.76348876953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 947.8694458007812,
+        "additional_flow": -80.27005767822266,
+        "external_flow": 113.47108459472656,
+        "inventory": 145.22039794921875,
+        "step": 1.0,
+        "discharge_enthalpy": 959.1013793945312,
+        "feed_enthalpy": 593.806640625,
+        "heat_a": -22376.53515625,
+        "heat_b": -45923.4140625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 145.22039794921875,
+        "base_flow": 145.22039794921875,
+        "additional_flow": 145.22039794921875,
+        "heat_a": -22376.53515625,
+        "heat_b": 53048.24609375,
+        "feed_enthalpy": 593.806640625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 21.05533218383789,
+        "additional_flow": 167.65216064453125,
+        "external_flow": -52.700557708740234,
+        "inventory": 358.2406311035156,
+        "step": 0.5,
+        "discharge_enthalpy": 1158.6754150390625,
+        "feed_enthalpy": 515.6226806640625,
+        "heat_a": 73734.578125,
+        "heat_b": -11328.3388671875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 136.00692749023438,
+        "base_flow": 21.05533218383789,
+        "additional_flow": 167.65216064453125,
+        "heat_a": 73734.578125,
+        "heat_b": -11328.3388671875,
+        "feed_enthalpy": 515.6226806640625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1038.3233642578125,
+        "additional_flow": 1.8388060331344604,
+        "external_flow": 109.12303924560547,
+        "inventory": 763.76318359375,
+        "step": 1.0,
+        "discharge_enthalpy": 930.6355590820312,
+        "feed_enthalpy": 412.3541259765625,
+        "heat_a": 74218.21875,
+        "heat_b": -36178.2109375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 763.76318359375,
+        "base_flow": 763.76318359375,
+        "additional_flow": 763.76318359375,
+        "heat_a": 74218.21875,
+        "heat_b": 395844.28125,
+        "feed_enthalpy": 412.3541259765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 207.7432098388672,
+        "additional_flow": 149.58663940429688,
+        "external_flow": 98.35221099853516,
+        "inventory": 16.000286102294922,
+        "step": 0.5,
+        "discharge_enthalpy": 897.6309204101562,
+        "feed_enthalpy": 385.45819091796875,
+        "heat_a": -50218.46484375,
+        "heat_b": -56288.43359375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 32.000572204589844,
+        "base_flow": 32.000572204589844,
+        "additional_flow": 32.000572204589844,
+        "heat_a": -50218.46484375,
+        "heat_b": 16389.8203125,
+        "feed_enthalpy": 385.45819091796875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1990.68115234375,
+        "additional_flow": 103.9886245727539,
+        "external_flow": 21.48326873779297,
+        "inventory": 813.7230834960938,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 902.3396606445312,
+        "feed_enthalpy": 160.8019561767578,
+        "heat_a": 50174.5703125,
+        "heat_b": 347.11639404296875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 2116.153076171875,
+        "base_flow": 1990.68115234375,
+        "additional_flow": 103.9886245727539,
+        "heat_a": 50174.5703125,
+        "heat_b": 347.11639404296875,
+        "feed_enthalpy": 160.8019561767578
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 439.837646484375,
+        "additional_flow": -59.57773971557617,
+        "external_flow": -53.64491271972656,
+        "inventory": 575.363525390625,
+        "step": 0.5,
+        "discharge_enthalpy": 861.2850952148438,
+        "feed_enthalpy": 479.1641845703125,
+        "heat_a": 15048.0126953125,
+        "heat_b": -47659.83984375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 326.614990234375,
+        "base_flow": 439.837646484375,
+        "additional_flow": -59.57773971557617,
+        "heat_a": 15048.0126953125,
+        "heat_b": -47659.83984375,
+        "feed_enthalpy": 479.1641845703125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 274.7713623046875,
+        "additional_flow": 40.15224075317383,
+        "external_flow": 113.13092041015625,
+        "inventory": 847.7495727539062,
+        "step": 1.0,
+        "discharge_enthalpy": 1041.7955322265625,
+        "feed_enthalpy": 203.04681396484375,
+        "heat_a": 2725.53369140625,
+        "heat_b": 28250.24609375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 428.0545349121094,
+        "base_flow": 274.7713623046875,
+        "additional_flow": 40.15224075317383,
+        "heat_a": 2725.53369140625,
+        "heat_b": 28250.24609375,
+        "feed_enthalpy": 203.04681396484375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1652.4697265625,
+        "additional_flow": 37.92909622192383,
+        "external_flow": -38.280887603759766,
+        "inventory": 995.7410888671875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1126.134765625,
+        "feed_enthalpy": 181.5736846923828,
+        "heat_a": -61123.6953125,
+        "heat_b": -98774.625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1652.117919921875,
+        "base_flow": 1652.4697265625,
+        "additional_flow": 37.92909622192383,
+        "heat_a": -61123.6953125,
+        "heat_b": -98774.625,
+        "feed_enthalpy": 181.5736846923828
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 902.0155639648438,
+        "additional_flow": -81.46981048583984,
+        "external_flow": -27.704883575439453,
+        "inventory": 842.4580078125,
+        "step": 1.0,
+        "discharge_enthalpy": 848.0547485351562,
+        "feed_enthalpy": 121.064697265625,
+        "heat_a": 2682.82958984375,
+        "heat_b": 61958.4296875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 792.8408813476562,
+        "base_flow": 902.0155639648438,
+        "additional_flow": -81.46981048583984,
+        "heat_a": 2682.82958984375,
+        "heat_b": 61958.4296875,
+        "feed_enthalpy": 121.064697265625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 211.1818389892578,
+        "additional_flow": 176.71714782714844,
+        "external_flow": -33.62260818481445,
+        "inventory": 868.5608520507812,
+        "step": 1.0,
+        "discharge_enthalpy": 1084.81982421875,
+        "feed_enthalpy": 237.84120178222656,
+        "heat_a": -12238.138671875,
+        "heat_b": -96145.0078125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 354.2763671875,
+        "base_flow": 211.1818389892578,
+        "additional_flow": 176.71714782714844,
+        "heat_a": -12238.138671875,
+        "heat_b": -96145.0078125,
+        "feed_enthalpy": 237.84120178222656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1738.9410400390625,
+        "additional_flow": 62.123477935791016,
+        "external_flow": 166.03396606445312,
+        "inventory": 135.01846313476562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 967.1928100585938,
+        "feed_enthalpy": 512.5537109375,
+        "heat_a": 59872.66015625,
+        "heat_b": 52851.36328125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1350.1845703125,
+        "base_flow": 1350.1845703125,
+        "additional_flow": 1350.1845703125,
+        "heat_a": 613846.6875,
+        "heat_b": 52851.36328125,
+        "feed_enthalpy": 512.5537109375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 387.0572509765625,
+        "additional_flow": -93.39307403564453,
+        "external_flow": 54.00096893310547,
+        "inventory": 618.6375122070312,
+        "step": 1.0,
+        "discharge_enthalpy": 807.8006591796875,
+        "feed_enthalpy": 404.79425048828125,
+        "heat_a": -16391.18359375,
+        "heat_b": 7571.94140625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 347.6651611328125,
+        "base_flow": 387.0572509765625,
+        "additional_flow": -93.39307403564453,
+        "heat_a": -16391.18359375,
+        "heat_b": 7571.94140625,
+        "feed_enthalpy": 404.79425048828125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 8.508609771728516,
+        "additional_flow": 184.31307983398438,
+        "external_flow": 148.64004516601562,
+        "inventory": 819.3878784179688,
+        "step": 1.0,
+        "discharge_enthalpy": 891.8007202148438,
+        "feed_enthalpy": 375.45098876953125,
+        "heat_a": 94985.1171875,
+        "heat_b": -73913.375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 341.46173095703125,
+        "base_flow": 8.508609771728516,
+        "additional_flow": 184.31307983398438,
+        "heat_a": 94985.1171875,
+        "heat_b": -73913.375,
+        "feed_enthalpy": 375.45098876953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1034.134521484375,
+        "additional_flow": -3.0949149131774902,
+        "external_flow": -90.40756225585938,
+        "inventory": 350.1805419921875,
+        "step": 0.5,
+        "discharge_enthalpy": 900.5927734375,
+        "feed_enthalpy": 532.7216796875,
+        "heat_a": 98228.1015625,
+        "heat_b": -26399.833984375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 700.361083984375,
+        "base_flow": 700.361083984375,
+        "additional_flow": 700.361083984375,
+        "heat_a": 257642.59375,
+        "heat_b": -26399.833984375,
+        "feed_enthalpy": 532.7216796875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1792.35302734375,
+        "additional_flow": -29.004356384277344,
+        "external_flow": -67.36907958984375,
+        "inventory": 290.7791442871094,
+        "step": 0.5,
+        "discharge_enthalpy": 808.7135620117188,
+        "feed_enthalpy": 328.76739501953125,
+        "heat_a": 86135.1953125,
+        "heat_b": -16688.62890625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 581.5582885742188,
+        "base_flow": 581.5582885742188,
+        "additional_flow": 581.5582885742188,
+        "heat_a": 86135.1953125,
+        "heat_b": 279116.65625,
+        "feed_enthalpy": 328.76739501953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 146.95547485351562,
+        "additional_flow": -62.46463394165039,
+        "external_flow": 124.93238830566406,
+        "inventory": 116.77984619140625,
+        "step": 0.5,
+        "discharge_enthalpy": 1055.1561279296875,
+        "feed_enthalpy": 569.2000732421875,
+        "heat_a": 17649.390625,
+        "heat_b": 58180.28125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 209.42323303222656,
+        "base_flow": 146.95547485351562,
+        "additional_flow": -62.46463394165039,
+        "heat_a": 17649.390625,
+        "heat_b": 58180.28125,
+        "feed_enthalpy": 569.2000732421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 419.674072265625,
+        "additional_flow": 120.16216278076172,
+        "external_flow": -33.98400115966797,
+        "inventory": 303.661376953125,
+        "step": 0.5,
+        "discharge_enthalpy": 979.0176391601562,
+        "feed_enthalpy": 194.2412109375,
+        "heat_a": 99080.1796875,
+        "heat_b": -52236.29296875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 505.85223388671875,
+        "base_flow": 419.674072265625,
+        "additional_flow": 120.16216278076172,
+        "heat_a": 99080.1796875,
+        "heat_b": -52236.29296875,
+        "feed_enthalpy": 194.2412109375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1913.8734130859375,
+        "additional_flow": -40.91754150390625,
+        "external_flow": 172.03526306152344,
+        "inventory": 686.7417602539062,
+        "step": 1.0,
+        "discharge_enthalpy": 812.2014770507812,
+        "feed_enthalpy": 116.44500732421875,
+        "heat_a": -64761.625,
+        "heat_b": 8636.025390625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 686.7417602539062,
+        "base_flow": 686.7417602539062,
+        "additional_flow": 686.7417602539062,
+        "heat_a": -64761.625,
+        "heat_b": 477805.03125,
+        "feed_enthalpy": 116.44500732421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1714.9910888671875,
+        "additional_flow": 143.0165557861328,
+        "external_flow": 122.5521011352539,
+        "inventory": 849.5617065429688,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 939.7322998046875,
+        "feed_enthalpy": 521.57177734375,
+        "heat_a": 11183.6025390625,
+        "heat_b": -27661.94921875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1980.5596923828125,
+        "base_flow": 1714.9910888671875,
+        "additional_flow": 143.0165557861328,
+        "heat_a": 11183.6025390625,
+        "heat_b": -27661.94921875,
+        "feed_enthalpy": 521.57177734375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 71.13097381591797,
+        "additional_flow": 85.436767578125,
+        "external_flow": -82.55113983154297,
+        "inventory": 924.9317016601562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 847.46044921875,
+        "feed_enthalpy": 174.95098876953125,
+        "heat_a": 22867.650390625,
+        "heat_b": -64367.58203125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 74.0166015625,
+        "base_flow": 71.13097381591797,
+        "additional_flow": 85.436767578125,
+        "heat_a": 22867.650390625,
+        "heat_b": -64367.58203125,
+        "feed_enthalpy": 174.95098876953125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1978.9974365234375,
+        "additional_flow": -48.75374221801758,
+        "external_flow": -51.89576721191406,
+        "inventory": 755.7643432617188,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1126.442138671875,
+        "feed_enthalpy": 311.1807861328125,
+        "heat_a": 95215.7734375,
+        "heat_b": -983.8863525390625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1878.347900390625,
+        "base_flow": 1978.9974365234375,
+        "additional_flow": -48.75374221801758,
+        "heat_a": 95215.7734375,
+        "heat_b": -983.8863525390625,
+        "feed_enthalpy": 311.1807861328125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 42.81538772583008,
+        "additional_flow": 118.20850372314453,
+        "external_flow": 12.748044967651367,
+        "inventory": 665.4163818359375,
+        "step": 1.0,
+        "discharge_enthalpy": 983.1543579101562,
+        "feed_enthalpy": 269.6918029785156,
+        "heat_a": 16334.2919921875,
+        "heat_b": -89032.953125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 173.77194213867188,
+        "base_flow": 42.81538772583008,
+        "additional_flow": 118.20850372314453,
+        "heat_a": 16334.2919921875,
+        "heat_b": -89032.953125,
+        "feed_enthalpy": 269.6918029785156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 754.8107299804688,
+        "additional_flow": -5.488430023193359,
+        "external_flow": -36.141231536865234,
+        "inventory": 498.5536804199219,
+        "step": 1.0,
+        "discharge_enthalpy": 878.7931518554688,
+        "feed_enthalpy": 154.70025634765625,
+        "heat_a": 39799.51171875,
+        "heat_b": 3640.005126953125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 498.5536804199219,
+        "base_flow": 498.5536804199219,
+        "additional_flow": 498.5536804199219,
+        "heat_a": 39799.51171875,
+        "heat_b": 360999.1875,
+        "feed_enthalpy": 154.70025634765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 377.6183166503906,
+        "additional_flow": 73.94133758544922,
+        "external_flow": -52.459632873535156,
+        "inventory": 796.0220947265625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1057.26171875,
+        "feed_enthalpy": 375.612548828125,
+        "heat_a": 94479.8046875,
+        "heat_b": -72901.1796875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 399.10003662109375,
+        "base_flow": 377.6183166503906,
+        "additional_flow": 73.94133758544922,
+        "heat_a": 94479.8046875,
+        "heat_b": -72901.1796875,
+        "feed_enthalpy": 375.612548828125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 697.0370483398438,
+        "additional_flow": 9.773994445800781,
+        "external_flow": 157.1632080078125,
+        "inventory": 331.1507873535156,
+        "step": 0.5,
+        "discharge_enthalpy": 1194.62109375,
+        "feed_enthalpy": 345.4915466308594,
+        "heat_a": 23029.6875,
+        "heat_b": 90426.484375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 662.3015747070312,
+        "base_flow": 662.3015747070312,
+        "additional_flow": 662.3015747070312,
+        "heat_a": 23029.6875,
+        "heat_b": 562379.8125,
+        "feed_enthalpy": 345.4915466308594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -47.60490417480469,
+        "additional_flow": -36.82158279418945,
+        "external_flow": 194.516845703125,
+        "inventory": 375.2705993652344,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 920.8186645507812,
+        "feed_enthalpy": 612.1220092773438,
+        "heat_a": 29253.232421875,
+        "heat_b": 47562.859375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 110.09036254882812,
+        "base_flow": -47.60490417480469,
+        "additional_flow": -36.82158279418945,
+        "heat_a": 29253.232421875,
+        "heat_b": 47562.859375,
+        "feed_enthalpy": 612.1220092773438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 958.46875,
+        "additional_flow": 114.16889953613281,
+        "external_flow": 30.677215576171875,
+        "inventory": 406.8808898925781,
+        "step": 0.5,
+        "discharge_enthalpy": 826.8392944335938,
+        "feed_enthalpy": 581.1472778320312,
+        "heat_a": -34758.03515625,
+        "heat_b": -27724.638671875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 813.7617797851562,
+        "base_flow": 813.7617797851562,
+        "additional_flow": 813.7617797851562,
+        "heat_a": -34758.03515625,
+        "heat_b": 199934.765625,
+        "feed_enthalpy": 581.1472778320312
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1651.4342041015625,
+        "additional_flow": 158.78713989257812,
+        "external_flow": 28.3576602935791,
+        "inventory": 317.6513366699219,
+        "step": 0.5,
+        "discharge_enthalpy": 817.5726928710938,
+        "feed_enthalpy": 387.2410583496094,
+        "heat_a": 3514.426513671875,
+        "heat_b": -12381.3466796875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 635.3026733398438,
+        "base_flow": 635.3026733398438,
+        "additional_flow": 635.3026733398438,
+        "heat_a": 3514.426513671875,
+        "heat_b": 273390.84375,
+        "feed_enthalpy": 387.2410583496094
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -94.1124267578125,
+        "additional_flow": 189.08241271972656,
+        "external_flow": 125.65740966796875,
+        "inventory": 404.8334655761719,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 918.791259765625,
+        "feed_enthalpy": 161.39109802246094,
+        "heat_a": -76425.03125,
+        "heat_b": -76842.8515625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 220.6273956298828,
+        "base_flow": -94.1124267578125,
+        "additional_flow": 189.08241271972656,
+        "heat_a": -76425.03125,
+        "heat_b": -76842.8515625,
+        "feed_enthalpy": 161.39109802246094
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1683.8995361328125,
+        "additional_flow": 108.16049194335938,
+        "external_flow": 93.09342956542969,
+        "inventory": 54.36655044555664,
+        "step": 0.5,
+        "discharge_enthalpy": 815.4447021484375,
+        "feed_enthalpy": 623.1376342773438,
+        "heat_a": -68634.375,
+        "heat_b": 40974.1796875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 108.73310089111328,
+        "base_flow": 108.73310089111328,
+        "additional_flow": 108.73310089111328,
+        "heat_a": -68634.375,
+        "heat_b": 20910.14453125,
+        "feed_enthalpy": 623.1376342773438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 28.417606353759766,
+        "additional_flow": -33.6207160949707,
+        "external_flow": -94.32416534423828,
+        "inventory": 234.18505859375,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1009.4722290039062,
+        "feed_enthalpy": 309.4485778808594,
+        "heat_a": -91881.5234375,
+        "heat_b": 1324.4779052734375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": -99.52727508544922,
+        "base_flow": 28.417606353759766,
+        "additional_flow": -33.6207160949707,
+        "heat_a": -91881.5234375,
+        "heat_b": 1324.4779052734375,
+        "feed_enthalpy": 309.4485778808594
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1620.5108642578125,
+        "additional_flow": 111.24775695800781,
+        "external_flow": 63.87126922607422,
+        "inventory": 116.72088623046875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 936.341552734375,
+        "feed_enthalpy": 450.4456787109375,
+        "heat_a": 59955.76953125,
+        "heat_b": -41992.125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1167.2088623046875,
+        "base_flow": 1167.2088623046875,
+        "additional_flow": 1167.2088623046875,
+        "heat_a": 59955.76953125,
+        "heat_b": 567142.0,
+        "feed_enthalpy": 450.4456787109375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1704.5009765625,
+        "additional_flow": 181.29957580566406,
+        "external_flow": -34.35730743408203,
+        "inventory": 548.3930053710938,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1142.6904296875,
+        "feed_enthalpy": 304.4134521484375,
+        "heat_a": 70157.6640625,
+        "heat_b": 35745.78125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1851.4432373046875,
+        "base_flow": 1704.5009765625,
+        "additional_flow": 181.29957580566406,
+        "heat_a": 70157.6640625,
+        "heat_b": 35745.78125,
+        "feed_enthalpy": 304.4134521484375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1880.87353515625,
+        "additional_flow": 143.62417602539062,
+        "external_flow": 98.83141326904297,
+        "inventory": 767.3367919921875,
+        "step": 1.0,
+        "discharge_enthalpy": 1103.56103515625,
+        "feed_enthalpy": 526.62255859375,
+        "heat_a": -46650.7265625,
+        "heat_b": -82839.1953125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 767.3367919921875,
+        "base_flow": 767.3367919921875,
+        "additional_flow": 767.3367919921875,
+        "heat_a": -46650.7265625,
+        "heat_b": 442706.125,
+        "feed_enthalpy": 526.62255859375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 105.47704315185547,
+        "additional_flow": 136.57826232910156,
+        "external_flow": 110.05535888671875,
+        "inventory": 11.740933418273926,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1006.1669921875,
+        "feed_enthalpy": 468.56793212890625,
+        "heat_a": -54232.1015625,
+        "heat_b": -18122.798828125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 117.40933227539062,
+        "base_flow": 117.40933227539062,
+        "additional_flow": 117.40933227539062,
+        "heat_a": -54232.1015625,
+        "heat_b": 63119.1484375,
+        "feed_enthalpy": 468.56793212890625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 699.6515502929688,
+        "additional_flow": -36.048484802246094,
+        "external_flow": 53.58933639526367,
+        "inventory": 744.1521606445312,
+        "step": 0.5,
+        "discharge_enthalpy": 982.310546875,
+        "feed_enthalpy": 234.89010620117188,
+        "heat_a": 2989.845947265625,
+        "heat_b": 78955.7734375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 717.1923828125,
+        "base_flow": 699.6515502929688,
+        "additional_flow": -36.048484802246094,
+        "heat_a": 2989.845947265625,
+        "heat_b": 78955.7734375,
+        "feed_enthalpy": 234.89010620117188
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 77.95510864257812,
+        "additional_flow": 133.9434356689453,
+        "external_flow": 170.39759826660156,
+        "inventory": 749.1716918945312,
+        "step": 1.0,
+        "discharge_enthalpy": 907.1657104492188,
+        "feed_enthalpy": 347.6449279785156,
+        "heat_a": -78732.234375,
+        "heat_b": -84257.4453125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 382.296142578125,
+        "base_flow": 77.95510864257812,
+        "additional_flow": 133.9434356689453,
+        "heat_a": -78732.234375,
+        "heat_b": -84257.4453125,
+        "feed_enthalpy": 347.6449279785156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1937.767333984375,
+        "additional_flow": -94.28457641601562,
+        "external_flow": 160.4267578125,
+        "inventory": 568.3645629882812,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 944.5590209960938,
+        "feed_enthalpy": 231.9609832763672,
+        "heat_a": -9650.673828125,
+        "heat_b": -26292.865234375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 2003.9095458984375,
+        "base_flow": 1937.767333984375,
+        "additional_flow": -94.28457641601562,
+        "heat_a": -9650.673828125,
+        "heat_b": -26292.865234375,
+        "feed_enthalpy": 231.9609832763672
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 401.3031311035156,
+        "additional_flow": -12.062114715576172,
+        "external_flow": -65.48371887207031,
+        "inventory": 913.0450439453125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1187.9793701171875,
+        "feed_enthalpy": 233.7525177001953,
+        "heat_a": 3889.87890625,
+        "heat_b": -42597.83984375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 323.7572937011719,
+        "base_flow": 401.3031311035156,
+        "additional_flow": -12.062114715576172,
+        "heat_a": 3889.87890625,
+        "heat_b": -42597.83984375,
+        "feed_enthalpy": 233.7525177001953
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 506.8224182128906,
+        "additional_flow": -6.8120036125183105,
+        "external_flow": 111.67245483398438,
+        "inventory": 774.5848388671875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 935.6538696289062,
+        "feed_enthalpy": 245.83291625976562,
+        "heat_a": -91848.9609375,
+        "heat_b": 26586.603515625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 611.682861328125,
+        "base_flow": 506.8224182128906,
+        "additional_flow": -6.8120036125183105,
+        "heat_a": -91848.9609375,
+        "heat_b": 26586.603515625,
+        "feed_enthalpy": 245.83291625976562
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1525.6112060546875,
+        "additional_flow": 25.899288177490234,
+        "external_flow": 15.82748031616211,
+        "inventory": 147.6730499267578,
+        "step": 0.5,
+        "discharge_enthalpy": 1192.5665283203125,
+        "feed_enthalpy": 349.3644714355469,
+        "heat_a": 6871.0712890625,
+        "heat_b": -22080.90625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 295.3460998535156,
+        "base_flow": 295.3460998535156,
+        "additional_flow": 295.3460998535156,
+        "heat_a": 6871.0712890625,
+        "heat_b": 249036.4375,
+        "feed_enthalpy": 349.3644714355469
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1739.9046630859375,
+        "additional_flow": 38.599365234375,
+        "external_flow": 7.252270221710205,
+        "inventory": 953.818115234375,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 825.8425903320312,
+        "feed_enthalpy": 181.20082092285156,
+        "heat_a": -94741.546875,
+        "heat_b": -30686.6484375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1785.75634765625,
+        "base_flow": 1739.9046630859375,
+        "additional_flow": 38.599365234375,
+        "heat_a": -94741.546875,
+        "heat_b": -30686.6484375,
+        "feed_enthalpy": 181.20082092285156
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 288.94537353515625,
+        "additional_flow": 60.93955993652344,
+        "external_flow": -60.801822662353516,
+        "inventory": 358.998046875,
+        "step": 1.0,
+        "discharge_enthalpy": 1038.5865478515625,
+        "feed_enthalpy": 555.1727294921875,
+        "heat_a": -39507.6953125,
+        "heat_b": -76548.5234375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 289.0830993652344,
+        "base_flow": 288.94537353515625,
+        "additional_flow": 60.93955993652344,
+        "heat_a": -39507.6953125,
+        "heat_b": -76548.5234375,
+        "feed_enthalpy": 555.1727294921875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1192.563720703125,
+        "additional_flow": 28.032812118530273,
+        "external_flow": -85.91007232666016,
+        "inventory": 955.9589233398438,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 901.519775390625,
+        "feed_enthalpy": 277.8347473144531,
+        "heat_a": 6098.2080078125,
+        "heat_b": 8828.8125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1134.6864013671875,
+        "base_flow": 1192.563720703125,
+        "additional_flow": 28.032812118530273,
+        "heat_a": 6098.2080078125,
+        "heat_b": 8828.8125,
+        "feed_enthalpy": 277.8347473144531
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1918.85791015625,
+        "additional_flow": 17.4265193939209,
+        "external_flow": -61.99440383911133,
+        "inventory": 302.4255065917969,
+        "step": 1.0,
+        "discharge_enthalpy": 1172.3714599609375,
+        "feed_enthalpy": 451.5769348144531,
+        "heat_a": 29695.341796875,
+        "heat_b": 4780.67578125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 302.4255065917969,
+        "base_flow": 302.4255065917969,
+        "additional_flow": 302.4255065917969,
+        "heat_a": 29695.341796875,
+        "heat_b": 217986.65625,
+        "feed_enthalpy": 451.5769348144531
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1632.690673828125,
+        "additional_flow": 148.45928955078125,
+        "external_flow": 65.83101654052734,
+        "inventory": 43.52884292602539,
+        "step": 0.5,
+        "discharge_enthalpy": 1097.933349609375,
+        "feed_enthalpy": 373.2703857421875,
+        "heat_a": -30720.060546875,
+        "heat_b": -7914.359375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 87.05768585205078,
+        "base_flow": 87.05768585205078,
+        "additional_flow": 87.05768585205078,
+        "heat_a": -30720.060546875,
+        "heat_b": 63087.48046875,
+        "feed_enthalpy": 373.2703857421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1255.1705322265625,
+        "additional_flow": 121.34121704101562,
+        "external_flow": 143.9857635498047,
+        "inventory": 957.4840087890625,
+        "step": 0.5,
+        "discharge_enthalpy": 983.69140625,
+        "feed_enthalpy": 486.2421569824219,
+        "heat_a": 51691.03125,
+        "heat_b": -27179.921875,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1520.49755859375,
+        "base_flow": 1255.1705322265625,
+        "additional_flow": 121.34121704101562,
+        "heat_a": 51691.03125,
+        "heat_b": -27179.921875,
+        "feed_enthalpy": 486.2421569824219
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1894.7183837890625,
+        "additional_flow": 30.076574325561523,
+        "external_flow": 38.63404846191406,
+        "inventory": 779.6286010742188,
+        "step": 1.0,
+        "discharge_enthalpy": 1185.2581787109375,
+        "feed_enthalpy": 369.68682861328125,
+        "heat_a": -69899.25,
+        "heat_b": -11367.236328125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 779.6286010742188,
+        "base_flow": 779.6286010742188,
+        "additional_flow": 779.6286010742188,
+        "heat_a": -69899.25,
+        "heat_b": 635842.75,
+        "feed_enthalpy": 369.68682861328125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1209.196044921875,
+        "additional_flow": -60.22145080566406,
+        "external_flow": 190.671875,
+        "inventory": 348.7866516113281,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 852.9097290039062,
+        "feed_enthalpy": 586.3916625976562,
+        "heat_a": -58189.89453125,
+        "heat_b": -81067.3359375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1339.646484375,
+        "base_flow": 1209.196044921875,
+        "additional_flow": -60.22145080566406,
+        "heat_a": -58189.89453125,
+        "heat_b": -81067.3359375,
+        "feed_enthalpy": 586.3916625976562
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1374.15771484375,
+        "additional_flow": -24.006921768188477,
+        "external_flow": -5.4263787269592285,
+        "inventory": 252.62815856933594,
+        "step": 1.0,
+        "discharge_enthalpy": 831.507080078125,
+        "feed_enthalpy": 569.1376342773438,
+        "heat_a": 74752.1875,
+        "heat_b": -69667.7265625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 252.62815856933594,
+        "base_flow": 252.62815856933594,
+        "additional_flow": 252.62815856933594,
+        "heat_a": 66281.90625,
+        "heat_b": -69667.7265625,
+        "feed_enthalpy": 569.1376342773438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 585.0000610351562,
+        "additional_flow": 116.0087661743164,
+        "external_flow": 35.45487976074219,
+        "inventory": 44.601070404052734,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1033.303955078125,
+        "feed_enthalpy": 379.1623840332031,
+        "heat_a": -62642.20703125,
+        "heat_b": 65171.90625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 446.0107116699219,
+        "base_flow": 446.0107116699219,
+        "additional_flow": 446.0107116699219,
+        "heat_a": 291754.15625,
+        "heat_b": 65171.90625,
+        "feed_enthalpy": 379.1623840332031
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1114.846923828125,
+        "additional_flow": 105.44298553466797,
+        "external_flow": 100.35255432128906,
+        "inventory": 537.4439697265625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 984.416259765625,
+        "feed_enthalpy": 379.57781982421875,
+        "heat_a": 3149.185302734375,
+        "heat_b": -51598.20703125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1320.6424560546875,
+        "base_flow": 1114.846923828125,
+        "additional_flow": 105.44298553466797,
+        "heat_a": 3149.185302734375,
+        "heat_b": -51598.20703125,
+        "feed_enthalpy": 379.57781982421875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 496.6889343261719,
+        "additional_flow": -28.648452758789062,
+        "external_flow": 46.016258239746094,
+        "inventory": 37.59101104736328,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1144.333984375,
+        "feed_enthalpy": 531.994384765625,
+        "heat_a": 32228.626953125,
+        "heat_b": -65000.2265625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 375.91009521484375,
+        "base_flow": 375.91009521484375,
+        "additional_flow": 375.91009521484375,
+        "heat_a": 32228.626953125,
+        "heat_b": 230184.640625,
+        "feed_enthalpy": 531.994384765625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1653.3597412109375,
+        "additional_flow": 71.38350677490234,
+        "external_flow": 58.596675872802734,
+        "inventory": 375.4453125,
+        "step": 0.5,
+        "discharge_enthalpy": 1163.1180419921875,
+        "feed_enthalpy": 656.4661865234375,
+        "heat_a": 43987.83984375,
+        "heat_b": -59642.3125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 750.890625,
+        "base_flow": 750.890625,
+        "additional_flow": 750.890625,
+        "heat_a": 43987.83984375,
+        "heat_b": 380440.125,
+        "feed_enthalpy": 656.4661865234375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1639.5103759765625,
+        "additional_flow": 117.69839477539062,
+        "external_flow": 113.7367935180664,
+        "inventory": 907.7091674804688,
+        "step": 1.0,
+        "discharge_enthalpy": 909.4656982421875,
+        "feed_enthalpy": 121.9109115600586,
+        "heat_a": 30725.6015625,
+        "heat_b": -23724.458984375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 907.7091674804688,
+        "base_flow": 907.7091674804688,
+        "additional_flow": 907.7091674804688,
+        "heat_a": 30725.6015625,
+        "heat_b": 714870.6875,
+        "feed_enthalpy": 121.9109115600586
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1417.9351806640625,
+        "additional_flow": 49.60282516479492,
+        "external_flow": 177.6156463623047,
+        "inventory": 874.5908203125,
+        "step": 1.0,
+        "discharge_enthalpy": 1024.2327880859375,
+        "feed_enthalpy": 506.59429931640625,
+        "heat_a": 23672.525390625,
+        "heat_b": -51958.60546875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 874.5908203125,
+        "base_flow": 874.5908203125,
+        "additional_flow": 874.5908203125,
+        "heat_a": 23672.525390625,
+        "heat_b": 452721.875,
+        "feed_enthalpy": 506.59429931640625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1293.0950927734375,
+        "additional_flow": -39.5224609375,
+        "external_flow": -63.143592834472656,
+        "inventory": 260.452392578125,
+        "step": 1.0,
+        "discharge_enthalpy": 1173.0430908203125,
+        "feed_enthalpy": 217.74742126464844,
+        "heat_a": -3241.685302734375,
+        "heat_b": 93974.6328125,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 260.452392578125,
+        "base_flow": 260.452392578125,
+        "additional_flow": 260.452392578125,
+        "heat_a": -3241.685302734375,
+        "heat_b": 248809.046875,
+        "feed_enthalpy": 217.74742126464844
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1453.032470703125,
+        "additional_flow": -44.337646484375,
+        "external_flow": 197.21534729003906,
+        "inventory": 530.920166015625,
+        "step": 0.5,
+        "discharge_enthalpy": 1194.249755859375,
+        "feed_enthalpy": 560.4879760742188,
+        "heat_a": 76628.7109375,
+        "heat_b": 86844.5078125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1061.84033203125,
+        "base_flow": 1061.84033203125,
+        "additional_flow": 1061.84033203125,
+        "heat_a": 76628.7109375,
+        "heat_b": 672953.8125,
+        "feed_enthalpy": 560.4879760742188
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1931.34228515625,
+        "additional_flow": -6.622473239898682,
+        "external_flow": -13.371609687805176,
+        "inventory": 377.87060546875,
+        "step": 1.0,
+        "discharge_enthalpy": 1162.9259033203125,
+        "feed_enthalpy": 418.939453125,
+        "heat_a": -96884.46875,
+        "heat_b": -25570.41015625,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 377.87060546875,
+        "base_flow": 377.87060546875,
+        "additional_flow": 377.87060546875,
+        "heat_a": -96884.46875,
+        "heat_b": 281130.625,
+        "feed_enthalpy": 418.939453125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1844.9979248046875,
+        "additional_flow": -23.508705139160156,
+        "external_flow": 144.05906677246094,
+        "inventory": 579.8775024414062,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 828.0203857421875,
+        "feed_enthalpy": 200.59901428222656,
+        "heat_a": -64543.75390625,
+        "heat_b": -46660.7734375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1965.54833984375,
+        "base_flow": 1844.9979248046875,
+        "additional_flow": -23.508705139160156,
+        "heat_a": -64543.75390625,
+        "heat_b": -46660.7734375,
+        "feed_enthalpy": 200.59901428222656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1141.9097900390625,
+        "additional_flow": 110.98759460449219,
+        "external_flow": -84.10685729980469,
+        "inventory": 770.0848388671875,
+        "step": 1.0,
+        "discharge_enthalpy": 1146.6937255859375,
+        "feed_enthalpy": 590.0838623046875,
+        "heat_a": -14979.0302734375,
+        "heat_b": 15472.7158203125,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 770.0848388671875,
+        "base_flow": 770.0848388671875,
+        "additional_flow": 770.0848388671875,
+        "heat_a": -14979.0302734375,
+        "heat_b": 428636.8125,
+        "feed_enthalpy": 590.0838623046875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 148.26657104492188,
+        "additional_flow": 79.70674896240234,
+        "external_flow": -68.24095916748047,
+        "inventory": 936.9912719726562,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 905.2278442382812,
+        "feed_enthalpy": 129.62313842773438,
+        "heat_a": 29146.248046875,
+        "heat_b": -95140.9453125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 159.73236083984375,
+        "base_flow": 148.26657104492188,
+        "additional_flow": 79.70674896240234,
+        "heat_a": 29146.248046875,
+        "heat_b": -95140.9453125,
+        "feed_enthalpy": 129.62313842773438
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1584.6478271484375,
+        "additional_flow": 110.44292449951172,
+        "external_flow": -14.413070678710938,
+        "inventory": 797.358154296875,
+        "step": 1.0,
+        "discharge_enthalpy": 1140.292236328125,
+        "feed_enthalpy": 584.2572631835938,
+        "heat_a": 53871.54296875,
+        "heat_b": 47932.953125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 797.358154296875,
+        "base_flow": 797.358154296875,
+        "additional_flow": 797.358154296875,
+        "heat_a": 53871.54296875,
+        "heat_b": 443359.03125,
+        "feed_enthalpy": 584.2572631835938
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 542.1469116210938,
+        "additional_flow": 186.89694213867188,
+        "external_flow": 192.3572540283203,
+        "inventory": 498.9755554199219,
+        "step": 0.5,
+        "discharge_enthalpy": 1112.9217529296875,
+        "feed_enthalpy": 317.9773864746094,
+        "heat_a": -82065.1953125,
+        "heat_b": 53524.30859375,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 921.401123046875,
+        "base_flow": 542.1469116210938,
+        "additional_flow": 186.89694213867188,
+        "heat_a": -82065.1953125,
+        "heat_b": 53524.30859375,
+        "feed_enthalpy": 317.9773864746094
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -77.3219985961914,
+        "additional_flow": 34.855770111083984,
+        "external_flow": -11.45910930633545,
+        "inventory": 830.0135498046875,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1115.6527099609375,
+        "feed_enthalpy": 287.1415100097656,
+        "heat_a": -7479.3662109375,
+        "heat_b": 69492.4375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": -53.92533874511719,
+        "base_flow": -77.3219985961914,
+        "additional_flow": 34.855770111083984,
+        "heat_a": -7479.3662109375,
+        "heat_b": 69492.4375,
+        "feed_enthalpy": 287.1415100097656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1578.107177734375,
+        "additional_flow": -69.22882843017578,
+        "external_flow": -42.88861846923828,
+        "inventory": 489.1106872558594,
+        "step": 0.5,
+        "discharge_enthalpy": 1146.0111083984375,
+        "feed_enthalpy": 574.3458862304688,
+        "heat_a": -49369.484375,
+        "heat_b": -86.11544799804688,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 978.2213745117188,
+        "base_flow": 978.2213745117188,
+        "additional_flow": 978.2213745117188,
+        "heat_a": 559215.125,
+        "heat_b": -86.11544799804688,
+        "feed_enthalpy": 574.3458862304688
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 198.09251403808594,
+        "additional_flow": 175.69100952148438,
+        "external_flow": -75.78353118896484,
+        "inventory": 387.094970703125,
+        "step": 0.5,
+        "discharge_enthalpy": 1001.500732421875,
+        "feed_enthalpy": 351.57696533203125,
+        "heat_a": -52267.36328125,
+        "heat_b": 68347.2578125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 298.0,
+        "base_flow": 198.09251403808594,
+        "additional_flow": 175.69100952148438,
+        "heat_a": -52267.36328125,
+        "heat_b": 68347.2578125,
+        "feed_enthalpy": 351.57696533203125
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1824.1396484375,
+        "additional_flow": -4.866715431213379,
+        "external_flow": 147.96923828125,
+        "inventory": 593.8148803710938,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1076.1737060546875,
+        "feed_enthalpy": 503.69146728515625,
+        "heat_a": 84268.2421875,
+        "heat_b": 16287.39453125,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1967.2421875,
+        "base_flow": 1824.1396484375,
+        "additional_flow": -4.866715431213379,
+        "heat_a": 84268.2421875,
+        "heat_b": 16287.39453125,
+        "feed_enthalpy": 503.69146728515625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1048.53564453125,
+        "additional_flow": 47.43889236450195,
+        "external_flow": 129.45925903320312,
+        "inventory": 294.00592041015625,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1168.6387939453125,
+        "feed_enthalpy": 560.0410766601562,
+        "heat_a": 68659.359375,
+        "heat_b": -62018.40625,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1225.433837890625,
+        "base_flow": 1048.53564453125,
+        "additional_flow": 47.43889236450195,
+        "heat_a": 68659.359375,
+        "heat_b": -62018.40625,
+        "feed_enthalpy": 560.0410766601562
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -6.542205810546875,
+        "additional_flow": 144.385498046875,
+        "external_flow": 43.463130950927734,
+        "inventory": 538.6663818359375,
+        "step": 1.0,
+        "discharge_enthalpy": 800.281494140625,
+        "feed_enthalpy": 689.6369018554688,
+        "heat_a": -59430.8125,
+        "heat_b": 13576.771484375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 181.30642700195312,
+        "base_flow": -6.542205810546875,
+        "additional_flow": 144.385498046875,
+        "heat_a": -59430.8125,
+        "heat_b": 13576.771484375,
+        "feed_enthalpy": 689.6369018554688
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1789.472412109375,
+        "additional_flow": 26.873628616333008,
+        "external_flow": 145.5553436279297,
+        "inventory": 854.25732421875,
+        "step": 0.5,
+        "discharge_enthalpy": 1007.6971435546875,
+        "feed_enthalpy": 578.3963623046875,
+        "heat_a": -54227.48828125,
+        "heat_b": -43246.140625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1708.5146484375,
+        "base_flow": 1708.5146484375,
+        "additional_flow": 1708.5146484375,
+        "heat_a": 733466.6875,
+        "heat_b": -43246.140625,
+        "feed_enthalpy": 578.3963623046875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 295.75421142578125,
+        "additional_flow": -66.2474365234375,
+        "external_flow": 55.84403610229492,
+        "inventory": 774.3242797851562,
+        "step": 1.0,
+        "discharge_enthalpy": 1048.3541259765625,
+        "feed_enthalpy": 503.2264709472656,
+        "heat_a": -39669.53125,
+        "heat_b": -6954.24072265625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 285.3507995605469,
+        "base_flow": 295.75421142578125,
+        "additional_flow": -66.2474365234375,
+        "heat_a": -39669.53125,
+        "heat_b": -6954.24072265625,
+        "feed_enthalpy": 503.2264709472656
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1368.3858642578125,
+        "additional_flow": 116.37043762207031,
+        "external_flow": -80.6180419921875,
+        "inventory": 247.9879150390625,
+        "step": 1.0,
+        "discharge_enthalpy": 1133.945068359375,
+        "feed_enthalpy": 464.4873352050781,
+        "heat_a": -98106.203125,
+        "heat_b": 72545.3359375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 247.9879150390625,
+        "base_flow": 247.9879150390625,
+        "additional_flow": 247.9879150390625,
+        "heat_a": -98106.203125,
+        "heat_b": 166017.421875,
+        "feed_enthalpy": 464.4873352050781
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1456.068115234375,
+        "additional_flow": 183.30438232421875,
+        "external_flow": 157.5948486328125,
+        "inventory": 436.1614990234375,
+        "step": 0.5,
+        "discharge_enthalpy": 1052.6416015625,
+        "feed_enthalpy": 319.5661315917969,
+        "heat_a": -44967.4140625,
+        "heat_b": -74490.1875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 872.322998046875,
+        "base_flow": 872.322998046875,
+        "additional_flow": 872.322998046875,
+        "heat_a": -44967.4140625,
+        "heat_b": 639478.5625,
+        "feed_enthalpy": 319.5661315917969
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1026.468505859375,
+        "additional_flow": 132.99391174316406,
+        "external_flow": -19.411561965942383,
+        "inventory": 412.4372253417969,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 828.5439453125,
+        "feed_enthalpy": 124.34857177734375,
+        "heat_a": -30993.732421875,
+        "heat_b": 27763.08203125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 1140.0509033203125,
+        "base_flow": 1026.468505859375,
+        "additional_flow": 132.99391174316406,
+        "heat_a": -30993.732421875,
+        "heat_b": 27763.08203125,
+        "feed_enthalpy": 124.34857177734375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1105.3616943359375,
+        "additional_flow": -32.023193359375,
+        "external_flow": 165.0436553955078,
+        "inventory": 191.20501708984375,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1099.7752685546875,
+        "feed_enthalpy": 157.06460571289062,
+        "heat_a": -5015.06591796875,
+        "heat_b": -13055.9150390625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 1238.3822021484375,
+        "base_flow": 1105.3616943359375,
+        "additional_flow": -32.023193359375,
+        "heat_a": -5015.06591796875,
+        "heat_b": -13055.9150390625,
+        "feed_enthalpy": 157.06460571289062
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1058.0606689453125,
+        "additional_flow": -23.16858673095703,
+        "external_flow": 165.67176818847656,
+        "inventory": 893.3922729492188,
+        "step": 1.0,
+        "discharge_enthalpy": 1097.8319091796875,
+        "feed_enthalpy": 403.4512634277344,
+        "heat_a": -15563.7587890625,
+        "heat_b": -86769.0859375,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 893.3922729492188,
+        "base_flow": 893.3922729492188,
+        "additional_flow": 893.3922729492188,
+        "heat_a": -15563.7587890625,
+        "heat_b": 620354.3125,
+        "feed_enthalpy": 403.4512634277344
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 574.5162963867188,
+        "additional_flow": 29.9853515625,
+        "external_flow": -50.050636291503906,
+        "inventory": 2.4440536499023438,
+        "step": 1.0,
+        "discharge_enthalpy": 1190.9263916015625,
+        "feed_enthalpy": 504.1224365234375,
+        "heat_a": -24348.345703125,
+        "heat_b": 42933.9296875,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 2.4440536499023438,
+        "base_flow": 2.4440536499023438,
+        "additional_flow": 2.4440536499023438,
+        "heat_a": -24348.345703125,
+        "heat_b": 1678.585693359375,
+        "feed_enthalpy": 504.1224365234375
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1939.9869384765625,
+        "additional_flow": -34.26737594604492,
+        "external_flow": 60.226802825927734,
+        "inventory": 176.4669189453125,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 804.252197265625,
+        "feed_enthalpy": 244.65670776367188,
+        "heat_a": 95390.40625,
+        "heat_b": 35395.09375,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1764.669189453125,
+        "base_flow": 1764.669189453125,
+        "additional_flow": 1764.669189453125,
+        "heat_a": 95390.40625,
+        "heat_b": 987500.9375,
+        "feed_enthalpy": 244.65670776367188
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1477.564453125,
+        "additional_flow": 67.88005828857422,
+        "external_flow": -23.172000885009766,
+        "inventory": 544.1701049804688,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 969.0535888671875,
+        "feed_enthalpy": 515.1971435546875,
+        "heat_a": 91844.5859375,
+        "heat_b": 41121.30859375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 1522.2724609375,
+        "base_flow": 1477.564453125,
+        "additional_flow": 67.88005828857422,
+        "heat_a": 91844.5859375,
+        "heat_b": 41121.30859375,
+        "feed_enthalpy": 515.1971435546875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1121.2462158203125,
+        "additional_flow": -49.69294738769531,
+        "external_flow": -42.88711166381836,
+        "inventory": 118.74750518798828,
+        "step": 1.0,
+        "discharge_enthalpy": 1146.3192138671875,
+        "feed_enthalpy": 245.75025939941406,
+        "heat_a": -17998.05078125,
+        "heat_b": -42707.65625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 118.74750518798828,
+        "base_flow": 118.74750518798828,
+        "additional_flow": 118.74750518798828,
+        "heat_a": 106940.3203125,
+        "heat_b": -42707.65625,
+        "feed_enthalpy": 245.75025939941406
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1023.2235717773438,
+        "additional_flow": -49.300086975097656,
+        "external_flow": 97.2071304321289,
+        "inventory": 472.174560546875,
+        "step": 1.0,
+        "discharge_enthalpy": 818.2464599609375,
+        "feed_enthalpy": 489.7897033691406,
+        "heat_a": -82611.7109375,
+        "heat_b": 63111.1640625,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": 472.174560546875,
+        "base_flow": 472.174560546875,
+        "additional_flow": 472.174560546875,
+        "heat_a": 155088.921875,
+        "heat_b": 63111.1640625,
+        "feed_enthalpy": 489.7897033691406
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 710.6668090820312,
+        "additional_flow": -55.467681884765625,
+        "external_flow": 164.04531860351562,
+        "inventory": 683.8388671875,
+        "step": 0.5,
+        "discharge_enthalpy": 1058.1767578125,
+        "feed_enthalpy": 340.58355712890625,
+        "heat_a": -80955.8046875,
+        "heat_b": -79318.125,
+        "phase_flag": 1
+      },
+      "expected": {
+        "flow": 819.2444458007812,
+        "base_flow": 710.6668090820312,
+        "additional_flow": -55.467681884765625,
+        "heat_a": -80955.8046875,
+        "heat_b": -79318.125,
+        "feed_enthalpy": 340.58355712890625
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1508.0736083984375,
+        "additional_flow": 124.98402404785156,
+        "external_flow": -93.21813201904297,
+        "inventory": 144.97853088378906,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 883.7577514648438,
+        "feed_enthalpy": 127.60884094238281,
+        "heat_a": -4713.38232421875,
+        "heat_b": -97263.4140625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 1449.7852783203125,
+        "base_flow": 1449.7852783203125,
+        "additional_flow": 1449.7852783203125,
+        "heat_a": -4713.38232421875,
+        "heat_b": 1096253.5,
+        "feed_enthalpy": 127.60884094238281
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -6.960168838500977,
+        "additional_flow": -45.7685661315918,
+        "external_flow": -43.30070114135742,
+        "inventory": 904.0491943359375,
+        "step": 0.5,
+        "discharge_enthalpy": 973.7293090820312,
+        "feed_enthalpy": 350.2680969238281,
+        "heat_a": 36784.484375,
+        "heat_b": -40878.421875,
+        "phase_flag": 0
+      },
+      "expected": {
+        "flow": -96.02943420410156,
+        "base_flow": -6.960168838500977,
+        "additional_flow": -45.7685661315918,
+        "heat_a": 36784.484375,
+        "heat_b": -40878.421875,
+        "feed_enthalpy": 350.2680969238281
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 479.4159240722656,
+        "additional_flow": -21.540231704711914,
+        "external_flow": -40.27751159667969,
+        "inventory": 814.1384887695312,
+        "step": 0.10000000149011612,
+        "discharge_enthalpy": 1036.26806640625,
+        "feed_enthalpy": 502.692138671875,
+        "heat_a": -51025.453125,
+        "heat_b": 38073.31640625,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 417.5981750488281,
+        "base_flow": 479.4159240722656,
+        "additional_flow": -21.540231704711914,
+        "heat_a": -51025.453125,
+        "heat_b": 38073.31640625,
+        "feed_enthalpy": 502.692138671875
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": -3.9621949195861816,
+        "additional_flow": 145.792724609375,
+        "external_flow": -79.46565246582031,
+        "inventory": 753.9843139648438,
+        "step": 0.5,
+        "discharge_enthalpy": 972.1005859375,
+        "feed_enthalpy": 468.4949035644531,
+        "heat_a": 67363.3203125,
+        "heat_b": 54947.77734375,
+        "phase_flag": -1
+      },
+      "expected": {
+        "flow": 62.36487579345703,
+        "base_flow": -3.9621949195861816,
+        "additional_flow": 145.792724609375,
+        "heat_a": 67363.3203125,
+        "heat_b": 54947.77734375,
+        "feed_enthalpy": 468.4949035644531
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1044.755615234375,
+        "additional_flow": 182.616455078125,
+        "external_flow": -37.93328857421875,
+        "inventory": 209.7504119873047,
+        "step": 1.0,
+        "discharge_enthalpy": 829.8652954101562,
+        "feed_enthalpy": 366.8989562988281,
+        "heat_a": -67700.9140625,
+        "heat_b": 6309.5341796875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 209.7504119873047,
+        "base_flow": 209.7504119873047,
+        "additional_flow": 209.7504119873047,
+        "heat_a": -67700.9140625,
+        "heat_b": 97107.3828125,
+        "feed_enthalpy": 366.8989562988281
+      }
+    },
+    {
+      "inputs": {
+        "base_flow": 1003.2492065429688,
+        "additional_flow": -43.54468536376953,
+        "external_flow": 96.61527252197266,
+        "inventory": 888.9373168945312,
+        "step": 1.0,
+        "discharge_enthalpy": 1007.5568237304688,
+        "feed_enthalpy": 206.88754272460938,
+        "heat_a": -41663.0859375,
+        "heat_b": 56822.35546875,
+        "phase_flag": 2
+      },
+      "expected": {
+        "flow": 888.9373168945312,
+        "base_flow": 888.9373168945312,
+        "additional_flow": 888.9373168945312,
+        "heat_a": -41663.0859375,
+        "heat_b": 711744.8125,
+        "feed_enthalpy": 206.88754272460938
+      }
+    }
+  ]
+}

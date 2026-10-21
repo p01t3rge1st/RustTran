@@ -1,0 +1,3607 @@
+{
+  "method": "Execute original supply-tank depletion and recirculation trigger arithmetic.\nUses 0x511605\u20130x51167f inside 0x510850; captures the trigger branch and\n0x5116d7\u20130x51170b level command, bypassing COM mode/indicator writes.\nThis does not replay the full injection/recirculation dispatcher.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261026,
+  "cases": [
+    {
+      "inputs": {
+        "volume": 3999.9990234375,
+        "injection_flow": 150.384033203125,
+        "flow_a": 46.29293441772461,
+        "flow_b": 434.6553039550781,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3999.9990234375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.31999993324279785
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4000.0,
+        "injection_flow": 340.60491943359375,
+        "flow_a": 290.13262939453125,
+        "flow_b": 275.7223205566406,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4000.0,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4000.0009765625,
+        "injection_flow": 990.4383544921875,
+        "flow_a": 660.8286743164062,
+        "flow_b": 648.5750732421875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4000.0009765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3999.9990234375,
+        "injection_flow": 140.60906982421875,
+        "flow_a": 445.9735412597656,
+        "flow_b": 581.387451171875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3999.9990234375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.31999993324279785
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4000.0,
+        "injection_flow": 326.3681640625,
+        "flow_a": 893.0606079101562,
+        "flow_b": 238.6898956298828,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4000.0,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4000.0009765625,
+        "injection_flow": 213.3197021484375,
+        "flow_a": 272.1230163574219,
+        "flow_b": 849.3506469726562,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4000.0009765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1483.3184814453125,
+        "injection_flow": 253.46998596191406,
+        "flow_a": 542.8016357421875,
+        "flow_b": 687.8998413085938,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1459.53369140625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.11676269769668579
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9407.7001953125,
+        "injection_flow": 414.3091125488281,
+        "flow_a": 117.86087036132812,
+        "flow_b": -38.08176040649414,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9406.908203125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5639.36865234375,
+        "injection_flow": 146.3187255859375,
+        "flow_a": 659.29345703125,
+        "flow_b": 730.1860961914062,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5614.75634765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6885.4541015625,
+        "injection_flow": 23.27480125427246,
+        "flow_a": 240.68031311035156,
+        "flow_b": 591.3391723632812,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6885.4541015625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6703.7333984375,
+        "injection_flow": 824.3616943359375,
+        "flow_a": 145.8828582763672,
+        "flow_b": 397.8716125488281,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6701.541015625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3909.3994140625,
+        "injection_flow": -38.95916748046875,
+        "flow_a": 942.6861572265625,
+        "flow_b": 201.4286346435547,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3909.3994140625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.3127519488334656
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3556.109619140625,
+        "injection_flow": 4.785091876983643,
+        "flow_a": 552.640869140625,
+        "flow_b": 999.1351928710938,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3543.63720703125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.28349098563194275
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7160.45361328125,
+        "injection_flow": 407.7980651855469,
+        "flow_a": 816.1861572265625,
+        "flow_b": 355.1917419433594,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7147.7998046875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 102.93940734863281,
+        "injection_flow": 478.2558898925781,
+        "flow_a": -10.905871391296387,
+        "flow_b": 193.76907348632812,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 102.93940734863281,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.008235152810811996
+      }
+    },
+    {
+      "inputs": {
+        "volume": 118.4249267578125,
+        "injection_flow": 815.458740234375,
+        "flow_a": 21.167163848876953,
+        "flow_b": 948.1851806640625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 104.1235580444336,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.008329885080456734
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9729.232421875,
+        "injection_flow": 613.7512817382812,
+        "flow_a": 988.301025390625,
+        "flow_b": 103.21206665039062,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9715.568359375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3909.695556640625,
+        "injection_flow": -61.24311065673828,
+        "flow_a": -8.506885528564453,
+        "flow_b": 214.65106201171875,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3908.534423828125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.31268274784088135
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7935.4814453125,
+        "injection_flow": 439.5918273925781,
+        "flow_a": 379.32830810546875,
+        "flow_b": 90.32787322998047,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7928.19580078125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3825.77587890625,
+        "injection_flow": 876.264404296875,
+        "flow_a": 966.95947265625,
+        "flow_b": 953.7636108398438,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3780.952392578125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.3024761974811554
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7563.86767578125,
+        "injection_flow": 883.8216552734375,
+        "flow_a": 249.89077758789062,
+        "flow_b": 977.178466796875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7563.86767578125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6815.4140625,
+        "injection_flow": 426.18365478515625,
+        "flow_a": 801.09619140625,
+        "flow_b": 308.18438720703125,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6803.11083984375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1923.9813232421875,
+        "injection_flow": 236.80413818359375,
+        "flow_a": 718.760986328125,
+        "flow_b": 188.37513732910156,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1914.815185546875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.15318521857261658
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1588.6943359375,
+        "injection_flow": 675.9039916992188,
+        "flow_a": 675.10302734375,
+        "flow_b": 330.891357421875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1561.7408447265625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.12493927031755447
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4601.498046875,
+        "injection_flow": 882.3344116210938,
+        "flow_a": 302.4379577636719,
+        "flow_b": 590.6764526367188,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4587.271484375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8519.53125,
+        "injection_flow": 60.4417610168457,
+        "flow_a": 525.3091430664062,
+        "flow_b": 230.85897827148438,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8519.53125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2135.500732421875,
+        "injection_flow": 879.2391357421875,
+        "flow_a": 322.53509521484375,
+        "flow_b": 279.0060729980469,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2111.770263671875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.16894161701202393
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1413.287841796875,
+        "injection_flow": 937.1697998046875,
+        "flow_a": 891.3685302734375,
+        "flow_b": 178.96261596679688,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1381.1163330078125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.11048930883407593
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3638.684326171875,
+        "injection_flow": 627.5465087890625,
+        "flow_a": 609.0975341796875,
+        "flow_b": 537.5205078125,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3635.841064453125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.29086729884147644
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1943.6124267578125,
+        "injection_flow": 205.4155731201172,
+        "flow_a": 889.979248046875,
+        "flow_b": 652.6930541992188,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1929.6053466796875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.15436843037605286
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1274.4920654296875,
+        "injection_flow": 44.99360656738281,
+        "flow_a": 952.3467407226562,
+        "flow_b": 273.5049743652344,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1254.1259765625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.10033007711172104
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7224.771484375,
+        "injection_flow": 883.103271484375,
+        "flow_a": 780.4048461914062,
+        "flow_b": 225.865966796875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7194.4931640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8591.9951171875,
+        "injection_flow": 7.633835315704346,
+        "flow_a": 487.5672302246094,
+        "flow_b": 652.8463134765625,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8591.9951171875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5394.5400390625,
+        "injection_flow": 764.2854614257812,
+        "flow_a": 693.9879150390625,
+        "flow_b": 22.8576602935791,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5370.80419921875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5445.990234375,
+        "injection_flow": 843.0995483398438,
+        "flow_a": 94.14158630371094,
+        "flow_b": 564.1385498046875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5445.990234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6723.23388671875,
+        "injection_flow": 24.88610076904297,
+        "flow_a": 61.42533874511719,
+        "flow_b": 415.3310852050781,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6722.43017578125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3383.580810546875,
+        "injection_flow": 898.4011840820312,
+        "flow_a": -97.85933685302734,
+        "flow_b": 132.92437744140625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3376.10107421875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.2700880765914917
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1397.6558837890625,
+        "injection_flow": 643.0335083007812,
+        "flow_a": -36.06400680541992,
+        "flow_b": 765.2576904296875,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1395.456787109375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.11163654178380966
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5711.03076171875,
+        "injection_flow": 138.82655334472656,
+        "flow_a": -27.824277877807617,
+        "flow_b": 746.6959838867188,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5697.28564453125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1538.6617431640625,
+        "injection_flow": -19.119300842285156,
+        "flow_a": 910.54638671875,
+        "flow_b": 369.65814208984375,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1528.556884765625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.12228455394506454
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4836.32958984375,
+        "injection_flow": 319.7274169921875,
+        "flow_a": -21.34432601928711,
+        "flow_b": 265.9244079589844,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4835.42529296875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4850.88427734375,
+        "injection_flow": 517.6444091796875,
+        "flow_a": 314.3536682128906,
+        "flow_b": 666.8018798828125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4826.865234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 801.130126953125,
+        "injection_flow": 682.0752563476562,
+        "flow_a": 663.7134399414062,
+        "flow_b": 995.9801025390625,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 797.3773193359375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.06379018723964691
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9261.0390625,
+        "injection_flow": 13.05593204498291,
+        "flow_a": 996.3818969726562,
+        "flow_b": 857.84326171875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9261.0390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3227.061279296875,
+        "injection_flow": 826.1937866210938,
+        "flow_a": -32.7829704284668,
+        "flow_b": 60.383548736572266,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3213.378662109375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.25707030296325684
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2424.64208984375,
+        "injection_flow": 330.2909240722656,
+        "flow_a": -68.62203979492188,
+        "flow_b": 667.3770141601562,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2417.19775390625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.193375825881958
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5391.2822265625,
+        "injection_flow": 473.42333984375,
+        "flow_a": 12.912751197814941,
+        "flow_b": 701.553955078125,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5381.763671875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2402.176513671875,
+        "injection_flow": 381.9771728515625,
+        "flow_a": 13.808287620544434,
+        "flow_b": 664.9793701171875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2385.177001953125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.19081416726112366
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5231.1416015625,
+        "injection_flow": 612.21044921875,
+        "flow_a": 656.45263671875,
+        "flow_b": 73.49626159667969,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5209.6328125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5250.22216796875,
+        "injection_flow": 98.34109497070312,
+        "flow_a": -29.176280975341797,
+        "flow_b": 387.7889404296875,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5249.48974609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9553.8310546875,
+        "injection_flow": 114.47180938720703,
+        "flow_a": -3.0590574741363525,
+        "flow_b": 652.4873657226562,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9541.5888671875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8627.068359375,
+        "injection_flow": 581.6458740234375,
+        "flow_a": 209.2011260986328,
+        "flow_b": 57.029449462890625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8620.2744140625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5068.13916015625,
+        "injection_flow": 619.4710083007812,
+        "flow_a": -59.597259521484375,
+        "flow_b": 295.4543151855469,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5054.43212890625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9129.376953125,
+        "injection_flow": -81.43309783935547,
+        "flow_a": 588.46533203125,
+        "flow_b": 432.65673828125,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9127.87109375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7320.8662109375,
+        "injection_flow": 940.3024291992188,
+        "flow_a": 391.4305114746094,
+        "flow_b": 866.7403564453125,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7317.3427734375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5251.49951171875,
+        "injection_flow": 529.888671875,
+        "flow_a": 724.6886596679688,
+        "flow_b": 160.8060302734375,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5228.81689453125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4117.00439453125,
+        "injection_flow": 820.0935668945312,
+        "flow_a": 930.2901611328125,
+        "flow_b": 946.2252197265625,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4073.78955078125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 368.8990173339844,
+        "injection_flow": 979.5873413085938,
+        "flow_a": 432.4657287597656,
+        "flow_b": 960.792724609375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 368.8990173339844,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.029511921107769012
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9433.5947265625,
+        "injection_flow": 295.2236022949219,
+        "flow_a": 83.9693374633789,
+        "flow_b": 289.9349365234375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9432.5224609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9221.681640625,
+        "injection_flow": -47.07921600341797,
+        "flow_a": 800.2802124023438,
+        "flow_b": 16.281768798828125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9221.681640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4304.677734375,
+        "injection_flow": 92.92301940917969,
+        "flow_a": 196.53945922851562,
+        "flow_b": 836.6109008789062,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4302.873046875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 203.7559814453125,
+        "injection_flow": 336.8815002441406,
+        "flow_a": 995.7673950195312,
+        "flow_b": 929.6740112304688,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 167.5008087158203,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.013400064781308174
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2025.884033203125,
+        "injection_flow": 294.3243103027344,
+        "flow_a": 715.9984741210938,
+        "flow_b": 514.7400512695312,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2013.6639404296875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1610931158065796
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3152.691162109375,
+        "injection_flow": 268.1059265136719,
+        "flow_a": -39.83687973022461,
+        "flow_b": 959.1743774414062,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3150.7880859375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.2520630359649658
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6147.15478515625,
+        "injection_flow": 580.2367553710938,
+        "flow_a": 647.0926513671875,
+        "flow_b": 756.5457763671875,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6143.9755859375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5878.56201171875,
+        "injection_flow": 66.66926574707031,
+        "flow_a": 991.8053588867188,
+        "flow_b": 39.4178466796875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5878.56201171875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9084.2509765625,
+        "injection_flow": 761.5723266601562,
+        "flow_a": 989.4124755859375,
+        "flow_b": 971.9443359375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9084.2509765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 592.7398681640625,
+        "injection_flow": 199.2764129638672,
+        "flow_a": 613.6927490234375,
+        "flow_b": 677.0203247070312,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 568.86181640625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.04550894349813461
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2287.314453125,
+        "injection_flow": 270.25213623046875,
+        "flow_a": 820.3946533203125,
+        "flow_b": 367.09954833984375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2287.314453125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.18298515677452087
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8600.02734375,
+        "injection_flow": 637.54931640625,
+        "flow_a": 153.77317810058594,
+        "flow_b": 550.404052734375,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8578.525390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1840.2752685546875,
+        "injection_flow": 815.2288818359375,
+        "flow_a": 554.632080078125,
+        "flow_b": 840.0365600585938,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1804.8602294921875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1443888247013092
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2944.200439453125,
+        "injection_flow": 253.2557830810547,
+        "flow_a": 531.6489868164062,
+        "flow_b": 950.2532348632812,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2941.419677734375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.23531357944011688
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2810.12158203125,
+        "injection_flow": 242.47967529296875,
+        "flow_a": 9.401634216308594,
+        "flow_b": 733.4705810546875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2794.33056640625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.22354644536972046
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9125.60546875,
+        "injection_flow": -17.38181495666504,
+        "flow_a": 576.961181640625,
+        "flow_b": 672.7084350585938,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9115.7314453125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9097.1025390625,
+        "injection_flow": 865.4561767578125,
+        "flow_a": 799.991943359375,
+        "flow_b": 245.67776489257812,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9081.7890625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2002.2039794921875,
+        "injection_flow": 703.8939819335938,
+        "flow_a": 758.6937866210938,
+        "flow_b": 360.95361328125,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1999.2816162109375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.15994252264499664
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3924.069580078125,
+        "injection_flow": 462.1738586425781,
+        "flow_a": 834.7030029296875,
+        "flow_b": 167.83335876464844,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3900.5966796875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.31204771995544434
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2160.49462890625,
+        "injection_flow": 693.8764038085938,
+        "flow_a": -56.55489730834961,
+        "flow_b": 129.10012817382812,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2160.49462890625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.17283956706523895
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4755.255859375,
+        "injection_flow": 148.75350952148438,
+        "flow_a": 801.116455078125,
+        "flow_b": -98.10649108886719,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4748.4306640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4370.19140625,
+        "injection_flow": 147.48431396484375,
+        "flow_a": 517.5027465820312,
+        "flow_b": 715.0478515625,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4370.19140625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5332.8759765625,
+        "injection_flow": 911.6219482421875,
+        "flow_a": -13.729781150817871,
+        "flow_b": 987.0907592773438,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5317.77197265625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7830.314453125,
+        "injection_flow": 499.87237548828125,
+        "flow_a": 916.947265625,
+        "flow_b": 321.44775390625,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7830.314453125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3466.272216796875,
+        "injection_flow": 193.7258758544922,
+        "flow_a": 232.5989532470703,
+        "flow_b": -32.290496826171875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3466.272216796875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.2773017883300781
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6181.55517578125,
+        "injection_flow": 165.68521118164062,
+        "flow_a": 978.90625,
+        "flow_b": 0.9069595336914062,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6163.19775390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1051.9027099609375,
+        "injection_flow": 768.880126953125,
+        "flow_a": -8.378910064697266,
+        "flow_b": 459.3478088378906,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1042.1282958984375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.08337026089429855
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4115.94384765625,
+        "injection_flow": -5.292147159576416,
+        "flow_a": 271.4950256347656,
+        "flow_b": 339.0697937011719,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4115.94384765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 454.9393310546875,
+        "injection_flow": 205.0316925048828,
+        "flow_a": 406.7850646972656,
+        "flow_b": 783.5782470703125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 432.5772399902344,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.03460617735981941
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1203.7337646484375,
+        "injection_flow": -7.757285118103027,
+        "flow_a": 704.7012329101562,
+        "flow_b": 978.066162109375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1203.7337646484375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.0962987020611763
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3329.01708984375,
+        "injection_flow": 948.3673095703125,
+        "flow_a": 127.84162139892578,
+        "flow_b": 409.33453369140625,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3326.636474609375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.2661309242248535
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6357.43017578125,
+        "injection_flow": 606.5259399414062,
+        "flow_a": 108.27233123779297,
+        "flow_b": 583.8599243164062,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6355.34912109375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9722.3134765625,
+        "injection_flow": 816.1495971679688,
+        "flow_a": 620.9655151367188,
+        "flow_b": 417.86602783203125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9722.3134765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2502.3701171875,
+        "injection_flow": 221.10523986816406,
+        "flow_a": 896.1952514648438,
+        "flow_b": 279.3387756347656,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2491.17919921875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1992943286895752
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7716.74169921875,
+        "injection_flow": 261.55145263671875,
+        "flow_a": 671.8408813476562,
+        "flow_b": 591.0816650390625,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7714.298828125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4823.5322265625,
+        "injection_flow": 188.20468139648438,
+        "flow_a": 908.2315063476562,
+        "flow_b": 252.63479614257812,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4801.91259765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7148.353515625,
+        "injection_flow": -3.012080669403076,
+        "flow_a": 809.387451171875,
+        "flow_b": 255.08555603027344,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7146.65234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9303.330078125,
+        "injection_flow": 20.805034637451172,
+        "flow_a": 551.2034912109375,
+        "flow_b": 262.8018798828125,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9296.640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5306.708984375,
+        "injection_flow": -46.707740783691406,
+        "flow_a": 327.4410705566406,
+        "flow_b": 672.2308349609375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5305.181640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5484.88330078125,
+        "injection_flow": 522.473388671875,
+        "flow_a": 995.0604248046875,
+        "flow_b": 441.7918395996094,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5481.7431640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 380.3712158203125,
+        "injection_flow": 91.16349029541016,
+        "flow_a": -29.533771514892578,
+        "flow_b": 383.8556213378906,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 373.2320251464844,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.029858561232686043
+      }
+    },
+    {
+      "inputs": {
+        "volume": 198.83816528320312,
+        "injection_flow": 456.8905334472656,
+        "flow_a": 339.3614501953125,
+        "flow_b": 625.2041625976562,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 196.56019592285156,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.01572481542825699
+      }
+    },
+    {
+      "inputs": {
+        "volume": 266.20965576171875,
+        "injection_flow": 576.4716796875,
+        "flow_a": 56.99046325683594,
+        "flow_b": 36.63275909423828,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 255.47096252441406,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.020437676459550858
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2228.388427734375,
+        "injection_flow": 988.2276611328125,
+        "flow_a": 904.7445068359375,
+        "flow_b": 981.466064453125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2228.388427734375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1782710701227188
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7140.2841796875,
+        "injection_flow": 519.4022827148438,
+        "flow_a": 464.5664978027344,
+        "flow_b": 101.27436828613281,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7138.544921875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7661.73583984375,
+        "injection_flow": 289.5467224121094,
+        "flow_a": 878.5147094726562,
+        "flow_b": 342.9404296875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7637.52099609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4593.1044921875,
+        "injection_flow": 280.4903564453125,
+        "flow_a": 52.35780334472656,
+        "flow_b": 446.2306213378906,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4591.85595703125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1489.613525390625,
+        "injection_flow": 846.964111328125,
+        "flow_a": 823.856201171875,
+        "flow_b": 584.45166015625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1471.54248046875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.11772339791059494
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7838.6240234375,
+        "injection_flow": -12.512767791748047,
+        "flow_a": 910.4078369140625,
+        "flow_b": 205.53778076171875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7838.6240234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4131.58544921875,
+        "injection_flow": 807.06884765625,
+        "flow_a": 528.927490234375,
+        "flow_b": 917.5198974609375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4131.58544921875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5230.44384765625,
+        "injection_flow": 902.3800659179688,
+        "flow_a": 201.95481872558594,
+        "flow_b": 70.81488037109375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5228.560546875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4096.9599609375,
+        "injection_flow": 59.37708282470703,
+        "flow_a": 517.7127075195312,
+        "flow_b": 356.7735290527344,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4096.9599609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7201.7216796875,
+        "injection_flow": 852.8345336914062,
+        "flow_a": 663.1031494140625,
+        "flow_b": 386.83685302734375,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7186.47509765625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7610.2021484375,
+        "injection_flow": -50.93986511230469,
+        "flow_a": 914.582763671875,
+        "flow_b": 176.42047119140625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7601.8681640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5652.3798828125,
+        "injection_flow": 416.78497314453125,
+        "flow_a": -54.77157974243164,
+        "flow_b": 361.7773742675781,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5651.2197265625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3572.440185546875,
+        "injection_flow": 708.7360229492188,
+        "flow_a": 851.5843505859375,
+        "flow_b": 976.507080078125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3531.785888671875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.282542884349823
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2566.251220703125,
+        "injection_flow": 541.8809204101562,
+        "flow_a": 740.7606201171875,
+        "flow_b": 41.41255187988281,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2566.251220703125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.20530009269714355
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6878.85986328125,
+        "injection_flow": 519.5325927734375,
+        "flow_a": 727.5460205078125,
+        "flow_b": 233.84146118164062,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6866.99365234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1617.8367919921875,
+        "injection_flow": 410.78948974609375,
+        "flow_a": 989.206787109375,
+        "flow_b": 283.3798522949219,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1617.8367919921875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.12942694127559662
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3439.035400390625,
+        "injection_flow": 233.53868103027344,
+        "flow_a": 48.23796081542969,
+        "flow_b": 537.5068969726562,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3439.035400390625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.27512282133102417
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6072.986328125,
+        "injection_flow": 389.22601318359375,
+        "flow_a": 251.63055419921875,
+        "flow_b": -26.23297691345215,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6068.0615234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4155.4453125,
+        "injection_flow": 377.6358337402344,
+        "flow_a": 637.069580078125,
+        "flow_b": 56.281917572021484,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4153.72900390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7417.56396484375,
+        "injection_flow": 423.05584716796875,
+        "flow_a": 198.34454345703125,
+        "flow_b": -9.532017707824707,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7416.58349609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8325.2177734375,
+        "injection_flow": 4.27836799621582,
+        "flow_a": 60.53728485107422,
+        "flow_b": 52.86256790161133,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8325.029296875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6473.16650390625,
+        "injection_flow": 610.1800537109375,
+        "flow_a": 444.2354431152344,
+        "flow_b": 90.1037368774414,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6473.16650390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 323.2694396972656,
+        "injection_flow": 174.1418914794922,
+        "flow_a": 835.8404541015625,
+        "flow_b": 111.60331726074219,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 305.2953186035156,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.02442362532019615
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7209.18896484375,
+        "injection_flow": 640.0905151367188,
+        "flow_a": 596.7872314453125,
+        "flow_b": 218.95785522460938,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7209.18896484375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7209.234375,
+        "injection_flow": 773.0045166015625,
+        "flow_a": 162.73387145996094,
+        "flow_b": 636.6383666992188,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7209.234375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 336.2353515625,
+        "injection_flow": 730.9469604492188,
+        "flow_a": 760.1451416015625,
+        "flow_b": -52.90831756591797,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 333.9305725097656,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.026714446023106575
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8910.591796875,
+        "injection_flow": 474.79107666015625,
+        "flow_a": 447.117919921875,
+        "flow_b": 956.661865234375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8907.5810546875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7870.03173828125,
+        "injection_flow": 27.184003829956055,
+        "flow_a": 991.5502319335938,
+        "flow_b": 310.3016662597656,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7859.38232421875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4869.775390625,
+        "injection_flow": -87.63650512695312,
+        "flow_a": 185.89614868164062,
+        "flow_b": 439.391845703125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4869.775390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2970.44775390625,
+        "injection_flow": 406.8851318359375,
+        "flow_a": 7.75352144241333,
+        "flow_b": 976.298583984375,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2959.302490234375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.23674419522285461
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3820.09521484375,
+        "injection_flow": 873.724365234375,
+        "flow_a": 208.44337463378906,
+        "flow_b": 25.441543579101562,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3820.09521484375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.3056076169013977
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4640.22802734375,
+        "injection_flow": 602.4823608398438,
+        "flow_a": 169.0975341796875,
+        "flow_b": -52.60639190673828,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4639.07568359375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7052.71728515625,
+        "injection_flow": 700.510986328125,
+        "flow_a": 974.4795532226562,
+        "flow_b": 176.36654663085938,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7052.71728515625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1043.383056640625,
+        "injection_flow": 77.86766052246094,
+        "flow_a": -61.05533218383789,
+        "flow_b": 34.76905822753906,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1043.3004150390625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.08346403390169144
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5918.60302734375,
+        "injection_flow": -95.41322326660156,
+        "flow_a": 612.8772583007812,
+        "flow_b": -71.63961791992188,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5918.60302734375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4488.064453125,
+        "injection_flow": 339.7281799316406,
+        "flow_a": -35.23967361450195,
+        "flow_b": 558.7319946289062,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4474.23095703125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6980.677734375,
+        "injection_flow": 977.8873291015625,
+        "flow_a": 609.19091796875,
+        "flow_b": 906.9390869140625,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6980.677734375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3503.342529296875,
+        "injection_flow": 423.2960205078125,
+        "flow_a": 935.8040161132812,
+        "flow_b": -95.5349349975586,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3483.093017578125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.27864745259284973
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3035.68701171875,
+        "injection_flow": 560.937255859375,
+        "flow_a": 608.6849365234375,
+        "flow_b": 258.27301025390625,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3012.803955078125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.24102431535720825
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5586.50341796875,
+        "injection_flow": 590.7757568359375,
+        "flow_a": -21.455215454101562,
+        "flow_b": 444.63458251953125,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5584.87841796875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3206.54931640625,
+        "injection_flow": 362.6681213378906,
+        "flow_a": 319.4592590332031,
+        "flow_b": 283.6596984863281,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3206.54931640625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.2565239369869232
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2143.108154296875,
+        "injection_flow": 890.42626953125,
+        "flow_a": 558.7587280273438,
+        "flow_b": 198.08863830566406,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2129.908935546875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1703927218914032
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6258.9130859375,
+        "injection_flow": 477.0386962890625,
+        "flow_a": 653.7026977539062,
+        "flow_b": 350.3677673339844,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6256.53955078125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1076.76025390625,
+        "injection_flow": -54.13912582397461,
+        "flow_a": 184.85592651367188,
+        "flow_b": 805.3302612304688,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1069.2598876953125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.08554079383611679
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1764.3603515625,
+        "injection_flow": 795.0419311523438,
+        "flow_a": 602.563232421875,
+        "flow_b": 443.35235595703125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1764.3603515625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.14114883542060852
+      }
+    },
+    {
+      "inputs": {
+        "volume": 347.4127502441406,
+        "injection_flow": 901.4259643554688,
+        "flow_a": 437.3393249511719,
+        "flow_b": 574.8677978515625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 332.07916259765625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.026566332206130028
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4771.67138671875,
+        "injection_flow": 114.56743621826172,
+        "flow_a": 610.460205078125,
+        "flow_b": 599.2178955078125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4750.44970703125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3693.119873046875,
+        "injection_flow": 564.4888916015625,
+        "flow_a": -87.21373748779297,
+        "flow_b": 458.7306213378906,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3685.619873046875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.29484960436820984
+      }
+    },
+    {
+      "inputs": {
+        "volume": 712.0914916992188,
+        "injection_flow": 510.4053955078125,
+        "flow_a": -16.590145111083984,
+        "flow_b": 766.652099609375,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 691.8917236328125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.055351339280605316
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2657.150146484375,
+        "injection_flow": 840.0462036132812,
+        "flow_a": 980.4580688476562,
+        "flow_b": 923.9465942382812,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2613.16845703125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.20905347168445587
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8573.6279296875,
+        "injection_flow": -44.78827667236328,
+        "flow_a": 355.87847900390625,
+        "flow_b": 648.9526977539062,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8558.2421875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6592.517578125,
+        "injection_flow": 863.0169067382812,
+        "flow_a": 887.7520141601562,
+        "flow_b": 806.4664916992188,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6551.5361328125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3001.71923828125,
+        "injection_flow": -32.444236755371094,
+        "flow_a": 20.495237350463867,
+        "flow_b": 584.319091796875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3001.71923828125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.24013753235340118
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6468.650390625,
+        "injection_flow": 564.9916381835938,
+        "flow_a": 778.9229736328125,
+        "flow_b": 470.1797180175781,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6465.7431640625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7980.986328125,
+        "injection_flow": 896.26904296875,
+        "flow_a": 795.1848754882812,
+        "flow_b": -2.017346143722534,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7978.27880859375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4625.65673828125,
+        "injection_flow": 545.1243896484375,
+        "flow_a": 869.91552734375,
+        "flow_b": 634.6602783203125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4592.80908203125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7811.046875,
+        "injection_flow": 954.5760498046875,
+        "flow_a": 109.18568420410156,
+        "flow_b": 851.9639892578125,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7811.046875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2626.120849609375,
+        "injection_flow": 55.038265228271484,
+        "flow_a": 119.62237548828125,
+        "flow_b": 470.74749755859375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2625.08642578125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.21000690758228302
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7035.5908203125,
+        "injection_flow": 262.9852294921875,
+        "flow_a": 294.0838928222656,
+        "flow_b": 592.8821411132812,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7035.5908203125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2596.6923828125,
+        "injection_flow": 993.77392578125,
+        "flow_a": 988.1974487304688,
+        "flow_b": 880.3107299804688,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2592.10546875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.20736843347549438
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5951.55859375,
+        "injection_flow": -5.090733528137207,
+        "flow_a": 394.27020263671875,
+        "flow_b": 734.6090087890625,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5951.55859375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9893.224609375,
+        "injection_flow": 169.57403564453125,
+        "flow_a": 981.1791381835938,
+        "flow_b": 746.4554443359375,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9893.224609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3830.4033203125,
+        "injection_flow": 796.185791015625,
+        "flow_a": 923.4003295898438,
+        "flow_b": 15.124299049377441,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3802.603515625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.30420827865600586
+      }
+    },
+    {
+      "inputs": {
+        "volume": 867.8024291992188,
+        "injection_flow": 937.204345703125,
+        "flow_a": 858.095703125,
+        "flow_b": 47.17501449584961,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 867.8024291992188,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.06942419707775116
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6852.173828125,
+        "injection_flow": 586.8310546875,
+        "flow_a": 692.015625,
+        "flow_b": 238.28875732421875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6827.86083984375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7347.94091796875,
+        "injection_flow": 945.7021484375,
+        "flow_a": 541.1103515625,
+        "flow_b": 432.7928771972656,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7347.94091796875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9171.3525390625,
+        "injection_flow": 380.57904052734375,
+        "flow_a": 99.62132263183594,
+        "flow_b": 607.2594604492188,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9171.3525390625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6388.11669921875,
+        "injection_flow": 974.7188720703125,
+        "flow_a": 877.1837158203125,
+        "flow_b": 53.08296203613281,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6385.06396484375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5741.142578125,
+        "injection_flow": 919.9671020507812,
+        "flow_a": 341.4783020019531,
+        "flow_b": 189.1136016845703,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5738.81787109375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3432.700439453125,
+        "injection_flow": 922.401123046875,
+        "flow_a": 767.9896240234375,
+        "flow_b": 63.76823806762695,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3404.5888671875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.27236711978912354
+      }
+    },
+    {
+      "inputs": {
+        "volume": 1361.73388671875,
+        "injection_flow": 874.0570678710938,
+        "flow_a": 674.8482666015625,
+        "flow_b": 414.18756103515625,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 1346.0040283203125,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.1076803207397461
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5312.37109375,
+        "injection_flow": 159.5621795654297,
+        "flow_a": 504.7296447753906,
+        "flow_b": 954.642578125,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5286.4267578125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 3860.80224609375,
+        "injection_flow": 474.75274658203125,
+        "flow_a": 234.0039825439453,
+        "flow_b": 63.87688446044922,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 3860.80224609375,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.30886417627334595
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5187.69970703125,
+        "injection_flow": 843.7320556640625,
+        "flow_a": 283.7154846191406,
+        "flow_b": 253.64878845214844,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5185.486328125,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 6979.11474609375,
+        "injection_flow": 971.4132080078125,
+        "flow_a": 6.746706008911133,
+        "flow_b": 981.1278686523438,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 6963.41552734375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 747.2244262695312,
+        "injection_flow": 154.68130493164062,
+        "flow_a": -0.028261855244636536,
+        "flow_b": 361.3956604003906,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 746.3973999023438,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.05971179157495499
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4127.74560546875,
+        "injection_flow": 644.8929443359375,
+        "flow_a": 0.9878145456314087,
+        "flow_b": 312.27532958984375,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4126.2099609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2555.55224609375,
+        "injection_flow": 251.06712341308594,
+        "flow_a": 341.67913818359375,
+        "flow_b": 100.2142105102539,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2554.441650390625,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.20435532927513123
+      }
+    },
+    {
+      "inputs": {
+        "volume": 15.674986839294434,
+        "injection_flow": 134.18228149414062,
+        "flow_a": 147.5667266845703,
+        "flow_b": 486.0184326171875,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 15.674986839294434,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.0012539989547803998
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4736.26611328125,
+        "injection_flow": 214.80801391601562,
+        "flow_a": -63.23493576049805,
+        "flow_b": 711.8917846679688,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4722.4287109375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7584.6728515625,
+        "injection_flow": 526.3946533203125,
+        "flow_a": 174.76910400390625,
+        "flow_b": 133.89662170410156,
+        "step": 0.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7584.6728515625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 5046.68359375,
+        "injection_flow": 49.84579849243164,
+        "flow_a": 885.8357543945312,
+        "flow_b": 687.4871826171875,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 5033.67724609375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 601.2999267578125,
+        "injection_flow": 732.8760375976562,
+        "flow_a": 621.6450805664062,
+        "flow_b": 158.82252502441406,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 589.1737670898438,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.047133900225162506
+      }
+    },
+    {
+      "inputs": {
+        "volume": 2670.6689453125,
+        "injection_flow": 399.9442443847656,
+        "flow_a": 190.4070587158203,
+        "flow_b": -31.095149993896484,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 2661.70654296875,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": 0.21293652057647705
+      }
+    },
+    {
+      "inputs": {
+        "volume": 8685.3046875,
+        "injection_flow": 277.8843994140625,
+        "flow_a": 872.1781005859375,
+        "flow_b": 655.976806640625,
+        "step": 0.10000000149011612,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 8682.41015625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 9753.3125,
+        "injection_flow": 782.5686645507812,
+        "flow_a": 638.0126953125,
+        "flow_b": 100.61712646484375,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 9741.123046875,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 7538.50244140625,
+        "injection_flow": 53.23644256591797,
+        "flow_a": 45.7978515625,
+        "flow_b": 566.3240356445312,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 7533.1708984375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4277.85791015625,
+        "injection_flow": -25.49534034729004,
+        "flow_a": 125.16545867919922,
+        "flow_b": 709.583740234375,
+        "step": 0.5,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4271.37353515625,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 4615.26953125,
+        "injection_flow": 714.1527099609375,
+        "flow_a": 995.0553588867188,
+        "flow_b": 361.8357849121094,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": 4582.07958984375,
+        "recirculation_required": false,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": null
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 213.2889404296875,
+        "flow_a": 259.3241882324219,
+        "flow_b": 941.678466796875,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -22.66493034362793,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0018131944816559553
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 294.6351013183594,
+        "flow_a": -14.118602752685547,
+        "flow_b": 878.2299194335938,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -18.56965446472168,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0014855723129585385
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 971.0372924804688,
+        "flow_a": 638.34423828125,
+        "flow_b": -25.965972900390625,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -25.3752498626709,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0020300198812037706
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 46.536434173583984,
+        "flow_a": 747.8429565429688,
+        "flow_b": 960.4033813476562,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -28.121519088745117,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.002249721437692642
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 511.1732177734375,
+        "flow_a": 483.0701904296875,
+        "flow_b": 973.3569946289062,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -31.53205680847168,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0025225644931197166
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 583.2947998046875,
+        "flow_a": 351.61407470703125,
+        "flow_b": 767.9188842773438,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -27.28890609741211,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0021831125486642122
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 2.35714054107666,
+        "flow_a": 44.77122497558594,
+        "flow_b": 869.5469360351562,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -14.690309524536133,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.001175224781036377
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 929.8363037109375,
+        "flow_a": 319.4201965332031,
+        "flow_b": 555.2522583007812,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -28.91840934753418,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0023134727962315083
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": -35.47197341918945,
+        "flow_a": 685.866455078125,
+        "flow_b": 595.3981323242188,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -19.964624404907227,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.0015971699031069875
+      }
+    },
+    {
+      "inputs": {
+        "volume": 0.0,
+        "injection_flow": 426.6612854003906,
+        "flow_a": 770.4002685546875,
+        "flow_b": 161.8062744140625,
+        "step": 1.0,
+        "minimum_volume": 4000.0,
+        "initial_volume": 10000.0
+      },
+      "expected": {
+        "volume": -21.7767276763916,
+        "recirculation_required": true,
+        "recirculation_flow": 0.0,
+        "other_recirculation_flow": 0.0,
+        "level_command": -0.001742138178087771
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "model": "1",
+  "ic": "1",
+  "stages": [
+    {
+      "kind": "new_process_storage"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "source": "analysis/program/OptData.mdb",
+  "sha256": "3687417a81bc8a061cc17670806ff2f34d3fd7b71e1d81c1c3a74af6898484bd",
+  "tables": [
+    {
+      "name": "PCTran Options",
+      "csv": "analysis/data/OptData/PCTran Options.csv",
+      "sha256": "0e20d21e4ca6e2affb215b2e8d5b3b332cd9fc1e067f54d258fdea404e25c0bd",
+      "returncode": 0,
+      "columns": [
+        "Set",
+        "YMinimum",
+        "YMaximum",
+        "XSpan",
+        "XScroll",
+        "PlotStayOnTop",
+        "DisplayDateTime",
+        "DisplayLegend",
+        "DisplayPlotTitle",
+        "PrintLocation",
+        "ScalingMethod",
+        "PrintFormat",
+        "TimeScreenOut",
+        "TimePlotOut",
+        "TimeBackOut",
+        "ReportStayOnTop",
+        "SaveValveReports",
+        "SavePumpReports",
+        "SaveControlReports",
+        "SaveHXReports",
+        "SaveRupDskReports",
+        "SaveVacBkrReports",
+        "SaveMalfReports",
+        "MimicPrintOrientation",
+        "MimicPrintQuality",
+        "MimicPrintCopies",
+        "PTPlotSpan",
+        "PTPlotScroll",
+        "PTPlotStayOnTop",
+        "TimeDoseOut",
+        "TimeExcStart"
+      ],
+      "row_count": 3
+    },
+    {
+      "name": "Print Formats",
+      "csv": "analysis/data/OptData/Print Formats.csv",
+      "sha256": "bb10446e2bef63a8c6aca9defba693f762ebf2b582f4d7726a8f1305e3462260",
+      "returncode": 0,
+      "columns": [
+        "ID",
+        "Format"
+      ],
+      "row_count": 3
+    },
+    {
+      "name": "Print Locations",
+      "csv": "analysis/data/OptData/Print Locations.csv",
+      "sha256": "044ce8db137dbbaaac84760b41c2625731b8b2fe89a3189ee4abf48e784b32fb",
+      "returncode": 0,
+      "columns": [
+        "ID",
+        "Print Location"
+      ],
+      "row_count": 3
+    },
+    {
+      "name": "Scaling Methods",
+      "csv": "analysis/data/OptData/Scaling Methods.csv",
+      "sha256": "dfc9962d14edfb71662ca4a6c559d24686d046ecada1663e74f0a94198af3553",
+      "returncode": 0,
+      "columns": [
+        "ID",
+        "Scaling Method"
+      ],
+      "row_count": 5
+    }
+  ],
+  "failures": []
+}

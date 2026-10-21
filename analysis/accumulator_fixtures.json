@@ -1,0 +1,4207 @@
+{
+  "method": "Execute accumulator numeric gates, flow and depletion in original x86.\nCOM object/variant cleanup is skipped. COM valve reads are replaced by supplied signed-I16 values; their checked sum is\ninjected after UI reads. Square root executes x87 FSQRT. VB6 power is modeled\nwith Python libm; Windows FPU context and event/UI paths are outside this test.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261020,
+  "cases": [
+    {
+      "inputs": {
+        "system_pressure": 662.5264892578125,
+        "activation": 0,
+        "gas_pressure": 663.5264892578125,
+        "flow": 0.6236396431922913,
+        "water_volume": 0.9990000128746033,
+        "step": 1.0,
+        "gas_volume": 770.6360473632812,
+        "total_volume": 1545.3271484375,
+        "coefficient": 0.1729041188955307,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 663.5264892578125,
+        "flow": 0.6236396431922913,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 770.6360473632812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 369.2894287109375,
+        "activation": 1,
+        "gas_pressure": 370.2894287109375,
+        "flow": 6.298320770263672,
+        "water_volume": 0.9990000128746033,
+        "step": 0.10000000149011612,
+        "gas_volume": 158.94512939453125,
+        "total_volume": 668.2899780273438,
+        "coefficient": 0.3159140646457672,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 370.2894287109375,
+        "flow": 0.0,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 158.94512939453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 611.3743896484375,
+        "activation": 2,
+        "gas_pressure": 612.3743896484375,
+        "flow": 2.7508323192596436,
+        "water_volume": 0.9990000128746033,
+        "step": 0.10000000149011612,
+        "gas_volume": 202.48431396484375,
+        "total_volume": 1168.2445068359375,
+        "coefficient": 1.5611916780471802,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 612.3743896484375,
+        "flow": 2.7508323192596436,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 202.48431396484375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 643.7449951171875,
+        "activation": 0,
+        "gas_pressure": 644.7449951171875,
+        "flow": 5.806094169616699,
+        "water_volume": 1.0,
+        "step": 0.0,
+        "gas_volume": 817.8370971679688,
+        "total_volume": 1806.8118896484375,
+        "coefficient": 1.0172017812728882,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 644.7449951171875,
+        "flow": 5.806094169616699,
+        "water_volume": 1.0,
+        "gas_volume": 817.8370971679688
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 177.48362731933594,
+        "activation": 1,
+        "gas_pressure": 177.48362731933594,
+        "flow": 9.474470138549805,
+        "water_volume": 1.0,
+        "step": 0.0,
+        "gas_volume": 959.3487548828125,
+        "total_volume": 1176.5645751953125,
+        "coefficient": 1.84705650806427,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 177.48362731933594,
+        "flow": 0.0,
+        "water_volume": 1.0,
+        "gas_volume": 959.3487548828125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 348.0026550292969,
+        "activation": 2,
+        "gas_pressure": 348.0026550292969,
+        "flow": 0.06586168706417084,
+        "water_volume": 1.0,
+        "step": 1.0,
+        "gas_volume": 710.7216186523438,
+        "total_volume": 1706.02294921875,
+        "coefficient": 1.7931466102600098,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 348.0026550292969,
+        "flow": 0.06586168706417084,
+        "water_volume": 1.0,
+        "gas_volume": 710.7216186523438
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 207.0151824951172,
+        "activation": 0,
+        "gas_pressure": 207.0151824951172,
+        "flow": 2.815019369125366,
+        "water_volume": 1.0010000467300415,
+        "step": 1.0,
+        "gas_volume": 459.83843994140625,
+        "total_volume": 1132.640625,
+        "coefficient": 0.7199246287345886,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 207.0151824951172,
+        "flow": 2.815019369125366,
+        "water_volume": 1.0010000467300415,
+        "gas_volume": 459.83843994140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 61.862667083740234,
+        "activation": 1,
+        "gas_pressure": 61.862667083740234,
+        "flow": 1.963328242301941,
+        "water_volume": 1.0010000467300415,
+        "step": 0.10000000149011612,
+        "gas_volume": 314.7040710449219,
+        "total_volume": 1144.685546875,
+        "coefficient": 1.7345383167266846,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 61.862667083740234,
+        "flow": 0.0,
+        "water_volume": 1.0010000467300415,
+        "gas_volume": 314.7040710449219
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 685.142578125,
+        "activation": 2,
+        "gas_pressure": 684.142578125,
+        "flow": 4.639124393463135,
+        "water_volume": 1.0010000467300415,
+        "step": 1.0,
+        "gas_volume": 926.9569091796875,
+        "total_volume": 1044.666259765625,
+        "coefficient": 1.1452867984771729,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 684.142578125,
+        "flow": 4.639124393463135,
+        "water_volume": 1.0010000467300415,
+        "gas_volume": 926.9569091796875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 325.1629943847656,
+        "activation": 0,
+        "gas_pressure": 324.1629943847656,
+        "flow": 4.438693046569824,
+        "water_volume": 0.9990000128746033,
+        "step": 1.0,
+        "gas_volume": 730.8169555664062,
+        "total_volume": 1717.849609375,
+        "coefficient": 1.0849062204360962,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 324.1629943847656,
+        "flow": 4.438693046569824,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 730.8169555664062
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 522.227294921875,
+        "activation": 1,
+        "gas_pressure": 521.227294921875,
+        "flow": 7.549846172332764,
+        "water_volume": 0.9990000128746033,
+        "step": 1.0,
+        "gas_volume": 297.4089050292969,
+        "total_volume": 775.53662109375,
+        "coefficient": 0.9771127700805664,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 521.227294921875,
+        "flow": 0.0,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 297.4089050292969
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 490.36590576171875,
+        "activation": 2,
+        "gas_pressure": 489.36590576171875,
+        "flow": 8.789212226867676,
+        "water_volume": 0.9990000128746033,
+        "step": 0.10000000149011612,
+        "gas_volume": 443.3802490234375,
+        "total_volume": 1004.7974853515625,
+        "coefficient": 1.23822820186615,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 489.36590576171875,
+        "flow": 8.789212226867676,
+        "water_volume": 0.9990000128746033,
+        "gas_volume": 443.3802490234375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 262.7140197753906,
+        "activation": 1,
+        "gas_pressure": 342.69769287109375,
+        "flow": 4.118152618408203,
+        "water_volume": 498.87139892578125,
+        "step": 0.0,
+        "gas_volume": 686.181884765625,
+        "total_volume": 1185.05322265625,
+        "coefficient": 1.5142195224761963,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 342.6977233886719,
+        "flow": 20.31331443786621,
+        "water_volume": 498.87139892578125,
+        "gas_volume": 686.1818237304688
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 590.89013671875,
+        "activation": 1,
+        "gas_pressure": 651.9461059570312,
+        "flow": 0.6378843784332275,
+        "water_volume": 508.6923522949219,
+        "step": 0.0,
+        "gas_volume": 880.2522583007812,
+        "total_volume": 1388.944580078125,
+        "coefficient": 0.3923724889755249,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 651.9461059570312,
+        "flow": 3.0659327507019043,
+        "water_volume": 508.6923522949219,
+        "gas_volume": 880.252197265625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 335.2119445800781,
+        "activation": 1,
+        "gas_pressure": 427.1170959472656,
+        "flow": 3.4476215839385986,
+        "water_volume": 760.9630737304688,
+        "step": 1.0,
+        "gas_volume": 282.9948425292969,
+        "total_volume": 1043.9578857421875,
+        "coefficient": 0.216200590133667,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 427.0845947265625,
+        "flow": 1.0363270044326782,
+        "water_volume": 760.9464721679688,
+        "gas_volume": 283.01141357421875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 346.7578430175781,
+        "activation": 1,
+        "gas_pressure": 381.3582458496094,
+        "flow": 6.478496551513672,
+        "water_volume": 151.20741271972656,
+        "step": 0.5,
+        "gas_volume": 867.6502685546875,
+        "total_volume": 1018.857666015625,
+        "coefficient": 0.08375424891710281,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 381.3554382324219,
+        "flow": 0.6158251762390137,
+        "water_volume": 151.20248413085938,
+        "gas_volume": 867.6551513671875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 320.3828125,
+        "activation": 1,
+        "gas_pressure": 399.22833251953125,
+        "flow": 3.440817356109619,
+        "water_volume": 422.9622802734375,
+        "step": 1.0,
+        "gas_volume": 283.09515380859375,
+        "total_volume": 706.0574340820312,
+        "coefficient": 0.08194603770971298,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 399.2122802734375,
+        "flow": 0.5457298755645752,
+        "water_volume": 422.9535217285156,
+        "gas_volume": 283.1039123535156
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 76.82349395751953,
+        "activation": 1,
+        "gas_pressure": 129.07533264160156,
+        "flow": 5.982827663421631,
+        "water_volume": 422.3125,
+        "step": 0.0,
+        "gas_volume": 243.56033325195312,
+        "total_volume": 665.872802734375,
+        "coefficient": 0.05386441946029663,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 129.07534790039062,
+        "flow": 0.19468064606189728,
+        "water_volume": 422.3125,
+        "gas_volume": 243.560302734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 229.30712890625,
+        "activation": 1,
+        "gas_pressure": 317.5681457519531,
+        "flow": 6.926778316497803,
+        "water_volume": 588.795654296875,
+        "step": 0.5,
+        "gas_volume": 359.34381103515625,
+        "total_volume": 948.1394653320312,
+        "coefficient": 0.0669589564204216,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 317.5666809082031,
+        "flow": 0.15726538002490997,
+        "water_volume": 588.7943725585938,
+        "gas_volume": 359.3450927734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 24.877138137817383,
+        "activation": 1,
+        "gas_pressure": 92.08088684082031,
+        "flow": 3.383549451828003,
+        "water_volume": 62.50110626220703,
+        "step": 0.0,
+        "gas_volume": 810.999267578125,
+        "total_volume": 873.5003662109375,
+        "coefficient": 1.4406708478927612,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 92.08088684082031,
+        "flow": 5.905158042907715,
+        "water_volume": 62.50110626220703,
+        "gas_volume": 810.999267578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 612.4208984375,
+        "activation": 1,
+        "gas_pressure": 693.3029174804688,
+        "flow": 8.450350761413574,
+        "water_volume": 336.1373291015625,
+        "step": 1.0,
+        "gas_volume": 455.98394775390625,
+        "total_volume": 792.1212768554688,
+        "coefficient": 1.9440875053405762,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 692.6112060546875,
+        "flow": 21.855051040649414,
+        "water_volume": 335.7870788574219,
+        "gas_volume": 456.3341979980469
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 246.91664123535156,
+        "activation": 1,
+        "gas_pressure": 250.90272521972656,
+        "flow": 7.890583038330078,
+        "water_volume": 20.61871910095215,
+        "step": 0.5,
+        "gas_volume": 432.081787109375,
+        "total_volume": 452.70050048828125,
+        "coefficient": 0.7991173267364502,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 250.8906707763672,
+        "flow": 1.9943151473999023,
+        "water_volume": 20.602739334106445,
+        "gas_volume": 432.0977478027344
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 584.9176025390625,
+        "activation": 1,
+        "gas_pressure": 616.072265625,
+        "flow": 7.342059135437012,
+        "water_volume": 799.2738037109375,
+        "step": 0.10000000149011612,
+        "gas_volume": 567.7848510742188,
+        "total_volume": 1367.05859375,
+        "coefficient": 0.13494376838207245,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 616.0706176757812,
+        "flow": 0.7532070279121399,
+        "water_volume": 799.2725830078125,
+        "gas_volume": 567.7860107421875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 549.8531494140625,
+        "activation": 1,
+        "gas_pressure": 641.6763916015625,
+        "flow": 0.7677291631698608,
+        "water_volume": 647.3931884765625,
+        "step": 1.0,
+        "gas_volume": 257.4275207519531,
+        "total_volume": 904.8206787109375,
+        "coefficient": 0.22157861292362213,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 641.5663452148438,
+        "flow": 2.123264789581299,
+        "water_volume": 647.3591918945312,
+        "gas_volume": 257.46148681640625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 241.4344940185547,
+        "activation": 1,
+        "gas_pressure": 319.5927734375,
+        "flow": 3.0558178424835205,
+        "water_volume": 597.4405517578125,
+        "step": 1.0,
+        "gas_volume": 622.3909912109375,
+        "total_volume": 1219.83154296875,
+        "coefficient": 0.38597768545150757,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 319.5653991699219,
+        "flow": 2.559239625930786,
+        "water_volume": 597.3995361328125,
+        "gas_volume": 622.4320068359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 467.3160705566406,
+        "activation": 1,
+        "gas_pressure": 543.12890625,
+        "flow": 9.560043334960938,
+        "water_volume": 381.194091796875,
+        "step": 1.0,
+        "gas_volume": 854.0429077148438,
+        "total_volume": 1235.237060546875,
+        "coefficient": 0.3727046251296997,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 543.0966186523438,
+        "flow": 2.433870315551758,
+        "water_volume": 381.15509033203125,
+        "gas_volume": 854.0819702148438
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 665.854248046875,
+        "activation": 1,
+        "gas_pressure": 751.7220458984375,
+        "flow": 1.5929704904556274,
+        "water_volume": 832.0665893554688,
+        "step": 0.5,
+        "gas_volume": 435.7017517089844,
+        "total_volume": 1267.768310546875,
+        "coefficient": 0.9877437949180603,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 751.6398315429688,
+        "flow": 4.576457977294922,
+        "water_volume": 832.0299072265625,
+        "gas_volume": 435.7384033203125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 220.17897033691406,
+        "activation": 1,
+        "gas_pressure": 293.9761962890625,
+        "flow": 8.123873710632324,
+        "water_volume": 764.6294555664062,
+        "step": 0.10000000149011612,
+        "gas_volume": 845.2040405273438,
+        "total_volume": 1609.83349609375,
+        "coefficient": 0.881869912147522,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 293.9748229980469,
+        "flow": 1.8939327001571655,
+        "water_volume": 764.6264038085938,
+        "gas_volume": 845.2070922851562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 344.2812194824219,
+        "activation": 1,
+        "gas_pressure": 390.1723327636719,
+        "flow": 2.5314714908599854,
+        "water_volume": 528.4993896484375,
+        "step": 1.0,
+        "gas_volume": 417.4093322753906,
+        "total_volume": 945.90869140625,
+        "coefficient": 1.0329025983810425,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 390.1383361816406,
+        "flow": 1.7492974996566772,
+        "water_volume": 528.4713745117188,
+        "gas_volume": 417.43731689453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 269.2460021972656,
+        "activation": 1,
+        "gas_pressure": 367.96246337890625,
+        "flow": 8.138946533203125,
+        "water_volume": 117.54949188232422,
+        "step": 0.0,
+        "gas_volume": 332.42572021484375,
+        "total_volume": 449.9752197265625,
+        "coefficient": 1.1187703609466553,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 367.96246337890625,
+        "flow": 2.7789180278778076,
+        "water_volume": 117.54949188232422,
+        "gas_volume": 332.42572021484375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 59.00899124145508,
+        "activation": 1,
+        "gas_pressure": 108.92259216308594,
+        "flow": 4.8543381690979,
+        "water_volume": 736.4200439453125,
+        "step": 1.0,
+        "gas_volume": 857.5331420898438,
+        "total_volume": 1593.953125,
+        "coefficient": 0.6118167638778687,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 108.90544891357422,
+        "flow": 6.483687400817871,
+        "water_volume": 736.316162109375,
+        "gas_volume": 857.636962890625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 369.91546630859375,
+        "activation": 1,
+        "gas_pressure": 434.0855712890625,
+        "flow": 1.6030480861663818,
+        "water_volume": 551.5647583007812,
+        "step": 1.0,
+        "gas_volume": 171.434814453125,
+        "total_volume": 722.9995727539062,
+        "coefficient": 1.0333034992218018,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 433.4314880371094,
+        "flow": 12.416109085083008,
+        "water_volume": 551.3657836914062,
+        "gas_volume": 171.6337890625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 662.4921875,
+        "activation": 1,
+        "gas_pressure": 680.2902221679688,
+        "flow": 9.723986625671387,
+        "water_volume": 879.2998657226562,
+        "step": 0.5,
+        "gas_volume": 774.0132446289062,
+        "total_volume": 1653.3131103515625,
+        "coefficient": 0.41277357935905457,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 680.2783203125,
+        "flow": 1.3060481548309326,
+        "water_volume": 879.2894287109375,
+        "gas_volume": 774.023681640625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 55.89463806152344,
+        "activation": 1,
+        "gas_pressure": 92.19763946533203,
+        "flow": 2.329859972000122,
+        "water_volume": 388.5889892578125,
+        "step": 1.0,
+        "gas_volume": 231.58987426757812,
+        "total_volume": 620.1788330078125,
+        "coefficient": 0.6834218502044678,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 92.15498352050781,
+        "flow": 5.147189140319824,
+        "water_volume": 388.5065002441406,
+        "gas_volume": 231.67233276367188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 637.5358276367188,
+        "activation": 1,
+        "gas_pressure": 689.57470703125,
+        "flow": 2.4721298217773438,
+        "water_volume": 737.020751953125,
+        "step": 0.5,
+        "gas_volume": 856.22265625,
+        "total_volume": 1593.243408203125,
+        "coefficient": 0.5538796186447144,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 689.5663452148438,
+        "flow": 0.9988939166069031,
+        "water_volume": 737.0127563476562,
+        "gas_volume": 856.2306518554688
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 533.1588134765625,
+        "activation": 1,
+        "gas_pressure": 564.6143798828125,
+        "flow": 8.762958526611328,
+        "water_volume": 853.9730834960938,
+        "step": 0.5,
+        "gas_volume": 306.4972229003906,
+        "total_volume": 1160.4703369140625,
+        "coefficient": 1.4665141105651855,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 564.5748291015625,
+        "flow": 2.056245803833008,
+        "water_volume": 853.9566040039062,
+        "gas_volume": 306.51373291015625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 740.3369750976562,
+        "activation": 1,
+        "gas_pressure": 752.7410888671875,
+        "flow": 7.61937952041626,
+        "water_volume": 101.66876983642578,
+        "step": 1.0,
+        "gas_volume": 552.2203369140625,
+        "total_volume": 653.8890991210938,
+        "coefficient": 0.04746599122881889,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 752.7351684570312,
+        "flow": 0.20896591246128082,
+        "water_volume": 101.66542053222656,
+        "gas_volume": 552.2236938476562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 1.119835615158081,
+        "activation": 1,
+        "gas_pressure": 86.49861907958984,
+        "flow": 0.6470879912376404,
+        "water_volume": 15.340644836425781,
+        "step": 0.5,
+        "gas_volume": 176.00767517089844,
+        "total_volume": 191.34832763671875,
+        "coefficient": 1.7457765340805054,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 86.41610717773438,
+        "flow": 16.131086349487305,
+        "water_volume": 15.211389541625977,
+        "gas_volume": 176.13693237304688
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 312.3873291015625,
+        "activation": 1,
+        "gas_pressure": 375.4549560546875,
+        "flow": 0.6158645153045654,
+        "water_volume": 626.5655517578125,
+        "step": 0.5,
+        "gas_volume": 751.02783203125,
+        "total_volume": 1377.5933837890625,
+        "coefficient": 0.05694789066910744,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 375.4537658691406,
+        "flow": 0.22612620890140533,
+        "water_volume": 626.563720703125,
+        "gas_volume": 751.0296630859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 668.1332397460938,
+        "activation": 1,
+        "gas_pressure": 754.0198974609375,
+        "flow": 0.25201037526130676,
+        "water_volume": 493.11553955078125,
+        "step": 0.0,
+        "gas_volume": 492.8388366699219,
+        "total_volume": 985.954345703125,
+        "coefficient": 1.459662914276123,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 754.0199584960938,
+        "flow": 3.3818585872650146,
+        "water_volume": 493.11553955078125,
+        "gas_volume": 492.83880615234375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 47.653072357177734,
+        "activation": 1,
+        "gas_pressure": 81.95988464355469,
+        "flow": 6.651938438415527,
+        "water_volume": 461.6082458496094,
+        "step": 0.10000000149011612,
+        "gas_volume": 874.3696899414062,
+        "total_volume": 1335.9779052734375,
+        "coefficient": 0.6280081868171692,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 81.95988464355469,
+        "flow": 0.0,
+        "water_volume": 461.6082458496094,
+        "gas_volume": 874.36962890625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 784.821044921875,
+        "activation": 1,
+        "gas_pressure": 788.140625,
+        "flow": 5.839242458343506,
+        "water_volume": 597.2877807617188,
+        "step": 0.0,
+        "gas_volume": 828.7413330078125,
+        "total_volume": 1426.029052734375,
+        "coefficient": 0.5753534436225891,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 788.1406860351562,
+        "flow": 2.096555233001709,
+        "water_volume": 597.2877807617188,
+        "gas_volume": 828.7412719726562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 680.9252319335938,
+        "activation": 1,
+        "gas_pressure": 774.5670776367188,
+        "flow": 3.767225980758667,
+        "water_volume": 909.39306640625,
+        "step": 1.0,
+        "gas_volume": 782.1806640625,
+        "total_volume": 1691.57373046875,
+        "coefficient": 1.6813803911209106,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 774.147705078125,
+        "flow": 20.33812713623047,
+        "water_volume": 909.067138671875,
+        "gas_volume": 782.506591796875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 61.15824890136719,
+        "activation": 1,
+        "gas_pressure": 90.09107208251953,
+        "flow": 7.968633651733398,
+        "water_volume": 508.20684814453125,
+        "step": 0.0,
+        "gas_volume": 271.8326416015625,
+        "total_volume": 780.0394897460938,
+        "coefficient": 1.509851336479187,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 90.09107208251953,
+        "flow": 10.151719093322754,
+        "water_volume": 508.20684814453125,
+        "gas_volume": 271.8326416015625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 394.8587341308594,
+        "activation": 1,
+        "gas_pressure": 475.60284423828125,
+        "flow": 0.35772550106048584,
+        "water_volume": 664.1182861328125,
+        "step": 1.0,
+        "gas_volume": 102.00518798828125,
+        "total_volume": 766.1234741210938,
+        "coefficient": 0.8761285543441772,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 474.8392333984375,
+        "flow": 7.872692108154297,
+        "water_volume": 663.9921264648438,
+        "gas_volume": 102.13134765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 484.98553466796875,
+        "activation": 1,
+        "gas_pressure": 504.4641418457031,
+        "flow": 9.121989250183105,
+        "water_volume": 986.3153686523438,
+        "step": 0.5,
+        "gas_volume": 205.39138793945312,
+        "total_volume": 1191.706787109375,
+        "coefficient": 1.6419141292572021,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 504.3713073730469,
+        "flow": 3.6232590675354004,
+        "water_volume": 986.2863159179688,
+        "gas_volume": 205.42047119140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 260.6417236328125,
+        "activation": 1,
+        "gas_pressure": 262.20306396484375,
+        "flow": 8.850271224975586,
+        "water_volume": 43.83537673950195,
+        "step": 0.5,
+        "gas_volume": 862.3746337890625,
+        "total_volume": 906.2100219726562,
+        "coefficient": 1.0548279285430908,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 262.2020263671875,
+        "flow": 0.3295113742351532,
+        "water_volume": 43.83273696899414,
+        "gas_volume": 862.3772583007812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 45.85383605957031,
+        "activation": 1,
+        "gas_pressure": 132.71011352539062,
+        "flow": 7.461112022399902,
+        "water_volume": 789.5188598632812,
+        "step": 0.0,
+        "gas_volume": 129.8505859375,
+        "total_volume": 919.3694458007812,
+        "coefficient": 1.2446178197860718,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 132.71011352539062,
+        "flow": 11.5994291305542,
+        "water_volume": 789.5188598632812,
+        "gas_volume": 129.8505859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 570.955322265625,
+        "activation": 1,
+        "gas_pressure": 636.2803344726562,
+        "flow": 1.2948890924453735,
+        "water_volume": 815.6199340820312,
+        "step": 0.10000000149011612,
+        "gas_volume": 198.09426879882812,
+        "total_volume": 1013.7142333984375,
+        "coefficient": 1.6141853332519531,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 636.25830078125,
+        "flow": 3.2616183757781982,
+        "water_volume": 815.6146850585938,
+        "gas_volume": 198.09954833984375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 256.6357727050781,
+        "activation": 1,
+        "gas_pressure": 344.0967712402344,
+        "flow": 5.426196575164795,
+        "water_volume": 259.2568054199219,
+        "step": 0.10000000149011612,
+        "gas_volume": 284.27294921875,
+        "total_volume": 543.52978515625,
+        "coefficient": 0.3033994436264038,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 344.0931091308594,
+        "flow": 1.418704628944397,
+        "water_volume": 259.2545166015625,
+        "gas_volume": 284.2752685546875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 291.65899658203125,
+        "activation": 1,
+        "gas_pressure": 335.9748840332031,
+        "flow": 3.562500476837158,
+        "water_volume": 598.6928100585938,
+        "step": 0.0,
+        "gas_volume": 804.6917724609375,
+        "total_volume": 1403.384521484375,
+        "coefficient": 1.1229790449142456,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 335.97491455078125,
+        "flow": 7.475691795349121,
+        "water_volume": 598.6928100585938,
+        "gas_volume": 804.6917114257812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 739.0552368164062,
+        "activation": 1,
+        "gas_pressure": 766.0016479492188,
+        "flow": 9.595996856689453,
+        "water_volume": 951.9237060546875,
+        "step": 0.10000000149011612,
+        "gas_volume": 927.9482421875,
+        "total_volume": 1879.8719482421875,
+        "coefficient": 1.8604116439819336,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 766.0016479492188,
+        "flow": 0.0,
+        "water_volume": 951.9237060546875,
+        "gas_volume": 927.9482421875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 672.7728881835938,
+        "activation": 1,
+        "gas_pressure": 725.4409790039062,
+        "flow": 0.4766955077648163,
+        "water_volume": 424.4685974121094,
+        "step": 0.0,
+        "gas_volume": 123.1277084350586,
+        "total_volume": 547.5963134765625,
+        "coefficient": 1.049134612083435,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 725.44091796875,
+        "flow": 15.227724075317383,
+        "water_volume": 424.4685974121094,
+        "gas_volume": 123.12771606445312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 190.61695861816406,
+        "activation": 1,
+        "gas_pressure": 268.5467529296875,
+        "flow": 1.1293799877166748,
+        "water_volume": 12.711052894592285,
+        "step": 0.0,
+        "gas_volume": 850.4009399414062,
+        "total_volume": 863.1119995117188,
+        "coefficient": 1.570876121520996,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 268.5467529296875,
+        "flow": 6.93367862701416,
+        "water_volume": 12.711052894592285,
+        "gas_volume": 850.4009399414062
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 373.8664245605469,
+        "activation": 1,
+        "gas_pressure": 443.4638977050781,
+        "flow": 6.3806939125061035,
+        "water_volume": 720.9458618164062,
+        "step": 0.5,
+        "gas_volume": 428.0574645996094,
+        "total_volume": 1149.0032958984375,
+        "coefficient": 0.8345253467559814,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 443.4451904296875,
+        "flow": 1.740509033203125,
+        "water_volume": 720.9319458007812,
+        "gas_volume": 428.07135009765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 231.53323364257812,
+        "activation": 1,
+        "gas_pressure": 279.2606201171875,
+        "flow": 7.543210983276367,
+        "water_volume": 942.1508178710938,
+        "step": 0.5,
+        "gas_volume": 639.653076171875,
+        "total_volume": 1581.803955078125,
+        "coefficient": 0.9928354024887085,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 279.2605895996094,
+        "flow": 0.0,
+        "water_volume": 942.1508178710938,
+        "gas_volume": 639.6531372070312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 729.84716796875,
+        "activation": 1,
+        "gas_pressure": 739.7988891601562,
+        "flow": 5.39911413192749,
+        "water_volume": 459.1546630859375,
+        "step": 0.0,
+        "gas_volume": 826.89111328125,
+        "total_volume": 1286.0457763671875,
+        "coefficient": 0.34189608693122864,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 739.7988891601562,
+        "flow": 0.5392786860466003,
+        "water_volume": 459.1546630859375,
+        "gas_volume": 826.89111328125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 662.1532592773438,
+        "activation": 1,
+        "gas_pressure": 738.3644409179688,
+        "flow": 0.4104378819465637,
+        "water_volume": 60.119171142578125,
+        "step": 0.5,
+        "gas_volume": 769.8230590820312,
+        "total_volume": 829.9422607421875,
+        "coefficient": 0.3790511190891266,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 738.347900390625,
+        "flow": 1.6545394659042358,
+        "water_volume": 60.10591506958008,
+        "gas_volume": 769.8363647460938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 369.4676818847656,
+        "activation": 1,
+        "gas_pressure": 408.5508117675781,
+        "flow": 9.923698425292969,
+        "water_volume": 568.2128295898438,
+        "step": 0.5,
+        "gas_volume": 108.77570343017578,
+        "total_volume": 676.988525390625,
+        "coefficient": 1.9358296394348145,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 408.43255615234375,
+        "flow": 3.0255324840545654,
+        "water_volume": 568.1885986328125,
+        "gas_volume": 108.7999267578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 378.1343078613281,
+        "activation": 1,
+        "gas_pressure": 467.8406982421875,
+        "flow": 8.304628372192383,
+        "water_volume": 615.708984375,
+        "step": 1.0,
+        "gas_volume": 943.9736938476562,
+        "total_volume": 1559.6826171875,
+        "coefficient": 0.7165728211402893,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 467.70062255859375,
+        "flow": 13.57381820678711,
+        "water_volume": 615.491455078125,
+        "gas_volume": 944.191162109375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 132.87208557128906,
+        "activation": 1,
+        "gas_pressure": 141.4787139892578,
+        "flow": 1.4841866493225098,
+        "water_volume": 640.6204833984375,
+        "step": 1.0,
+        "gas_volume": 693.9932250976562,
+        "total_volume": 1334.61376953125,
+        "coefficient": 0.24136246740818024,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 141.4779510498047,
+        "flow": 0.17702160775661469,
+        "water_volume": 640.61767578125,
+        "gas_volume": 693.99609375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 163.4022674560547,
+        "activation": 1,
+        "gas_pressure": 171.78956604003906,
+        "flow": 9.287294387817383,
+        "water_volume": 586.927001953125,
+        "step": 0.10000000149011612,
+        "gas_volume": 767.9301147460938,
+        "total_volume": 1354.857177734375,
+        "coefficient": 0.744011402130127,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 171.78880310058594,
+        "flow": 1.6160392761230469,
+        "water_volume": 586.9244384765625,
+        "gas_volume": 767.9327392578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 217.8489532470703,
+        "activation": 1,
+        "gas_pressure": 300.2550354003906,
+        "flow": 1.9127379655838013,
+        "water_volume": 649.8694458007812,
+        "step": 1.0,
+        "gas_volume": 791.170166015625,
+        "total_volume": 1441.03955078125,
+        "coefficient": 0.7784048914909363,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 300.21319580078125,
+        "flow": 5.299641132354736,
+        "water_volume": 649.7845458984375,
+        "gas_volume": 791.2550048828125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 704.7510375976562,
+        "activation": 1,
+        "gas_pressure": 758.2664184570312,
+        "flow": 8.890054702758789,
+        "water_volume": 297.41119384765625,
+        "step": 0.0,
+        "gas_volume": 287.888671875,
+        "total_volume": 585.2998657226562,
+        "coefficient": 1.4929885864257812,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 758.2664184570312,
+        "flow": 2.7304599285125732,
+        "water_volume": 297.41119384765625,
+        "gas_volume": 287.888671875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 579.9161376953125,
+        "activation": 1,
+        "gas_pressure": 654.3101196289062,
+        "flow": 7.546494960784912,
+        "water_volume": 366.4352722167969,
+        "step": 1.0,
+        "gas_volume": 954.6256713867188,
+        "total_volume": 1321.0609130859375,
+        "coefficient": 1.4914007186889648,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 654.2183227539062,
+        "flow": 6.4318108558654785,
+        "water_volume": 366.3321838378906,
+        "gas_volume": 954.728759765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 116.78926849365234,
+        "activation": 1,
+        "gas_pressure": 155.58522033691406,
+        "flow": 0.5846352577209473,
+        "water_volume": 874.3662719726562,
+        "step": 0.0,
+        "gas_volume": 880.5296630859375,
+        "total_volume": 1754.89599609375,
+        "coefficient": 0.04356548935174942,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 155.585205078125,
+        "flow": 0.06783843040466309,
+        "water_volume": 874.3662719726562,
+        "gas_volume": 880.5297241210938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 355.7883605957031,
+        "activation": 1,
+        "gas_pressure": 446.9299011230469,
+        "flow": 1.8717801570892334,
+        "water_volume": 637.7206420898438,
+        "step": 0.5,
+        "gas_volume": 763.6026611328125,
+        "total_volume": 1401.3232421875,
+        "coefficient": 0.09956128150224686,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 446.9212646484375,
+        "flow": 1.4257386922836304,
+        "water_volume": 637.709228515625,
+        "gas_volume": 763.614013671875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 716.3184814453125,
+        "activation": 1,
+        "gas_pressure": 733.5283203125,
+        "flow": 0.2039826214313507,
+        "water_volume": 572.3213500976562,
+        "step": 0.5,
+        "gas_volume": 550.9066162109375,
+        "total_volume": 1123.22802734375,
+        "coefficient": 0.2347758710384369,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 733.5214233398438,
+        "flow": 0.4869808256626129,
+        "water_volume": 572.3174438476562,
+        "gas_volume": 550.9105834960938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 193.2423858642578,
+        "activation": 1,
+        "gas_pressure": 264.1422424316406,
+        "flow": 8.920186996459961,
+        "water_volume": 374.43804931640625,
+        "step": 0.10000000149011612,
+        "gas_volume": 589.963623046875,
+        "total_volume": 964.4016723632812,
+        "coefficient": 1.2794185876846313,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 264.1322021484375,
+        "flow": 10.772967338562012,
+        "water_volume": 374.4207763671875,
+        "gas_volume": 589.9808959960938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 496.78411865234375,
+        "activation": 1,
+        "gas_pressure": 523.7321166992188,
+        "flow": 1.0828341245651245,
+        "water_volume": 499.417724609375,
+        "step": 0.10000000149011612,
+        "gas_volume": 406.4870300292969,
+        "total_volume": 905.90478515625,
+        "coefficient": 0.8666807413101196,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 523.7169799804688,
+        "flow": 5.623833179473877,
+        "water_volume": 499.4087219238281,
+        "gas_volume": 406.4960632324219
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 184.9557342529297,
+        "activation": 1,
+        "gas_pressure": 281.43035888671875,
+        "flow": 0.3426014184951782,
+        "water_volume": 210.3271942138672,
+        "step": 1.0,
+        "gas_volume": 475.77264404296875,
+        "total_volume": 686.099853515625,
+        "coefficient": 1.1932241916656494,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 281.358154296875,
+        "flow": 5.860013484954834,
+        "water_volume": 210.2332763671875,
+        "gas_volume": 475.8665771484375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 759.034423828125,
+        "activation": 1,
+        "gas_pressure": 762.6057739257812,
+        "flow": 7.143944263458252,
+        "water_volume": 714.888671875,
+        "step": 0.5,
+        "gas_volume": 452.2197570800781,
+        "total_volume": 1167.1083984375,
+        "coefficient": 0.2138805240392685,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 762.5951538085938,
+        "flow": 0.6062876582145691,
+        "water_volume": 714.8837890625,
+        "gas_volume": 452.224609375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 527.1407470703125,
+        "activation": 1,
+        "gas_pressure": 616.2973022460938,
+        "flow": 7.424166202545166,
+        "water_volume": 14.356942176818848,
+        "step": 0.5,
+        "gas_volume": 905.2098388671875,
+        "total_volume": 919.5667724609375,
+        "coefficient": 0.6813385486602783,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 616.285888671875,
+        "flow": 1.6083464622497559,
+        "water_volume": 14.34405517578125,
+        "gas_volume": 905.2227172851562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": -9.273557662963867,
+        "activation": 1,
+        "gas_pressure": 78.00701904296875,
+        "flow": 5.551173210144043,
+        "water_volume": 325.9875183105469,
+        "step": 0.0,
+        "gas_volume": 300.5433349609375,
+        "total_volume": 626.5308837890625,
+        "coefficient": 0.15279942750930786,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 78.00701141357422,
+        "flow": 0.3568786382675171,
+        "water_volume": 325.9875183105469,
+        "gas_volume": 300.5433654785156
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 524.7582397460938,
+        "activation": 1,
+        "gas_pressure": 607.0767822265625,
+        "flow": 9.558806419372559,
+        "water_volume": 365.1015930175781,
+        "step": 0.0,
+        "gas_volume": 502.7035217285156,
+        "total_volume": 867.8051147460938,
+        "coefficient": 1.0555680990219116,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 607.0767822265625,
+        "flow": 7.18284273147583,
+        "water_volume": 365.1015930175781,
+        "gas_volume": 502.7035217285156
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 676.613037109375,
+        "activation": 1,
+        "gas_pressure": 766.2364501953125,
+        "flow": 9.347879409790039,
+        "water_volume": 854.584716796875,
+        "step": 0.0,
+        "gas_volume": 330.8262939453125,
+        "total_volume": 1185.4110107421875,
+        "coefficient": 0.7848672270774841,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 766.2364501953125,
+        "flow": 3.7151551246643066,
+        "water_volume": 854.584716796875,
+        "gas_volume": 330.8262939453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 285.1437072753906,
+        "activation": 1,
+        "gas_pressure": 380.7162170410156,
+        "flow": 6.6661810874938965,
+        "water_volume": 943.9891357421875,
+        "step": 0.10000000149011612,
+        "gas_volume": 241.0509033203125,
+        "total_volume": 1185.0400390625,
+        "coefficient": 1.9632540941238403,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 380.6214904785156,
+        "flow": 28.789508819580078,
+        "water_volume": 943.9429931640625,
+        "gas_volume": 241.0970458984375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 787.2586669921875,
+        "activation": 1,
+        "gas_pressure": 788.6490478515625,
+        "flow": 4.311615943908691,
+        "water_volume": 623.3734130859375,
+        "step": 0.5,
+        "gas_volume": 110.90625,
+        "total_volume": 734.2796630859375,
+        "coefficient": 0.8978477120399475,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 788.5706176757812,
+        "flow": 1.0586918592453003,
+        "water_volume": 623.3649291992188,
+        "gas_volume": 110.91473388671875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 512.88671875,
+        "activation": 1,
+        "gas_pressure": 562.7238159179688,
+        "flow": 0.42812326550483704,
+        "water_volume": 684.61279296875,
+        "step": 0.0,
+        "gas_volume": 980.1060180664062,
+        "total_volume": 1664.71875,
+        "coefficient": 0.5388284921646118,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 562.723876953125,
+        "flow": 1.9019404649734497,
+        "water_volume": 684.61279296875,
+        "gas_volume": 980.10595703125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 551.6349487304688,
+        "activation": 1,
+        "gas_pressure": 595.50048828125,
+        "flow": 8.93387508392334,
+        "water_volume": 538.700439453125,
+        "step": 1.0,
+        "gas_volume": 369.9332580566406,
+        "total_volume": 908.6336669921875,
+        "coefficient": 0.816106915473938,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 595.3193359375,
+        "flow": 5.405162811279297,
+        "water_volume": 538.6138305664062,
+        "gas_volume": 370.01983642578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 361.302490234375,
+        "activation": 1,
+        "gas_pressure": 425.14666748046875,
+        "flow": 9.523950576782227,
+        "water_volume": 284.69952392578125,
+        "step": 1.0,
+        "gas_volume": 926.9633178710938,
+        "total_volume": 1211.662841796875,
+        "coefficient": 1.786444067955017,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 424.8740234375,
+        "flow": 28.548288345336914,
+        "water_volume": 284.24200439453125,
+        "gas_volume": 927.4208374023438
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 103.53514862060547,
+        "activation": 1,
+        "gas_pressure": 197.84075927734375,
+        "flow": 8.066972732543945,
+        "water_volume": 971.9147338867188,
+        "step": 0.5,
+        "gas_volume": 454.5244140625,
+        "total_volume": 1426.439208984375,
+        "coefficient": 0.9817256927490234,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 197.8299102783203,
+        "flow": 2.383410930633545,
+        "water_volume": 971.8956298828125,
+        "gas_volume": 454.5435791015625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 85.03156280517578,
+        "activation": 1,
+        "gas_pressure": 117.20563507080078,
+        "flow": 1.298061728477478,
+        "water_volume": 99.8749008178711,
+        "step": 1.0,
+        "gas_volume": 383.5675964355469,
+        "total_volume": 483.4425048828125,
+        "coefficient": 0.9094434380531311,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 117.1810073852539,
+        "flow": 3.868921995162964,
+        "water_volume": 99.81289672851562,
+        "gas_volume": 383.6296081542969
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 191.9666290283203,
+        "activation": 1,
+        "gas_pressure": 205.19415283203125,
+        "flow": 6.30557107925415,
+        "water_volume": 485.43212890625,
+        "step": 1.0,
+        "gas_volume": 231.52540588378906,
+        "total_volume": 716.95751953125,
+        "coefficient": 0.6151121854782104,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 205.13223266601562,
+        "flow": 3.355713367462158,
+        "water_volume": 485.37835693359375,
+        "gas_volume": 231.57916259765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 57.241310119628906,
+        "activation": 1,
+        "gas_pressure": 127.53633880615234,
+        "flow": 0.27768391370773315,
+        "water_volume": 201.379150390625,
+        "step": 1.0,
+        "gas_volume": 295.465576171875,
+        "total_volume": 496.8447265625,
+        "coefficient": 1.8650715351104736,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 127.25564575195312,
+        "flow": 31.274314880371094,
+        "water_volume": 200.87796020507812,
+        "gas_volume": 295.9667663574219
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 323.12493896484375,
+        "activation": 1,
+        "gas_pressure": 408.643310546875,
+        "flow": 1.8278794288635254,
+        "water_volume": 938.4356079101562,
+        "step": 1.0,
+        "gas_volume": 629.61279296875,
+        "total_volume": 1568.04833984375,
+        "coefficient": 1.1693897247314453,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 408.6068115234375,
+        "flow": 2.7035162448883057,
+        "water_volume": 938.3922729492188,
+        "gas_volume": 629.6560668945312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 163.2595977783203,
+        "activation": 1,
+        "gas_pressure": 247.86756896972656,
+        "flow": 7.378112316131592,
+        "water_volume": 768.0401000976562,
+        "step": 0.5,
+        "gas_volume": 328.0834045410156,
+        "total_volume": 1096.12353515625,
+        "coefficient": 0.72175532579422,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 247.85447692871094,
+        "flow": 1.659723162651062,
+        "water_volume": 768.0267944335938,
+        "gas_volume": 328.09674072265625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 115.65323638916016,
+        "activation": 1,
+        "gas_pressure": 139.77212524414062,
+        "flow": 5.037853717803955,
+        "water_volume": 416.6162414550781,
+        "step": 0.0,
+        "gas_volume": 682.366943359375,
+        "total_volume": 1098.983154296875,
+        "coefficient": 0.14028488099575043,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 139.7721405029297,
+        "flow": 1.0334292650222778,
+        "water_volume": 416.6162414550781,
+        "gas_volume": 682.366943359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 760.7215576171875,
+        "activation": 1,
+        "gas_pressure": 772.2344970703125,
+        "flow": 1.4513853788375854,
+        "water_volume": 442.11419677734375,
+        "step": 0.5,
+        "gas_volume": 360.68072509765625,
+        "total_volume": 802.794921875,
+        "coefficient": 1.4179048538208008,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 772.1004028320312,
+        "flow": 6.013816833496094,
+        "water_volume": 442.0660095214844,
+        "gas_volume": 360.7289123535156
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 752.1427001953125,
+        "activation": 1,
+        "gas_pressure": 758.0521850585938,
+        "flow": 2.33373761177063,
+        "water_volume": 363.1724548339844,
+        "step": 0.10000000149011612,
+        "gas_volume": 780.8907470703125,
+        "total_volume": 1144.063232421875,
+        "coefficient": 0.7454127073287964,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 758.05029296875,
+        "flow": 0.9060279726982117,
+        "water_volume": 363.1709899902344,
+        "gas_volume": 780.8922119140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 579.439697265625,
+        "activation": 1,
+        "gas_pressure": 664.8978881835938,
+        "flow": 5.954065799713135,
+        "water_volume": 12.776142120361328,
+        "step": 0.0,
+        "gas_volume": 557.5528564453125,
+        "total_volume": 570.3289794921875,
+        "coefficient": 0.07522591203451157,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 664.8978881835938,
+        "flow": 1.0431231260299683,
+        "water_volume": 12.776142120361328,
+        "gas_volume": 557.5528564453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 200.24685668945312,
+        "activation": 1,
+        "gas_pressure": 296.0538635253906,
+        "flow": 2.2641303539276123,
+        "water_volume": 423.131591796875,
+        "step": 0.10000000149011612,
+        "gas_volume": 225.15016174316406,
+        "total_volume": 648.28173828125,
+        "coefficient": 0.8259244561195374,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 296.0206604003906,
+        "flow": 12.12635326385498,
+        "water_volume": 423.1121520996094,
+        "gas_volume": 225.16958618164062
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 233.00917053222656,
+        "activation": 1,
+        "gas_pressure": 259.0082092285156,
+        "flow": 1.0606600046157837,
+        "water_volume": 130.44949340820312,
+        "step": 0.5,
+        "gas_volume": 487.58538818359375,
+        "total_volume": 618.034912109375,
+        "coefficient": 0.8068654537200928,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 258.9967956542969,
+        "flow": 2.0570733547210693,
+        "water_volume": 130.43301391601562,
+        "gas_volume": 487.6018981933594
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 679.3306274414062,
+        "activation": 1,
+        "gas_pressure": 733.9112548828125,
+        "flow": 7.442010879516602,
+        "water_volume": 426.51025390625,
+        "step": 0.0,
+        "gas_volume": 746.23779296875,
+        "total_volume": 1172.748046875,
+        "coefficient": 1.1932824850082397,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 733.9112548828125,
+        "flow": 4.407907962799072,
+        "water_volume": 426.51025390625,
+        "gas_volume": 746.23779296875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 740.9573974609375,
+        "activation": 1,
+        "gas_pressure": 750.2156982421875,
+        "flow": 8.993583679199219,
+        "water_volume": 683.933837890625,
+        "step": 0.5,
+        "gas_volume": 791.56298828125,
+        "total_volume": 1475.496826171875,
+        "coefficient": 1.699692964553833,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 750.13916015625,
+        "flow": 7.757599830627441,
+        "water_volume": 683.8717041015625,
+        "gas_volume": 791.6251220703125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 537.5252075195312,
+        "activation": 1,
+        "gas_pressure": 579.4370727539062,
+        "flow": 3.437955617904663,
+        "water_volume": 385.18902587890625,
+        "step": 1.0,
+        "gas_volume": 980.07275390625,
+        "total_volume": 1365.26171875,
+        "coefficient": 1.1037694215774536,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 579.37109375,
+        "flow": 5.35930061340332,
+        "water_volume": 385.1031494140625,
+        "gas_volume": 980.1585693359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 208.64991760253906,
+        "activation": 1,
+        "gas_pressure": 219.0040283203125,
+        "flow": 0.41646459698677063,
+        "water_volume": 847.6068725585938,
+        "step": 0.0,
+        "gas_volume": 751.8121948242188,
+        "total_volume": 1599.4190673828125,
+        "coefficient": 1.0962741374969482,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 219.0040283203125,
+        "flow": 4.409461975097656,
+        "water_volume": 847.6068725585938,
+        "gas_volume": 751.8121948242188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 732.8880615234375,
+        "activation": 1,
+        "gas_pressure": 741.91455078125,
+        "flow": 7.662469387054443,
+        "water_volume": 413.8310546875,
+        "step": 0.0,
+        "gas_volume": 745.892578125,
+        "total_volume": 1159.7236328125,
+        "coefficient": 0.35764452815055847,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 741.91455078125,
+        "flow": 0.5372557044029236,
+        "water_volume": 413.8310546875,
+        "gas_volume": 745.892578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 463.0000305175781,
+        "activation": 1,
+        "gas_pressure": 483.7005920410156,
+        "flow": 6.33783483505249,
+        "water_volume": 640.5426635742188,
+        "step": 0.0,
+        "gas_volume": 590.744873046875,
+        "total_volume": 1231.28759765625,
+        "coefficient": 0.855690598487854,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 483.7005310058594,
+        "flow": 0.0,
+        "water_volume": 640.5426635742188,
+        "gas_volume": 590.7449340820312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 281.54180908203125,
+        "activation": 1,
+        "gas_pressure": 291.6076354980469,
+        "flow": 9.688654899597168,
+        "water_volume": 178.79583740234375,
+        "step": 1.0,
+        "gas_volume": 438.1649475097656,
+        "total_volume": 616.9608154296875,
+        "coefficient": 1.8556166887283325,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 291.4851989746094,
+        "flow": 8.83088493347168,
+        "water_volume": 178.65431213378906,
+        "gas_volume": 438.3065185546875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 106.80768585205078,
+        "activation": 1,
+        "gas_pressure": 158.8207550048828,
+        "flow": 2.965712785720825,
+        "water_volume": 939.0324096679688,
+        "step": 0.5,
+        "gas_volume": 620.3218383789062,
+        "total_volume": 1559.354248046875,
+        "coefficient": 0.11454375088214874,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 158.8207550048828,
+        "flow": 0.0,
+        "water_volume": 939.0324096679688,
+        "gas_volume": 620.3218383789062
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 519.1103515625,
+        "activation": 1,
+        "gas_pressure": 535.4362182617188,
+        "flow": 7.091827869415283,
+        "water_volume": 144.56883239746094,
+        "step": 0.0,
+        "gas_volume": 598.6312866210938,
+        "total_volume": 743.2001342773438,
+        "coefficient": 1.3116647005081177,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 535.4362182617188,
+        "flow": 1.3249545097351074,
+        "water_volume": 144.56883239746094,
+        "gas_volume": 598.6312866210938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 668.9998168945312,
+        "activation": 1,
+        "gas_pressure": 753.073974609375,
+        "flow": 5.092884063720703,
+        "water_volume": 309.9180908203125,
+        "step": 0.10000000149011612,
+        "gas_volume": 524.7578125,
+        "total_volume": 834.6759033203125,
+        "coefficient": 0.8925802707672119,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 753.073974609375,
+        "flow": 0.0,
+        "water_volume": 309.9180908203125,
+        "gas_volume": 524.7578125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 409.34039306640625,
+        "activation": 1,
+        "gas_pressure": 485.2787170410156,
+        "flow": 2.8006505966186523,
+        "water_volume": 170.8456268310547,
+        "step": 1.0,
+        "gas_volume": 115.90837860107422,
+        "total_volume": 286.7539978027344,
+        "coefficient": 0.48402300477027893,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 484.9111022949219,
+        "flow": 4.217902183532715,
+        "water_volume": 170.7780303955078,
+        "gas_volume": 115.97596740722656
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 117.43989562988281,
+        "activation": 1,
+        "gas_pressure": 215.94296264648438,
+        "flow": 7.9992265701293945,
+        "water_volume": 890.5159912109375,
+        "step": 0.0,
+        "gas_volume": 934.0178833007812,
+        "total_volume": 1824.533935546875,
+        "coefficient": 1.917372703552246,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 215.9429473876953,
+        "flow": 19.02967643737793,
+        "water_volume": 890.5159912109375,
+        "gas_volume": 934.0179443359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 157.64328002929688,
+        "activation": 1,
+        "gas_pressure": 175.96873474121094,
+        "flow": 9.535493850708008,
+        "water_volume": 515.7557373046875,
+        "step": 0.10000000149011612,
+        "gas_volume": 156.06387329101562,
+        "total_volume": 671.819580078125,
+        "coefficient": 0.6098102927207947,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 175.9657440185547,
+        "flow": 1.305245280265808,
+        "water_volume": 515.753662109375,
+        "gas_volume": 156.06591796875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 125.16535949707031,
+        "activation": 1,
+        "gas_pressure": 188.85165405273438,
+        "flow": 0.14657440781593323,
+        "water_volume": 24.997608184814453,
+        "step": 0.5,
+        "gas_volume": 553.3627319335938,
+        "total_volume": 578.3603515625,
+        "coefficient": 1.4224131107330322,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 188.82138061523438,
+        "flow": 8.51353645324707,
+        "water_volume": 24.92938995361328,
+        "gas_volume": 553.4309692382812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 544.003173828125,
+        "activation": 1,
+        "gas_pressure": 566.3214721679688,
+        "flow": 7.101579666137695,
+        "water_volume": 85.33207702636719,
+        "step": 0.0,
+        "gas_volume": 859.7738037109375,
+        "total_volume": 945.1058959960938,
+        "coefficient": 1.824576735496521,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 566.3214721679688,
+        "flow": 8.619709968566895,
+        "water_volume": 85.33207702636719,
+        "gas_volume": 859.7738037109375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 101.81709289550781,
+        "activation": 1,
+        "gas_pressure": 141.31439208984375,
+        "flow": 6.799647331237793,
+        "water_volume": 162.03460693359375,
+        "step": 0.5,
+        "gas_volume": 833.2154541015625,
+        "total_volume": 995.2500610351562,
+        "coefficient": 1.1122711896896362,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 141.31439208984375,
+        "flow": 0.0,
+        "water_volume": 162.03460693359375,
+        "gas_volume": 833.2154541015625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 102.71964263916016,
+        "activation": 1,
+        "gas_pressure": 135.52044677734375,
+        "flow": 5.528147220611572,
+        "water_volume": 37.41267776489258,
+        "step": 0.10000000149011612,
+        "gas_volume": 804.6492919921875,
+        "total_volume": 842.0619506835938,
+        "coefficient": 0.07036630809307098,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 135.5203399658203,
+        "flow": 0.3022513687610626,
+        "water_volume": 37.412193298339844,
+        "gas_volume": 804.6497802734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 686.9459838867188,
+        "activation": 1,
+        "gas_pressure": 747.9642944335938,
+        "flow": 3.687488079071045,
+        "water_volume": 196.44287109375,
+        "step": 0.0,
+        "gas_volume": 333.23211669921875,
+        "total_volume": 529.6749877929688,
+        "coefficient": 0.5686542391777039,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 747.9642944335938,
+        "flow": 4.44199800491333,
+        "water_volume": 196.44287109375,
+        "gas_volume": 333.23211669921875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 186.75396728515625,
+        "activation": 1,
+        "gas_pressure": 212.67164611816406,
+        "flow": 5.351449489593506,
+        "water_volume": 43.64218521118164,
+        "step": 1.0,
+        "gas_volume": 242.73504638671875,
+        "total_volume": 286.3772277832031,
+        "coefficient": 1.5724867582321167,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 212.63511657714844,
+        "flow": 2.001359224319458,
+        "water_volume": 43.610111236572266,
+        "gas_volume": 242.76712036132812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 540.215087890625,
+        "activation": 1,
+        "gas_pressure": 590.0179443359375,
+        "flow": 4.554967403411865,
+        "water_volume": 253.6541290283203,
+        "step": 0.5,
+        "gas_volume": 220.72647094726562,
+        "total_volume": 474.380615234375,
+        "coefficient": 1.8976893424987793,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 589.6452026367188,
+        "flow": 13.392210006713867,
+        "water_volume": 253.54681396484375,
+        "gas_volume": 220.83380126953125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 590.47509765625,
+        "activation": 1,
+        "gas_pressure": 682.2127075195312,
+        "flow": 9.541552543640137,
+        "water_volume": 959.2621459960938,
+        "step": 1.0,
+        "gas_volume": 430.96783447265625,
+        "total_volume": 1390.22998046875,
+        "coefficient": 0.9044302701950073,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 681.9271850585938,
+        "flow": 8.66261100769043,
+        "water_volume": 959.1233520507812,
+        "gas_volume": 431.10662841796875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 675.693115234375,
+        "activation": 1,
+        "gas_pressure": 725.9415283203125,
+        "flow": 1.5794451236724854,
+        "water_volume": 14.277823448181152,
+        "step": 1.0,
+        "gas_volume": 702.4613647460938,
+        "total_volume": 716.7391967773438,
+        "coefficient": 1.4307992458343506,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 725.6686401367188,
+        "flow": 12.677974700927734,
+        "water_volume": 14.074650764465332,
+        "gas_volume": 702.66455078125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 60.44968795776367,
+        "activation": 1,
+        "gas_pressure": 146.5698699951172,
+        "flow": 8.869973182678223,
+        "water_volume": 405.8924560546875,
+        "step": 1.0,
+        "gas_volume": 145.5861358642578,
+        "total_volume": 551.4785766601562,
+        "coefficient": 1.1263141632080078,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 146.24171447753906,
+        "flow": 15.678455352783203,
+        "water_volume": 405.6412048339844,
+        "gas_volume": 145.83737182617188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 311.6865234375,
+        "activation": 1,
+        "gas_pressure": 320.0426330566406,
+        "flow": 7.437061309814453,
+        "water_volume": 815.9197387695312,
+        "step": 1.0,
+        "gas_volume": 839.4551391601562,
+        "total_volume": 1655.3748779296875,
+        "coefficient": 1.4092844724655151,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 320.002197265625,
+        "flow": 5.092262268066406,
+        "water_volume": 815.838134765625,
+        "gas_volume": 839.5367431640625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 627.661376953125,
+        "activation": 1,
+        "gas_pressure": 688.5166015625,
+        "flow": 2.678760051727295,
+        "water_volume": 68.37583923339844,
+        "step": 1.0,
+        "gas_volume": 776.6695556640625,
+        "total_volume": 845.04541015625,
+        "coefficient": 1.8641979694366455,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 688.449462890625,
+        "flow": 3.635640859603882,
+        "water_volume": 68.31757354736328,
+        "gas_volume": 776.7278442382812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 433.6937561035156,
+        "activation": 1,
+        "gas_pressure": 454.339599609375,
+        "flow": 7.908848285675049,
+        "water_volume": 89.38108825683594,
+        "step": 0.5,
+        "gas_volume": 517.0661010742188,
+        "total_volume": 606.4472045898438,
+        "coefficient": 1.8130685091018677,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 454.2830505371094,
+        "flow": 6.178624153137207,
+        "water_volume": 89.33158111572266,
+        "gas_volume": 517.1156005859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 427.1592712402344,
+        "activation": 1,
+        "gas_pressure": 495.25054931640625,
+        "flow": 5.239214897155762,
+        "water_volume": 990.4282836914062,
+        "step": 0.10000000149011612,
+        "gas_volume": 258.01715087890625,
+        "total_volume": 1248.4454345703125,
+        "coefficient": 1.5078078508377075,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 495.151123046875,
+        "flow": 24.88408851623535,
+        "water_volume": 990.388427734375,
+        "gas_volume": 258.0570068359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 719.7510986328125,
+        "activation": 1,
+        "gas_pressure": 782.9759521484375,
+        "flow": 8.918527603149414,
+        "water_volume": 113.6243896484375,
+        "step": 1.0,
+        "gas_volume": 992.931396484375,
+        "total_volume": 1106.5557861328125,
+        "coefficient": 1.1276965141296387,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 782.8286743164062,
+        "flow": 8.966772079467773,
+        "water_volume": 113.4806900024414,
+        "gas_volume": 993.0750732421875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 438.6026916503906,
+        "activation": 1,
+        "gas_pressure": 532.9849243164062,
+        "flow": 2.337073802947998,
+        "water_volume": 413.56201171875,
+        "step": 1.0,
+        "gas_volume": 806.7562866210938,
+        "total_volume": 1220.318359375,
+        "coefficient": 1.4563283920288086,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 532.6929321289062,
+        "flow": 21.222457885742188,
+        "water_volume": 413.2218933105469,
+        "gas_volume": 807.096435546875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 338.9637451171875,
+        "activation": 1,
+        "gas_pressure": 376.9696350097656,
+        "flow": 9.527347564697266,
+        "water_volume": 354.6935119628906,
+        "step": 0.10000000149011612,
+        "gas_volume": 227.8816375732422,
+        "total_volume": 582.5751342773438,
+        "coefficient": 1.6467653512954712,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 376.94342041015625,
+        "flow": 7.614097595214844,
+        "water_volume": 354.6813049316406,
+        "gas_volume": 227.89382934570312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 592.8350219726562,
+        "activation": 1,
+        "gas_pressure": 618.664794921875,
+        "flow": 3.232795238494873,
+        "water_volume": 995.3408203125,
+        "step": 1.0,
+        "gas_volume": 602.6837158203125,
+        "total_volume": 1598.0245361328125,
+        "coefficient": 1.734473466873169,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 618.3821411132812,
+        "flow": 13.222671508789062,
+        "water_volume": 995.12890625,
+        "gas_volume": 602.8956298828125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 184.67393493652344,
+        "activation": 1,
+        "gas_pressure": 216.2825164794922,
+        "flow": 4.452114582061768,
+        "water_volume": 178.3113250732422,
+        "step": 0.0,
+        "gas_volume": 110.04585266113281,
+        "total_volume": 288.357177734375,
+        "coefficient": 0.4680626392364502,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 216.2825164794922,
+        "flow": 3.9472782611846924,
+        "water_volume": 178.3113250732422,
+        "gas_volume": 110.04585266113281
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 90.16020202636719,
+        "activation": 1,
+        "gas_pressure": 98.9272689819336,
+        "flow": 7.467360973358154,
+        "water_volume": 63.13538360595703,
+        "step": 1.0,
+        "gas_volume": 305.28778076171875,
+        "total_volume": 368.42315673828125,
+        "coefficient": 1.387187123298645,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 98.88569641113281,
+        "flow": 6.161032199859619,
+        "water_volume": 63.03664779663086,
+        "gas_volume": 305.3865051269531
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 499.1931457519531,
+        "activation": 1,
+        "gas_pressure": 534.8539428710938,
+        "flow": 0.019400058314204216,
+        "water_volume": 48.128971099853516,
+        "step": 0.0,
+        "gas_volume": 132.24032592773438,
+        "total_volume": 180.36929321289062,
+        "coefficient": 1.8188765048980713,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 534.8539428710938,
+        "flow": 8.146292686462402,
+        "water_volume": 48.128971099853516,
+        "gas_volume": 132.24032592773438
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 552.2677001953125,
+        "activation": 1,
+        "gas_pressure": 600.895751953125,
+        "flow": 5.398374557495117,
+        "water_volume": 180.1663360595703,
+        "step": 0.5,
+        "gas_volume": 510.9421081542969,
+        "total_volume": 691.1084594726562,
+        "coefficient": 1.260419249534607,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 600.7342529296875,
+        "flow": 13.184076309204102,
+        "water_volume": 180.06069946289062,
+        "gas_volume": 511.0477600097656
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 615.2349243164062,
+        "activation": 1,
+        "gas_pressure": 647.1732177734375,
+        "flow": 6.103525638580322,
+        "water_volume": 295.9041442871094,
+        "step": 1.0,
+        "gas_volume": 554.2166748046875,
+        "total_volume": 850.120849609375,
+        "coefficient": 0.09573424607515335,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 647.1665649414062,
+        "flow": 0.27051612734794617,
+        "water_volume": 295.8998107910156,
+        "gas_volume": 554.2210693359375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 472.9642639160156,
+        "activation": 1,
+        "gas_pressure": 536.0505981445312,
+        "flow": 1.1648937463760376,
+        "water_volume": 156.40945434570312,
+        "step": 1.0,
+        "gas_volume": 573.073974609375,
+        "total_volume": 729.4833984375,
+        "coefficient": 0.16151927411556244,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 536.0194091796875,
+        "flow": 1.6036220788955688,
+        "water_volume": 156.38375854492188,
+        "gas_volume": 573.099609375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 485.5888671875,
+        "activation": 1,
+        "gas_pressure": 552.8450927734375,
+        "flow": 0.1671658605337143,
+        "water_volume": 213.61334228515625,
+        "step": 0.5,
+        "gas_volume": 443.834228515625,
+        "total_volume": 657.4475708007812,
+        "coefficient": 0.22167734801769257,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 552.8156127929688,
+        "flow": 2.2724668979644775,
+        "water_volume": 213.5951385498047,
+        "gas_volume": 443.8524169921875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 54.77961349487305,
+        "activation": 1,
+        "gas_pressure": 134.77586364746094,
+        "flow": 7.9064860343933105,
+        "water_volume": 294.4543151855469,
+        "step": 0.10000000149011612,
+        "gas_volume": 153.53599548339844,
+        "total_volume": 447.99029541015625,
+        "coefficient": 1.4607993364334106,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 134.76393127441406,
+        "flow": 6.532740116119385,
+        "water_volume": 294.44384765625,
+        "gas_volume": 153.54644775390625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 172.84146118164062,
+        "activation": 1,
+        "gas_pressure": 261.4952392578125,
+        "flow": 2.032927989959717,
+        "water_volume": 515.769287109375,
+        "step": 1.0,
+        "gas_volume": 731.0932006835938,
+        "total_volume": 1246.862548828125,
+        "coefficient": 0.1338077187538147,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 261.4952087402344,
+        "flow": 0.0,
+        "water_volume": 515.769287109375,
+        "gas_volume": 731.09326171875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 183.3806915283203,
+        "activation": 1,
+        "gas_pressure": 222.54669189453125,
+        "flow": 0.03842134028673172,
+        "water_volume": 512.4563598632812,
+        "step": 0.5,
+        "gas_volume": 486.7749938964844,
+        "total_volume": 999.2313232421875,
+        "coefficient": 0.30264636874198914,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 222.53543090820312,
+        "flow": 2.3675551414489746,
+        "water_volume": 512.4373779296875,
+        "gas_volume": 486.7939453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 262.927001953125,
+        "activation": 1,
+        "gas_pressure": 271.2915954589844,
+        "flow": 9.940485000610352,
+        "water_volume": 723.9588012695312,
+        "step": 0.0,
+        "gas_volume": 796.8678588867188,
+        "total_volume": 1520.82666015625,
+        "coefficient": 0.6358974575996399,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 271.2915954589844,
+        "flow": 1.379338264465332,
+        "water_volume": 723.9588012695312,
+        "gas_volume": 796.8678588867188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 511.7110900878906,
+        "activation": 1,
+        "gas_pressure": 588.732421875,
+        "flow": 7.929203510284424,
+        "water_volume": 359.78363037109375,
+        "step": 0.10000000149011612,
+        "gas_volume": 882.6064453125,
+        "total_volume": 1242.39013671875,
+        "coefficient": 1.3809218406677246,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 588.7197265625,
+        "flow": 9.0894136428833,
+        "water_volume": 359.7690734863281,
+        "gas_volume": 882.62109375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 462.93121337890625,
+        "activation": 1,
+        "gas_pressure": 522.3300170898438,
+        "flow": 0.85318523645401,
+        "water_volume": 539.9248657226562,
+        "step": 0.5,
+        "gas_volume": 685.6487426757812,
+        "total_volume": 1225.5736083984375,
+        "coefficient": 0.8018864989280701,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 522.3054809570312,
+        "flow": 3.090094566345215,
+        "water_volume": 539.9000854492188,
+        "gas_volume": 685.6735229492188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 320.764892578125,
+        "activation": 1,
+        "gas_pressure": 402.248046875,
+        "flow": 4.925750732421875,
+        "water_volume": 542.296142578125,
+        "step": 0.0,
+        "gas_volume": 432.2387390136719,
+        "total_volume": 974.534912109375,
+        "coefficient": 1.6876180171966553,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 402.2480163574219,
+        "flow": 15.233793258666992,
+        "water_volume": 542.296142578125,
+        "gas_volume": 432.23876953125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 689.181640625,
+        "activation": 1,
+        "gas_pressure": 788.6615600585938,
+        "flow": 0.1595381796360016,
+        "water_volume": 239.48365783691406,
+        "step": 0.10000000149011612,
+        "gas_volume": 205.65023803710938,
+        "total_volume": 445.1339111328125,
+        "coefficient": 0.42628297209739685,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 788.6275024414062,
+        "flow": 4.251729965209961,
+        "water_volume": 239.47683715820312,
+        "gas_volume": 205.65707397460938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 107.22438049316406,
+        "activation": 1,
+        "gas_pressure": 145.1334228515625,
+        "flow": 2.960573434829712,
+        "water_volume": 183.4073944091797,
+        "step": 0.10000000149011612,
+        "gas_volume": 852.471923828125,
+        "total_volume": 1035.8792724609375,
+        "coefficient": 0.2869049310684204,
+        "valve_a": 100,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 145.13218688964844,
+        "flow": 3.532965660095215,
+        "water_volume": 183.4017333984375,
+        "gas_volume": 852.4775390625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 515.2142944335938,
+        "activation": 1,
+        "gas_pressure": 542.594970703125,
+        "flow": 8.710933685302734,
+        "water_volume": 732.374755859375,
+        "step": 0.5,
+        "gas_volume": 868.2478637695312,
+        "total_volume": 1600.62255859375,
+        "coefficient": 0.8010075092315674,
+        "valve_a": 0,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 542.5677490234375,
+        "flow": 4.1913957595825195,
+        "water_volume": 732.3411865234375,
+        "gas_volume": 868.2813720703125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 455.4241027832031,
+        "activation": 1,
+        "gas_pressure": 554.3366088867188,
+        "flow": 6.827197551727295,
+        "water_volume": 611.9749755859375,
+        "step": 0.10000000149011612,
+        "gas_volume": 357.0258483886719,
+        "total_volume": 969.0008544921875,
+        "coefficient": 1.5877056121826172,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 554.2599487304688,
+        "flow": 23.685733795166016,
+        "water_volume": 611.93701171875,
+        "gas_volume": 357.0638427734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 625.131103515625,
+        "activation": 1,
+        "gas_pressure": 693.0790405273438,
+        "flow": 6.026794910430908,
+        "water_volume": 979.2415771484375,
+        "step": 0.0,
+        "gas_volume": 133.95870971679688,
+        "total_volume": 1113.2003173828125,
+        "coefficient": 1.450653076171875,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 693.078857421875,
+        "flow": 11.95781135559082,
+        "water_volume": 979.2415771484375,
+        "gas_volume": 133.958740234375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 113.35454559326172,
+        "activation": 1,
+        "gas_pressure": 212.05316162109375,
+        "flow": 3.626940965652466,
+        "water_volume": 310.9164123535156,
+        "step": 1.0,
+        "gas_volume": 755.6790161132812,
+        "total_volume": 1066.595458984375,
+        "coefficient": 1.7104332447052002,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 212.0283203125,
+        "flow": 4.248167991638184,
+        "water_volume": 310.84832763671875,
+        "gas_volume": 755.7471313476562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 255.43345642089844,
+        "activation": 1,
+        "gas_pressure": 334.847412109375,
+        "flow": 4.742293357849121,
+        "water_volume": 141.89610290527344,
+        "step": 0.5,
+        "gas_volume": 666.5255126953125,
+        "total_volume": 808.421630859375,
+        "coefficient": 1.2037007808685303,
+        "valve_a": 0,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 334.847412109375,
+        "flow": 0.0,
+        "water_volume": 141.89610290527344,
+        "gas_volume": 666.5255126953125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 476.2878112792969,
+        "activation": 1,
+        "gas_pressure": 523.7374877929688,
+        "flow": 9.824685096740723,
+        "water_volume": 834.04443359375,
+        "step": 0.10000000149011612,
+        "gas_volume": 990.7374267578125,
+        "total_volume": 1824.7818603515625,
+        "coefficient": 1.4444406032562256,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 523.729248046875,
+        "flow": 7.46238374710083,
+        "water_volume": 834.032470703125,
+        "gas_volume": 990.7493896484375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 361.1780700683594,
+        "activation": 1,
+        "gas_pressure": 461.15667724609375,
+        "flow": 1.1549623012542725,
+        "water_volume": 486.8279724121094,
+        "step": 1.0,
+        "gas_volume": 435.8017272949219,
+        "total_volume": 922.6296997070312,
+        "coefficient": 1.9391881227493286,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 460.51629638671875,
+        "flow": 29.0847110748291,
+        "water_volume": 486.36187744140625,
+        "gas_volume": 436.267822265625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 265.4701843261719,
+        "activation": 1,
+        "gas_pressure": 353.9630432128906,
+        "flow": 4.679934024810791,
+        "water_volume": 902.9387817382812,
+        "step": 1.0,
+        "gas_volume": 802.6285400390625,
+        "total_volume": 1705.5673828125,
+        "coefficient": 1.5287576913833618,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 353.92999267578125,
+        "flow": 3.595280408859253,
+        "water_volume": 902.8811645507812,
+        "gas_volume": 802.6862182617188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 393.09814453125,
+        "activation": 1,
+        "gas_pressure": 492.3196716308594,
+        "flow": 5.8631792068481445,
+        "water_volume": 536.155517578125,
+        "step": 0.0,
+        "gas_volume": 447.5353698730469,
+        "total_volume": 983.69091796875,
+        "coefficient": 0.3569774627685547,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 492.31964111328125,
+        "flow": 5.3337788581848145,
+        "water_volume": 536.155517578125,
+        "gas_volume": 447.535400390625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 455.8133850097656,
+        "activation": 1,
+        "gas_pressure": 470.6991271972656,
+        "flow": 0.618880033493042,
+        "water_volume": 112.24768829345703,
+        "step": 0.10000000149011612,
+        "gas_volume": 725.3538818359375,
+        "total_volume": 837.6015625,
+        "coefficient": 1.8122375011444092,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 470.69677734375,
+        "flow": 1.7479957342147827,
+        "water_volume": 112.24488830566406,
+        "gas_volume": 725.356689453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 202.88612365722656,
+        "activation": 1,
+        "gas_pressure": 231.69248962402344,
+        "flow": 4.699141025543213,
+        "water_volume": 11.859198570251465,
+        "step": 0.10000000149011612,
+        "gas_volume": 938.5279541015625,
+        "total_volume": 950.3871459960938,
+        "coefficient": 0.5756677389144897,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 231.69090270996094,
+        "flow": 3.0896987915039062,
+        "water_volume": 11.854247093200684,
+        "gas_volume": 938.5328979492188
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 243.9910888671875,
+        "activation": 1,
+        "gas_pressure": 307.34320068359375,
+        "flow": 0.2892721891403198,
+        "water_volume": 40.36995315551758,
+        "step": 1.0,
+        "gas_volume": 167.7969207763672,
+        "total_volume": 208.1668701171875,
+        "coefficient": 1.672784686088562,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 306.96258544921875,
+        "flow": 9.985776901245117,
+        "water_volume": 40.209922790527344,
+        "gas_volume": 167.95693969726562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 574.2319946289062,
+        "activation": 1,
+        "gas_pressure": 666.0609741210938,
+        "flow": 5.395591735839844,
+        "water_volume": 367.2768859863281,
+        "step": 0.0,
+        "gas_volume": 746.565673828125,
+        "total_volume": 1113.842529296875,
+        "coefficient": 1.9691742658615112,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 666.06103515625,
+        "flow": 9.435046195983887,
+        "water_volume": 367.2768859863281,
+        "gas_volume": 746.565673828125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 56.74870681762695,
+        "activation": 1,
+        "gas_pressure": 105.37445831298828,
+        "flow": 0.6672559380531311,
+        "water_volume": 719.0896606445312,
+        "step": 0.5,
+        "gas_volume": 716.7476196289062,
+        "total_volume": 1435.8372802734375,
+        "coefficient": 0.20114164054393768,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 105.37177276611328,
+        "flow": 1.7532553672790527,
+        "water_volume": 719.0756225585938,
+        "gas_volume": 716.7616577148438
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 589.8168334960938,
+        "activation": 1,
+        "gas_pressure": 685.2073364257812,
+        "flow": 0.3887369930744171,
+        "water_volume": 151.54603576660156,
+        "step": 0.0,
+        "gas_volume": 685.52099609375,
+        "total_volume": 837.0670166015625,
+        "coefficient": 0.048443231731653214,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 685.2073364257812,
+        "flow": 0.35485175251960754,
+        "water_volume": 151.54603576660156,
+        "gas_volume": 685.52099609375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 240.20851135253906,
+        "activation": 1,
+        "gas_pressure": 251.59190368652344,
+        "flow": 6.652148246765137,
+        "water_volume": 591.9995727539062,
+        "step": 0.5,
+        "gas_volume": 833.09912109375,
+        "total_volume": 1425.0986328125,
+        "coefficient": 0.7517750263214111,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 251.5859375,
+        "flow": 1.9023263454437256,
+        "water_volume": 591.9843139648438,
+        "gas_volume": 833.1143188476562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 545.8401489257812,
+        "activation": 1,
+        "gas_pressure": 566.4868774414062,
+        "flow": 7.931556701660156,
+        "water_volume": 474.7434387207031,
+        "step": 0.10000000149011612,
+        "gas_volume": 119.12734985351562,
+        "total_volume": 593.8707885742188,
+        "coefficient": 1.6906874179840088,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 566.4108276367188,
+        "flow": 7.6822590827941895,
+        "water_volume": 474.73114013671875,
+        "gas_volume": 119.1396484375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 380.91192626953125,
+        "activation": 1,
+        "gas_pressure": 389.3524169921875,
+        "flow": 3.163412094116211,
+        "water_volume": 840.0383911132812,
+        "step": 0.0,
+        "gas_volume": 414.15631103515625,
+        "total_volume": 1254.1947021484375,
+        "coefficient": 1.3212672472000122,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 389.3524169921875,
+        "flow": 4.7982683181762695,
+        "water_volume": 840.0383911132812,
+        "gas_volume": 414.15631103515625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 393.6808166503906,
+        "activation": 1,
+        "gas_pressure": 479.3677062988281,
+        "flow": 1.2444356679916382,
+        "water_volume": 954.7966918945312,
+        "step": 0.0,
+        "gas_volume": 617.5079956054688,
+        "total_volume": 1572.3046875,
+        "coefficient": 1.2987323999404907,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 479.3677062988281,
+        "flow": 6.011002063751221,
+        "water_volume": 954.7966918945312,
+        "gas_volume": 617.5079956054688
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 340.924560546875,
+        "activation": 1,
+        "gas_pressure": 411.3311462402344,
+        "flow": 9.322203636169434,
+        "water_volume": 410.9246520996094,
+        "step": 0.5,
+        "gas_volume": 392.88507080078125,
+        "total_volume": 803.8096923828125,
+        "coefficient": 1.4007158279418945,
+        "valve_a": 50,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 411.235107421875,
+        "flow": 8.814910888671875,
+        "water_volume": 410.8540344238281,
+        "gas_volume": 392.9556579589844
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 509.99359130859375,
+        "activation": 1,
+        "gas_pressure": 597.455078125,
+        "flow": 6.141528606414795,
+        "water_volume": 53.69624328613281,
+        "step": 0.5,
+        "gas_volume": 223.22454833984375,
+        "total_volume": 276.9207763671875,
+        "coefficient": 1.3793182373046875,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 597.2753295898438,
+        "flow": 6.4497504234313965,
+        "water_volume": 53.644561767578125,
+        "gas_volume": 223.27621459960938
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 504.29473876953125,
+        "activation": 1,
+        "gas_pressure": 535.2240600585938,
+        "flow": 4.6935811042785645,
+        "water_volume": 891.6138916015625,
+        "step": 0.0,
+        "gas_volume": 371.0613098144531,
+        "total_volume": 1262.6751708984375,
+        "coefficient": 0.9484204053878784,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 535.22412109375,
+        "flow": 2.6372790336608887,
+        "water_volume": 891.6138916015625,
+        "gas_volume": 371.061279296875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 240.68296813964844,
+        "activation": 1,
+        "gas_pressure": 305.22955322265625,
+        "flow": 5.306033134460449,
+        "water_volume": 318.00604248046875,
+        "step": 0.5,
+        "gas_volume": 956.0548706054688,
+        "total_volume": 1274.0609130859375,
+        "coefficient": 0.22398898005485535,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 305.2265625,
+        "flow": 0.8997737169265747,
+        "water_volume": 317.99884033203125,
+        "gas_volume": 956.0620727539062
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 293.8827209472656,
+        "activation": 1,
+        "gas_pressure": 388.27044677734375,
+        "flow": 4.175848960876465,
+        "water_volume": 193.11862182617188,
+        "step": 0.0,
+        "gas_volume": 806.3753051757812,
+        "total_volume": 999.493896484375,
+        "coefficient": 0.3979179859161377,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 388.2704772949219,
+        "flow": 0.9664766192436218,
+        "water_volume": 193.11862182617188,
+        "gas_volume": 806.375244140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 194.3109893798828,
+        "activation": 1,
+        "gas_pressure": 269.4046325683594,
+        "flow": 1.1536462306976318,
+        "water_volume": 40.83967971801758,
+        "step": 0.10000000149011612,
+        "gas_volume": 415.4116516113281,
+        "total_volume": 456.2513427734375,
+        "coefficient": 0.29028820991516113,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 269.4029235839844,
+        "flow": 1.2577693462371826,
+        "water_volume": 40.83766555786133,
+        "gas_volume": 415.4136657714844
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 707.8908081054688,
+        "activation": 1,
+        "gas_pressure": 726.2591552734375,
+        "flow": 7.979264259338379,
+        "water_volume": 184.49208068847656,
+        "step": 0.5,
+        "gas_volume": 128.46229553222656,
+        "total_volume": 312.9543762207031,
+        "coefficient": 1.3642655611038208,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 726.0870361328125,
+        "flow": 2.9235057830810547,
+        "water_volume": 184.46865844726562,
+        "gas_volume": 128.4857177734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 484.4024658203125,
+        "activation": 1,
+        "gas_pressure": 581.765869140625,
+        "flow": 5.331174373626709,
+        "water_volume": 586.1625366210938,
+        "step": 0.5,
+        "gas_volume": 172.75552368164062,
+        "total_volume": 758.9180908203125,
+        "coefficient": 1.7002350091934204,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 581.1778564453125,
+        "flow": 16.776710510253906,
+        "water_volume": 586.0281372070312,
+        "gas_volume": 172.88995361328125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 349.7149963378906,
+        "activation": 1,
+        "gas_pressure": 413.64129638671875,
+        "flow": 2.241729736328125,
+        "water_volume": 690.076416015625,
+        "step": 0.5,
+        "gas_volume": 327.596435546875,
+        "total_volume": 1017.6728515625,
+        "coefficient": 0.6154375076293945,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 413.6251525878906,
+        "flow": 1.2301660776138306,
+        "water_volume": 690.0665893554688,
+        "gas_volume": 327.60626220703125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 45.4615364074707,
+        "activation": 1,
+        "gas_pressure": 68.78551483154297,
+        "flow": 3.2070422172546387,
+        "water_volume": 511.5024108886719,
+        "step": 1.0,
+        "gas_volume": 829.43505859375,
+        "total_volume": 1340.9375,
+        "coefficient": 1.501631259918213,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 68.7667236328125,
+        "flow": 10.87817096710205,
+        "water_volume": 511.3280944824219,
+        "gas_volume": 829.609375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 210.85107421875,
+        "activation": 1,
+        "gas_pressure": 296.8459167480469,
+        "flow": 7.226116180419922,
+        "water_volume": 71.97789001464844,
+        "step": 0.0,
+        "gas_volume": 329.2658386230469,
+        "total_volume": 401.24371337890625,
+        "coefficient": 1.8762505054473877,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 296.845947265625,
+        "flow": 17.39910888671875,
+        "water_volume": 71.97789001464844,
+        "gas_volume": 329.26580810546875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 560.7471313476562,
+        "activation": 1,
+        "gas_pressure": 597.12158203125,
+        "flow": 9.445018768310547,
+        "water_volume": 939.9498291015625,
+        "step": 0.10000000149011612,
+        "gas_volume": 691.2915649414062,
+        "total_volume": 1631.241455078125,
+        "coefficient": 1.914715051651001,
+        "valve_a": 0,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 597.111083984375,
+        "flow": 5.773941516876221,
+        "water_volume": 939.9405517578125,
+        "gas_volume": 691.3009033203125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 155.74159240722656,
+        "activation": 1,
+        "gas_pressure": 170.30348205566406,
+        "flow": 1.8259207010269165,
+        "water_volume": 162.5723114013672,
+        "step": 1.0,
+        "gas_volume": 748.1096801757812,
+        "total_volume": 910.6820068359375,
+        "coefficient": 0.798582136631012,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 170.29624938964844,
+        "flow": 1.5236964225769043,
+        "water_volume": 162.5478973388672,
+        "gas_volume": 748.1340942382812
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 280.38519287109375,
+        "activation": 1,
+        "gas_pressure": 333.72674560546875,
+        "flow": 5.020503997802734,
+        "water_volume": 999.1845092773438,
+        "step": 0.10000000149011612,
+        "gas_volume": 259.0884704589844,
+        "total_volume": 1258.27294921875,
+        "coefficient": 1.065683126449585,
+        "valve_a": 100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 333.6954345703125,
+        "flow": 11.674873352050781,
+        "water_volume": 999.165771484375,
+        "gas_volume": 259.107177734375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 270.8530578613281,
+        "activation": 1,
+        "gas_pressure": 318.74603271484375,
+        "flow": 3.6744742393493652,
+        "water_volume": 156.76446533203125,
+        "step": 0.5,
+        "gas_volume": 753.5977783203125,
+        "total_volume": 910.3622436523438,
+        "coefficient": 1.7053743600845337,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 318.70703125,
+        "flow": 8.851500511169434,
+        "water_volume": 156.69354248046875,
+        "gas_volume": 753.668701171875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 590.8120727539062,
+        "activation": 1,
+        "gas_pressure": 660.8726806640625,
+        "flow": 4.939640522003174,
+        "water_volume": 376.6996154785156,
+        "step": 0.10000000149011612,
+        "gas_volume": 478.3730163574219,
+        "total_volume": 855.0726318359375,
+        "coefficient": 0.590335488319397,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 660.8513793945312,
+        "flow": 7.411858081817627,
+        "water_volume": 376.687744140625,
+        "gas_volume": 478.3848876953125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 541.390869140625,
+        "activation": 1,
+        "gas_pressure": 639.2943725585938,
+        "flow": 8.015366554260254,
+        "water_volume": 143.56117248535156,
+        "step": 0.5,
+        "gas_volume": 906.1455078125,
+        "total_volume": 1049.7066650390625,
+        "coefficient": 1.9889471530914307,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 639.2221069335938,
+        "flow": 9.839938163757324,
+        "water_volume": 143.48233032226562,
+        "gas_volume": 906.224365234375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 538.8365478515625,
+        "activation": 1,
+        "gas_pressure": 600.5491333007812,
+        "flow": 8.20173454284668,
+        "water_volume": 617.1874389648438,
+        "step": 0.0,
+        "gas_volume": 417.1907958984375,
+        "total_volume": 1034.378173828125,
+        "coefficient": 1.954261064529419,
+        "valve_a": 25,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 600.5492553710938,
+        "flow": 3.8380396366119385,
+        "water_volume": 617.1874389648438,
+        "gas_volume": 417.19073486328125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 665.3745727539062,
+        "activation": 1,
+        "gas_pressure": 743.9274291992188,
+        "flow": 4.1338348388671875,
+        "water_volume": 91.79554748535156,
+        "step": 1.0,
+        "gas_volume": 122.24191284179688,
+        "total_volume": 214.03746032714844,
+        "coefficient": 0.5058553814888,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 743.643310546875,
+        "flow": 2.241699457168579,
+        "water_volume": 91.7596206665039,
+        "gas_volume": 122.27783966064453
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 729.0911254882812,
+        "activation": 1,
+        "gas_pressure": 741.8016967773438,
+        "flow": 2.983041286468506,
+        "water_volume": 286.3946228027344,
+        "step": 0.0,
+        "gas_volume": 504.814697265625,
+        "total_volume": 791.2093505859375,
+        "coefficient": 0.4293632209300995,
+        "valve_a": 0,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 741.8016357421875,
+        "flow": 0.3826902508735657,
+        "water_volume": 286.3946228027344,
+        "gas_volume": 504.8147277832031
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 185.4662628173828,
+        "activation": 1,
+        "gas_pressure": 234.38011169433594,
+        "flow": 8.617773056030273,
+        "water_volume": 229.4047088623047,
+        "step": 0.5,
+        "gas_volume": 271.52105712890625,
+        "total_volume": 500.92578125,
+        "coefficient": 0.927431583404541,
+        "valve_a": 50,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 234.35093688964844,
+        "flow": 3.2431557178497314,
+        "water_volume": 229.37872314453125,
+        "gas_volume": 271.54705810546875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 631.593994140625,
+        "activation": 1,
+        "gas_pressure": 715.4588012695312,
+        "flow": 6.276880741119385,
+        "water_volume": 558.2756958007812,
+        "step": 0.10000000149011612,
+        "gas_volume": 565.5653686523438,
+        "total_volume": 1123.841064453125,
+        "coefficient": 0.6068145632743835,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 715.4441528320312,
+        "flow": 5.557070255279541,
+        "water_volume": 558.2667846679688,
+        "gas_volume": 565.5742797851562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 190.08554077148438,
+        "activation": 1,
+        "gas_pressure": 284.5364685058594,
+        "flow": 5.6326904296875,
+        "water_volume": 764.58984375,
+        "step": 1.0,
+        "gas_volume": 168.3278350830078,
+        "total_volume": 932.9176635742188,
+        "coefficient": 0.16351495683193207,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 284.4945373535156,
+        "flow": 1.1918506622314453,
+        "water_volume": 764.5707397460938,
+        "gas_volume": 168.346923828125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 258.6184997558594,
+        "activation": 1,
+        "gas_pressure": 339.0681457519531,
+        "flow": 8.093445777893066,
+        "water_volume": 583.6575317382812,
+        "step": 1.0,
+        "gas_volume": 380.07611083984375,
+        "total_volume": 963.733642578125,
+        "coefficient": 1.9508788585662842,
+        "valve_a": 50,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 338.74322509765625,
+        "flow": 17.498159408569336,
+        "water_volume": 583.3771362304688,
+        "gas_volume": 380.35650634765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 671.644775390625,
+        "activation": 1,
+        "gas_pressure": 760.8604736328125,
+        "flow": 3.0264198780059814,
+        "water_volume": 453.95098876953125,
+        "step": 0.5,
+        "gas_volume": 231.02987670898438,
+        "total_volume": 684.9808349609375,
+        "coefficient": 1.9483892917633057,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 759.9146728515625,
+        "flow": 27.604991912841797,
+        "water_volume": 453.72979736328125,
+        "gas_volume": 231.25103759765625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 247.68057250976562,
+        "activation": 1,
+        "gas_pressure": 325.5153503417969,
+        "flow": 6.148981094360352,
+        "water_volume": 118.68950653076172,
+        "step": 0.5,
+        "gas_volume": 255.18995666503906,
+        "total_volume": 373.87945556640625,
+        "coefficient": 0.5460164546966553,
+        "valve_a": 25,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 325.4833679199219,
+        "flow": 2.408588409423828,
+        "water_volume": 118.67020416259766,
+        "gas_volume": 255.20925903320312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 309.7443542480469,
+        "activation": 1,
+        "gas_pressure": 341.6985168457031,
+        "flow": 7.907708168029785,
+        "water_volume": 199.8045654296875,
+        "step": 0.5,
+        "gas_volume": 205.20895385742188,
+        "total_volume": 405.0135192871094,
+        "coefficient": 0.6435447931289673,
+        "valve_a": 100,
+        "valve_b": 0
+      },
+      "expected": {
+        "gas_pressure": 341.63543701171875,
+        "flow": 3.6378307342529297,
+        "water_volume": 199.77542114257812,
+        "gas_volume": 205.23809814453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 21.69570541381836,
+        "activation": 1,
+        "gas_pressure": 88.72252655029297,
+        "flow": 9.688735008239746,
+        "water_volume": 165.02227783203125,
+        "step": 1.0,
+        "gas_volume": 514.8919067382812,
+        "total_volume": 679.9141845703125,
+        "coefficient": 0.6478891968727112,
+        "valve_a": 50,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 88.6939697265625,
+        "flow": 7.956394672393799,
+        "water_volume": 164.894775390625,
+        "gas_volume": 515.0194091796875
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": -46.19936752319336,
+        "activation": 1,
+        "gas_pressure": 52.85746383666992,
+        "flow": 9.087579727172852,
+        "water_volume": 663.3759765625,
+        "step": 1.0,
+        "gas_volume": 817.72265625,
+        "total_volume": 1481.0986328125,
+        "coefficient": 0.7400357723236084,
+        "valve_a": 100,
+        "valve_b": 25
+      },
+      "expected": {
+        "gas_pressure": 52.845069885253906,
+        "flow": 9.206720352172852,
+        "water_volume": 663.2284545898438,
+        "gas_volume": 817.8701782226562
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 689.8314208984375,
+        "activation": 1,
+        "gas_pressure": 715.5889892578125,
+        "flow": 7.009171009063721,
+        "water_volume": 348.3825378417969,
+        "step": 1.0,
+        "gas_volume": 531.3330078125,
+        "total_volume": 879.715576171875,
+        "coefficient": 0.01321550365537405,
+        "valve_a": 25,
+        "valve_b": 100
+      },
+      "expected": {
+        "gas_pressure": 715.5866088867188,
+        "flow": 0.08383901417255402,
+        "water_volume": 348.3811950683594,
+        "gas_volume": 531.3343505859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 123.56267547607422,
+        "activation": 1,
+        "gas_pressure": 219.8349609375,
+        "flow": 3.8087143898010254,
+        "water_volume": 226.1240692138672,
+        "step": 0.5,
+        "gas_volume": 509.9127197265625,
+        "total_volume": 736.0368041992188,
+        "coefficient": 0.37749531865119934,
+        "valve_a": 25,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 219.82247924804688,
+        "flow": 2.7779438495635986,
+        "water_volume": 226.101806640625,
+        "gas_volume": 509.93499755859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 594.154541015625,
+        "activation": 1,
+        "gas_pressure": 608.437255859375,
+        "flow": 6.251424789428711,
+        "water_volume": 427.91619873046875,
+        "step": 0.10000000149011612,
+        "gas_volume": 866.4157104492188,
+        "total_volume": 1294.3319091796875,
+        "coefficient": 0.1295529007911682,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 608.4376220703125,
+        "flow": -0.24480625987052917,
+        "water_volume": 427.9165954589844,
+        "gas_volume": 866.415283203125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 416.042724609375,
+        "activation": 1,
+        "gas_pressure": 486.831787109375,
+        "flow": 9.719128608703613,
+        "water_volume": 354.2088623046875,
+        "step": 0.10000000149011612,
+        "gas_volume": 147.15994262695312,
+        "total_volume": 501.3688049316406,
+        "coefficient": 0.512304961681366,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 486.84661865234375,
+        "flow": -2.1551706790924072,
+        "water_volume": 354.2123107910156,
+        "gas_volume": 147.156494140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 755.77978515625,
+        "activation": 1,
+        "gas_pressure": 779.3963623046875,
+        "flow": 3.7622854709625244,
+        "water_volume": 949.0162353515625,
+        "step": 1.0,
+        "gas_volume": 732.9205932617188,
+        "total_volume": 1681.936767578125,
+        "coefficient": 1.215864896774292,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 779.4619140625,
+        "flow": -2.954362630844116,
+        "water_volume": 949.0635986328125,
+        "gas_volume": 732.8731689453125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 532.7169189453125,
+        "activation": 1,
+        "gas_pressure": 560.6414794921875,
+        "flow": 9.186286926269531,
+        "water_volume": 370.39263916015625,
+        "step": 0.5,
+        "gas_volume": 431.96630859375,
+        "total_volume": 802.3589477539062,
+        "coefficient": 1.9345810413360596,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 560.7105712890625,
+        "flow": -5.111520290374756,
+        "water_volume": 370.43359375,
+        "gas_volume": 431.92535400390625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 303.81280517578125,
+        "activation": 1,
+        "gas_pressure": 339.8633728027344,
+        "flow": 2.502396583557129,
+        "water_volume": 788.1126098632812,
+        "step": 0.0,
+        "gas_volume": 481.83343505859375,
+        "total_volume": 1269.946044921875,
+        "coefficient": 0.7451000809669495,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 339.8633728027344,
+        "flow": -2.2368695735931396,
+        "water_volume": 788.1126098632812,
+        "gas_volume": 481.83343505859375
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 389.6963806152344,
+        "activation": 1,
+        "gas_pressure": 471.8755798339844,
+        "flow": 6.213792324066162,
+        "water_volume": 111.42168426513672,
+        "step": 0.10000000149011612,
+        "gas_volume": 936.6148071289062,
+        "total_volume": 1048.0364990234375,
+        "coefficient": 1.5401856899261475,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 471.8829040527344,
+        "flow": -6.98110294342041,
+        "water_volume": 111.43286895751953,
+        "gas_volume": 936.6036376953125
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 519.6849975585938,
+        "activation": 1,
+        "gas_pressure": 593.840087890625,
+        "flow": 6.916192054748535,
+        "water_volume": 708.013427734375,
+        "step": 0.5,
+        "gas_volume": 736.2767333984375,
+        "total_volume": 1444.2901611328125,
+        "coefficient": 0.654811441898346,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 593.86376953125,
+        "flow": -2.8194003105163574,
+        "water_volume": 708.0360107421875,
+        "gas_volume": 736.254150390625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 325.1397705078125,
+        "activation": 1,
+        "gas_pressure": 391.84490966796875,
+        "flow": 1.3215550184249878,
+        "water_volume": 147.6099853515625,
+        "step": 1.0,
+        "gas_volume": 103.45319366455078,
+        "total_volume": 251.06317138671875,
+        "coefficient": 0.7983052134513855,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 392.10235595703125,
+        "flow": -3.260007619857788,
+        "water_volume": 147.6622314453125,
+        "gas_volume": 103.40093994140625
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 152.2809600830078,
+        "activation": 1,
+        "gas_pressure": 200.50030517578125,
+        "flow": 2.701944351196289,
+        "water_volume": 613.5646362304688,
+        "step": 0.10000000149011612,
+        "gas_volume": 741.0728759765625,
+        "total_volume": 1354.637451171875,
+        "coefficient": 1.8861359357833862,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 200.50401306152344,
+        "flow": -6.548678398132324,
+        "water_volume": 613.5751342773438,
+        "gas_volume": 741.0623168945312
+      }
+    },
+    {
+      "inputs": {
+        "system_pressure": 514.6273803710938,
+        "activation": 1,
+        "gas_pressure": 534.5936279296875,
+        "flow": 0.11070046573877335,
+        "water_volume": 842.9327392578125,
+        "step": 0.10000000149011612,
+        "gas_volume": 946.347412109375,
+        "total_volume": 1789.2801513671875,
+        "coefficient": 1.393149495124817,
+        "valve_a": -100,
+        "valve_b": 50
+      },
+      "expected": {
+        "gas_pressure": 534.5972900390625,
+        "flow": -3.1125471591949463,
+        "water_volume": 842.937744140625,
+        "gas_volume": 946.3424072265625
+      }
+    }
+  ]
+}

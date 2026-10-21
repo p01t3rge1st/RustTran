@@ -1,0 +1,345 @@
+{
+  "method": "Execute original push sequences for both calls to 0x505370.\nSeparately execute original loop-B count subtraction and VB6 FpI2 conversion\nwith explicit 53-bit x87 context. Does not execute the plant coordinator.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "caller_bindings": [
+    {
+      "side": "A",
+      "call_va": "0x51fffd",
+      "arguments": [
+        {
+          "number": 1,
+          "ebp_offset": "0x8",
+          "pointer": "0x54b6b8"
+        },
+        {
+          "number": 2,
+          "ebp_offset": "0xc",
+          "pointer": "0x54b4fc"
+        },
+        {
+          "number": 3,
+          "ebp_offset": "0x10",
+          "pointer": "0x54b4b0"
+        },
+        {
+          "number": 4,
+          "ebp_offset": "0x14",
+          "pointer": "0x54b838"
+        },
+        {
+          "number": 5,
+          "ebp_offset": "0x18",
+          "pointer": "0x54b84c"
+        },
+        {
+          "number": 6,
+          "ebp_offset": "0x1c",
+          "pointer": "0x54b12c"
+        },
+        {
+          "number": 7,
+          "ebp_offset": "0x20",
+          "pointer": "0x54b530"
+        },
+        {
+          "number": 8,
+          "ebp_offset": "0x24",
+          "pointer": "0x54b41c"
+        },
+        {
+          "number": 9,
+          "ebp_offset": "0x28",
+          "pointer": "0x54b844"
+        },
+        {
+          "number": 10,
+          "ebp_offset": "0x2c",
+          "pointer": "0x54b560"
+        },
+        {
+          "number": 11,
+          "ebp_offset": "0x30",
+          "pointer": "0x54b740"
+        },
+        {
+          "number": 12,
+          "ebp_offset": "0x34",
+          "pointer": "0x54b67c"
+        },
+        {
+          "number": 13,
+          "ebp_offset": "0x38",
+          "pointer": "0x54b4cc"
+        },
+        {
+          "number": 14,
+          "ebp_offset": "0x3c",
+          "pointer": "0x54b4c4"
+        },
+        {
+          "number": 15,
+          "ebp_offset": "0x40",
+          "pointer": "0x54b1f8"
+        },
+        {
+          "number": 16,
+          "ebp_offset": "0x44",
+          "pointer": "0x54b214"
+        },
+        {
+          "number": 17,
+          "ebp_offset": "0x48",
+          "pointer": "0x54b854"
+        },
+        {
+          "number": 18,
+          "ebp_offset": "0x4c",
+          "pointer": "0x54b218"
+        },
+        {
+          "number": 19,
+          "ebp_offset": "0x50",
+          "pointer": "0x54b40c"
+        },
+        {
+          "number": 20,
+          "ebp_offset": "0x54",
+          "pointer": "0x20000020"
+        },
+        {
+          "number": 21,
+          "ebp_offset": "0x58",
+          "pointer": "0x54b538"
+        },
+        {
+          "number": 22,
+          "ebp_offset": "0x5c",
+          "pointer": "0x54b528"
+        },
+        {
+          "number": 23,
+          "ebp_offset": "0x60",
+          "pointer": "0x54ba68"
+        },
+        {
+          "number": 24,
+          "ebp_offset": "0x64",
+          "pointer": "0x54b4e2"
+        },
+        {
+          "number": 25,
+          "ebp_offset": "0x68",
+          "pointer": "0x54b1a4"
+        },
+        {
+          "number": 26,
+          "ebp_offset": "0x6c",
+          "pointer": "0x54b498"
+        },
+        {
+          "number": 27,
+          "ebp_offset": "0x70",
+          "pointer": "0x54b4f4"
+        },
+        {
+          "number": 28,
+          "ebp_offset": "0x74",
+          "pointer": "0x54b1cc"
+        },
+        {
+          "number": 29,
+          "ebp_offset": "0x78",
+          "pointer": "0x54b4de"
+        }
+      ]
+    },
+    {
+      "side": "B",
+      "call_va": "0x5200d4",
+      "arguments": [
+        {
+          "number": 1,
+          "ebp_offset": "0x8",
+          "pointer": "0x54b6bc"
+        },
+        {
+          "number": 2,
+          "ebp_offset": "0xc",
+          "pointer": "0x54b500"
+        },
+        {
+          "number": 3,
+          "ebp_offset": "0x10",
+          "pointer": "0x54b4b0"
+        },
+        {
+          "number": 4,
+          "ebp_offset": "0x14",
+          "pointer": "0x54b838"
+        },
+        {
+          "number": 5,
+          "ebp_offset": "0x18",
+          "pointer": "0x54b84c"
+        },
+        {
+          "number": 6,
+          "ebp_offset": "0x1c",
+          "pointer": "0x54b12c"
+        },
+        {
+          "number": 7,
+          "ebp_offset": "0x20",
+          "pointer": "0x54b534"
+        },
+        {
+          "number": 8,
+          "ebp_offset": "0x24",
+          "pointer": "0x54b41c"
+        },
+        {
+          "number": 9,
+          "ebp_offset": "0x28",
+          "pointer": "0x54b848"
+        },
+        {
+          "number": 10,
+          "ebp_offset": "0x2c",
+          "pointer": "0x54b564"
+        },
+        {
+          "number": 11,
+          "ebp_offset": "0x30",
+          "pointer": "0x54b744"
+        },
+        {
+          "number": 12,
+          "ebp_offset": "0x34",
+          "pointer": "0x54b680"
+        },
+        {
+          "number": 13,
+          "ebp_offset": "0x38",
+          "pointer": "0x54b4cc"
+        },
+        {
+          "number": 14,
+          "ebp_offset": "0x3c",
+          "pointer": "0x54b4c8"
+        },
+        {
+          "number": 15,
+          "ebp_offset": "0x40",
+          "pointer": "0x54b1f8"
+        },
+        {
+          "number": 16,
+          "ebp_offset": "0x44",
+          "pointer": "0x54b214"
+        },
+        {
+          "number": 17,
+          "ebp_offset": "0x48",
+          "pointer": "0x54b854"
+        },
+        {
+          "number": 18,
+          "ebp_offset": "0x4c",
+          "pointer": "0x54b218"
+        },
+        {
+          "number": 19,
+          "ebp_offset": "0x50",
+          "pointer": "0x54b40c"
+        },
+        {
+          "number": 20,
+          "ebp_offset": "0x54",
+          "pointer": "0x20000020"
+        },
+        {
+          "number": 21,
+          "ebp_offset": "0x58",
+          "pointer": "0x54b538"
+        },
+        {
+          "number": 22,
+          "ebp_offset": "0x5c",
+          "pointer": "0x54b52c"
+        },
+        {
+          "number": 23,
+          "ebp_offset": "0x60",
+          "pointer": "0x54ba68"
+        },
+        {
+          "number": 24,
+          "ebp_offset": "0x64",
+          "pointer": "0x54b4e4"
+        },
+        {
+          "number": 25,
+          "ebp_offset": "0x68",
+          "pointer": "0x54b1a4"
+        },
+        {
+          "number": 26,
+          "ebp_offset": "0x6c",
+          "pointer": "0x54b498"
+        },
+        {
+          "number": 27,
+          "ebp_offset": "0x70",
+          "pointer": "0x54b4f8"
+        },
+        {
+          "number": 28,
+          "ebp_offset": "0x74",
+          "pointer": "0x54b1cc"
+        },
+        {
+          "number": 29,
+          "ebp_offset": "0x78",
+          "pointer": "0x1000feb4"
+        }
+      ]
+    }
+  ],
+  "loop_b_count_cases": [
+    {
+      "total": 3.0,
+      "a": 1,
+      "expected": 2
+    },
+    {
+      "total": 3.0,
+      "a": 2,
+      "expected": 1
+    },
+    {
+      "total": 2.0,
+      "a": 1,
+      "expected": 1
+    },
+    {
+      "total": 1.0,
+      "a": 0,
+      "expected": 1
+    },
+    {
+      "total": 2.5,
+      "a": 1,
+      "expected": 2
+    },
+    {
+      "total": 3.5,
+      "a": 1,
+      "expected": 2
+    },
+    {
+      "total": 3.0,
+      "a": -1,
+      "expected": 4
+    }
+  ]
+}

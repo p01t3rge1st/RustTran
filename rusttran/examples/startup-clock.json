@@ -1,0 +1,12 @@
+{
+  "model": "1",
+  "ic": "1",
+  "extra_singles": {
+    "0x54b414": 0.0
+  },
+  "stages": [
+    {
+      "kind": "startup_clock"
+    }
+  ]
+}

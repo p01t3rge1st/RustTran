@@ -1,0 +1,345 @@
+
+analysis/program/PCTran.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+00523f3b <.text+0x122f3b>:
+  523f3b:	8d 85 d8 fe ff ff    	lea    eax,[ebp-0x128]
+  523f41:	8d 8d e8 fe ff ff    	lea    ecx,[ebp-0x118]
+  523f47:	50                   	push   eax
+  523f48:	8d 95 f8 fe ff ff    	lea    edx,[ebp-0x108]
+  523f4e:	51                   	push   ecx
+  523f4f:	8d 85 08 ff ff ff    	lea    eax,[ebp-0xf8]
+  523f55:	be 04 40 00 00       	mov    esi,0x4004
+  523f5a:	bf 14 b4 54 00       	mov    edi,0x54b414
+  523f5f:	52                   	push   edx
+  523f60:	50                   	push   eax
+  523f61:	c7 85 e0 fe ff ff 88 	mov    DWORD PTR [ebp-0x120],0x54b688
+  523f68:	b6 54 00 
+  523f6b:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  523f71:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  523f77:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  523f7d:	c7 85 00 ff ff ff 64 	mov    DWORD PTR [ebp-0x100],0x54bb64
+  523f84:	bb 54 00 
+  523f87:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  523f8d:	c7 85 10 ff ff ff 7c 	mov    DWORD PTR [ebp-0xf0],0x54b77c
+  523f94:	b7 54 00 
+  523f97:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  523f9d:	e8 8e 68 f7 ff       	call   0x49a830
+  523fa2:	8b 0d 88 b6 54 00    	mov    ecx,DWORD PTR ds:0x54b688
+  523fa8:	8d 95 d8 fe ff ff    	lea    edx,[ebp-0x128]
+  523fae:	89 0d f0 b4 54 00    	mov    DWORD PTR ds:0x54b4f0,ecx
+  523fb4:	8d 85 e8 fe ff ff    	lea    eax,[ebp-0x118]
+  523fba:	52                   	push   edx
+  523fbb:	8d 8d f8 fe ff ff    	lea    ecx,[ebp-0x108]
+  523fc1:	50                   	push   eax
+  523fc2:	8d 95 08 ff ff ff    	lea    edx,[ebp-0xf8]
+  523fc8:	51                   	push   ecx
+  523fc9:	52                   	push   edx
+  523fca:	c7 85 e0 fe ff ff 9c 	mov    DWORD PTR [ebp-0x120],0x54b49c
+  523fd1:	b4 54 00 
+  523fd4:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  523fda:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  523fe0:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  523fe6:	c7 85 00 ff ff ff 68 	mov    DWORD PTR [ebp-0x100],0x54bb68
+  523fed:	bb 54 00 
+  523ff0:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  523ff6:	c7 85 10 ff ff ff 70 	mov    DWORD PTR [ebp-0xf0],0x54b770
+  523ffd:	b7 54 00 
+  524000:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524006:	e8 25 68 f7 ff       	call   0x49a830
+  52400b:	8d 85 d8 fe ff ff    	lea    eax,[ebp-0x128]
+  524011:	8d 8d e8 fe ff ff    	lea    ecx,[ebp-0x118]
+  524017:	50                   	push   eax
+  524018:	8d 95 f8 fe ff ff    	lea    edx,[ebp-0x108]
+  52401e:	51                   	push   ecx
+  52401f:	8d 85 08 ff ff ff    	lea    eax,[ebp-0xf8]
+  524025:	52                   	push   edx
+  524026:	50                   	push   eax
+  524027:	c7 85 e0 fe ff ff ac 	mov    DWORD PTR [ebp-0x120],0x54b4ac
+  52402e:	b4 54 00 
+  524031:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  524037:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  52403d:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  524043:	c7 85 00 ff ff ff 6c 	mov    DWORD PTR [ebp-0x100],0x54bb6c
+  52404a:	bb 54 00 
+  52404d:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  524053:	c7 85 10 ff ff ff 84 	mov    DWORD PTR [ebp-0xf0],0x54b784
+  52405a:	b7 54 00 
+  52405d:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524063:	e8 c8 67 f7 ff       	call   0x49a830
+  524068:	8d 8d d8 fe ff ff    	lea    ecx,[ebp-0x128]
+  52406e:	8d 95 e8 fe ff ff    	lea    edx,[ebp-0x118]
+  524074:	51                   	push   ecx
+  524075:	8d 85 f8 fe ff ff    	lea    eax,[ebp-0x108]
+  52407b:	52                   	push   edx
+  52407c:	8d 8d 08 ff ff ff    	lea    ecx,[ebp-0xf8]
+  524082:	50                   	push   eax
+  524083:	51                   	push   ecx
+  524084:	c7 85 e0 fe ff ff 94 	mov    DWORD PTR [ebp-0x120],0x54b494
+  52408b:	b4 54 00 
+  52408e:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  524094:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  52409a:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  5240a0:	c7 85 00 ff ff ff 70 	mov    DWORD PTR [ebp-0x100],0x54bb70
+  5240a7:	bb 54 00 
+  5240aa:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  5240b0:	c7 85 10 ff ff ff 74 	mov    DWORD PTR [ebp-0xf0],0x54b774
+  5240b7:	b7 54 00 
+  5240ba:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  5240c0:	e8 6b 67 f7 ff       	call   0x49a830
+  5240c5:	8d 95 d8 fe ff ff    	lea    edx,[ebp-0x128]
+  5240cb:	8d 85 e8 fe ff ff    	lea    eax,[ebp-0x118]
+  5240d1:	52                   	push   edx
+  5240d2:	8d 8d f8 fe ff ff    	lea    ecx,[ebp-0x108]
+  5240d8:	50                   	push   eax
+  5240d9:	8d 95 08 ff ff ff    	lea    edx,[ebp-0xf8]
+  5240df:	51                   	push   ecx
+  5240e0:	52                   	push   edx
+  5240e1:	c7 85 e0 fe ff ff a4 	mov    DWORD PTR [ebp-0x120],0x54b4a4
+  5240e8:	b4 54 00 
+  5240eb:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  5240f1:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  5240f7:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  5240fd:	c7 85 00 ff ff ff 74 	mov    DWORD PTR [ebp-0x100],0x54bb74
+  524104:	bb 54 00 
+  524107:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  52410d:	c7 85 10 ff ff ff 88 	mov    DWORD PTR [ebp-0xf0],0x54b788
+  524114:	b7 54 00 
+  524117:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  52411d:	e8 0e 67 f7 ff       	call   0x49a830
+  524122:	8d 85 d8 fe ff ff    	lea    eax,[ebp-0x128]
+  524128:	8d 8d e8 fe ff ff    	lea    ecx,[ebp-0x118]
+  52412e:	50                   	push   eax
+  52412f:	8d 95 f8 fe ff ff    	lea    edx,[ebp-0x108]
+  524135:	51                   	push   ecx
+  524136:	8d 85 08 ff ff ff    	lea    eax,[ebp-0xf8]
+  52413c:	52                   	push   edx
+  52413d:	50                   	push   eax
+  52413e:	c7 85 e0 fe ff ff 04 	mov    DWORD PTR [ebp-0x120],0x54b504
+  524145:	b5 54 00 
+  524148:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  52414e:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  524154:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  52415a:	c7 85 00 ff ff ff 7c 	mov    DWORD PTR [ebp-0x100],0x54bb7c
+  524161:	bb 54 00 
+  524164:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  52416a:	c7 85 10 ff ff ff d0 	mov    DWORD PTR [ebp-0xf0],0x54b7d0
+  524171:	b7 54 00 
+  524174:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  52417a:	e8 b1 66 f7 ff       	call   0x49a830
+  52417f:	d9 05 04 b5 54 00    	fld    DWORD PTR ds:0x54b504
+  524185:	d8 1d f8 13 40 00    	fcomp  DWORD PTR ds:0x4013f8
+  52418b:	df e0                	fnstsw ax
+  52418d:	f6 c4 41             	test   ah,0x41
+  524190:	75 06                	jne    0x524198
+  524192:	89 1d 04 b5 54 00    	mov    DWORD PTR ds:0x54b504,ebx
+  524198:	8d 8d d8 fe ff ff    	lea    ecx,[ebp-0x128]
+  52419e:	8d 95 e8 fe ff ff    	lea    edx,[ebp-0x118]
+  5241a4:	51                   	push   ecx
+  5241a5:	8d 85 f8 fe ff ff    	lea    eax,[ebp-0x108]
+  5241ab:	52                   	push   edx
+  5241ac:	8d 8d 08 ff ff ff    	lea    ecx,[ebp-0xf8]
+  5241b2:	50                   	push   eax
+  5241b3:	51                   	push   ecx
+  5241b4:	c7 85 e0 fe ff ff 08 	mov    DWORD PTR [ebp-0x120],0x54b508
+  5241bb:	b5 54 00 
+  5241be:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  5241c4:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  5241ca:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  5241d0:	c7 85 00 ff ff ff 80 	mov    DWORD PTR [ebp-0x100],0x54bb80
+  5241d7:	bb 54 00 
+  5241da:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  5241e0:	c7 85 10 ff ff ff d4 	mov    DWORD PTR [ebp-0xf0],0x54b7d4
+  5241e7:	b7 54 00 
+  5241ea:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  5241f0:	e8 3b 66 f7 ff       	call   0x49a830
+  5241f5:	d9 05 08 b5 54 00    	fld    DWORD PTR ds:0x54b508
+  5241fb:	d8 1d f8 13 40 00    	fcomp  DWORD PTR ds:0x4013f8
+  524201:	df e0                	fnstsw ax
+  524203:	f6 c4 41             	test   ah,0x41
+  524206:	75 06                	jne    0x52420e
+  524208:	89 1d 08 b5 54 00    	mov    DWORD PTR ds:0x54b508,ebx
+  52420e:	8d 95 d8 fe ff ff    	lea    edx,[ebp-0x128]
+  524214:	8d 85 e8 fe ff ff    	lea    eax,[ebp-0x118]
+  52421a:	52                   	push   edx
+  52421b:	8d 8d f8 fe ff ff    	lea    ecx,[ebp-0x108]
+  524221:	50                   	push   eax
+  524222:	8d 95 08 ff ff ff    	lea    edx,[ebp-0xf8]
+  524228:	51                   	push   ecx
+  524229:	52                   	push   edx
+  52422a:	c7 85 e0 fe ff ff fc 	mov    DWORD PTR [ebp-0x120],0x54b4fc
+  524231:	b4 54 00 
+  524234:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  52423a:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  524240:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  524246:	c7 85 00 ff ff ff 84 	mov    DWORD PTR [ebp-0x100],0x54bb84
+  52424d:	bb 54 00 
+  524250:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  524256:	c7 85 10 ff ff ff d8 	mov    DWORD PTR [ebp-0xf0],0x54b7d8
+  52425d:	b7 54 00 
+  524260:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524266:	e8 c5 65 f7 ff       	call   0x49a830
+  52426b:	8d 85 d8 fe ff ff    	lea    eax,[ebp-0x128]
+  524271:	8d 8d e8 fe ff ff    	lea    ecx,[ebp-0x118]
+  524277:	50                   	push   eax
+  524278:	8d 95 f8 fe ff ff    	lea    edx,[ebp-0x108]
+  52427e:	51                   	push   ecx
+  52427f:	8d 85 08 ff ff ff    	lea    eax,[ebp-0xf8]
+  524285:	52                   	push   edx
+  524286:	50                   	push   eax
+  524287:	c7 85 e0 fe ff ff 00 	mov    DWORD PTR [ebp-0x120],0x54b500
+  52428e:	b5 54 00 
+  524291:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  524297:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  52429d:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  5242a3:	c7 85 00 ff ff ff 88 	mov    DWORD PTR [ebp-0x100],0x54bb88
+  5242aa:	bb 54 00 
+  5242ad:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  5242b3:	c7 85 10 ff ff ff dc 	mov    DWORD PTR [ebp-0xf0],0x54b7dc
+  5242ba:	b7 54 00 
+  5242bd:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  5242c3:	e8 68 65 f7 ff       	call   0x49a830
+  5242c8:	8d 8d d8 fe ff ff    	lea    ecx,[ebp-0x128]
+  5242ce:	8d 95 e8 fe ff ff    	lea    edx,[ebp-0x118]
+  5242d4:	51                   	push   ecx
+  5242d5:	8d 85 f8 fe ff ff    	lea    eax,[ebp-0x108]
+  5242db:	52                   	push   edx
+  5242dc:	8d 8d 08 ff ff ff    	lea    ecx,[ebp-0xf8]
+  5242e2:	50                   	push   eax
+  5242e3:	51                   	push   ecx
+  5242e4:	c7 85 e0 fe ff ff f4 	mov    DWORD PTR [ebp-0x120],0x54b4f4
+  5242eb:	b4 54 00 
+  5242ee:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  5242f4:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  5242fa:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  524300:	c7 85 00 ff ff ff 8c 	mov    DWORD PTR [ebp-0x100],0x54bb8c
+  524307:	bb 54 00 
+  52430a:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  524310:	c7 85 10 ff ff ff e0 	mov    DWORD PTR [ebp-0xf0],0x54b7e0
+  524317:	b7 54 00 
+  52431a:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524320:	e8 0b 65 f7 ff       	call   0x49a830
+  524325:	8d 95 d8 fe ff ff    	lea    edx,[ebp-0x128]
+  52432b:	8d 85 e8 fe ff ff    	lea    eax,[ebp-0x118]
+  524331:	52                   	push   edx
+  524332:	8d 8d f8 fe ff ff    	lea    ecx,[ebp-0x108]
+  524338:	50                   	push   eax
+  524339:	8d 95 08 ff ff ff    	lea    edx,[ebp-0xf8]
+  52433f:	51                   	push   ecx
+  524340:	52                   	push   edx
+  524341:	c7 85 e0 fe ff ff f8 	mov    DWORD PTR [ebp-0x120],0x54b4f8
+  524348:	b4 54 00 
+  52434b:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  524351:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  524357:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  52435d:	c7 85 00 ff ff ff 90 	mov    DWORD PTR [ebp-0x100],0x54bb90
+  524364:	bb 54 00 
+  524367:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  52436d:	c7 85 10 ff ff ff e4 	mov    DWORD PTR [ebp-0xf0],0x54b7e4
+  524374:	b7 54 00 
+  524377:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  52437d:	e8 ae 64 f7 ff       	call   0x49a830
+  524382:	d9 05 f4 b4 54 00    	fld    DWORD PTR ds:0x54b4f4
+  524388:	d8 1d f4 13 40 00    	fcomp  DWORD PTR ds:0x4013f4
+  52438e:	df e0                	fnstsw ax
+  524390:	f6 c4 01             	test   ah,0x1
+  524393:	74 0a                	je     0x52439f
+  524395:	c7 05 f4 b4 54 00 00 	mov    DWORD PTR ds:0x54b4f4,0x0
+  52439c:	00 00 00 
+  52439f:	d9 05 f8 b4 54 00    	fld    DWORD PTR ds:0x54b4f8
+  5243a5:	d8 1d f4 13 40 00    	fcomp  DWORD PTR ds:0x4013f4
+  5243ab:	df e0                	fnstsw ax
+  5243ad:	f6 c4 01             	test   ah,0x1
+  5243b0:	74 0a                	je     0x5243bc
+  5243b2:	c7 05 f8 b4 54 00 00 	mov    DWORD PTR ds:0x54b4f8,0x0
+  5243b9:	00 00 00 
+  5243bc:	8d 85 d8 fe ff ff    	lea    eax,[ebp-0x128]
+  5243c2:	8d 8d e8 fe ff ff    	lea    ecx,[ebp-0x118]
+  5243c8:	50                   	push   eax
+  5243c9:	8d 95 f8 fe ff ff    	lea    edx,[ebp-0x108]
+  5243cf:	51                   	push   ecx
+  5243d0:	8d 85 08 ff ff ff    	lea    eax,[ebp-0xf8]
+  5243d6:	52                   	push   edx
+  5243d7:	50                   	push   eax
+  5243d8:	c7 85 e0 fe ff ff b4 	mov    DWORD PTR [ebp-0x120],0x54b4b4
+  5243df:	b4 54 00 
+  5243e2:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  5243e8:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  5243ee:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  5243f4:	c7 85 00 ff ff ff 94 	mov    DWORD PTR [ebp-0x100],0x54bb94
+  5243fb:	bb 54 00 
+  5243fe:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  524404:	c7 85 10 ff ff ff 74 	mov    DWORD PTR [ebp-0xf0],0x54b674
+  52440b:	b6 54 00 
+  52440e:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524414:	e8 17 64 f7 ff       	call   0x49a830
+  524419:	8d 8d d8 fe ff ff    	lea    ecx,[ebp-0x128]
+  52441f:	8d 95 e8 fe ff ff    	lea    edx,[ebp-0x118]
+  524425:	51                   	push   ecx
+  524426:	8d 85 f8 fe ff ff    	lea    eax,[ebp-0x108]
+  52442c:	52                   	push   edx
+  52442d:	8d 8d 08 ff ff ff    	lea    ecx,[ebp-0xf8]
+  524433:	50                   	push   eax
+  524434:	51                   	push   ecx
+  524435:	c7 85 e0 fe ff ff a0 	mov    DWORD PTR [ebp-0x120],0x54bba0
+  52443c:	bb 54 00 
+  52443f:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  524445:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  52444b:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  524451:	c7 85 00 ff ff ff 98 	mov    DWORD PTR [ebp-0x100],0x54bb98
+  524458:	bb 54 00 
+  52445b:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  524461:	c7 85 10 ff ff ff b8 	mov    DWORD PTR [ebp-0xf0],0x54b4b8
+  524468:	b4 54 00 
+  52446b:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  524471:	e8 ba 63 f7 ff       	call   0x49a830
+  524476:	8b 15 f8 b5 54 00    	mov    edx,DWORD PTR ds:0x54b5f8
+  52447c:	d9 05 0c b4 54 00    	fld    DWORD PTR ds:0x54b40c
+  524482:	d8 62 08             	fsub   DWORD PTR [edx+0x8]
+  524485:	d9 9d b0 fe ff ff    	fstp   DWORD PTR [ebp-0x150]
+  52448b:	df e0                	fnstsw ax
+  52448d:	a8 0d                	test   al,0xd
+  52448f:	0f 85 93 01 00 00    	jne    0x524628
+  524495:	8d 85 b0 fe ff ff    	lea    eax,[ebp-0x150]
+  52449b:	50                   	push   eax
+  52449c:	e8 df 79 f7 ff       	call   0x49be80
+  5244a1:	d9 9d ac fe ff ff    	fstp   DWORD PTR [ebp-0x154]
+  5244a7:	d9 05 50 bb 54 00    	fld    DWORD PTR ds:0x54bb50
+  5244ad:	d8 8d ac fe ff ff    	fmul   DWORD PTR [ebp-0x154]
+  5244b3:	d9 1d a4 bb 54 00    	fstp   DWORD PTR ds:0x54bba4
+  5244b9:	df e0                	fnstsw ax
+  5244bb:	a8 0d                	test   al,0xd
+  5244bd:	0f 85 65 01 00 00    	jne    0x524628
+  5244c3:	d9 05 94 b4 54 00    	fld    DWORD PTR ds:0x54b494
+  5244c9:	d8 1d 44 b5 54 00    	fcomp  DWORD PTR ds:0x54b544
+  5244cf:	df e0                	fnstsw ax
+  5244d1:	f6 c4 01             	test   ah,0x1
+  5244d4:	74 1c                	je     0x5244f2
+  5244d6:	d9 05 44 b5 54 00    	fld    DWORD PTR ds:0x54b544
+  5244dc:	dc 05 98 34 40 00    	fadd   QWORD PTR ds:0x403498
+  5244e2:	d9 1d 94 b4 54 00    	fstp   DWORD PTR ds:0x54b494
+  5244e8:	df e0                	fnstsw ax
+  5244ea:	a8 0d                	test   al,0xd
+  5244ec:	0f 85 36 01 00 00    	jne    0x524628
+  5244f2:	8d 8d d8 fe ff ff    	lea    ecx,[ebp-0x128]
+  5244f8:	8d 95 e8 fe ff ff    	lea    edx,[ebp-0x118]
+  5244fe:	51                   	push   ecx
+  5244ff:	8d 85 f8 fe ff ff    	lea    eax,[ebp-0x108]
+  524505:	52                   	push   edx
+  524506:	8d 8d 08 ff ff ff    	lea    ecx,[ebp-0xf8]
+  52450c:	50                   	push   eax
+  52450d:	51                   	push   ecx
+  52450e:	c7 85 e0 fe ff ff 98 	mov    DWORD PTR [ebp-0x120],0x54bf98
+  524515:	bf 54 00 
+  524518:	89 b5 d8 fe ff ff    	mov    DWORD PTR [ebp-0x128],esi
+  52451e:	89 bd f0 fe ff ff    	mov    DWORD PTR [ebp-0x110],edi
+  524524:	89 b5 e8 fe ff ff    	mov    DWORD PTR [ebp-0x118],esi
+  52452a:	c7 85 00 ff ff ff a0 	mov    DWORD PTR [ebp-0x100],0x54bfa0
+  524531:	bf 54 00 
+  524534:	89 b5 f8 fe ff ff    	mov    DWORD PTR [ebp-0x108],esi
+  52453a:	c7 85 10 ff ff ff a8 	mov    DWORD PTR [ebp-0xf0],0x54b6a8
+  524541:	b6 54 00 
+  524544:	89 b5 08 ff ff ff    	mov    DWORD PTR [ebp-0xf8],esi
+  52454a:	e8 e1 62 f7 ff       	call   0x49a830

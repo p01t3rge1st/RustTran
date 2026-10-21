@@ -1,0 +1,177 @@
+{
+  "method": "Run original numeric VB6/OLEAUT32 exports supplied with the installer.\nNo Windows process, DLL attach initialization, COM or full VB exception runtime.\nUnknown system imports are fail-closed. Inputs restricted to numeric Variants.\n",
+  "dll_sha256": {
+    "msvbvm60.dll": "b18870f6f2471b0c3a2dafe28f74d3c4bb3fc4edf333e9f2a0909096c8453aed",
+    "oleaut32.dll": "baeb2f7c1b8be56738d34e1d1ddf8e0eebd3a633215dc1575e14656be38b939d"
+  },
+  "cases": [
+    {
+      "function": "__vbaVarMul",
+      "left": [
+        4,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 556.3800048828125,
+      "executed_instruction_count": 57
+    },
+    {
+      "function": "__vbaVarMul",
+      "left": [
+        5,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 556.3799852609635,
+      "executed_instruction_count": 52
+    },
+    {
+      "function": "__vbaVarMul",
+      "left": [
+        3,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 556.1999852657318,
+      "executed_instruction_count": 45
+    },
+    {
+      "function": "__vbaVarMul",
+      "left": [
+        2,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 556.2000122070312,
+      "executed_instruction_count": 59
+    },
+    {
+      "function": "__vbaVarAdd",
+      "left": [
+        4,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 310.8999938964844,
+      "executed_instruction_count": 58
+    },
+    {
+      "function": "__vbaVarAdd",
+      "left": [
+        5,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 310.8999999523163,
+      "executed_instruction_count": 53
+    },
+    {
+      "function": "__vbaVarAdd",
+      "left": [
+        3,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 310.7999999523163,
+      "executed_instruction_count": 46
+    },
+    {
+      "function": "__vbaVarAdd",
+      "left": [
+        2,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 310.79998779296875,
+      "executed_instruction_count": 60
+    },
+    {
+      "function": "__vbaVarDiv",
+      "left": [
+        4,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 171.72222900390625,
+      "executed_instruction_count": 61
+    },
+    {
+      "function": "__vbaVarDiv",
+      "left": [
+        5,
+        309.1
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 171.7222267713077,
+      "executed_instruction_count": 52
+    },
+    {
+      "function": "__vbaVarDiv",
+      "left": [
+        3,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 5,
+      "value": 171.66667121428043,
+      "executed_instruction_count": 195
+    },
+    {
+      "function": "__vbaVarDiv",
+      "left": [
+        2,
+        309
+      ],
+      "right": [
+        4,
+        1.8
+      ],
+      "result_type": 4,
+      "value": 171.6666717529297,
+      "executed_instruction_count": 63
+    }
+  ]
+}

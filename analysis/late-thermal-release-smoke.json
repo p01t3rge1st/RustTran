@@ -1,0 +1,55 @@
+{
+  "commands": [
+    {
+      "command": "late-thermal-init",
+      "example": "late-thermal-init.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "native-stages",
+      "example": "late-thermal-init-stages.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "fresh-control-history",
+      "example": "fresh-control-history.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "native-stages",
+      "example": "fresh-control-history-stages.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "fresh-thermal-startup",
+      "example": "fresh-thermal-startup.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "steam-system-step",
+      "example": "steam-system-step.json",
+      "exit_code": 0,
+      "json_output": true
+    },
+    {
+      "command": "recovered-primary-step",
+      "example": "recovered-steam-system-step.json",
+      "exit_code": 0,
+      "json_output": true
+    }
+  ],
+  "stage_matches_standalone": true,
+  "thermal_startup_singles": 105,
+  "thermal_startup_i16": 14,
+  "linux_max_glibc": {
+    "rusttran": "2.28",
+    "rusttran-cli": "2.28"
+  },
+  "cli_sha256": "97b23f673df97bed6645ce665fca611bde41af0e1727831261768538751cae68",
+  "windows": "GUI and CLI compiled, not executed"
+}

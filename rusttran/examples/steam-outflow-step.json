@@ -1,0 +1,12 @@
+{
+  "base_flow": 99.9990005493164,
+  "additional_flow": 0.0,
+  "external_flow": 0.0,
+  "inventory": 100.0,
+  "step": 1.0,
+  "discharge_enthalpy": 890.9281616210938,
+  "feed_enthalpy": 116.61184692382812,
+  "heat_a": -15716.927734375,
+  "heat_b": 10852.4814453125,
+  "phase_flag": -1
+}

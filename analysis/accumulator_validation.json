@@ -1,0 +1,15 @@
+{
+  "component": "accumulator numeric discharge",
+  "native_cases": 200,
+  "test_acceptance": "at most 2 float32 ULP",
+  "reference_limitations": [
+    "COM valve inputs injected and cleanup skipped",
+    "VB6 power helper modeled with Python libm",
+    "Windows FPU context not replayed"
+  ],
+  "rust_tests": 29,
+  "clippy": "passed with -D warnings",
+  "linux_release_cli_smoke": "passed from /tmp",
+  "main_derivative_equations_remaining": 7,
+  "linux_max_glibc": "2.28"
+}

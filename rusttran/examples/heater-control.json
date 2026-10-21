@@ -1,0 +1,15 @@
+{
+  "signal": 2100.0,
+  "level": 0.5,
+  "level_setpoint": 0.5,
+  "proportional_off_threshold": 2100.0,
+  "proportional_full_threshold": 1900.0,
+  "proportional_capacity": 2440.826171875,
+  "backup_signal_threshold": 2000.0,
+  "backup_capacity": 14647.2626953125,
+  "minimum_level": 0.20000000298023224,
+  "proportional_manual": false,
+  "backup_manual": true,
+  "proportional_percent": 99,
+  "backup_percent": 75
+}

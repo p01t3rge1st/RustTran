@@ -1,0 +1,12 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running tests/restored_controls.rs (rusttran/target/debug/deps/restored_controls-3eb46c9e03412f7e)
+
+running 4 tests
+test restoration_preserves_saved_boron_sg_errors_and_integrator_history ... ok
+test late_missing_state_or_event_overflow_cannot_commit_restoration ... ok
+test restored_controls_and_all_twenty_event_times_match_original_branch ... ok
+test native_rebased_events_bind_rcp_sg_and_integration_and_fail_atomically ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+

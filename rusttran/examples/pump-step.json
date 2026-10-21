@@ -1,0 +1,11 @@
+{
+  "normalized_flow": 6.1739888191223145,
+  "target": -10.0,
+  "step": 0.0,
+  "time_constant": 2.0,
+  "base_flow": 100.52781677246094,
+  "loop_share": 0.3333333432674408,
+  "volume_factor": 0.018897617235779762,
+  "specific_volume": 0.013544023968279362,
+  "void_fraction": 0.5007227659225464
+}

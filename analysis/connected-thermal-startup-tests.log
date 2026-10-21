@@ -1,0 +1,13 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.56s
+     Running tests/fresh_steam.rs (rusttran/target/debug/deps/fresh_steam-d00acf93704a5f0a)
+
+running 5 tests
+test current_derivative_initializer_preserves_history_and_unbound_states ... ok
+test fresh_sg_levels_fractions_and_phase_aliases_match_original ... ok
+test fresh_feedwater_shares_and_coolant_flows_match_native ... ok
+test fresh_auxiliary_stores_match_native_and_late_failure_preserves_history ... ok
+test gui_thermal_startup_matches_connected_original_for_all_operating_points ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.12s
+

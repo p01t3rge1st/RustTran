@@ -1,0 +1,18 @@
+{
+  "state": {
+    "pressure": 82.96666259765625,
+    "gas_pressure": 0,
+    "temperature": 300,
+    "level": 0.01
+  },
+  "inputs": {
+    "mass_delta": -1,
+    "inflow_enthalpy": 300,
+    "gas_mass_delta": 0,
+    "energy_loss": 0,
+    "volume": 1000,
+    "level_scale": 1000,
+    "temperature_floor": 60,
+    "pressure_work": 0.185
+  }
+}

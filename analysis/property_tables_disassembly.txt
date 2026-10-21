@@ -1,0 +1,655 @@
+
+analysis/program/PCTran.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+0051c42d <.text+0x11b42d>:
+  51c42d:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c432:	c7 00 00 00 70 42    	mov    DWORD PTR [eax],0x42700000
+  51c438:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c43e:	c7 41 04 00 00 84 42 	mov    DWORD PTR [ecx+0x4],0x42840000
+  51c445:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c44b:	c7 42 08 00 00 90 42 	mov    DWORD PTR [edx+0x8],0x42900000
+  51c452:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c457:	c7 40 0c 00 00 9c 42 	mov    DWORD PTR [eax+0xc],0x429c0000
+  51c45e:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c464:	c7 41 10 00 00 a8 42 	mov    DWORD PTR [ecx+0x10],0x42a80000
+  51c46b:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c471:	c7 42 14 00 00 b4 42 	mov    DWORD PTR [edx+0x14],0x42b40000
+  51c478:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c47d:	c7 40 18 1f 85 e2 42 	mov    DWORD PTR [eax+0x18],0x42e2851f
+  51c484:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c48a:	c7 41 1c 48 e1 04 43 	mov    DWORD PTR [ecx+0x1c],0x4304e148
+  51c491:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c497:	c7 42 20 f6 68 12 43 	mov    DWORD PTR [edx+0x20],0x431268f6
+  51c49e:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c4a3:	c7 40 24 d7 e3 1c 43 	mov    DWORD PTR [eax+0x24],0x431ce3d7
+  51c4aa:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c4b0:	c7 41 28 cd 0c 2a 43 	mov    DWORD PTR [ecx+0x28],0x432a0ccd
+  51c4b7:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c4bd:	c7 42 2c 48 a1 39 43 	mov    DWORD PTR [edx+0x2c],0x4339a148
+  51c4c4:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c4c9:	c7 40 30 33 b3 45 43 	mov    DWORD PTR [eax+0x30],0x4345b333
+  51c4d0:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c4d6:	c7 41 34 00 c0 4f 43 	mov    DWORD PTR [ecx+0x34],0x434fc000
+  51c4dd:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c4e3:	c7 42 38 00 00 54 43 	mov    DWORD PTR [edx+0x38],0x43540000
+  51c4ea:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c4ef:	c7 40 3c 00 00 61 43 	mov    DWORD PTR [eax+0x3c],0x43610000
+  51c4f6:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c4fc:	c7 41 40 00 00 7a 43 	mov    DWORD PTR [ecx+0x40],0x437a0000
+  51c503:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c509:	c7 42 44 00 00 87 43 	mov    DWORD PTR [edx+0x44],0x43870000
+  51c510:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c515:	c7 40 48 00 00 91 43 	mov    DWORD PTR [eax+0x48],0x43910000
+  51c51c:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c522:	c7 41 4c 00 00 a0 43 	mov    DWORD PTR [ecx+0x4c],0x43a00000
+  51c529:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c52f:	c7 42 50 00 00 aa 43 	mov    DWORD PTR [edx+0x50],0x43aa0000
+  51c536:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c53b:	c7 40 54 00 00 b4 43 	mov    DWORD PTR [eax+0x54],0x43b40000
+  51c542:	8b 0d 80 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b380
+  51c548:	c7 41 58 00 00 be 43 	mov    DWORD PTR [ecx+0x58],0x43be0000
+  51c54f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c555:	b9 00 00 c8 43       	mov    ecx,0x43c80000
+  51c55a:	bb 00 00 08 41       	mov    ebx,0x41080000
+  51c55f:	bf 00 00 30 41       	mov    edi,0x41300000
+  51c564:	89 4a 5c             	mov    DWORD PTR [edx+0x5c],ecx
+  51c567:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c56c:	be 00 00 58 41       	mov    esi,0x41580000
+  51c571:	c7 40 60 00 00 d5 43 	mov    DWORD PTR [eax+0x60],0x43d50000
+  51c578:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c57e:	c7 42 64 00 00 e1 43 	mov    DWORD PTR [edx+0x64],0x43e10000
+  51c585:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c58a:	c7 40 68 00 00 fa 43 	mov    DWORD PTR [eax+0x68],0x43fa0000
+  51c591:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c597:	c7 42 6c 00 00 02 44 	mov    DWORD PTR [edx+0x6c],0x44020000
+  51c59e:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c5a3:	c7 40 70 00 80 04 44 	mov    DWORD PTR [eax+0x70],0x44048000
+  51c5aa:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c5b0:	c7 42 74 00 00 07 44 	mov    DWORD PTR [edx+0x74],0x44070000
+  51c5b7:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c5bc:	c7 40 78 00 80 09 44 	mov    DWORD PTR [eax+0x78],0x44098000
+  51c5c3:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c5c9:	c7 42 7c 00 00 0c 44 	mov    DWORD PTR [edx+0x7c],0x440c0000
+  51c5d0:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c5d5:	c7 80 80 00 00 00 00 	mov    DWORD PTR [eax+0x80],0x440e8000
+  51c5dc:	80 0e 44 
+  51c5df:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c5e5:	c7 82 84 00 00 00 00 	mov    DWORD PTR [edx+0x84],0x44110000
+  51c5ec:	00 11 44 
+  51c5ef:	a1 80 b3 54 00       	mov    eax,ds:0x54b380
+  51c5f4:	c7 80 88 00 00 00 00 	mov    DWORD PTR [eax+0x88],0x44138000
+  51c5fb:	80 13 44 
+  51c5fe:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c604:	b8 00 00 16 44       	mov    eax,0x44160000
+  51c609:	89 82 8c 00 00 00    	mov    DWORD PTR [edx+0x8c],eax
+  51c60f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c615:	c7 82 90 00 00 00 00 	mov    DWORD PTR [edx+0x90],0x44188000
+  51c61c:	80 18 44 
+  51c61f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c625:	c7 82 94 00 00 00 00 	mov    DWORD PTR [edx+0x94],0x441b0000
+  51c62c:	00 1b 44 
+  51c62f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c635:	c7 82 98 00 00 00 00 	mov    DWORD PTR [edx+0x98],0x441d8000
+  51c63c:	80 1d 44 
+  51c63f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c645:	c7 82 9c 00 00 00 00 	mov    DWORD PTR [edx+0x9c],0x44200000
+  51c64c:	00 20 44 
+  51c64f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c655:	c7 82 a0 00 00 00 00 	mov    DWORD PTR [edx+0xa0],0x44228000
+  51c65c:	80 22 44 
+  51c65f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c665:	c7 82 a4 00 00 00 00 	mov    DWORD PTR [edx+0xa4],0x44250000
+  51c66c:	00 25 44 
+  51c66f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c675:	c7 82 a8 00 00 00 00 	mov    DWORD PTR [edx+0xa8],0x44278000
+  51c67c:	80 27 44 
+  51c67f:	8b 15 80 b3 54 00    	mov    edx,DWORD PTR ds:0x54b380
+  51c685:	c7 82 ac 00 00 00 00 	mov    DWORD PTR [edx+0xac],0x442a0000
+  51c68c:	00 2a 44 
+  51c68f:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c695:	c7 02 8a 1f 83 3e    	mov    DWORD PTR [edx],0x3e831f8a
+  51c69b:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6a1:	c7 42 04 13 f2 a1 3e 	mov    DWORD PTR [edx+0x4],0x3ea1f213
+  51c6a8:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6ae:	c7 42 08 5d dc c6 3e 	mov    DWORD PTR [edx+0x8],0x3ec6dc5d
+  51c6b5:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6bb:	c7 42 0c c5 fe f2 3e 	mov    DWORD PTR [edx+0xc],0x3ef2fec5
+  51c6c2:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6c8:	c7 42 10 46 b6 13 3f 	mov    DWORD PTR [edx+0x10],0x3f13b646
+  51c6cf:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6d5:	c7 42 14 33 33 33 3f 	mov    DWORD PTR [edx+0x14],0x3f333333
+  51c6dc:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6e2:	c7 42 18 33 33 b3 3f 	mov    DWORD PTR [edx+0x18],0x3fb33333
+  51c6e9:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6ef:	c7 42 1c 9a 99 19 40 	mov    DWORD PTR [edx+0x1c],0x4019999a
+  51c6f6:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c6fc:	c7 42 20 9a 99 59 40 	mov    DWORD PTR [edx+0x20],0x4059999a
+  51c703:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c709:	c7 42 24 cd cc 8c 40 	mov    DWORD PTR [edx+0x24],0x408ccccd
+  51c710:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c716:	c7 42 28 00 00 c0 40 	mov    DWORD PTR [edx+0x28],0x40c00000
+  51c71d:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c723:	89 5a 2c             	mov    DWORD PTR [edx+0x2c],ebx
+  51c726:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c72c:	89 7a 30             	mov    DWORD PTR [edx+0x30],edi
+  51c72f:	8b 15 9c b3 54 00    	mov    edx,DWORD PTR ds:0x54b39c
+  51c735:	89 72 34             	mov    DWORD PTR [edx+0x34],esi
+  51c738:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c73e:	ba 33 33 6b 41       	mov    edx,0x416b3333
+  51c743:	89 55 38             	mov    DWORD PTR [ebp+0x38],edx
+  51c746:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c74c:	c7 45 3c 33 33 97 41 	mov    DWORD PTR [ebp+0x3c],0x41973333
+  51c753:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c759:	c7 45 40 66 66 ee 41 	mov    DWORD PTR [ebp+0x40],0x41ee6666
+  51c760:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c766:	c7 45 44 9a 99 27 42 	mov    DWORD PTR [ebp+0x44],0x4227999a
+  51c76d:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c773:	c7 45 48 66 66 66 42 	mov    DWORD PTR [ebp+0x48],0x42666666
+  51c77a:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c780:	c7 45 4c 33 33 b3 42 	mov    DWORD PTR [ebp+0x4c],0x42b33333
+  51c787:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c78d:	c7 45 50 00 00 ec 42 	mov    DWORD PTR [ebp+0x50],0x42ec0000
+  51c794:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c79a:	c7 45 54 00 00 19 43 	mov    DWORD PTR [ebp+0x54],0x43190000
+  51c7a1:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7a7:	c7 45 58 33 b3 43 43 	mov    DWORD PTR [ebp+0x58],0x4343b333
+  51c7ae:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7b4:	c7 45 5c 4e 42 77 43 	mov    DWORD PTR [ebp+0x5c],0x4377424e
+  51c7bb:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7c1:	c7 45 60 3b af a4 43 	mov    DWORD PTR [ebp+0x60],0x43a4af3b
+  51c7c8:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7ce:	c7 45 64 66 46 d3 43 	mov    DWORD PTR [ebp+0x64],0x43d34666
+  51c7d5:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7db:	c7 45 68 0a 37 2a 44 	mov    DWORD PTR [ebp+0x68],0x442a370a
+  51c7e2:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7e8:	c7 45 6c ec 21 4b 44 	mov    DWORD PTR [ebp+0x6c],0x444b21ec
+  51c7ef:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c7f5:	c7 45 70 b8 4e 5d 44 	mov    DWORD PTR [ebp+0x70],0x445d4eb8
+  51c7fc:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c802:	c7 45 74 8f b2 70 44 	mov    DWORD PTR [ebp+0x74],0x4470b28f
+  51c809:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c80f:	c7 45 78 c3 ad 82 44 	mov    DWORD PTR [ebp+0x78],0x4482adc3
+  51c816:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c81c:	c7 45 7c 29 ac 8d 44 	mov    DWORD PTR [ebp+0x7c],0x448dac29
+  51c823:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c829:	c7 85 80 00 00 00 29 	mov    DWORD PTR [ebp+0x80],0x44995c29
+  51c830:	5c 99 44 
+  51c833:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c839:	c7 85 84 00 00 00 71 	mov    DWORD PTR [ebp+0x84],0x44a5c571
+  51c840:	c5 a5 44 
+  51c843:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c849:	c7 85 88 00 00 00 00 	mov    DWORD PTR [ebp+0x88],0x44b2f000
+  51c850:	f0 b2 44 
+  51c853:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c859:	c7 85 8c 00 00 00 66 	mov    DWORD PTR [ebp+0x8c],0x44c0e666
+  51c860:	e6 c0 44 
+  51c863:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c869:	c7 85 90 00 00 00 33 	mov    DWORD PTR [ebp+0x90],0x44cfb333
+  51c870:	b3 cf 44 
+  51c873:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c879:	c7 85 94 00 00 00 cd 	mov    DWORD PTR [ebp+0x94],0x44df5ccd
+  51c880:	5c df 44 
+  51c883:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c889:	c7 85 98 00 00 00 00 	mov    DWORD PTR [ebp+0x98],0x44eff000
+  51c890:	f0 ef 44 
+  51c893:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c899:	c7 85 9c 00 00 00 66 	mov    DWORD PTR [ebp+0x9c],0x4500be66
+  51c8a0:	be 00 45 
+  51c8a3:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c8a9:	c7 85 a0 00 00 00 66 	mov    DWORD PTR [ebp+0xa0],0x450a0666
+  51c8b0:	06 0a 45 
+  51c8b3:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c8b9:	c7 85 a4 00 00 00 33 	mov    DWORD PTR [ebp+0xa4],0x4513db33
+  51c8c0:	db 13 45 
+  51c8c3:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c8c9:	c7 85 a8 00 00 00 33 	mov    DWORD PTR [ebp+0xa8],0x451e4333
+  51c8d0:	43 1e 45 
+  51c8d3:	8b 2d 9c b3 54 00    	mov    ebp,DWORD PTR ds:0x54b39c
+  51c8d9:	c7 85 ac 00 00 00 9a 	mov    DWORD PTR [ebp+0xac],0x4529499a
+  51c8e0:	49 29 45 
+  51c8e3:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c8e9:	c7 45 00 8a 1f 83 3e 	mov    DWORD PTR [ebp+0x0],0x3e831f8a
+  51c8f0:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c8f6:	c7 45 04 13 f2 a1 3e 	mov    DWORD PTR [ebp+0x4],0x3ea1f213
+  51c8fd:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c903:	c7 45 08 5d dc c6 3e 	mov    DWORD PTR [ebp+0x8],0x3ec6dc5d
+  51c90a:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c910:	c7 45 0c c5 fe f2 3e 	mov    DWORD PTR [ebp+0xc],0x3ef2fec5
+  51c917:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c91d:	c7 45 10 46 b6 13 3f 	mov    DWORD PTR [ebp+0x10],0x3f13b646
+  51c924:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c92a:	c7 45 14 33 33 33 3f 	mov    DWORD PTR [ebp+0x14],0x3f333333
+  51c931:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c937:	c7 45 18 33 33 b3 3f 	mov    DWORD PTR [ebp+0x18],0x3fb33333
+  51c93e:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c944:	c7 45 1c 9a 99 19 40 	mov    DWORD PTR [ebp+0x1c],0x4019999a
+  51c94b:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c951:	c7 45 20 9a 99 59 40 	mov    DWORD PTR [ebp+0x20],0x4059999a
+  51c958:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c95e:	c7 45 24 cd cc 8c 40 	mov    DWORD PTR [ebp+0x24],0x408ccccd
+  51c965:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c96b:	c7 45 28 00 00 c0 40 	mov    DWORD PTR [ebp+0x28],0x40c00000
+  51c972:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51c978:	89 5d 2c             	mov    DWORD PTR [ebp+0x2c],ebx
+  51c97b:	8b 1d 64 b3 54 00    	mov    ebx,DWORD PTR ds:0x54b364
+  51c981:	89 7b 30             	mov    DWORD PTR [ebx+0x30],edi
+  51c984:	8b 3d 64 b3 54 00    	mov    edi,DWORD PTR ds:0x54b364
+  51c98a:	bb 00 00 a0 41       	mov    ebx,0x41a00000
+  51c98f:	89 77 34             	mov    DWORD PTR [edi+0x34],esi
+  51c992:	8b 35 64 b3 54 00    	mov    esi,DWORD PTR ds:0x54b364
+  51c998:	bf 00 00 c8 42       	mov    edi,0x42c80000
+  51c99d:	89 56 38             	mov    DWORD PTR [esi+0x38],edx
+  51c9a0:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9a6:	be 00 00 48 43       	mov    esi,0x43480000
+  51c9ab:	89 5a 3c             	mov    DWORD PTR [edx+0x3c],ebx
+  51c9ae:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9b4:	c7 42 40 00 00 c8 41 	mov    DWORD PTR [edx+0x40],0x41c80000
+  51c9bb:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9c1:	c7 42 44 00 00 0c 42 	mov    DWORD PTR [edx+0x44],0x420c0000
+  51c9c8:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9ce:	c7 42 48 00 00 48 42 	mov    DWORD PTR [edx+0x48],0x42480000
+  51c9d5:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9db:	c7 42 4c 00 00 70 42 	mov    DWORD PTR [edx+0x4c],0x42700000
+  51c9e2:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9e8:	c7 42 50 00 00 a0 42 	mov    DWORD PTR [edx+0x50],0x42a00000
+  51c9ef:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51c9f5:	c7 42 54 00 00 b4 42 	mov    DWORD PTR [edx+0x54],0x42b40000
+  51c9fc:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca02:	89 7a 58             	mov    DWORD PTR [edx+0x58],edi
+  51ca05:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca0b:	c7 42 5c 00 00 f0 42 	mov    DWORD PTR [edx+0x5c],0x42f00000
+  51ca12:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca18:	c7 42 60 00 00 16 43 	mov    DWORD PTR [edx+0x60],0x43160000
+  51ca1f:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca25:	c7 42 64 00 00 34 43 	mov    DWORD PTR [edx+0x64],0x43340000
+  51ca2c:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca32:	89 72 68             	mov    DWORD PTR [edx+0x68],esi
+  51ca35:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca3b:	c7 42 6c 00 00 96 43 	mov    DWORD PTR [edx+0x6c],0x43960000
+  51ca42:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca48:	89 4a 70             	mov    DWORD PTR [edx+0x70],ecx
+  51ca4b:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca51:	c7 42 74 00 00 fa 43 	mov    DWORD PTR [edx+0x74],0x43fa0000
+  51ca58:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca5e:	89 42 78             	mov    DWORD PTR [edx+0x78],eax
+  51ca61:	8b 15 64 b3 54 00    	mov    edx,DWORD PTR ds:0x54b364
+  51ca67:	c7 42 7c 00 00 2f 44 	mov    DWORD PTR [edx+0x7c],0x442f0000
+  51ca6e:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51ca74:	ba 00 00 48 44       	mov    edx,0x44480000
+  51ca79:	89 95 80 00 00 00    	mov    DWORD PTR [ebp+0x80],edx
+  51ca7f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51ca85:	c7 85 84 00 00 00 00 	mov    DWORD PTR [ebp+0x84],0x44638000
+  51ca8c:	80 63 44 
+  51ca8f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51ca95:	c7 85 88 00 00 00 00 	mov    DWORD PTR [ebp+0x88],0x446d8000
+  51ca9c:	80 6d 44 
+  51ca9f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51caa5:	c7 85 8c 00 00 00 00 	mov    DWORD PTR [ebp+0x8c],0x44778000
+  51caac:	80 77 44 
+  51caaf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cab5:	c7 85 90 00 00 00 00 	mov    DWORD PTR [ebp+0x90],0x4480c000
+  51cabc:	c0 80 44 
+  51cabf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cac5:	c7 85 94 00 00 00 00 	mov    DWORD PTR [ebp+0x94],0x4485c000
+  51cacc:	c0 85 44 
+  51cacf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cad5:	c7 85 98 00 00 00 00 	mov    DWORD PTR [ebp+0x98],0x448ac000
+  51cadc:	c0 8a 44 
+  51cadf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cae5:	c7 85 9c 00 00 00 00 	mov    DWORD PTR [ebp+0x9c],0x448d4000
+  51caec:	40 8d 44 
+  51caef:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51caf5:	c7 85 a0 00 00 00 00 	mov    DWORD PTR [ebp+0xa0],0x44924000
+  51cafc:	40 92 44 
+  51caff:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb05:	c7 85 a4 00 00 00 00 	mov    DWORD PTR [ebp+0xa4],0x44974000
+  51cb0c:	40 97 44 
+  51cb0f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb15:	c7 85 a8 00 00 00 00 	mov    DWORD PTR [ebp+0xa8],0x4499c000
+  51cb1c:	c0 99 44 
+  51cb1f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb25:	c7 85 ac 00 00 00 00 	mov    DWORD PTR [ebp+0xac],0x449ec000
+  51cb2c:	c0 9e 44 
+  51cb2f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb35:	c7 85 b0 00 00 00 00 	mov    DWORD PTR [ebp+0xb0],0x44a28000
+  51cb3c:	80 a2 44 
+  51cb3f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb45:	c7 85 b4 00 00 00 00 	mov    DWORD PTR [ebp+0xb4],0x44a50000
+  51cb4c:	00 a5 44 
+  51cb4f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb55:	c7 85 b8 00 00 00 00 	mov    DWORD PTR [ebp+0xb8],0x44aa0000
+  51cb5c:	00 aa 44 
+  51cb5f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb65:	c7 85 bc 00 00 00 00 	mov    DWORD PTR [ebp+0xbc],0x44af0000
+  51cb6c:	00 af 44 
+  51cb6f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb75:	c7 85 c0 00 00 00 00 	mov    DWORD PTR [ebp+0xc0],0x44b40000
+  51cb7c:	00 b4 44 
+  51cb7f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb85:	c7 85 c4 00 00 00 00 	mov    DWORD PTR [ebp+0xc4],0x44b90000
+  51cb8c:	00 b9 44 
+  51cb8f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cb95:	c7 85 c8 00 00 00 00 	mov    DWORD PTR [ebp+0xc8],0x44be0000
+  51cb9c:	00 be 44 
+  51cb9f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cba5:	c7 85 cc 00 00 00 00 	mov    DWORD PTR [ebp+0xcc],0x44c30000
+  51cbac:	00 c3 44 
+  51cbaf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cbb5:	c7 85 d0 00 00 00 00 	mov    DWORD PTR [ebp+0xd0],0x44c80000
+  51cbbc:	00 c8 44 
+  51cbbf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cbc5:	c7 85 d4 00 00 00 00 	mov    DWORD PTR [ebp+0xd4],0x44cd0000
+  51cbcc:	00 cd 44 
+  51cbcf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cbd5:	c7 85 d8 00 00 00 00 	mov    DWORD PTR [ebp+0xd8],0x44d48000
+  51cbdc:	80 d4 44 
+  51cbdf:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cbe5:	c7 85 dc 00 00 00 00 	mov    DWORD PTR [ebp+0xdc],0x44dc0000
+  51cbec:	00 dc 44 
+  51cbef:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cbf5:	c7 85 e0 00 00 00 00 	mov    DWORD PTR [ebp+0xe0],0x44e10000
+  51cbfc:	00 e1 44 
+  51cbff:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc05:	c7 85 e4 00 00 00 00 	mov    DWORD PTR [ebp+0xe4],0x44e88000
+  51cc0c:	80 e8 44 
+  51cc0f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc15:	c7 85 e8 00 00 00 00 	mov    DWORD PTR [ebp+0xe8],0x44ed8000
+  51cc1c:	80 ed 44 
+  51cc1f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc25:	c7 85 ec 00 00 00 00 	mov    DWORD PTR [ebp+0xec],0x44f28000
+  51cc2c:	80 f2 44 
+  51cc2f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc35:	c7 85 f0 00 00 00 00 	mov    DWORD PTR [ebp+0xf0],0x44fa0000
+  51cc3c:	00 fa 44 
+  51cc3f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc45:	c7 85 f4 00 00 00 00 	mov    DWORD PTR [ebp+0xf4],0x45034000
+  51cc4c:	40 03 45 
+  51cc4f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc55:	c7 85 f8 00 00 00 00 	mov    DWORD PTR [ebp+0xf8],0x45098000
+  51cc5c:	80 09 45 
+  51cc5f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc65:	c7 85 fc 00 00 00 00 	mov    DWORD PTR [ebp+0xfc],0x450fc000
+  51cc6c:	c0 0f 45 
+  51cc6f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc75:	c7 85 00 01 00 00 00 	mov    DWORD PTR [ebp+0x100],0x45160000
+  51cc7c:	00 16 45 
+  51cc7f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc85:	c7 85 04 01 00 00 00 	mov    DWORD PTR [ebp+0x104],0x451c4000
+  51cc8c:	40 1c 45 
+  51cc8f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cc95:	c7 85 08 01 00 00 00 	mov    DWORD PTR [ebp+0x108],0x45228000
+  51cc9c:	80 22 45 
+  51cc9f:	8b 2d 64 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b364
+  51cca5:	c7 85 0c 01 00 00 00 	mov    DWORD PTR [ebp+0x10c],0x4528c000
+  51ccac:	c0 28 45 
+  51ccaf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ccb5:	c7 45 00 00 e0 96 44 	mov    DWORD PTR [ebp+0x0],0x4496e000
+  51ccbc:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ccc2:	c7 45 04 00 40 77 44 	mov    DWORD PTR [ebp+0x4],0x44774000
+  51ccc9:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cccf:	c7 45 08 33 93 4b 44 	mov    DWORD PTR [ebp+0x8],0x444b9333
+  51ccd6:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ccdc:	c7 45 0c 9a 79 28 44 	mov    DWORD PTR [ebp+0xc],0x4428799a
+  51cce3:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cce9:	c7 45 10 00 00 0c 44 	mov    DWORD PTR [ebp+0x10],0x440c0000
+  51ccf0:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ccf6:	c7 45 14 9a 79 e9 43 	mov    DWORD PTR [ebp+0x14],0x43e9799a
+  51ccfd:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd03:	c7 45 18 1f 05 73 43 	mov    DWORD PTR [ebp+0x18],0x4373051f
+  51cd0a:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd10:	c7 45 1c 66 66 12 43 	mov    DWORD PTR [ebp+0x1c],0x43126666
+  51cd17:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd1d:	c7 45 20 d7 23 d3 42 	mov    DWORD PTR [ebp+0x20],0x42d323d7
+  51cd24:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd2a:	c7 45 24 37 c9 a5 42 	mov    DWORD PTR [ebp+0x24],0x42a5c937
+  51cd31:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd37:	c7 45 28 9e ef 77 42 	mov    DWORD PTR [ebp+0x28],0x4277ef9e
+  51cd3e:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd44:	c7 45 2c 98 ee 32 42 	mov    DWORD PTR [ebp+0x2c],0x4232ee98
+  51cd4b:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd51:	c7 45 30 68 91 04 42 	mov    DWORD PTR [ebp+0x30],0x42049168
+  51cd58:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd5e:	c7 45 34 ac 1c e8 41 	mov    DWORD PTR [ebp+0x34],0x41e81cac
+  51cd65:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd6b:	c7 45 38 5a 64 d6 41 	mov    DWORD PTR [ebp+0x38],0x41d6645a
+  51cd72:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd78:	c7 45 3c 2d b2 a0 41 	mov    DWORD PTR [ebp+0x3c],0x41a0b22d
+  51cd7f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd85:	c7 45 40 73 68 82 41 	mov    DWORD PTR [ebp+0x40],0x41826873
+  51cd8c:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd92:	c7 45 44 9b 55 3e 41 	mov    DWORD PTR [ebp+0x44],0x413e559b
+  51cd99:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cd9f:	c7 45 48 58 39 08 41 	mov    DWORD PTR [ebp+0x48],0x41083958
+  51cda6:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cdac:	c7 45 4c 22 8e e5 40 	mov    DWORD PTR [ebp+0x4c],0x40e58e22
+  51cdb3:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cdb9:	c7 45 50 40 13 af 40 	mov    DWORD PTR [ebp+0x50],0x40af1340
+  51cdc0:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cdc6:	c7 45 54 4c a6 9c 40 	mov    DWORD PTR [ebp+0x54],0x409ca64c
+  51cdcd:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cdd3:	c7 45 58 c1 ca 8d 40 	mov    DWORD PTR [ebp+0x58],0x408dcac1
+  51cdda:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cde0:	c7 45 5c 5c 8f 6e 40 	mov    DWORD PTR [ebp+0x5c],0x406e8f5c
+  51cde7:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cded:	c7 45 60 bd e3 40 40 	mov    DWORD PTR [ebp+0x60],0x4040e3bd
+  51cdf4:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cdfa:	c7 45 64 2e ff 21 40 	mov    DWORD PTR [ebp+0x64],0x4021ff2e
+  51ce01:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce07:	c7 45 68 cc 62 12 40 	mov    DWORD PTR [ebp+0x68],0x401262cc
+  51ce0e:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce14:	c7 45 6c 81 78 c5 3f 	mov    DWORD PTR [ebp+0x6c],0x3fc57881
+  51ce1b:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce21:	c7 45 70 02 9a 94 3f 	mov    DWORD PTR [ebp+0x70],0x3f949a02
+  51ce28:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce2e:	c7 45 74 81 78 6d 3f 	mov    DWORD PTR [ebp+0x74],0x3f6d7881
+  51ce35:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce3b:	c7 45 78 56 0e 45 3f 	mov    DWORD PTR [ebp+0x78],0x3f450e56
+  51ce42:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce48:	c7 45 7c c8 d2 27 3f 	mov    DWORD PTR [ebp+0x7c],0x3f27d2c8
+  51ce4f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce55:	c7 85 80 00 00 00 5d 	mov    DWORD PTR [ebp+0x80],0x3f11a75d
+  51ce5c:	a7 11 3f 
+  51ce5f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce65:	c7 85 84 00 00 00 88 	mov    DWORD PTR [ebp+0x84],0x3efd6388
+  51ce6c:	63 fd 3e 
+  51ce6f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce75:	c7 85 88 00 00 00 8a 	mov    DWORD PTR [ebp+0x88],0x3ef1b08a
+  51ce7c:	b0 f1 3e 
+  51ce7f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce85:	c7 85 8c 00 00 00 f2 	mov    DWORD PTR [ebp+0x8c],0x3ee6cdf2
+  51ce8c:	cd e6 3e 
+  51ce8f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ce95:	c7 85 90 00 00 00 53 	mov    DWORD PTR [ebp+0x90],0x3edce853
+  51ce9c:	e8 dc 3e 
+  51ce9f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cea5:	c7 85 94 00 00 00 9c 	mov    DWORD PTR [ebp+0x94],0x3ed3a29c
+  51ceac:	a2 d3 3e 
+  51ceaf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ceb5:	c7 85 98 00 00 00 6d 	mov    DWORD PTR [ebp+0x98],0x3ecaff6d
+  51cebc:	ff ca 3e 
+  51cebf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cec5:	c7 85 9c 00 00 00 8a 	mov    DWORD PTR [ebp+0x9c],0x3ec6e58a
+  51cecc:	e5 c6 3e 
+  51cecf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51ced5:	c7 85 a0 00 00 00 50 	mov    DWORD PTR [ebp+0xa0],0x3ebf1950
+  51cedc:	19 bf 3e 
+  51cedf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cee5:	c7 85 a4 00 00 00 ea 	mov    DWORD PTR [ebp+0xa4],0x3eb7caea
+  51ceec:	ca b7 3e 
+  51ceef:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cef5:	c7 85 a8 00 00 00 51 	mov    DWORD PTR [ebp+0xa8],0x3eb44e51
+  51cefc:	4e b4 3e 
+  51ceff:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf05:	c7 85 ac 00 00 00 61 	mov    DWORD PTR [ebp+0xac],0x3eada661
+  51cf0c:	a6 ad 3e 
+  51cf0f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf15:	c7 85 b0 00 00 00 f7 	mov    DWORD PTR [ebp+0xb0],0x3ea8e9f7
+  51cf1c:	e9 a8 3e 
+  51cf1f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf25:	c7 85 b4 00 00 00 16 	mov    DWORD PTR [ebp+0xb4],0x3ea5de16
+  51cf2c:	de a5 3e 
+  51cf2f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf35:	c7 85 b8 00 00 00 dd 	mov    DWORD PTR [ebp+0xb8],0x3ea007dd
+  51cf3c:	07 a0 3e 
+  51cf3f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf45:	c7 85 bc 00 00 00 e8 	mov    DWORD PTR [ebp+0xbc],0x3e9a82e8
+  51cf4c:	82 9a 3e 
+  51cf4f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf55:	c7 85 c0 00 00 00 5a 	mov    DWORD PTR [ebp+0xc0],0x3e95475a
+  51cf5c:	47 95 3e 
+  51cf5f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf65:	c7 85 c4 00 00 00 f4 	mov    DWORD PTR [ebp+0xc4],0x3e904ff4
+  51cf6c:	4f 90 3e 
+  51cf6f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf75:	c7 85 c8 00 00 00 c8 	mov    DWORD PTR [ebp+0xc8],0x3e8b98c8
+  51cf7c:	98 8b 3e 
+  51cf7f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf85:	c7 85 cc 00 00 00 09 	mov    DWORD PTR [ebp+0xcc],0x3e871609
+  51cf8c:	16 87 3e 
+  51cf8f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cf95:	c7 85 d0 00 00 00 58 	mov    DWORD PTR [ebp+0xd0],0x3e82ca58
+  51cf9c:	ca 82 3e 
+  51cf9f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cfa5:	c7 85 d4 00 00 00 e9 	mov    DWORD PTR [ebp+0xd4],0x3e7d60e9
+  51cfac:	60 7d 3e 
+  51cfaf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cfb5:	c7 85 d8 00 00 00 56 	mov    DWORD PTR [ebp+0xd8],0x3e71bc56
+  51cfbc:	bc 71 3e 
+  51cfbf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cfc5:	c7 85 dc 00 00 00 04 	mov    DWORD PTR [ebp+0xdc],0x3e66ca04
+  51cfcc:	ca 66 3e 
+  51cfcf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cfd5:	c7 85 e0 00 00 00 4d 	mov    DWORD PTR [ebp+0xe0],0x3e5fdb4d
+  51cfdc:	db 5f 3e 
+  51cfdf:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cfe5:	c7 85 e4 00 00 00 5e 	mov    DWORD PTR [ebp+0xe4],0x3e55f45e
+  51cfec:	f4 55 3e 
+  51cfef:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51cff5:	c7 85 e8 00 00 00 8f 	mov    DWORD PTR [ebp+0xe8],0x3e4fa58f
+  51cffc:	a5 4f 3e 
+  51cfff:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d005:	c7 85 ec 00 00 00 6d 	mov    DWORD PTR [ebp+0xec],0x3e49906d
+  51d00c:	90 49 3e 
+  51d00f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d015:	c7 85 f0 00 00 00 56 	mov    DWORD PTR [ebp+0xf0],0x3e40d456
+  51d01c:	d4 40 3e 
+  51d01f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d025:	c7 85 f4 00 00 00 d2 	mov    DWORD PTR [ebp+0xf4],0x3e3335d2
+  51d02c:	35 33 3e 
+  51d02f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d035:	c7 85 f8 00 00 00 12 	mov    DWORD PTR [ebp+0xf8],0x3e26a012
+  51d03c:	a0 26 3e 
+  51d03f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d045:	c7 85 fc 00 00 00 40 	mov    DWORD PTR [ebp+0xfc],0x3e1af640
+  51d04c:	f6 1a 3e 
+  51d04f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d055:	c7 85 00 01 00 00 64 	mov    DWORD PTR [ebp+0x100],0x3e102364
+  51d05c:	23 10 3e 
+  51d05f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d065:	c7 85 04 01 00 00 fa 	mov    DWORD PTR [ebp+0x104],0x3e05d0fa
+  51d06c:	d0 05 3e 
+  51d06f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d075:	c7 85 08 01 00 00 47 	mov    DWORD PTR [ebp+0x108],0x3df80347
+  51d07c:	03 f8 3d 
+  51d07f:	8b 2d 48 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b348
+  51d085:	c7 85 0c 01 00 00 cc 	mov    DWORD PTR [ebp+0x10c],0x3de540cc
+  51d08c:	40 e5 3d 
+  51d08f:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d095:	c7 45 00 00 00 00 00 	mov    DWORD PTR [ebp+0x0],0x0
+  51d09c:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0a2:	89 7d 04             	mov    DWORD PTR [ebp+0x4],edi
+  51d0a5:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0ab:	89 75 08             	mov    DWORD PTR [ebp+0x8],esi
+  51d0ae:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0b4:	89 4d 0c             	mov    DWORD PTR [ebp+0xc],ecx
+  51d0b7:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0bd:	89 45 10             	mov    DWORD PTR [ebp+0x10],eax
+  51d0c0:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0c6:	89 55 14             	mov    DWORD PTR [ebp+0x14],edx
+  51d0c9:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0cf:	c7 45 18 00 00 7a 44 	mov    DWORD PTR [ebp+0x18],0x447a0000
+  51d0d6:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0dc:	c7 45 1c 00 00 96 44 	mov    DWORD PTR [ebp+0x1c],0x44960000
+  51d0e3:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0e9:	c7 45 20 00 00 af 44 	mov    DWORD PTR [ebp+0x20],0x44af0000
+  51d0f0:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d0f6:	c7 45 24 00 00 c8 44 	mov    DWORD PTR [ebp+0x24],0x44c80000
+  51d0fd:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d103:	c7 45 28 00 00 e1 44 	mov    DWORD PTR [ebp+0x28],0x44e10000
+  51d10a:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d110:	c7 45 2c 00 00 fa 44 	mov    DWORD PTR [ebp+0x2c],0x44fa0000
+  51d117:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d11d:	c7 45 30 00 80 09 45 	mov    DWORD PTR [ebp+0x30],0x45098000
+  51d124:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d12a:	c7 45 34 00 00 16 45 	mov    DWORD PTR [ebp+0x34],0x45160000
+  51d131:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d137:	c7 45 38 00 80 22 45 	mov    DWORD PTR [ebp+0x38],0x45228000
+  51d13e:	8b 2d b8 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3b8
+  51d144:	c7 45 3c 00 00 2f 45 	mov    DWORD PTR [ebp+0x3c],0x452f0000
+  51d14b:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d151:	c7 45 00 00 00 00 00 	mov    DWORD PTR [ebp+0x0],0x0
+  51d158:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d15e:	c7 45 04 00 c0 0f 45 	mov    DWORD PTR [ebp+0x4],0x450fc000
+  51d165:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d16b:	c7 45 08 00 00 61 45 	mov    DWORD PTR [ebp+0x8],0x45610000
+  51d172:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d178:	c7 45 0c 00 40 9c 45 	mov    DWORD PTR [ebp+0xc],0x459c4000
+  51d17f:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d185:	c7 45 10 00 00 c8 45 	mov    DWORD PTR [ebp+0x10],0x45c80000
+  51d18c:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d192:	c7 45 14 00 f8 dd 45 	mov    DWORD PTR [ebp+0x14],0x45ddf800
+  51d199:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d19f:	c7 45 18 00 60 f6 45 	mov    DWORD PTR [ebp+0x18],0x45f66000
+  51d1a6:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1ac:	c7 45 1c 00 dc 05 46 	mov    DWORD PTR [ebp+0x1c],0x4605dc00
+  51d1b3:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1b9:	c7 45 20 00 4c 0f 46 	mov    DWORD PTR [ebp+0x20],0x460f4c00
+  51d1c0:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1c6:	c7 45 24 00 b4 17 46 	mov    DWORD PTR [ebp+0x24],0x4617b400
+  51d1cd:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1d3:	c7 45 28 00 28 1f 46 	mov    DWORD PTR [ebp+0x28],0x461f2800
+  51d1da:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1e0:	c7 45 2c 00 c0 25 46 	mov    DWORD PTR [ebp+0x2c],0x4625c000
+  51d1e7:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1ed:	c7 45 30 00 80 2b 46 	mov    DWORD PTR [ebp+0x30],0x462b8000
+  51d1f4:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d1fa:	c7 45 34 00 28 2f 46 	mov    DWORD PTR [ebp+0x34],0x462f2800
+  51d201:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d207:	c7 45 38 00 5c 32 46 	mov    DWORD PTR [ebp+0x38],0x46325c00
+  51d20e:	8b 2d d4 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3d4
+  51d214:	c7 45 3c 00 a0 34 46 	mov    DWORD PTR [ebp+0x3c],0x4634a000
+  51d21b:	8b 2d f0 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3f0
+  51d221:	c7 45 00 00 00 00 00 	mov    DWORD PTR [ebp+0x0],0x0
+  51d228:	8b 2d f0 b3 54 00    	mov    ebp,DWORD PTR ds:0x54b3f0
+  51d22e:	89 75 04             	mov    DWORD PTR [ebp+0x4],esi
+  51d231:	8b 35 f0 b3 54 00    	mov    esi,DWORD PTR ds:0x54b3f0
+  51d237:	89 4e 08             	mov    DWORD PTR [esi+0x8],ecx
+  51d23a:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d240:	89 51 0c             	mov    DWORD PTR [ecx+0xc],edx
+  51d243:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d249:	c7 42 10 00 00 96 44 	mov    DWORD PTR [edx+0x10],0x44960000
+  51d250:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d256:	c7 41 14 00 10 ce 44 	mov    DWORD PTR [ecx+0x14],0x44ce1000
+  51d25d:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d263:	c7 42 18 00 a0 01 45 	mov    DWORD PTR [edx+0x18],0x4501a000
+  51d26a:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d270:	c7 41 1c 00 10 1d 45 	mov    DWORD PTR [ecx+0x1c],0x451d1000
+  51d277:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d27d:	c7 42 20 00 50 39 45 	mov    DWORD PTR [edx+0x20],0x45395000
+  51d284:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d28a:	c7 41 24 00 a0 56 45 	mov    DWORD PTR [ecx+0x24],0x4556a000
+  51d291:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d297:	c7 42 28 00 20 75 45 	mov    DWORD PTR [edx+0x28],0x45752000
+  51d29e:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d2a4:	c7 41 2c 00 98 8a 45 	mov    DWORD PTR [ecx+0x2c],0x458a9800
+  51d2ab:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d2b1:	c7 42 30 00 98 9b 45 	mov    DWORD PTR [edx+0x30],0x459b9800
+  51d2b8:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d2be:	c7 41 34 00 f0 ad 45 	mov    DWORD PTR [ecx+0x34],0x45adf000
+  51d2c5:	8b 15 f0 b3 54 00    	mov    edx,DWORD PTR ds:0x54b3f0
+  51d2cb:	c7 42 38 00 38 c2 45 	mov    DWORD PTR [edx+0x38],0x45c23800
+  51d2d2:	8b 0d f0 b3 54 00    	mov    ecx,DWORD PTR ds:0x54b3f0
+  51d2d8:	c7 41 3c 00 e0 d8 45 	mov    DWORD PTR [ecx+0x3c],0x45d8e000

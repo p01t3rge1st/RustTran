@@ -1,0 +1,12 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.16s
+     Running tests/alternate_init.rs (rusttran/target/debug/deps/alternate_init-997d1cb3d4161895)
+
+running 4 tests
+test invalid_or_missing_double_inputs_fail_without_modifying_request ... ok
+test double_and_array_initializer_matches_continuous_original_instructions ... ok
+test complete_recovered_fresh_bundle_matches_independent_source_composition ... ok
+test assembled_fresh_state_retains_references_and_typed_double_arrays ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.67s
+

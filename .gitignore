@@ -1,0 +1,14 @@
+.tools/
+rea-tools/
+rusttran/target/
+analysis/installer/
+analysis/program/
+analysis/rea/server.log
+__pycache__/
+*.pyc
+dist/
+
+# Local original archive, deferred instructions and generated comparison report
+/PC-Tran (program).zip
+/Kiedy_skonczysz/
+/analysis/component-comparison/

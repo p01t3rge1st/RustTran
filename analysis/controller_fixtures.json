@@ -1,0 +1,5407 @@
+{
+  "method": "Execute original PI numerical branch 0x5122d8\u20130x512372 without math mocks.\nStops before original COM/error reporting. Inputs are supplied; no dispatcher.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "seed": 20261024,
+  "cases": [
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 30.894004821777344,
+        "output": -1,
+        "previous_error": 0.0,
+        "gain": 15.362316131591797,
+        "integral_time": 74.25437927246094,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 92.99720001220703,
+        "output": 0,
+        "previous_error": 0.0,
+        "gain": 7.975049018859863,
+        "integral_time": 16.06312370300293,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 58.34956741333008,
+        "output": 1,
+        "previous_error": 0.0,
+        "gain": 6.712945461273193,
+        "integral_time": 7.757777214050293,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 1.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 14.15595817565918,
+        "output": 99,
+        "previous_error": 0.0,
+        "gain": 2.6676690578460693,
+        "integral_time": 92.59980773925781,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 99.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 3.434110403060913,
+        "output": 100,
+        "previous_error": 0.0,
+        "gain": 9.158801078796387,
+        "integral_time": 87.4594497680664,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 49.20772171020508,
+        "output": 101,
+        "previous_error": 0.0,
+        "gain": 0.9719915986061096,
+        "integral_time": 49.52653121948242,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 72.27735900878906,
+        "output": -1,
+        "previous_error": 0.0,
+        "gain": 0.0666932687163353,
+        "integral_time": 7.783088684082031,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 52.342132568359375,
+        "output": 0,
+        "previous_error": 0.0,
+        "gain": 11.249662399291992,
+        "integral_time": 63.72611999511719,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 0.0,
+        "target": 0.0,
+        "proportional_band": 5.47393274307251,
+        "output": 1,
+        "previous_error": 0.0,
+        "gain": 13.660876274108887,
+        "integral_time": 64.21437072753906,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 1.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2999.737548828125,
+        "target": 1459.0897216796875,
+        "proportional_band": 28.21739959716797,
+        "output": -24.972204208374023,
+        "previous_error": -5.691041469573975,
+        "gain": 14.93948745727539,
+        "integral_time": 13.928159713745117,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 54.599212646484375
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1880.4012451171875,
+        "target": -291.8159484863281,
+        "proportional_band": 47.185699462890625,
+        "output": 30.103839874267578,
+        "previous_error": 0.568761944770813,
+        "gain": 14.4201021194458,
+        "integral_time": 38.19408416748047,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 46.035499572753906
+      }
+    },
+    {
+      "inputs": {
+        "measured": 29.867111206054688,
+        "target": 532.0343017578125,
+        "proportional_band": 37.17790985107422,
+        "output": 129.52658081054688,
+        "previous_error": 2.574908971786499,
+        "gain": 10.820844650268555,
+        "integral_time": 64.99368286132812,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -196.55320739746094,
+        "target": 2144.0732421875,
+        "proportional_band": 75.0530776977539,
+        "output": 52.98289489746094,
+        "previous_error": 1.1481907367706299,
+        "gain": 14.180557250976562,
+        "integral_time": 86.97784423828125,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -243.57522583007812,
+        "target": 971.6958618164062,
+        "proportional_band": 79.74832153320312,
+        "output": 89.30078887939453,
+        "previous_error": 6.014944076538086,
+        "gain": 8.946770668029785,
+        "integral_time": 23.846567153930664,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 231.12904357910156,
+        "target": 643.23779296875,
+        "proportional_band": 35.34326171875,
+        "output": 2.0952701568603516,
+        "previous_error": 4.254305839538574,
+        "gain": 14.084674835205078,
+        "integral_time": 96.73114776611328,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -599.4512939453125,
+        "target": -867.083984375,
+        "proportional_band": 5.435525894165039,
+        "output": 34.29597091674805,
+        "previous_error": -1.9452250003814697,
+        "gain": 14.367179870605469,
+        "integral_time": 54.896034240722656,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 49.2376823425293
+      }
+    },
+    {
+      "inputs": {
+        "measured": 384.224365234375,
+        "target": 2058.6904296875,
+        "proportional_band": 24.483402252197266,
+        "output": 143.2275390625,
+        "previous_error": -5.007625102996826,
+        "gain": 6.535078048706055,
+        "integral_time": 57.42375946044922,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 464.6957702636719,
+        "target": 1484.2615966796875,
+        "proportional_band": 82.69329071044922,
+        "output": -20.301055908203125,
+        "previous_error": -0.5970820784568787,
+        "gain": 13.550470352172852,
+        "integral_time": 60.43071746826172,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2265.7255859375,
+        "target": 1818.7020263671875,
+        "proportional_band": 64.31624603271484,
+        "output": 27.88091278076172,
+        "previous_error": -8.23123836517334,
+        "gain": 3.2280449867248535,
+        "integral_time": 85.96243286132812,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 76.88792419433594,
+        "previous_error": 6.950398921966553
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2901.8740234375,
+        "target": 1655.580078125,
+        "proportional_band": 69.62940216064453,
+        "output": 122.991455078125,
+        "previous_error": 3.540560007095337,
+        "gain": 4.0747833251953125,
+        "integral_time": 76.9622573852539,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 17.89896011352539
+      }
+    },
+    {
+      "inputs": {
+        "measured": -59.38048553466797,
+        "target": 723.5635986328125,
+        "proportional_band": 28.74849510192871,
+        "output": -4.203340530395508,
+        "previous_error": -3.50718355178833,
+        "gain": 4.65296745300293,
+        "integral_time": 94.96076202392578,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 389.8446350097656,
+        "target": 1287.1400146484375,
+        "proportional_band": 54.14670181274414,
+        "output": -40.175296783447266,
+        "previous_error": 2.6894731521606445,
+        "gain": 2.8621644973754883,
+        "integral_time": 46.114463806152344,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1565.8023681640625,
+        "target": -208.70849609375,
+        "proportional_band": 58.31853103637695,
+        "output": -7.383695125579834,
+        "previous_error": -8.217769622802734,
+        "gain": 13.924402236938477,
+        "integral_time": 81.38655853271484,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 30.427907943725586
+      }
+    },
+    {
+      "inputs": {
+        "measured": -152.49417114257812,
+        "target": -387.4632873535156,
+        "proportional_band": 94.58368682861328,
+        "output": 140.14451599121094,
+        "previous_error": 7.65908145904541,
+        "gain": 11.246271133422852,
+        "integral_time": 56.638694763183594,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 82.19355010986328,
+        "previous_error": 2.484245777130127
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2943.982177734375,
+        "target": 1988.53857421875,
+        "proportional_band": 9.499650955200195,
+        "output": -39.266571044921875,
+        "previous_error": 7.98309326171875,
+        "gain": 5.708226680755615,
+        "integral_time": 31.71748924255371,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 100.57670593261719
+      }
+    },
+    {
+      "inputs": {
+        "measured": -478.4888610839844,
+        "target": -189.13026428222656,
+        "proportional_band": 49.97983169555664,
+        "output": 49.998138427734375,
+        "previous_error": -8.59168815612793,
+        "gain": 14.720902442932129,
+        "integral_time": 53.0555534362793,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 91.088134765625,
+        "previous_error": -5.7895073890686035
+      }
+    },
+    {
+      "inputs": {
+        "measured": -517.4177856445312,
+        "target": 2015.2147216796875,
+        "proportional_band": 17.524702072143555,
+        "output": 76.73977661132812,
+        "previous_error": 1.2441068887710571,
+        "gain": 13.355989456176758,
+        "integral_time": 84.81692504882812,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1980.798828125,
+        "target": 2204.032470703125,
+        "proportional_band": 24.715253829956055,
+        "output": 109.96710968017578,
+        "previous_error": 0.7778723239898682,
+        "gain": 10.458393096923828,
+        "integral_time": 27.70518684387207,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 3.9597280025482178,
+        "previous_error": -9.032221794128418
+      }
+    },
+    {
+      "inputs": {
+        "measured": 149.08477783203125,
+        "target": 1603.2076416015625,
+        "proportional_band": 11.252631187438965,
+        "output": 134.894775390625,
+        "previous_error": 6.810420513153076,
+        "gain": 12.531171798706055,
+        "integral_time": 71.7835464477539,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2057.77099609375,
+        "target": 1037.017333984375,
+        "proportional_band": 73.745849609375,
+        "output": -19.112186431884766,
+        "previous_error": 5.0402374267578125,
+        "gain": 17.48711585998535,
+        "integral_time": 75.89456939697266,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 13.841506958007812
+      }
+    },
+    {
+      "inputs": {
+        "measured": -519.001220703125,
+        "target": 63.41183853149414,
+        "proportional_band": 75.7314224243164,
+        "output": 72.46671295166016,
+        "previous_error": -0.6344791054725647,
+        "gain": 12.464126586914062,
+        "integral_time": 54.76052474975586,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1247.8917236328125,
+        "target": 1254.26513671875,
+        "proportional_band": 83.23416900634766,
+        "output": -9.927624702453613,
+        "previous_error": 8.36484432220459,
+        "gain": 12.552961349487305,
+        "integral_time": 80.2828369140625,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 777.4298095703125,
+        "target": 1584.924072265625,
+        "proportional_band": 61.033443450927734,
+        "output": -22.398298263549805,
+        "previous_error": 3.6486973762512207,
+        "gain": 8.233964920043945,
+        "integral_time": 59.3442497253418,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 174.72787475585938,
+        "target": 1176.4212646484375,
+        "proportional_band": 6.978726387023926,
+        "output": -7.9670820236206055,
+        "previous_error": -2.771583080291748,
+        "gain": 4.746217250823975,
+        "integral_time": 58.748619079589844,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1610.57177734375,
+        "target": 2131.82177734375,
+        "proportional_band": 49.12650680541992,
+        "output": 98.22389221191406,
+        "previous_error": 5.23697566986084,
+        "gain": 0.6625128984451294,
+        "integral_time": 71.09027099609375,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 87.71493530273438,
+        "previous_error": -10.610361099243164
+      }
+    },
+    {
+      "inputs": {
+        "measured": -6.923412322998047,
+        "target": 2300.440185546875,
+        "proportional_band": 17.026235580444336,
+        "output": 1.9546951055526733,
+        "previous_error": -2.51971173286438,
+        "gain": 17.03270149230957,
+        "integral_time": 18.794132232666016,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -334.9972229003906,
+        "target": 268.49383544921875,
+        "proportional_band": 28.463777542114258,
+        "output": 37.9342041015625,
+        "previous_error": -9.989203453063965,
+        "gain": 4.945952415466309,
+        "integral_time": 45.49382781982422,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2707.716064453125,
+        "target": 1164.084716796875,
+        "proportional_band": 66.11770629882812,
+        "output": 130.82373046875,
+        "previous_error": 2.9961297512054443,
+        "gain": 12.104231834411621,
+        "integral_time": 81.50788879394531,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 23.346715927124023
+      }
+    },
+    {
+      "inputs": {
+        "measured": -72.23321533203125,
+        "target": 2117.57470703125,
+        "proportional_band": 2.9575769901275635,
+        "output": 15.763689041137695,
+        "previous_error": 8.871631622314453,
+        "gain": 10.649282455444336,
+        "integral_time": 17.693824768066406,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -315.2789611816406,
+        "target": 95.64576721191406,
+        "proportional_band": 30.068313598632812,
+        "output": 7.914651870727539,
+        "previous_error": -9.570470809936523,
+        "gain": 18.276208877563477,
+        "integral_time": 27.27760887145996,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2322.32763671875,
+        "target": -585.1699829101562,
+        "proportional_band": 23.729774475097656,
+        "output": 46.34111022949219,
+        "previous_error": -6.66018533706665,
+        "gain": 15.890573501586914,
+        "integral_time": 9.191831588745117,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 122.5252914428711
+      }
+    },
+    {
+      "inputs": {
+        "measured": -141.4555206298828,
+        "target": -57.02846908569336,
+        "proportional_band": 44.00516891479492,
+        "output": 8.162632942199707,
+        "previous_error": -1.179343342781067,
+        "gain": 10.473064422607422,
+        "integral_time": 13.31519889831543,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 791.4454345703125,
+        "target": 2895.08984375,
+        "proportional_band": 79.8193588256836,
+        "output": 134.3907928466797,
+        "previous_error": -6.4881768226623535,
+        "gain": 2.0127670764923096,
+        "integral_time": 55.678794860839844,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 94.40337371826172,
+        "previous_error": -26.355064392089844
+      }
+    },
+    {
+      "inputs": {
+        "measured": -659.8800659179688,
+        "target": 2559.33837890625,
+        "proportional_band": 93.09477996826172,
+        "output": -3.2056708335876465,
+        "previous_error": 0.3212091326713562,
+        "gain": 12.91099739074707,
+        "integral_time": 41.14577102661133,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -254.35147094726562,
+        "target": 2445.131591796875,
+        "proportional_band": 58.71786117553711,
+        "output": -43.55143737792969,
+        "previous_error": 1.3376750946044922,
+        "gain": 5.374550819396973,
+        "integral_time": 44.723785400390625,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2538.34033203125,
+        "target": -959.8206176757812,
+        "proportional_band": 21.508861541748047,
+        "output": 90.17060089111328,
+        "previous_error": -0.6284911632537842,
+        "gain": 10.940849304199219,
+        "integral_time": 51.772727966308594,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 162.63812255859375
+      }
+    },
+    {
+      "inputs": {
+        "measured": 867.4866333007812,
+        "target": 2345.463134765625,
+        "proportional_band": 24.475215911865234,
+        "output": 87.9068832397461,
+        "previous_error": 3.313380479812622,
+        "gain": 19.631771087646484,
+        "integral_time": 83.66600799560547,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 383.7765197753906,
+        "target": 684.7848510742188,
+        "proportional_band": 64.45906066894531,
+        "output": -3.715761184692383,
+        "previous_error": 6.17175817489624,
+        "gain": 9.398014068603516,
+        "integral_time": 71.04827117919922,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1714.2099609375,
+        "target": 2369.680419921875,
+        "proportional_band": 15.58508586883545,
+        "output": -2.8850257396698,
+        "previous_error": 0.2266768366098404,
+        "gain": 4.602508068084717,
+        "integral_time": 36.120399475097656,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 224.5118408203125,
+        "target": -509.7279357910156,
+        "proportional_band": 61.871768951416016,
+        "output": 33.458946228027344,
+        "previous_error": 9.996992111206055,
+        "gain": 11.727755546569824,
+        "integral_time": 35.662803649902344,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 59.29387283325195,
+        "previous_error": 11.867120742797852
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2405.37158203125,
+        "target": 315.2294006347656,
+        "proportional_band": 18.597917556762695,
+        "output": 36.84263610839844,
+        "previous_error": 1.1582046747207642,
+        "gain": 16.5239200592041,
+        "integral_time": 55.200218200683594,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 112.38581848144531
+      }
+    },
+    {
+      "inputs": {
+        "measured": -218.4498291015625,
+        "target": 1812.477294921875,
+        "proportional_band": 15.066079139709473,
+        "output": 36.00922393798828,
+        "previous_error": -2.327125072479248,
+        "gain": 0.8526521325111389,
+        "integral_time": 44.31327819824219,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -719.0515747070312,
+        "target": -828.6580810546875,
+        "proportional_band": 8.33583927154541,
+        "output": 79.35138702392578,
+        "previous_error": 7.586190700531006,
+        "gain": 6.878842830657959,
+        "integral_time": 29.753021240234375,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 13.148826599121094
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2206.81787109375,
+        "target": 530.2020263671875,
+        "proportional_band": 73.80443572998047,
+        "output": -8.998929023742676,
+        "previous_error": -0.2511158585548401,
+        "gain": 19.308143615722656,
+        "integral_time": 50.29973602294922,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 22.71700668334961
+      }
+    },
+    {
+      "inputs": {
+        "measured": -511.94573974609375,
+        "target": 1713.0255126953125,
+        "proportional_band": 32.55107116699219,
+        "output": 107.86064147949219,
+        "previous_error": -7.898658752441406,
+        "gain": 12.327058792114258,
+        "integral_time": 71.31301879882812,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2546.010009765625,
+        "target": -845.001220703125,
+        "proportional_band": 6.105962753295898,
+        "output": 129.16554260253906,
+        "previous_error": -1.678810715675354,
+        "gain": 4.381778717041016,
+        "integral_time": 33.12856674194336,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 555.360595703125
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2578.809814453125,
+        "target": -124.47867584228516,
+        "proportional_band": 97.64590454101562,
+        "output": 33.86482238769531,
+        "previous_error": 7.930572032928467,
+        "gain": 8.246003150939941,
+        "integral_time": 66.63839721679688,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 27.684606552124023
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1487.3741455078125,
+        "target": 2946.28857421875,
+        "proportional_band": 90.45238494873047,
+        "output": 142.76190185546875,
+        "previous_error": 5.038757801055908,
+        "gain": 1.6187468767166138,
+        "integral_time": 8.346617698669434,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -16.129087448120117
+      }
+    },
+    {
+      "inputs": {
+        "measured": -916.66064453125,
+        "target": 2278.5361328125,
+        "proportional_band": 76.87171173095703,
+        "output": 21.34346580505371,
+        "previous_error": 5.224776268005371,
+        "gain": 6.010768413543701,
+        "integral_time": 66.9879150390625,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1082.03076171875,
+        "target": -378.0053405761719,
+        "proportional_band": 22.392223358154297,
+        "output": 147.01698303222656,
+        "previous_error": 7.315946102142334,
+        "gain": 5.932002544403076,
+        "integral_time": 23.269014358520508,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 65.20281982421875
+      }
+    },
+    {
+      "inputs": {
+        "measured": 230.90525817871094,
+        "target": -497.1888732910156,
+        "proportional_band": 47.15013885498047,
+        "output": 62.821353912353516,
+        "previous_error": -1.6090543270111084,
+        "gain": 15.983628273010254,
+        "integral_time": 34.247047424316406,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 15.442035675048828
+      }
+    },
+    {
+      "inputs": {
+        "measured": 581.1334228515625,
+        "target": 1061.47119140625,
+        "proportional_band": 45.23090744018555,
+        "output": 62.633392333984375,
+        "previous_error": -3.1453421115875244,
+        "gain": 2.161165237426758,
+        "integral_time": 42.167701721191406,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 45.93583679199219,
+        "previous_error": -10.619680404663086
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2184.895263671875,
+        "target": 1008.7872924804688,
+        "proportional_band": 59.964725494384766,
+        "output": 73.05750274658203,
+        "previous_error": -7.273414611816406,
+        "gain": 18.919862747192383,
+        "integral_time": 14.491045951843262,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 19.613330841064453
+      }
+    },
+    {
+      "inputs": {
+        "measured": 926.7105712890625,
+        "target": 18.248231887817383,
+        "proportional_band": 88.16122436523438,
+        "output": -29.399738311767578,
+        "previous_error": -5.9267377853393555,
+        "gain": 10.631614685058594,
+        "integral_time": 63.34539794921875,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 10.304556846618652
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1237.302978515625,
+        "target": 599.177734375,
+        "proportional_band": 45.239601135253906,
+        "output": -42.19359588623047,
+        "previous_error": 0.0942210853099823,
+        "gain": 7.629753112792969,
+        "integral_time": 92.03262329101562,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 65.29336547851562,
+        "previous_error": 14.105457305908203
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1245.7994384765625,
+        "target": 785.7139892578125,
+        "proportional_band": 52.69023513793945,
+        "output": -0.5418117046356201,
+        "previous_error": 7.480373859405518,
+        "gain": 17.18407440185547,
+        "integral_time": 88.78118133544922,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 20.964378356933594,
+        "previous_error": 8.731892585754395
+      }
+    },
+    {
+      "inputs": {
+        "measured": 520.1000366210938,
+        "target": 2345.05517578125,
+        "proportional_band": 65.6092529296875,
+        "output": 51.70770263671875,
+        "previous_error": 5.375891208648682,
+        "gain": 13.904610633850098,
+        "integral_time": 69.60651397705078,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1106.01025390625,
+        "target": 54.70669174194336,
+        "proportional_band": 60.67705535888672,
+        "output": 89.97879028320312,
+        "previous_error": 8.763318061828613,
+        "gain": 0.3583316504955292,
+        "integral_time": 76.37740325927734,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 93.04714965820312,
+        "previous_error": 17.32621192932129
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2651.43359375,
+        "target": 1529.475830078125,
+        "proportional_band": 44.62836837768555,
+        "output": 22.110898971557617,
+        "previous_error": -4.629923343658447,
+        "gain": 11.737889289855957,
+        "integral_time": 76.77605438232422,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 25.140012741088867
+      }
+    },
+    {
+      "inputs": {
+        "measured": 693.4653930664062,
+        "target": -409.427734375,
+        "proportional_band": 72.46337890625,
+        "output": 83.95611572265625,
+        "previous_error": -9.24334716796875,
+        "gain": 8.810254096984863,
+        "integral_time": 17.140575408935547,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 15.220006942749023
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2921.968505859375,
+        "target": -340.1477966308594,
+        "proportional_band": 37.996795654296875,
+        "output": 19.283233642578125,
+        "previous_error": -9.013206481933594,
+        "gain": 9.208280563354492,
+        "integral_time": 4.380834102630615,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 85.85240173339844
+      }
+    },
+    {
+      "inputs": {
+        "measured": 376.1037902832031,
+        "target": 2501.507568359375,
+        "proportional_band": 35.249263763427734,
+        "output": 116.1890869140625,
+        "previous_error": 1.8964931964874268,
+        "gain": 14.590054512023926,
+        "integral_time": 32.37561798095703,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1207.265380859375,
+        "target": -65.33464050292969,
+        "proportional_band": 8.139274597167969,
+        "output": -2.571774959564209,
+        "previous_error": -7.864418029785156,
+        "gain": 2.377673864364624,
+        "integral_time": 48.82633972167969,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 156.35299682617188
+      }
+    },
+    {
+      "inputs": {
+        "measured": -389.9410400390625,
+        "target": 543.3169555664062,
+        "proportional_band": 30.064998626708984,
+        "output": 29.924827575683594,
+        "previous_error": 6.239403247833252,
+        "gain": 14.646921157836914,
+        "integral_time": 60.124298095703125,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2716.538330078125,
+        "target": 614.5276489257812,
+        "proportional_band": 89.84733581542969,
+        "output": 43.1607551574707,
+        "previous_error": -9.59881591796875,
+        "gain": 13.196419715881348,
+        "integral_time": 46.094844818115234,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 23.39535903930664
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2493.5712890625,
+        "target": -710.68896484375,
+        "proportional_band": 45.774898529052734,
+        "output": 114.51721954345703,
+        "previous_error": 4.3570098876953125,
+        "gain": 12.822834014892578,
+        "integral_time": 48.00371170043945,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 70.00038146972656
+      }
+    },
+    {
+      "inputs": {
+        "measured": -328.9107971191406,
+        "target": 1726.2667236328125,
+        "proportional_band": 21.928298950195312,
+        "output": 138.9186248779297,
+        "previous_error": -5.577110290527344,
+        "gain": 17.338102340698242,
+        "integral_time": 13.971906661987305,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2586.84619140625,
+        "target": 1776.69921875,
+        "proportional_band": 13.178423881530762,
+        "output": 114.41419982910156,
+        "previous_error": -2.1057615280151367,
+        "gain": 6.583855628967285,
+        "integral_time": 18.943382263183594,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 61.47525405883789
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1364.56982421875,
+        "target": 1804.4095458984375,
+        "proportional_band": 88.54299926757812,
+        "output": 3.972888946533203,
+        "previous_error": 7.294224262237549,
+        "gain": 19.657629013061523,
+        "integral_time": 56.48297119140625,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1398.3961181640625,
+        "target": 2469.880126953125,
+        "proportional_band": 44.38994216918945,
+        "output": 49.296573638916016,
+        "previous_error": -9.364344596862793,
+        "gain": 4.383900165557861,
+        "integral_time": 47.81689453125,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -834.4795532226562,
+        "target": -57.42917251586914,
+        "proportional_band": 38.199275970458984,
+        "output": -31.55864715576172,
+        "previous_error": -6.033046722412109,
+        "gain": 11.851661682128906,
+        "integral_time": 86.97085571289062,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -788.0926513671875,
+        "target": 312.2415466308594,
+        "proportional_band": 23.256067276000977,
+        "output": 18.148313522338867,
+        "previous_error": 0.8031713962554932,
+        "gain": 14.50799560546875,
+        "integral_time": 80.53492736816406,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2760.88232421875,
+        "target": 1659.2349853515625,
+        "proportional_band": 75.9469223022461,
+        "output": 54.86391067504883,
+        "previous_error": -9.316372871398926,
+        "gain": 13.884781837463379,
+        "integral_time": 30.215734481811523,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 14.50549030303955
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1916.56689453125,
+        "target": 2292.433349609375,
+        "proportional_band": 45.41627502441406,
+        "output": -15.022940635681152,
+        "previous_error": 9.212862968444824,
+        "gain": 14.939188003540039,
+        "integral_time": 65.68296813964844,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2108.966064453125,
+        "target": 1469.689453125,
+        "proportional_band": 16.57326316833496,
+        "output": 93.31458282470703,
+        "previous_error": 1.811896562576294,
+        "gain": 16.27943229675293,
+        "integral_time": 92.25460052490234,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 38.5727653503418
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2160.7841796875,
+        "target": -983.4218139648438,
+        "proportional_band": 28.537689208984375,
+        "output": 94.47034454345703,
+        "previous_error": 8.754297256469727,
+        "gain": 14.666162490844727,
+        "integral_time": 12.337380409240723,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 110.17731475830078
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1867.98388671875,
+        "target": 2627.947265625,
+        "proportional_band": 5.917515754699707,
+        "output": 90.20652770996094,
+        "previous_error": -5.460342884063721,
+        "gain": 5.711484432220459,
+        "integral_time": 22.331178665161133,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -746.5194702148438,
+        "target": -845.342529296875,
+        "proportional_band": 13.590279579162598,
+        "output": 70.15433502197266,
+        "previous_error": -3.846879243850708,
+        "gain": 6.353693962097168,
+        "integral_time": 93.2326889038086,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 7.271598815917969
+      }
+    },
+    {
+      "inputs": {
+        "measured": -481.9224853515625,
+        "target": 533.7182006835938,
+        "proportional_band": 90.48118591308594,
+        "output": 58.59357452392578,
+        "previous_error": -2.9133999347686768,
+        "gain": 9.13895320892334,
+        "integral_time": 53.106597900390625,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2574.51416015625,
+        "target": 222.98406982421875,
+        "proportional_band": 16.464506149291992,
+        "output": 136.6414794921875,
+        "previous_error": 1.7992358207702637,
+        "gain": 18.01915740966797,
+        "integral_time": 97.64714813232422,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 142.82420349121094
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2745.044677734375,
+        "target": 593.2852172851562,
+        "proportional_band": 38.87040710449219,
+        "output": 58.451419830322266,
+        "previous_error": -1.7449347972869873,
+        "gain": 1.1021513938903809,
+        "integral_time": 68.44725799560547,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 55.35726547241211
+      }
+    },
+    {
+      "inputs": {
+        "measured": 726.39111328125,
+        "target": 1614.7659912109375,
+        "proportional_band": 92.848876953125,
+        "output": -2.1733312606811523,
+        "previous_error": 8.007469177246094,
+        "gain": 13.577193260192871,
+        "integral_time": 10.818626403808594,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -480.3858642578125,
+        "target": 151.20809936523438,
+        "proportional_band": 47.55641174316406,
+        "output": 116.48090362548828,
+        "previous_error": 3.339709520339966,
+        "gain": 4.499541759490967,
+        "integral_time": 13.84445858001709,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 39.537391662597656,
+        "previous_error": -13.2809419631958
+      }
+    },
+    {
+      "inputs": {
+        "measured": -965.9196166992188,
+        "target": 678.4048461914062,
+        "proportional_band": 92.70362091064453,
+        "output": 142.88014221191406,
+        "previous_error": -5.898025989532471,
+        "gain": 0.2733277678489685,
+        "integral_time": 8.273391723632812,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -17.73743438720703
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1257.0740966796875,
+        "target": 1837.83203125,
+        "proportional_band": 83.6829605102539,
+        "output": 37.11928939819336,
+        "previous_error": 2.1297619342803955,
+        "gain": 13.405333518981934,
+        "integral_time": 28.870988845825195,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2560.093994140625,
+        "target": -793.9483642578125,
+        "proportional_band": 13.974787712097168,
+        "output": 37.88383102416992,
+        "previous_error": 5.887653827667236,
+        "gain": 9.371070861816406,
+        "integral_time": 77.41795349121094,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 240.00668334960938
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1776.8880615234375,
+        "target": 1635.0645751953125,
+        "proportional_band": 86.3476333618164,
+        "output": 24.559104919433594,
+        "previous_error": 0.8404648303985596,
+        "gain": 8.595542907714844,
+        "integral_time": 58.608360290527344,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 31.573226928710938,
+        "previous_error": 1.6424710750579834
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2061.953369140625,
+        "target": 863.152099609375,
+        "proportional_band": 80.77723693847656,
+        "output": 81.28668212890625,
+        "previous_error": -9.214085578918457,
+        "gain": 7.56317663192749,
+        "integral_time": 50.50518798828125,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 14.84083080291748
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1731.4571533203125,
+        "target": 2972.65966796875,
+        "proportional_band": 37.211585998535156,
+        "output": 57.74932098388672,
+        "previous_error": -7.1459808349609375,
+        "gain": 14.43254566192627,
+        "integral_time": 94.23753356933594,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 945.959716796875,
+        "target": 2271.642578125,
+        "proportional_band": 97.69204711914062,
+        "output": 10.91427230834961,
+        "previous_error": -1.9806067943572998,
+        "gain": 10.90337085723877,
+        "integral_time": 25.40956687927246,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 41.20197677612305,
+        "target": 2600.203857421875,
+        "proportional_band": 9.063834190368652,
+        "output": -31.05079460144043,
+        "previous_error": 4.359460353851318,
+        "gain": 11.930346488952637,
+        "integral_time": 43.2838249206543,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 404.89471435546875,
+        "target": -597.6151733398438,
+        "proportional_band": 93.48725128173828,
+        "output": 78.5234603881836,
+        "previous_error": 7.66202449798584,
+        "gain": 9.404297828674316,
+        "integral_time": 20.182884216308594,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 10.723492622375488
+      }
+    },
+    {
+      "inputs": {
+        "measured": 509.4766540527344,
+        "target": 459.98272705078125,
+        "proportional_band": 64.23299407958984,
+        "output": -27.749746322631836,
+        "previous_error": 3.924813747406006,
+        "gain": 15.158198356628418,
+        "integral_time": 21.78765106201172,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1637.7255859375,
+        "target": 2805.487060546875,
+        "proportional_band": 4.817272663116455,
+        "output": 7.144749641418457,
+        "previous_error": 3.639967918395996,
+        "gain": 2.869547128677368,
+        "integral_time": 24.513221740722656,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -800.9024047851562,
+        "target": -866.2039184570312,
+        "proportional_band": 40.70176696777344,
+        "output": 13.174477577209473,
+        "previous_error": -5.1613030433654785,
+        "gain": 4.058541297912598,
+        "integral_time": 73.53123474121094,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 40.72187805175781,
+        "previous_error": 1.6043901443481445
+      }
+    },
+    {
+      "inputs": {
+        "measured": -679.2683715820312,
+        "target": -660.0863647460938,
+        "proportional_band": 24.310407638549805,
+        "output": 115.58834838867188,
+        "previous_error": -3.668273687362671,
+        "gain": 8.417553901672363,
+        "integral_time": 35.36919403076172,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -0.7890450358390808
+      }
+    },
+    {
+      "inputs": {
+        "measured": 56.223331451416016,
+        "target": 2400.419677734375,
+        "proportional_band": 86.46397399902344,
+        "output": 6.37994384765625,
+        "previous_error": -5.5652079582214355,
+        "gain": 5.303861618041992,
+        "integral_time": 69.77606201171875,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1666.006591796875,
+        "target": 1885.4246826171875,
+        "proportional_band": 55.344093322753906,
+        "output": 93.8761215209961,
+        "previous_error": 1.6791917085647583,
+        "gain": 3.648176670074463,
+        "integral_time": 71.35674285888672,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 73.18516540527344,
+        "previous_error": -3.964616298675537
+      }
+    },
+    {
+      "inputs": {
+        "measured": 862.503173828125,
+        "target": 1636.4049072265625,
+        "proportional_band": 10.7626371383667,
+        "output": 56.62701416015625,
+        "previous_error": 7.384145259857178,
+        "gain": 1.835800290107727,
+        "integral_time": 94.33489990234375,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -990.8125,
+        "target": 1359.4815673828125,
+        "proportional_band": 4.399196624755859,
+        "output": 131.7710723876953,
+        "previous_error": -9.76254940032959,
+        "gain": 19.156068801879883,
+        "integral_time": 66.22341918945312,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2822.495361328125,
+        "target": 2394.810546875,
+        "proportional_band": 80.91656494140625,
+        "output": -44.63100051879883,
+        "previous_error": -9.515059471130371,
+        "gain": 17.027545928955078,
+        "integral_time": 52.535640716552734,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 5.28550386428833
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2611.73974609375,
+        "target": -883.8052368164062,
+        "proportional_band": 58.05022048950195,
+        "output": 47.376953125,
+        "previous_error": 6.470371246337891,
+        "gain": 12.103515625,
+        "integral_time": 20.323028564453125,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 60.215877532958984
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1212.060791015625,
+        "target": -322.47894287109375,
+        "proportional_band": 96.42355346679688,
+        "output": 53.624874114990234,
+        "previous_error": 6.0440826416015625,
+        "gain": 1.071531057357788,
+        "integral_time": 8.006484031677246,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 66.33130645751953,
+        "previous_error": 15.914573669433594
+      }
+    },
+    {
+      "inputs": {
+        "measured": -273.43182373046875,
+        "target": 164.2442169189453,
+        "proportional_band": 89.44001007080078,
+        "output": 28.56259536743164,
+        "previous_error": 1.010505199432373,
+        "gain": 19.055742263793945,
+        "integral_time": 16.468158721923828,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -888.8047485351562,
+        "target": 307.85089111328125,
+        "proportional_band": 15.05461311340332,
+        "output": -31.49277114868164,
+        "previous_error": 6.442159175872803,
+        "gain": 10.01359748840332,
+        "integral_time": 22.845481872558594,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -330.55535888671875,
+        "target": 767.9575805664062,
+        "proportional_band": 85.34784698486328,
+        "output": -15.40506649017334,
+        "previous_error": -5.714475154876709,
+        "gain": 18.75369644165039,
+        "integral_time": 85.79090881347656,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1372.2760009765625,
+        "target": 2950.392333984375,
+        "proportional_band": 56.14388656616211,
+        "output": -46.9015007019043,
+        "previous_error": 5.357268810272217,
+        "gain": 18.62233543395996,
+        "integral_time": 45.48846435546875,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2176.532470703125,
+        "target": 2102.92041015625,
+        "proportional_band": 21.8482608795166,
+        "output": -27.046796798706055,
+        "previous_error": -1.2980566024780273,
+        "gain": 16.950910568237305,
+        "integral_time": 46.09146499633789,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 52.68769836425781,
+        "previous_error": 3.369241237640381
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2561.317138671875,
+        "target": 2869.872314453125,
+        "proportional_band": 97.36180114746094,
+        "output": -18.62881851196289,
+        "previous_error": -0.19488970935344696,
+        "gain": 8.21756649017334,
+        "integral_time": 93.42526245117188,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1877.6961669921875,
+        "target": 244.64210510253906,
+        "proportional_band": 8.068038940429688,
+        "output": 55.19093322753906,
+        "previous_error": -6.453145980834961,
+        "gain": 10.087194442749023,
+        "integral_time": 40.40444564819336,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 202.4102783203125
+      }
+    },
+    {
+      "inputs": {
+        "measured": -847.1474609375,
+        "target": -26.678630828857422,
+        "proportional_band": 96.49248504638672,
+        "output": 136.03292846679688,
+        "previous_error": 6.162916660308838,
+        "gain": 5.137474060058594,
+        "integral_time": 91.79290771484375,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 60.211631774902344,
+        "previous_error": -8.5029296875
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1659.533203125,
+        "target": 819.5211181640625,
+        "proportional_band": 41.524139404296875,
+        "output": 113.62068939208984,
+        "previous_error": -3.7551069259643555,
+        "gain": 5.059054851531982,
+        "integral_time": 45.06448745727539,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 20.229488372802734
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2817.32666015625,
+        "target": 301.7195739746094,
+        "proportional_band": 61.462501525878906,
+        "output": 98.03358459472656,
+        "previous_error": -6.34244966506958,
+        "gain": 12.911842346191406,
+        "integral_time": 65.82001495361328,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 40.929134368896484
+      }
+    },
+    {
+      "inputs": {
+        "measured": -343.7124328613281,
+        "target": 2952.471435546875,
+        "proportional_band": 64.84921264648438,
+        "output": 56.892398834228516,
+        "previous_error": 4.931792736053467,
+        "gain": 4.313586711883545,
+        "integral_time": 40.93317413330078,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1487.09423828125,
+        "target": 2881.7451171875,
+        "proportional_band": 15.585332870483398,
+        "output": -28.957460403442383,
+        "previous_error": -4.158002853393555,
+        "gain": 15.41140365600586,
+        "integral_time": 48.67048263549805,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 741.1229248046875,
+        "target": -5.712003707885742,
+        "proportional_band": 45.98162078857422,
+        "output": -48.88963317871094,
+        "previous_error": 8.311981201171875,
+        "gain": 17.405546188354492,
+        "integral_time": 26.696928024291992,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 90.1961441040039,
+        "previous_error": 16.24203109741211
+      }
+    },
+    {
+      "inputs": {
+        "measured": -141.48228454589844,
+        "target": 263.4040222167969,
+        "proportional_band": 0.5264140963554382,
+        "output": 77.5008316040039,
+        "previous_error": -6.387637615203857,
+        "gain": 9.394232749938965,
+        "integral_time": 75.8090591430664,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -645.8616333007812,
+        "target": -337.1077575683594,
+        "proportional_band": 83.57991027832031,
+        "output": 36.781768798828125,
+        "previous_error": -6.5856146812438965,
+        "gain": 18.26982307434082,
+        "integral_time": 44.64239501953125,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 89.60894012451172,
+        "previous_error": -3.6941158771514893
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2349.530029296875,
+        "target": 2419.7685546875,
+        "proportional_band": 29.16339111328125,
+        "output": 43.72688674926758,
+        "previous_error": -7.245506286621094,
+        "gain": 13.412141799926758,
+        "integral_time": 61.20207214355469,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -2.4084484577178955
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2864.578369140625,
+        "target": 1402.3446044921875,
+        "proportional_band": 84.18883514404297,
+        "output": 88.03569793701172,
+        "previous_error": 4.482239246368408,
+        "gain": 3.273120403289795,
+        "integral_time": 52.543296813964844,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 17.368499755859375
+      }
+    },
+    {
+      "inputs": {
+        "measured": -960.7560424804688,
+        "target": 2321.7763671875,
+        "proportional_band": 37.708438873291016,
+        "output": -31.740928649902344,
+        "previous_error": 6.149827003479004,
+        "gain": 9.255144119262695,
+        "integral_time": 45.92973327636719,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1459.2369384765625,
+        "target": -789.5709228515625,
+        "proportional_band": 33.991268157958984,
+        "output": 115.89854431152344,
+        "previous_error": 0.6486722230911255,
+        "gain": 9.356801986694336,
+        "integral_time": 74.78894805908203,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 66.15840148925781
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2030.074462890625,
+        "target": 412.8814392089844,
+        "proportional_band": 5.31762170791626,
+        "output": -17.121835708618164,
+        "previous_error": -9.90507984161377,
+        "gain": 12.111355781555176,
+        "integral_time": 24.08762550354004,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 304.1195983886719
+      }
+    },
+    {
+      "inputs": {
+        "measured": -144.98556518554688,
+        "target": 2485.429931640625,
+        "proportional_band": 51.852378845214844,
+        "output": 32.87797164916992,
+        "previous_error": 4.390547275543213,
+        "gain": 9.240827560424805,
+        "integral_time": 15.122757911682129,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2729.106689453125,
+        "target": 1319.3446044921875,
+        "proportional_band": 33.613670349121094,
+        "output": 66.4627456665039,
+        "previous_error": 1.6897995471954346,
+        "gain": 11.547202110290527,
+        "integral_time": 58.4627571105957,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 41.94013977050781
+      }
+    },
+    {
+      "inputs": {
+        "measured": 586.3179931640625,
+        "target": -768.1693725585938,
+        "proportional_band": 75.4924545288086,
+        "output": 26.52935028076172,
+        "previous_error": -6.101778030395508,
+        "gain": 9.193275451660156,
+        "integral_time": 0.8961289525032043,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 17.9420223236084
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1091.961181640625,
+        "target": 111.4508056640625,
+        "proportional_band": 88.91920471191406,
+        "output": 103.09717559814453,
+        "previous_error": 7.724541664123535,
+        "gain": 1.6528221368789673,
+        "integral_time": 92.06940460205078,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 11.026981353759766
+      }
+    },
+    {
+      "inputs": {
+        "measured": -216.56605529785156,
+        "target": 752.0773315429688,
+        "proportional_band": 84.55101013183594,
+        "output": 93.68485260009766,
+        "previous_error": 9.286730766296387,
+        "gain": 7.909904956817627,
+        "integral_time": 6.457968711853027,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 293.96783447265625,
+        "target": 2381.556396484375,
+        "proportional_band": 86.02820587158203,
+        "output": 111.70829772949219,
+        "previous_error": -1.4210176467895508,
+        "gain": 3.9364266395568848,
+        "integral_time": 55.028690338134766,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 21.7794132232666,
+        "previous_error": -24.266326904296875
+      }
+    },
+    {
+      "inputs": {
+        "measured": 745.2359619140625,
+        "target": 1052.5595703125,
+        "proportional_band": 26.783527374267578,
+        "output": -38.97169494628906,
+        "previous_error": 1.7686201333999634,
+        "gain": 19.280017852783203,
+        "integral_time": 93.35858154296875,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1453.1668701171875,
+        "target": 2080.510009765625,
+        "proportional_band": 48.53755569458008,
+        "output": 72.69696807861328,
+        "previous_error": -9.337428092956543,
+        "gain": 11.241872787475586,
+        "integral_time": 46.0151252746582,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 32.367042541503906,
+        "previous_error": -12.924901962280273
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1121.75341796875,
+        "target": 2163.72998046875,
+        "proportional_band": 64.6169662475586,
+        "output": 90.8351058959961,
+        "previous_error": 6.05574893951416,
+        "gain": 1.469322919845581,
+        "integral_time": 62.90839385986328,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 58.20612335205078,
+        "previous_error": -16.12543296813965
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2829.682373046875,
+        "target": 1567.8057861328125,
+        "proportional_band": 88.4334945678711,
+        "output": 78.93356323242188,
+        "previous_error": -3.902174711227417,
+        "gain": 19.364994049072266,
+        "integral_time": 46.39022445678711,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 14.26921558380127
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1153.7215576171875,
+        "target": -682.3450317382812,
+        "proportional_band": 61.62233352661133,
+        "output": 52.68134689331055,
+        "previous_error": -5.269979000091553,
+        "gain": 7.9184465408325195,
+        "integral_time": 80.61958312988281,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 29.795473098754883
+      }
+    },
+    {
+      "inputs": {
+        "measured": 279.7969665527344,
+        "target": -798.0206909179688,
+        "proportional_band": 48.65775680541992,
+        "output": 23.833744049072266,
+        "previous_error": 0.9792429804801941,
+        "gain": 12.71489429473877,
+        "integral_time": 88.50042724609375,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 22.15099334716797
+      }
+    },
+    {
+      "inputs": {
+        "measured": 310.81610107421875,
+        "target": 842.8230590820312,
+        "proportional_band": 19.2413330078125,
+        "output": 96.98838806152344,
+        "previous_error": 7.344785690307617,
+        "gain": 4.923104763031006,
+        "integral_time": 13.528200149536133,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1725.5303955078125,
+        "target": -890.54931640625,
+        "proportional_band": 63.16096878051758,
+        "output": -15.807540893554688,
+        "previous_error": -2.7782981395721436,
+        "gain": 3.9827282428741455,
+        "integral_time": 8.263437271118164,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 41.419246673583984
+      }
+    },
+    {
+      "inputs": {
+        "measured": 546.9786376953125,
+        "target": 1331.3505859375,
+        "proportional_band": 28.25225830078125,
+        "output": 63.24127960205078,
+        "previous_error": 5.053084373474121,
+        "gain": 9.975159645080566,
+        "integral_time": 53.89040756225586,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1758.1859130859375,
+        "target": 913.6393432617188,
+        "proportional_band": 49.108985900878906,
+        "output": -34.688411712646484,
+        "previous_error": 3.79422926902771,
+        "gain": 7.451422691345215,
+        "integral_time": 66.78630828857422,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 67.10295867919922,
+        "previous_error": 17.1973934173584
+      }
+    },
+    {
+      "inputs": {
+        "measured": -979.01806640625,
+        "target": 2553.167236328125,
+        "proportional_band": 36.78642272949219,
+        "output": 140.95252990722656,
+        "previous_error": 6.769460201263428,
+        "gain": 4.127450466156006,
+        "integral_time": 3.768282413482666,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 203.45535278320312,
+        "target": -935.5592041015625,
+        "proportional_band": 59.05717849731445,
+        "output": 145.98971557617188,
+        "previous_error": 5.25246000289917,
+        "gain": 15.92581844329834,
+        "integral_time": 81.81666564941406,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 19.286640167236328
+      }
+    },
+    {
+      "inputs": {
+        "measured": -557.9555053710938,
+        "target": 880.2086791992188,
+        "proportional_band": 92.49503326416016,
+        "output": 90.43375396728516,
+        "previous_error": 0.3085159361362457,
+        "gain": 8.715184211730957,
+        "integral_time": 33.699459075927734,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -597.7194213867188,
+        "target": 1051.9437255859375,
+        "proportional_band": 26.43400001525879,
+        "output": -45.4522819519043,
+        "previous_error": -8.036937713623047,
+        "gain": 5.88218355178833,
+        "integral_time": 41.007808685302734,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2461.04638671875,
+        "target": -531.757080078125,
+        "proportional_band": 70.64631652832031,
+        "output": 56.460086822509766,
+        "previous_error": 6.734457015991211,
+        "gain": 4.866865158081055,
+        "integral_time": 51.2664680480957,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 42.36319351196289
+      }
+    },
+    {
+      "inputs": {
+        "measured": 315.06158447265625,
+        "target": 2723.96533203125,
+        "proportional_band": 94.72107696533203,
+        "output": 117.42745208740234,
+        "previous_error": -0.8873975276947021,
+        "gain": 1.1256918907165527,
+        "integral_time": 36.293277740478516,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 89.0094985961914,
+        "previous_error": -25.431549072265625
+      }
+    },
+    {
+      "inputs": {
+        "measured": -823.737548828125,
+        "target": 933.5094604492188,
+        "proportional_band": 40.18789291381836,
+        "output": -0.12147776782512665,
+        "previous_error": 2.5367448329925537,
+        "gain": 14.120945930480957,
+        "integral_time": 41.51044845581055,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 546.20703125,
+        "target": 435.5679016113281,
+        "proportional_band": 79.74314880371094,
+        "output": -9.284998893737793,
+        "previous_error": -9.239710807800293,
+        "gain": 13.490739822387695,
+        "integral_time": 33.19782257080078,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 1.3874436616897583
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2579.9833984375,
+        "target": 37.30171203613281,
+        "proportional_band": 22.866334915161133,
+        "output": 16.64177703857422,
+        "previous_error": 3.338071584701538,
+        "gain": 15.131464004516602,
+        "integral_time": 34.90250015258789,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 111.1976089477539
+      }
+    },
+    {
+      "inputs": {
+        "measured": 241.3719940185547,
+        "target": -399.225830078125,
+        "proportional_band": 96.79913330078125,
+        "output": 94.51395416259766,
+        "previous_error": -8.134073257446289,
+        "gain": 15.244423866271973,
+        "integral_time": 35.93199920654297,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 6.617805480957031
+      }
+    },
+    {
+      "inputs": {
+        "measured": -459.9803771972656,
+        "target": 2513.915283203125,
+        "proportional_band": 50.0909423828125,
+        "output": 118.22483825683594,
+        "previous_error": 4.484177589416504,
+        "gain": 13.34910774230957,
+        "integral_time": 96.0701675415039,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1065.1483154296875,
+        "target": 474.5926513671875,
+        "proportional_band": 11.788091659545898,
+        "output": -48.967105865478516,
+        "previous_error": 0.23877017199993134,
+        "gain": 17.90410804748535,
+        "integral_time": 61.75090026855469,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 50.09764862060547
+      }
+    },
+    {
+      "inputs": {
+        "measured": -933.8082885742188,
+        "target": 658.5184936523438,
+        "proportional_band": 84.8790283203125,
+        "output": 13.30384635925293,
+        "previous_error": 1.860654592514038,
+        "gain": 3.8204970359802246,
+        "integral_time": 3.4283883571624756,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -783.1550903320312,
+        "target": 1489.7718505859375,
+        "proportional_band": 3.208148241043091,
+        "output": 41.322818756103516,
+        "previous_error": -0.6792837977409363,
+        "gain": 12.490315437316895,
+        "integral_time": 81.50444030761719,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1324.248046875,
+        "target": 1485.886474609375,
+        "proportional_band": 86.45799255371094,
+        "output": 135.80455017089844,
+        "previous_error": 4.120616912841797,
+        "gain": 0.6697127819061279,
+        "integral_time": 6.480302810668945,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -1.8695602416992188
+      }
+    },
+    {
+      "inputs": {
+        "measured": -16.266469955444336,
+        "target": 51.250877380371094,
+        "proportional_band": 52.90309143066406,
+        "output": 141.7363739013672,
+        "previous_error": -6.831118583679199,
+        "gain": 3.3341164588928223,
+        "integral_time": 38.98602294921875,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -1.2762458324432373
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2737.160400390625,
+        "target": 1267.1641845703125,
+        "proportional_band": 18.33535385131836,
+        "output": -26.938800811767578,
+        "previous_error": -7.589172840118408,
+        "gain": 6.0894927978515625,
+        "integral_time": 44.44264602661133,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 80.17277526855469
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1513.9832763671875,
+        "target": 918.6546020507812,
+        "proportional_band": 63.80801773071289,
+        "output": -47.93565368652344,
+        "previous_error": 1.828135371208191,
+        "gain": 0.8055599331855774,
+        "integral_time": 43.40709686279297,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1538.063232421875,
+        "target": 427.61334228515625,
+        "proportional_band": 87.14134216308594,
+        "output": 102.04122161865234,
+        "previous_error": -9.881604194641113,
+        "gain": 16.555143356323242,
+        "integral_time": 12.684189796447754,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 12.743088722229004
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2373.353515625,
+        "target": 2508.786376953125,
+        "proportional_band": 68.6216049194336,
+        "output": 31.460325241088867,
+        "previous_error": -5.222902774810791,
+        "gain": 19.678539276123047,
+        "integral_time": 54.69916915893555,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 95.40149688720703,
+        "previous_error": -1.9736183881759644
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1383.1744384765625,
+        "target": 1036.25244140625,
+        "proportional_band": 7.692905902862549,
+        "output": -4.152132987976074,
+        "previous_error": -0.5301994681358337,
+        "gain": 3.2191460132598877,
+        "integral_time": 15.522934913635254,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 45.096351623535156
+      }
+    },
+    {
+      "inputs": {
+        "measured": 15.992425918579102,
+        "target": 747.9635009765625,
+        "proportional_band": 3.3953959941864014,
+        "output": 49.60425567626953,
+        "previous_error": 8.721684455871582,
+        "gain": 15.439713478088379,
+        "integral_time": 95.37067413330078,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 767.0880126953125,
+        "target": 2206.608154296875,
+        "proportional_band": 32.50831985473633,
+        "output": -12.292795181274414,
+        "previous_error": 5.009957313537598,
+        "gain": 2.676664352416992,
+        "integral_time": 6.263644218444824,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1345.529052734375,
+        "target": -170.49639892578125,
+        "proportional_band": 32.9830436706543,
+        "output": -39.93681335449219,
+        "previous_error": 6.155994892120361,
+        "gain": 11.119634628295898,
+        "integral_time": 69.24536895751953,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 45.963783264160156
+      }
+    },
+    {
+      "inputs": {
+        "measured": -39.28569030761719,
+        "target": 380.56475830078125,
+        "proportional_band": 55.94688034057617,
+        "output": 79.1283950805664,
+        "previous_error": 9.750237464904785,
+        "gain": 17.883411407470703,
+        "integral_time": 43.54008102416992,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2854.07958984375,
+        "target": 49.40717697143555,
+        "proportional_band": 33.67304992675781,
+        "output": 67.52098846435547,
+        "previous_error": 0.036138154566287994,
+        "gain": 15.1201810836792,
+        "integral_time": 45.65760040283203,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 83.29130554199219
+      }
+    },
+    {
+      "inputs": {
+        "measured": 480.2804870605469,
+        "target": 2527.331787109375,
+        "proportional_band": 12.475639343261719,
+        "output": 113.62142944335938,
+        "previous_error": -8.409282684326172,
+        "gain": 13.0999755859375,
+        "integral_time": 52.18092346191406,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1175.9007568359375,
+        "target": 295.0272216796875,
+        "proportional_band": 56.45766830444336,
+        "output": 135.2282257080078,
+        "previous_error": 5.43416690826416,
+        "gain": 1.6012578010559082,
+        "integral_time": 34.4956169128418,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 15.602372169494629
+      }
+    },
+    {
+      "inputs": {
+        "measured": -616.65576171875,
+        "target": 945.0263671875,
+        "proportional_band": 94.26124572753906,
+        "output": 147.03981018066406,
+        "previous_error": 5.608776569366455,
+        "gain": 14.936660766601562,
+        "integral_time": 27.082191467285156,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 541.5913696289062,
+        "target": 2149.747314453125,
+        "proportional_band": 68.77896118164062,
+        "output": -9.326798439025879,
+        "previous_error": -2.0243337154388428,
+        "gain": 10.404706954956055,
+        "integral_time": 47.09168243408203,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1678.8453369140625,
+        "target": 1727.7586669921875,
+        "proportional_band": 37.58430480957031,
+        "output": 118.49783325195312,
+        "previous_error": -0.883604109287262,
+        "gain": 9.64197826385498,
+        "integral_time": 31.36244010925293,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -1.3014296293258667
+      }
+    },
+    {
+      "inputs": {
+        "measured": 681.1756591796875,
+        "target": -637.355224609375,
+        "proportional_band": 20.493431091308594,
+        "output": 79.43972778320312,
+        "previous_error": 6.302406311035156,
+        "gain": 2.2364325523376465,
+        "integral_time": 27.985401153564453,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 64.33919525146484
+      }
+    },
+    {
+      "inputs": {
+        "measured": 524.404541015625,
+        "target": 2088.2626953125,
+        "proportional_band": 6.8637847900390625,
+        "output": 127.6374282836914,
+        "previous_error": -0.859341025352478,
+        "gain": 4.425530433654785,
+        "integral_time": 62.350833892822266,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 894.1769409179688,
+        "target": 1575.482421875,
+        "proportional_band": 71.42012786865234,
+        "output": 16.65162467956543,
+        "previous_error": -1.0332332849502563,
+        "gain": 9.311874389648438,
+        "integral_time": 56.451786041259766,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2861.005615234375,
+        "target": 315.1461486816406,
+        "proportional_band": 63.593345642089844,
+        "output": -35.98948287963867,
+        "previous_error": -1.607313632965088,
+        "gain": 0.5654221177101135,
+        "integral_time": 91.62432861328125,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1312.0245361328125,
+        "target": -252.48226928710938,
+        "proportional_band": 37.108028411865234,
+        "output": 149.3473358154297,
+        "previous_error": 2.8671462535858154,
+        "gain": 10.903985023498535,
+        "integral_time": 43.411415100097656,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 42.16086959838867
+      }
+    },
+    {
+      "inputs": {
+        "measured": 261.7964172363281,
+        "target": -154.21090698242188,
+        "proportional_band": 75.84391021728516,
+        "output": -19.94538688659668,
+        "previous_error": -6.988179683685303,
+        "gain": 18.614042282104492,
+        "integral_time": 38.791053771972656,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 5.485045909881592
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2490.765869140625,
+        "target": 2659.176025390625,
+        "proportional_band": 58.663936614990234,
+        "output": 35.056793212890625,
+        "previous_error": -3.6722099781036377,
+        "gain": 9.549388885498047,
+        "integral_time": 29.153291702270508,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 42.23997116088867,
+        "previous_error": -2.8707611560821533
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1370.6624755859375,
+        "target": 1508.47265625,
+        "proportional_band": 31.376070022583008,
+        "output": -40.258174896240234,
+        "previous_error": -3.0760364532470703,
+        "gain": 11.132377624511719,
+        "integral_time": 16.780303955078125,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 531.6739501953125,
+        "target": 2376.050537109375,
+        "proportional_band": 22.985658645629883,
+        "output": 138.50689697265625,
+        "previous_error": 2.401724100112915,
+        "gain": 8.69005012512207,
+        "integral_time": 44.006526947021484,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 71.4823989868164,
+        "target": 778.9696044921875,
+        "proportional_band": 18.07872772216797,
+        "output": 12.816676139831543,
+        "previous_error": 3.3821864128112793,
+        "gain": 12.238544464111328,
+        "integral_time": 6.85884428024292,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -588.6445922851562,
+        "target": 539.0009765625,
+        "proportional_band": 47.220943450927734,
+        "output": 148.2996826171875,
+        "previous_error": -2.3801212310791016,
+        "gain": 17.27649688720703,
+        "integral_time": 4.500941753387451,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -876.4098510742188,
+        "target": 1593.475341796875,
+        "proportional_band": 18.925373077392578,
+        "output": -39.76447296142578,
+        "previous_error": -2.541043758392334,
+        "gain": 7.811957836151123,
+        "integral_time": 35.7288703918457,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -214.53103637695312,
+        "target": 2436.6455078125,
+        "proportional_band": 53.19301986694336,
+        "output": 66.12325286865234,
+        "previous_error": 0.557037889957428,
+        "gain": 3.521258592605591,
+        "integral_time": 4.679659366607666,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 595.2797241210938,
+        "target": -167.06454467773438,
+        "proportional_band": 15.389131546020508,
+        "output": -34.88745880126953,
+        "previous_error": -3.863490581512451,
+        "gain": 0.5175109505653381,
+        "integral_time": 17.113784790039062,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2253.578857421875,
+        "target": 1173.8861083984375,
+        "proportional_band": 64.14544677734375,
+        "output": 40.29745101928711,
+        "previous_error": 3.1112523078918457,
+        "gain": 16.636314392089844,
+        "integral_time": 35.32563781738281,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 16.831947326660156
+      }
+    },
+    {
+      "inputs": {
+        "measured": -699.2738647460938,
+        "target": 2382.302001953125,
+        "proportional_band": 24.752784729003906,
+        "output": 121.87031555175781,
+        "previous_error": -2.363003969192505,
+        "gain": 1.8972409963607788,
+        "integral_time": 0.6907277703285217,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2626.05419921875,
+        "target": 491.530029296875,
+        "proportional_band": 5.042251110076904,
+        "output": 38.51594543457031,
+        "previous_error": -3.904214382171631,
+        "gain": 6.701322555541992,
+        "integral_time": 20.685436248779297,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 423.32763671875
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2839.5390625,
+        "target": 528.3121948242188,
+        "proportional_band": 41.2310905456543,
+        "output": 93.33626556396484,
+        "previous_error": -2.1807594299316406,
+        "gain": 17.839357376098633,
+        "integral_time": 88.47718048095703,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 56.05543899536133
+      }
+    },
+    {
+      "inputs": {
+        "measured": 281.1893005371094,
+        "target": -485.9035949707031,
+        "proportional_band": 62.06340026855469,
+        "output": 87.27132415771484,
+        "previous_error": 3.8654205799102783,
+        "gain": 15.123453140258789,
+        "integral_time": 88.96361541748047,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 12.359827041625977
+      }
+    },
+    {
+      "inputs": {
+        "measured": 995.9804077148438,
+        "target": 2135.223388671875,
+        "proportional_band": 47.242122650146484,
+        "output": 45.4674186706543,
+        "previous_error": 3.0207419395446777,
+        "gain": 1.8401044607162476,
+        "integral_time": 67.90523529052734,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -595.0686645507812,
+        "target": 1955.8919677734375,
+        "proportional_band": 17.883594512939453,
+        "output": 66.14732360839844,
+        "previous_error": -7.456484317779541,
+        "gain": 1.5521725416183472,
+        "integral_time": 13.298081398010254,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 696.1607055664062,
+        "target": -878.8516235351562,
+        "proportional_band": 63.22687530517578,
+        "output": -43.92143630981445,
+        "previous_error": -5.513025283813477,
+        "gain": 19.0929012298584,
+        "integral_time": 54.41303634643555,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 24.91048812866211
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2124.507080078125,
+        "target": -613.7166137695312,
+        "proportional_band": 13.955521583557129,
+        "output": 114.00001525878906,
+        "previous_error": -8.75232219696045,
+        "gain": 15.129339218139648,
+        "integral_time": 61.762733459472656,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 196.2107696533203
+      }
+    },
+    {
+      "inputs": {
+        "measured": 890.42724609375,
+        "target": 2085.46923828125,
+        "proportional_band": 24.8547306060791,
+        "output": -41.00831604003906,
+        "previous_error": 7.1399760246276855,
+        "gain": 4.472896099090576,
+        "integral_time": 75.4435043334961,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -569.4961547851562,
+        "target": 1612.6185302734375,
+        "proportional_band": 16.12233543395996,
+        "output": 51.010658264160156,
+        "previous_error": -2.2106292247772217,
+        "gain": 12.400742530822754,
+        "integral_time": 60.395362854003906,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 107.04947662353516,
+        "target": 2365.695068359375,
+        "proportional_band": 4.618325710296631,
+        "output": 33.739112854003906,
+        "previous_error": 1.1758681535720825,
+        "gain": 3.908430814743042,
+        "integral_time": 3.0302155017852783,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2329.214599609375,
+        "target": -365.7969055175781,
+        "proportional_band": 12.723640441894531,
+        "output": 83.09101104736328,
+        "previous_error": 9.831219673156738,
+        "gain": 17.85866355895996,
+        "integral_time": 70.88137817382812,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 211.8113555908203
+      }
+    },
+    {
+      "inputs": {
+        "measured": -321.1391906738281,
+        "target": 1130.4862060546875,
+        "proportional_band": 90.25025939941406,
+        "output": -25.617643356323242,
+        "previous_error": -8.50885009765625,
+        "gain": 16.210025787353516,
+        "integral_time": 65.2894515991211,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2437.357177734375,
+        "target": 1385.242431640625,
+        "proportional_band": 77.81121063232422,
+        "output": 60.47934341430664,
+        "previous_error": -2.7635154724121094,
+        "gain": 17.660804748535156,
+        "integral_time": 12.647466659545898,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 13.521377563476562
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2217.796142578125,
+        "target": 596.194580078125,
+        "proportional_band": 75.751953125,
+        "output": 94.89883422851562,
+        "previous_error": 7.950653553009033,
+        "gain": 9.424851417541504,
+        "integral_time": 59.90513610839844,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 21.406728744506836
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1567.296142578125,
+        "target": 2282.266845703125,
+        "proportional_band": 54.29325485229492,
+        "output": 80.58671569824219,
+        "previous_error": 0.8039513230323792,
+        "gain": 3.8913726806640625,
+        "integral_time": 43.26140594482422,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 26.095531463623047,
+        "previous_error": -13.168684005737305
+      }
+    },
+    {
+      "inputs": {
+        "measured": -608.7259521484375,
+        "target": 1286.8463134765625,
+        "proportional_band": 54.26714324951172,
+        "output": 8.288717269897461,
+        "previous_error": -8.427996635437012,
+        "gain": 9.300686836242676,
+        "integral_time": 36.06000518798828,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 908.0590209960938,
+        "target": -906.0274047851562,
+        "proportional_band": 0.8036115765571594,
+        "output": 55.44534683227539,
+        "previous_error": 7.978637218475342,
+        "gain": 0.7180616855621338,
+        "integral_time": 60.268611907958984,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 2257.4169921875
+      }
+    },
+    {
+      "inputs": {
+        "measured": -879.25830078125,
+        "target": -963.619384765625,
+        "proportional_band": 22.211532592773438,
+        "output": 61.948150634765625,
+        "previous_error": 1.9882514476776123,
+        "gain": 1.0076595544815063,
+        "integral_time": 12.815764427185059,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 64.07046508789062,
+        "previous_error": 3.7980756759643555
+      }
+    },
+    {
+      "inputs": {
+        "measured": 222.10812377929688,
+        "target": -253.742431640625,
+        "proportional_band": 61.07685470581055,
+        "output": 136.5915985107422,
+        "previous_error": -6.920764923095703,
+        "gain": 16.648849487304688,
+        "integral_time": 71.13317108154297,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 7.791012763977051
+      }
+    },
+    {
+      "inputs": {
+        "measured": -772.094482421875,
+        "target": 401.3341369628906,
+        "proportional_band": 43.9445686340332,
+        "output": 109.30896759033203,
+        "previous_error": 7.605869770050049,
+        "gain": 17.458454132080078,
+        "integral_time": 37.25956344604492,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -657.3054809570312,
+        "target": 1435.111572265625,
+        "proportional_band": 28.131996154785156,
+        "output": -32.89693832397461,
+        "previous_error": -8.875584602355957,
+        "gain": 9.863288879394531,
+        "integral_time": 89.12972259521484,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1306.0850830078125,
+        "target": 117.26500701904297,
+        "proportional_band": 99.85948181152344,
+        "output": 122.74089050292969,
+        "previous_error": -5.431308746337891,
+        "gain": 1.5901036262512207,
+        "integral_time": 40.83406448364258,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 11.904929161071777
+      }
+    },
+    {
+      "inputs": {
+        "measured": 730.3562622070312,
+        "target": 478.35418701171875,
+        "proportional_band": 29.002857208251953,
+        "output": -9.588902473449707,
+        "previous_error": 1.5667521953582764,
+        "gain": 19.009326934814453,
+        "integral_time": 74.70442199707031,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 8.688870429992676
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1814.1788330078125,
+        "target": -592.6372680664062,
+        "proportional_band": 57.23855209350586,
+        "output": 17.072063446044922,
+        "previous_error": -0.9897044897079468,
+        "gain": 7.289030075073242,
+        "integral_time": 49.95862579345703,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 42.04886245727539
+      }
+    },
+    {
+      "inputs": {
+        "measured": 661.866943359375,
+        "target": 725.7564086914062,
+        "proportional_band": 94.58463287353516,
+        "output": 100.08271026611328,
+        "previous_error": -3.8832638263702393,
+        "gain": 13.466010093688965,
+        "integral_time": 74.22261810302734,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -0.6754740476608276
+      }
+    },
+    {
+      "inputs": {
+        "measured": -743.5370483398438,
+        "target": 928.0689697265625,
+        "proportional_band": 83.66849517822266,
+        "output": -10.911766052246094,
+        "previous_error": 0.7311971187591553,
+        "gain": 15.411128044128418,
+        "integral_time": 4.918146133422852,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1980.6859130859375,
+        "target": 950.3263549804688,
+        "proportional_band": 47.526206970214844,
+        "output": -44.67116928100586,
+        "previous_error": -7.073486328125,
+        "gain": 9.760849952697754,
+        "integral_time": 64.9929428100586,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 21.679819107055664
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1308.95263671875,
+        "target": 1035.8311767578125,
+        "proportional_band": 56.57566833496094,
+        "output": 43.78014373779297,
+        "previous_error": -7.3949785232543945,
+        "gain": 2.2067794799804688,
+        "integral_time": 6.805142402648926,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 71.53529357910156,
+        "previous_error": 4.827542781829834
+      }
+    },
+    {
+      "inputs": {
+        "measured": 167.58010864257812,
+        "target": 2789.033447265625,
+        "proportional_band": 74.46388244628906,
+        "output": -9.83543586730957,
+        "previous_error": 7.548593044281006,
+        "gain": 2.409456729888916,
+        "integral_time": 31.307388305664062,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -892.0213623046875,
+        "target": 135.51483154296875,
+        "proportional_band": 58.6304931640625,
+        "output": 128.43299865722656,
+        "previous_error": -6.997854232788086,
+        "gain": 16.498300552368164,
+        "integral_time": 17.734832763671875,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2698.38330078125,
+        "target": -455.60662841796875,
+        "proportional_band": 11.54669189453125,
+        "output": 57.6671257019043,
+        "previous_error": -9.03921127319336,
+        "gain": 16.69713020324707,
+        "integral_time": 70.9370346069336,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 273.1509704589844
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1480.005126953125,
+        "target": -634.749267578125,
+        "proportional_band": 43.89781188964844,
+        "output": 39.480499267578125,
+        "previous_error": -2.581923007965088,
+        "gain": 16.260868072509766,
+        "integral_time": 97.89000701904297,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 48.17448425292969
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1493.7647705078125,
+        "target": 1460.0147705078125,
+        "proportional_band": 11.28841495513916,
+        "output": 89.89830780029297,
+        "previous_error": -7.4302568435668945,
+        "gain": 16.980257034301758,
+        "integral_time": 87.72343444824219,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 2.989790916442871
+      }
+    },
+    {
+      "inputs": {
+        "measured": -867.3394165039062,
+        "target": 2431.67236328125,
+        "proportional_band": 10.174467086791992,
+        "output": -44.03335952758789,
+        "previous_error": 9.539114952087402,
+        "gain": 16.259872436523438,
+        "integral_time": 14.6954345703125,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 612.0775146484375,
+        "target": 1800.7017822265625,
+        "proportional_band": 25.488304138183594,
+        "output": -27.86023712158203,
+        "previous_error": 1.989311695098877,
+        "gain": 10.242624282836914,
+        "integral_time": 88.81522369384766,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2558.685302734375,
+        "target": -815.4515991210938,
+        "proportional_band": 55.3507080078125,
+        "output": 130.57778930664062,
+        "previous_error": -0.9703584313392639,
+        "gain": 13.138115882873535,
+        "integral_time": 52.468204498291016,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 60.95923614501953
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1407.9088134765625,
+        "target": 988.0343627929688,
+        "proportional_band": 33.26279067993164,
+        "output": 59.505882263183594,
+        "previous_error": -0.35910138487815857,
+        "gain": 2.7192702293395996,
+        "integral_time": 15.236526489257812,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 95.93399047851562,
+        "previous_error": 12.622946739196777
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2526.056640625,
+        "target": -281.9723205566406,
+        "proportional_band": 89.89907836914062,
+        "output": 137.49388122558594,
+        "previous_error": 8.019271850585938,
+        "gain": 14.890972137451172,
+        "integral_time": 30.63775634765625,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 31.235347747802734
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1792.6983642578125,
+        "target": 1483.0045166015625,
+        "proportional_band": 36.71871566772461,
+        "output": -5.931175231933594,
+        "previous_error": 3.3822972774505615,
+        "gain": 16.20583724975586,
+        "integral_time": 47.91997146606445,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 76.22474670410156,
+        "previous_error": 8.434223175048828
+      }
+    },
+    {
+      "inputs": {
+        "measured": -329.04205322265625,
+        "target": -290.3755798339844,
+        "proportional_band": 27.198753356933594,
+        "output": -49.94481658935547,
+        "previous_error": 2.3082408905029297,
+        "gain": 1.8169158697128296,
+        "integral_time": 79.7816162109375,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1471.11962890625,
+        "target": 2993.240966796875,
+        "proportional_band": 32.61026382446289,
+        "output": 149.05026245117188,
+        "previous_error": -1.7599101066589355,
+        "gain": 10.750802040100098,
+        "integral_time": 26.758554458618164,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 870.6098022460938,
+        "target": 565.7079467773438,
+        "proportional_band": 61.68693161010742,
+        "output": 116.59174346923828,
+        "previous_error": -3.462876319885254,
+        "gain": 11.144524574279785,
+        "integral_time": 92.01971435546875,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 4.942729949951172
+      }
+    },
+    {
+      "inputs": {
+        "measured": 365.5864562988281,
+        "target": 864.17626953125,
+        "proportional_band": 84.40737915039062,
+        "output": -10.96567153930664,
+        "previous_error": -6.118841648101807,
+        "gain": 8.777674674987793,
+        "integral_time": 94.1314926147461,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1856.1192626953125,
+        "target": -817.1101684570312,
+        "proportional_band": 59.417850494384766,
+        "output": 65.15258026123047,
+        "previous_error": -0.6636853814125061,
+        "gain": 18.1236572265625,
+        "integral_time": 46.51633834838867,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 44.99034118652344
+      }
+    },
+    {
+      "inputs": {
+        "measured": -299.7720642089844,
+        "target": -306.4031982421875,
+        "proportional_band": 98.22795867919922,
+        "output": 138.58248901367188,
+        "previous_error": 1.5062358379364014,
+        "gain": 7.233949661254883,
+        "integral_time": 1.368712306022644,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 0.06750760227441788
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2346.323974609375,
+        "target": 2129.077880859375,
+        "proportional_band": 76.1030502319336,
+        "output": 133.51589965820312,
+        "previous_error": 1.4689586162567139,
+        "gain": 2.001741409301758,
+        "integral_time": 52.178585052490234,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 2.854630470275879
+      }
+    },
+    {
+      "inputs": {
+        "measured": 517.9942016601562,
+        "target": 2193.623046875,
+        "proportional_band": 92.95579528808594,
+        "output": -18.39261245727539,
+        "previous_error": -9.000985145568848,
+        "gain": 2.71429181098938,
+        "integral_time": 54.66462326049805,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1380.549072265625,
+        "target": 111.7414321899414,
+        "proportional_band": 55.3109245300293,
+        "output": 7.791147232055664,
+        "previous_error": 7.180365562438965,
+        "gain": 3.884056329727173,
+        "integral_time": 90.9316635131836,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 69.98054504394531,
+        "previous_error": 22.93954849243164
+      }
+    },
+    {
+      "inputs": {
+        "measured": 274.9516906738281,
+        "target": 2007.843017578125,
+        "proportional_band": 62.0307731628418,
+        "output": 123.9380111694336,
+        "previous_error": -0.061495546251535416,
+        "gain": 7.177950382232666,
+        "integral_time": 24.460224151611328,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 221.55935668945312,
+        "target": 2977.516357421875,
+        "proportional_band": 13.82564926147461,
+        "output": 45.680782318115234,
+        "previous_error": -1.9661128520965576,
+        "gain": 8.117356300354004,
+        "integral_time": 20.813152313232422,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -814.8255615234375,
+        "target": 2553.935546875,
+        "proportional_band": 98.10905456542969,
+        "output": 139.71754455566406,
+        "previous_error": -2.1076011657714844,
+        "gain": 15.798600196838379,
+        "integral_time": 25.83840560913086,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -492.355224609375,
+        "target": 1287.11279296875,
+        "proportional_band": 7.242870330810547,
+        "output": 9.21119213104248,
+        "previous_error": -1.7659803628921509,
+        "gain": 19.300817489624023,
+        "integral_time": 55.83472442626953,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -565.8599853515625,
+        "target": 246.88299560546875,
+        "proportional_band": 5.268492698669434,
+        "output": -40.05902099609375,
+        "previous_error": -4.416003704071045,
+        "gain": 5.755312919616699,
+        "integral_time": 80.5267105102539,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1632.8037109375,
+        "target": 1677.184326171875,
+        "proportional_band": 82.85948944091797,
+        "output": 36.05507278442383,
+        "previous_error": -0.2821032404899597,
+        "gain": 18.41603660583496,
+        "integral_time": 83.38166809082031,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 31.268131256103516,
+        "previous_error": -0.535612940788269
+      }
+    },
+    {
+      "inputs": {
+        "measured": 935.430908203125,
+        "target": -47.77314758300781,
+        "proportional_band": 95.40040588378906,
+        "output": -0.9047186374664307,
+        "previous_error": -0.6167914867401123,
+        "gain": 19.99456787109375,
+        "integral_time": 34.21465301513672,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 10.30607795715332
+      }
+    },
+    {
+      "inputs": {
+        "measured": -73.98368835449219,
+        "target": -170.2057647705078,
+        "proportional_band": 80.91417694091797,
+        "output": 117.0059585571289,
+        "previous_error": 6.332132339477539,
+        "gain": 2.8611767292022705,
+        "integral_time": 72.61746215820312,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 1.1891868114471436
+      }
+    },
+    {
+      "inputs": {
+        "measured": 792.3623046875,
+        "target": 720.7223510742188,
+        "proportional_band": 59.61140441894531,
+        "output": -6.549557685852051,
+        "previous_error": 5.6673150062561035,
+        "gain": 10.27985954284668,
+        "integral_time": 54.459896087646484,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -796.283935546875,
+        "target": 1282.3709716796875,
+        "proportional_band": 14.779557228088379,
+        "output": 94.44683837890625,
+        "previous_error": 4.345638751983643,
+        "gain": 6.3161301612854,
+        "integral_time": 57.842315673828125,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1420.275390625,
+        "target": 844.4241333007812,
+        "proportional_band": 24.007965087890625,
+        "output": 133.57794189453125,
+        "previous_error": 6.274959564208984,
+        "gain": 0.9492343068122864,
+        "integral_time": 26.599533081054688,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 23.985841751098633
+      }
+    },
+    {
+      "inputs": {
+        "measured": 666.2913818359375,
+        "target": -256.87152099609375,
+        "proportional_band": 99.72216033935547,
+        "output": 19.644447326660156,
+        "previous_error": 4.668678283691406,
+        "gain": 10.011819839477539,
+        "integral_time": 74.01212310791016,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 65.58540344238281,
+        "previous_error": 9.257349967956543
+      }
+    },
+    {
+      "inputs": {
+        "measured": -905.071533203125,
+        "target": -731.6852416992188,
+        "proportional_band": 55.788002014160156,
+        "output": 34.3903923034668,
+        "previous_error": 6.850101947784424,
+        "gain": 19.2670955657959,
+        "integral_time": 39.68598937988281,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1699.86083984375,
+        "target": 2818.08349609375,
+        "proportional_band": 71.72669982910156,
+        "output": 85.10832977294922,
+        "previous_error": 5.742822170257568,
+        "gain": 14.859874725341797,
+        "integral_time": 74.66365814208984,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1373.2750244140625,
+        "target": -216.35153198242188,
+        "proportional_band": 74.3163070678711,
+        "output": -11.54340648651123,
+        "previous_error": 2.35918927192688,
+        "gain": 18.707233428955078,
+        "integral_time": 57.58811950683594,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 21.390010833740234
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2719.93408203125,
+        "target": -537.315185546875,
+        "proportional_band": 89.58331298828125,
+        "output": 105.92645263671875,
+        "previous_error": -2.0888519287109375,
+        "gain": 13.251090049743652,
+        "integral_time": 16.675769805908203,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 36.36000061035156
+      }
+    },
+    {
+      "inputs": {
+        "measured": -912.1825561523438,
+        "target": 308.3211975097656,
+        "proportional_band": 12.447371482849121,
+        "output": -47.28323745727539,
+        "previous_error": 4.927791118621826,
+        "gain": 18.00621795654297,
+        "integral_time": 85.54869079589844,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1016.0382080078125,
+        "target": -552.0503540039062,
+        "proportional_band": 16.346092224121094,
+        "output": -17.975133895874023,
+        "previous_error": 8.741100311279297,
+        "gain": 11.943424224853516,
+        "integral_time": 92.66693878173828,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 95.93048858642578
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2012.0850830078125,
+        "target": 29.878944396972656,
+        "proportional_band": 2.3323302268981934,
+        "output": 146.26914978027344,
+        "previous_error": -1.3593881130218506,
+        "gain": 4.33211088180542,
+        "integral_time": 84.18164825439453,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 849.8822631835938
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2566.243896484375,
+        "target": -422.42242431640625,
+        "proportional_band": 98.54203033447266,
+        "output": 80.95275115966797,
+        "previous_error": -2.840243101119995,
+        "gain": 16.75503158569336,
+        "integral_time": 38.52155303955078,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 30.328847885131836
+      }
+    },
+    {
+      "inputs": {
+        "measured": -857.7523193359375,
+        "target": -402.686767578125,
+        "proportional_band": 97.87384033203125,
+        "output": -35.888771057128906,
+        "previous_error": 3.5719845294952393,
+        "gain": 15.237968444824219,
+        "integral_time": 5.10580587387085,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -213.3241424560547,
+        "target": 963.888427734375,
+        "proportional_band": 90.26298522949219,
+        "output": 21.87994956970215,
+        "previous_error": 5.308326721191406,
+        "gain": 6.581855773925781,
+        "integral_time": 10.164932250976562,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 242.1849822998047,
+        "target": -611.2741088867188,
+        "proportional_band": 20.61646842956543,
+        "output": 96.07486724853516,
+        "previous_error": -5.63668966293335,
+        "gain": 14.590052604675293,
+        "integral_time": 95.11260986328125,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 41.39695739746094
+      }
+    },
+    {
+      "inputs": {
+        "measured": -726.0848388671875,
+        "target": 1580.544921875,
+        "proportional_band": 88.04617309570312,
+        "output": 84.70610809326172,
+        "previous_error": 4.368035793304443,
+        "gain": 14.467477798461914,
+        "integral_time": 74.53337860107422,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 210.01666259765625,
+        "target": -633.044189453125,
+        "proportional_band": 55.651832580566406,
+        "output": 104.92987060546875,
+        "previous_error": -8.74557113647461,
+        "gain": 10.265592575073242,
+        "integral_time": 71.85557556152344,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 15.148842811584473
+      }
+    },
+    {
+      "inputs": {
+        "measured": 502.2690124511719,
+        "target": 2072.605224609375,
+        "proportional_band": 69.89905548095703,
+        "output": -19.51345443725586,
+        "previous_error": 3.4770667552948,
+        "gain": 18.080284118652344,
+        "integral_time": 19.950773239135742,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 963.4336547851562,
+        "target": 2393.65771484375,
+        "proportional_band": 70.76123809814453,
+        "output": -46.16878128051758,
+        "previous_error": 3.4732491970062256,
+        "gain": 11.970561981201172,
+        "integral_time": 29.174665451049805,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 415.28094482421875,
+        "target": 52.23656463623047,
+        "proportional_band": 46.49089813232422,
+        "output": -39.7054328918457,
+        "previous_error": 8.147780418395996,
+        "gain": 19.003637313842773,
+        "integral_time": 98.60716247558594,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 294.5098876953125,
+        "target": 774.2756958007812,
+        "proportional_band": 37.35145950317383,
+        "output": -23.15587615966797,
+        "previous_error": 0.49445590376853943,
+        "gain": 16.851497650146484,
+        "integral_time": 89.78483581542969,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1648.8955078125,
+        "target": 1304.7938232421875,
+        "proportional_band": 68.46623229980469,
+        "output": 133.72457885742188,
+        "previous_error": 3.7856667041778564,
+        "gain": 5.611989498138428,
+        "integral_time": 56.67084503173828,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 5.025859832763672
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1853.1048583984375,
+        "target": 486.5430908203125,
+        "proportional_band": 64.5965576171875,
+        "output": 63.961273193359375,
+        "previous_error": -7.343966960906982,
+        "gain": 10.860733032226562,
+        "integral_time": 96.3440933227539,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 21.15533447265625
+      }
+    },
+    {
+      "inputs": {
+        "measured": -396.541015625,
+        "target": 1993.23974609375,
+        "proportional_band": 13.448586463928223,
+        "output": -7.42781925201416,
+        "previous_error": 7.8821868896484375,
+        "gain": 9.871644973754883,
+        "integral_time": 33.39400863647461,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2733.631591796875,
+        "target": 364.3818664550781,
+        "proportional_band": 94.20538330078125,
+        "output": 12.052660942077637,
+        "previous_error": -9.107427597045898,
+        "gain": 4.644994735717773,
+        "integral_time": 78.64793395996094,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 25.14983367919922
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1830.998779296875,
+        "target": 1109.8963623046875,
+        "proportional_band": 78.59288787841797,
+        "output": 75.4364242553711,
+        "previous_error": 1.084092140197754,
+        "gain": 13.700587272644043,
+        "integral_time": 81.45911407470703,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 9.175161361694336
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2.92209529876709,
+        "target": -386.5864562988281,
+        "proportional_band": 92.03040313720703,
+        "output": 70.65756225585938,
+        "previous_error": -8.22398567199707,
+        "gain": 16.723918914794922,
+        "integral_time": 58.004940032958984,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 4.2323899269104
+      }
+    },
+    {
+      "inputs": {
+        "measured": 949.3819580078125,
+        "target": 1598.108642578125,
+        "proportional_band": 76.80359649658203,
+        "output": 16.470821380615234,
+        "previous_error": -7.366020679473877,
+        "gain": 11.911664962768555,
+        "integral_time": 85.31366729736328,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 3.5997207164764404,
+        "previous_error": -8.446566581726074
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2758.560302734375,
+        "target": 1139.435302734375,
+        "proportional_band": 62.21818923950195,
+        "output": -34.09033203125,
+        "previous_error": -7.869405746459961,
+        "gain": 18.323755264282227,
+        "integral_time": 23.37772560119629,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 26.023338317871094
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1101.43212890625,
+        "target": 2752.2705078125,
+        "proportional_band": 35.91127014160156,
+        "output": 92.09048461914062,
+        "previous_error": -3.0037646293640137,
+        "gain": 4.068336009979248,
+        "integral_time": 76.08341979980469,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1274.5728759765625,
+        "target": 1492.624755859375,
+        "proportional_band": 79.9432144165039,
+        "output": 68.18575286865234,
+        "previous_error": 0.20642279088497162,
+        "gain": 11.756957054138184,
+        "integral_time": 48.04936981201172,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 33.3570556640625,
+        "previous_error": -2.7275846004486084
+      }
+    },
+    {
+      "inputs": {
+        "measured": -949.068603515625,
+        "target": 2674.57958984375,
+        "proportional_band": 42.74706268310547,
+        "output": 86.1142578125,
+        "previous_error": -0.7099081873893738,
+        "gain": 9.534555435180664,
+        "integral_time": 71.41712188720703,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -484.8057861328125,
+        "target": 98.23075866699219,
+        "proportional_band": 40.21772003173828,
+        "output": -40.326202392578125,
+        "previous_error": -5.084130764007568,
+        "gain": 1.04957914352417,
+        "integral_time": 11.880395889282227,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2587.104248046875,
+        "target": 2047.4765625,
+        "proportional_band": 15.927124977111816,
+        "output": 24.25843048095703,
+        "previous_error": 3.4540138244628906,
+        "gain": 3.244140863418579,
+        "integral_time": 8.34559440612793,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 33.881046295166016
+      }
+    },
+    {
+      "inputs": {
+        "measured": -967.6735229492188,
+        "target": -29.357929229736328,
+        "proportional_band": 85.25846099853516,
+        "output": 82.52061462402344,
+        "previous_error": 8.42544174194336,
+        "gain": 19.425260543823242,
+        "integral_time": 29.38929557800293,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2777.322265625,
+        "target": 2430.4462890625,
+        "proportional_band": 6.871750831604004,
+        "output": 81.91117858886719,
+        "previous_error": 3.7530393600463867,
+        "gain": 14.243325233459473,
+        "integral_time": 93.66410827636719,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 50.47854232788086
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2578.420654296875,
+        "target": 2508.92138671875,
+        "proportional_band": 44.045589447021484,
+        "output": -16.737138748168945,
+        "previous_error": -8.775823593139648,
+        "gain": 6.089317321777344,
+        "integral_time": 64.67272186279297,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 46.309932708740234,
+        "previous_error": 1.5778939723968506
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1612.2664794921875,
+        "target": 1078.3768310546875,
+        "proportional_band": 58.845699310302734,
+        "output": 50.17417907714844,
+        "previous_error": -6.177976608276367,
+        "gain": 16.243146896362305,
+        "integral_time": 22.434324264526367,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 9.072704315185547
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1461.3603515625,
+        "target": 198.3444061279297,
+        "proportional_band": 58.63532638549805,
+        "output": 95.41127014160156,
+        "previous_error": -4.434656143188477,
+        "gain": 13.75220775604248,
+        "integral_time": 72.07991790771484,
+        "step": 0.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 21.54018783569336
+      }
+    },
+    {
+      "inputs": {
+        "measured": -101.04750061035156,
+        "target": 1572.15087890625,
+        "proportional_band": 57.11636734008789,
+        "output": -15.378395080566406,
+        "previous_error": 8.914615631103516,
+        "gain": 18.01363182067871,
+        "integral_time": 96.6615982055664,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -985.7871704101562,
+        "target": 1746.3543701171875,
+        "proportional_band": 37.933040618896484,
+        "output": 41.5879020690918,
+        "previous_error": -1.6283255815505981,
+        "gain": 19.70285987854004,
+        "integral_time": 4.769498348236084,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": -4.205667972564697,
+        "target": -79.63134002685547,
+        "proportional_band": 68.11688232421875,
+        "output": 73.90311431884766,
+        "previous_error": -6.094760894775391,
+        "gain": 0.6811522841453552,
+        "integral_time": 66.91307830810547,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 78.81444549560547,
+        "previous_error": 1.1072977781295776
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1455.840087890625,
+        "target": -347.89166259765625,
+        "proportional_band": 0.33410346508026123,
+        "output": 62.610206604003906,
+        "previous_error": 0.09819541871547699,
+        "gain": 9.691327095031738,
+        "integral_time": 46.24997329711914,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 5398.72216796875
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2511.52587890625,
+        "target": 2718.614013671875,
+        "proportional_band": 4.8616719245910645,
+        "output": 44.07359313964844,
+        "previous_error": 9.643715858459473,
+        "gain": 18.48992919921875,
+        "integral_time": 93.45914459228516,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    },
+    {
+      "inputs": {
+        "measured": 2178.77294921875,
+        "target": 2295.509033203125,
+        "proportional_band": 78.17396545410156,
+        "output": 125.64115142822266,
+        "previous_error": -6.932381629943848,
+        "gain": 18.033939361572266,
+        "integral_time": 91.87869262695312,
+        "step": 1.0,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -1.493285894393921
+      }
+    },
+    {
+      "inputs": {
+        "measured": -566.4134521484375,
+        "target": -474.6357727050781,
+        "proportional_band": 73.39595031738281,
+        "output": -31.12622833251953,
+        "previous_error": -8.214317321777344,
+        "gain": 18.88555145263672,
+        "integral_time": 53.70147705078125,
+        "step": 0.10000000149011612,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": -1.250446081161499
+      }
+    },
+    {
+      "inputs": {
+        "measured": 170.1719512939453,
+        "target": -682.8799438476562,
+        "proportional_band": 12.525355339050293,
+        "output": 78.53999328613281,
+        "previous_error": -3.8117010593414307,
+        "gain": 19.116195678710938,
+        "integral_time": 17.65378761291504,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 100.0,
+        "previous_error": 68.10600280761719
+      }
+    },
+    {
+      "inputs": {
+        "measured": 1009.4610595703125,
+        "target": 2646.938232421875,
+        "proportional_band": 14.973977088928223,
+        "output": 1.3128416538238525,
+        "previous_error": -1.578407645225525,
+        "gain": 16.631729125976562,
+        "integral_time": 64.33019256591797,
+        "step": 0.5,
+        "lower": 0.0,
+        "upper": 100.0
+      },
+      "expected": {
+        "output": 0.0,
+        "previous_error": 0.0
+      }
+    }
+  ]
+}

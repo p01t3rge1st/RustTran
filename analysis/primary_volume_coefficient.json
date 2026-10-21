@@ -1,0 +1,6 @@
+{
+  "method": "Original constant initializer 0x51c310\u20130x51c320, 53-bit x87; Double literal -5e-7 stored as Single",
+  "address": "0x54b70c",
+  "expected": -4.999999987376214e-07,
+  "bits": 3037083581
+}

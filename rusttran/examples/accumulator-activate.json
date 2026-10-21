@@ -1,0 +1,17 @@
+{
+  "system_pressure": 2165.614501953125,
+  "trigger_pressure": 2166.614501953125,
+  "activation": 0,
+  "clock": 15.412409782409668,
+  "event_time": 132.38336181640625,
+  "valves": [
+    {
+      "opening": -1,
+      "inhibited": true
+    },
+    {
+      "opening": 100,
+      "inhibited": false
+    }
+  ]
+}

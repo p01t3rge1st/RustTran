@@ -1,0 +1,2706 @@
+{
+  "method": "Original coordinator 0x51e0c7\u20130x51e0d9: shared pressure-control signal.\nThe upstream pressure adjustment remains explicit; no fault dispatcher replay.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "pressure": 2385.856689453125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2385.856689453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 596.0955200195312,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 596.0955200195312
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1302.4500732421875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1302.4500732421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2149.8994140625,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2149.8994140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 200.7578582763672,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 200.7578582763672
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1625.101318359375,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1625.101318359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1412.9278564453125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1412.9278564453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1156.31591796875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1156.31591796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1089.3609619140625,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1089.3609619140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1731.5162353515625,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1731.5162353515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2550.781005859375,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2550.781005859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1678.009521484375,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1678.009521484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1732.79638671875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1732.79638671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2587.903564453125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2587.903564453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2176.5810546875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2176.5810546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2074.278564453125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2074.278564453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1344.1500244140625,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1344.1500244140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2231.296875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2231.296875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 245.20411682128906,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 245.20411682128906
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 685.4097290039062,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 685.4097290039062
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 549.9244995117188,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 549.9244995117188
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2576.968017578125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2576.968017578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 777.9481201171875,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 777.9481201171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 978.2186889648438,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 978.2186889648438
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2425.344970703125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2425.344970703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 775.0906372070312,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 775.0906372070312
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1077.1143798828125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 1077.1143798828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2219.23876953125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2219.23876953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 213.6553955078125,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 213.6553955078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2136.806640625,
+        "pressure_adjustment": 0.0
+      },
+      "expected": {
+        "signal": 2136.806640625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2411.448974609375,
+        "pressure_adjustment": 301.459716796875
+      },
+      "expected": {
+        "signal": 2109.9892578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1444.1162109375,
+        "pressure_adjustment": -74.79483032226562
+      },
+      "expected": {
+        "signal": 1518.9110107421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2315.380859375,
+        "pressure_adjustment": 145.96632385253906
+      },
+      "expected": {
+        "signal": 2169.41455078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1750.4510498046875,
+        "pressure_adjustment": -3.649077892303467
+      },
+      "expected": {
+        "signal": 1754.10009765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 385.8641052246094,
+        "pressure_adjustment": -430.6828308105469
+      },
+      "expected": {
+        "signal": 816.5469360351562
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 576.3596801757812,
+        "pressure_adjustment": -462.8275451660156
+      },
+      "expected": {
+        "signal": 1039.187255859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1202.3739013671875,
+        "pressure_adjustment": 380.21832275390625
+      },
+      "expected": {
+        "signal": 822.1555786132812
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 609.7810668945312,
+        "pressure_adjustment": -481.62860107421875
+      },
+      "expected": {
+        "signal": 1091.40966796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2461.992431640625,
+        "pressure_adjustment": 61.40890121459961
+      },
+      "expected": {
+        "signal": 2400.58349609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1555.492919921875,
+        "pressure_adjustment": 211.779296875
+      },
+      "expected": {
+        "signal": 1343.713623046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2543.50927734375,
+        "pressure_adjustment": 494.2482604980469
+      },
+      "expected": {
+        "signal": 2049.260986328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1049.4083251953125,
+        "pressure_adjustment": 427.71405029296875
+      },
+      "expected": {
+        "signal": 621.6942749023438
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1889.6260986328125,
+        "pressure_adjustment": -366.76055908203125
+      },
+      "expected": {
+        "signal": 2256.38671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 862.9153442382812,
+        "pressure_adjustment": -467.1174621582031
+      },
+      "expected": {
+        "signal": 1330.0328369140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1385.3287353515625,
+        "pressure_adjustment": -147.62713623046875
+      },
+      "expected": {
+        "signal": 1532.955810546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 699.4222412109375,
+        "pressure_adjustment": 112.45602416992188
+      },
+      "expected": {
+        "signal": 586.9661865234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1236.52587890625,
+        "pressure_adjustment": 224.82058715820312
+      },
+      "expected": {
+        "signal": 1011.705322265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 838.0654907226562,
+        "pressure_adjustment": -460.8103942871094
+      },
+      "expected": {
+        "signal": 1298.8758544921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1899.2908935546875,
+        "pressure_adjustment": -198.37698364257812
+      },
+      "expected": {
+        "signal": 2097.66796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 710.4273071289062,
+        "pressure_adjustment": 127.23202514648438
+      },
+      "expected": {
+        "signal": 583.1953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1207.134033203125,
+        "pressure_adjustment": 342.3201599121094
+      },
+      "expected": {
+        "signal": 864.8138427734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 767.073974609375,
+        "pressure_adjustment": 258.1889343261719
+      },
+      "expected": {
+        "signal": 508.8850402832031
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1969.1016845703125,
+        "pressure_adjustment": 370.38189697265625
+      },
+      "expected": {
+        "signal": 1598.7197265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1539.261962890625,
+        "pressure_adjustment": 398.60552978515625
+      },
+      "expected": {
+        "signal": 1140.656494140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2384.232421875,
+        "pressure_adjustment": 481.2901306152344
+      },
+      "expected": {
+        "signal": 1902.9422607421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 132.84844970703125,
+        "pressure_adjustment": 274.50421142578125
+      },
+      "expected": {
+        "signal": -141.65576171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1607.9508056640625,
+        "pressure_adjustment": -375.5185241699219
+      },
+      "expected": {
+        "signal": 1983.4693603515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1086.849609375,
+        "pressure_adjustment": -24.88408660888672
+      },
+      "expected": {
+        "signal": 1111.733642578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 378.12786865234375,
+        "pressure_adjustment": -308.5623474121094
+      },
+      "expected": {
+        "signal": 686.690185546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1103.5938720703125,
+        "pressure_adjustment": -146.65077209472656
+      },
+      "expected": {
+        "signal": 1250.24462890625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 962.0512084960938,
+        "pressure_adjustment": -452.4172668457031
+      },
+      "expected": {
+        "signal": 1414.468505859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2448.746826171875,
+        "pressure_adjustment": -413.83587646484375
+      },
+      "expected": {
+        "signal": 2862.582763671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2550.7392578125,
+        "pressure_adjustment": -406.43353271484375
+      },
+      "expected": {
+        "signal": 2957.1728515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2115.04541015625,
+        "pressure_adjustment": 431.421875
+      },
+      "expected": {
+        "signal": 1683.62353515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 554.7819213867188,
+        "pressure_adjustment": 0.10789317637681961
+      },
+      "expected": {
+        "signal": 554.6740112304688
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 842.9832763671875,
+        "pressure_adjustment": -173.47032165527344
+      },
+      "expected": {
+        "signal": 1016.45361328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2289.095458984375,
+        "pressure_adjustment": -351.6530456542969
+      },
+      "expected": {
+        "signal": 2640.74853515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2395.373779296875,
+        "pressure_adjustment": 171.15098571777344
+      },
+      "expected": {
+        "signal": 2224.222900390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1575.7772216796875,
+        "pressure_adjustment": 62.82139587402344
+      },
+      "expected": {
+        "signal": 1512.955810546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 735.9955444335938,
+        "pressure_adjustment": -187.91293334960938
+      },
+      "expected": {
+        "signal": 923.908447265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1083.8150634765625,
+        "pressure_adjustment": 319.3650207519531
+      },
+      "expected": {
+        "signal": 764.4500732421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1517.6597900390625,
+        "pressure_adjustment": 332.7795715332031
+      },
+      "expected": {
+        "signal": 1184.8802490234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 226.0886688232422,
+        "pressure_adjustment": 133.14707946777344
+      },
+      "expected": {
+        "signal": 92.94158935546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2488.833740234375,
+        "pressure_adjustment": -130.7652587890625
+      },
+      "expected": {
+        "signal": 2619.59912109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2131.244873046875,
+        "pressure_adjustment": 332.7763977050781
+      },
+      "expected": {
+        "signal": 1798.468505859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 841.4617919921875,
+        "pressure_adjustment": 341.4248046875
+      },
+      "expected": {
+        "signal": 500.0369873046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2362.204833984375,
+        "pressure_adjustment": -356.8204650878906
+      },
+      "expected": {
+        "signal": 2719.025390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1631.4078369140625,
+        "pressure_adjustment": 276.50604248046875
+      },
+      "expected": {
+        "signal": 1354.90185546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1049.0736083984375,
+        "pressure_adjustment": -331.4191589355469
+      },
+      "expected": {
+        "signal": 1380.4927978515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 461.7776794433594,
+        "pressure_adjustment": 431.249267578125
+      },
+      "expected": {
+        "signal": 30.528411865234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2359.268310546875,
+        "pressure_adjustment": -464.1497497558594
+      },
+      "expected": {
+        "signal": 2823.41796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2062.248779296875,
+        "pressure_adjustment": 415.7613830566406
+      },
+      "expected": {
+        "signal": 1646.4874267578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1865.028564453125,
+        "pressure_adjustment": -143.20587158203125
+      },
+      "expected": {
+        "signal": 2008.234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 243.29336547851562,
+        "pressure_adjustment": 68.41163635253906
+      },
+      "expected": {
+        "signal": 174.88172912597656
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 537.4228515625,
+        "pressure_adjustment": 169.4574432373047
+      },
+      "expected": {
+        "signal": 367.96539306640625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1016.42236328125,
+        "pressure_adjustment": -118.06836700439453
+      },
+      "expected": {
+        "signal": 1134.49072265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1146.8106689453125,
+        "pressure_adjustment": 174.2974090576172
+      },
+      "expected": {
+        "signal": 972.5132446289062
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1816.755126953125,
+        "pressure_adjustment": -380.6430358886719
+      },
+      "expected": {
+        "signal": 2197.398193359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2356.129638671875,
+        "pressure_adjustment": 29.63868522644043
+      },
+      "expected": {
+        "signal": 2326.490966796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1599.39892578125,
+        "pressure_adjustment": 123.00601196289062
+      },
+      "expected": {
+        "signal": 1476.3929443359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1103.52392578125,
+        "pressure_adjustment": -443.4537048339844
+      },
+      "expected": {
+        "signal": 1546.9776611328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 639.3115234375,
+        "pressure_adjustment": -397.01019287109375
+      },
+      "expected": {
+        "signal": 1036.32177734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 250.24000549316406,
+        "pressure_adjustment": -376.72265625
+      },
+      "expected": {
+        "signal": 626.962646484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 256.5927429199219,
+        "pressure_adjustment": -194.23793029785156
+      },
+      "expected": {
+        "signal": 450.8306884765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1280.073486328125,
+        "pressure_adjustment": -394.447509765625
+      },
+      "expected": {
+        "signal": 1674.52099609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1547.40478515625,
+        "pressure_adjustment": 44.39032745361328
+      },
+      "expected": {
+        "signal": 1503.014404296875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2267.717041015625,
+        "pressure_adjustment": -243.62705993652344
+      },
+      "expected": {
+        "signal": 2511.343994140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 426.45330810546875,
+        "pressure_adjustment": -357.0753173828125
+      },
+      "expected": {
+        "signal": 783.5286254882812
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1332.4136962890625,
+        "pressure_adjustment": -278.0285949707031
+      },
+      "expected": {
+        "signal": 1610.4422607421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1906.7254638671875,
+        "pressure_adjustment": 77.9717025756836
+      },
+      "expected": {
+        "signal": 1828.7537841796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 301.07891845703125,
+        "pressure_adjustment": 30.904951095581055
+      },
+      "expected": {
+        "signal": 270.1739807128906
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1954.7991943359375,
+        "pressure_adjustment": -195.15414428710938
+      },
+      "expected": {
+        "signal": 2149.953369140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 253.945556640625,
+        "pressure_adjustment": -465.3740234375
+      },
+      "expected": {
+        "signal": 719.319580078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2306.411376953125,
+        "pressure_adjustment": -191.007080078125
+      },
+      "expected": {
+        "signal": 2497.41845703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2152.376953125,
+        "pressure_adjustment": 38.3780517578125
+      },
+      "expected": {
+        "signal": 2113.9990234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 748.9242553710938,
+        "pressure_adjustment": 347.0977478027344
+      },
+      "expected": {
+        "signal": 401.8265075683594
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 623.8567504882812,
+        "pressure_adjustment": 74.46361541748047
+      },
+      "expected": {
+        "signal": 549.3931274414062
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1292.72021484375,
+        "pressure_adjustment": -126.1335678100586
+      },
+      "expected": {
+        "signal": 1418.853759765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2533.458740234375,
+        "pressure_adjustment": 68.57759094238281
+      },
+      "expected": {
+        "signal": 2464.881103515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 981.159912109375,
+        "pressure_adjustment": -114.53892517089844
+      },
+      "expected": {
+        "signal": 1095.6988525390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 818.7817993164062,
+        "pressure_adjustment": -73.57344055175781
+      },
+      "expected": {
+        "signal": 892.355224609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2026.9674072265625,
+        "pressure_adjustment": 75.6279525756836
+      },
+      "expected": {
+        "signal": 1951.3394775390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1998.9246826171875,
+        "pressure_adjustment": 367.302734375
+      },
+      "expected": {
+        "signal": 1631.6219482421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2046.6397705078125,
+        "pressure_adjustment": 419.42974853515625
+      },
+      "expected": {
+        "signal": 1627.2099609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2168.33056640625,
+        "pressure_adjustment": 221.66932678222656
+      },
+      "expected": {
+        "signal": 1946.6612548828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 967.4015502929688,
+        "pressure_adjustment": -391.8963317871094
+      },
+      "expected": {
+        "signal": 1359.2978515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2546.49658203125,
+        "pressure_adjustment": -70.70003509521484
+      },
+      "expected": {
+        "signal": 2617.196533203125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2101.584228515625,
+        "pressure_adjustment": 348.3388671875
+      },
+      "expected": {
+        "signal": 1753.245361328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2343.53125,
+        "pressure_adjustment": -271.3928527832031
+      },
+      "expected": {
+        "signal": 2614.924072265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1390.0533447265625,
+        "pressure_adjustment": -172.1052703857422
+      },
+      "expected": {
+        "signal": 1562.1585693359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1791.0946044921875,
+        "pressure_adjustment": -19.09541130065918
+      },
+      "expected": {
+        "signal": 1810.1900634765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 862.7362670898438,
+        "pressure_adjustment": -146.86257934570312
+      },
+      "expected": {
+        "signal": 1009.598876953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 224.03297424316406,
+        "pressure_adjustment": 261.68353271484375
+      },
+      "expected": {
+        "signal": -37.65055847167969
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 551.1156616210938,
+        "pressure_adjustment": -334.441162109375
+      },
+      "expected": {
+        "signal": 885.5568237304688
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2338.089111328125,
+        "pressure_adjustment": -491.7432861328125
+      },
+      "expected": {
+        "signal": 2829.83251953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 997.785400390625,
+        "pressure_adjustment": 108.14220428466797
+      },
+      "expected": {
+        "signal": 889.6431884765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2226.017333984375,
+        "pressure_adjustment": -107.95309448242188
+      },
+      "expected": {
+        "signal": 2333.970458984375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 608.5951538085938,
+        "pressure_adjustment": 322.34063720703125
+      },
+      "expected": {
+        "signal": 286.2545166015625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2093.44970703125,
+        "pressure_adjustment": -336.35333251953125
+      },
+      "expected": {
+        "signal": 2429.802978515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1565.8487548828125,
+        "pressure_adjustment": 181.71556091308594
+      },
+      "expected": {
+        "signal": 1384.1331787109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2382.766357421875,
+        "pressure_adjustment": -36.02588653564453
+      },
+      "expected": {
+        "signal": 2418.792236328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 703.6718139648438,
+        "pressure_adjustment": 272.3571472167969
+      },
+      "expected": {
+        "signal": 431.3146667480469
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1545.5147705078125,
+        "pressure_adjustment": -198.79139709472656
+      },
+      "expected": {
+        "signal": 1744.30615234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 623.7967529296875,
+        "pressure_adjustment": 118.63843536376953
+      },
+      "expected": {
+        "signal": 505.1583251953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1944.701904296875,
+        "pressure_adjustment": 49.737430572509766
+      },
+      "expected": {
+        "signal": 1894.9644775390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 254.81056213378906,
+        "pressure_adjustment": -304.1858215332031
+      },
+      "expected": {
+        "signal": 558.9963989257812
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1788.3916015625,
+        "pressure_adjustment": 118.18809509277344
+      },
+      "expected": {
+        "signal": 1670.2034912109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2306.187255859375,
+        "pressure_adjustment": 50.80820846557617
+      },
+      "expected": {
+        "signal": 2255.379150390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2204.406494140625,
+        "pressure_adjustment": 14.976424217224121
+      },
+      "expected": {
+        "signal": 2189.43017578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 617.4546508789062,
+        "pressure_adjustment": 472.1563720703125
+      },
+      "expected": {
+        "signal": 145.29827880859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2192.5556640625,
+        "pressure_adjustment": -484.35052490234375
+      },
+      "expected": {
+        "signal": 2676.90625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1707.886474609375,
+        "pressure_adjustment": -326.2210388183594
+      },
+      "expected": {
+        "signal": 2034.1075439453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1845.6134033203125,
+        "pressure_adjustment": -403.0216369628906
+      },
+      "expected": {
+        "signal": 2248.635009765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 200.4571075439453,
+        "pressure_adjustment": 91.75416564941406
+      },
+      "expected": {
+        "signal": 108.70294189453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 674.6210327148438,
+        "pressure_adjustment": -482.8621826171875
+      },
+      "expected": {
+        "signal": 1157.483154296875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1854.825927734375,
+        "pressure_adjustment": 431.6339111328125
+      },
+      "expected": {
+        "signal": 1423.1920166015625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2270.3984375,
+        "pressure_adjustment": 116.94803619384766
+      },
+      "expected": {
+        "signal": 2153.450439453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 706.7972412109375,
+        "pressure_adjustment": 14.320635795593262
+      },
+      "expected": {
+        "signal": 692.4766235351562
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2242.049072265625,
+        "pressure_adjustment": 443.4009704589844
+      },
+      "expected": {
+        "signal": 1798.6480712890625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1952.4102783203125,
+        "pressure_adjustment": -343.9811706542969
+      },
+      "expected": {
+        "signal": 2296.391357421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1329.0794677734375,
+        "pressure_adjustment": -214.49606323242188
+      },
+      "expected": {
+        "signal": 1543.5755615234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1117.66259765625,
+        "pressure_adjustment": -306.418212890625
+      },
+      "expected": {
+        "signal": 1424.080810546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 606.4442138671875,
+        "pressure_adjustment": -136.29385375976562
+      },
+      "expected": {
+        "signal": 742.738037109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1163.9244384765625,
+        "pressure_adjustment": -63.20580291748047
+      },
+      "expected": {
+        "signal": 1227.1302490234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2569.667724609375,
+        "pressure_adjustment": 306.0873718261719
+      },
+      "expected": {
+        "signal": 2263.580322265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1448.7967529296875,
+        "pressure_adjustment": 245.0262908935547
+      },
+      "expected": {
+        "signal": 1203.7705078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1959.240966796875,
+        "pressure_adjustment": -338.65911865234375
+      },
+      "expected": {
+        "signal": 2297.900146484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1753.5777587890625,
+        "pressure_adjustment": 216.89793395996094
+      },
+      "expected": {
+        "signal": 1536.6798095703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 408.07916259765625,
+        "pressure_adjustment": -68.67487335205078
+      },
+      "expected": {
+        "signal": 476.7540283203125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1043.1861572265625,
+        "pressure_adjustment": 291.1044616699219
+      },
+      "expected": {
+        "signal": 752.0816650390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2104.086669921875,
+        "pressure_adjustment": 231.7962646484375
+      },
+      "expected": {
+        "signal": 1872.2904052734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 131.46302795410156,
+        "pressure_adjustment": -346.4587707519531
+      },
+      "expected": {
+        "signal": 477.92181396484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 893.8547973632812,
+        "pressure_adjustment": -332.0172119140625
+      },
+      "expected": {
+        "signal": 1225.8720703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2255.327880859375,
+        "pressure_adjustment": -245.91786193847656
+      },
+      "expected": {
+        "signal": 2501.245849609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 482.81585693359375,
+        "pressure_adjustment": 145.92559814453125
+      },
+      "expected": {
+        "signal": 336.8902587890625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1556.1759033203125,
+        "pressure_adjustment": -115.7756118774414
+      },
+      "expected": {
+        "signal": 1671.9515380859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1433.094970703125,
+        "pressure_adjustment": -384.4033203125
+      },
+      "expected": {
+        "signal": 1817.498291015625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1066.427490234375,
+        "pressure_adjustment": -498.5758972167969
+      },
+      "expected": {
+        "signal": 1565.00341796875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1826.0263671875,
+        "pressure_adjustment": -380.27117919921875
+      },
+      "expected": {
+        "signal": 2206.297607421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2141.301025390625,
+        "pressure_adjustment": -77.08116149902344
+      },
+      "expected": {
+        "signal": 2218.382080078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1015.9559936523438,
+        "pressure_adjustment": -92.5151138305664
+      },
+      "expected": {
+        "signal": 1108.4710693359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2334.8154296875,
+        "pressure_adjustment": 4.305585861206055
+      },
+      "expected": {
+        "signal": 2330.509765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1785.190185546875,
+        "pressure_adjustment": 112.89051818847656
+      },
+      "expected": {
+        "signal": 1672.2996826171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2149.466064453125,
+        "pressure_adjustment": -331.8302917480469
+      },
+      "expected": {
+        "signal": 2481.29638671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 891.7976684570312,
+        "pressure_adjustment": -449.9038391113281
+      },
+      "expected": {
+        "signal": 1341.7015380859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1602.9471435546875,
+        "pressure_adjustment": 99.53402709960938
+      },
+      "expected": {
+        "signal": 1503.4130859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1751.256103515625,
+        "pressure_adjustment": -405.66680908203125
+      },
+      "expected": {
+        "signal": 2156.9228515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 632.0475463867188,
+        "pressure_adjustment": -193.56199645996094
+      },
+      "expected": {
+        "signal": 825.6095581054688
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1213.780517578125,
+        "pressure_adjustment": -450.86651611328125
+      },
+      "expected": {
+        "signal": 1664.64697265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 313.0574951171875,
+        "pressure_adjustment": -351.50250244140625
+      },
+      "expected": {
+        "signal": 664.5599975585938
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2118.031982421875,
+        "pressure_adjustment": -343.83013916015625
+      },
+      "expected": {
+        "signal": 2461.862060546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2430.509033203125,
+        "pressure_adjustment": -345.1056213378906
+      },
+      "expected": {
+        "signal": 2775.61474609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2257.583251953125,
+        "pressure_adjustment": 133.76907348632812
+      },
+      "expected": {
+        "signal": 2123.814208984375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1343.6727294921875,
+        "pressure_adjustment": -384.02044677734375
+      },
+      "expected": {
+        "signal": 1727.693115234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1011.002197265625,
+        "pressure_adjustment": 44.58426284790039
+      },
+      "expected": {
+        "signal": 966.4179077148438
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 161.0969696044922,
+        "pressure_adjustment": -51.48331832885742
+      },
+      "expected": {
+        "signal": 212.58029174804688
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2288.608154296875,
+        "pressure_adjustment": 250.3641815185547
+      },
+      "expected": {
+        "signal": 2038.2440185546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 719.0374755859375,
+        "pressure_adjustment": 20.400667190551758
+      },
+      "expected": {
+        "signal": 698.6367797851562
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 619.4114990234375,
+        "pressure_adjustment": -412.78143310546875
+      },
+      "expected": {
+        "signal": 1032.19287109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1549.53857421875,
+        "pressure_adjustment": -350.0968017578125
+      },
+      "expected": {
+        "signal": 1899.6353759765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2055.46826171875,
+        "pressure_adjustment": -435.9722595214844
+      },
+      "expected": {
+        "signal": 2491.4404296875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2018.1112060546875,
+        "pressure_adjustment": -410.18035888671875
+      },
+      "expected": {
+        "signal": 2428.29150390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 274.4084777832031,
+        "pressure_adjustment": -342.3819580078125
+      },
+      "expected": {
+        "signal": 616.7904052734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2587.679931640625,
+        "pressure_adjustment": 273.6924743652344
+      },
+      "expected": {
+        "signal": 2313.987548828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 865.2793579101562,
+        "pressure_adjustment": -491.4529724121094
+      },
+      "expected": {
+        "signal": 1356.7322998046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1776.692626953125,
+        "pressure_adjustment": 265.8984680175781
+      },
+      "expected": {
+        "signal": 1510.794189453125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2190.7216796875,
+        "pressure_adjustment": -239.43136596679688
+      },
+      "expected": {
+        "signal": 2430.153076171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 897.377685546875,
+        "pressure_adjustment": -445.79364013671875
+      },
+      "expected": {
+        "signal": 1343.17138671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2286.52783203125,
+        "pressure_adjustment": -235.00306701660156
+      },
+      "expected": {
+        "signal": 2521.531005859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1034.565185546875,
+        "pressure_adjustment": 314.0940856933594
+      },
+      "expected": {
+        "signal": 720.4710693359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2111.2548828125,
+        "pressure_adjustment": 26.598039627075195
+      },
+      "expected": {
+        "signal": 2084.65673828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 356.4523010253906,
+        "pressure_adjustment": -61.76752471923828
+      },
+      "expected": {
+        "signal": 418.2198181152344
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2164.169677734375,
+        "pressure_adjustment": 305.86688232421875
+      },
+      "expected": {
+        "signal": 1858.302734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1837.1387939453125,
+        "pressure_adjustment": 36.48903274536133
+      },
+      "expected": {
+        "signal": 1800.6497802734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 932.7444458007812,
+        "pressure_adjustment": 259.71307373046875
+      },
+      "expected": {
+        "signal": 673.0313720703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 181.0398712158203,
+        "pressure_adjustment": -207.07708740234375
+      },
+      "expected": {
+        "signal": 388.116943359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 414.72802734375,
+        "pressure_adjustment": 257.26483154296875
+      },
+      "expected": {
+        "signal": 157.46319580078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1828.2745361328125,
+        "pressure_adjustment": 208.2972869873047
+      },
+      "expected": {
+        "signal": 1619.977294921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2193.358154296875,
+        "pressure_adjustment": -464.5619812011719
+      },
+      "expected": {
+        "signal": 2657.920166015625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1849.743408203125,
+        "pressure_adjustment": -286.348876953125
+      },
+      "expected": {
+        "signal": 2136.09228515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1037.58642578125,
+        "pressure_adjustment": 258.3983154296875
+      },
+      "expected": {
+        "signal": 779.1881103515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 618.8115234375,
+        "pressure_adjustment": 250.6956024169922
+      },
+      "expected": {
+        "signal": 368.11590576171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1473.5538330078125,
+        "pressure_adjustment": 487.478759765625
+      },
+      "expected": {
+        "signal": 986.0750732421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1924.055419921875,
+        "pressure_adjustment": 77.61573028564453
+      },
+      "expected": {
+        "signal": 1846.439697265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 661.0621948242188,
+        "pressure_adjustment": -469.616943359375
+      },
+      "expected": {
+        "signal": 1130.67919921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2340.50244140625,
+        "pressure_adjustment": -455.897705078125
+      },
+      "expected": {
+        "signal": 2796.400146484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1876.5318603515625,
+        "pressure_adjustment": 336.84539794921875
+      },
+      "expected": {
+        "signal": 1539.6865234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 111.41314697265625,
+        "pressure_adjustment": 184.81617736816406
+      },
+      "expected": {
+        "signal": -73.40303039550781
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2443.689208984375,
+        "pressure_adjustment": -190.4220733642578
+      },
+      "expected": {
+        "signal": 2634.111328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1409.5189208984375,
+        "pressure_adjustment": 483.20599365234375
+      },
+      "expected": {
+        "signal": 926.3129272460938
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 676.6806030273438,
+        "pressure_adjustment": 299.66973876953125
+      },
+      "expected": {
+        "signal": 377.0108642578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 857.7420654296875,
+        "pressure_adjustment": 344.5722961425781
+      },
+      "expected": {
+        "signal": 513.1697998046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1554.501708984375,
+        "pressure_adjustment": 364.5028381347656
+      },
+      "expected": {
+        "signal": 1189.9989013671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1069.3123779296875,
+        "pressure_adjustment": -343.8343811035156
+      },
+      "expected": {
+        "signal": 1413.146728515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 877.7946166992188,
+        "pressure_adjustment": 81.79957580566406
+      },
+      "expected": {
+        "signal": 795.9950561523438
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 958.0523681640625,
+        "pressure_adjustment": 477.30462646484375
+      },
+      "expected": {
+        "signal": 480.74774169921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2450.389404296875,
+        "pressure_adjustment": -294.3642578125
+      },
+      "expected": {
+        "signal": 2744.753662109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1339.2545166015625,
+        "pressure_adjustment": 16.44538116455078
+      },
+      "expected": {
+        "signal": 1322.80908203125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2412.059814453125,
+        "pressure_adjustment": 496.2294006347656
+      },
+      "expected": {
+        "signal": 1915.8304443359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1177.5823974609375,
+        "pressure_adjustment": 30.81008529663086
+      },
+      "expected": {
+        "signal": 1146.7723388671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1940.5830078125,
+        "pressure_adjustment": 427.8288879394531
+      },
+      "expected": {
+        "signal": 1512.754150390625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2380.50732421875,
+        "pressure_adjustment": -366.92987060546875
+      },
+      "expected": {
+        "signal": 2747.437255859375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1244.63037109375,
+        "pressure_adjustment": -183.2564697265625
+      },
+      "expected": {
+        "signal": 1427.8868408203125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 365.7568054199219,
+        "pressure_adjustment": 126.00328063964844
+      },
+      "expected": {
+        "signal": 239.75352478027344
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 141.1139373779297,
+        "pressure_adjustment": -315.69915771484375
+      },
+      "expected": {
+        "signal": 456.8131103515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1253.2545166015625,
+        "pressure_adjustment": 325.1522521972656
+      },
+      "expected": {
+        "signal": 928.102294921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1311.6705322265625,
+        "pressure_adjustment": -228.0528564453125
+      },
+      "expected": {
+        "signal": 1539.723388671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1815.4139404296875,
+        "pressure_adjustment": 135.6735076904297
+      },
+      "expected": {
+        "signal": 1679.740478515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1807.3753662109375,
+        "pressure_adjustment": -315.86749267578125
+      },
+      "expected": {
+        "signal": 2123.242919921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 205.51583862304688,
+        "pressure_adjustment": 130.66690063476562
+      },
+      "expected": {
+        "signal": 74.84893798828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1244.6416015625,
+        "pressure_adjustment": -37.908241271972656
+      },
+      "expected": {
+        "signal": 1282.5498046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 174.56060791015625,
+        "pressure_adjustment": -272.1380615234375
+      },
+      "expected": {
+        "signal": 446.69866943359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 305.4668884277344,
+        "pressure_adjustment": 410.6038513183594
+      },
+      "expected": {
+        "signal": -105.136962890625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2057.626708984375,
+        "pressure_adjustment": -150.80162048339844
+      },
+      "expected": {
+        "signal": 2208.42822265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2532.657470703125,
+        "pressure_adjustment": -53.128910064697266
+      },
+      "expected": {
+        "signal": 2585.786376953125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 454.2761535644531,
+        "pressure_adjustment": -43.67184829711914
+      },
+      "expected": {
+        "signal": 497.947998046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2412.803955078125,
+        "pressure_adjustment": -230.79832458496094
+      },
+      "expected": {
+        "signal": 2643.602294921875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1636.3033447265625,
+        "pressure_adjustment": 233.1389617919922
+      },
+      "expected": {
+        "signal": 1403.1644287109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1420.7757568359375,
+        "pressure_adjustment": -429.1951599121094
+      },
+      "expected": {
+        "signal": 1849.970947265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 503.22833251953125,
+        "pressure_adjustment": 149.31190490722656
+      },
+      "expected": {
+        "signal": 353.91644287109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1739.1214599609375,
+        "pressure_adjustment": -438.9051513671875
+      },
+      "expected": {
+        "signal": 2178.026611328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1104.724609375,
+        "pressure_adjustment": -188.35281372070312
+      },
+      "expected": {
+        "signal": 1293.077392578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1176.5830078125,
+        "pressure_adjustment": -317.853515625
+      },
+      "expected": {
+        "signal": 1494.4365234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2420.172119140625,
+        "pressure_adjustment": -81.13850402832031
+      },
+      "expected": {
+        "signal": 2501.310546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 106.2860336303711,
+        "pressure_adjustment": -111.40007781982422
+      },
+      "expected": {
+        "signal": 217.6861114501953
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2121.109130859375,
+        "pressure_adjustment": -186.42764282226562
+      },
+      "expected": {
+        "signal": 2307.536865234375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 267.6418151855469,
+        "pressure_adjustment": -449.4022216796875
+      },
+      "expected": {
+        "signal": 717.0440673828125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1328.493408203125,
+        "pressure_adjustment": -380.3135070800781
+      },
+      "expected": {
+        "signal": 1708.806884765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2109.40576171875,
+        "pressure_adjustment": -163.41490173339844
+      },
+      "expected": {
+        "signal": 2272.820556640625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 583.760498046875,
+        "pressure_adjustment": 75.10456848144531
+      },
+      "expected": {
+        "signal": 508.65594482421875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1016.0100708007812,
+        "pressure_adjustment": -267.33148193359375
+      },
+      "expected": {
+        "signal": 1283.341552734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 741.1714477539062,
+        "pressure_adjustment": -372.37091064453125
+      },
+      "expected": {
+        "signal": 1113.5423583984375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1276.89599609375,
+        "pressure_adjustment": -434.8651428222656
+      },
+      "expected": {
+        "signal": 1711.7611083984375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1032.4300537109375,
+        "pressure_adjustment": 494.45782470703125
+      },
+      "expected": {
+        "signal": 537.9722290039062
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1812.89599609375,
+        "pressure_adjustment": -75.55626678466797
+      },
+      "expected": {
+        "signal": 1888.4522705078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1591.5692138671875,
+        "pressure_adjustment": 419.8134765625
+      },
+      "expected": {
+        "signal": 1171.7557373046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 169.3055419921875,
+        "pressure_adjustment": -40.46171569824219
+      },
+      "expected": {
+        "signal": 209.7672576904297
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2388.7861328125,
+        "pressure_adjustment": 460.7057800292969
+      },
+      "expected": {
+        "signal": 1928.080322265625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 770.955078125,
+        "pressure_adjustment": -100.177734375
+      },
+      "expected": {
+        "signal": 871.1328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 956.0673828125,
+        "pressure_adjustment": 4.257232666015625
+      },
+      "expected": {
+        "signal": 951.8101806640625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2412.9296875,
+        "pressure_adjustment": -140.80238342285156
+      },
+      "expected": {
+        "signal": 2553.732177734375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1510.168212890625,
+        "pressure_adjustment": 270.0968017578125
+      },
+      "expected": {
+        "signal": 1240.0714111328125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2185.64697265625,
+        "pressure_adjustment": -151.8522186279297
+      },
+      "expected": {
+        "signal": 2337.499267578125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1992.8492431640625,
+        "pressure_adjustment": 404.15478515625
+      },
+      "expected": {
+        "signal": 1588.6944580078125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1618.0665283203125,
+        "pressure_adjustment": -159.72193908691406
+      },
+      "expected": {
+        "signal": 1777.7884521484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 445.69525146484375,
+        "pressure_adjustment": 275.2168884277344
+      },
+      "expected": {
+        "signal": 170.47836303710938
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 299.525390625,
+        "pressure_adjustment": -50.779541015625
+      },
+      "expected": {
+        "signal": 350.304931640625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2329.45849609375,
+        "pressure_adjustment": -424.4349060058594
+      },
+      "expected": {
+        "signal": 2753.893310546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1485.731689453125,
+        "pressure_adjustment": -317.3430480957031
+      },
+      "expected": {
+        "signal": 1803.07470703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2172.5205078125,
+        "pressure_adjustment": -74.13001251220703
+      },
+      "expected": {
+        "signal": 2246.650634765625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1731.6871337890625,
+        "pressure_adjustment": 286.2584533691406
+      },
+      "expected": {
+        "signal": 1445.4287109375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 999.5988159179688,
+        "pressure_adjustment": 115.8577880859375
+      },
+      "expected": {
+        "signal": 883.7410278320312
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1707.8218994140625,
+        "pressure_adjustment": -5.816295623779297
+      },
+      "expected": {
+        "signal": 1713.63818359375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 189.0819854736328,
+        "pressure_adjustment": -219.74020385742188
+      },
+      "expected": {
+        "signal": 408.82220458984375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 384.3053283691406,
+        "pressure_adjustment": 354.5905456542969
+      },
+      "expected": {
+        "signal": 29.71478271484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1873.6220703125,
+        "pressure_adjustment": -263.7889099121094
+      },
+      "expected": {
+        "signal": 2137.410888671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1952.2711181640625,
+        "pressure_adjustment": -370.3947448730469
+      },
+      "expected": {
+        "signal": 2322.665771484375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1465.1455078125,
+        "pressure_adjustment": -461.9477233886719
+      },
+      "expected": {
+        "signal": 1927.09326171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1509.407958984375,
+        "pressure_adjustment": 167.0693817138672
+      },
+      "expected": {
+        "signal": 1342.338623046875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1733.0477294921875,
+        "pressure_adjustment": -411.1640625
+      },
+      "expected": {
+        "signal": 2144.2119140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1176.6304931640625,
+        "pressure_adjustment": -187.41134643554688
+      },
+      "expected": {
+        "signal": 1364.0418701171875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1566.6773681640625,
+        "pressure_adjustment": 277.10333251953125
+      },
+      "expected": {
+        "signal": 1289.573974609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 318.5771484375,
+        "pressure_adjustment": 448.31170654296875
+      },
+      "expected": {
+        "signal": -129.73455810546875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 2570.02099609375,
+        "pressure_adjustment": 365.8089904785156
+      },
+      "expected": {
+        "signal": 2204.2119140625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 685.4373168945312,
+        "pressure_adjustment": -26.492467880249023
+      },
+      "expected": {
+        "signal": 711.9298095703125
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 241.0633087158203,
+        "pressure_adjustment": 348.7013854980469
+      },
+      "expected": {
+        "signal": -107.63807678222656
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1321.748291015625,
+        "pressure_adjustment": -328.1622619628906
+      },
+      "expected": {
+        "signal": 1649.9105224609375
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1506.0311279296875,
+        "pressure_adjustment": 106.82184600830078
+      },
+      "expected": {
+        "signal": 1399.209228515625
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1135.7733154296875,
+        "pressure_adjustment": -79.62197875976562
+      },
+      "expected": {
+        "signal": 1215.395263671875
+      }
+    },
+    {
+      "inputs": {
+        "pressure": 1835.8934326171875,
+        "pressure_adjustment": 297.8702697753906
+      },
+      "expected": {
+        "signal": 1538.023193359375
+      }
+    }
+  ]
+}

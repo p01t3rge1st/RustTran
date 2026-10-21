@@ -1,0 +1,1073 @@
+{
+  "binary": "analysis/program/PCTran.exe",
+  "sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "image_base": 4194304,
+  "sections": [
+    {
+      "name": ".text",
+      "virtual_size": 1348116,
+      "rva": 4096,
+      "raw_size": 1351680,
+      "raw": 4096
+    },
+    {
+      "name": ".data",
+      "virtual_size": 62940,
+      "rva": 1355776,
+      "raw_size": 4096,
+      "raw": 1355776
+    },
+    {
+      "name": ".rsrc",
+      "virtual_size": 3164,
+      "rva": 1421312,
+      "raw_size": 4096,
+      "raw": 1359872
+    }
+  ],
+  "vb_header_file_offset": 20024,
+  "project_data_va": 4214508,
+  "object_table_va": 4300296,
+  "object_count": 41,
+  "objects": [
+    {
+      "index": 0,
+      "name": "frmError",
+      "descriptor_va": 4300380,
+      "info_va": 4226700,
+      "declared_method_count": 2,
+      "method_names": [
+        null,
+        "K\f\u00ffW0\u0085\u00c0\u00db\u00e2}\u0011\u008b\u0095x\u00ff\u00ff\u00ffj0h@\u00c3A"
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62224400,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 1,
+      "name": "frmMalf",
+      "descriptor_va": 4300428,
+      "info_va": 4217672,
+      "declared_method_count": 5,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57961624,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 2,
+      "name": "frmOptions",
+      "descriptor_va": 4300476,
+      "info_va": 4249248,
+      "declared_method_count": 5,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57376376,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 3,
+      "name": "frmPlot",
+      "descriptor_va": 4300524,
+      "info_va": 4240396,
+      "declared_method_count": 39,
+      "method_names": [
+        null,
+        "ChangeXAxisRange",
+        null,
+        "AddData",
+        "SetupPlot",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "ShowPlot",
+        "YMax",
+        "YMax",
+        "YMin",
+        "YMin",
+        "Span",
+        "Span",
+        "Scroll",
+        "Scroll",
+        "YAxisIsLog",
+        "YAxisIsLog",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "DisplayDateTime",
+        "DisplayDateTime",
+        "DisplayLegend",
+        "DisplayLegend",
+        "DisplayPlotTitle",
+        "DisplayPlotTitle",
+        "StayOnTop",
+        "StayOnTop",
+        "IsBatch",
+        "IsBatch"
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57475624,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 4,
+      "name": "frmPlotFormat",
+      "descriptor_va": 4300572,
+      "info_va": 4235496,
+      "declared_method_count": 7,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63826768,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 5,
+      "name": "frmPlotTitle",
+      "descriptor_va": 4300620,
+      "info_va": 4215080,
+      "declared_method_count": 3,
+      "method_names": [
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63886912,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 6,
+      "name": "frmPlotVarSel",
+      "descriptor_va": 4300668,
+      "info_va": 4215872,
+      "declared_method_count": 5,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63658264,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 7,
+      "name": "frmPrintReports",
+      "descriptor_va": 4300716,
+      "info_va": 4216688,
+      "declared_method_count": 7,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63870624,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 8,
+      "name": "frmReport",
+      "descriptor_va": 4300764,
+      "info_va": 4223032,
+      "declared_method_count": 11,
+      "method_names": [
+        "ClearList",
+        "AddToList",
+        "NumberItems",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "ShowReports"
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62453312,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 9,
+      "name": "frmReportOptions",
+      "descriptor_va": 4300812,
+      "info_va": 4251696,
+      "declared_method_count": 6,
+      "method_names": [
+        null,
+        "\u00ffRX\u00db\u00e2\u0085\u00c0}\u000fjXhD\u00fcA",
+        null,
+        "K\f\u00ffW0\u0085\u00c0\u00db\u00e2}\u0011\u008b\u0095x\u00ff\u00ff\u00ffj0h@\u00c3A",
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57157248,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 10,
+      "name": "frmSavePlotData",
+      "descriptor_va": 4300860,
+      "info_va": 4229576,
+      "declared_method_count": 4,
+      "method_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 64159696,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 11,
+      "name": "frmSplash",
+      "descriptor_va": 4300908,
+      "info_va": 4238740,
+      "declared_method_count": 13,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "",
+        "\u0015\t\u000f\u001c",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 64052712,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 12,
+      "name": "MainModule",
+      "descriptor_va": 4300956,
+      "info_va": 4214196,
+      "declared_method_count": 3,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 1,
+      "method_table_va": 4214252,
+      "retained_method_slots": [
+        62523832
+      ]
+    },
+    {
+      "index": 13,
+      "name": "CommonCalculations",
+      "descriptor_va": 4301004,
+      "info_va": 4213576,
+      "declared_method_count": 17,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 62759976,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 14,
+      "name": "frmDemandEntry",
+      "descriptor_va": 4301052,
+      "info_va": 4220772,
+      "declared_method_count": 4,
+      "method_names": [
+        null,
+        null,
+        "ShowDemandEntryForm",
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62617032,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 15,
+      "name": "frmSaveDoseData",
+      "descriptor_va": 4301100,
+      "info_va": 4231028,
+      "declared_method_count": 4,
+      "method_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62470904,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 16,
+      "name": "frmBackTrack",
+      "descriptor_va": 4301148,
+      "info_va": 4218704,
+      "declared_method_count": 5,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62324760,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 17,
+      "name": "frmInitCond",
+      "descriptor_va": 4301196,
+      "info_va": 4221852,
+      "declared_method_count": 6,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63639288,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 18,
+      "name": "PlotControl",
+      "descriptor_va": 4301244,
+      "info_va": 4213632,
+      "declared_method_count": 6,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 57887304,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 19,
+      "name": "frmPlotScales",
+      "descriptor_va": 4301292,
+      "info_va": 4244640,
+      "declared_method_count": 9,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 64104160,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 20,
+      "name": "frmPlotDisplayOptions",
+      "descriptor_va": 4301340,
+      "info_va": 4224212,
+      "declared_method_count": 4,
+      "method_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57240712,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 21,
+      "name": "DatabaseControl",
+      "descriptor_va": 4301388,
+      "info_va": 4213744,
+      "declared_method_count": 10,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 81375376,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 22,
+      "name": "frmPTPlot",
+      "descriptor_va": 4301436,
+      "info_va": 4219736,
+      "declared_method_count": 17,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        "AddData",
+        "SetupPlot",
+        "Span",
+        "Span",
+        "Scroll",
+        "Scroll",
+        "ClearPlot",
+        null,
+        "IsChanged",
+        "IsChanged",
+        "StayOnTop",
+        "StayOnTop",
+        "ShowPlot"
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57932816,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 23,
+      "name": "frmEditData",
+      "descriptor_va": 4301484,
+      "info_va": 4256960,
+      "declared_method_count": 11,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "LoadData",
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62295632,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 24,
+      "name": "frmPTPlotOptions",
+      "descriptor_va": 4301532,
+      "info_va": 4233936,
+      "declared_method_count": 8,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57966616,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 25,
+      "name": "frmAbout",
+      "descriptor_va": 4301580,
+      "info_va": 4237096,
+      "declared_method_count": 8,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "StartSysInfo",
+        "GetKeyValue"
+      ],
+      "object_type": 98435,
+      "retained_method_count": 3,
+      "method_table_va": 4237216,
+      "retained_method_slots": [
+        0,
+        0,
+        63329688
+      ]
+    },
+    {
+      "index": 26,
+      "name": "frmReplay",
+      "descriptor_va": 4301628,
+      "info_va": 4225404,
+      "declared_method_count": 5,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 63328504,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 27,
+      "name": "frmReplayNew",
+      "descriptor_va": 4301676,
+      "info_va": 4228136,
+      "declared_method_count": 7,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 57277664,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 28,
+      "name": "Common",
+      "descriptor_va": 4301724,
+      "info_va": 4214136,
+      "declared_method_count": 1,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 1,
+      "method_table_va": 4214192,
+      "retained_method_slots": [
+        62523832
+      ]
+    },
+    {
+      "index": 29,
+      "name": "ICActions",
+      "descriptor_va": 4301772,
+      "info_va": 4213856,
+      "declared_method_count": 14,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 64052928,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 30,
+      "name": "modReplay",
+      "descriptor_va": 4301820,
+      "info_va": 4214024,
+      "declared_method_count": 11,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 62753224,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 31,
+      "name": "Mimic",
+      "descriptor_va": 4301868,
+      "info_va": 4214080,
+      "declared_method_count": 24,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 81173608,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 32,
+      "name": "SystemCalculations",
+      "descriptor_va": 4301916,
+      "info_va": 4213688,
+      "declared_method_count": 24,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 63886448,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 33,
+      "name": "frmPresetFreeze",
+      "descriptor_va": 4301964,
+      "info_va": 4254212,
+      "declared_method_count": 10,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62234768,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 34,
+      "name": "PresetFreeze",
+      "descriptor_va": 4302012,
+      "info_va": 4213800,
+      "declared_method_count": 3,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 62325816,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 35,
+      "name": "Computations",
+      "descriptor_va": 4302060,
+      "info_va": 4213968,
+      "declared_method_count": 4,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 62696640,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 36,
+      "name": "frmMalfEdit",
+      "descriptor_va": 4302108,
+      "info_va": 4242424,
+      "declared_method_count": 4,
+      "method_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 58032112,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 37,
+      "name": "CoreMelt",
+      "descriptor_va": 4302156,
+      "info_va": 4213912,
+      "declared_method_count": 10,
+      "method_names": [],
+      "object_type": 98305,
+      "retained_method_count": 0,
+      "method_table_va": 63886632,
+      "method_table_file_backed": false
+    },
+    {
+      "index": 38,
+      "name": "frmDose",
+      "descriptor_va": 4302204,
+      "info_va": 4260844,
+      "declared_method_count": 32,
+      "method_names": [
+        null,
+        null,
+        null,
+        "UpdateStatusBar",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "mnuCodeControlFreeze_Click",
+        "mnuCodeControlRun_Click",
+        "UpdateFreezeRunControls",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "UpdateDosebreaks",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 1,
+      "method_table_va": 4260964,
+      "retained_method_slots": [
+        1048580
+      ]
+    },
+    {
+      "index": 39,
+      "name": "frmMain",
+      "descriptor_va": 4302252,
+      "info_va": 4279224,
+      "declared_method_count": 104,
+      "method_names": [
+        null,
+        null,
+        null,
+        "InitNewIC",
+        "Form_Unload",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "UpdateFreezeRunControls",
+        "mnuCodeControlMalfunctions_Click",
+        null,
+        null,
+        null,
+        "mnuViewPTPlot_Click",
+        null,
+        "mnuInitialConditions_Click",
+        "mnuViewChart_Click",
+        null,
+        "mnuViewReports_Click",
+        null,
+        null,
+        null,
+        null,
+        "RCP_Click",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "mnuFileExit_Click",
+        "UpdateStatusBar",
+        null,
+        null,
+        null,
+        null,
+        "@\u008bM\u00d4\u0083\u00ec\b\u008b\u00f9\u0083=",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "ControlRHR_Click",
+        "TripReactor_Click",
+        "TripTurbine_Click",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "StopRealTimer",
+        "StartRealTimer",
+        "UpdateRealtime",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 1,
+      "method_table_va": 4279344,
+      "retained_method_slots": [
+        65535
+      ]
+    },
+    {
+      "index": 40,
+      "name": "frmNewIC",
+      "descriptor_va": 4302300,
+      "info_va": 4232480,
+      "declared_method_count": 8,
+      "method_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "object_type": 98435,
+      "retained_method_count": 0,
+      "method_table_va": 62331568,
+      "method_table_file_backed": false
+    }
+  ],
+  "named_procedures": [
+    {
+      "name": "DECAY",
+      "bstr_va": 4322436,
+      "bstr_length": 10,
+      "references": [
+        {
+          "operand_file_offset": 632569,
+          "instruction_va": 4826872,
+          "nearest_prologue_va": 4826352,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000081eca400000053",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "EULER",
+      "bstr_va": 4322452,
+      "bstr_length": 10,
+      "references": [
+        {
+          "operand_file_offset": 633398,
+          "instruction_va": 4827701,
+          "nearest_prologue_va": 4827184,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000081ecb000000053",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "HFLD",
+      "bstr_va": 4322468,
+      "bstr_length": 8,
+      "references": [
+        {
+          "operand_file_offset": 634110,
+          "instruction_va": 4828413,
+          "nearest_prologue_va": 4828016,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000083ec5053565789",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "HGAS",
+      "bstr_va": 4322484,
+      "bstr_length": 8,
+      "references": [
+        {
+          "operand_file_offset": 634925,
+          "instruction_va": 4829228,
+          "nearest_prologue_va": 4828688,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000083ec6853565789",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "HLIQ",
+      "bstr_va": 4322500,
+      "bstr_length": 8,
+      "references": [
+        {
+          "operand_file_offset": 635485,
+          "instruction_va": 4829788,
+          "nearest_prologue_va": 4829504,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000083ec5c53565789",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "INTP",
+      "bstr_va": 4322516,
+      "bstr_length": 8,
+      "references": [
+        {
+          "operand_file_offset": 638132,
+          "instruction_va": 4832435,
+          "nearest_prologue_va": 4830256,
+          "prologue_hex": "558bec83ec18681647400064a100000000506489250000000081ec8000000053",
+          "prologue_pattern_valid": true
+        }
+      ]
+    },
+    {
+      "name": "REG",
+      "bstr_va": 4322532,
+      "bstr_length": 6,
+      "references": []
+    },
+    {
+      "name": "TLIQ",
+      "bstr_va": 4322544,
+      "bstr_length": 8,
+      "references": []
+    },
+    {
+      "name": "VFLD",
+      "bstr_va": 4322560,
+      "bstr_length": 8,
+      "references": [
+        {
+          "operand_file_offset": 639091,
+          "instruction_va": 4833394,
+          "nearest_prologue_va": 4833024,
+          "prologue_hex": "558bec83ec14681647400064a100000000506489250000000083ec5053565789",
+          "prologue_pattern_valid": true
+        }
+      ]
+    }
+  ],
+  "structure_source": "https://github.com/williballenthin/python-vb/blob/master/vb/__init__.py",
+  "optimized_helpers": [
+    {
+      "entry_va": 4832736,
+      "callee_va": 4830256,
+      "table_count": 44,
+      "x_descriptor": 5550964,
+      "y_descriptor": 5550992,
+      "mapping": "temperature -> pressure"
+    },
+    {
+      "entry_va": 4832816,
+      "callee_va": 4830256,
+      "table_count": 68,
+      "x_descriptor": 5550908,
+      "y_descriptor": 5550936,
+      "mapping": "specific volume -> pressure"
+    },
+    {
+      "entry_va": 4832944,
+      "callee_va": 4830256,
+      "table_count": 44,
+      "x_descriptor": 5550992,
+      "y_descriptor": 5550964,
+      "mapping": "pressure -> temperature",
+      "name_candidate": "TLIQ",
+      "confidence": "semantic inference; no literal xref"
+    },
+    {
+      "entry_va": 4833680,
+      "callee_va": 4830256,
+      "table_count": 68,
+      "x_descriptor": 5550936,
+      "y_descriptor": 5550908,
+      "mapping": "pressure -> specific volume"
+    },
+    {
+      "entry_va": 4832896,
+      "behavior": "single precision 0/1 threshold helper"
+    }
+  ]
+}

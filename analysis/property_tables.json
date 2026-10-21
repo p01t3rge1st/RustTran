@@ -1,0 +1,2828 @@
+{
+  "binary": "analysis/program/PCTran.exe",
+  "sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "initializer_start_va": 5358637,
+  "initializer_end_va": 5362399,
+  "arrays": [
+    {
+      "name": "saturation_temperature",
+      "descriptor_va": 5550964,
+      "data_pointer_va": 5550976,
+      "count": 44,
+      "units": "degrees F (inferred)",
+      "values": [
+        60.0,
+        66.0,
+        72.0,
+        78.0,
+        84.0,
+        90.0,
+        113.26000213623047,
+        132.8800048828125,
+        146.41000366210938,
+        156.88999938964844,
+        170.0500030517578,
+        185.6300048828125,
+        197.6999969482422,
+        207.75,
+        212.0,
+        225.0,
+        250.0,
+        270.0,
+        290.0,
+        320.0,
+        340.0,
+        360.0,
+        380.0,
+        400.0,
+        426.0,
+        450.0,
+        500.0,
+        520.0,
+        530.0,
+        540.0,
+        550.0,
+        560.0,
+        570.0,
+        580.0,
+        590.0,
+        600.0,
+        610.0,
+        620.0,
+        630.0,
+        640.0,
+        650.0,
+        660.0,
+        670.0,
+        680.0
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 60.0,
+          "bits": "42700000",
+          "store_va": 5358642,
+          "source_va": 5358642,
+          "pointer_load_va": 5358637,
+          "instruction_hex": "c70000007042"
+        },
+        {
+          "index": 1,
+          "value": 66.0,
+          "bits": "42840000",
+          "store_va": 5358654,
+          "source_va": 5358654,
+          "pointer_load_va": 5358648,
+          "instruction_hex": "c7410400008442"
+        },
+        {
+          "index": 2,
+          "value": 72.0,
+          "bits": "42900000",
+          "store_va": 5358667,
+          "source_va": 5358667,
+          "pointer_load_va": 5358661,
+          "instruction_hex": "c7420800009042"
+        },
+        {
+          "index": 3,
+          "value": 78.0,
+          "bits": "429c0000",
+          "store_va": 5358679,
+          "source_va": 5358679,
+          "pointer_load_va": 5358674,
+          "instruction_hex": "c7400c00009c42"
+        },
+        {
+          "index": 4,
+          "value": 84.0,
+          "bits": "42a80000",
+          "store_va": 5358692,
+          "source_va": 5358692,
+          "pointer_load_va": 5358686,
+          "instruction_hex": "c741100000a842"
+        },
+        {
+          "index": 5,
+          "value": 90.0,
+          "bits": "42b40000",
+          "store_va": 5358705,
+          "source_va": 5358705,
+          "pointer_load_va": 5358699,
+          "instruction_hex": "c742140000b442"
+        },
+        {
+          "index": 6,
+          "value": 113.26000213623047,
+          "bits": "42e2851f",
+          "store_va": 5358717,
+          "source_va": 5358717,
+          "pointer_load_va": 5358712,
+          "instruction_hex": "c740181f85e242"
+        },
+        {
+          "index": 7,
+          "value": 132.8800048828125,
+          "bits": "4304e148",
+          "store_va": 5358730,
+          "source_va": 5358730,
+          "pointer_load_va": 5358724,
+          "instruction_hex": "c7411c48e10443"
+        },
+        {
+          "index": 8,
+          "value": 146.41000366210938,
+          "bits": "431268f6",
+          "store_va": 5358743,
+          "source_va": 5358743,
+          "pointer_load_va": 5358737,
+          "instruction_hex": "c74220f6681243"
+        },
+        {
+          "index": 9,
+          "value": 156.88999938964844,
+          "bits": "431ce3d7",
+          "store_va": 5358755,
+          "source_va": 5358755,
+          "pointer_load_va": 5358750,
+          "instruction_hex": "c74024d7e31c43"
+        },
+        {
+          "index": 10,
+          "value": 170.0500030517578,
+          "bits": "432a0ccd",
+          "store_va": 5358768,
+          "source_va": 5358768,
+          "pointer_load_va": 5358762,
+          "instruction_hex": "c74128cd0c2a43"
+        },
+        {
+          "index": 11,
+          "value": 185.6300048828125,
+          "bits": "4339a148",
+          "store_va": 5358781,
+          "source_va": 5358781,
+          "pointer_load_va": 5358775,
+          "instruction_hex": "c7422c48a13943"
+        },
+        {
+          "index": 12,
+          "value": 197.6999969482422,
+          "bits": "4345b333",
+          "store_va": 5358793,
+          "source_va": 5358793,
+          "pointer_load_va": 5358788,
+          "instruction_hex": "c7403033b34543"
+        },
+        {
+          "index": 13,
+          "value": 207.75,
+          "bits": "434fc000",
+          "store_va": 5358806,
+          "source_va": 5358806,
+          "pointer_load_va": 5358800,
+          "instruction_hex": "c7413400c04f43"
+        },
+        {
+          "index": 14,
+          "value": 212.0,
+          "bits": "43540000",
+          "store_va": 5358819,
+          "source_va": 5358819,
+          "pointer_load_va": 5358813,
+          "instruction_hex": "c7423800005443"
+        },
+        {
+          "index": 15,
+          "value": 225.0,
+          "bits": "43610000",
+          "store_va": 5358831,
+          "source_va": 5358831,
+          "pointer_load_va": 5358826,
+          "instruction_hex": "c7403c00006143"
+        },
+        {
+          "index": 16,
+          "value": 250.0,
+          "bits": "437a0000",
+          "store_va": 5358844,
+          "source_va": 5358844,
+          "pointer_load_va": 5358838,
+          "instruction_hex": "c7414000007a43"
+        },
+        {
+          "index": 17,
+          "value": 270.0,
+          "bits": "43870000",
+          "store_va": 5358857,
+          "source_va": 5358857,
+          "pointer_load_va": 5358851,
+          "instruction_hex": "c7424400008743"
+        },
+        {
+          "index": 18,
+          "value": 290.0,
+          "bits": "43910000",
+          "store_va": 5358869,
+          "source_va": 5358869,
+          "pointer_load_va": 5358864,
+          "instruction_hex": "c7404800009143"
+        },
+        {
+          "index": 19,
+          "value": 320.0,
+          "bits": "43a00000",
+          "store_va": 5358882,
+          "source_va": 5358882,
+          "pointer_load_va": 5358876,
+          "instruction_hex": "c7414c0000a043"
+        },
+        {
+          "index": 20,
+          "value": 340.0,
+          "bits": "43aa0000",
+          "store_va": 5358895,
+          "source_va": 5358895,
+          "pointer_load_va": 5358889,
+          "instruction_hex": "c742500000aa43"
+        },
+        {
+          "index": 21,
+          "value": 360.0,
+          "bits": "43b40000",
+          "store_va": 5358907,
+          "source_va": 5358907,
+          "pointer_load_va": 5358902,
+          "instruction_hex": "c740540000b443"
+        },
+        {
+          "index": 22,
+          "value": 380.0,
+          "bits": "43be0000",
+          "store_va": 5358920,
+          "source_va": 5358920,
+          "pointer_load_va": 5358914,
+          "instruction_hex": "c741580000be43"
+        },
+        {
+          "index": 23,
+          "value": 400.0,
+          "bits": "43c80000",
+          "store_va": 5358948,
+          "source_va": 5358933,
+          "pointer_load_va": 5358927,
+          "instruction_hex": "894a5c"
+        },
+        {
+          "index": 24,
+          "value": 426.0,
+          "bits": "43d50000",
+          "store_va": 5358961,
+          "source_va": 5358961,
+          "pointer_load_va": 5358951,
+          "instruction_hex": "c740600000d543"
+        },
+        {
+          "index": 25,
+          "value": 450.0,
+          "bits": "43e10000",
+          "store_va": 5358974,
+          "source_va": 5358974,
+          "pointer_load_va": 5358968,
+          "instruction_hex": "c742640000e143"
+        },
+        {
+          "index": 26,
+          "value": 500.0,
+          "bits": "43fa0000",
+          "store_va": 5358986,
+          "source_va": 5358986,
+          "pointer_load_va": 5358981,
+          "instruction_hex": "c740680000fa43"
+        },
+        {
+          "index": 27,
+          "value": 520.0,
+          "bits": "44020000",
+          "store_va": 5358999,
+          "source_va": 5358999,
+          "pointer_load_va": 5358993,
+          "instruction_hex": "c7426c00000244"
+        },
+        {
+          "index": 28,
+          "value": 530.0,
+          "bits": "44048000",
+          "store_va": 5359011,
+          "source_va": 5359011,
+          "pointer_load_va": 5359006,
+          "instruction_hex": "c7407000800444"
+        },
+        {
+          "index": 29,
+          "value": 540.0,
+          "bits": "44070000",
+          "store_va": 5359024,
+          "source_va": 5359024,
+          "pointer_load_va": 5359018,
+          "instruction_hex": "c7427400000744"
+        },
+        {
+          "index": 30,
+          "value": 550.0,
+          "bits": "44098000",
+          "store_va": 5359036,
+          "source_va": 5359036,
+          "pointer_load_va": 5359031,
+          "instruction_hex": "c7407800800944"
+        },
+        {
+          "index": 31,
+          "value": 560.0,
+          "bits": "440c0000",
+          "store_va": 5359049,
+          "source_va": 5359049,
+          "pointer_load_va": 5359043,
+          "instruction_hex": "c7427c00000c44"
+        },
+        {
+          "index": 32,
+          "value": 570.0,
+          "bits": "440e8000",
+          "store_va": 5359061,
+          "source_va": 5359061,
+          "pointer_load_va": 5359056,
+          "instruction_hex": "c7808000000000800e44"
+        },
+        {
+          "index": 33,
+          "value": 580.0,
+          "bits": "44110000",
+          "store_va": 5359077,
+          "source_va": 5359077,
+          "pointer_load_va": 5359071,
+          "instruction_hex": "c7828400000000001144"
+        },
+        {
+          "index": 34,
+          "value": 590.0,
+          "bits": "44138000",
+          "store_va": 5359092,
+          "source_va": 5359092,
+          "pointer_load_va": 5359087,
+          "instruction_hex": "c7808800000000801344"
+        },
+        {
+          "index": 35,
+          "value": 600.0,
+          "bits": "44160000",
+          "store_va": 5359113,
+          "source_va": 5359108,
+          "pointer_load_va": 5359102,
+          "instruction_hex": "89828c000000"
+        },
+        {
+          "index": 36,
+          "value": 610.0,
+          "bits": "44188000",
+          "store_va": 5359125,
+          "source_va": 5359125,
+          "pointer_load_va": 5359119,
+          "instruction_hex": "c7829000000000801844"
+        },
+        {
+          "index": 37,
+          "value": 620.0,
+          "bits": "441b0000",
+          "store_va": 5359141,
+          "source_va": 5359141,
+          "pointer_load_va": 5359135,
+          "instruction_hex": "c7829400000000001b44"
+        },
+        {
+          "index": 38,
+          "value": 630.0,
+          "bits": "441d8000",
+          "store_va": 5359157,
+          "source_va": 5359157,
+          "pointer_load_va": 5359151,
+          "instruction_hex": "c7829800000000801d44"
+        },
+        {
+          "index": 39,
+          "value": 640.0,
+          "bits": "44200000",
+          "store_va": 5359173,
+          "source_va": 5359173,
+          "pointer_load_va": 5359167,
+          "instruction_hex": "c7829c00000000002044"
+        },
+        {
+          "index": 40,
+          "value": 650.0,
+          "bits": "44228000",
+          "store_va": 5359189,
+          "source_va": 5359189,
+          "pointer_load_va": 5359183,
+          "instruction_hex": "c782a000000000802244"
+        },
+        {
+          "index": 41,
+          "value": 660.0,
+          "bits": "44250000",
+          "store_va": 5359205,
+          "source_va": 5359205,
+          "pointer_load_va": 5359199,
+          "instruction_hex": "c782a400000000002544"
+        },
+        {
+          "index": 42,
+          "value": 670.0,
+          "bits": "44278000",
+          "store_va": 5359221,
+          "source_va": 5359221,
+          "pointer_load_va": 5359215,
+          "instruction_hex": "c782a800000000802744"
+        },
+        {
+          "index": 43,
+          "value": 680.0,
+          "bits": "442a0000",
+          "store_va": 5359237,
+          "source_va": 5359237,
+          "pointer_load_va": 5359231,
+          "instruction_hex": "c782ac00000000002a44"
+        }
+      ]
+    },
+    {
+      "name": "saturation_pressure_44",
+      "descriptor_va": 5550992,
+      "data_pointer_va": 5551004,
+      "count": 44,
+      "units": "psia (inferred)",
+      "values": [
+        0.25609999895095825,
+        0.31630000472068787,
+        0.38839998841285706,
+        0.4745999872684479,
+        0.5770000219345093,
+        0.699999988079071,
+        1.399999976158142,
+        2.4000000953674316,
+        3.4000000953674316,
+        4.400000095367432,
+        6.0,
+        8.5,
+        11.0,
+        13.5,
+        14.699999809265137,
+        18.899999618530273,
+        29.799999237060547,
+        41.900001525878906,
+        57.599998474121094,
+        89.5999984741211,
+        118.0,
+        153.0,
+        195.6999969482422,
+        247.25900268554688,
+        329.3689880371094,
+        422.54998779296875,
+        680.8599853515625,
+        812.530029296875,
+        885.22998046875,
+        962.7899780273438,
+        1045.4300537109375,
+        1133.3800048828125,
+        1226.8800048828125,
+        1326.1700439453125,
+        1431.5,
+        1543.199951171875,
+        1661.5999755859375,
+        1786.9000244140625,
+        1919.5,
+        2059.89990234375,
+        2208.39990234375,
+        2365.699951171875,
+        2532.199951171875,
+        2708.60009765625
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 0.25609999895095825,
+          "bits": "3e831f8a",
+          "store_va": 5359253,
+          "source_va": 5359253,
+          "pointer_load_va": 5359247,
+          "instruction_hex": "c7028a1f833e"
+        },
+        {
+          "index": 1,
+          "value": 0.31630000472068787,
+          "bits": "3ea1f213",
+          "store_va": 5359265,
+          "source_va": 5359265,
+          "pointer_load_va": 5359259,
+          "instruction_hex": "c7420413f2a13e"
+        },
+        {
+          "index": 2,
+          "value": 0.38839998841285706,
+          "bits": "3ec6dc5d",
+          "store_va": 5359278,
+          "source_va": 5359278,
+          "pointer_load_va": 5359272,
+          "instruction_hex": "c742085ddcc63e"
+        },
+        {
+          "index": 3,
+          "value": 0.4745999872684479,
+          "bits": "3ef2fec5",
+          "store_va": 5359291,
+          "source_va": 5359291,
+          "pointer_load_va": 5359285,
+          "instruction_hex": "c7420cc5fef23e"
+        },
+        {
+          "index": 4,
+          "value": 0.5770000219345093,
+          "bits": "3f13b646",
+          "store_va": 5359304,
+          "source_va": 5359304,
+          "pointer_load_va": 5359298,
+          "instruction_hex": "c7421046b6133f"
+        },
+        {
+          "index": 5,
+          "value": 0.699999988079071,
+          "bits": "3f333333",
+          "store_va": 5359317,
+          "source_va": 5359317,
+          "pointer_load_va": 5359311,
+          "instruction_hex": "c742143333333f"
+        },
+        {
+          "index": 6,
+          "value": 1.399999976158142,
+          "bits": "3fb33333",
+          "store_va": 5359330,
+          "source_va": 5359330,
+          "pointer_load_va": 5359324,
+          "instruction_hex": "c742183333b33f"
+        },
+        {
+          "index": 7,
+          "value": 2.4000000953674316,
+          "bits": "4019999a",
+          "store_va": 5359343,
+          "source_va": 5359343,
+          "pointer_load_va": 5359337,
+          "instruction_hex": "c7421c9a991940"
+        },
+        {
+          "index": 8,
+          "value": 3.4000000953674316,
+          "bits": "4059999a",
+          "store_va": 5359356,
+          "source_va": 5359356,
+          "pointer_load_va": 5359350,
+          "instruction_hex": "c742209a995940"
+        },
+        {
+          "index": 9,
+          "value": 4.400000095367432,
+          "bits": "408ccccd",
+          "store_va": 5359369,
+          "source_va": 5359369,
+          "pointer_load_va": 5359363,
+          "instruction_hex": "c74224cdcc8c40"
+        },
+        {
+          "index": 10,
+          "value": 6.0,
+          "bits": "40c00000",
+          "store_va": 5359382,
+          "source_va": 5359382,
+          "pointer_load_va": 5359376,
+          "instruction_hex": "c742280000c040"
+        },
+        {
+          "index": 11,
+          "value": 8.5,
+          "bits": "41080000",
+          "store_va": 5359395,
+          "source_va": 5358938,
+          "pointer_load_va": 5359389,
+          "instruction_hex": "895a2c"
+        },
+        {
+          "index": 12,
+          "value": 11.0,
+          "bits": "41300000",
+          "store_va": 5359404,
+          "source_va": 5358943,
+          "pointer_load_va": 5359398,
+          "instruction_hex": "897a30"
+        },
+        {
+          "index": 13,
+          "value": 13.5,
+          "bits": "41580000",
+          "store_va": 5359413,
+          "source_va": 5358956,
+          "pointer_load_va": 5359407,
+          "instruction_hex": "897234"
+        },
+        {
+          "index": 14,
+          "value": 14.699999809265137,
+          "bits": "416b3333",
+          "store_va": 5359427,
+          "source_va": 5359422,
+          "pointer_load_va": 5359416,
+          "instruction_hex": "895538"
+        },
+        {
+          "index": 15,
+          "value": 18.899999618530273,
+          "bits": "41973333",
+          "store_va": 5359436,
+          "source_va": 5359436,
+          "pointer_load_va": 5359430,
+          "instruction_hex": "c7453c33339741"
+        },
+        {
+          "index": 16,
+          "value": 29.799999237060547,
+          "bits": "41ee6666",
+          "store_va": 5359449,
+          "source_va": 5359449,
+          "pointer_load_va": 5359443,
+          "instruction_hex": "c745406666ee41"
+        },
+        {
+          "index": 17,
+          "value": 41.900001525878906,
+          "bits": "4227999a",
+          "store_va": 5359462,
+          "source_va": 5359462,
+          "pointer_load_va": 5359456,
+          "instruction_hex": "c745449a992742"
+        },
+        {
+          "index": 18,
+          "value": 57.599998474121094,
+          "bits": "42666666",
+          "store_va": 5359475,
+          "source_va": 5359475,
+          "pointer_load_va": 5359469,
+          "instruction_hex": "c7454866666642"
+        },
+        {
+          "index": 19,
+          "value": 89.5999984741211,
+          "bits": "42b33333",
+          "store_va": 5359488,
+          "source_va": 5359488,
+          "pointer_load_va": 5359482,
+          "instruction_hex": "c7454c3333b342"
+        },
+        {
+          "index": 20,
+          "value": 118.0,
+          "bits": "42ec0000",
+          "store_va": 5359501,
+          "source_va": 5359501,
+          "pointer_load_va": 5359495,
+          "instruction_hex": "c745500000ec42"
+        },
+        {
+          "index": 21,
+          "value": 153.0,
+          "bits": "43190000",
+          "store_va": 5359514,
+          "source_va": 5359514,
+          "pointer_load_va": 5359508,
+          "instruction_hex": "c7455400001943"
+        },
+        {
+          "index": 22,
+          "value": 195.6999969482422,
+          "bits": "4343b333",
+          "store_va": 5359527,
+          "source_va": 5359527,
+          "pointer_load_va": 5359521,
+          "instruction_hex": "c7455833b34343"
+        },
+        {
+          "index": 23,
+          "value": 247.25900268554688,
+          "bits": "4377424e",
+          "store_va": 5359540,
+          "source_va": 5359540,
+          "pointer_load_va": 5359534,
+          "instruction_hex": "c7455c4e427743"
+        },
+        {
+          "index": 24,
+          "value": 329.3689880371094,
+          "bits": "43a4af3b",
+          "store_va": 5359553,
+          "source_va": 5359553,
+          "pointer_load_va": 5359547,
+          "instruction_hex": "c745603bafa443"
+        },
+        {
+          "index": 25,
+          "value": 422.54998779296875,
+          "bits": "43d34666",
+          "store_va": 5359566,
+          "source_va": 5359566,
+          "pointer_load_va": 5359560,
+          "instruction_hex": "c745646646d343"
+        },
+        {
+          "index": 26,
+          "value": 680.8599853515625,
+          "bits": "442a370a",
+          "store_va": 5359579,
+          "source_va": 5359579,
+          "pointer_load_va": 5359573,
+          "instruction_hex": "c745680a372a44"
+        },
+        {
+          "index": 27,
+          "value": 812.530029296875,
+          "bits": "444b21ec",
+          "store_va": 5359592,
+          "source_va": 5359592,
+          "pointer_load_va": 5359586,
+          "instruction_hex": "c7456cec214b44"
+        },
+        {
+          "index": 28,
+          "value": 885.22998046875,
+          "bits": "445d4eb8",
+          "store_va": 5359605,
+          "source_va": 5359605,
+          "pointer_load_va": 5359599,
+          "instruction_hex": "c74570b84e5d44"
+        },
+        {
+          "index": 29,
+          "value": 962.7899780273438,
+          "bits": "4470b28f",
+          "store_va": 5359618,
+          "source_va": 5359618,
+          "pointer_load_va": 5359612,
+          "instruction_hex": "c745748fb27044"
+        },
+        {
+          "index": 30,
+          "value": 1045.4300537109375,
+          "bits": "4482adc3",
+          "store_va": 5359631,
+          "source_va": 5359631,
+          "pointer_load_va": 5359625,
+          "instruction_hex": "c74578c3ad8244"
+        },
+        {
+          "index": 31,
+          "value": 1133.3800048828125,
+          "bits": "448dac29",
+          "store_va": 5359644,
+          "source_va": 5359644,
+          "pointer_load_va": 5359638,
+          "instruction_hex": "c7457c29ac8d44"
+        },
+        {
+          "index": 32,
+          "value": 1226.8800048828125,
+          "bits": "44995c29",
+          "store_va": 5359657,
+          "source_va": 5359657,
+          "pointer_load_va": 5359651,
+          "instruction_hex": "c78580000000295c9944"
+        },
+        {
+          "index": 33,
+          "value": 1326.1700439453125,
+          "bits": "44a5c571",
+          "store_va": 5359673,
+          "source_va": 5359673,
+          "pointer_load_va": 5359667,
+          "instruction_hex": "c7858400000071c5a544"
+        },
+        {
+          "index": 34,
+          "value": 1431.5,
+          "bits": "44b2f000",
+          "store_va": 5359689,
+          "source_va": 5359689,
+          "pointer_load_va": 5359683,
+          "instruction_hex": "c7858800000000f0b244"
+        },
+        {
+          "index": 35,
+          "value": 1543.199951171875,
+          "bits": "44c0e666",
+          "store_va": 5359705,
+          "source_va": 5359705,
+          "pointer_load_va": 5359699,
+          "instruction_hex": "c7858c00000066e6c044"
+        },
+        {
+          "index": 36,
+          "value": 1661.5999755859375,
+          "bits": "44cfb333",
+          "store_va": 5359721,
+          "source_va": 5359721,
+          "pointer_load_va": 5359715,
+          "instruction_hex": "c7859000000033b3cf44"
+        },
+        {
+          "index": 37,
+          "value": 1786.9000244140625,
+          "bits": "44df5ccd",
+          "store_va": 5359737,
+          "source_va": 5359737,
+          "pointer_load_va": 5359731,
+          "instruction_hex": "c78594000000cd5cdf44"
+        },
+        {
+          "index": 38,
+          "value": 1919.5,
+          "bits": "44eff000",
+          "store_va": 5359753,
+          "source_va": 5359753,
+          "pointer_load_va": 5359747,
+          "instruction_hex": "c7859800000000f0ef44"
+        },
+        {
+          "index": 39,
+          "value": 2059.89990234375,
+          "bits": "4500be66",
+          "store_va": 5359769,
+          "source_va": 5359769,
+          "pointer_load_va": 5359763,
+          "instruction_hex": "c7859c00000066be0045"
+        },
+        {
+          "index": 40,
+          "value": 2208.39990234375,
+          "bits": "450a0666",
+          "store_va": 5359785,
+          "source_va": 5359785,
+          "pointer_load_va": 5359779,
+          "instruction_hex": "c785a000000066060a45"
+        },
+        {
+          "index": 41,
+          "value": 2365.699951171875,
+          "bits": "4513db33",
+          "store_va": 5359801,
+          "source_va": 5359801,
+          "pointer_load_va": 5359795,
+          "instruction_hex": "c785a400000033db1345"
+        },
+        {
+          "index": 42,
+          "value": 2532.199951171875,
+          "bits": "451e4333",
+          "store_va": 5359817,
+          "source_va": 5359817,
+          "pointer_load_va": 5359811,
+          "instruction_hex": "c785a800000033431e45"
+        },
+        {
+          "index": 43,
+          "value": 2708.60009765625,
+          "bits": "4529499a",
+          "store_va": 5359833,
+          "source_va": 5359833,
+          "pointer_load_va": 5359827,
+          "instruction_hex": "c785ac0000009a492945"
+        }
+      ]
+    },
+    {
+      "name": "saturation_pressure_68",
+      "descriptor_va": 5550936,
+      "data_pointer_va": 5550948,
+      "count": 68,
+      "units": "psia (inferred)",
+      "values": [
+        0.25609999895095825,
+        0.31630000472068787,
+        0.38839998841285706,
+        0.4745999872684479,
+        0.5770000219345093,
+        0.699999988079071,
+        1.399999976158142,
+        2.4000000953674316,
+        3.4000000953674316,
+        4.400000095367432,
+        6.0,
+        8.5,
+        11.0,
+        13.5,
+        14.699999809265137,
+        20.0,
+        25.0,
+        35.0,
+        50.0,
+        60.0,
+        80.0,
+        90.0,
+        100.0,
+        120.0,
+        150.0,
+        180.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        910.0,
+        950.0,
+        990.0,
+        1030.0,
+        1070.0,
+        1110.0,
+        1130.0,
+        1170.0,
+        1210.0,
+        1230.0,
+        1270.0,
+        1300.0,
+        1320.0,
+        1360.0,
+        1400.0,
+        1440.0,
+        1480.0,
+        1520.0,
+        1560.0,
+        1600.0,
+        1640.0,
+        1700.0,
+        1760.0,
+        1800.0,
+        1860.0,
+        1900.0,
+        1940.0,
+        2000.0,
+        2100.0,
+        2200.0,
+        2300.0,
+        2400.0,
+        2500.0,
+        2600.0,
+        2700.0
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 0.25609999895095825,
+          "bits": "3e831f8a",
+          "store_va": 5359849,
+          "source_va": 5359849,
+          "pointer_load_va": 5359843,
+          "instruction_hex": "c745008a1f833e"
+        },
+        {
+          "index": 1,
+          "value": 0.31630000472068787,
+          "bits": "3ea1f213",
+          "store_va": 5359862,
+          "source_va": 5359862,
+          "pointer_load_va": 5359856,
+          "instruction_hex": "c7450413f2a13e"
+        },
+        {
+          "index": 2,
+          "value": 0.38839998841285706,
+          "bits": "3ec6dc5d",
+          "store_va": 5359875,
+          "source_va": 5359875,
+          "pointer_load_va": 5359869,
+          "instruction_hex": "c745085ddcc63e"
+        },
+        {
+          "index": 3,
+          "value": 0.4745999872684479,
+          "bits": "3ef2fec5",
+          "store_va": 5359888,
+          "source_va": 5359888,
+          "pointer_load_va": 5359882,
+          "instruction_hex": "c7450cc5fef23e"
+        },
+        {
+          "index": 4,
+          "value": 0.5770000219345093,
+          "bits": "3f13b646",
+          "store_va": 5359901,
+          "source_va": 5359901,
+          "pointer_load_va": 5359895,
+          "instruction_hex": "c7451046b6133f"
+        },
+        {
+          "index": 5,
+          "value": 0.699999988079071,
+          "bits": "3f333333",
+          "store_va": 5359914,
+          "source_va": 5359914,
+          "pointer_load_va": 5359908,
+          "instruction_hex": "c745143333333f"
+        },
+        {
+          "index": 6,
+          "value": 1.399999976158142,
+          "bits": "3fb33333",
+          "store_va": 5359927,
+          "source_va": 5359927,
+          "pointer_load_va": 5359921,
+          "instruction_hex": "c745183333b33f"
+        },
+        {
+          "index": 7,
+          "value": 2.4000000953674316,
+          "bits": "4019999a",
+          "store_va": 5359940,
+          "source_va": 5359940,
+          "pointer_load_va": 5359934,
+          "instruction_hex": "c7451c9a991940"
+        },
+        {
+          "index": 8,
+          "value": 3.4000000953674316,
+          "bits": "4059999a",
+          "store_va": 5359953,
+          "source_va": 5359953,
+          "pointer_load_va": 5359947,
+          "instruction_hex": "c745209a995940"
+        },
+        {
+          "index": 9,
+          "value": 4.400000095367432,
+          "bits": "408ccccd",
+          "store_va": 5359966,
+          "source_va": 5359966,
+          "pointer_load_va": 5359960,
+          "instruction_hex": "c74524cdcc8c40"
+        },
+        {
+          "index": 10,
+          "value": 6.0,
+          "bits": "40c00000",
+          "store_va": 5359979,
+          "source_va": 5359979,
+          "pointer_load_va": 5359973,
+          "instruction_hex": "c745280000c040"
+        },
+        {
+          "index": 11,
+          "value": 8.5,
+          "bits": "41080000",
+          "store_va": 5359992,
+          "source_va": 5358938,
+          "pointer_load_va": 5359986,
+          "instruction_hex": "895d2c"
+        },
+        {
+          "index": 12,
+          "value": 11.0,
+          "bits": "41300000",
+          "store_va": 5360001,
+          "source_va": 5358943,
+          "pointer_load_va": 5359995,
+          "instruction_hex": "897b30"
+        },
+        {
+          "index": 13,
+          "value": 13.5,
+          "bits": "41580000",
+          "store_va": 5360015,
+          "source_va": 5358956,
+          "pointer_load_va": 5360004,
+          "instruction_hex": "897734"
+        },
+        {
+          "index": 14,
+          "value": 14.699999809265137,
+          "bits": "416b3333",
+          "store_va": 5360029,
+          "source_va": 5359422,
+          "pointer_load_va": 5360018,
+          "instruction_hex": "895638"
+        },
+        {
+          "index": 15,
+          "value": 20.0,
+          "bits": "41a00000",
+          "store_va": 5360043,
+          "source_va": 5360010,
+          "pointer_load_va": 5360032,
+          "instruction_hex": "895a3c"
+        },
+        {
+          "index": 16,
+          "value": 25.0,
+          "bits": "41c80000",
+          "store_va": 5360052,
+          "source_va": 5360052,
+          "pointer_load_va": 5360046,
+          "instruction_hex": "c742400000c841"
+        },
+        {
+          "index": 17,
+          "value": 35.0,
+          "bits": "420c0000",
+          "store_va": 5360065,
+          "source_va": 5360065,
+          "pointer_load_va": 5360059,
+          "instruction_hex": "c7424400000c42"
+        },
+        {
+          "index": 18,
+          "value": 50.0,
+          "bits": "42480000",
+          "store_va": 5360078,
+          "source_va": 5360078,
+          "pointer_load_va": 5360072,
+          "instruction_hex": "c7424800004842"
+        },
+        {
+          "index": 19,
+          "value": 60.0,
+          "bits": "42700000",
+          "store_va": 5360091,
+          "source_va": 5360091,
+          "pointer_load_va": 5360085,
+          "instruction_hex": "c7424c00007042"
+        },
+        {
+          "index": 20,
+          "value": 80.0,
+          "bits": "42a00000",
+          "store_va": 5360104,
+          "source_va": 5360104,
+          "pointer_load_va": 5360098,
+          "instruction_hex": "c742500000a042"
+        },
+        {
+          "index": 21,
+          "value": 90.0,
+          "bits": "42b40000",
+          "store_va": 5360117,
+          "source_va": 5360117,
+          "pointer_load_va": 5360111,
+          "instruction_hex": "c742540000b442"
+        },
+        {
+          "index": 22,
+          "value": 100.0,
+          "bits": "42c80000",
+          "store_va": 5360130,
+          "source_va": 5360024,
+          "pointer_load_va": 5360124,
+          "instruction_hex": "897a58"
+        },
+        {
+          "index": 23,
+          "value": 120.0,
+          "bits": "42f00000",
+          "store_va": 5360139,
+          "source_va": 5360139,
+          "pointer_load_va": 5360133,
+          "instruction_hex": "c7425c0000f042"
+        },
+        {
+          "index": 24,
+          "value": 150.0,
+          "bits": "43160000",
+          "store_va": 5360152,
+          "source_va": 5360152,
+          "pointer_load_va": 5360146,
+          "instruction_hex": "c7426000001643"
+        },
+        {
+          "index": 25,
+          "value": 180.0,
+          "bits": "43340000",
+          "store_va": 5360165,
+          "source_va": 5360165,
+          "pointer_load_va": 5360159,
+          "instruction_hex": "c7426400003443"
+        },
+        {
+          "index": 26,
+          "value": 200.0,
+          "bits": "43480000",
+          "store_va": 5360178,
+          "source_va": 5360038,
+          "pointer_load_va": 5360172,
+          "instruction_hex": "897268"
+        },
+        {
+          "index": 27,
+          "value": 300.0,
+          "bits": "43960000",
+          "store_va": 5360187,
+          "source_va": 5360187,
+          "pointer_load_va": 5360181,
+          "instruction_hex": "c7426c00009643"
+        },
+        {
+          "index": 28,
+          "value": 400.0,
+          "bits": "43c80000",
+          "store_va": 5360200,
+          "source_va": 5358933,
+          "pointer_load_va": 5360194,
+          "instruction_hex": "894a70"
+        },
+        {
+          "index": 29,
+          "value": 500.0,
+          "bits": "43fa0000",
+          "store_va": 5360209,
+          "source_va": 5360209,
+          "pointer_load_va": 5360203,
+          "instruction_hex": "c742740000fa43"
+        },
+        {
+          "index": 30,
+          "value": 600.0,
+          "bits": "44160000",
+          "store_va": 5360222,
+          "source_va": 5359108,
+          "pointer_load_va": 5360216,
+          "instruction_hex": "894278"
+        },
+        {
+          "index": 31,
+          "value": 700.0,
+          "bits": "442f0000",
+          "store_va": 5360231,
+          "source_va": 5360231,
+          "pointer_load_va": 5360225,
+          "instruction_hex": "c7427c00002f44"
+        },
+        {
+          "index": 32,
+          "value": 800.0,
+          "bits": "44480000",
+          "store_va": 5360249,
+          "source_va": 5360244,
+          "pointer_load_va": 5360238,
+          "instruction_hex": "899580000000"
+        },
+        {
+          "index": 33,
+          "value": 910.0,
+          "bits": "44638000",
+          "store_va": 5360261,
+          "source_va": 5360261,
+          "pointer_load_va": 5360255,
+          "instruction_hex": "c7858400000000806344"
+        },
+        {
+          "index": 34,
+          "value": 950.0,
+          "bits": "446d8000",
+          "store_va": 5360277,
+          "source_va": 5360277,
+          "pointer_load_va": 5360271,
+          "instruction_hex": "c7858800000000806d44"
+        },
+        {
+          "index": 35,
+          "value": 990.0,
+          "bits": "44778000",
+          "store_va": 5360293,
+          "source_va": 5360293,
+          "pointer_load_va": 5360287,
+          "instruction_hex": "c7858c00000000807744"
+        },
+        {
+          "index": 36,
+          "value": 1030.0,
+          "bits": "4480c000",
+          "store_va": 5360309,
+          "source_va": 5360309,
+          "pointer_load_va": 5360303,
+          "instruction_hex": "c7859000000000c08044"
+        },
+        {
+          "index": 37,
+          "value": 1070.0,
+          "bits": "4485c000",
+          "store_va": 5360325,
+          "source_va": 5360325,
+          "pointer_load_va": 5360319,
+          "instruction_hex": "c7859400000000c08544"
+        },
+        {
+          "index": 38,
+          "value": 1110.0,
+          "bits": "448ac000",
+          "store_va": 5360341,
+          "source_va": 5360341,
+          "pointer_load_va": 5360335,
+          "instruction_hex": "c7859800000000c08a44"
+        },
+        {
+          "index": 39,
+          "value": 1130.0,
+          "bits": "448d4000",
+          "store_va": 5360357,
+          "source_va": 5360357,
+          "pointer_load_va": 5360351,
+          "instruction_hex": "c7859c00000000408d44"
+        },
+        {
+          "index": 40,
+          "value": 1170.0,
+          "bits": "44924000",
+          "store_va": 5360373,
+          "source_va": 5360373,
+          "pointer_load_va": 5360367,
+          "instruction_hex": "c785a000000000409244"
+        },
+        {
+          "index": 41,
+          "value": 1210.0,
+          "bits": "44974000",
+          "store_va": 5360389,
+          "source_va": 5360389,
+          "pointer_load_va": 5360383,
+          "instruction_hex": "c785a400000000409744"
+        },
+        {
+          "index": 42,
+          "value": 1230.0,
+          "bits": "4499c000",
+          "store_va": 5360405,
+          "source_va": 5360405,
+          "pointer_load_va": 5360399,
+          "instruction_hex": "c785a800000000c09944"
+        },
+        {
+          "index": 43,
+          "value": 1270.0,
+          "bits": "449ec000",
+          "store_va": 5360421,
+          "source_va": 5360421,
+          "pointer_load_va": 5360415,
+          "instruction_hex": "c785ac00000000c09e44"
+        },
+        {
+          "index": 44,
+          "value": 1300.0,
+          "bits": "44a28000",
+          "store_va": 5360437,
+          "source_va": 5360437,
+          "pointer_load_va": 5360431,
+          "instruction_hex": "c785b00000000080a244"
+        },
+        {
+          "index": 45,
+          "value": 1320.0,
+          "bits": "44a50000",
+          "store_va": 5360453,
+          "source_va": 5360453,
+          "pointer_load_va": 5360447,
+          "instruction_hex": "c785b40000000000a544"
+        },
+        {
+          "index": 46,
+          "value": 1360.0,
+          "bits": "44aa0000",
+          "store_va": 5360469,
+          "source_va": 5360469,
+          "pointer_load_va": 5360463,
+          "instruction_hex": "c785b80000000000aa44"
+        },
+        {
+          "index": 47,
+          "value": 1400.0,
+          "bits": "44af0000",
+          "store_va": 5360485,
+          "source_va": 5360485,
+          "pointer_load_va": 5360479,
+          "instruction_hex": "c785bc0000000000af44"
+        },
+        {
+          "index": 48,
+          "value": 1440.0,
+          "bits": "44b40000",
+          "store_va": 5360501,
+          "source_va": 5360501,
+          "pointer_load_va": 5360495,
+          "instruction_hex": "c785c00000000000b444"
+        },
+        {
+          "index": 49,
+          "value": 1480.0,
+          "bits": "44b90000",
+          "store_va": 5360517,
+          "source_va": 5360517,
+          "pointer_load_va": 5360511,
+          "instruction_hex": "c785c40000000000b944"
+        },
+        {
+          "index": 50,
+          "value": 1520.0,
+          "bits": "44be0000",
+          "store_va": 5360533,
+          "source_va": 5360533,
+          "pointer_load_va": 5360527,
+          "instruction_hex": "c785c80000000000be44"
+        },
+        {
+          "index": 51,
+          "value": 1560.0,
+          "bits": "44c30000",
+          "store_va": 5360549,
+          "source_va": 5360549,
+          "pointer_load_va": 5360543,
+          "instruction_hex": "c785cc0000000000c344"
+        },
+        {
+          "index": 52,
+          "value": 1600.0,
+          "bits": "44c80000",
+          "store_va": 5360565,
+          "source_va": 5360565,
+          "pointer_load_va": 5360559,
+          "instruction_hex": "c785d00000000000c844"
+        },
+        {
+          "index": 53,
+          "value": 1640.0,
+          "bits": "44cd0000",
+          "store_va": 5360581,
+          "source_va": 5360581,
+          "pointer_load_va": 5360575,
+          "instruction_hex": "c785d40000000000cd44"
+        },
+        {
+          "index": 54,
+          "value": 1700.0,
+          "bits": "44d48000",
+          "store_va": 5360597,
+          "source_va": 5360597,
+          "pointer_load_va": 5360591,
+          "instruction_hex": "c785d80000000080d444"
+        },
+        {
+          "index": 55,
+          "value": 1760.0,
+          "bits": "44dc0000",
+          "store_va": 5360613,
+          "source_va": 5360613,
+          "pointer_load_va": 5360607,
+          "instruction_hex": "c785dc0000000000dc44"
+        },
+        {
+          "index": 56,
+          "value": 1800.0,
+          "bits": "44e10000",
+          "store_va": 5360629,
+          "source_va": 5360629,
+          "pointer_load_va": 5360623,
+          "instruction_hex": "c785e00000000000e144"
+        },
+        {
+          "index": 57,
+          "value": 1860.0,
+          "bits": "44e88000",
+          "store_va": 5360645,
+          "source_va": 5360645,
+          "pointer_load_va": 5360639,
+          "instruction_hex": "c785e40000000080e844"
+        },
+        {
+          "index": 58,
+          "value": 1900.0,
+          "bits": "44ed8000",
+          "store_va": 5360661,
+          "source_va": 5360661,
+          "pointer_load_va": 5360655,
+          "instruction_hex": "c785e80000000080ed44"
+        },
+        {
+          "index": 59,
+          "value": 1940.0,
+          "bits": "44f28000",
+          "store_va": 5360677,
+          "source_va": 5360677,
+          "pointer_load_va": 5360671,
+          "instruction_hex": "c785ec0000000080f244"
+        },
+        {
+          "index": 60,
+          "value": 2000.0,
+          "bits": "44fa0000",
+          "store_va": 5360693,
+          "source_va": 5360693,
+          "pointer_load_va": 5360687,
+          "instruction_hex": "c785f00000000000fa44"
+        },
+        {
+          "index": 61,
+          "value": 2100.0,
+          "bits": "45034000",
+          "store_va": 5360709,
+          "source_va": 5360709,
+          "pointer_load_va": 5360703,
+          "instruction_hex": "c785f400000000400345"
+        },
+        {
+          "index": 62,
+          "value": 2200.0,
+          "bits": "45098000",
+          "store_va": 5360725,
+          "source_va": 5360725,
+          "pointer_load_va": 5360719,
+          "instruction_hex": "c785f800000000800945"
+        },
+        {
+          "index": 63,
+          "value": 2300.0,
+          "bits": "450fc000",
+          "store_va": 5360741,
+          "source_va": 5360741,
+          "pointer_load_va": 5360735,
+          "instruction_hex": "c785fc00000000c00f45"
+        },
+        {
+          "index": 64,
+          "value": 2400.0,
+          "bits": "45160000",
+          "store_va": 5360757,
+          "source_va": 5360757,
+          "pointer_load_va": 5360751,
+          "instruction_hex": "c7850001000000001645"
+        },
+        {
+          "index": 65,
+          "value": 2500.0,
+          "bits": "451c4000",
+          "store_va": 5360773,
+          "source_va": 5360773,
+          "pointer_load_va": 5360767,
+          "instruction_hex": "c7850401000000401c45"
+        },
+        {
+          "index": 66,
+          "value": 2600.0,
+          "bits": "45228000",
+          "store_va": 5360789,
+          "source_va": 5360789,
+          "pointer_load_va": 5360783,
+          "instruction_hex": "c7850801000000802245"
+        },
+        {
+          "index": 67,
+          "value": 2700.0,
+          "bits": "4528c000",
+          "store_va": 5360805,
+          "source_va": 5360805,
+          "pointer_load_va": 5360799,
+          "instruction_hex": "c7850c01000000c02845"
+        }
+      ]
+    },
+    {
+      "name": "saturated_vapor_specific_volume",
+      "descriptor_va": 5550908,
+      "data_pointer_va": 5550920,
+      "count": 68,
+      "units": "ft^3/lb (inferred)",
+      "values": [
+        1207.0,
+        989.0,
+        814.2999877929688,
+        673.9000244140625,
+        560.0,
+        466.95001220703125,
+        243.02000427246094,
+        146.39999389648438,
+        105.56999969482422,
+        82.89299774169922,
+        61.98400115966797,
+        44.733001708984375,
+        33.141998291015625,
+        29.013999938964844,
+        26.798999786376953,
+        20.086999893188477,
+        16.301000595092773,
+        11.895899772644043,
+        8.513999938964844,
+        7.173600196838379,
+        5.471099853515625,
+        4.895299911499023,
+        4.431000232696533,
+        3.7274999618530273,
+        3.0139000415802,
+        2.5311999320983887,
+        2.2872800827026367,
+        1.542739987373352,
+        1.160949945449829,
+        0.927619993686676,
+        0.7697499990463257,
+        0.6555600166320801,
+        0.5689600110054016,
+        0.4948999881744385,
+        0.4720500111579895,
+        0.4507899880409241,
+        0.4314599931240082,
+        0.413349986076355,
+        0.396479994058609,
+        0.38846999406814575,
+        0.37323999404907227,
+        0.3589699864387512,
+        0.3521600067615509,
+        0.3391599953174591,
+        0.329910010099411,
+        0.32396000623703003,
+        0.31255999207496643,
+        0.30177998542785645,
+        0.29155999422073364,
+        0.28185999393463135,
+        0.27265000343322754,
+        0.263839989900589,
+        0.2554500102996826,
+        0.24743999540805817,
+        0.23607000708580017,
+        0.22538000345230103,
+        0.2186100035905838,
+        0.20893999934196472,
+        0.20277999341487885,
+        0.19684000313282013,
+        0.18830999732017517,
+        0.17500999569892883,
+        0.1627199947834015,
+        0.15132999420166016,
+        0.14076000452041626,
+        0.13067999482154846,
+        0.12110000103712082,
+        0.11193999648094177
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 1207.0,
+          "bits": "4496e000",
+          "store_va": 5360821,
+          "source_va": 5360821,
+          "pointer_load_va": 5360815,
+          "instruction_hex": "c7450000e09644"
+        },
+        {
+          "index": 1,
+          "value": 989.0,
+          "bits": "44774000",
+          "store_va": 5360834,
+          "source_va": 5360834,
+          "pointer_load_va": 5360828,
+          "instruction_hex": "c7450400407744"
+        },
+        {
+          "index": 2,
+          "value": 814.2999877929688,
+          "bits": "444b9333",
+          "store_va": 5360847,
+          "source_va": 5360847,
+          "pointer_load_va": 5360841,
+          "instruction_hex": "c7450833934b44"
+        },
+        {
+          "index": 3,
+          "value": 673.9000244140625,
+          "bits": "4428799a",
+          "store_va": 5360860,
+          "source_va": 5360860,
+          "pointer_load_va": 5360854,
+          "instruction_hex": "c7450c9a792844"
+        },
+        {
+          "index": 4,
+          "value": 560.0,
+          "bits": "440c0000",
+          "store_va": 5360873,
+          "source_va": 5360873,
+          "pointer_load_va": 5360867,
+          "instruction_hex": "c7451000000c44"
+        },
+        {
+          "index": 5,
+          "value": 466.95001220703125,
+          "bits": "43e9799a",
+          "store_va": 5360886,
+          "source_va": 5360886,
+          "pointer_load_va": 5360880,
+          "instruction_hex": "c745149a79e943"
+        },
+        {
+          "index": 6,
+          "value": 243.02000427246094,
+          "bits": "4373051f",
+          "store_va": 5360899,
+          "source_va": 5360899,
+          "pointer_load_va": 5360893,
+          "instruction_hex": "c745181f057343"
+        },
+        {
+          "index": 7,
+          "value": 146.39999389648438,
+          "bits": "43126666",
+          "store_va": 5360912,
+          "source_va": 5360912,
+          "pointer_load_va": 5360906,
+          "instruction_hex": "c7451c66661243"
+        },
+        {
+          "index": 8,
+          "value": 105.56999969482422,
+          "bits": "42d323d7",
+          "store_va": 5360925,
+          "source_va": 5360925,
+          "pointer_load_va": 5360919,
+          "instruction_hex": "c74520d723d342"
+        },
+        {
+          "index": 9,
+          "value": 82.89299774169922,
+          "bits": "42a5c937",
+          "store_va": 5360938,
+          "source_va": 5360938,
+          "pointer_load_va": 5360932,
+          "instruction_hex": "c7452437c9a542"
+        },
+        {
+          "index": 10,
+          "value": 61.98400115966797,
+          "bits": "4277ef9e",
+          "store_va": 5360951,
+          "source_va": 5360951,
+          "pointer_load_va": 5360945,
+          "instruction_hex": "c745289eef7742"
+        },
+        {
+          "index": 11,
+          "value": 44.733001708984375,
+          "bits": "4232ee98",
+          "store_va": 5360964,
+          "source_va": 5360964,
+          "pointer_load_va": 5360958,
+          "instruction_hex": "c7452c98ee3242"
+        },
+        {
+          "index": 12,
+          "value": 33.141998291015625,
+          "bits": "42049168",
+          "store_va": 5360977,
+          "source_va": 5360977,
+          "pointer_load_va": 5360971,
+          "instruction_hex": "c7453068910442"
+        },
+        {
+          "index": 13,
+          "value": 29.013999938964844,
+          "bits": "41e81cac",
+          "store_va": 5360990,
+          "source_va": 5360990,
+          "pointer_load_va": 5360984,
+          "instruction_hex": "c74534ac1ce841"
+        },
+        {
+          "index": 14,
+          "value": 26.798999786376953,
+          "bits": "41d6645a",
+          "store_va": 5361003,
+          "source_va": 5361003,
+          "pointer_load_va": 5360997,
+          "instruction_hex": "c745385a64d641"
+        },
+        {
+          "index": 15,
+          "value": 20.086999893188477,
+          "bits": "41a0b22d",
+          "store_va": 5361016,
+          "source_va": 5361016,
+          "pointer_load_va": 5361010,
+          "instruction_hex": "c7453c2db2a041"
+        },
+        {
+          "index": 16,
+          "value": 16.301000595092773,
+          "bits": "41826873",
+          "store_va": 5361029,
+          "source_va": 5361029,
+          "pointer_load_va": 5361023,
+          "instruction_hex": "c7454073688241"
+        },
+        {
+          "index": 17,
+          "value": 11.895899772644043,
+          "bits": "413e559b",
+          "store_va": 5361042,
+          "source_va": 5361042,
+          "pointer_load_va": 5361036,
+          "instruction_hex": "c745449b553e41"
+        },
+        {
+          "index": 18,
+          "value": 8.513999938964844,
+          "bits": "41083958",
+          "store_va": 5361055,
+          "source_va": 5361055,
+          "pointer_load_va": 5361049,
+          "instruction_hex": "c7454858390841"
+        },
+        {
+          "index": 19,
+          "value": 7.173600196838379,
+          "bits": "40e58e22",
+          "store_va": 5361068,
+          "source_va": 5361068,
+          "pointer_load_va": 5361062,
+          "instruction_hex": "c7454c228ee540"
+        },
+        {
+          "index": 20,
+          "value": 5.471099853515625,
+          "bits": "40af1340",
+          "store_va": 5361081,
+          "source_va": 5361081,
+          "pointer_load_va": 5361075,
+          "instruction_hex": "c745504013af40"
+        },
+        {
+          "index": 21,
+          "value": 4.895299911499023,
+          "bits": "409ca64c",
+          "store_va": 5361094,
+          "source_va": 5361094,
+          "pointer_load_va": 5361088,
+          "instruction_hex": "c745544ca69c40"
+        },
+        {
+          "index": 22,
+          "value": 4.431000232696533,
+          "bits": "408dcac1",
+          "store_va": 5361107,
+          "source_va": 5361107,
+          "pointer_load_va": 5361101,
+          "instruction_hex": "c74558c1ca8d40"
+        },
+        {
+          "index": 23,
+          "value": 3.7274999618530273,
+          "bits": "406e8f5c",
+          "store_va": 5361120,
+          "source_va": 5361120,
+          "pointer_load_va": 5361114,
+          "instruction_hex": "c7455c5c8f6e40"
+        },
+        {
+          "index": 24,
+          "value": 3.0139000415802,
+          "bits": "4040e3bd",
+          "store_va": 5361133,
+          "source_va": 5361133,
+          "pointer_load_va": 5361127,
+          "instruction_hex": "c74560bde34040"
+        },
+        {
+          "index": 25,
+          "value": 2.5311999320983887,
+          "bits": "4021ff2e",
+          "store_va": 5361146,
+          "source_va": 5361146,
+          "pointer_load_va": 5361140,
+          "instruction_hex": "c745642eff2140"
+        },
+        {
+          "index": 26,
+          "value": 2.2872800827026367,
+          "bits": "401262cc",
+          "store_va": 5361159,
+          "source_va": 5361159,
+          "pointer_load_va": 5361153,
+          "instruction_hex": "c74568cc621240"
+        },
+        {
+          "index": 27,
+          "value": 1.542739987373352,
+          "bits": "3fc57881",
+          "store_va": 5361172,
+          "source_va": 5361172,
+          "pointer_load_va": 5361166,
+          "instruction_hex": "c7456c8178c53f"
+        },
+        {
+          "index": 28,
+          "value": 1.160949945449829,
+          "bits": "3f949a02",
+          "store_va": 5361185,
+          "source_va": 5361185,
+          "pointer_load_va": 5361179,
+          "instruction_hex": "c74570029a943f"
+        },
+        {
+          "index": 29,
+          "value": 0.927619993686676,
+          "bits": "3f6d7881",
+          "store_va": 5361198,
+          "source_va": 5361198,
+          "pointer_load_va": 5361192,
+          "instruction_hex": "c7457481786d3f"
+        },
+        {
+          "index": 30,
+          "value": 0.7697499990463257,
+          "bits": "3f450e56",
+          "store_va": 5361211,
+          "source_va": 5361211,
+          "pointer_load_va": 5361205,
+          "instruction_hex": "c74578560e453f"
+        },
+        {
+          "index": 31,
+          "value": 0.6555600166320801,
+          "bits": "3f27d2c8",
+          "store_va": 5361224,
+          "source_va": 5361224,
+          "pointer_load_va": 5361218,
+          "instruction_hex": "c7457cc8d2273f"
+        },
+        {
+          "index": 32,
+          "value": 0.5689600110054016,
+          "bits": "3f11a75d",
+          "store_va": 5361237,
+          "source_va": 5361237,
+          "pointer_load_va": 5361231,
+          "instruction_hex": "c785800000005da7113f"
+        },
+        {
+          "index": 33,
+          "value": 0.4948999881744385,
+          "bits": "3efd6388",
+          "store_va": 5361253,
+          "source_va": 5361253,
+          "pointer_load_va": 5361247,
+          "instruction_hex": "c785840000008863fd3e"
+        },
+        {
+          "index": 34,
+          "value": 0.4720500111579895,
+          "bits": "3ef1b08a",
+          "store_va": 5361269,
+          "source_va": 5361269,
+          "pointer_load_va": 5361263,
+          "instruction_hex": "c785880000008ab0f13e"
+        },
+        {
+          "index": 35,
+          "value": 0.4507899880409241,
+          "bits": "3ee6cdf2",
+          "store_va": 5361285,
+          "source_va": 5361285,
+          "pointer_load_va": 5361279,
+          "instruction_hex": "c7858c000000f2cde63e"
+        },
+        {
+          "index": 36,
+          "value": 0.4314599931240082,
+          "bits": "3edce853",
+          "store_va": 5361301,
+          "source_va": 5361301,
+          "pointer_load_va": 5361295,
+          "instruction_hex": "c7859000000053e8dc3e"
+        },
+        {
+          "index": 37,
+          "value": 0.413349986076355,
+          "bits": "3ed3a29c",
+          "store_va": 5361317,
+          "source_va": 5361317,
+          "pointer_load_va": 5361311,
+          "instruction_hex": "c785940000009ca2d33e"
+        },
+        {
+          "index": 38,
+          "value": 0.396479994058609,
+          "bits": "3ecaff6d",
+          "store_va": 5361333,
+          "source_va": 5361333,
+          "pointer_load_va": 5361327,
+          "instruction_hex": "c785980000006dffca3e"
+        },
+        {
+          "index": 39,
+          "value": 0.38846999406814575,
+          "bits": "3ec6e58a",
+          "store_va": 5361349,
+          "source_va": 5361349,
+          "pointer_load_va": 5361343,
+          "instruction_hex": "c7859c0000008ae5c63e"
+        },
+        {
+          "index": 40,
+          "value": 0.37323999404907227,
+          "bits": "3ebf1950",
+          "store_va": 5361365,
+          "source_va": 5361365,
+          "pointer_load_va": 5361359,
+          "instruction_hex": "c785a00000005019bf3e"
+        },
+        {
+          "index": 41,
+          "value": 0.3589699864387512,
+          "bits": "3eb7caea",
+          "store_va": 5361381,
+          "source_va": 5361381,
+          "pointer_load_va": 5361375,
+          "instruction_hex": "c785a4000000eacab73e"
+        },
+        {
+          "index": 42,
+          "value": 0.3521600067615509,
+          "bits": "3eb44e51",
+          "store_va": 5361397,
+          "source_va": 5361397,
+          "pointer_load_va": 5361391,
+          "instruction_hex": "c785a8000000514eb43e"
+        },
+        {
+          "index": 43,
+          "value": 0.3391599953174591,
+          "bits": "3eada661",
+          "store_va": 5361413,
+          "source_va": 5361413,
+          "pointer_load_va": 5361407,
+          "instruction_hex": "c785ac00000061a6ad3e"
+        },
+        {
+          "index": 44,
+          "value": 0.329910010099411,
+          "bits": "3ea8e9f7",
+          "store_va": 5361429,
+          "source_va": 5361429,
+          "pointer_load_va": 5361423,
+          "instruction_hex": "c785b0000000f7e9a83e"
+        },
+        {
+          "index": 45,
+          "value": 0.32396000623703003,
+          "bits": "3ea5de16",
+          "store_va": 5361445,
+          "source_va": 5361445,
+          "pointer_load_va": 5361439,
+          "instruction_hex": "c785b400000016dea53e"
+        },
+        {
+          "index": 46,
+          "value": 0.31255999207496643,
+          "bits": "3ea007dd",
+          "store_va": 5361461,
+          "source_va": 5361461,
+          "pointer_load_va": 5361455,
+          "instruction_hex": "c785b8000000dd07a03e"
+        },
+        {
+          "index": 47,
+          "value": 0.30177998542785645,
+          "bits": "3e9a82e8",
+          "store_va": 5361477,
+          "source_va": 5361477,
+          "pointer_load_va": 5361471,
+          "instruction_hex": "c785bc000000e8829a3e"
+        },
+        {
+          "index": 48,
+          "value": 0.29155999422073364,
+          "bits": "3e95475a",
+          "store_va": 5361493,
+          "source_va": 5361493,
+          "pointer_load_va": 5361487,
+          "instruction_hex": "c785c00000005a47953e"
+        },
+        {
+          "index": 49,
+          "value": 0.28185999393463135,
+          "bits": "3e904ff4",
+          "store_va": 5361509,
+          "source_va": 5361509,
+          "pointer_load_va": 5361503,
+          "instruction_hex": "c785c4000000f44f903e"
+        },
+        {
+          "index": 50,
+          "value": 0.27265000343322754,
+          "bits": "3e8b98c8",
+          "store_va": 5361525,
+          "source_va": 5361525,
+          "pointer_load_va": 5361519,
+          "instruction_hex": "c785c8000000c8988b3e"
+        },
+        {
+          "index": 51,
+          "value": 0.263839989900589,
+          "bits": "3e871609",
+          "store_va": 5361541,
+          "source_va": 5361541,
+          "pointer_load_va": 5361535,
+          "instruction_hex": "c785cc0000000916873e"
+        },
+        {
+          "index": 52,
+          "value": 0.2554500102996826,
+          "bits": "3e82ca58",
+          "store_va": 5361557,
+          "source_va": 5361557,
+          "pointer_load_va": 5361551,
+          "instruction_hex": "c785d000000058ca823e"
+        },
+        {
+          "index": 53,
+          "value": 0.24743999540805817,
+          "bits": "3e7d60e9",
+          "store_va": 5361573,
+          "source_va": 5361573,
+          "pointer_load_va": 5361567,
+          "instruction_hex": "c785d4000000e9607d3e"
+        },
+        {
+          "index": 54,
+          "value": 0.23607000708580017,
+          "bits": "3e71bc56",
+          "store_va": 5361589,
+          "source_va": 5361589,
+          "pointer_load_va": 5361583,
+          "instruction_hex": "c785d800000056bc713e"
+        },
+        {
+          "index": 55,
+          "value": 0.22538000345230103,
+          "bits": "3e66ca04",
+          "store_va": 5361605,
+          "source_va": 5361605,
+          "pointer_load_va": 5361599,
+          "instruction_hex": "c785dc00000004ca663e"
+        },
+        {
+          "index": 56,
+          "value": 0.2186100035905838,
+          "bits": "3e5fdb4d",
+          "store_va": 5361621,
+          "source_va": 5361621,
+          "pointer_load_va": 5361615,
+          "instruction_hex": "c785e00000004ddb5f3e"
+        },
+        {
+          "index": 57,
+          "value": 0.20893999934196472,
+          "bits": "3e55f45e",
+          "store_va": 5361637,
+          "source_va": 5361637,
+          "pointer_load_va": 5361631,
+          "instruction_hex": "c785e40000005ef4553e"
+        },
+        {
+          "index": 58,
+          "value": 0.20277999341487885,
+          "bits": "3e4fa58f",
+          "store_va": 5361653,
+          "source_va": 5361653,
+          "pointer_load_va": 5361647,
+          "instruction_hex": "c785e80000008fa54f3e"
+        },
+        {
+          "index": 59,
+          "value": 0.19684000313282013,
+          "bits": "3e49906d",
+          "store_va": 5361669,
+          "source_va": 5361669,
+          "pointer_load_va": 5361663,
+          "instruction_hex": "c785ec0000006d90493e"
+        },
+        {
+          "index": 60,
+          "value": 0.18830999732017517,
+          "bits": "3e40d456",
+          "store_va": 5361685,
+          "source_va": 5361685,
+          "pointer_load_va": 5361679,
+          "instruction_hex": "c785f000000056d4403e"
+        },
+        {
+          "index": 61,
+          "value": 0.17500999569892883,
+          "bits": "3e3335d2",
+          "store_va": 5361701,
+          "source_va": 5361701,
+          "pointer_load_va": 5361695,
+          "instruction_hex": "c785f4000000d235333e"
+        },
+        {
+          "index": 62,
+          "value": 0.1627199947834015,
+          "bits": "3e26a012",
+          "store_va": 5361717,
+          "source_va": 5361717,
+          "pointer_load_va": 5361711,
+          "instruction_hex": "c785f800000012a0263e"
+        },
+        {
+          "index": 63,
+          "value": 0.15132999420166016,
+          "bits": "3e1af640",
+          "store_va": 5361733,
+          "source_va": 5361733,
+          "pointer_load_va": 5361727,
+          "instruction_hex": "c785fc00000040f61a3e"
+        },
+        {
+          "index": 64,
+          "value": 0.14076000452041626,
+          "bits": "3e102364",
+          "store_va": 5361749,
+          "source_va": 5361749,
+          "pointer_load_va": 5361743,
+          "instruction_hex": "c785000100006423103e"
+        },
+        {
+          "index": 65,
+          "value": 0.13067999482154846,
+          "bits": "3e05d0fa",
+          "store_va": 5361765,
+          "source_va": 5361765,
+          "pointer_load_va": 5361759,
+          "instruction_hex": "c78504010000fad0053e"
+        },
+        {
+          "index": 66,
+          "value": 0.12110000103712082,
+          "bits": "3df80347",
+          "store_va": 5361781,
+          "source_va": 5361781,
+          "pointer_load_va": 5361775,
+          "instruction_hex": "c785080100004703f83d"
+        },
+        {
+          "index": 67,
+          "value": 0.11193999648094177,
+          "bits": "3de540cc",
+          "store_va": 5361797,
+          "source_va": 5361797,
+          "pointer_load_va": 5361791,
+          "instruction_hex": "c7850c010000cc40e53d"
+        }
+      ]
+    },
+    {
+      "name": "auxiliary_grid",
+      "descriptor_va": 5551020,
+      "data_pointer_va": 5551032,
+      "count": 16,
+      "units": "unresolved",
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1000.0,
+        1200.0,
+        1400.0,
+        1600.0,
+        1800.0,
+        2000.0,
+        2200.0,
+        2400.0,
+        2600.0,
+        2800.0
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 0.0,
+          "bits": "00000000",
+          "store_va": 5361813,
+          "source_va": 5361813,
+          "pointer_load_va": 5361807,
+          "instruction_hex": "c7450000000000"
+        },
+        {
+          "index": 1,
+          "value": 100.0,
+          "bits": "42c80000",
+          "store_va": 5361826,
+          "source_va": 5360024,
+          "pointer_load_va": 5361820,
+          "instruction_hex": "897d04"
+        },
+        {
+          "index": 2,
+          "value": 200.0,
+          "bits": "43480000",
+          "store_va": 5361835,
+          "source_va": 5360038,
+          "pointer_load_va": 5361829,
+          "instruction_hex": "897508"
+        },
+        {
+          "index": 3,
+          "value": 400.0,
+          "bits": "43c80000",
+          "store_va": 5361844,
+          "source_va": 5358933,
+          "pointer_load_va": 5361838,
+          "instruction_hex": "894d0c"
+        },
+        {
+          "index": 4,
+          "value": 600.0,
+          "bits": "44160000",
+          "store_va": 5361853,
+          "source_va": 5359108,
+          "pointer_load_va": 5361847,
+          "instruction_hex": "894510"
+        },
+        {
+          "index": 5,
+          "value": 800.0,
+          "bits": "44480000",
+          "store_va": 5361862,
+          "source_va": 5360244,
+          "pointer_load_va": 5361856,
+          "instruction_hex": "895514"
+        },
+        {
+          "index": 6,
+          "value": 1000.0,
+          "bits": "447a0000",
+          "store_va": 5361871,
+          "source_va": 5361871,
+          "pointer_load_va": 5361865,
+          "instruction_hex": "c7451800007a44"
+        },
+        {
+          "index": 7,
+          "value": 1200.0,
+          "bits": "44960000",
+          "store_va": 5361884,
+          "source_va": 5361884,
+          "pointer_load_va": 5361878,
+          "instruction_hex": "c7451c00009644"
+        },
+        {
+          "index": 8,
+          "value": 1400.0,
+          "bits": "44af0000",
+          "store_va": 5361897,
+          "source_va": 5361897,
+          "pointer_load_va": 5361891,
+          "instruction_hex": "c745200000af44"
+        },
+        {
+          "index": 9,
+          "value": 1600.0,
+          "bits": "44c80000",
+          "store_va": 5361910,
+          "source_va": 5361910,
+          "pointer_load_va": 5361904,
+          "instruction_hex": "c745240000c844"
+        },
+        {
+          "index": 10,
+          "value": 1800.0,
+          "bits": "44e10000",
+          "store_va": 5361923,
+          "source_va": 5361923,
+          "pointer_load_va": 5361917,
+          "instruction_hex": "c745280000e144"
+        },
+        {
+          "index": 11,
+          "value": 2000.0,
+          "bits": "44fa0000",
+          "store_va": 5361936,
+          "source_va": 5361936,
+          "pointer_load_va": 5361930,
+          "instruction_hex": "c7452c0000fa44"
+        },
+        {
+          "index": 12,
+          "value": 2200.0,
+          "bits": "45098000",
+          "store_va": 5361949,
+          "source_va": 5361949,
+          "pointer_load_va": 5361943,
+          "instruction_hex": "c7453000800945"
+        },
+        {
+          "index": 13,
+          "value": 2400.0,
+          "bits": "45160000",
+          "store_va": 5361962,
+          "source_va": 5361962,
+          "pointer_load_va": 5361956,
+          "instruction_hex": "c7453400001645"
+        },
+        {
+          "index": 14,
+          "value": 2600.0,
+          "bits": "45228000",
+          "store_va": 5361975,
+          "source_va": 5361975,
+          "pointer_load_va": 5361969,
+          "instruction_hex": "c7453800802245"
+        },
+        {
+          "index": 15,
+          "value": 2800.0,
+          "bits": "452f0000",
+          "store_va": 5361988,
+          "source_va": 5361988,
+          "pointer_load_va": 5361982,
+          "instruction_hex": "c7453c00002f45"
+        }
+      ]
+    },
+    {
+      "name": "auxiliary_curve_1",
+      "descriptor_va": 5551048,
+      "data_pointer_va": 5551060,
+      "count": 16,
+      "units": "unresolved",
+      "values": [
+        0.0,
+        2300.0,
+        3600.0,
+        5000.0,
+        6400.0,
+        7103.0,
+        7884.0,
+        8567.0,
+        9171.0,
+        9709.0,
+        10186.0,
+        10608.0,
+        10976.0,
+        11210.0,
+        11415.0,
+        11560.0
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 0.0,
+          "bits": "00000000",
+          "store_va": 5362001,
+          "source_va": 5362001,
+          "pointer_load_va": 5361995,
+          "instruction_hex": "c7450000000000"
+        },
+        {
+          "index": 1,
+          "value": 2300.0,
+          "bits": "450fc000",
+          "store_va": 5362014,
+          "source_va": 5362014,
+          "pointer_load_va": 5362008,
+          "instruction_hex": "c7450400c00f45"
+        },
+        {
+          "index": 2,
+          "value": 3600.0,
+          "bits": "45610000",
+          "store_va": 5362027,
+          "source_va": 5362027,
+          "pointer_load_va": 5362021,
+          "instruction_hex": "c7450800006145"
+        },
+        {
+          "index": 3,
+          "value": 5000.0,
+          "bits": "459c4000",
+          "store_va": 5362040,
+          "source_va": 5362040,
+          "pointer_load_va": 5362034,
+          "instruction_hex": "c7450c00409c45"
+        },
+        {
+          "index": 4,
+          "value": 6400.0,
+          "bits": "45c80000",
+          "store_va": 5362053,
+          "source_va": 5362053,
+          "pointer_load_va": 5362047,
+          "instruction_hex": "c745100000c845"
+        },
+        {
+          "index": 5,
+          "value": 7103.0,
+          "bits": "45ddf800",
+          "store_va": 5362066,
+          "source_va": 5362066,
+          "pointer_load_va": 5362060,
+          "instruction_hex": "c7451400f8dd45"
+        },
+        {
+          "index": 6,
+          "value": 7884.0,
+          "bits": "45f66000",
+          "store_va": 5362079,
+          "source_va": 5362079,
+          "pointer_load_va": 5362073,
+          "instruction_hex": "c745180060f645"
+        },
+        {
+          "index": 7,
+          "value": 8567.0,
+          "bits": "4605dc00",
+          "store_va": 5362092,
+          "source_va": 5362092,
+          "pointer_load_va": 5362086,
+          "instruction_hex": "c7451c00dc0546"
+        },
+        {
+          "index": 8,
+          "value": 9171.0,
+          "bits": "460f4c00",
+          "store_va": 5362105,
+          "source_va": 5362105,
+          "pointer_load_va": 5362099,
+          "instruction_hex": "c74520004c0f46"
+        },
+        {
+          "index": 9,
+          "value": 9709.0,
+          "bits": "4617b400",
+          "store_va": 5362118,
+          "source_va": 5362118,
+          "pointer_load_va": 5362112,
+          "instruction_hex": "c7452400b41746"
+        },
+        {
+          "index": 10,
+          "value": 10186.0,
+          "bits": "461f2800",
+          "store_va": 5362131,
+          "source_va": 5362131,
+          "pointer_load_va": 5362125,
+          "instruction_hex": "c7452800281f46"
+        },
+        {
+          "index": 11,
+          "value": 10608.0,
+          "bits": "4625c000",
+          "store_va": 5362144,
+          "source_va": 5362144,
+          "pointer_load_va": 5362138,
+          "instruction_hex": "c7452c00c02546"
+        },
+        {
+          "index": 12,
+          "value": 10976.0,
+          "bits": "462b8000",
+          "store_va": 5362157,
+          "source_va": 5362157,
+          "pointer_load_va": 5362151,
+          "instruction_hex": "c7453000802b46"
+        },
+        {
+          "index": 13,
+          "value": 11210.0,
+          "bits": "462f2800",
+          "store_va": 5362170,
+          "source_va": 5362170,
+          "pointer_load_va": 5362164,
+          "instruction_hex": "c7453400282f46"
+        },
+        {
+          "index": 14,
+          "value": 11415.0,
+          "bits": "46325c00",
+          "store_va": 5362183,
+          "source_va": 5362183,
+          "pointer_load_va": 5362177,
+          "instruction_hex": "c74538005c3246"
+        },
+        {
+          "index": 15,
+          "value": 11560.0,
+          "bits": "4634a000",
+          "store_va": 5362196,
+          "source_va": 5362196,
+          "pointer_load_va": 5362190,
+          "instruction_hex": "c7453c00a03446"
+        }
+      ]
+    },
+    {
+      "name": "auxiliary_curve_2",
+      "descriptor_va": 5551076,
+      "data_pointer_va": 5551088,
+      "count": 16,
+      "units": "unresolved",
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        800.0,
+        1200.0,
+        1648.5,
+        2074.0,
+        2513.0,
+        2965.0,
+        3434.0,
+        3922.0,
+        4435.0,
+        4979.0,
+        5566.0,
+        6215.0,
+        6940.0
+      ],
+      "evidence": [
+        {
+          "index": 0,
+          "value": 0.0,
+          "bits": "00000000",
+          "store_va": 5362209,
+          "source_va": 5362209,
+          "pointer_load_va": 5362203,
+          "instruction_hex": "c7450000000000"
+        },
+        {
+          "index": 1,
+          "value": 200.0,
+          "bits": "43480000",
+          "store_va": 5362222,
+          "source_va": 5360038,
+          "pointer_load_va": 5362216,
+          "instruction_hex": "897504"
+        },
+        {
+          "index": 2,
+          "value": 400.0,
+          "bits": "43c80000",
+          "store_va": 5362231,
+          "source_va": 5358933,
+          "pointer_load_va": 5362225,
+          "instruction_hex": "894e08"
+        },
+        {
+          "index": 3,
+          "value": 800.0,
+          "bits": "44480000",
+          "store_va": 5362240,
+          "source_va": 5360244,
+          "pointer_load_va": 5362234,
+          "instruction_hex": "89510c"
+        },
+        {
+          "index": 4,
+          "value": 1200.0,
+          "bits": "44960000",
+          "store_va": 5362249,
+          "source_va": 5362249,
+          "pointer_load_va": 5362243,
+          "instruction_hex": "c7421000009644"
+        },
+        {
+          "index": 5,
+          "value": 1648.5,
+          "bits": "44ce1000",
+          "store_va": 5362262,
+          "source_va": 5362262,
+          "pointer_load_va": 5362256,
+          "instruction_hex": "c741140010ce44"
+        },
+        {
+          "index": 6,
+          "value": 2074.0,
+          "bits": "4501a000",
+          "store_va": 5362275,
+          "source_va": 5362275,
+          "pointer_load_va": 5362269,
+          "instruction_hex": "c7421800a00145"
+        },
+        {
+          "index": 7,
+          "value": 2513.0,
+          "bits": "451d1000",
+          "store_va": 5362288,
+          "source_va": 5362288,
+          "pointer_load_va": 5362282,
+          "instruction_hex": "c7411c00101d45"
+        },
+        {
+          "index": 8,
+          "value": 2965.0,
+          "bits": "45395000",
+          "store_va": 5362301,
+          "source_va": 5362301,
+          "pointer_load_va": 5362295,
+          "instruction_hex": "c7422000503945"
+        },
+        {
+          "index": 9,
+          "value": 3434.0,
+          "bits": "4556a000",
+          "store_va": 5362314,
+          "source_va": 5362314,
+          "pointer_load_va": 5362308,
+          "instruction_hex": "c7412400a05645"
+        },
+        {
+          "index": 10,
+          "value": 3922.0,
+          "bits": "45752000",
+          "store_va": 5362327,
+          "source_va": 5362327,
+          "pointer_load_va": 5362321,
+          "instruction_hex": "c7422800207545"
+        },
+        {
+          "index": 11,
+          "value": 4435.0,
+          "bits": "458a9800",
+          "store_va": 5362340,
+          "source_va": 5362340,
+          "pointer_load_va": 5362334,
+          "instruction_hex": "c7412c00988a45"
+        },
+        {
+          "index": 12,
+          "value": 4979.0,
+          "bits": "459b9800",
+          "store_va": 5362353,
+          "source_va": 5362353,
+          "pointer_load_va": 5362347,
+          "instruction_hex": "c7423000989b45"
+        },
+        {
+          "index": 13,
+          "value": 5566.0,
+          "bits": "45adf000",
+          "store_va": 5362366,
+          "source_va": 5362366,
+          "pointer_load_va": 5362360,
+          "instruction_hex": "c7413400f0ad45"
+        },
+        {
+          "index": 14,
+          "value": 6215.0,
+          "bits": "45c23800",
+          "store_va": 5362379,
+          "source_va": 5362379,
+          "pointer_load_va": 5362373,
+          "instruction_hex": "c742380038c245"
+        },
+        {
+          "index": 15,
+          "value": 6940.0,
+          "bits": "45d8e000",
+          "store_va": 5362392,
+          "source_va": 5362392,
+          "pointer_load_va": 5362386,
+          "instruction_hex": "c7413c00e0d845"
+        }
+      ]
+    }
+  ],
+  "wrapper_mappings": [
+    {
+      "entry_va": 4832736,
+      "x_descriptor_va": 5550964,
+      "y_descriptor_va": 5550992
+    },
+    {
+      "entry_va": 4832944,
+      "x_descriptor_va": 5550992,
+      "y_descriptor_va": 5550964,
+      "name_candidate": "TLIQ"
+    },
+    {
+      "entry_va": 4832816,
+      "x_descriptor_va": 5550908,
+      "y_descriptor_va": 5550936
+    },
+    {
+      "entry_va": 4833680,
+      "x_descriptor_va": 5550936,
+      "y_descriptor_va": 5550908
+    }
+  ]
+}

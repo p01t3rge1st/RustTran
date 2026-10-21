@@ -1,0 +1,24 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.20s
+     Running tests/late_thermal_init.rs (rusttran/target/debug/deps/late_thermal_init-de8473922d36e2a9)
+
+running 3 tests
+test late_thermal_numeric_stores_match_original_slices ... FAILED
+test numeric_initializer_preserves_unrelated_integrator_and_event_histories ... ok
+test late_invalid_inputs_cannot_commit_resets_alias_or_reference_values ... ok
+
+failures:
+
+---- late_thermal_numeric_stores_match_original_slices stdout ----
+
+thread 'late_thermal_numeric_stores_match_original_slices' (382532) panicked at tests/late_thermal_init.rs:21:13:
+case 0 0x54bb38: 26285.523 vs 0.0
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    late_thermal_numeric_stores_match_original_slices
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+error: test failed, to rerun pass `--test late_thermal_init`

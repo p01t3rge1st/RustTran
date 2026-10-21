@@ -1,0 +1,10 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.26s
+     Running tests/supply_system.rs (rusttran/target/debug/deps/supply_system-40947c9a6829b830)
+
+running 2 tests
+test post_activation_curve_and_numeric_errors_cannot_change_state_or_commands ... ok
+test all_supply_recirc_cooling_and_activation_decisions_match_continuous_original ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+

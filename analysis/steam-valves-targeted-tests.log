@@ -1,0 +1,12 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.60s
+     Running tests/steam_valves.rs (rusttran/target/debug/deps/steam_valves-bf48b33d56dac468)
+
+running 4 tests
+test valve_producer_rejects_explicit_sg_derivatives_without_mutating_state ... ok
+test both_sg_valve_producers_feed_exchange_and_roll_back_with_integration ... ok
+test late_invalid_valve_state_does_not_commit_flow_or_commands ... ok
+test valve_decisions_fault_flow_and_inventory_limit_match_native ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+

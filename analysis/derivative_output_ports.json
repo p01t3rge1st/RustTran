@@ -1,0 +1,201 @@
+{
+  "scope": "Final output equations only, not full input dependency model or plant behavior",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "entries": [
+    {
+      "index": 1,
+      "state_va": "0x54b688",
+      "derivative_va": "0x54b77c",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x50cc88",
+        "0x50ce63"
+      ],
+      "fixture": "analysis/pressure_balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 2,
+      "state_va": "0x54b49c",
+      "derivative_va": "0x54b770",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x50ce6d",
+        "0x50cfa4"
+      ],
+      "fixture": "analysis/balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 3,
+      "state_va": "0x54b4ac",
+      "derivative_va": "0x54b784",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x50ce6d",
+        "0x50cfa4"
+      ],
+      "fixture": "analysis/balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 4,
+      "state_va": "0x54b494",
+      "derivative_va": "0x54b774",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x50cc88",
+        "0x50ce63"
+      ],
+      "fixture": "analysis/pressure_balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 5,
+      "state_va": "0x54b4a4",
+      "derivative_va": "0x54b788",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x50b5ae",
+        "0x50b60f"
+      ],
+      "fixture": "analysis/additional_balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 6,
+      "state_va": "0x54b504",
+      "derivative_va": "0x54b7d0",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 7,
+      "state_va": "0x54b508",
+      "derivative_va": "0x54b7d4",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 8,
+      "state_va": "0x54b4fc",
+      "derivative_va": "0x54b7d8",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 9,
+      "state_va": "0x54b500",
+      "derivative_va": "0x54b7dc",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 10,
+      "state_va": "0x54b4f4",
+      "derivative_va": "0x54b7e0",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 11,
+      "state_va": "0x54b4f8",
+      "derivative_va": "0x54b7e4",
+      "rust_source": "rusttran/src/steam_generator.rs",
+      "numeric_branch": [
+        "0x50ac2e",
+        "0x50ad65"
+      ],
+      "fixture": "analysis/steam_generator_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/steam_generator_fixtures.json:caller_bindings",
+      "saturated_callee_evidence": "analysis/saturated_balance_fixtures.json"
+    },
+    {
+      "index": 12,
+      "state_va": "0x54b4b4",
+      "derivative_va": "0x54b674",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x523dc8",
+        "0x523e04"
+      ],
+      "fixture": "analysis/additional_balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 13,
+      "state_va": "0x54bba0",
+      "derivative_va": "0x54b4b8",
+      "rust_source": "rusttran/src/balance.rs",
+      "numeric_branch": [
+        "0x523dc8",
+        "0x523e04"
+      ],
+      "fixture": "analysis/additional_balance_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false
+    },
+    {
+      "index": 14,
+      "state_va": "0x54bf98",
+      "derivative_va": "0x54b6a8",
+      "rust_source": "rusttran/src/relief.rs",
+      "numeric_branch": [
+        "0x510177",
+        "0x5103d3"
+      ],
+      "fixture": "analysis/relief_fixtures.json",
+      "checked": true,
+      "upstream_dependencies_complete": false,
+      "caller_binding_evidence": "analysis/rea/all-native.asm at 0x51e0c2; ninth argument 0x54b6a8"
+    }
+  ]
+}

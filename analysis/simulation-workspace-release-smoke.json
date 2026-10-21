@@ -1,0 +1,34 @@
+{
+  "cli_runs": [
+    "fresh-thermal-startup",
+    "native-stages",
+    "native-stages",
+    "native-stages",
+    "recovered-session-run",
+    "recovered-session-run",
+    "recovered-session-run"
+  ],
+  "fresh_startup_singles": 130,
+  "fresh_startup_i16": 15,
+  "three_plus_five_equals_eight": true,
+  "loop_feedback_changes_temperature": true,
+  "report_csv_matches_engine": true,
+  "gui_help_session_options": true,
+  "max_glibc": {
+    "rusttran": "2.28",
+    "rusttran-cli": "2.28"
+  },
+  "installed_binaries_match": true,
+  "gui_widget_results": {
+    "step_button": true,
+    "start_advances_numerical_state": true,
+    "pause_freezes_state": true,
+    "reset_restores_loaded_state": true,
+    "manual_heater_control": true,
+    "gui_state_matches_cli": true,
+    "embedded_sample_loading": true,
+    "paused_after_updates": 361
+  },
+  "windows": "GUI/CLI cross-compiled; not executed on Windows",
+  "whole_original_scenarios": "not validated"
+}

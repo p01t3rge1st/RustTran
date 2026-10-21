@@ -1,0 +1,78 @@
+{
+  "method": "Execute original VB6 PowerR8 and its embedded math routine.\nNumeric tests use explicit x87 control word 0x027f (53-bit precision,\nround-to-nearest). CRT errno lookup at 0x7342c1e1 is replaced by an explicit\nscratch errno cell; arithmetic code is not replaced. Unknown system calls\nremain fail-closed. This does not prove the original application's FPU setting.\n",
+  "dll_sha256": "b18870f6f2471b0c3a2dafe28f74d3c4bb3fc4edf333e9f2a0909096c8453aed",
+  "fpu_control_word": "0x027f",
+  "errno_lookup": "explicit scratch cell",
+  "cases": [
+    {
+      "base": 0,
+      "exponent": 0.8,
+      "output": 0.0
+    },
+    {
+      "base": 0,
+      "exponent": 1.3,
+      "output": 0.0
+    },
+    {
+      "base": 1e-06,
+      "exponent": 0.8,
+      "output": 1.5848931924611134e-05
+    },
+    {
+      "base": 1e-06,
+      "exponent": 1.3,
+      "output": 1.5848931924611116e-08
+    },
+    {
+      "base": 0.1,
+      "exponent": 0.8,
+      "output": 0.15848931924611134
+    },
+    {
+      "base": 0.1,
+      "exponent": 1.3,
+      "output": 0.05011872336272722
+    },
+    {
+      "base": 1,
+      "exponent": 0.8,
+      "output": 1.0
+    },
+    {
+      "base": 1,
+      "exponent": 1.3,
+      "output": 1.0
+    },
+    {
+      "base": 2,
+      "exponent": 0.8,
+      "output": 1.7411011265922482
+    },
+    {
+      "base": 2,
+      "exponent": 1.3,
+      "output": 2.4622888266898326
+    },
+    {
+      "base": 10,
+      "exponent": 0.8,
+      "output": 6.309573444801935
+    },
+    {
+      "base": 10,
+      "exponent": 1.3,
+      "output": 19.9526231496888
+    },
+    {
+      "base": 100,
+      "exponent": 0.8,
+      "output": 39.810717055349755
+    },
+    {
+      "base": 100,
+      "exponent": 1.3,
+      "output": 398.1071705534974
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=RustTran
+GenericName=PWR 3LP Viewer
+Comment=PWR plant mimic, initial conditions and water/steam properties
+Exec=rusttran
+Icon=org.rusttran.RustTran
+Terminal=false
+Categories=Science;Engineering;
+Keywords=reactor;PWR;simulation;plant;RustTran;
+StartupNotify=true
+StartupWMClass=org.rusttran.RustTran

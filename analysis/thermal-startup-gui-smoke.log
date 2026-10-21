@@ -1,0 +1,4 @@
+    Blocking waiting for file lock on build directory
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.74s
+     Running `rusttran/target/debug/rusttran --ic 1 --initialize-thermal 1`

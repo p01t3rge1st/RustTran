@@ -1,0 +1,10 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+warning: linker stderr: ignoring deprecated linker optimization setting "1"
+  |
+  = note: `#[warn(linker_messages)]` on by default
+
+warning: `rusttran` (bin "rusttran") generated 1 warning
+warning: `rusttran` (bin "rusttran-cli") generated 1 warning (1 duplicate)
+    Finished `release` profile [optimized] target(s) in 20.56s

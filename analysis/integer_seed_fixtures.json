@@ -1,0 +1,3350 @@
+{
+  "method": "Execute original integer field store blocks with modeled I2Var/I4Var helpers.\nInputs are integer-valued MDB records. COM reads and VB runtime errors excluded.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "ic": "1",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ITBV",
+      "target": "0x54b484",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ICSP",
+      "target": "0x54b486",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "19",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "22",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "2",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "IRUN",
+      "target": "0x54b488",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "10",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "11",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "12",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "15",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "16",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "17",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "23",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "LSLD",
+      "target": "0x54b4d0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ITDAFW",
+      "target": "0x54b4d2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "17",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "IMDAFW",
+      "target": "0x54b4d4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ILEV",
+      "target": "0x54b4d6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ISAT",
+      "target": "0x54b4d8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ICORE",
+      "target": "0x54b4da",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "3",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "5",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "7",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "8",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "9",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "10",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "11",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "12",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "14",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "15",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "16",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "17",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "18",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "20",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "23",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "19",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "22",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "2",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "6",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ILIF",
+      "target": "0x54b4dc",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "1",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "3",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "4",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "5",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "7",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "19",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "22",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "2",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "6",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "13",
+      "field": "KSGA",
+      "target": "0x54b4de",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "14",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "18",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "20",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "IHPI",
+      "target": "0x54b4e0",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "3",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "4",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "5",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "7",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "10",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "11",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "12",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "15",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "16",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "17",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "23",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "19",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "22",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "2",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "6",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "13",
+      "field": "IRCA",
+      "target": "0x54b4e2",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "3",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "4",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "5",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "7",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "8",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "9",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "10",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "11",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "12",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "15",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "16",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "17",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "23",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "19",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "22",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "2",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "6",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "13",
+      "field": "IRCB",
+      "target": "0x54b4e4",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ICFT",
+      "target": "0x54b4e6",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "1",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ILPI",
+      "target": "0x54b4e8",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "3",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "4",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "5",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "7",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "8",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "9",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "10",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "11",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "12",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "15",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "16",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "17",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "23",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "19",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "22",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "2",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "6",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "13",
+      "field": "ICRT",
+      "target": "0x54b4ea",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "3",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "4",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "5",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "7",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "8",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "9",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "10",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "11",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "12",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "14",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "15",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "16",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "17",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "18",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "20",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "23",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "19",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "22",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 2,
+      "expected": 2
+    },
+    {
+      "ic": "2",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "6",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 3,
+      "expected": 3
+    },
+    {
+      "ic": "13",
+      "field": "IMFW",
+      "target": "0x54b4ec",
+      "bits": 16,
+      "input": 0,
+      "expected": 0
+    },
+    {
+      "ic": "1",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "3",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "4",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "5",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "7",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 3927,
+      "expected": 3927
+    },
+    {
+      "ic": "8",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 4014,
+      "expected": 4014
+    },
+    {
+      "ic": "9",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 2014,
+      "expected": 2014
+    },
+    {
+      "ic": "10",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 5964,
+      "expected": 5964
+    },
+    {
+      "ic": "11",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 8382,
+      "expected": 8382
+    },
+    {
+      "ic": "12",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 31435,
+      "expected": 31435
+    },
+    {
+      "ic": "14",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 5494,
+      "expected": 5494
+    },
+    {
+      "ic": "15",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 6134,
+      "expected": 6134
+    },
+    {
+      "ic": "16",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 15376,
+      "expected": 15376
+    },
+    {
+      "ic": "17",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 36263,
+      "expected": 36263
+    },
+    {
+      "ic": "18",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 35471,
+      "expected": 35471
+    },
+    {
+      "ic": "20",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 2738,
+      "expected": 2738
+    },
+    {
+      "ic": "23",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 37,
+      "expected": 37
+    },
+    {
+      "ic": "19",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 221,
+      "expected": 221
+    },
+    {
+      "ic": "22",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 137,
+      "expected": 137
+    },
+    {
+      "ic": "2",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "6",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 1,
+      "expected": 1
+    },
+    {
+      "ic": "13",
+      "field": "TimeStep",
+      "target": "0x54b410",
+      "bits": 32,
+      "input": 31457,
+      "expected": 31457
+    }
+  ]
+}

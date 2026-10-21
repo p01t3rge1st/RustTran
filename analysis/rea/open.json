@@ -1,0 +1,21 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":{\"path\":\"/home/mati/Documents/Projekty/REA/analysis/program/PCTran.exe\",\"format\":\"pe\",\"kind\":\"executable\",\"sha256\":\"b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389\",\"architecture\":\"x86\"}}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "path": "/home/mati/Documents/Projekty/REA/analysis/program/PCTran.exe",
+        "format": "pe",
+        "kind": "executable",
+        "sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+        "architecture": "x86"
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}

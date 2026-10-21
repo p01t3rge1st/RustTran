@@ -1,0 +1,4166 @@
+{
+  "method": "Original primary post-balance stores 0x50d113\u20130x50d137 and\n0x50d1be\u20130x50d1f8: exchange trace, level percent, temperature floor and\nnegative level-percent floor. COM display calls between slices omitted.\n",
+  "original_sha256": "b3b2965e745d5ae03e3e0668c7e8d60006896b09ea4f8a96799a254e99602389",
+  "cases": [
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -439.0154113769531
+      },
+      "expected": {
+        "exchange_state": -439.0154113769531,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -124.29591369628906
+      },
+      "expected": {
+        "exchange_state": -124.29591369628906,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 326.9544982910156
+      },
+      "expected": {
+        "exchange_state": 326.9544982910156,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -30.986862182617188
+      },
+      "expected": {
+        "exchange_state": -30.986862182617188,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 586.2877197265625
+      },
+      "expected": {
+        "exchange_state": 586.2877197265625,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 878.6912231445312
+      },
+      "expected": {
+        "exchange_state": 878.6912231445312,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 43.13210678100586
+      },
+      "expected": {
+        "exchange_state": 43.13210678100586,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 110.1962890625
+      },
+      "expected": {
+        "exchange_state": 110.1962890625,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 106.79751586914062
+      },
+      "expected": {
+        "exchange_state": 106.79751586914062,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -340.3888854980469
+      },
+      "expected": {
+        "exchange_state": -340.3888854980469,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -647.3770751953125
+      },
+      "expected": {
+        "exchange_state": -647.3770751953125,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 850.4813842773438
+      },
+      "expected": {
+        "exchange_state": 850.4813842773438,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 25.981088638305664
+      },
+      "expected": {
+        "exchange_state": 25.981088638305664,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 99.90760040283203
+      },
+      "expected": {
+        "exchange_state": 99.90760040283203,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": -827.2158813476562
+      },
+      "expected": {
+        "exchange_state": -827.2158813476562,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 418.0860595703125
+      },
+      "expected": {
+        "exchange_state": 418.0860595703125,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -672.8251342773438
+      },
+      "expected": {
+        "exchange_state": -672.8251342773438,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": -370.1076965332031
+      },
+      "expected": {
+        "exchange_state": -370.1076965332031,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -101.10660552978516
+      },
+      "expected": {
+        "exchange_state": -101.10660552978516,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 129.52157592773438
+      },
+      "expected": {
+        "exchange_state": 129.52157592773438,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 418.4532470703125
+      },
+      "expected": {
+        "exchange_state": 418.4532470703125,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -991.323974609375
+      },
+      "expected": {
+        "exchange_state": -991.323974609375,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 954.0661010742188
+      },
+      "expected": {
+        "exchange_state": 954.0661010742188,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 597.6783447265625
+      },
+      "expected": {
+        "exchange_state": 597.6783447265625,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 110.14458465576172
+      },
+      "expected": {
+        "exchange_state": 110.14458465576172,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 563.6111450195312
+      },
+      "expected": {
+        "exchange_state": 563.6111450195312,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": -353.3393249511719
+      },
+      "expected": {
+        "exchange_state": -353.3393249511719,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 17.430742263793945
+      },
+      "expected": {
+        "exchange_state": 17.430742263793945,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -9.869159698486328
+      },
+      "expected": {
+        "exchange_state": -9.869159698486328,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 940.5142822265625
+      },
+      "expected": {
+        "exchange_state": 940.5142822265625,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 535.1917724609375
+      },
+      "expected": {
+        "exchange_state": 535.1917724609375,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -518.7420043945312
+      },
+      "expected": {
+        "exchange_state": -518.7420043945312,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": -354.7651062011719
+      },
+      "expected": {
+        "exchange_state": -354.7651062011719,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -198.21389770507812
+      },
+      "expected": {
+        "exchange_state": -198.21389770507812,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": -358.0362243652344
+      },
+      "expected": {
+        "exchange_state": -358.0362243652344,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": -395.3003234863281
+      },
+      "expected": {
+        "exchange_state": -395.3003234863281,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009999999776482582,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": -859.1182861328125
+      },
+      "expected": {
+        "exchange_state": -859.1182861328125,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0,
+        "coolant_temperature": 100.0,
+        "minimum_temperature": 100.0,
+        "local_78": 548.9680786132812
+      },
+      "expected": {
+        "exchange_state": 548.9680786132812,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8999999761581421,
+        "coolant_temperature": 101.0,
+        "minimum_temperature": 100.0,
+        "local_78": 144.43499755859375
+      },
+      "expected": {
+        "exchange_state": 144.43499755859375,
+        "spray_level_percent": 90.0,
+        "coolant_temperature": 101.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0,
+        "coolant_temperature": 99.0,
+        "minimum_temperature": 100.0,
+        "local_78": 682.4332275390625
+      },
+      "expected": {
+        "exchange_state": 682.4332275390625,
+        "spray_level_percent": 100.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7655547857284546,
+        "coolant_temperature": 655.8506469726562,
+        "minimum_temperature": 100.0,
+        "local_78": -166.7332763671875
+      },
+      "expected": {
+        "exchange_state": -166.7332763671875,
+        "spray_level_percent": 76.55548095703125,
+        "coolant_temperature": 655.8506469726562
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3531416654586792,
+        "coolant_temperature": 237.6205596923828,
+        "minimum_temperature": 100.0,
+        "local_78": -411.6875305175781
+      },
+      "expected": {
+        "exchange_state": -411.6875305175781,
+        "spray_level_percent": 35.31416702270508,
+        "coolant_temperature": 237.6205596923828
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.09019994735717773,
+        "coolant_temperature": 655.4236450195312,
+        "minimum_temperature": 100.0,
+        "local_78": -145.9210968017578
+      },
+      "expected": {
+        "exchange_state": -145.9210968017578,
+        "spray_level_percent": 9.019994735717773,
+        "coolant_temperature": 655.4236450195312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7126813530921936,
+        "coolant_temperature": 350.908447265625,
+        "minimum_temperature": 100.0,
+        "local_78": -693.5477905273438
+      },
+      "expected": {
+        "exchange_state": -693.5477905273438,
+        "spray_level_percent": 71.26813507080078,
+        "coolant_temperature": 350.908447265625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4018961191177368,
+        "coolant_temperature": 238.2312774658203,
+        "minimum_temperature": 100.0,
+        "local_78": 534.8970336914062
+      },
+      "expected": {
+        "exchange_state": 534.8970336914062,
+        "spray_level_percent": 40.189613342285156,
+        "coolant_temperature": 238.2312774658203
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9889261722564697,
+        "coolant_temperature": 687.883056640625,
+        "minimum_temperature": 100.0,
+        "local_78": -745.0376586914062
+      },
+      "expected": {
+        "exchange_state": -745.0376586914062,
+        "spray_level_percent": 98.89261627197266,
+        "coolant_temperature": 687.883056640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8214522004127502,
+        "coolant_temperature": 299.5137939453125,
+        "minimum_temperature": 100.0,
+        "local_78": -317.0131530761719
+      },
+      "expected": {
+        "exchange_state": -317.0131530761719,
+        "spray_level_percent": 82.14521789550781,
+        "coolant_temperature": 299.5137939453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6807118058204651,
+        "coolant_temperature": 599.5050048828125,
+        "minimum_temperature": 100.0,
+        "local_78": -884.2110595703125
+      },
+      "expected": {
+        "exchange_state": -884.2110595703125,
+        "spray_level_percent": 68.07118225097656,
+        "coolant_temperature": 599.5050048828125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.644049346446991,
+        "coolant_temperature": 648.7645263671875,
+        "minimum_temperature": 100.0,
+        "local_78": 942.15966796875
+      },
+      "expected": {
+        "exchange_state": 942.15966796875,
+        "spray_level_percent": 64.40493774414062,
+        "coolant_temperature": 648.7645263671875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.042819637805223465,
+        "coolant_temperature": 97.4408187866211,
+        "minimum_temperature": 100.0,
+        "local_78": 101.42996978759766
+      },
+      "expected": {
+        "exchange_state": 101.42996978759766,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.009745276533067226,
+        "coolant_temperature": 165.53958129882812,
+        "minimum_temperature": 100.0,
+        "local_78": 377.80682373046875
+      },
+      "expected": {
+        "exchange_state": 377.80682373046875,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 165.53958129882812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5119293332099915,
+        "coolant_temperature": 122.69862365722656,
+        "minimum_temperature": 100.0,
+        "local_78": 510.7572937011719
+      },
+      "expected": {
+        "exchange_state": 510.7572937011719,
+        "spray_level_percent": 51.19293212890625,
+        "coolant_temperature": 122.69862365722656
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.941815197467804,
+        "coolant_temperature": 242.674560546875,
+        "minimum_temperature": 100.0,
+        "local_78": 3.0260016918182373
+      },
+      "expected": {
+        "exchange_state": 3.0260016918182373,
+        "spray_level_percent": 94.1815185546875,
+        "coolant_temperature": 242.674560546875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9738976955413818,
+        "coolant_temperature": 621.3797607421875,
+        "minimum_temperature": 100.0,
+        "local_78": 251.69784545898438
+      },
+      "expected": {
+        "exchange_state": 251.69784545898438,
+        "spray_level_percent": 97.3897705078125,
+        "coolant_temperature": 621.3797607421875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.15407085418701172,
+        "coolant_temperature": 56.56488800048828,
+        "minimum_temperature": 100.0,
+        "local_78": 785.3714599609375
+      },
+      "expected": {
+        "exchange_state": 785.3714599609375,
+        "spray_level_percent": 15.407085418701172,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5087642073631287,
+        "coolant_temperature": 655.2957153320312,
+        "minimum_temperature": 100.0,
+        "local_78": -79.70136260986328
+      },
+      "expected": {
+        "exchange_state": -79.70136260986328,
+        "spray_level_percent": 50.87641906738281,
+        "coolant_temperature": 655.2957153320312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.1778513491153717,
+        "coolant_temperature": 276.9604797363281,
+        "minimum_temperature": 100.0,
+        "local_78": -268.30743408203125
+      },
+      "expected": {
+        "exchange_state": -268.30743408203125,
+        "spray_level_percent": 17.78513526916504,
+        "coolant_temperature": 276.9604797363281
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.37553128600120544,
+        "coolant_temperature": 335.5428161621094,
+        "minimum_temperature": 100.0,
+        "local_78": -54.30677032470703
+      },
+      "expected": {
+        "exchange_state": -54.30677032470703,
+        "spray_level_percent": 37.55312728881836,
+        "coolant_temperature": 335.5428161621094
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.393612802028656,
+        "coolant_temperature": 435.1511535644531,
+        "minimum_temperature": 100.0,
+        "local_78": 327.8598327636719
+      },
+      "expected": {
+        "exchange_state": 327.8598327636719,
+        "spray_level_percent": 39.36127853393555,
+        "coolant_temperature": 435.1511535644531
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.08302311599254608,
+        "coolant_temperature": 370.11895751953125,
+        "minimum_temperature": 100.0,
+        "local_78": -550.4063720703125
+      },
+      "expected": {
+        "exchange_state": -550.4063720703125,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 370.11895751953125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.06999234110116959,
+        "coolant_temperature": 411.7626647949219,
+        "minimum_temperature": 100.0,
+        "local_78": -96.6065902709961
+      },
+      "expected": {
+        "exchange_state": -96.6065902709961,
+        "spray_level_percent": 6.999234199523926,
+        "coolant_temperature": 411.7626647949219
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8181085586547852,
+        "coolant_temperature": 62.35755920410156,
+        "minimum_temperature": 100.0,
+        "local_78": 173.7297821044922
+      },
+      "expected": {
+        "exchange_state": 173.7297821044922,
+        "spray_level_percent": 81.81085205078125,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.05137865990400314,
+        "coolant_temperature": 539.7349243164062,
+        "minimum_temperature": 100.0,
+        "local_78": 215.90963745117188
+      },
+      "expected": {
+        "exchange_state": 215.90963745117188,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 539.7349243164062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7651507258415222,
+        "coolant_temperature": 67.7436752319336,
+        "minimum_temperature": 100.0,
+        "local_78": 482.0721740722656
+      },
+      "expected": {
+        "exchange_state": 482.0721740722656,
+        "spray_level_percent": 76.51507568359375,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3812007009983063,
+        "coolant_temperature": 66.40206146240234,
+        "minimum_temperature": 100.0,
+        "local_78": -718.2635498046875
+      },
+      "expected": {
+        "exchange_state": -718.2635498046875,
+        "spray_level_percent": 38.12007141113281,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3578847050666809,
+        "coolant_temperature": 403.0747375488281,
+        "minimum_temperature": 100.0,
+        "local_78": -50.432861328125
+      },
+      "expected": {
+        "exchange_state": -50.432861328125,
+        "spray_level_percent": 35.78847122192383,
+        "coolant_temperature": 403.0747375488281
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.17897072434425354,
+        "coolant_temperature": 177.81118774414062,
+        "minimum_temperature": 100.0,
+        "local_78": 43.13492965698242
+      },
+      "expected": {
+        "exchange_state": 43.13492965698242,
+        "spray_level_percent": 17.897071838378906,
+        "coolant_temperature": 177.81118774414062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8214146494865417,
+        "coolant_temperature": 280.306640625,
+        "minimum_temperature": 100.0,
+        "local_78": 42.09873580932617
+      },
+      "expected": {
+        "exchange_state": 42.09873580932617,
+        "spray_level_percent": 82.14146423339844,
+        "coolant_temperature": 280.306640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4038581848144531,
+        "coolant_temperature": 425.0867919921875,
+        "minimum_temperature": 100.0,
+        "local_78": -269.8278503417969
+      },
+      "expected": {
+        "exchange_state": -269.8278503417969,
+        "spray_level_percent": 40.38581848144531,
+        "coolant_temperature": 425.0867919921875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4812719523906708,
+        "coolant_temperature": 610.7466430664062,
+        "minimum_temperature": 100.0,
+        "local_78": 924.4129638671875
+      },
+      "expected": {
+        "exchange_state": 924.4129638671875,
+        "spray_level_percent": 48.127193450927734,
+        "coolant_temperature": 610.7466430664062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6237103939056396,
+        "coolant_temperature": 379.44525146484375,
+        "minimum_temperature": 100.0,
+        "local_78": 50.99948501586914
+      },
+      "expected": {
+        "exchange_state": 50.99948501586914,
+        "spray_level_percent": 62.37104034423828,
+        "coolant_temperature": 379.44525146484375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4410468339920044,
+        "coolant_temperature": 55.94344711303711,
+        "minimum_temperature": 100.0,
+        "local_78": 27.24104118347168
+      },
+      "expected": {
+        "exchange_state": 27.24104118347168,
+        "spray_level_percent": 44.10468292236328,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6715094447135925,
+        "coolant_temperature": 63.733070373535156,
+        "minimum_temperature": 100.0,
+        "local_78": 546.4832763671875
+      },
+      "expected": {
+        "exchange_state": 546.4832763671875,
+        "spray_level_percent": 67.15094757080078,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.49346688389778137,
+        "coolant_temperature": 237.44577026367188,
+        "minimum_temperature": 100.0,
+        "local_78": 471.17694091796875
+      },
+      "expected": {
+        "exchange_state": 471.17694091796875,
+        "spray_level_percent": 49.34668731689453,
+        "coolant_temperature": 237.44577026367188
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8576339483261108,
+        "coolant_temperature": 391.2959899902344,
+        "minimum_temperature": 100.0,
+        "local_78": 138.38658142089844
+      },
+      "expected": {
+        "exchange_state": 138.38658142089844,
+        "spray_level_percent": 85.76339721679688,
+        "coolant_temperature": 391.2959899902344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7729437351226807,
+        "coolant_temperature": 290.9211120605469,
+        "minimum_temperature": 100.0,
+        "local_78": 807.6680908203125
+      },
+      "expected": {
+        "exchange_state": 807.6680908203125,
+        "spray_level_percent": 77.29437255859375,
+        "coolant_temperature": 290.9211120605469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9998583793640137,
+        "coolant_temperature": 623.58984375,
+        "minimum_temperature": 100.0,
+        "local_78": -615.81640625
+      },
+      "expected": {
+        "exchange_state": -615.81640625,
+        "spray_level_percent": 99.98583984375,
+        "coolant_temperature": 623.58984375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5132920145988464,
+        "coolant_temperature": 127.56642150878906,
+        "minimum_temperature": 100.0,
+        "local_78": 573.2472534179688
+      },
+      "expected": {
+        "exchange_state": 573.2472534179688,
+        "spray_level_percent": 51.329200744628906,
+        "coolant_temperature": 127.56642150878906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4068383574485779,
+        "coolant_temperature": 172.55923461914062,
+        "minimum_temperature": 100.0,
+        "local_78": -474.6907043457031
+      },
+      "expected": {
+        "exchange_state": -474.6907043457031,
+        "spray_level_percent": 40.683834075927734,
+        "coolant_temperature": 172.55923461914062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4554307758808136,
+        "coolant_temperature": 422.1103515625,
+        "minimum_temperature": 100.0,
+        "local_78": 173.76358032226562
+      },
+      "expected": {
+        "exchange_state": 173.76358032226562,
+        "spray_level_percent": 45.5430793762207,
+        "coolant_temperature": 422.1103515625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.45967429876327515,
+        "coolant_temperature": 497.8077392578125,
+        "minimum_temperature": 100.0,
+        "local_78": 912.071533203125
+      },
+      "expected": {
+        "exchange_state": 912.071533203125,
+        "spray_level_percent": 45.967430114746094,
+        "coolant_temperature": 497.8077392578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.37113308906555176,
+        "coolant_temperature": 309.3175354003906,
+        "minimum_temperature": 100.0,
+        "local_78": -45.03854751586914
+      },
+      "expected": {
+        "exchange_state": -45.03854751586914,
+        "spray_level_percent": 37.11330795288086,
+        "coolant_temperature": 309.3175354003906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8992425799369812,
+        "coolant_temperature": 333.2998962402344,
+        "minimum_temperature": 100.0,
+        "local_78": -152.4209442138672
+      },
+      "expected": {
+        "exchange_state": -152.4209442138672,
+        "spray_level_percent": 89.92425537109375,
+        "coolant_temperature": 333.2998962402344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0494810976088047,
+        "coolant_temperature": 266.9190368652344,
+        "minimum_temperature": 100.0,
+        "local_78": 202.4050750732422
+      },
+      "expected": {
+        "exchange_state": 202.4050750732422,
+        "spray_level_percent": 4.9481096267700195,
+        "coolant_temperature": 266.9190368652344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5581170320510864,
+        "coolant_temperature": 347.0216979980469,
+        "minimum_temperature": 100.0,
+        "local_78": 850.9963989257812
+      },
+      "expected": {
+        "exchange_state": 850.9963989257812,
+        "spray_level_percent": 55.811702728271484,
+        "coolant_temperature": 347.0216979980469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.574998676776886,
+        "coolant_temperature": 561.7217407226562,
+        "minimum_temperature": 100.0,
+        "local_78": 678.3790283203125
+      },
+      "expected": {
+        "exchange_state": 678.3790283203125,
+        "spray_level_percent": 57.4998664855957,
+        "coolant_temperature": 561.7217407226562
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.39261582493782043,
+        "coolant_temperature": 485.82598876953125,
+        "minimum_temperature": 100.0,
+        "local_78": 508.9692077636719
+      },
+      "expected": {
+        "exchange_state": 508.9692077636719,
+        "spray_level_percent": 39.26158142089844,
+        "coolant_temperature": 485.82598876953125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.26332420110702515,
+        "coolant_temperature": 623.0841064453125,
+        "minimum_temperature": 100.0,
+        "local_78": -188.5868682861328
+      },
+      "expected": {
+        "exchange_state": -188.5868682861328,
+        "spray_level_percent": 26.332420349121094,
+        "coolant_temperature": 623.0841064453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3980056047439575,
+        "coolant_temperature": 524.6201782226562,
+        "minimum_temperature": 100.0,
+        "local_78": -507.96087646484375
+      },
+      "expected": {
+        "exchange_state": -507.96087646484375,
+        "spray_level_percent": 39.800559997558594,
+        "coolant_temperature": 524.6201782226562
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.348793089389801,
+        "coolant_temperature": 401.55096435546875,
+        "minimum_temperature": 100.0,
+        "local_78": -143.59896850585938
+      },
+      "expected": {
+        "exchange_state": -143.59896850585938,
+        "spray_level_percent": 34.879310607910156,
+        "coolant_temperature": 401.55096435546875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.004410982131958,
+        "coolant_temperature": 615.5763549804688,
+        "minimum_temperature": 100.0,
+        "local_78": -93.2751693725586
+      },
+      "expected": {
+        "exchange_state": -93.2751693725586,
+        "spray_level_percent": 100.44110107421875,
+        "coolant_temperature": 615.5763549804688
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9797162413597107,
+        "coolant_temperature": 301.387451171875,
+        "minimum_temperature": 100.0,
+        "local_78": -75.24779510498047
+      },
+      "expected": {
+        "exchange_state": -75.24779510498047,
+        "spray_level_percent": 97.97162628173828,
+        "coolant_temperature": 301.387451171875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.1749221384525299,
+        "coolant_temperature": 457.91876220703125,
+        "minimum_temperature": 100.0,
+        "local_78": 3.082350730895996
+      },
+      "expected": {
+        "exchange_state": 3.082350730895996,
+        "spray_level_percent": 17.49221420288086,
+        "coolant_temperature": 457.91876220703125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4468587636947632,
+        "coolant_temperature": 582.306396484375,
+        "minimum_temperature": 100.0,
+        "local_78": -958.7762451171875
+      },
+      "expected": {
+        "exchange_state": -958.7762451171875,
+        "spray_level_percent": 44.685874938964844,
+        "coolant_temperature": 582.306396484375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.45673391222953796,
+        "coolant_temperature": 275.75335693359375,
+        "minimum_temperature": 100.0,
+        "local_78": -517.6387939453125
+      },
+      "expected": {
+        "exchange_state": -517.6387939453125,
+        "spray_level_percent": 45.67338943481445,
+        "coolant_temperature": 275.75335693359375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8471879959106445,
+        "coolant_temperature": 66.34854888916016,
+        "minimum_temperature": 100.0,
+        "local_78": 95.26097106933594
+      },
+      "expected": {
+        "exchange_state": 95.26097106933594,
+        "spray_level_percent": 84.71879577636719,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.905465841293335,
+        "coolant_temperature": 628.699951171875,
+        "minimum_temperature": 100.0,
+        "local_78": -811.05517578125
+      },
+      "expected": {
+        "exchange_state": -811.05517578125,
+        "spray_level_percent": 90.54658508300781,
+        "coolant_temperature": 628.699951171875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5194489359855652,
+        "coolant_temperature": 161.01402282714844,
+        "minimum_temperature": 100.0,
+        "local_78": 618.2828369140625
+      },
+      "expected": {
+        "exchange_state": 618.2828369140625,
+        "spray_level_percent": 51.94489288330078,
+        "coolant_temperature": 161.01402282714844
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8826712965965271,
+        "coolant_temperature": 489.6116638183594,
+        "minimum_temperature": 100.0,
+        "local_78": -63.292266845703125
+      },
+      "expected": {
+        "exchange_state": -63.292266845703125,
+        "spray_level_percent": 88.26712799072266,
+        "coolant_temperature": 489.6116638183594
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.02020004764199257,
+        "coolant_temperature": 167.8169403076172,
+        "minimum_temperature": 100.0,
+        "local_78": -133.82501220703125
+      },
+      "expected": {
+        "exchange_state": -133.82501220703125,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 167.8169403076172
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2771517038345337,
+        "coolant_temperature": 128.3961181640625,
+        "minimum_temperature": 100.0,
+        "local_78": -38.86317825317383
+      },
+      "expected": {
+        "exchange_state": -38.86317825317383,
+        "spray_level_percent": 27.71516990661621,
+        "coolant_temperature": 128.3961181640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4887997508049011,
+        "coolant_temperature": 562.1905517578125,
+        "minimum_temperature": 100.0,
+        "local_78": 686.5638427734375
+      },
+      "expected": {
+        "exchange_state": 686.5638427734375,
+        "spray_level_percent": 48.879974365234375,
+        "coolant_temperature": 562.1905517578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6509115099906921,
+        "coolant_temperature": 465.9027099609375,
+        "minimum_temperature": 100.0,
+        "local_78": -933.6231079101562
+      },
+      "expected": {
+        "exchange_state": -933.6231079101562,
+        "spray_level_percent": 65.09114837646484,
+        "coolant_temperature": 465.9027099609375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5240297913551331,
+        "coolant_temperature": 429.59405517578125,
+        "minimum_temperature": 100.0,
+        "local_78": 845.9765625
+      },
+      "expected": {
+        "exchange_state": 845.9765625,
+        "spray_level_percent": 52.40298080444336,
+        "coolant_temperature": 429.59405517578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.31486794352531433,
+        "coolant_temperature": 194.624267578125,
+        "minimum_temperature": 100.0,
+        "local_78": 81.95560455322266
+      },
+      "expected": {
+        "exchange_state": 81.95560455322266,
+        "spray_level_percent": 31.486793518066406,
+        "coolant_temperature": 194.624267578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8451240062713623,
+        "coolant_temperature": 590.9412231445312,
+        "minimum_temperature": 100.0,
+        "local_78": 514.6762084960938
+      },
+      "expected": {
+        "exchange_state": 514.6762084960938,
+        "spray_level_percent": 84.51239776611328,
+        "coolant_temperature": 590.9412231445312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.14536499977111816,
+        "coolant_temperature": 127.38465881347656,
+        "minimum_temperature": 100.0,
+        "local_78": 427.5029602050781
+      },
+      "expected": {
+        "exchange_state": 427.5029602050781,
+        "spray_level_percent": 14.536499977111816,
+        "coolant_temperature": 127.38465881347656
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9456302523612976,
+        "coolant_temperature": 602.3661499023438,
+        "minimum_temperature": 100.0,
+        "local_78": -199.14547729492188
+      },
+      "expected": {
+        "exchange_state": -199.14547729492188,
+        "spray_level_percent": 94.56302642822266,
+        "coolant_temperature": 602.3661499023438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.05751294642686844,
+        "coolant_temperature": 577.13720703125,
+        "minimum_temperature": 100.0,
+        "local_78": 913.464111328125
+      },
+      "expected": {
+        "exchange_state": 913.464111328125,
+        "spray_level_percent": 5.7512946128845215,
+        "coolant_temperature": 577.13720703125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2912454605102539,
+        "coolant_temperature": 520.50830078125,
+        "minimum_temperature": 100.0,
+        "local_78": 902.114990234375
+      },
+      "expected": {
+        "exchange_state": 902.114990234375,
+        "spray_level_percent": 29.12454605102539,
+        "coolant_temperature": 520.50830078125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.24989180266857147,
+        "coolant_temperature": 159.8282928466797,
+        "minimum_temperature": 100.0,
+        "local_78": 538.0271606445312
+      },
+      "expected": {
+        "exchange_state": 538.0271606445312,
+        "spray_level_percent": 24.989179611206055,
+        "coolant_temperature": 159.8282928466797
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.22028647363185883,
+        "coolant_temperature": 409.77197265625,
+        "minimum_temperature": 100.0,
+        "local_78": -873.4727172851562
+      },
+      "expected": {
+        "exchange_state": -873.4727172851562,
+        "spray_level_percent": 22.02864646911621,
+        "coolant_temperature": 409.77197265625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4039987027645111,
+        "coolant_temperature": 179.5892333984375,
+        "minimum_temperature": 100.0,
+        "local_78": -581.12744140625
+      },
+      "expected": {
+        "exchange_state": -581.12744140625,
+        "spray_level_percent": 40.399871826171875,
+        "coolant_temperature": 179.5892333984375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8850688934326172,
+        "coolant_temperature": 317.4942321777344,
+        "minimum_temperature": 100.0,
+        "local_78": 790.3212280273438
+      },
+      "expected": {
+        "exchange_state": 790.3212280273438,
+        "spray_level_percent": 88.50688934326172,
+        "coolant_temperature": 317.4942321777344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5632418990135193,
+        "coolant_temperature": 645.9605102539062,
+        "minimum_temperature": 100.0,
+        "local_78": -149.70423889160156
+      },
+      "expected": {
+        "exchange_state": -149.70423889160156,
+        "spray_level_percent": 56.324188232421875,
+        "coolant_temperature": 645.9605102539062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7040918469429016,
+        "coolant_temperature": 597.9232788085938,
+        "minimum_temperature": 100.0,
+        "local_78": 804.4920043945312
+      },
+      "expected": {
+        "exchange_state": 804.4920043945312,
+        "spray_level_percent": 70.40918731689453,
+        "coolant_temperature": 597.9232788085938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.02752949297428131,
+        "coolant_temperature": 111.5488510131836,
+        "minimum_temperature": 100.0,
+        "local_78": -992.99365234375
+      },
+      "expected": {
+        "exchange_state": -992.99365234375,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 111.5488510131836
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.47662147879600525,
+        "coolant_temperature": 323.24755859375,
+        "minimum_temperature": 100.0,
+        "local_78": -250.12120056152344
+      },
+      "expected": {
+        "exchange_state": -250.12120056152344,
+        "spray_level_percent": 47.662147521972656,
+        "coolant_temperature": 323.24755859375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8950071930885315,
+        "coolant_temperature": 420.0814514160156,
+        "minimum_temperature": 100.0,
+        "local_78": 746.7333374023438
+      },
+      "expected": {
+        "exchange_state": 746.7333374023438,
+        "spray_level_percent": 89.50071716308594,
+        "coolant_temperature": 420.0814514160156
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5127086043357849,
+        "coolant_temperature": 266.66656494140625,
+        "minimum_temperature": 100.0,
+        "local_78": 568.367431640625
+      },
+      "expected": {
+        "exchange_state": 568.367431640625,
+        "spray_level_percent": 51.27085876464844,
+        "coolant_temperature": 266.66656494140625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2414790540933609,
+        "coolant_temperature": 140.8992156982422,
+        "minimum_temperature": 100.0,
+        "local_78": -8.0903902053833
+      },
+      "expected": {
+        "exchange_state": -8.0903902053833,
+        "spray_level_percent": 24.147905349731445,
+        "coolant_temperature": 140.8992156982422
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.057983636856079,
+        "coolant_temperature": 284.38372802734375,
+        "minimum_temperature": 100.0,
+        "local_78": 432.6670837402344
+      },
+      "expected": {
+        "exchange_state": 432.6670837402344,
+        "spray_level_percent": 105.7983627319336,
+        "coolant_temperature": 284.38372802734375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9997438788414001,
+        "coolant_temperature": 148.00526428222656,
+        "minimum_temperature": 100.0,
+        "local_78": -963.311279296875
+      },
+      "expected": {
+        "exchange_state": -963.311279296875,
+        "spray_level_percent": 99.9743881225586,
+        "coolant_temperature": 148.00526428222656
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0454049110412598,
+        "coolant_temperature": 113.31700897216797,
+        "minimum_temperature": 100.0,
+        "local_78": 333.782958984375
+      },
+      "expected": {
+        "exchange_state": 333.782958984375,
+        "spray_level_percent": 104.54048919677734,
+        "coolant_temperature": 113.31700897216797
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.45173466205596924,
+        "coolant_temperature": 563.3558349609375,
+        "minimum_temperature": 100.0,
+        "local_78": -624.1317749023438
+      },
+      "expected": {
+        "exchange_state": -624.1317749023438,
+        "spray_level_percent": 45.173465728759766,
+        "coolant_temperature": 563.3558349609375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.1481015533208847,
+        "coolant_temperature": 243.3667755126953,
+        "minimum_temperature": 100.0,
+        "local_78": 97.89630889892578
+      },
+      "expected": {
+        "exchange_state": 97.89630889892578,
+        "spray_level_percent": 14.810154914855957,
+        "coolant_temperature": 243.3667755126953
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.06288692355155945,
+        "coolant_temperature": 576.5302734375,
+        "minimum_temperature": 100.0,
+        "local_78": 388.9842529296875
+      },
+      "expected": {
+        "exchange_state": 388.9842529296875,
+        "spray_level_percent": 6.288692474365234,
+        "coolant_temperature": 576.5302734375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.30152684450149536,
+        "coolant_temperature": 105.1260757446289,
+        "minimum_temperature": 100.0,
+        "local_78": 821.65283203125
+      },
+      "expected": {
+        "exchange_state": 821.65283203125,
+        "spray_level_percent": 30.152685165405273,
+        "coolant_temperature": 105.1260757446289
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.050130490213632584,
+        "coolant_temperature": 374.7856140136719,
+        "minimum_temperature": 100.0,
+        "local_78": 754.0003051757812
+      },
+      "expected": {
+        "exchange_state": 754.0003051757812,
+        "spray_level_percent": 5.013049125671387,
+        "coolant_temperature": 374.7856140136719
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2515990436077118,
+        "coolant_temperature": 436.7242126464844,
+        "minimum_temperature": 100.0,
+        "local_78": 548.3565063476562
+      },
+      "expected": {
+        "exchange_state": 548.3565063476562,
+        "spray_level_percent": 25.15990447998047,
+        "coolant_temperature": 436.7242126464844
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.33672916889190674,
+        "coolant_temperature": 156.04351806640625,
+        "minimum_temperature": 100.0,
+        "local_78": -507.5497741699219
+      },
+      "expected": {
+        "exchange_state": -507.5497741699219,
+        "spray_level_percent": 33.672916412353516,
+        "coolant_temperature": 156.04351806640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7905210256576538,
+        "coolant_temperature": 348.5714416503906,
+        "minimum_temperature": 100.0,
+        "local_78": -158.7149658203125
+      },
+      "expected": {
+        "exchange_state": -158.7149658203125,
+        "spray_level_percent": 79.0521011352539,
+        "coolant_temperature": 348.5714416503906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9970651268959045,
+        "coolant_temperature": 349.1921081542969,
+        "minimum_temperature": 100.0,
+        "local_78": 974.236328125
+      },
+      "expected": {
+        "exchange_state": 974.236328125,
+        "spray_level_percent": 99.70651245117188,
+        "coolant_temperature": 349.1921081542969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.06482177972793579,
+        "coolant_temperature": 509.467041015625,
+        "minimum_temperature": 100.0,
+        "local_78": -917.9343872070312
+      },
+      "expected": {
+        "exchange_state": -917.9343872070312,
+        "spray_level_percent": 6.482177734375,
+        "coolant_temperature": 509.467041015625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8853724598884583,
+        "coolant_temperature": 271.4996032714844,
+        "minimum_temperature": 100.0,
+        "local_78": 610.611572265625
+      },
+      "expected": {
+        "exchange_state": 610.611572265625,
+        "spray_level_percent": 88.53724670410156,
+        "coolant_temperature": 271.4996032714844
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3066646158695221,
+        "coolant_temperature": 639.8101196289062,
+        "minimum_temperature": 100.0,
+        "local_78": -770.1260986328125
+      },
+      "expected": {
+        "exchange_state": -770.1260986328125,
+        "spray_level_percent": 30.666461944580078,
+        "coolant_temperature": 639.8101196289062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8295303583145142,
+        "coolant_temperature": 630.9617309570312,
+        "minimum_temperature": 100.0,
+        "local_78": -907.7838745117188
+      },
+      "expected": {
+        "exchange_state": -907.7838745117188,
+        "spray_level_percent": 82.95303344726562,
+        "coolant_temperature": 630.9617309570312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7192397117614746,
+        "coolant_temperature": 108.07856750488281,
+        "minimum_temperature": 100.0,
+        "local_78": -610.6207885742188
+      },
+      "expected": {
+        "exchange_state": -610.6207885742188,
+        "spray_level_percent": 71.9239730834961,
+        "coolant_temperature": 108.07856750488281
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5009070634841919,
+        "coolant_temperature": 503.1856689453125,
+        "minimum_temperature": 100.0,
+        "local_78": 689.8902587890625
+      },
+      "expected": {
+        "exchange_state": 689.8902587890625,
+        "spray_level_percent": 50.09070587158203,
+        "coolant_temperature": 503.1856689453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8459078669548035,
+        "coolant_temperature": 605.015869140625,
+        "minimum_temperature": 100.0,
+        "local_78": 329.9684143066406
+      },
+      "expected": {
+        "exchange_state": 329.9684143066406,
+        "spray_level_percent": 84.59078979492188,
+        "coolant_temperature": 605.015869140625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3438488245010376,
+        "coolant_temperature": 354.4617004394531,
+        "minimum_temperature": 100.0,
+        "local_78": 633.9718627929688
+      },
+      "expected": {
+        "exchange_state": 633.9718627929688,
+        "spray_level_percent": 34.384883880615234,
+        "coolant_temperature": 354.4617004394531
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6711825728416443,
+        "coolant_temperature": 233.89138793945312,
+        "minimum_temperature": 100.0,
+        "local_78": 987.9312133789062
+      },
+      "expected": {
+        "exchange_state": 987.9312133789062,
+        "spray_level_percent": 67.11825561523438,
+        "coolant_temperature": 233.89138793945312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4414260983467102,
+        "coolant_temperature": 156.08596801757812,
+        "minimum_temperature": 100.0,
+        "local_78": 719.447265625
+      },
+      "expected": {
+        "exchange_state": 719.447265625,
+        "spray_level_percent": 44.142608642578125,
+        "coolant_temperature": 156.08596801757812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9076829552650452,
+        "coolant_temperature": 312.08087158203125,
+        "minimum_temperature": 100.0,
+        "local_78": 144.3961181640625
+      },
+      "expected": {
+        "exchange_state": 144.3961181640625,
+        "spray_level_percent": 90.76829528808594,
+        "coolant_temperature": 312.08087158203125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.68575519323349,
+        "coolant_temperature": 474.4703674316406,
+        "minimum_temperature": 100.0,
+        "local_78": 332.6596374511719
+      },
+      "expected": {
+        "exchange_state": 332.6596374511719,
+        "spray_level_percent": 68.57551574707031,
+        "coolant_temperature": 474.4703674316406
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4548308253288269,
+        "coolant_temperature": 304.7855224609375,
+        "minimum_temperature": 100.0,
+        "local_78": -219.48233032226562
+      },
+      "expected": {
+        "exchange_state": -219.48233032226562,
+        "spray_level_percent": 45.48308181762695,
+        "coolant_temperature": 304.7855224609375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.23859566450119019,
+        "coolant_temperature": 206.85848999023438,
+        "minimum_temperature": 100.0,
+        "local_78": 13.036860466003418
+      },
+      "expected": {
+        "exchange_state": 13.036860466003418,
+        "spray_level_percent": 23.85956573486328,
+        "coolant_temperature": 206.85848999023438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5401085615158081,
+        "coolant_temperature": 367.8358154296875,
+        "minimum_temperature": 100.0,
+        "local_78": -642.61083984375
+      },
+      "expected": {
+        "exchange_state": -642.61083984375,
+        "spray_level_percent": 54.01085662841797,
+        "coolant_temperature": 367.8358154296875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.549791693687439,
+        "coolant_temperature": 337.3742370605469,
+        "minimum_temperature": 100.0,
+        "local_78": -584.0128784179688
+      },
+      "expected": {
+        "exchange_state": -584.0128784179688,
+        "spray_level_percent": 54.97916793823242,
+        "coolant_temperature": 337.3742370605469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4070287048816681,
+        "coolant_temperature": 205.28976440429688,
+        "minimum_temperature": 100.0,
+        "local_78": 490.3639831542969
+      },
+      "expected": {
+        "exchange_state": 490.3639831542969,
+        "spray_level_percent": 40.7028694152832,
+        "coolant_temperature": 205.28976440429688
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0131173133850098,
+        "coolant_temperature": 65.20176696777344,
+        "minimum_temperature": 100.0,
+        "local_78": -990.0466918945312
+      },
+      "expected": {
+        "exchange_state": -990.0466918945312,
+        "spray_level_percent": 101.31172943115234,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7858744859695435,
+        "coolant_temperature": 186.190673828125,
+        "minimum_temperature": 100.0,
+        "local_78": -419.8665466308594
+      },
+      "expected": {
+        "exchange_state": -419.8665466308594,
+        "spray_level_percent": 78.58744812011719,
+        "coolant_temperature": 186.190673828125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.23199450969696045,
+        "coolant_temperature": 676.939697265625,
+        "minimum_temperature": 100.0,
+        "local_78": 357.59722900390625
+      },
+      "expected": {
+        "exchange_state": 357.59722900390625,
+        "spray_level_percent": 23.199451446533203,
+        "coolant_temperature": 676.939697265625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9144686460494995,
+        "coolant_temperature": 202.54486083984375,
+        "minimum_temperature": 100.0,
+        "local_78": -542.6565551757812
+      },
+      "expected": {
+        "exchange_state": -542.6565551757812,
+        "spray_level_percent": 91.44686126708984,
+        "coolant_temperature": 202.54486083984375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.18124598264694214,
+        "coolant_temperature": 618.9876098632812,
+        "minimum_temperature": 100.0,
+        "local_78": -34.44841003417969
+      },
+      "expected": {
+        "exchange_state": -34.44841003417969,
+        "spray_level_percent": 18.124597549438477,
+        "coolant_temperature": 618.9876098632812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.08516249805688858,
+        "coolant_temperature": 72.96886444091797,
+        "minimum_temperature": 100.0,
+        "local_78": -592.917724609375
+      },
+      "expected": {
+        "exchange_state": -592.917724609375,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8851568698883057,
+        "coolant_temperature": 390.7481689453125,
+        "minimum_temperature": 100.0,
+        "local_78": -929.3441162109375
+      },
+      "expected": {
+        "exchange_state": -929.3441162109375,
+        "spray_level_percent": 88.51568603515625,
+        "coolant_temperature": 390.7481689453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.05956605076789856,
+        "coolant_temperature": 349.6237487792969,
+        "minimum_temperature": 100.0,
+        "local_78": 507.0588684082031
+      },
+      "expected": {
+        "exchange_state": 507.0588684082031,
+        "spray_level_percent": 5.956604957580566,
+        "coolant_temperature": 349.6237487792969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.10614391416311264,
+        "coolant_temperature": 317.3103332519531,
+        "minimum_temperature": 100.0,
+        "local_78": -401.8061218261719
+      },
+      "expected": {
+        "exchange_state": -401.8061218261719,
+        "spray_level_percent": 10.614391326904297,
+        "coolant_temperature": 317.3103332519531
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8846623301506042,
+        "coolant_temperature": 308.1676940917969,
+        "minimum_temperature": 100.0,
+        "local_78": -154.86203002929688
+      },
+      "expected": {
+        "exchange_state": -154.86203002929688,
+        "spray_level_percent": 88.46623229980469,
+        "coolant_temperature": 308.1676940917969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7759326696395874,
+        "coolant_temperature": 451.1025085449219,
+        "minimum_temperature": 100.0,
+        "local_78": 594.2142944335938
+      },
+      "expected": {
+        "exchange_state": 594.2142944335938,
+        "spray_level_percent": 77.59326934814453,
+        "coolant_temperature": 451.1025085449219
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3515264391899109,
+        "coolant_temperature": 548.8041381835938,
+        "minimum_temperature": 100.0,
+        "local_78": 791.3198852539062
+      },
+      "expected": {
+        "exchange_state": 791.3198852539062,
+        "spray_level_percent": 35.152645111083984,
+        "coolant_temperature": 548.8041381835938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9299764633178711,
+        "coolant_temperature": 96.21037292480469,
+        "minimum_temperature": 100.0,
+        "local_78": 743.8043212890625
+      },
+      "expected": {
+        "exchange_state": 743.8043212890625,
+        "spray_level_percent": 92.99765014648438,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.16348563134670258,
+        "coolant_temperature": 396.9073486328125,
+        "minimum_temperature": 100.0,
+        "local_78": -774.1322021484375
+      },
+      "expected": {
+        "exchange_state": -774.1322021484375,
+        "spray_level_percent": 16.348562240600586,
+        "coolant_temperature": 396.9073486328125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.1149008497595787,
+        "coolant_temperature": 279.5158386230469,
+        "minimum_temperature": 100.0,
+        "local_78": 241.41757202148438
+      },
+      "expected": {
+        "exchange_state": 241.41757202148438,
+        "spray_level_percent": 11.490084648132324,
+        "coolant_temperature": 279.5158386230469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6567055583000183,
+        "coolant_temperature": 327.71148681640625,
+        "minimum_temperature": 100.0,
+        "local_78": 132.3488311767578
+      },
+      "expected": {
+        "exchange_state": 132.3488311767578,
+        "spray_level_percent": 65.6705551147461,
+        "coolant_temperature": 327.71148681640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0627001523971558,
+        "coolant_temperature": 197.4294891357422,
+        "minimum_temperature": 100.0,
+        "local_78": 81.18318176269531
+      },
+      "expected": {
+        "exchange_state": 81.18318176269531,
+        "spray_level_percent": 106.27001190185547,
+        "coolant_temperature": 197.4294891357422
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.004082441329956,
+        "coolant_temperature": 424.4151611328125,
+        "minimum_temperature": 100.0,
+        "local_78": 626.6153564453125
+      },
+      "expected": {
+        "exchange_state": 626.6153564453125,
+        "spray_level_percent": 100.40824127197266,
+        "coolant_temperature": 424.4151611328125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0180803537368774,
+        "coolant_temperature": 635.8861694335938,
+        "minimum_temperature": 100.0,
+        "local_78": -688.3153076171875
+      },
+      "expected": {
+        "exchange_state": -688.3153076171875,
+        "spray_level_percent": 101.80803680419922,
+        "coolant_temperature": 635.8861694335938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.025385264307260513,
+        "coolant_temperature": 616.2282104492188,
+        "minimum_temperature": 100.0,
+        "local_78": -356.9623718261719
+      },
+      "expected": {
+        "exchange_state": -356.9623718261719,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 616.2282104492188
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9592744708061218,
+        "coolant_temperature": 677.2499389648438,
+        "minimum_temperature": 100.0,
+        "local_78": -140.73899841308594
+      },
+      "expected": {
+        "exchange_state": -140.73899841308594,
+        "spray_level_percent": 95.92744445800781,
+        "coolant_temperature": 677.2499389648438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0987833738327026,
+        "coolant_temperature": 289.2505187988281,
+        "minimum_temperature": 100.0,
+        "local_78": 90.14241790771484
+      },
+      "expected": {
+        "exchange_state": 90.14241790771484,
+        "spray_level_percent": 109.87833404541016,
+        "coolant_temperature": 289.2505187988281
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.002341174753382802,
+        "coolant_temperature": 679.2733764648438,
+        "minimum_temperature": 100.0,
+        "local_78": 466.6651306152344
+      },
+      "expected": {
+        "exchange_state": 466.6651306152344,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 679.2733764648438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7895756363868713,
+        "coolant_temperature": 608.575439453125,
+        "minimum_temperature": 100.0,
+        "local_78": 655.8953857421875
+      },
+      "expected": {
+        "exchange_state": 655.8953857421875,
+        "spray_level_percent": 78.95756530761719,
+        "coolant_temperature": 608.575439453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8151033520698547,
+        "coolant_temperature": 271.728271484375,
+        "minimum_temperature": 100.0,
+        "local_78": -792.7650756835938
+      },
+      "expected": {
+        "exchange_state": -792.7650756835938,
+        "spray_level_percent": 81.51033782958984,
+        "coolant_temperature": 271.728271484375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8268227577209473,
+        "coolant_temperature": 271.1681213378906,
+        "minimum_temperature": 100.0,
+        "local_78": -846.9909057617188
+      },
+      "expected": {
+        "exchange_state": -846.9909057617188,
+        "spray_level_percent": 82.6822738647461,
+        "coolant_temperature": 271.1681213378906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2190261036157608,
+        "coolant_temperature": 318.545166015625,
+        "minimum_temperature": 100.0,
+        "local_78": 902.0236206054688
+      },
+      "expected": {
+        "exchange_state": 902.0236206054688,
+        "spray_level_percent": 21.902610778808594,
+        "coolant_temperature": 318.545166015625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3009297847747803,
+        "coolant_temperature": 70.15122985839844,
+        "minimum_temperature": 100.0,
+        "local_78": 137.70437622070312
+      },
+      "expected": {
+        "exchange_state": 137.70437622070312,
+        "spray_level_percent": 30.092979431152344,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.00614524632692337,
+        "coolant_temperature": 224.7888641357422,
+        "minimum_temperature": 100.0,
+        "local_78": 946.1380004882812
+      },
+      "expected": {
+        "exchange_state": 946.1380004882812,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 224.7888641357422
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.659812331199646,
+        "coolant_temperature": 281.476806640625,
+        "minimum_temperature": 100.0,
+        "local_78": 684.9950561523438
+      },
+      "expected": {
+        "exchange_state": 684.9950561523438,
+        "spray_level_percent": 65.98123168945312,
+        "coolant_temperature": 281.476806640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5153226852416992,
+        "coolant_temperature": 553.34375,
+        "minimum_temperature": 100.0,
+        "local_78": 16.210838317871094
+      },
+      "expected": {
+        "exchange_state": 16.210838317871094,
+        "spray_level_percent": 51.53226852416992,
+        "coolant_temperature": 553.34375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.690829336643219,
+        "coolant_temperature": 525.1975708007812,
+        "minimum_temperature": 100.0,
+        "local_78": 261.63531494140625
+      },
+      "expected": {
+        "exchange_state": 261.63531494140625,
+        "spray_level_percent": 69.08293151855469,
+        "coolant_temperature": 525.1975708007812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0095854997634888,
+        "coolant_temperature": 570.2683715820312,
+        "minimum_temperature": 100.0,
+        "local_78": 966.3169555664062
+      },
+      "expected": {
+        "exchange_state": 966.3169555664062,
+        "spray_level_percent": 100.95854949951172,
+        "coolant_temperature": 570.2683715820312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6332229375839233,
+        "coolant_temperature": 469.00439453125,
+        "minimum_temperature": 100.0,
+        "local_78": 406.9223327636719
+      },
+      "expected": {
+        "exchange_state": 406.9223327636719,
+        "spray_level_percent": 63.32229232788086,
+        "coolant_temperature": 469.00439453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6152399778366089,
+        "coolant_temperature": 473.9923095703125,
+        "minimum_temperature": 100.0,
+        "local_78": 987.114990234375
+      },
+      "expected": {
+        "exchange_state": 987.114990234375,
+        "spray_level_percent": 61.52399826049805,
+        "coolant_temperature": 473.9923095703125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3399905562400818,
+        "coolant_temperature": 297.8817443847656,
+        "minimum_temperature": 100.0,
+        "local_78": -538.64404296875
+      },
+      "expected": {
+        "exchange_state": -538.64404296875,
+        "spray_level_percent": 33.999053955078125,
+        "coolant_temperature": 297.8817443847656
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.22782087326049805,
+        "coolant_temperature": 639.1920166015625,
+        "minimum_temperature": 100.0,
+        "local_78": 574.6084594726562
+      },
+      "expected": {
+        "exchange_state": 574.6084594726562,
+        "spray_level_percent": 22.782087326049805,
+        "coolant_temperature": 639.1920166015625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7693110704421997,
+        "coolant_temperature": 604.873046875,
+        "minimum_temperature": 100.0,
+        "local_78": -123.76886749267578
+      },
+      "expected": {
+        "exchange_state": -123.76886749267578,
+        "spray_level_percent": 76.93110656738281,
+        "coolant_temperature": 604.873046875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5493423938751221,
+        "coolant_temperature": 244.08135986328125,
+        "minimum_temperature": 100.0,
+        "local_78": 88.81971740722656
+      },
+      "expected": {
+        "exchange_state": 88.81971740722656,
+        "spray_level_percent": 54.93423843383789,
+        "coolant_temperature": 244.08135986328125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8563510179519653,
+        "coolant_temperature": 328.7521057128906,
+        "minimum_temperature": 100.0,
+        "local_78": -862.698486328125
+      },
+      "expected": {
+        "exchange_state": -862.698486328125,
+        "spray_level_percent": 85.63510131835938,
+        "coolant_temperature": 328.7521057128906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.823430061340332,
+        "coolant_temperature": 683.6695556640625,
+        "minimum_temperature": 100.0,
+        "local_78": -755.4742431640625
+      },
+      "expected": {
+        "exchange_state": -755.4742431640625,
+        "spray_level_percent": 82.34300231933594,
+        "coolant_temperature": 683.6695556640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6390404105186462,
+        "coolant_temperature": 220.4897918701172,
+        "minimum_temperature": 100.0,
+        "local_78": -255.48492431640625
+      },
+      "expected": {
+        "exchange_state": -255.48492431640625,
+        "spray_level_percent": 63.9040412902832,
+        "coolant_temperature": 220.4897918701172
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9267604947090149,
+        "coolant_temperature": 496.081298828125,
+        "minimum_temperature": 100.0,
+        "local_78": -516.6199951171875
+      },
+      "expected": {
+        "exchange_state": -516.6199951171875,
+        "spray_level_percent": 92.6760482788086,
+        "coolant_temperature": 496.081298828125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.022695042192935944,
+        "coolant_temperature": 302.62982177734375,
+        "minimum_temperature": 100.0,
+        "local_78": -954.167724609375
+      },
+      "expected": {
+        "exchange_state": -954.167724609375,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 302.62982177734375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7161734104156494,
+        "coolant_temperature": 301.7732238769531,
+        "minimum_temperature": 100.0,
+        "local_78": 109.92353820800781
+      },
+      "expected": {
+        "exchange_state": 109.92353820800781,
+        "spray_level_percent": 71.61734008789062,
+        "coolant_temperature": 301.7732238769531
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7543125152587891,
+        "coolant_temperature": 316.7244567871094,
+        "minimum_temperature": 100.0,
+        "local_78": -31.454269409179688
+      },
+      "expected": {
+        "exchange_state": -31.454269409179688,
+        "spray_level_percent": 75.4312515258789,
+        "coolant_temperature": 316.7244567871094
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0526291131973267,
+        "coolant_temperature": 289.56585693359375,
+        "minimum_temperature": 100.0,
+        "local_78": 52.36564254760742
+      },
+      "expected": {
+        "exchange_state": 52.36564254760742,
+        "spray_level_percent": 105.26290893554688,
+        "coolant_temperature": 289.56585693359375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2772606611251831,
+        "coolant_temperature": 477.5722351074219,
+        "minimum_temperature": 100.0,
+        "local_78": 900.8378295898438
+      },
+      "expected": {
+        "exchange_state": 900.8378295898438,
+        "spray_level_percent": 27.72606658935547,
+        "coolant_temperature": 477.5722351074219
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.06162258982658386,
+        "coolant_temperature": 333.1628723144531,
+        "minimum_temperature": 100.0,
+        "local_78": -162.32785034179688
+      },
+      "expected": {
+        "exchange_state": -162.32785034179688,
+        "spray_level_percent": 6.162259101867676,
+        "coolant_temperature": 333.1628723144531
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9599847793579102,
+        "coolant_temperature": 180.5457305908203,
+        "minimum_temperature": 100.0,
+        "local_78": 154.45762634277344
+      },
+      "expected": {
+        "exchange_state": 154.45762634277344,
+        "spray_level_percent": 95.99847412109375,
+        "coolant_temperature": 180.5457305908203
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.21357379853725433,
+        "coolant_temperature": 570.058837890625,
+        "minimum_temperature": 100.0,
+        "local_78": -945.9644775390625
+      },
+      "expected": {
+        "exchange_state": -945.9644775390625,
+        "spray_level_percent": 21.357379913330078,
+        "coolant_temperature": 570.058837890625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.023273851722478867,
+        "coolant_temperature": 377.52557373046875,
+        "minimum_temperature": 100.0,
+        "local_78": 182.15823364257812
+      },
+      "expected": {
+        "exchange_state": 182.15823364257812,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 377.52557373046875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2520557641983032,
+        "coolant_temperature": 324.0323181152344,
+        "minimum_temperature": 100.0,
+        "local_78": -990.2920532226562
+      },
+      "expected": {
+        "exchange_state": -990.2920532226562,
+        "spray_level_percent": 25.205575942993164,
+        "coolant_temperature": 324.0323181152344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.620836615562439,
+        "coolant_temperature": 622.505859375,
+        "minimum_temperature": 100.0,
+        "local_78": -905.0547485351562
+      },
+      "expected": {
+        "exchange_state": -905.0547485351562,
+        "spray_level_percent": 62.08366012573242,
+        "coolant_temperature": 622.505859375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8524981141090393,
+        "coolant_temperature": 118.10273742675781,
+        "minimum_temperature": 100.0,
+        "local_78": -482.6312561035156
+      },
+      "expected": {
+        "exchange_state": -482.6312561035156,
+        "spray_level_percent": 85.24980926513672,
+        "coolant_temperature": 118.10273742675781
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.08509890735149384,
+        "coolant_temperature": 629.4263916015625,
+        "minimum_temperature": 100.0,
+        "local_78": 519.1904907226562
+      },
+      "expected": {
+        "exchange_state": 519.1904907226562,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 629.4263916015625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.50861656665802,
+        "coolant_temperature": 470.0798034667969,
+        "minimum_temperature": 100.0,
+        "local_78": -59.922462463378906
+      },
+      "expected": {
+        "exchange_state": -59.922462463378906,
+        "spray_level_percent": 50.861656188964844,
+        "coolant_temperature": 470.0798034667969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.828612208366394,
+        "coolant_temperature": 208.67942810058594,
+        "minimum_temperature": 100.0,
+        "local_78": 220.0418701171875
+      },
+      "expected": {
+        "exchange_state": 220.0418701171875,
+        "spray_level_percent": 82.86122131347656,
+        "coolant_temperature": 208.67942810058594
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0076461476273834705,
+        "coolant_temperature": 326.87255859375,
+        "minimum_temperature": 100.0,
+        "local_78": 743.4265747070312
+      },
+      "expected": {
+        "exchange_state": 743.4265747070312,
+        "spray_level_percent": 0.7646147608757019,
+        "coolant_temperature": 326.87255859375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4116106629371643,
+        "coolant_temperature": 684.9921264648438,
+        "minimum_temperature": 100.0,
+        "local_78": -5.520603179931641
+      },
+      "expected": {
+        "exchange_state": -5.520603179931641,
+        "spray_level_percent": 41.161067962646484,
+        "coolant_temperature": 684.9921264648438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0168417692184448,
+        "coolant_temperature": 538.3313598632812,
+        "minimum_temperature": 100.0,
+        "local_78": 549.5538940429688
+      },
+      "expected": {
+        "exchange_state": 549.5538940429688,
+        "spray_level_percent": 101.68417358398438,
+        "coolant_temperature": 538.3313598632812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.35260698199272156,
+        "coolant_temperature": 106.63006591796875,
+        "minimum_temperature": 100.0,
+        "local_78": 114.32804107666016
+      },
+      "expected": {
+        "exchange_state": 114.32804107666016,
+        "spray_level_percent": 35.26069641113281,
+        "coolant_temperature": 106.63006591796875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3978087902069092,
+        "coolant_temperature": 87.55979919433594,
+        "minimum_temperature": 100.0,
+        "local_78": 191.36959838867188
+      },
+      "expected": {
+        "exchange_state": 191.36959838867188,
+        "spray_level_percent": 39.780879974365234,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.26012125611305237,
+        "coolant_temperature": 202.96139526367188,
+        "minimum_temperature": 100.0,
+        "local_78": 893.0599365234375
+      },
+      "expected": {
+        "exchange_state": 893.0599365234375,
+        "spray_level_percent": 26.01212501525879,
+        "coolant_temperature": 202.96139526367188
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6291706562042236,
+        "coolant_temperature": 653.1411743164062,
+        "minimum_temperature": 100.0,
+        "local_78": 844.5210571289062
+      },
+      "expected": {
+        "exchange_state": 844.5210571289062,
+        "spray_level_percent": 62.91706466674805,
+        "coolant_temperature": 653.1411743164062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.939939558506012,
+        "coolant_temperature": 675.72509765625,
+        "minimum_temperature": 100.0,
+        "local_78": 572.2127685546875
+      },
+      "expected": {
+        "exchange_state": 572.2127685546875,
+        "spray_level_percent": 93.99395751953125,
+        "coolant_temperature": 675.72509765625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.039610687643289566,
+        "coolant_temperature": 450.0457763671875,
+        "minimum_temperature": 100.0,
+        "local_78": 362.1318054199219
+      },
+      "expected": {
+        "exchange_state": 362.1318054199219,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 450.0457763671875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.40590184926986694,
+        "coolant_temperature": 426.4982604980469,
+        "minimum_temperature": 100.0,
+        "local_78": 32.34775161743164
+      },
+      "expected": {
+        "exchange_state": 32.34775161743164,
+        "spray_level_percent": 40.59018325805664,
+        "coolant_temperature": 426.4982604980469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3085355758666992,
+        "coolant_temperature": 143.9897918701172,
+        "minimum_temperature": 100.0,
+        "local_78": 921.8928833007812
+      },
+      "expected": {
+        "exchange_state": 921.8928833007812,
+        "spray_level_percent": 30.853557586669922,
+        "coolant_temperature": 143.9897918701172
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.46790656447410583,
+        "coolant_temperature": 428.5469055175781,
+        "minimum_temperature": 100.0,
+        "local_78": 708.2432250976562
+      },
+      "expected": {
+        "exchange_state": 708.2432250976562,
+        "spray_level_percent": 46.79065704345703,
+        "coolant_temperature": 428.5469055175781
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.0016928209224715829,
+        "coolant_temperature": 204.1393585205078,
+        "minimum_temperature": 100.0,
+        "local_78": 716.2503662109375
+      },
+      "expected": {
+        "exchange_state": 716.2503662109375,
+        "spray_level_percent": 0.16928209364414215,
+        "coolant_temperature": 204.1393585205078
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5448421835899353,
+        "coolant_temperature": 141.3878631591797,
+        "minimum_temperature": 100.0,
+        "local_78": 295.7217712402344
+      },
+      "expected": {
+        "exchange_state": 295.7217712402344,
+        "spray_level_percent": 54.48421859741211,
+        "coolant_temperature": 141.3878631591797
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0379855632781982,
+        "coolant_temperature": 277.3314208984375,
+        "minimum_temperature": 100.0,
+        "local_78": 878.02587890625
+      },
+      "expected": {
+        "exchange_state": 878.02587890625,
+        "spray_level_percent": 103.79855346679688,
+        "coolant_temperature": 277.3314208984375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.15284781157970428,
+        "coolant_temperature": 487.1820068359375,
+        "minimum_temperature": 100.0,
+        "local_78": -186.52362060546875
+      },
+      "expected": {
+        "exchange_state": -186.52362060546875,
+        "spray_level_percent": 15.284781455993652,
+        "coolant_temperature": 487.1820068359375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.34866052865982056,
+        "coolant_temperature": 529.0279541015625,
+        "minimum_temperature": 100.0,
+        "local_78": -483.915283203125
+      },
+      "expected": {
+        "exchange_state": -483.915283203125,
+        "spray_level_percent": 34.86605453491211,
+        "coolant_temperature": 529.0279541015625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.567405104637146,
+        "coolant_temperature": 77.92742156982422,
+        "minimum_temperature": 100.0,
+        "local_78": 232.46783447265625
+      },
+      "expected": {
+        "exchange_state": 232.46783447265625,
+        "spray_level_percent": 56.740509033203125,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0354008674621582,
+        "coolant_temperature": 665.6132202148438,
+        "minimum_temperature": 100.0,
+        "local_78": 157.85775756835938
+      },
+      "expected": {
+        "exchange_state": 157.85775756835938,
+        "spray_level_percent": 103.54008483886719,
+        "coolant_temperature": 665.6132202148438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6911359429359436,
+        "coolant_temperature": 101.66039276123047,
+        "minimum_temperature": 100.0,
+        "local_78": -494.6859436035156
+      },
+      "expected": {
+        "exchange_state": -494.6859436035156,
+        "spray_level_percent": 69.11359405517578,
+        "coolant_temperature": 101.66039276123047
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.1580597311258316,
+        "coolant_temperature": 154.62062072753906,
+        "minimum_temperature": 100.0,
+        "local_78": -177.55007934570312
+      },
+      "expected": {
+        "exchange_state": -177.55007934570312,
+        "spray_level_percent": 15.805973052978516,
+        "coolant_temperature": 154.62062072753906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.36119621992111206,
+        "coolant_temperature": 187.44972229003906,
+        "minimum_temperature": 100.0,
+        "local_78": 274.7783508300781
+      },
+      "expected": {
+        "exchange_state": 274.7783508300781,
+        "spray_level_percent": 36.11962127685547,
+        "coolant_temperature": 187.44972229003906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9925177693367004,
+        "coolant_temperature": 625.4451293945312,
+        "minimum_temperature": 100.0,
+        "local_78": 303.9378967285156
+      },
+      "expected": {
+        "exchange_state": 303.9378967285156,
+        "spray_level_percent": 99.25177764892578,
+        "coolant_temperature": 625.4451293945312
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7878862023353577,
+        "coolant_temperature": 634.0469970703125,
+        "minimum_temperature": 100.0,
+        "local_78": -696.7963256835938
+      },
+      "expected": {
+        "exchange_state": -696.7963256835938,
+        "spray_level_percent": 78.78861999511719,
+        "coolant_temperature": 634.0469970703125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.05241689458489418,
+        "coolant_temperature": 472.8581237792969,
+        "minimum_temperature": 100.0,
+        "local_78": -928.7578125
+      },
+      "expected": {
+        "exchange_state": -928.7578125,
+        "spray_level_percent": 5.241689682006836,
+        "coolant_temperature": 472.8581237792969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5974797606468201,
+        "coolant_temperature": 397.43841552734375,
+        "minimum_temperature": 100.0,
+        "local_78": -214.42552185058594
+      },
+      "expected": {
+        "exchange_state": -214.42552185058594,
+        "spray_level_percent": 59.74797439575195,
+        "coolant_temperature": 397.43841552734375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5289496779441833,
+        "coolant_temperature": 120.62848663330078,
+        "minimum_temperature": 100.0,
+        "local_78": -347.663330078125
+      },
+      "expected": {
+        "exchange_state": -347.663330078125,
+        "spray_level_percent": 52.89496612548828,
+        "coolant_temperature": 120.62848663330078
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.00122694275341928,
+        "coolant_temperature": 466.23431396484375,
+        "minimum_temperature": 100.0,
+        "local_78": 274.5439453125
+      },
+      "expected": {
+        "exchange_state": 274.5439453125,
+        "spray_level_percent": 0.12269427627325058,
+        "coolant_temperature": 466.23431396484375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2052602916955948,
+        "coolant_temperature": 163.62594604492188,
+        "minimum_temperature": 100.0,
+        "local_78": -983.41748046875
+      },
+      "expected": {
+        "exchange_state": -983.41748046875,
+        "spray_level_percent": 20.526029586791992,
+        "coolant_temperature": 163.62594604492188
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.13904771208763123,
+        "coolant_temperature": 230.1079864501953,
+        "minimum_temperature": 100.0,
+        "local_78": -540.8732299804688
+      },
+      "expected": {
+        "exchange_state": -540.8732299804688,
+        "spray_level_percent": 13.904770851135254,
+        "coolant_temperature": 230.1079864501953
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7909818887710571,
+        "coolant_temperature": 678.4540405273438,
+        "minimum_temperature": 100.0,
+        "local_78": 468.6904296875
+      },
+      "expected": {
+        "exchange_state": 468.6904296875,
+        "spray_level_percent": 79.09819030761719,
+        "coolant_temperature": 678.4540405273438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5134289860725403,
+        "coolant_temperature": 136.08604431152344,
+        "minimum_temperature": 100.0,
+        "local_78": 608.6564331054688
+      },
+      "expected": {
+        "exchange_state": 608.6564331054688,
+        "spray_level_percent": 51.342899322509766,
+        "coolant_temperature": 136.08604431152344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5767064094543457,
+        "coolant_temperature": 295.40960693359375,
+        "minimum_temperature": 100.0,
+        "local_78": -916.2639770507812
+      },
+      "expected": {
+        "exchange_state": -916.2639770507812,
+        "spray_level_percent": 57.67063903808594,
+        "coolant_temperature": 295.40960693359375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.27004358172416687,
+        "coolant_temperature": 77.02603912353516,
+        "minimum_temperature": 100.0,
+        "local_78": -631.0676879882812
+      },
+      "expected": {
+        "exchange_state": -631.0676879882812,
+        "spray_level_percent": 27.004358291625977,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9055845141410828,
+        "coolant_temperature": 93.1328353881836,
+        "minimum_temperature": 100.0,
+        "local_78": -124.36141967773438
+      },
+      "expected": {
+        "exchange_state": -124.36141967773438,
+        "spray_level_percent": 90.5584487915039,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5799847841262817,
+        "coolant_temperature": 139.76023864746094,
+        "minimum_temperature": 100.0,
+        "local_78": 217.67271423339844
+      },
+      "expected": {
+        "exchange_state": 217.67271423339844,
+        "spray_level_percent": 57.998477935791016,
+        "coolant_temperature": 139.76023864746094
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.062345732003450394,
+        "coolant_temperature": 670.9442749023438,
+        "minimum_temperature": 100.0,
+        "local_78": 295.3793640136719
+      },
+      "expected": {
+        "exchange_state": 295.3793640136719,
+        "spray_level_percent": 6.2345733642578125,
+        "coolant_temperature": 670.9442749023438
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0649524927139282,
+        "coolant_temperature": 627.9097290039062,
+        "minimum_temperature": 100.0,
+        "local_78": 562.9034423828125
+      },
+      "expected": {
+        "exchange_state": 562.9034423828125,
+        "spray_level_percent": 106.49524688720703,
+        "coolant_temperature": 627.9097290039062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9722897410392761,
+        "coolant_temperature": 331.38525390625,
+        "minimum_temperature": 100.0,
+        "local_78": 426.87091064453125
+      },
+      "expected": {
+        "exchange_state": 426.87091064453125,
+        "spray_level_percent": 97.22897338867188,
+        "coolant_temperature": 331.38525390625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5031929016113281,
+        "coolant_temperature": 412.80047607421875,
+        "minimum_temperature": 100.0,
+        "local_78": 602.1193237304688
+      },
+      "expected": {
+        "exchange_state": 602.1193237304688,
+        "spray_level_percent": 50.31929016113281,
+        "coolant_temperature": 412.80047607421875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6695742011070251,
+        "coolant_temperature": 535.3714599609375,
+        "minimum_temperature": 100.0,
+        "local_78": 270.0074157714844
+      },
+      "expected": {
+        "exchange_state": 270.0074157714844,
+        "spray_level_percent": 66.9574203491211,
+        "coolant_temperature": 535.3714599609375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.42248082160949707,
+        "coolant_temperature": 436.58966064453125,
+        "minimum_temperature": 100.0,
+        "local_78": -954.0210571289062
+      },
+      "expected": {
+        "exchange_state": -954.0210571289062,
+        "spray_level_percent": 42.24808120727539,
+        "coolant_temperature": 436.58966064453125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.053787350654602,
+        "coolant_temperature": 658.612060546875,
+        "minimum_temperature": 100.0,
+        "local_78": 201.77943420410156
+      },
+      "expected": {
+        "exchange_state": 201.77943420410156,
+        "spray_level_percent": 105.37873840332031,
+        "coolant_temperature": 658.612060546875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.24158518016338348,
+        "coolant_temperature": 354.1462097167969,
+        "minimum_temperature": 100.0,
+        "local_78": -775.1757202148438
+      },
+      "expected": {
+        "exchange_state": -775.1757202148438,
+        "spray_level_percent": 24.158517837524414,
+        "coolant_temperature": 354.1462097167969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9585890769958496,
+        "coolant_temperature": 221.68016052246094,
+        "minimum_temperature": 100.0,
+        "local_78": -712.21240234375
+      },
+      "expected": {
+        "exchange_state": -712.21240234375,
+        "spray_level_percent": 95.8589096069336,
+        "coolant_temperature": 221.68016052246094
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.20099574327468872,
+        "coolant_temperature": 259.0071716308594,
+        "minimum_temperature": 100.0,
+        "local_78": -766.8829956054688
+      },
+      "expected": {
+        "exchange_state": -766.8829956054688,
+        "spray_level_percent": 20.09957504272461,
+        "coolant_temperature": 259.0071716308594
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6707123517990112,
+        "coolant_temperature": 319.619140625,
+        "minimum_temperature": 100.0,
+        "local_78": -621.9851684570312
+      },
+      "expected": {
+        "exchange_state": -621.9851684570312,
+        "spray_level_percent": 67.07123565673828,
+        "coolant_temperature": 319.619140625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.26338592171669006,
+        "coolant_temperature": 587.1280517578125,
+        "minimum_temperature": 100.0,
+        "local_78": 460.7710876464844
+      },
+      "expected": {
+        "exchange_state": 460.7710876464844,
+        "spray_level_percent": 26.338592529296875,
+        "coolant_temperature": 587.1280517578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.20493219792842865,
+        "coolant_temperature": 61.87849807739258,
+        "minimum_temperature": 100.0,
+        "local_78": 559.9497680664062
+      },
+      "expected": {
+        "exchange_state": 559.9497680664062,
+        "spray_level_percent": 20.49321937561035,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6710863709449768,
+        "coolant_temperature": 288.48602294921875,
+        "minimum_temperature": 100.0,
+        "local_78": -431.0827941894531
+      },
+      "expected": {
+        "exchange_state": -431.0827941894531,
+        "spray_level_percent": 67.10863494873047,
+        "coolant_temperature": 288.48602294921875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.22756926715373993,
+        "coolant_temperature": 599.2099609375,
+        "minimum_temperature": 100.0,
+        "local_78": 232.69395446777344
+      },
+      "expected": {
+        "exchange_state": 232.69395446777344,
+        "spray_level_percent": 22.756927490234375,
+        "coolant_temperature": 599.2099609375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7195301055908203,
+        "coolant_temperature": 442.4269104003906,
+        "minimum_temperature": 100.0,
+        "local_78": 251.31796264648438
+      },
+      "expected": {
+        "exchange_state": 251.31796264648438,
+        "spray_level_percent": 71.95301055908203,
+        "coolant_temperature": 442.4269104003906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2603732645511627,
+        "coolant_temperature": 646.02587890625,
+        "minimum_temperature": 100.0,
+        "local_78": -900.2572021484375
+      },
+      "expected": {
+        "exchange_state": -900.2572021484375,
+        "spray_level_percent": 26.03732681274414,
+        "coolant_temperature": 646.02587890625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9238555431365967,
+        "coolant_temperature": 502.0470886230469,
+        "minimum_temperature": 100.0,
+        "local_78": -229.5270233154297
+      },
+      "expected": {
+        "exchange_state": -229.5270233154297,
+        "spray_level_percent": 92.38555145263672,
+        "coolant_temperature": 502.0470886230469
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5807431936264038,
+        "coolant_temperature": 317.73699951171875,
+        "minimum_temperature": 100.0,
+        "local_78": 466.5455017089844
+      },
+      "expected": {
+        "exchange_state": 466.5455017089844,
+        "spray_level_percent": 58.074317932128906,
+        "coolant_temperature": 317.73699951171875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5962710976600647,
+        "coolant_temperature": 665.9622802734375,
+        "minimum_temperature": 100.0,
+        "local_78": 624.6143798828125
+      },
+      "expected": {
+        "exchange_state": 624.6143798828125,
+        "spray_level_percent": 59.62710952758789,
+        "coolant_temperature": 665.9622802734375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6903479695320129,
+        "coolant_temperature": 287.3017883300781,
+        "minimum_temperature": 100.0,
+        "local_78": 236.2474365234375
+      },
+      "expected": {
+        "exchange_state": 236.2474365234375,
+        "spray_level_percent": 69.03479766845703,
+        "coolant_temperature": 287.3017883300781
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.24967022240161896,
+        "coolant_temperature": 399.0783996582031,
+        "minimum_temperature": 100.0,
+        "local_78": 901.3722534179688
+      },
+      "expected": {
+        "exchange_state": 901.3722534179688,
+        "spray_level_percent": 24.967021942138672,
+        "coolant_temperature": 399.0783996582031
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.07646341621875763,
+        "coolant_temperature": 476.8515930175781,
+        "minimum_temperature": 100.0,
+        "local_78": -972.7448120117188
+      },
+      "expected": {
+        "exchange_state": -972.7448120117188,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 476.8515930175781
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9483798146247864,
+        "coolant_temperature": 237.21681213378906,
+        "minimum_temperature": 100.0,
+        "local_78": 364.9893493652344
+      },
+      "expected": {
+        "exchange_state": 364.9893493652344,
+        "spray_level_percent": 94.83798217773438,
+        "coolant_temperature": 237.21681213378906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3337080478668213,
+        "coolant_temperature": 270.8730163574219,
+        "minimum_temperature": 100.0,
+        "local_78": -222.8291473388672
+      },
+      "expected": {
+        "exchange_state": -222.8291473388672,
+        "spray_level_percent": 33.37080383300781,
+        "coolant_temperature": 270.8730163574219
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5139484405517578,
+        "coolant_temperature": 550.4586181640625,
+        "minimum_temperature": 100.0,
+        "local_78": 431.11328125
+      },
+      "expected": {
+        "exchange_state": 431.11328125,
+        "spray_level_percent": 51.39484405517578,
+        "coolant_temperature": 550.4586181640625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.042208053171634674,
+        "coolant_temperature": 494.96624755859375,
+        "minimum_temperature": 100.0,
+        "local_78": -688.7579956054688
+      },
+      "expected": {
+        "exchange_state": -688.7579956054688,
+        "spray_level_percent": 4.2208051681518555,
+        "coolant_temperature": 494.96624755859375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.36105087399482727,
+        "coolant_temperature": 167.2675018310547,
+        "minimum_temperature": 100.0,
+        "local_78": 34.72328186035156
+      },
+      "expected": {
+        "exchange_state": 34.72328186035156,
+        "spray_level_percent": 36.10508728027344,
+        "coolant_temperature": 167.2675018310547
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.010730130597949028,
+        "coolant_temperature": 231.99815368652344,
+        "minimum_temperature": 100.0,
+        "local_78": -643.7669067382812
+      },
+      "expected": {
+        "exchange_state": -643.7669067382812,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 231.99815368652344
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5842262506484985,
+        "coolant_temperature": 393.3701477050781,
+        "minimum_temperature": 100.0,
+        "local_78": 583.8445434570312
+      },
+      "expected": {
+        "exchange_state": 583.8445434570312,
+        "spray_level_percent": 58.42262649536133,
+        "coolant_temperature": 393.3701477050781
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.010781202465295792,
+        "coolant_temperature": 263.3987121582031,
+        "minimum_temperature": 100.0,
+        "local_78": -859.2058715820312
+      },
+      "expected": {
+        "exchange_state": -859.2058715820312,
+        "spray_level_percent": 1.078120231628418,
+        "coolant_temperature": 263.3987121582031
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8945590257644653,
+        "coolant_temperature": 350.0003662109375,
+        "minimum_temperature": 100.0,
+        "local_78": -788.901611328125
+      },
+      "expected": {
+        "exchange_state": -788.901611328125,
+        "spray_level_percent": 89.45590209960938,
+        "coolant_temperature": 350.0003662109375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.46192100644111633,
+        "coolant_temperature": 658.3490600585938,
+        "minimum_temperature": 100.0,
+        "local_78": -358.89093017578125
+      },
+      "expected": {
+        "exchange_state": -358.89093017578125,
+        "spray_level_percent": 46.192100524902344,
+        "coolant_temperature": 658.3490600585938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2900063395500183,
+        "coolant_temperature": 56.16022491455078,
+        "minimum_temperature": 100.0,
+        "local_78": -601.3949584960938
+      },
+      "expected": {
+        "exchange_state": -601.3949584960938,
+        "spray_level_percent": 29.000633239746094,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.20034635066986084,
+        "coolant_temperature": 386.33544921875,
+        "minimum_temperature": 100.0,
+        "local_78": 836.86962890625
+      },
+      "expected": {
+        "exchange_state": 836.86962890625,
+        "spray_level_percent": 20.034635543823242,
+        "coolant_temperature": 386.33544921875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5534601211547852,
+        "coolant_temperature": 526.3980102539062,
+        "minimum_temperature": 100.0,
+        "local_78": 68.51000213623047
+      },
+      "expected": {
+        "exchange_state": 68.51000213623047,
+        "spray_level_percent": 55.346012115478516,
+        "coolant_temperature": 526.3980102539062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.0014606446493417025,
+        "coolant_temperature": 476.1413269042969,
+        "minimum_temperature": 100.0,
+        "local_78": 709.3640747070312
+      },
+      "expected": {
+        "exchange_state": 709.3640747070312,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 476.1413269042969
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7324325442314148,
+        "coolant_temperature": 491.79583740234375,
+        "minimum_temperature": 100.0,
+        "local_78": -813.816650390625
+      },
+      "expected": {
+        "exchange_state": -813.816650390625,
+        "spray_level_percent": 73.24325561523438,
+        "coolant_temperature": 491.79583740234375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3575001060962677,
+        "coolant_temperature": 422.0343017578125,
+        "minimum_temperature": 100.0,
+        "local_78": 207.8487091064453
+      },
+      "expected": {
+        "exchange_state": 207.8487091064453,
+        "spray_level_percent": 35.7500114440918,
+        "coolant_temperature": 422.0343017578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4474664330482483,
+        "coolant_temperature": 651.9557495117188,
+        "minimum_temperature": 100.0,
+        "local_78": 959.8828735351562
+      },
+      "expected": {
+        "exchange_state": 959.8828735351562,
+        "spray_level_percent": 44.74664306640625,
+        "coolant_temperature": 651.9557495117188
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.46216025948524475,
+        "coolant_temperature": 617.0404663085938,
+        "minimum_temperature": 100.0,
+        "local_78": 893.3436279296875
+      },
+      "expected": {
+        "exchange_state": 893.3436279296875,
+        "spray_level_percent": 46.216026306152344,
+        "coolant_temperature": 617.0404663085938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5427355170249939,
+        "coolant_temperature": 533.1382446289062,
+        "minimum_temperature": 100.0,
+        "local_78": 982.0144653320312
+      },
+      "expected": {
+        "exchange_state": 982.0144653320312,
+        "spray_level_percent": 54.27355194091797,
+        "coolant_temperature": 533.1382446289062
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.38293737173080444,
+        "coolant_temperature": 621.130615234375,
+        "minimum_temperature": 100.0,
+        "local_78": -914.8323974609375
+      },
+      "expected": {
+        "exchange_state": -914.8323974609375,
+        "spray_level_percent": 38.29373550415039,
+        "coolant_temperature": 621.130615234375
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": -0.07631371170282364,
+        "coolant_temperature": 585.267578125,
+        "minimum_temperature": 100.0,
+        "local_78": 410.1002502441406
+      },
+      "expected": {
+        "exchange_state": 410.1002502441406,
+        "spray_level_percent": 0.0,
+        "coolant_temperature": 585.267578125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9164475202560425,
+        "coolant_temperature": 200.4841766357422,
+        "minimum_temperature": 100.0,
+        "local_78": -105.59131622314453
+      },
+      "expected": {
+        "exchange_state": -105.59131622314453,
+        "spray_level_percent": 91.6447525024414,
+        "coolant_temperature": 200.4841766357422
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2127067893743515,
+        "coolant_temperature": 180.96189880371094,
+        "minimum_temperature": 100.0,
+        "local_78": -671.4879760742188
+      },
+      "expected": {
+        "exchange_state": -671.4879760742188,
+        "spray_level_percent": 21.270679473876953,
+        "coolant_temperature": 180.96189880371094
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.7404130101203918,
+        "coolant_temperature": 191.47219848632812,
+        "minimum_temperature": 100.0,
+        "local_78": -991.9707641601562
+      },
+      "expected": {
+        "exchange_state": -991.9707641601562,
+        "spray_level_percent": 74.04129791259766,
+        "coolant_temperature": 191.47219848632812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9574114680290222,
+        "coolant_temperature": 614.4758911132812,
+        "minimum_temperature": 100.0,
+        "local_78": -891.5415649414062
+      },
+      "expected": {
+        "exchange_state": -891.5415649414062,
+        "spray_level_percent": 95.74114990234375,
+        "coolant_temperature": 614.4758911132812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0816508531570435,
+        "coolant_temperature": 677.7074584960938,
+        "minimum_temperature": 100.0,
+        "local_78": 301.5714111328125
+      },
+      "expected": {
+        "exchange_state": 301.5714111328125,
+        "spray_level_percent": 108.16508483886719,
+        "coolant_temperature": 677.7074584960938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.590944766998291,
+        "coolant_temperature": 658.9330444335938,
+        "minimum_temperature": 100.0,
+        "local_78": -451.1798095703125
+      },
+      "expected": {
+        "exchange_state": -451.1798095703125,
+        "spray_level_percent": 59.09447479248047,
+        "coolant_temperature": 658.9330444335938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.08690138906240463,
+        "coolant_temperature": 393.2212829589844,
+        "minimum_temperature": 100.0,
+        "local_78": 635.5879516601562
+      },
+      "expected": {
+        "exchange_state": 635.5879516601562,
+        "spray_level_percent": 8.690138816833496,
+        "coolant_temperature": 393.2212829589844
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6159239411354065,
+        "coolant_temperature": 675.7123413085938,
+        "minimum_temperature": 100.0,
+        "local_78": 475.2589416503906
+      },
+      "expected": {
+        "exchange_state": 475.2589416503906,
+        "spray_level_percent": 61.5923957824707,
+        "coolant_temperature": 675.7123413085938
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.3662881851196289,
+        "coolant_temperature": 450.1256408691406,
+        "minimum_temperature": 100.0,
+        "local_78": -586.5234375
+      },
+      "expected": {
+        "exchange_state": -586.5234375,
+        "spray_level_percent": 36.62881851196289,
+        "coolant_temperature": 450.1256408691406
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.4848310053348541,
+        "coolant_temperature": 459.7664794921875,
+        "minimum_temperature": 100.0,
+        "local_78": -485.7061462402344
+      },
+      "expected": {
+        "exchange_state": -485.7061462402344,
+        "spray_level_percent": 48.48310089111328,
+        "coolant_temperature": 459.7664794921875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5110619068145752,
+        "coolant_temperature": 440.82720947265625,
+        "minimum_temperature": 100.0,
+        "local_78": -561.9205932617188
+      },
+      "expected": {
+        "exchange_state": -561.9205932617188,
+        "spray_level_percent": 51.1061897277832,
+        "coolant_temperature": 440.82720947265625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5845886468887329,
+        "coolant_temperature": 685.7608032226562,
+        "minimum_temperature": 100.0,
+        "local_78": -172.78807067871094
+      },
+      "expected": {
+        "exchange_state": -172.78807067871094,
+        "spray_level_percent": 58.458866119384766,
+        "coolant_temperature": 685.7608032226562
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.8059515953063965,
+        "coolant_temperature": 192.728759765625,
+        "minimum_temperature": 100.0,
+        "local_78": -539.2705078125
+      },
+      "expected": {
+        "exchange_state": -539.2705078125,
+        "spray_level_percent": 80.59516143798828,
+        "coolant_temperature": 192.728759765625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.0066041946411133,
+        "coolant_temperature": 190.21693420410156,
+        "minimum_temperature": 100.0,
+        "local_78": 588.4561767578125
+      },
+      "expected": {
+        "exchange_state": 588.4561767578125,
+        "spray_level_percent": 100.66041564941406,
+        "coolant_temperature": 190.21693420410156
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.11043868958950043,
+        "coolant_temperature": 332.7521057128906,
+        "minimum_temperature": 100.0,
+        "local_78": -156.12298583984375
+      },
+      "expected": {
+        "exchange_state": -156.12298583984375,
+        "spray_level_percent": 11.043869018554688,
+        "coolant_temperature": 332.7521057128906
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.336742103099823,
+        "coolant_temperature": 583.8888549804688,
+        "minimum_temperature": 100.0,
+        "local_78": -222.64450073242188
+      },
+      "expected": {
+        "exchange_state": -222.64450073242188,
+        "spray_level_percent": 33.67420959472656,
+        "coolant_temperature": 583.8888549804688
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5940975546836853,
+        "coolant_temperature": 235.78146362304688,
+        "minimum_temperature": 100.0,
+        "local_78": 934.6476440429688
+      },
+      "expected": {
+        "exchange_state": 934.6476440429688,
+        "spray_level_percent": 59.40975570678711,
+        "coolant_temperature": 235.78146362304688
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6910817623138428,
+        "coolant_temperature": 598.9757690429688,
+        "minimum_temperature": 100.0,
+        "local_78": 17.911527633666992
+      },
+      "expected": {
+        "exchange_state": 17.911527633666992,
+        "spray_level_percent": 69.1081771850586,
+        "coolant_temperature": 598.9757690429688
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.12607625126838684,
+        "coolant_temperature": 450.9676513671875,
+        "minimum_temperature": 100.0,
+        "local_78": 220.18992614746094
+      },
+      "expected": {
+        "exchange_state": 220.18992614746094,
+        "spray_level_percent": 12.607625007629395,
+        "coolant_temperature": 450.9676513671875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6250184774398804,
+        "coolant_temperature": 323.94451904296875,
+        "minimum_temperature": 100.0,
+        "local_78": 209.6621856689453
+      },
+      "expected": {
+        "exchange_state": 209.6621856689453,
+        "spray_level_percent": 62.50184631347656,
+        "coolant_temperature": 323.94451904296875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6300243735313416,
+        "coolant_temperature": 495.3687744140625,
+        "minimum_temperature": 100.0,
+        "local_78": 548.5880126953125
+      },
+      "expected": {
+        "exchange_state": 548.5880126953125,
+        "spray_level_percent": 63.002437591552734,
+        "coolant_temperature": 495.3687744140625
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.9968302249908447,
+        "coolant_temperature": 282.8690490722656,
+        "minimum_temperature": 100.0,
+        "local_78": -489.6058654785156
+      },
+      "expected": {
+        "exchange_state": -489.6058654785156,
+        "spray_level_percent": 99.68302154541016,
+        "coolant_temperature": 282.8690490722656
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.11269616335630417,
+        "coolant_temperature": 55.62672805786133,
+        "minimum_temperature": 100.0,
+        "local_78": 820.3406982421875
+      },
+      "expected": {
+        "exchange_state": 820.3406982421875,
+        "spray_level_percent": 11.26961612701416,
+        "coolant_temperature": 100.0
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.5984781980514526,
+        "coolant_temperature": 245.6201171875,
+        "minimum_temperature": 100.0,
+        "local_78": -554.3876342773438
+      },
+      "expected": {
+        "exchange_state": -554.3876342773438,
+        "spray_level_percent": 59.84782028198242,
+        "coolant_temperature": 245.6201171875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.2514514625072479,
+        "coolant_temperature": 613.1799926757812,
+        "minimum_temperature": 100.0,
+        "local_78": -502.5940856933594
+      },
+      "expected": {
+        "exchange_state": -502.5940856933594,
+        "spray_level_percent": 25.145145416259766,
+        "coolant_temperature": 613.1799926757812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.18939387798309326,
+        "coolant_temperature": 588.2141723632812,
+        "minimum_temperature": 100.0,
+        "local_78": -312.1325988769531
+      },
+      "expected": {
+        "exchange_state": -312.1325988769531,
+        "spray_level_percent": 18.939388275146484,
+        "coolant_temperature": 588.2141723632812
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.44218507409095764,
+        "coolant_temperature": 329.69842529296875,
+        "minimum_temperature": 100.0,
+        "local_78": 17.346172332763672
+      },
+      "expected": {
+        "exchange_state": 17.346172332763672,
+        "spray_level_percent": 44.218505859375,
+        "coolant_temperature": 329.69842529296875
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.08649958670139313,
+        "coolant_temperature": 339.2572326660156,
+        "minimum_temperature": 100.0,
+        "local_78": -765.7446899414062
+      },
+      "expected": {
+        "exchange_state": -765.7446899414062,
+        "spray_level_percent": 8.649958610534668,
+        "coolant_temperature": 339.2572326660156
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.12010698765516281,
+        "coolant_temperature": 162.03692626953125,
+        "minimum_temperature": 100.0,
+        "local_78": -528.4567260742188
+      },
+      "expected": {
+        "exchange_state": -528.4567260742188,
+        "spray_level_percent": 12.010698318481445,
+        "coolant_temperature": 162.03692626953125
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 1.085222840309143,
+        "coolant_temperature": 435.8678283691406,
+        "minimum_temperature": 100.0,
+        "local_78": 856.3292236328125
+      },
+      "expected": {
+        "exchange_state": 856.3292236328125,
+        "spray_level_percent": 108.52228546142578,
+        "coolant_temperature": 435.8678283691406
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.25480061769485474,
+        "coolant_temperature": 278.2045593261719,
+        "minimum_temperature": 100.0,
+        "local_78": -931.506103515625
+      },
+      "expected": {
+        "exchange_state": -931.506103515625,
+        "spray_level_percent": 25.48006248474121,
+        "coolant_temperature": 278.2045593261719
+      }
+    },
+    {
+      "inputs": {
+        "liquid_level": 0.6762363314628601,
+        "coolant_temperature": 131.349365234375,
+        "minimum_temperature": 100.0,
+        "local_78": -852.6390991210938
+      },
+      "expected": {
+        "exchange_state": -852.6390991210938,
+        "spray_level_percent": 67.6236343383789,
+        "coolant_temperature": 131.349365234375
+      }
+    }
+  ]
+}
