@@ -1,4 +1,10 @@
 {
+  "containment_fans_block": true,
+  "fan_three_plus_five_equals_eight": true,
+  "fan_manual_command_retained": true,
+  "fan_heat_positive": true,
+  "fan_report_csv_matches_engine": true,
+  "report_series": 17,
   "cli_runs": [
     "fresh-thermal-startup",
     "fresh-initial-state",
@@ -7,6 +13,10 @@
     "native-stages",
     "native-stages",
     "native-stages",
+    "recovered-session-run",
+    "recovered-session-run",
+    "recovered-session-run",
+    "containment-fans-step",
     "recovered-session-run",
     "recovered-session-run",
     "recovered-session-run"
@@ -29,6 +39,13 @@
   "startup_clock_floor": true,
   "double_state_recomputation_matches": true,
   "gui_widget_results": {
+    "classic_fan_matches_cli": true,
+    "classic_fan_produces_heat": true,
+    "classic_heater_matches_cli": true,
+    "classic_rcp_matches_cli": true,
+    "classic_start_pause_reset": true,
+    "classic_ic_selector": true,
+    "classic_equipment_inspection": true,
     "live_mimic_opening": true,
     "step_button": true,
     "start_advances_numerical_state": true,
@@ -37,7 +54,7 @@
     "manual_heater_control": true,
     "gui_state_matches_cli": true,
     "embedded_sample_loading": true,
-    "paused_after_updates": 329
+    "paused_after_updates": 361
   },
   "windows": "GUI/CLI cross-compiled; not executed on Windows",
   "whole_original_scenarios": "not validated"

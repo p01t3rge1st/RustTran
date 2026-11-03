@@ -20,7 +20,8 @@ def main():
     args=parser.parse_args();out=args.output;out.mkdir(parents=True,exist_ok=True)
     version=tomllib.loads((ROOT/'rusttran/Cargo.toml').read_text())['package']['version']
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
-    info=json.dumps(dict(version=version,commit=commit,scope='Partial PCTran reconstruction; complete original scenario equivalence not validated'),indent=2)+'\n'
+    dirty=bool(subprocess.check_output(['git','status','--porcelain','--untracked-files=normal'],cwd=ROOT,text=True).strip())
+    info=json.dumps(dict(version=version,commit=commit,working_tree_dirty=dirty,scope='Partial PCTran reconstruction; complete original scenario equivalence not validated'),indent=2)+'\n'
     if args.platform in ['linux','all']:
         package=ROOT/'dist/rusttran-linux-x86_64'
         for name in ['rusttran','rusttran-cli','install.sh','rusttran.svg','org.rusttran.RustTran.desktop']:
@@ -34,6 +35,7 @@ def main():
         with zipfile.ZipFile(out/'rusttran-windows-x86_64.zip','w',zipfile.ZIP_DEFLATED) as archive:
             for name in ['RustTran.exe','RustTran-cli.exe']:archive.write(out/name,name)
             archive.write(ROOT/'rusttran/README.md','README.md')
+            archive.write(ROOT/'rusttran/assets/fonts/LICENSE.txt','FONT_LICENSE.txt')
             for path in sorted((ROOT/'rusttran/examples').rglob('*')):
                 if path.is_file():archive.write(path,'examples/'+path.relative_to(ROOT/'rusttran/examples').as_posix())
             archive.writestr('BUILD_INFO.json',info)

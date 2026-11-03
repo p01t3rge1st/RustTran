@@ -15,20 +15,26 @@ use std::{
     time::{Duration, Instant},
 };
 
-const BG: Color32 = Color32::from_rgb(25, 29, 32);
-const PANEL: Color32 = Color32::from_rgb(37, 42, 46);
-const BORDER: Color32 = Color32::from_rgb(65, 73, 80);
-const MUTED: Color32 = Color32::from_rgb(157, 167, 174);
-const INK: Color32 = Color32::from_rgb(230, 234, 236);
-const AMBER: Color32 = Color32::from_rgb(231, 191, 84);
+const BG: Color32 = Color32::from_rgb(198, 195, 198);
+const PANEL: Color32 = Color32::from_rgb(198, 195, 198);
+const BORDER: Color32 = Color32::from_rgb(80, 80, 80);
+const MUTED: Color32 = Color32::from_rgb(64, 64, 64);
+const INK: Color32 = Color32::from_rgb(0, 0, 0);
+const AMBER: Color32 = Color32::from_rgb(0, 0, 128);
 
 #[derive(Clone, Copy, PartialEq)]
 enum View {
     Simulation,
+    LiveSchematic,
     Schematic,
     Plots,
     Data,
     Properties,
+}
+impl View {
+    fn runs_session(self) -> bool {
+        matches!(self, Self::Simulation | Self::LiveSchematic)
+    }
 }
 #[derive(Default, Serialize)]
 struct MalfunctionDraft {
@@ -45,6 +51,7 @@ struct RustTranApp {
     error: Option<String>,
     show_malfunctions: bool,
     show_about: bool,
+    show_condition_selector: bool,
     show_initialization: bool,
     initialization_model: String,
     initialized_primary: Option<rusttran::fresh_steam::FreshInitializedState>,
@@ -72,47 +79,186 @@ struct RustTranApp {
     gui_state_path: Option<PathBuf>,
 }
 
+// Fixed-size vector icons avoid platform-dependent missing Unicode glyphs.
+fn classic_tool(ui: &mut egui::Ui, action: usize, tip: &str) -> egui::Response {
+    let response = ui.add_sized([25., 24.], egui::Button::new(""));
+    let p = ui.painter();
+    let r = response.rect;
+    let pos = |x: f32, y: f32| r.min + Vec2::new(x, y);
+    let line = |points: &[(f32, f32)], color: Color32| {
+        p.add(egui::Shape::line(
+            points.iter().map(|&(x, y)| pos(x, y)).collect(),
+            Stroke::new(1.0_f32, color),
+        ))
+    };
+    let rect = |x: f32, y: f32, w: f32, h: f32, color: Color32| {
+        p.rect_filled(
+            egui::Rect::from_min_size(pos(x, y), Vec2::new(w, h)),
+            0.,
+            color,
+        )
+    };
+    match action {
+        0 => {
+            rect(5., 5., 5., 14., Color32::from_rgb(0, 0, 128));
+            line(&[(11., 12.), (20., 12.), (16., 8.)], Color32::BLACK);
+            line(&[(20., 12.), (16., 16.)], Color32::BLACK);
+        }
+        1 => {
+            for (x, y) in [(5., 5.), (14., 5.), (5., 14.), (14., 14.)] {
+                rect(x, y, 5., 5., Color32::WHITE);
+                line(
+                    &[(x, y), (x + 5., y), (x + 5., y + 5.), (x, y + 5.), (x, y)],
+                    Color32::BLACK,
+                );
+            }
+        }
+        2 => {
+            line(&[(20., 12.), (5., 12.), (10., 7.)], Color32::BLACK);
+            line(&[(5., 12.), (10., 17.)], Color32::BLACK);
+        }
+        3 | 4 => {
+            p.circle_filled(pos(14., 6.), 2., Color32::BLACK);
+            line(&[(14., 9.), (10., 14.), (6., 14.)], Color32::BLACK);
+            line(&[(10., 13.), (15., 16.), (18., 20.)], Color32::BLACK);
+            line(&[(11., 14.), (8., 20.)], Color32::BLACK);
+            if action == 4 {
+                line(&[(6., 5.), (20., 20.)], Color32::WHITE);
+            }
+        }
+        5 => {
+            rect(7., 5., 11., 15., Color32::RED);
+            line(&[(5., 5.), (20., 20.)], Color32::WHITE);
+            line(&[(20., 5.), (5., 20.)], Color32::WHITE);
+        }
+        6 | 7 => {
+            rect(5., 5., 16., 15., Color32::WHITE);
+            line(&[(5., 5.), (5., 20.), (21., 20.)], Color32::BLACK);
+            line(
+                &[(7., 16.), (10., 11.), (14., 15.), (19., 8.)],
+                Color32::BLUE,
+            );
+            if action == 6 {
+                line(
+                    &[(7., 8.), (11., 16.), (18., 13.)],
+                    Color32::from_rgb(0, 132, 0),
+                );
+            }
+        }
+        11 => {
+            line(&[(7., 5.), (7., 20.)], Color32::BLACK);
+            p.add(egui::Shape::convex_polygon(
+                vec![pos(10., 5.), pos(20., 12.), pos(10., 20.)],
+                Color32::BLACK,
+                Stroke::NONE,
+            ));
+        }
+        8 => {
+            rect(6., 4., 14., 17., Color32::WHITE);
+            for y in [8., 11., 14., 17.] {
+                line(&[(9., y), (17., y)], Color32::BLUE);
+            }
+            line(
+                &[(6., 4.), (20., 4.), (20., 21.), (6., 21.), (6., 4.)],
+                Color32::BLACK,
+            );
+        }
+        9 => {
+            for y in [5., 11., 17.] {
+                rect(5., y, 4., 4., Color32::BLUE);
+                line(&[(12., y + 2.), (20., y + 2.)], Color32::BLACK);
+            }
+        }
+        _ => {
+            p.text(
+                r.center(),
+                egui::Align2::CENTER_CENTER,
+                "?",
+                FontId::proportional(18.),
+                Color32::from_rgb(0, 100, 100),
+            );
+        }
+    }
+    track_widget(response, &format!("classic_tool_{action}")).on_hover_text(tip)
+}
+fn track_widget(response: egui::Response, key: &str) -> egui::Response {
+    #[cfg(feature = "gui-screenshot")]
+    response.ctx.data_mut(|data| {
+        let id = egui::Id::new("test_widget_rects");
+        let mut bounds = data
+            .get_temp::<BTreeMap<String, [f32; 4]>>(id)
+            .unwrap_or_default();
+        let rect = response.rect;
+        bounds.insert(key.into(), [rect.min.x, rect.min.y, rect.max.x, rect.max.y]);
+        data.insert_temp(id, bounds);
+    });
+    #[cfg(not(feature = "gui-screenshot"))]
+    let _ = key;
+    response
+}
+
 fn theme(ctx: &egui::Context) {
-    let mut visuals = egui::Visuals::dark();
+    let mut fonts = egui::FontDefinitions::default();
+    fonts.font_data.insert(
+        "classic-sans".into(),
+        egui::FontData::from_static(include_bytes!("../assets/fonts/LiberationSans-Regular.ttf"))
+            .into(),
+    );
+    fonts.font_data.insert(
+        "classic-bold".into(),
+        egui::FontData::from_static(include_bytes!("../assets/fonts/LiberationSans-Bold.ttf"))
+            .into(),
+    );
+    fonts
+        .families
+        .entry(egui::FontFamily::Proportional)
+        .or_default()
+        .insert(0, "classic-sans".into());
+    fonts.families.insert(
+        egui::FontFamily::Name("classic-bold".into()),
+        vec!["classic-bold".into()],
+    );
+    ctx.set_fonts(fonts);
+    let mut visuals = egui::Visuals::light();
     visuals.panel_fill = BG;
     visuals.window_fill = PANEL;
-    visuals.extreme_bg_color = Color32::from_rgb(22, 26, 29);
-    visuals.faint_bg_color = Color32::from_rgb(43, 49, 54);
+    visuals.extreme_bg_color = Color32::from_rgb(255, 255, 255);
+    visuals.faint_bg_color = Color32::from_rgb(222, 223, 222);
     visuals.override_text_color = Some(INK);
-    visuals.selection.bg_fill = Color32::from_rgb(92, 77, 37);
+    visuals.selection.bg_fill = Color32::from_rgb(170, 170, 205);
     visuals.selection.stroke = Stroke::new(1.0_f32, AMBER);
     visuals.widgets.noninteractive.bg_stroke = Stroke::new(1.0_f32, BORDER);
-    visuals.widgets.inactive.bg_fill = Color32::from_rgb(48, 54, 59);
-    visuals.widgets.inactive.weak_bg_fill = Color32::from_rgb(48, 54, 59);
+    visuals.widgets.inactive.bg_fill = Color32::from_rgb(198, 195, 198);
+    visuals.widgets.inactive.weak_bg_fill = Color32::from_rgb(198, 195, 198);
     visuals.widgets.inactive.bg_stroke = Stroke::new(1.0_f32, BORDER);
-    visuals.widgets.hovered.bg_fill = Color32::from_rgb(67, 67, 54);
-    visuals.widgets.hovered.weak_bg_fill = Color32::from_rgb(67, 67, 54);
+    visuals.widgets.hovered.bg_fill = Color32::from_rgb(222, 223, 222);
+    visuals.widgets.hovered.weak_bg_fill = Color32::from_rgb(222, 223, 222);
     visuals.widgets.hovered.bg_stroke = Stroke::new(1.0_f32, AMBER);
-    visuals.widgets.active.bg_fill = Color32::from_rgb(98, 81, 37);
-    visuals.widgets.active.weak_bg_fill = Color32::from_rgb(98, 81, 37);
+    visuals.widgets.active.bg_fill = Color32::from_rgb(170, 170, 170);
+    visuals.widgets.active.weak_bg_fill = Color32::from_rgb(170, 170, 170);
     for widgets in [
         &mut visuals.widgets.inactive,
         &mut visuals.widgets.hovered,
         &mut visuals.widgets.active,
         &mut visuals.widgets.noninteractive,
     ] {
-        widgets.corner_radius = egui::CornerRadius::same(5);
+        widgets.corner_radius = egui::CornerRadius::ZERO;
         widgets.fg_stroke = Stroke::new(1.0_f32, INK);
     }
-    visuals.window_corner_radius = egui::CornerRadius::same(10);
+    visuals.window_corner_radius = egui::CornerRadius::ZERO;
     ctx.set_visuals(visuals);
     ctx.style_mut(|style| {
-        style.spacing.item_spacing = Vec2::new(10.0, 8.0);
-        style.spacing.button_padding = Vec2::new(12.0, 7.0);
+        style.spacing.item_spacing = Vec2::new(4.0, 3.0);
+        style.spacing.button_padding = Vec2::new(5.0, 3.0);
         style
             .text_styles
-            .insert(egui::TextStyle::Body, FontId::proportional(14.0));
+            .insert(egui::TextStyle::Body, FontId::proportional(12.0));
         style
             .text_styles
-            .insert(egui::TextStyle::Button, FontId::proportional(14.0));
+            .insert(egui::TextStyle::Button, FontId::proportional(12.0));
         style
             .text_styles
-            .insert(egui::TextStyle::Heading, FontId::proportional(22.0));
+            .insert(egui::TextStyle::Heading, FontId::proportional(16.0));
         style
             .text_styles
             .insert(egui::TextStyle::Monospace, FontId::monospace(14.0));
@@ -147,6 +293,7 @@ impl RustTranApp {
             error: None,
             show_malfunctions: false,
             show_about: false,
+            show_condition_selector: false,
             show_initialization: false,
             initialization_model: "1".into(),
             initialized_primary: None,
@@ -282,7 +429,7 @@ impl RustTranApp {
         self.show_initialization = open;
     }
     fn reset(&mut self) {
-        if self.view == View::Simulation {
+        if self.view.runs_session() {
             self.engine.reset();
             self.last_frame = Instant::now();
             return;
@@ -308,13 +455,18 @@ impl RustTranApp {
             .frame(
                 egui::Frame::new()
                     .fill(BG)
-                    .inner_margin(egui::Margin::symmetric(18, 2)),
+                    .inner_margin(egui::Margin::symmetric(4, 0)),
             )
             .show(ctx, |ui| {
                 egui::MenuBar::new().ui(ui, |ui| {
                     ui.menu_button("File", |ui| {
                         if ui.button("Simulation workspace…").clicked() {
                             self.view = View::Simulation;
+                            ui.close();
+                        }
+                        if ui.button("Load containment-cooling example").clicked() {
+                            let result=self.engine.load_fan_sample();self.handle(result);
+                            self.view=View::LiveSchematic;self.selected=None;
                             ui.close();
                         }
                         if ui.button("Export scenario…").clicked() {
@@ -328,7 +480,7 @@ impl RustTranApp {
                     });
                     ui.menu_button("Restart", |ui| {
                         if ui
-                            .button(if self.view == View::Simulation {
+                            .button(if self.view.runs_session() {
                                 "Reset loaded state"
                             } else {
                                 "Reset preview time"
@@ -338,7 +490,7 @@ impl RustTranApp {
                             self.reset();
                             ui.close();
                         }
-                        if self.view == View::Simulation {
+                        if self.view.runs_session() {
                             ui.label("Reset restores the loaded session. IC selection belongs to the stored-state views.");
                             return;
                         }
@@ -356,10 +508,20 @@ impl RustTranApp {
                             self.select_condition(&id);
                         }
                     });
-                    ui.menu_button("View", |ui| {
-                        if ui.add_enabled(self.engine.workspace.is_some(), egui::Button::new("Live simulation mimic…")).clicked() {
+                    ui.menu_button("Edit", |ui| {
+                        if ui.button("Malfunctions…").clicked() {
+                            self.show_malfunctions = true;
+                            ui.close();
+                        }
+                    });
+                    let menu_response = ui.menu_button("View", |ui| {
+                        if track_widget(ui.add_enabled(self.engine.workspace.is_some(), egui::Button::new("Live simulation mimic…")), "live_mimic_item").clicked() {
                             self.view=View::Simulation;
                             self.show_live_schematic=true;
+                            ui.close();
+                        }
+                        if track_widget(ui.add_enabled(self.engine.workspace.is_some(), egui::Button::new("Computed NSSS mimic")), "computed_mimic_item").clicked() {
+                            self.view=View::LiveSchematic; self.selected=None;
                             ui.close();
                         }
                         for (view, label) in [
@@ -375,20 +537,21 @@ impl RustTranApp {
                             }
                         }
                     });
+                    track_widget(menu_response.response, "view_menu");
                     ui.menu_button("Code Control", |ui| {
                         if ui.button("Initialize thermal systems…").clicked() {
                             self.show_initialization = true;
                             ui.close();
                         }
                         if ui
-                            .button(if self.view == View::Simulation {
+                            .button(if self.view.runs_session() {
                                 "Start simulation"
                             } else {
                                 "Start preview"
                             })
                             .clicked()
                         {
-                            let result = if self.view == View::Simulation {
+                            let result = if self.view.runs_session() {
                                 self.engine.start()
                             } else {
                                 self.clock.start()
@@ -397,7 +560,7 @@ impl RustTranApp {
                             ui.close();
                         }
                         if ui.button("Pause").clicked() {
-                            let result = if self.view == View::Simulation {
+                            let result = if self.view.runs_session() {
                                 self.engine.pause();
                                 Ok(())
                             } else {
@@ -429,155 +592,109 @@ impl RustTranApp {
             return;
         }
         egui::TopBottomPanel::top("toolbar")
-            .exact_height(82.0)
-            .frame(
-                egui::Frame::new()
-                    .fill(PANEL)
-                    .inner_margin(egui::Margin::symmetric(18, 12))
-                    .stroke(Stroke::new(1.0_f32, BORDER)),
-            )
-            .show(ctx, |ui| {
-                ui.horizontal(|ui| {
-                    ui.set_min_height(54.0);
-                    let (logo, _) = ui.allocate_exact_size(Vec2::splat(36.0), egui::Sense::hover());
-                    let painter = ui.painter();
-                    painter.rect_filled(logo, 6.0, Color32::from_rgb(72, 63, 35));
-                    for i in 0..3 {
-                        let x = logo.min.x + 9.0 + i as f32 * 8.0;
-                        painter.rect_filled(
-                            egui::Rect::from_min_size(
-                                egui::pos2(x, logo.min.y + 8.0),
-                                Vec2::new(3.0, 20.0),
-                            ),
-                            2.0,
-                            AMBER,
-                        );
-                    }
-                    ui.vertical(|ui| {
-                        ui.label(RichText::new("RustTran").size(22.0).strong());
-                        ui.label(
-                            RichText::new("PWR 3LP · CONTROL ROOM")
-                                .size(10.5)
-                                .color(MUTED),
-                        );
-                    });
-                    ui.add_space(18.0);
-                    let mut selected = self.model.selected_id.clone();
-                    egui::ComboBox::from_id_salt("condition_selector")
-                        .width(245.0)
-                        .truncate()
-                        .selected_text(format!(
-                            "IC {} · {}",
-                            selected,
-                            self.model
-                                .thermo
-                                .get("Description")
-                                .map(String::as_str)
-                                .unwrap_or("Initial condition")
-                        ))
-                        .show_ui(ui, |ui| {
-                            for condition in &self.model.conditions {
-                                ui.selectable_value(
-                                    &mut selected,
-                                    condition.id.clone(),
-                                    format!("IC {} · {}", condition.id, condition.description),
-                                );
-                            }
-                        });
-                    if selected != self.model.selected_id {
-                        self.select_condition(&selected);
-                    }
-                    ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                        if ui.button("Reset").clicked() {
-                            self.reset();
-                        }
-                        let label = if self.clock.running {
-                            "Pause"
-                        } else {
-                            "▶ Start preview"
-                        };
-                        let button = egui::Button::new(
-                            RichText::new(label).color(Color32::from_rgb(35, 31, 21)),
-                        )
-                        .fill(AMBER)
-                        .min_size(Vec2::new(145.0, 32.0));
-                        if ui.add(button).clicked() {
-                            let result = if self.clock.running {
-                                self.clock.pause()
-                            } else {
-                                self.clock.start()
-                            };
-                            self.handle(result);
-                            self.last_frame = Instant::now();
-                        }
-                        egui::ComboBox::from_id_salt("speed")
-                            .width(56.0)
-                            .selected_text(format!("{}×", self.clock.speed))
-                            .show_ui(ui, |ui| {
-                                for speed in [1.0, 2.0, 5.0, 10.0, 60.0] {
-                                    ui.selectable_value(
-                                        &mut self.clock.speed,
-                                        speed,
-                                        format!("{speed}×"),
-                                    );
-                                }
-                            });
-                        ui.vertical(|ui| {
-                            ui.label(
-                                RichText::new(format!("{:08.1} s", self.clock.elapsed_seconds))
-                                    .font(FontId::monospace(20.0))
-                                    .color(AMBER),
-                            );
-                            ui.label(RichText::new("PREVIEW TIME").size(9.5).color(MUTED));
-                        });
-                    });
-                });
-            });
-        egui::TopBottomPanel::top("navigation")
-            .exact_height(44.0)
+            .exact_height(28.0)
             .frame(
                 egui::Frame::new()
                     .fill(BG)
-                    .inner_margin(egui::Margin::symmetric(18, 6)),
+                    .inner_margin(egui::Margin::symmetric(2, 1))
+                    .stroke(Stroke::new(1.0_f32, Color32::WHITE)),
             )
             .show(ctx, |ui| {
                 ui.horizontal(|ui| {
-                    for (view, label) in [
-                        (View::Simulation, "Simulation"),
-                        (View::Schematic, "NSSS · Schematic"),
-                        (View::Plots, "Plots"),
-                        (View::Data, "State data"),
-                        (View::Properties, "Water / steam"),
-                    ] {
-                        if ui
-                            .selectable_label(
-                                self.view == view,
-                                RichText::new(label).color(if self.view == view {
-                                    AMBER
-                                } else {
-                                    MUTED
-                                }),
-                            )
-                            .clicked()
-                        {
-                            self.view = view;
+                    let buttons = [
+                        ("↪", "Close", 0),
+                        ("IC", "Initial conditions (Restart menu)", 1),
+                        (
+                            "↶",
+                            if self.view.runs_session() {
+                                "Reset loaded session"
+                            } else {
+                                "Reset preview time"
+                            },
+                            2,
+                        ),
+                        (
+                            "▶",
+                            if self.view.runs_session() {
+                                "Start simulation"
+                            } else {
+                                "Start preview clock; stored plant values do not evolve"
+                            },
+                            3,
+                        ),
+                        (
+                            "Ⅱ",
+                            if self.view.runs_session() {
+                                "Pause simulation"
+                            } else {
+                                "Pause preview clock"
+                            },
+                            4,
+                        ),
+                        ("■", "Reset", 5),
+                        ("▧", "NSSS mimic", 6),
+                        ("⌁", "Decay heat curve", 7),
+                        ("▤", "State data", 8),
+                        ("⚙", "Simulation workspace", 9),
+                        ("?", "About RustTran", 10),
+                        ("Step", "Compute one step (loaded session)", 11),
+                    ];
+                    for (_label, tip, action) in buttons {
+                        if classic_tool(ui, action, tip).clicked() {
+                            match action {
+                                0 => ctx.send_viewport_cmd(egui::ViewportCommand::Close),
+                                1 => {
+                                    self.view = View::Schematic;
+                                    self.engine.pause();
+                                    self.show_condition_selector = true;
+                                }
+                                2 | 5 => self.reset(),
+                                3 => {
+                                    let result = if self.view.runs_session() {
+                                        self.engine.start()
+                                    } else {
+                                        self.clock.start()
+                                    };
+                                    self.handle(result);
+                                }
+                                4 => {
+                                    let result = if self.view.runs_session() {
+                                        self.engine.pause();
+                                        Ok(())
+                                    } else {
+                                        self.clock.pause()
+                                    };
+                                    self.handle(result);
+                                }
+                                6 => {
+                                    self.view = if self.engine.workspace.is_some() {
+                                        View::LiveSchematic
+                                    } else {
+                                        View::Schematic
+                                    }
+                                }
+                                7 => self.view = View::Plots,
+                                8 => self.view = View::Data,
+                                9 => self.view = View::Simulation,
+                                11 => {
+                                    if let Some(w) = &mut self.engine.workspace {
+                                        w.pause();
+                                        let result = w.advance_steps(1);
+                                        self.handle(result);
+                                    } else {
+                                        self.error =
+                                            Some("Load a session in Simulation first.".into());
+                                    }
+                                }
+                                _ => self.show_about = true,
+                            }
                         }
                     }
-                    ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
-                        if ui.button("Malfunctions…").clicked() {
-                            self.show_malfunctions = true;
-                        }
-                        ui.label(
-                            RichText::new("INITIAL CONDITION VIEW")
-                                .size(10.0)
-                                .color(MUTED),
-                        );
-                    });
                 });
             });
     }
     fn status_bar(&mut self, ctx: &egui::Context) {
-        if self.view == View::Simulation {
+        if self.view.runs_session() {
             egui::TopBottomPanel::bottom("engine_status").show(ctx, |ui| {
                 ui.horizontal(|ui| {
                     ui.label(
@@ -588,20 +705,43 @@ impl RustTranApp {
                         })
                         .color(AMBER),
                     );
+                    if let Some(w) = &self.engine.workspace {
+                        ui.label(format!(
+                            "{:.2} sec · {} updates",
+                            w.session.controls.clock, w.updates
+                        ));
+                    }
                     ui.label("Supplied state · complete plant validation pending");
                 });
             });
             return;
         }
-        egui::TopBottomPanel::bottom("status").frame(egui::Frame::new().fill(PANEL).inner_margin(egui::Margin::symmetric(18,8)).stroke(Stroke::new(1.0_f32,BORDER))).show(ctx,|ui|{
-            ui.horizontal_wrapped(|ui|{
-                let (rect,_)=ui.allocate_exact_size(Vec2::splat(8.0),egui::Sense::hover());ui.painter().circle_filled(rect.center(),3.0,if self.clock.running{AMBER}else{MUTED});
-                ui.label(RichText::new(if self.clock.running{"RUN · PREVIEW"}else{"FREEZE"}).size(11.0).strong());
-                ui.separator();
-                ui.label(RichText::new("Plant values show the selected initial condition. Open Simulation to run a recovered session.").size(11.0).color(MUTED));
-                if let Some(text)=&self.notification{ui.label(RichText::new(text).color(AMBER));}
+        egui::TopBottomPanel::bottom("status")
+            .exact_height(22.)
+            .frame(
+                egui::Frame::new()
+                    .fill(BG)
+                    .inner_margin(egui::Margin::symmetric(3, 1))
+                    .stroke(Stroke::new(1.0_f32, Color32::WHITE)),
+            )
+            .show(ctx, |ui| {
+                ui.horizontal(|ui| {
+                    ui.label(if self.clock.running {
+                        "RUN · PREVIEW"
+                    } else {
+                        "FREEZE"
+                    });
+                    ui.separator();
+                    ui.label(format!("{:.2} sec", self.clock.elapsed_seconds));
+                    ui.separator();
+                    ui.label(format!("IC {}", self.model.selected_id));
+                    ui.separator();
+                    ui.label("Stored initial condition");
+                    if let Some(text) = &self.notification {
+                        ui.label(text);
+                    }
+                });
             });
-        });
     }
     fn plots(&self, ui: &mut egui::Ui) {
         ui.heading("Decay heat after shutdown");
@@ -833,13 +973,21 @@ impl RustTranApp {
     fn dialogs(&mut self, ctx: &egui::Context) {
         if let Some(selection) = &self.selected {
             let mut open = true;
+            let mut dismiss = false;
             egui::Window::new(&selection.label).id(egui::Id::new("equipment_details")).open(&mut open).resizable(false).show(ctx,|ui|{
-                ui.label(RichText::new(if self.selected_live {"Computed recovered-session value".into()} else {format!("IC {} · stored equipment state",self.model.selected_id)}).color(MUTED));ui.add_space(8.0);
+                ui.label(RichText::new(if self.selected_live {"Computed recovered-session value · commands apply on the next step".into()} else {format!("IC {} · stored equipment state",self.model.selected_id)}).color(MUTED));ui.add_space(8.0);
                 ui.horizontal(|ui|{ui.label(&selection.kind);ui.label(RichText::new(selection.value.map(|v|format!("{v:.1} {}",selection.unit)).unwrap_or_else(||"—".into())).font(FontId::monospace(24.0)).color(AMBER));});
                 ui.label(RichText::new(&selection.key).monospace().color(MUTED));
-                ui.separator();ui.label(if self.selected_live {"Change connected devices in the Simulation workspace."} else {"Stored initial-condition value. Open Simulation to control a recovered session."});
+                ui.separator();
+                if self.selected_live {
+                    if let Some(w)=&mut self.engine.workspace
+                        && !gui_engine::device_control(ui, &selection.key, &mut w.session.controls) {
+                        ui.label("No recovered control for this component yet.");
+                    }
+                } else { ui.label("Stored initial-condition value. Open Simulation to control a recovered session."); }
+                dismiss=track_widget(ui.button("Close"),"component_close").clicked();
             });
-            if !open {
+            if !open || dismiss {
                 self.selected = None;
             }
         }
@@ -921,6 +1069,9 @@ impl RustTranApp {
                 ui.heading("PWR · 3 loops");ui.label("Plant layout: NSSS mimic, ECCS, coolant loops and equipment panels.");ui.separator();
                 ui.label("The schematic displays stored initial-condition values. The Simulation view runs recovered sessions.");
                 ui.label("Click a pump or valve to inspect its stored state. Select an initial condition in the toolbar to update the plant display.");
+                egui::CollapsingHeader::new("Font license").show(ui, |ui| {
+                    egui::ScrollArea::vertical().max_height(220.).show(ui, |ui| { ui.label(include_str!("../assets/fonts/LICENSE.txt")); });
+                });
             });
         }
         if let Some(error) = self.error.clone() {
@@ -973,7 +1124,7 @@ impl eframe::App for RustTranApp {
         let now = Instant::now();
         let dt = now.duration_since(self.last_frame).as_secs_f64();
         self.last_frame = now;
-        let result = if self.view == View::Simulation {
+        let result = if self.view.runs_session() {
             self.engine.tick(dt)
         } else {
             self.engine.pause();
@@ -982,13 +1133,40 @@ impl eframe::App for RustTranApp {
         self.handle(result);
         self.menu(ctx);
         self.primary_initialization_window(ctx);
+        if self.show_condition_selector {
+            let mut open = true;
+            let mut choice = None;
+            egui::Window::new("Initial conditions")
+                .open(&mut open)
+                .resizable(false)
+                .show(ctx, |ui| {
+                    for condition in &self.model.conditions {
+                        if track_widget(
+                            ui.selectable_label(
+                                self.model.selected_id == condition.id,
+                                format!("IC {} · {}", condition.id, condition.description),
+                            ),
+                            &format!("ic_{}", condition.id),
+                        )
+                        .clicked()
+                        {
+                            choice = Some(condition.id.clone());
+                        }
+                    }
+                });
+            self.show_condition_selector = open;
+            if let Some(id) = choice {
+                self.select_condition(&id);
+                self.show_condition_selector = false;
+            }
+        }
         self.toolbar(ctx);
         self.status_bar(ctx);
         egui::CentralPanel::default()
             .frame(
                 egui::Frame::new()
                     .fill(BG)
-                    .inner_margin(egui::Margin::symmetric(14, 10)),
+                    .inner_margin(egui::Margin::same(0)),
             )
             .show(ctx, |ui| match self.view {
                 View::Simulation => {
@@ -1001,6 +1179,18 @@ impl eframe::App for RustTranApp {
                         self.selected_live = false;
                     }
                 }
+                View::LiveSchematic => {
+                    if let Some(w) = &self.engine.workspace {
+                        let readings =
+                            rusttran::live_readings::LiveReadings::from_session(&w.session);
+                        if let Some(selected) = schematic::draw_schematic(ui, &readings) {
+                            self.selected = Some(selected);
+                            self.selected_live = true;
+                        }
+                    } else {
+                        ui.label("Load a session in Simulation first.");
+                    }
+                }
                 View::Plots => self.plots(ui),
                 View::Data => self.data(ui),
                 View::Properties => self.properties(ui),
@@ -1011,17 +1201,39 @@ impl eframe::App for RustTranApp {
                 ui.label("Computed recovered-session values. Unconnected readouts and device states are shown as —. Run and control the session in Simulation.");
                 if let Some(w)=&self.engine.workspace {
                     ui.label(format!("Evaluation clock: {:.6} s · {} updates",w.session.globals.singles.get("0x54b40c").copied().unwrap_or(0.),w.updates));
-                    let readings=rusttran::live_readings::LiveReadings::from_globals(&w.session.globals);
+                    let readings=rusttran::live_readings::LiveReadings::from_session(&w.session);
                     if let Some(selected)=schematic::draw_schematic(ui,&readings) {self.selected=Some(selected);self.selected_live=true;}
                 }
             });
             self.show_live_schematic = open;
         }
+        if self.selected_live
+            && let (Some(selection), Some(w)) = (&mut self.selected, &self.engine.workspace)
+        {
+            let readings = rusttran::live_readings::LiveReadings::from_session(&w.session);
+            use rusttran::live_readings::PlantReadings;
+            selection.value = match selection.kind.as_str() {
+                "Pump" => readings.pump(&selection.key),
+                "Valve" => readings.valve(&selection.key),
+                "Fan" => readings.fan(&selection.key),
+                _ => readings
+                    .number(&selection.key)
+                    .map(|v| if selection.key == "LEV" { v * 100. } else { v }),
+            };
+        }
         self.dialogs(ctx);
         #[cfg(feature = "gui-screenshot")]
-        if let (Some(path), Some(w)) = (&self.gui_state_path, &self.engine.workspace) {
+        if let Some(path) = &self.gui_state_path {
+            let w = self.engine.workspace.as_ref();
             let temporary = path.with_extension("pending");
-            let data = serde_json::json!({"updates":w.updates,"running":w.running,"history_samples":w.history.len(),"live_schematic_open":self.show_live_schematic,"session":w.session,"error":self.error});
+            let data = serde_json::json!({
+                "updates":w.map_or(0,|w|w.updates),"running":w.is_some_and(|w|w.running),
+                "history_samples":w.map_or(0,|w|w.history.len()),"live_schematic_open":self.show_live_schematic,
+                "session":w.map(|w|&w.session),"error":self.error,
+                "view":match self.view { View::Simulation=>"simulation",View::LiveSchematic=>"live",View::Schematic=>"schematic",View::Data=>"data",View::Plots=>"plots",View::Properties=>"properties" },
+                "selected_ic":self.model.selected_id,"selected_component":self.selected.as_ref().map(|s|&s.key),
+                "widget_rects":ctx.data(|data|data.get_temp::<BTreeMap<String,[f32;4]>>(egui::Id::new("test_widget_rects"))).unwrap_or_default()
+            });
             if let Ok(bytes) = serde_json::to_vec(&data)
                 && std::fs::write(&temporary, bytes).is_ok()
             {
@@ -1082,7 +1294,7 @@ fn run() -> rusttran::Result<()> {
     let mut session_steps = 0_usize;
     let mut clock = RunClock::default();
     let mut view = View::Schematic;
-    let mut size = Vec2::new(1440.0, 1020.0);
+    let mut size = Vec2::new(1024.0, 716.0);
     while let Some(argument) = args.next() {
         match argument.as_str() {
             "--session" => {
@@ -1116,12 +1328,14 @@ fn run() -> rusttran::Result<()> {
                 view = match args.next().as_deref() {
                     Some("simulation") => View::Simulation,
                     Some("schematic") => View::Schematic,
+                    Some("live") => View::LiveSchematic,
                     Some("plots") => View::Plots,
                     Some("data") => View::Data,
                     Some("properties") => View::Properties,
                     _ => {
                         return Err(
-                            "--view needs simulation, schematic, plots, data or properties".into(),
+                            "--view needs simulation, schematic, live, plots, data or properties"
+                                .into(),
                         );
                     }
                 }
@@ -1129,13 +1343,13 @@ fn run() -> rusttran::Result<()> {
             "--size" => {
                 size.x = args.next().ok_or("--size needs width height")?.parse()?;
                 size.y = args.next().ok_or("--size needs height")?.parse()?;
-                if !size.x.is_finite() || !size.y.is_finite() || size.x < 1024.0 || size.y < 760.0 {
-                    return Err("window size must be finite and at least 1024×760".into());
+                if !size.x.is_finite() || !size.y.is_finite() || size.x < 1024.0 || size.y < 716.0 {
+                    return Err("window size must be finite and at least 1024×716".into());
                 }
             }
             "--help" | "-h" => {
                 println!(
-                    "rusttran [--data-root PATH] [--ic ID] [--initialize-thermal MODEL] [--session PATH] [--session-steps COUNT] [--preview-time SECONDS] [--view simulation|schematic|plots|data|properties] [--size WIDTH HEIGHT]\nRustTran desktop: stored initial conditions and recovered-engine Simulation workspace."
+                    "rusttran [--data-root PATH] [--ic ID] [--initialize-thermal MODEL] [--session PATH] [--session-steps COUNT] [--preview-time SECONDS] [--view simulation|schematic|live|plots|data|properties] [--size WIDTH HEIGHT]\nRustTran desktop: stored initial conditions and recovered-engine Simulation workspace."
                 );
                 return Ok(());
             }
@@ -1162,8 +1376,12 @@ fn run() -> rusttran::Result<()> {
                 .ok_or("missing loaded simulation")?
                 .advance_steps(session_steps)?;
         }
-        view = View::Simulation;
+        if view != View::LiveSchematic {
+            view = View::Simulation;
+        }
         clock.pause()?;
+    } else if view == View::LiveSchematic {
+        return Err("--view live requires --session".into());
     } else if session_steps > 0 {
         return Err("--session-steps requires --session".into());
     }
@@ -1174,7 +1392,7 @@ fn run() -> rusttran::Result<()> {
                 "../assets/rusttran-256.png"
             ))?)
             .with_inner_size(size)
-            .with_min_inner_size([1024.0, 760.0]),
+            .with_min_inner_size([1024.0, 716.0]),
         renderer: eframe::Renderer::Glow,
         ..Default::default()
     };

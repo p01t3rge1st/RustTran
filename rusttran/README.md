@@ -522,3 +522,63 @@ command to update. The installer downloads a successful release, verifies SHA-25
 and installs the GUI/CLI plus a Plasma/GNOME menu icon for the current user.
 Windows binaries and the Debian package are available from
 [Releases](https://github.com/p01t3rge1st/RustTran/releases/latest).
+
+## Classic NSSS interface
+
+The main mimic now follows the classic gray PCTran handbook layout, with cyan labels and white/yellow readouts. Run a supplied recovered session directly in the classic view:
+
+```sh
+rusttran --session examples/gui-simulation-session.json --view live
+```
+
+The example is synthetic, not a complete original reactor scenario. Click the RCP or pressurizer P/B heater targets for connected commands; Start/Pause/Step/Reset use the same engine as the Simulation workspace and CLI. Unknown values remain —. The main view and controls have X11 interaction coverage; complete visual and scenario equivalence remain unvalidated. Embedded Liberation fonts use SIL OFL 1.1 (see Help → Font license).
+
+### Containment fan cooling
+
+Use **File → Load containment-cooling example**, or:
+
+```sh
+rusttran --session examples/gui-containment-fans-session.json --view live
+```
+
+This is a separate synthetic supplied-state example. Click a fan for manual/percent controls and its Heat readout for the exchanger. The recovered fan producer applies the original pressure/time threshold and manual locks, retains commands, and records computed heat in the 17th history series. The optional containment balance below evolves pressure/temperature from supplied sources; complete upstream plant dynamics remain open. The CLI block is `containment-fans-step INPUT.json`; sessions select it through optional `controls.containment_fans`. Old sessions remain supported.
+
+
+Containment spray backend (source/debug CLI): `containment-spray-step INPUT.json`
+or optional session `controls.containment_spray`. Recovered activation, pump
+commands, saturation properties and cooling run before fans; session commands
+survive save/resume. Shared properties bind to current devices/supply/exchanger
+controls. Dedicated classic spray controls remain open; the numeric containment
+balance is connected below. See [evidence and targeted comparison](../analysis/CONTAINMENT_SPRAY_CONNECTIONS.md).
+
+
+Containment balance backend (source/debug CLI): `containment-balance-step INPUT.json`
+or optional session `controls.containment_balance`. The numeric mass/energy balance,
+wall feedback and conditional vessel solver evolve containment pressure, temperature
+and water level. The classic Reactor Bldg meters use these selected outputs;
+these outputs are recorded in history. Current supply/spray return flows, shared commands and
+event times are connected. Remaining thermal/Double/fault sources are explicit.
+`examples/gui-containment-session.json` is a synthetic four-update/resume fixture,
+not complete original IC startup. See [validation and remaining work](../analysis/CONTAINMENT_BALANCE_CONNECTIONS.md).
+
+
+Containment reaction source and hydrogen burning (source/debug CLI):
+`containment-thermal-step INPUT.json`, or optional session
+`controls.containment_thermal`. The original seven-point ignition curve is the
+default. Ignition, delayed heat release and extinction retain the shared event
+time across updates and save/resume; their current energy feeds the containment
+balance. The classic Hydrogen meter and 25 history series use selected producers.
+`examples/gui-hydrogen-session.json` is a synthetic sixteen-update fixture with
+one ignition, ten burn updates and extinction; upstream reaction/hydrogen
+production, full startup and whole original accident scenarios remain open.
+See [validation and next work](../analysis/CONTAINMENT_THERMAL_CONNECTIONS.md).
+
+
+Post-model reaction transfer (source/debug CLI): `reaction-transfer-step INPUT.json`
+or optional session `controls.reaction_transfer`. The recovered producer updates
+BFB4 and its histories before reaction energy/hydrogen/containment balance.
+`ReactionTransferInputs::from_initialized` maps the existing typed Double bundle
+without narrowing node state or masses; all110 initialized source pairs are checked.
+`examples/gui-reaction-session.json` is a synthetic sixteen-update fixture. The
+upstream alternate-model evolution and hydrogen generation remain open. FCO2,
+FH2O and FDEC are already loaded model parameters. See [evidence and next work](../analysis/REACTION_TRANSFER_CONNECTIONS.md).

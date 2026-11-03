@@ -67,6 +67,25 @@ def main():
         for row, step in zip(rows[1:], eight['steps']):
             assert float(row[1]) == step['singles']['0x54b40c']
             assert float(row[2]) == step['singles']['0x54b494']
+        fan_block = execute('containment-fans-step',json.loads((PACKAGE/'examples/containment-fans-step.json').read_text()))
+        assert fan_block['singles']['0x54b750'] > 0
+        fan_source=json.loads((PACKAGE/'examples/gui-containment-fans-session.json').read_text())['session']
+        fan_source['controls']['containment_fans']['fan_manual'][0]=True
+        fan_source['controls']['containment_fans']['fan_percent'][0]=75
+        fan_eight=execute('recovered-session-run',dict(session=fan_source,steps=8))
+        fan_three=execute('recovered-session-run',dict(session=fan_source,steps=3))
+        fan_five=execute('recovered-session-run',dict(session=fan_three['session'],steps=5))
+        assert fan_eight['session']==fan_five['session']
+        assert fan_eight['session']['controls']['containment_fans']['fan_percent'][0]==75
+        assert fan_eight['session']['globals']['singles']['0x54b750']>0
+        request_file.write_text(json.dumps(dict(session=fan_source,steps=8)))
+        fan_report=work/'fan-report'
+        subprocess.run(['python3',str(ROOT/'scripts/run_session_report.py'),'--state',str(request_file),'--steps','8','--cli',str(CLI),'--output',str(fan_report)],cwd=work,check=True,stdout=subprocess.DEVNULL)
+        fan_rows=list(csv.reader((fan_report/'history.csv').open()))
+        assert len(fan_rows)==9 and len(fan_rows[0])==19
+        assert fan_rows[0][-1]=='Containment fan heat removal [Btu/s]'
+        for row,step in zip(fan_rows[1:],fan_eight['steps']):
+            assert float(row[-1])==step['singles']['0x54b750']
         help_text = subprocess.check_output([str(PACKAGE / 'rusttran'), '--help'], cwd=work, text=True)
         assert '--session PATH' in help_text and '--session-steps COUNT' in help_text
         glibc = {}
@@ -77,7 +96,8 @@ def main():
             assert maximum <= (2, 28), (binary, maximum)
             glibc[binary] = '.'.join(map(str, maximum))
             assert digest(PACKAGE / binary) == digest(Path.home() / '.local/bin' / binary)
-        result = dict(cli_runs=runs, fresh_startup_singles=130, fresh_startup_i16=15,
+        result = dict(containment_fans_block=True,fan_three_plus_five_equals_eight=True,fan_manual_command_retained=True,
+                      fan_heat_positive=True,fan_report_csv_matches_engine=True,report_series=17,cli_runs=runs, fresh_startup_singles=130, fresh_startup_i16=15,
                       three_plus_five_equals_eight=True, loop_feedback_changes_temperature=True,
                       report_csv_matches_engine=True, gui_help_session_options=True,
                       max_glibc=glibc, installed_binaries_match=True,

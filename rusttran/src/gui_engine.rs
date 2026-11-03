@@ -1,4 +1,5 @@
 //! Desktop workspace for the recovered numerical engine, distinct from IC views.
+use super::track_widget;
 use eframe::egui::{self, Color32, RichText, Stroke, Vec2};
 use rusttran::{
     Result,
@@ -27,6 +28,17 @@ impl EnginePanel {
             "Synthetic sample session loaded and paused. This is not a complete reactor scenario."
                 .into(),
         );
+        Ok(())
+    }
+    pub fn load_fan_sample(&mut self) -> Result<()> {
+        let next = SimulationWorkspace::from_json(include_bytes!(
+            "../examples/gui-containment-fans-session.json"
+        ))?;
+        self.workspace = Some(next);
+        self.input.clear();
+        self.save_path = "rusttran-session.json".into();
+        self.csv_path = "rusttran-history.csv".into();
+        self.message=Some("Synthetic containment fan cooling sample. Remaining containment dynamics are not reconstructed.".into());
         Ok(())
     }
     pub fn load(&mut self, path: &Path) -> Result<()> {
@@ -67,9 +79,11 @@ impl EnginePanel {
         ui.horizontal(|ui| -> Result<()> {
             ui.heading("Simulation");
             if let Some(w) = &mut self.workspace {
-                if ui
-                    .button(if w.running { "Pause" } else { "▶ Start" })
-                    .clicked()
+                if track_widget(
+                    ui.button(if w.running { "Pause" } else { "▶ Start" }),
+                    "engine_start_pause",
+                )
+                .clicked()
                 {
                     if w.running {
                         w.pause();
@@ -77,13 +91,15 @@ impl EnginePanel {
                         w.start()?;
                     }
                 }
-                if ui
-                    .add_enabled(!w.running, egui::Button::new("Step"))
-                    .clicked()
+                if track_widget(
+                    ui.add_enabled(!w.running, egui::Button::new("Step")),
+                    "engine_step",
+                )
+                .clicked()
                 {
                     w.advance_steps(1)?;
                 }
-                if ui.button("Reset").clicked() {
+                if track_widget(ui.button("Reset"), "engine_reset").clicked() {
                     w.reset();
                 }
                 egui::ComboBox::from_id_salt("engine_speed")
@@ -120,7 +136,7 @@ impl EnginePanel {
             ui.label("Session JSON");
             ui.add(egui::TextEdit::singleline(&mut self.input).desired_width(550.));
             load = ui.button("Load state").clicked();
-            sample = ui.button("Load sample session").clicked();
+            sample = track_widget(ui.button("Load sample session"), "engine_load_sample").clicked();
         });
         if load {
             let path = self.input.clone();
@@ -160,11 +176,21 @@ impl EnginePanel {
                     if let Some(d)=&mut c.devices {for i in 0..3 {ui.checkbox(&mut d.controls.pump_manual[i],format!("Injection / charging {} manual",i+1));percent(ui,&format!("Injection / charging {}",i+1),&mut d.controls.pump_percent[i]);}ui.checkbox(&mut d.controls.letdown_manual,"Letdown manual");percent(ui,"Letdown",&mut d.controls.letdown_percent);}
                 });
                 egui::CollapsingHeader::new("Accumulator valves").show(&mut columns[1],|ui| {if let Some(valves)=&mut c.accumulator {for (i,v) in valves.iter_mut().enumerate() {ui.checkbox(&mut v.inhibited,format!("Valve {} inhibited",i+1));percent(ui,&format!("Accumulator valve {}",i+1),&mut v.opening);}}});
-                egui::CollapsingHeader::new("Heaters and spray").show(&mut columns[1],|ui| {
-                    ui.checkbox(&mut c.heaters.proportional_manual,"Proportional heater manual");percent(ui,"Proportional heater",&mut c.heaters.proportional_percent);
+                egui::CollapsingHeader::new("Containment fan cooling").show(&mut columns[1],|ui| {
+                    if let Some(fans)=&mut c.containment_fans {
+                        for i in 0..4 {
+                            ui.checkbox(&mut fans.fan_manual[i],format!("Fan {} manual",i+1));
+                            percent(ui,&format!("Fan {}",i+1),&mut fans.fan_percent[i]);
+                        }
+                        percent(ui,"Fan heat exchanger",&mut fans.exchanger_percent);
+                    } else {ui.label("Fan producer not selected in this state.");}
+                });
+                let heaters = egui::CollapsingHeader::new("Heaters and spray").show(&mut columns[1],|ui| {
+                    track_widget(ui.checkbox(&mut c.heaters.proportional_manual,"Proportional heater manual"),"heater_manual");percent(ui,"Proportional heater",&mut c.heaters.proportional_percent);
                     ui.checkbox(&mut c.heaters.backup_manual,"Backup heater manual");percent(ui,"Backup heater",&mut c.heaters.backup_percent);
                     ui.checkbox(&mut c.spray.spray_manual,"Spray manual");percent(ui,"Spray",&mut c.spray.spray_percent);percent(ui,"Auxiliary spray",&mut c.spray.auxiliary_percent);
                 });
+                track_widget(heaters.header_response,"heaters_header");
                 egui::CollapsingHeader::new("Steam-generator valves").show(&mut columns[1],|ui|{if let Some(v)=&mut c.steam_valves {for i in 0..2 {ui.checkbox(&mut v.main[i].manual,format!("SG {} main manual",['A','B'][i]));percent(ui,&format!("SG {} main",['A','B'][i]),&mut v.main[i].percent);ui.checkbox(&mut v.feedwater[i].manual,format!("SG {} feedwater manual",['A','B'][i]));percent(ui,&format!("SG {} feedwater",['A','B'][i]),&mut v.feedwater[i].percent);}}});
                 egui::CollapsingHeader::new("Recovered event inputs").show(&mut columns[1],|ui|{if let Some(events)=&mut c.event_schedule {ui.horizontal(|ui|{ui.label("RCP trip time (s)");ui.add(egui::DragValue::new(&mut events.times[6]).speed(0.1));});ui.horizontal(|ui|{ui.label("Loop / SG failure time (s)");ui.add(egui::DragValue::new(&mut events.times[8]).speed(0.1));});for (i,label) in [(7,"Thermal fault flag"),(8,"SG fault flag"),(2,"SG A valve fault"),(3,"SG B valve fault")] {ui.horizontal(|ui|{ui.label(label);ui.add(egui::DragValue::new(&mut events.flags[i]));});}}else{ui.label("No event schedule in this state; remaining scenario dispatch is not reconstructed.");}});
             });
@@ -181,7 +207,10 @@ impl EnginePanel {
 fn percent(ui: &mut egui::Ui, label: &str, value: &mut i16) {
     ui.horizontal(|ui| {
         ui.label(label);
-        ui.add(egui::DragValue::new(value).range(0..=100).suffix(" %"));
+        track_widget(
+            ui.add(egui::DragValue::new(value).range(0..=100).suffix(" %")),
+            &format!("percent_{label}"),
+        );
     });
 }
 fn chart(ui: &mut egui::Ui, w: &SimulationWorkspace, series: usize) {
@@ -257,4 +286,64 @@ fn chart(ui: &mut egui::Ui, w: &SimulationWorkspace, series: usize) {
         egui::FontId::monospace(11.),
         Color32::LIGHT_GRAY,
     );
+}
+
+/// Direct controls for source-identified components on the classic mimic.
+/// These edit the same retained commands used by the workspace and CLI.
+pub fn device_control(
+    ui: &mut egui::Ui,
+    key: &str,
+    c: &mut rusttran::recovered_step::RecoveredStepControls,
+) -> bool {
+    match key {
+        "RCP-1" | "RCP-2" => {
+            let i = usize::from(key == "RCP-2");
+            let Some(rcp) = &mut c.rcp else {
+                return false;
+            };
+            percent(ui, "Pump command", &mut rcp.pump_percent[i]);
+        }
+        "HeaterProportional" => {
+            track_widget(
+                ui.checkbox(&mut c.heaters.proportional_manual, "Manual"),
+                "mimic_heater_manual",
+            );
+            percent(ui, "Heater command", &mut c.heaters.proportional_percent);
+        }
+        "HeaterBackup" => {
+            ui.checkbox(&mut c.heaters.backup_manual, "Manual");
+            percent(ui, "Heater command", &mut c.heaters.backup_percent);
+        }
+        "ValvePressurizerSpray" => {
+            ui.checkbox(&mut c.spray.spray_manual, "Manual");
+            percent(ui, "Spray command", &mut c.spray.spray_percent);
+        }
+        "ValvePressurizerAuxSpray" => {
+            percent(
+                ui,
+                "Auxiliary spray command",
+                &mut c.spray.auxiliary_percent,
+            );
+        }
+        "Fan Cooler 1" | "Fan Cooler 2" | "Fan Cooler 3" | "Fan Cooler 4" => {
+            let Some(fans) = &mut c.containment_fans else {
+                return false;
+            };
+            let i = key.as_bytes()[key.len() - 1] as usize - b'1' as usize;
+            track_widget(
+                ui.checkbox(&mut fans.fan_manual[i], "Manual"),
+                "mimic_fan_manual",
+            );
+            percent(ui, "Fan command", &mut fans.fan_percent[i]);
+        }
+        "FAN_COOLING_HEAT" => {
+            let Some(fans) = &mut c.containment_fans else {
+                return false;
+            };
+            percent(ui, "Fan heat exchanger", &mut fans.exchanger_percent);
+        }
+        _ => return false,
+    }
+    ui.label("Commands take effect on the next simulation step. Recovered interlocks still apply.");
+    true
 }

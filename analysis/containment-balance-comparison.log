@@ -1,0 +1,4 @@
+CONTAINMENTBALANCE: 144/144 cases, 3708 output checks
+CONTAINMENTSTEP: 8/8 cases, 3247 output checks
+CONTAINMENTSESSION: 2/2 cases, 4404 output checks
+Total: 154/154 cases; 11359/11359 checks. analysis/containment-balance-comparison/results.html

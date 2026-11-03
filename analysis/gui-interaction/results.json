@@ -1,4 +1,13 @@
 {
+  "classic_fan_exchanger_matches_cli": true,
+  "classic_fan_exchanger_stops_heat": true,
+  "classic_fan_matches_cli": true,
+  "classic_fan_produces_heat": true,
+  "classic_heater_matches_cli": true,
+  "classic_rcp_matches_cli": true,
+  "classic_start_pause_reset": true,
+  "classic_ic_selector": true,
+  "classic_equipment_inspection": true,
   "live_mimic_opening": true,
   "step_button": true,
   "start_advances_numerical_state": true,

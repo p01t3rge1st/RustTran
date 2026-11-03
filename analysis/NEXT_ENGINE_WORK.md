@@ -1,6 +1,6 @@
 # Remaining engine dependency work
 
-Current portable build: 23912 component/composed-slice cases, 608507 checks; 170 Rust tests. Full PCTran replacement remains incomplete.
+Current portable build: 24672 component/composed-slice cases, 653483 checks; 176 Rust tests (2026-11-03). Full PCTran replacement remains incomplete.
 
 1. Primary numerical core is connected for all four zero/one flag combinations, including phase-state changes and flow preparation. Heater numeric control `0x500bd0` is now connected after live phase updates and before energy correction; 800 standalone and 160 composed original-slice cases pass. Spray selector `0x500950`, caller interlocks, manual/auto command writes and flow arithmetic are now ported (640 cases), and both controls are connected in original order (160 composed cases). Shared signal preparation `0x51e0c7–0x51e0d9` is checked (300). Fresh pressure reference `0x54ba4c` now copies nominal model pressure; initial interlock `0x54b6c0` is level * 100 (300 cases). Post-balance refresh and temperature floor are recovered as explicit stages (320 cases). Pressure signal, controls, balance and post-balance feedback are now one transactional primary control cycle (160 references); no integration or other-plant update is implied. New-start state/flags and connected inventory are checked (240+240), and the GUI/CLI primary startup backend covers all 110 model/operating-point pairs. Source/phase-flux preparation, relief discharge and post-discharge state are now bound to primary control/balance, stream derivatives and integration. Numerical updates can either consume six explicit SG derivatives or execute both recovered SG exchanges. 32 + 32 isolated updates and 8 + 4 three-update chains pass original-slice comparisons. Transfer/control/device producers and scenario scheduling are still boundaries. Dynamic temperature/level references and charging/letdown/injection automation are now optional producers in that pipeline (320 reference, 960 device and 32 connected-update cases). Next: complete initializer/restore branches, relief/protection dispatch and remaining source producers; then wire a complete timestep to GUI controls.
 2. Fresh SG phase/level (320) and feedwater/coolant-share setup (300) are now connected to fresh primary initialization. The fresh cached-state prefix through 0x51ba28 adds 25 writes (320 standalone cases); late numeric reference/property slices now extend the 110-model/operating-point backend to 130 Single outputs and 15 I16 flags; current derivatives are initialized only at the explicit source-proven stores. An explicit fresh control-history stage adds 11 stores with a supplied fault flag (320 cases); restored control state and 20-event rebasing are now ported (400 cases); known event inputs feed RCP/SG (32 additional connected cases). The numeric Double-model initializer is now assembled below. Double-model evolution, full restored-file loading/dispatch and remaining arrays/histories remain separate. See LATE_THERMAL_INITIALIZATION.md. Bind and initialize the cached globals required by the core from authenticated model/IC data and remaining upstream components. Do not fill missing source states or heat with zeros. The skipped frame flow locals are an exception because their zeroing is explicitly proven by original instructions.
@@ -70,3 +70,73 @@ authenticated IC conversions. No fallback to stored IC power, rods, containment
 or device state is used. Current GUI widget tests open this window and preserve
 manual heater/CLI equivalence. Current Rust test count is 170. Remaining schematic
 coverage depends on unconnected source/device states, not these nine mappings.
+
+
+Current closure (2026-11-03): containment fan cooling 0x5034b0 is connected
+before stream balance/integration, with retained automatic/manual commands.
+720 standalone references, 32 composed steps, and eight eight-step native-slice
+chains pass. Classic fan command 75% + Step matches CLI; heat is recorded as
+the 17th series. See CONTAINMENT_FAN_CONNECTIONS.md. Older paragraphs listing
+0x5034b0 as wholly unported are historical. Next containment work is spray
+0x502480, source/balance 0x5233c5–0x523f36, and binding recovered vessel solver
+0x5011b0. Fan heat alone does not evolve containment pressure/temperature.
+
+
+Current closure (2026-11-03, spray): 0x502480 is now ported and connected
+before fans. 192 standalone references, eight composed updates and two four-step
+chains pass; shared device/supply/exchanger properties use current commands.
+See CONTAINMENT_SPRAY_CONNECTIONS.md and SESSION_HANDOFF.md. Earlier references
+to wholly unported spray are historical. Next: complete source/balance
+0x5233c5–0x523f36 and vessel binding 0x5011b0, preserving caller-local spray
+return flow/temperature and all other source terms. Do not fill missing sources
+with zero. Dedicated classic spray controls are still open. Current tests:181;
+new targeted comparison:202 cases/10424 checks. Packages remain fan checkpoint.
+
+
+Current closure (2026-11-03, containment balance): numeric 0x5233c5–0x523f36
+and conditional vessel0x5011b0 are now connected after spray/fans. Includes
+caller wall feedback and old-temperature snapshot0x5232ee–0x523358; current
+supply return_flow (native EBP-0x28 from caller0x51df66) plus spray return_flow
+produce BA24. Current device command and event times2/3 override fallback copies.
+144 continuous native caller cases (84 solver calls), eight composed updates and
+two four-update chains pass. 187 Rust tests, Clippy and 154-case/11359-check
+small CLI report pass. PRB/TRB/LWRB and23-series history expose these outputs.
+Earlier paragraphs listing the numeric containment balance/vessel binding as
+wholly unported are historical. Next: remaining upstream heat/Double/fault
+producers (BB08/B754/BFB8, BF7C/BDF4, fault Single array+0x3c), complete scenario
+initialization/events/alternate model; dedicated classic spray controls.
+See CONTAINMENT_BALANCE_CONNECTIONS.md and SESSION_HANDOFF.md. No release or
+installed-binary rebuild; no original Windows end-to-end proof.
+
+
+Current closure (2026-11-03, thermal/hydrogen): BFB8 source0x51fc92–0x51fd6c
+and ignition/delayed burn/extinction0x52059e–0x520986 are ported and connected
+before normal thermal/SG and containment balance. Shared event4 time updates
+on ignition and survives save/resume. The original seven-point limit curve is
+recovered from initializer0x51d326–0x51d3c6 (EBX/EDI context0x51c98a/0x51c998),
+so it no longer needs an invented threshold.335 native cases +8 composed steps
++2 sixteen-update chains pass (345 cases/26830 checks);194 Rust tests and Clippy
+pass. Both chains ignite, burn ten times and extinguish. Classic Hydrogen and
+25-series history expose computed results. No new X11/package/Windows build.
+BB08 is already a checked startup constant: earlier lists calling it missing
+were inaccurate. BFB8/B754 arithmetic and burn logic are now closed; upstream
+C000/BFFC/BFB4/C004 reaction/inventory production and alternate-model Double
+BF7C/BDF4 evolution remain the earlier unresolved dependency, not new independent
+scope. Next inspect the source prefix before0x51fc92, model0x526b40 evolution
+and original initialization/restore. See CONTAINMENT_THERMAL_CONNECTIONS.md.
+
+
+Current closure (2026-11-03, post-model transfer):0x51f8c6–0x51fc92 is ported
+and connected before thermal/hydrogen. BFB4 and BFCC/BFBC/BFE8 histories are now
+produced, with Double node-fraction gate and original Single stores.206 native
+output cases +one native singular/error case,8 composed updates and2 sixteen-step
+chains pass;216-case/20542-check small CLI report,200 Rust tests and Clippy pass.
+One active chain has no transfer, the other transfers in all16 updates. Double
+control retention is bit-exact. Typed initialized-state adapter checked for110
+source pairs, preserving the original zero-fraction skip. Important correction:
+C000/BFFC/C004 are already loaded FCO2/FH2O/FDEC model parameters, not independent
+unported producers. BB08 also already loaded. Remaining upstream dependency is
+actual Double/node evolution0x526b40 and hydrogen production/BF7C/BDF4; full
+0x503f50, startup/restore/dispatcher and original Windows trajectories remain open.
+Do not repeat BFB4 transfer/source/burn/balance ports; see REACTION_TRANSFER_CONNECTIONS.md
+and SESSION_HANDOFF.md. No new packages, Windows build or X11 widget test.

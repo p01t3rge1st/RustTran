@@ -1,0 +1,13 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.90s
+     Running tests/containment_balance.rs (rusttran/target/debug/deps/containment_balance-5b09f42edad352c7)
+
+running 5 tests
+test inactive_vessel_and_small_mass_paths_do_not_read_unused_sources ... ok
+test late_errors_preserve_complete_state ... ok
+test session_resume_and_late_failure_preserve_connected_state ... ok
+test original_containment_balance_and_vessel_caller_match ... ok
+test original_composed_containment_steps_and_chains_match ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+

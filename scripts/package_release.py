@@ -9,6 +9,7 @@ dest=ROOT/'dist/rusttran-linux-x86_64'; dest.mkdir(parents=True,exist_ok=True)
 for name in ['rusttran','rusttran-cli']: shutil.copy2(source/name,dest/name)
 for source,name in [(ROOT/'scripts/install-linux.sh','install.sh'),(ROOT/'rusttran/assets/rusttran.svg','rusttran.svg'),(ROOT/'packaging/linux/org.rusttran.RustTran.desktop','org.rusttran.RustTran.desktop')]: shutil.copy2(source,dest/name)
 shutil.copy2(ROOT/'rusttran/README.md',dest/'README.md')
+shutil.copy2(ROOT/'rusttran/assets/fonts/LICENSE.txt',dest/'FONT_LICENSE.txt')
 shutil.copytree(ROOT/'rusttran/examples',dest/'examples',dirs_exist_ok=True)
 version=tomllib.loads((ROOT/'rusttran/Cargo.toml').read_text())['package']['version']
 deb=ROOT/'dist/deb-root'; (deb/'DEBIAN').mkdir(parents=True,exist_ok=True)

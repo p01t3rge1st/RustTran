@@ -1,4 +1,5 @@
-//! Vector plant mimic: recovered snapshots, no synthetic process values.
+//! Classic NSSS mimic measured from the original handbook's 1024×768 display.
+//! Geometry and colours are independent of the data source; absent values stay unknown.
 use eframe::egui::{self, Color32, FontId, Pos2, Rect, Sense, Stroke, Vec2};
 use rusttran::live_readings::PlantReadings;
 
@@ -9,13 +10,16 @@ pub struct ComponentSelection {
     pub kind: String,
     pub unit: String,
 }
-const BG: Color32 = Color32::from_rgb(37, 42, 46);
-const PANEL: Color32 = Color32::from_rgb(48, 54, 59);
-const BORDER: Color32 = Color32::from_rgb(75, 84, 91);
-const TEXT: Color32 = Color32::from_rgb(228, 231, 233);
-const MUTED: Color32 = Color32::from_rgb(159, 170, 179);
-const AMBER: Color32 = Color32::from_rgb(231, 191, 84);
-const FLUID: Color32 = Color32::from_rgb(136, 156, 167);
+const BG: Color32 = Color32::from_rgb(198, 195, 198);
+const PANEL: Color32 = Color32::from_rgb(132, 130, 132);
+const BLACK: Color32 = Color32::BLACK;
+const WHITE: Color32 = Color32::WHITE;
+const CYAN: Color32 = Color32::CYAN;
+const YELLOW: Color32 = Color32::YELLOW;
+const BLUE: Color32 = Color32::BLUE;
+const NAVY: Color32 = Color32::from_rgb(0, 0, 123);
+const RED: Color32 = Color32::from_rgb(198, 0, 0);
+const MAROON: Color32 = Color32::from_rgb(132, 0, 0);
 struct Canvas<'a> {
     ui: &'a mut egui::Ui,
     origin: Pos2,
@@ -23,18 +27,19 @@ struct Canvas<'a> {
     selection: Option<ComponentSelection>,
 }
 impl Canvas<'_> {
+    // Reference coordinates include the original title/menu/tool bars (69 px).
     fn p(&self, x: f32, y: f32) -> Pos2 {
-        self.origin + Vec2::new(x, y) * self.scale
+        self.origin + Vec2::new(x, y - 69.) * self.scale
     }
     fn rect(&self, x: f32, y: f32, w: f32, h: f32) -> Rect {
         Rect::from_min_size(self.p(x, y), Vec2::new(w, h) * self.scale)
     }
-    fn box_at(&self, x: f32, y: f32, w: f32, h: f32, color: Color32, r: f32) {
+    fn box_at(&self, x: f32, y: f32, w: f32, h: f32, color: Color32) {
         self.ui.painter().rect(
             self.rect(x, y, w, h),
-            r * self.scale,
+            0.,
             color,
-            Stroke::new(self.scale, BORDER),
+            Stroke::new(self.scale, BLACK),
             egui::StrokeKind::Inside,
         );
     }
@@ -43,7 +48,10 @@ impl Canvas<'_> {
             self.p(x, y),
             egui::Align2::CENTER_CENTER,
             t,
-            FontId::proportional(size * self.scale),
+            FontId::new(
+                size * self.scale,
+                egui::FontFamily::Name("classic-bold".into()),
+            ),
             color,
         );
     }
@@ -53,10 +61,26 @@ impl Canvas<'_> {
             Stroke::new(width * self.scale, color),
         ));
     }
+    fn pipe(&self, points: &[(f32, f32)], color: Color32, width: f32) {
+        self.line(points, BLACK, width + 2.);
+        self.line(points, color, width);
+    }
+    fn polygon(&self, points: &[(f32, f32)], color: Color32) {
+        self.ui.painter().add(egui::Shape::convex_polygon(
+            points.iter().map(|&(x, y)| self.p(x, y)).collect(),
+            color,
+            Stroke::new(self.scale, BLACK),
+        ));
+    }
     fn panel(&self, x: f32, y: f32, w: f32, h: f32, title: &str) {
-        self.box_at(x, y, w, h, PANEL, 5.);
-        self.text(x + w / 2., y + 15., title, 15., AMBER);
-        self.line(&[(x + 8., y + 29.), (x + w - 8., y + 29.)], BORDER, 1.);
+        self.box_at(x, y, w, h, PANEL);
+        self.line(
+            &[(x + 2., y + h - 2.), (x + 2., y + 2.), (x + w - 2., y + 2.)],
+            WHITE,
+            1.,
+        );
+        self.line(&[(x + 2., y + 22.), (x + w - 2., y + 22.)], WHITE, 2.);
+        self.text(x + w / 2., y + 12., title, 16., CYAN);
     }
     fn hit(
         &mut self,
@@ -77,11 +101,12 @@ impl Canvas<'_> {
             )),
             Sense::click(),
         );
+        let response = super::track_widget(response, &format!("mimic_{key}"));
         if response.hovered() {
             self.ui.painter().rect_stroke(
                 rect,
-                4.,
-                Stroke::new(1.5_f32, AMBER),
+                0.,
+                Stroke::new(self.scale, YELLOW),
                 egui::StrokeKind::Inside,
             );
         }
@@ -96,7 +121,7 @@ impl Canvas<'_> {
         }
         response.on_hover_text(format!("{label}\n{key}\nClick to inspect the value"));
     }
-    #[allow(clippy::too_many_arguments)] // Physical position, label, source value and its display unit.
+    #[allow(clippy::too_many_arguments)]
     fn meter(
         &mut self,
         x: f32,
@@ -108,446 +133,565 @@ impl Canvas<'_> {
         unit: &str,
         mult: f64,
     ) {
-        self.box_at(x, y, w, 43., BG, 3.);
-        self.text(x + w / 2., y + 12., label, 11., MUTED);
-        let v = value
-            .map(|v| format!("{:.1} {unit}", v * mult))
-            .unwrap_or_else(|| "—".into());
-        self.text(x + w / 2., y + 30., &v, 14., TEXT);
+        self.box_at(x, y, w, 32., PANEL);
+        self.line(&[(x, y + 32.), (x + w, y + 32.), (x + w, y)], WHITE, 1.);
+        self.text(x + w / 2., y + 8., label, 12., CYAN);
+        let value = value.map(|v| v * mult);
+        let highlighted = matches!(
+            key,
+            "POWER_MW" | "POWR" | "VOIDS" | "TAVG" | "TFPK" | "TPCT" | "WSTA" | "WSTB"
+        ) || key.starts_with("RELIEF_");
+        let unit_color = if unit == "°C" || unit == "MW" || matches!(key, "WSTA" | "WSTB") {
+            CYAN
+        } else {
+            YELLOW
+        };
+        self.text(
+            x + w * 0.38,
+            y + 23.,
+            &value
+                .map(|v| format!("{v:.1}"))
+                .unwrap_or_else(|| "—".into()),
+            12.,
+            if highlighted { YELLOW } else { WHITE },
+        );
+        self.text(x + w * 0.82, y + 23., unit, 11., unit_color);
         self.hit(
-            self.rect(x, y, w, 43.),
+            self.rect(x, y, w, 32.),
             key,
             label,
-            value.map(|value| value * mult),
+            value,
             "Process variable",
             unit,
         );
     }
-    fn pump(&mut self, x: f32, y: f32, key: &str, label: &str, model: &dyn PlantReadings) {
+    fn pump(&mut self, x: f32, y: f32, key: &str, model: &dyn PlantReadings) {
         let value = model.pump(key);
-        let active = value.is_some_and(|v| v > 0.);
+        let fill = match value {
+            Some(v) if v > 0. => RED,
+            Some(_) => WHITE,
+            None => PANEL,
+        };
         self.ui.painter().circle(
             self.p(x, y),
             12. * self.scale,
-            if active { AMBER } else { PANEL },
-            Stroke::new(2. * self.scale, BORDER),
+            fill,
+            Stroke::new(2. * self.scale, BLACK),
         );
-        self.line(
-            &[(x - 7., y), (x + 7., y)],
-            if active { BG } else { MUTED },
-            3.,
-        );
+        self.box_at(x - 7., y - 3., 11., 6., BLACK);
+        self.line(&[(x - 13., y + 12.), (x + 13., y + 12.)], BLACK, 2.);
         self.hit(
-            self.rect(x - 15., y - 15., 30., 30.),
+            self.rect(x - 14., y - 14., 28., 28.),
             key,
-            label,
+            key,
             value,
             "Pump",
             "%",
         );
     }
-    fn valve(&mut self, x: f32, y: f32, key: &str, label: &str, model: &dyn PlantReadings) {
+    fn valve(&mut self, x: f32, y: f32, key: &str, model: &dyn PlantReadings) {
         let value = model.valve(key);
-        let color = if value.is_some_and(|v| v > 0.) {
-            AMBER
-        } else {
-            MUTED
+        let color = match value {
+            Some(v) if v > 0. => RED,
+            Some(_) => WHITE,
+            None => PANEL,
         };
-        for pts in [
-            [(x - 10., y - 7.), (x, y), (x - 10., y + 7.)],
-            [(x + 10., y - 7.), (x, y), (x + 10., y + 7.)],
-        ] {
-            self.ui.painter().add(egui::Shape::convex_polygon(
-                pts.iter().map(|&(x, y)| self.p(x, y)).collect(),
-                PANEL,
-                Stroke::new(1.5 * self.scale, color),
-            ));
-        }
+        self.polygon(&[(x - 16., y - 7.), (x, y), (x - 16., y + 7.)], color);
+        self.polygon(&[(x + 16., y - 7.), (x, y), (x + 16., y + 7.)], color);
         self.hit(
-            self.rect(x - 14., y - 12., 28., 24.),
+            self.rect(x - 18., y - 9., 36., 18.),
             key,
-            label,
+            key,
             value,
             "Valve",
             "%",
         );
     }
+    fn hx(&self, x: f32, y: f32) {
+        self.box_at(x, y, 40., 19., BG);
+        for dy in [4., 10., 15.] {
+            self.line(&[(x + 7., y + dy), (x + 33., y + dy)], BLACK, 1.);
+        }
+        for dx in [8., 32.] {
+            self.line(&[(x + dx, y), (x + dx, y + 19.)], BLACK, 1.);
+        }
+    }
 }
 pub fn draw_schematic(ui: &mut egui::Ui, model: &dyn PlantReadings) -> Option<ComponentSelection> {
     let available = ui.available_size();
-    let scale = (available.x / 1024.).min(available.y / 630.).max(0.1);
-    let (rect, _) = ui.allocate_exact_size(Vec2::new(available.x, 630. * scale), Sense::hover());
+    let scale = (available.x / 1024.).min(available.y / 646.).max(0.1);
+    let (rect, _) = ui.allocate_exact_size(Vec2::new(available.x, 646. * scale), Sense::hover());
     let mut c = Canvas {
         ui,
         origin: rect.min + Vec2::new((available.x - 1024. * scale) / 2., 0.),
         scale,
         selection: None,
     };
-    c.box_at(0., 0., 1024., 630., BG, 0.);
-    // The original four safety-system panels remain on the left.
-    for (y, h, title, keys) in [
-        (12., 119., "HPI / CVCS", ["HPI-1", "HPI-2"]),
-        (143., 85., "Accumulator", ["", ""]),
-        (240., 147., "LPI / RHR", ["RHR-1", "RHR-2"]),
-        (395., 117., "RB Spray", ["RBS-1", "RBS-2"]),
+    c.box_at(0., 69., 1024., 646., BG);
+    // Primary piping, drawn first so instruments remain legible.
+    for (points, color, width) in [
+        (
+            vec![
+                (273., 82.),
+                (273., 73.),
+                (213., 73.),
+                (213., 172.),
+                (147., 172.),
+            ],
+            RED,
+            3.,
+        ),
+        (
+            vec![
+                (710., 82.),
+                (710., 73.),
+                (769., 73.),
+                (769., 171.),
+                (850., 171.),
+                (850., 310.),
+                (935., 310.),
+            ],
+            RED,
+            3.,
+        ),
+        (
+            vec![
+                (314., 119.),
+                (480., 119.),
+                (480., 153.),
+                (403., 153.),
+                (403., 128.),
+                (363., 128.),
+            ],
+            BLACK,
+            2.,
+        ),
+        (
+            vec![
+                (439., 330.),
+                (326., 330.),
+                (310., 375.),
+                (250., 375.),
+                (250., 391.),
+                (319., 391.),
+                (329., 359.),
+                (356., 359.),
+            ],
+            BG,
+            8.,
+        ),
+        (
+            vec![
+                (356., 359.),
+                (356., 402.),
+                (327., 402.),
+                (327., 359.),
+                (439., 359.),
+            ],
+            BG,
+            8.,
+        ),
+        (
+            vec![
+                (568., 330.),
+                (659., 330.),
+                (677., 375.),
+                (733., 375.),
+                (733., 391.),
+                (663., 391.),
+                (652., 359.),
+                (630., 359.),
+            ],
+            BG,
+            8.,
+        ),
+        (
+            vec![
+                (630., 359.),
+                (630., 402.),
+                (660., 402.),
+                (660., 359.),
+                (568., 359.),
+            ],
+            BG,
+            8.,
+        ),
+        (vec![(364., 260.), (364., 326.)], BG, 3.),
+        (
+            vec![
+                (937., 362.),
+                (839., 362.),
+                (839., 513.),
+                (819., 513.),
+                (819., 268.),
+                (762., 268.),
+            ],
+            BLUE,
+            3.,
+        ),
+        (
+            vec![(937., 310.), (799., 310.), (799., 497.), (931., 497.)],
+            RED,
+            3.,
+        ),
+        (vec![(218., 250.), (146., 250.)], BLUE, 3.),
+        (vec![(218., 280.), (146., 280.)], BLUE, 3.),
     ] {
-        c.panel(10., y, 135., h, title);
-        if keys[0].is_empty() {
-            c.valve(45., y + 48., "ValveAccumulator1", "Accumulator A", model);
-            c.valve(108., y + 48., "ValveAccumulator2", "Accumulator B", model);
-        } else {
-            c.pump(45., y + 49., keys[0], keys[0], model);
-            c.pump(108., y + 49., keys[1], keys[1], model);
-        }
-        if h > 100. {
-            let row = if title == "HPI / CVCS" {
-                ("CHG-1", "CVCS charging")
-            } else if title == "LPI / RHR" {
-                ("RHR-1", "RHR pump")
-            } else {
-                ("RBS-1", "Spray pump")
-            };
-            c.meter(20., y + 70., 115., row.1, row.0, model.pump(row.0), "%", 1.);
-        }
+        c.pipe(&points, color, width);
     }
-    // Steam paths and turbine/feedwater circuit.
-    c.line(
-        &[
-            (261., 70.),
-            (261., 38.),
-            (783., 38.),
-            (783., 146.),
-            (843., 146.),
-        ],
-        FLUID,
-        4.,
-    );
-    c.line(&[(733., 70.), (733., 38.)], FLUID, 4.);
-    c.valve(325., 38., "ValveMSIV-A", "Steam isolation A", model);
-    c.valve(671., 38., "ValveMSIV-B", "Steam isolation B", model);
-    c.line(&[(809., 145.), (809., 201.), (844., 201.)], FLUID, 4.);
-    c.valve(809., 180., "ValveTurbineBypass", "Turbine bypass", model);
-    c.ui.painter().add(egui::Shape::convex_polygon(
-        vec![
-            c.p(814., 135.),
-            c.p(851., 122.),
-            c.p(851., 166.),
-            c.p(814., 153.),
-        ],
-        PANEL,
-        Stroke::new(2. * scale, AMBER),
-    ));
-    c.text(832., 112., "Turbine", 12., MUTED);
-    c.box_at(815., 192., 37., 20., PANEL, 2.);
-    c.line(
-        &[
-            (834., 214.),
-            (834., 328.),
-            (791., 328.),
-            (791., 250.),
-            (755., 250.),
-        ],
-        FLUID,
-        4.,
-    );
-    c.line(
-        &[
-            (834., 328.),
-            (834., 438.),
-            (188., 438.),
-            (188., 250.),
-            (234., 250.),
-        ],
-        FLUID,
-        4.,
-    );
-    c.pump(834., 292., "MFW-1", "Main feedwater pump 1", model);
-    c.pump(834., 355., "MFW-2", "Main feedwater pump 2", model);
-    c.pump(834., 410., "EFW-TB", "Auxiliary feedwater", model);
-    c.valve(188., 250., "ValveMainFeed-A", "Feedwater A", model);
-    c.valve(791., 250., "ValveMainFeed-B", "Feedwater B", model);
-    // Primary loops flank the reactor as in the source mimic.
-    c.line(
-        &[
-            (437., 258.),
-            (343., 258.),
-            (343., 343.),
-            (262., 343.),
-            (262., 306.),
-        ],
-        FLUID,
-        7.,
-    );
-    c.line(
-        &[
-            (562., 258.),
-            (646., 258.),
-            (646., 343.),
-            (733., 343.),
-            (733., 306.),
-        ],
-        FLUID,
-        7.,
-    );
-    c.line(
-        &[
-            (262., 306.),
-            (262., 382.),
-            (359., 382.),
-            (359., 302.),
-            (437., 302.),
-        ],
-        FLUID,
-        7.,
-    );
-    c.line(
-        &[
-            (733., 306.),
-            (733., 382.),
-            (636., 382.),
-            (636., 302.),
-            (562., 302.),
-        ],
-        FLUID,
-        7.,
-    );
-    for (x, tag, pressure, level) in [(230., "A", "PSGA", "LSGA"), (701., "B", "PSGB", "LSGB")] {
-        c.box_at(x, 70., 64., 249., PANEL, 30.);
-        c.box_at(x + 9., 174., 46., 119., Color32::from_rgb(60, 72, 79), 15.);
+    // Safety injection, accumulator, residual heat removal and containment spray.
+    for (y, h, title) in [
+        (99., 139., "HPI/CVCS"),
+        (242., 88., "Accumulator"),
+        (339., 221., "LPI/RHR"),
+        (565., 131., "RB Spray"),
+    ] {
+        c.panel(3., y, 136., h, title);
+    }
+    for (x, y, key) in [
+        (34., 146., "HPI-1"),
+        (96., 146., "HPI-2"),
+        (34., 184., "CHG-1"),
+        (31., 407., "RHR-1"),
+        (87., 407., "RHR-2"),
+        (31., 608., "RBS-1"),
+        (96., 608., "RBS-2"),
+    ] {
+        c.pump(x, y, key, model);
+    }
+    for (x, y, key) in [
+        (34., 218., "ValvePressurizerLetdown"),
+        (34., 284., "ValveAccumulator1"),
+        (96., 284., "ValveAccumulator2"),
+        (34., 312., "ValveAccumulator1"),
+    ] {
+        c.valve(x, y, key, model);
+    }
+    for (y, label, key, unit) in [
+        (170., "Flow", "CVCS_FLOW", "t/hr"),
+        (202., "Letdown", "LETDOWN_FLOW", "t/hr"),
+        (297., "Flow", "ACC_FLOW", "t/hr"),
+        (438., "RHR Flow", "RHR_FLOW", "t/hr"),
+        (479., "RWST Lvl", "RWST_VOLUME", "m³"),
+        (518., "Heat", "RHR_HEAT", "MW"),
+        (625., "Flow", "SPRAY_FLOW", "t/hr"),
+        (658., "Heat", "SPRAY_HEAT", "MW"),
+    ] {
+        c.meter(57., y, 79., label, key, model.number(key), unit, 1.);
+    }
+    for (x, label) in [(8., "LPI"), (49., "Sump"), (91., "SDC")] {
+        c.box_at(x, 363., 40., 22., BG);
+        c.text(x + 20., 374., label, 12., BLACK);
+    }
+    c.box_at(16., 458., 32., 47., NAVY);
+    c.box_at(17., 459., 30., 9., Color32::from_rgb(0, 132, 0));
+    c.hx(11., 528.);
+    c.hx(11., 650.);
+    // Steam generators: pressure and level are source values, not screenshot numbers.
+    for (x, side, pk, lk, flow, feed) in [
+        (232., "A", "PSGA", "LSGA", "WSTA", "WFWA"),
+        (659., "B", "PSGB", "LSGB", "WSTB", "WFWB"),
+    ] {
+        ellipse(&c, x, 82., 82., 64., CYAN);
+        c.box_at(x, 127., 82., 44., NAVY);
+        c.polygon(
+            &[(x, 170.), (x + 82., 170.), (x + 74., 205.), (x + 8., 205.)],
+            NAVY,
+        );
+        ellipse(&c, x + 8., 310., 66., 65., MAROON);
+        c.box_at(x + 8., 202., 66., 141., NAVY);
+        c.box_at(x + 27., 193., 24., 150., MAROON);
         c.line(
             &[
-                (x + 22., 283.),
-                (x + 22., 189.),
-                (x + 42., 189.),
-                (x + 42., 283.),
+                (x + 27., 343.),
+                (x + 27., 200.),
+                (x + 31., 189.),
+                (x + 40., 184.),
+                (x + 47., 189.),
+                (x + 51., 200.),
+                (x + 51., 343.),
             ],
-            AMBER,
-            3.,
-        );
-        c.text(
-            x + 32.,
-            55.,
-            &format!("SG {tag} · {}×", if tag == "A" { 1 } else { 2 }),
-            16.,
-            TEXT,
+            WHITE,
+            1.,
         );
         c.meter(
-            x - 18.,
-            88.,
-            100.,
-            "Pressure",
-            pressure,
-            model.number(pressure),
+            x + 4.,
+            98.,
+            74.,
+            &format!("'{side}' SG Level"),
+            lk,
+            model.number(lk),
+            "m",
+            1.,
+        );
+        c.meter(
+            x + 4.,
+            130.,
+            74.,
+            &format!("'{side}' SG Press"),
+            pk,
+            model.number(pk),
             "kg/cm²",
             1.,
         );
+        let mx = if side == "A" { 143. } else { 773. };
         c.meter(
-            x - 18.,
-            133.,
-            100.,
-            "SG level",
-            level,
-            model.number(level),
-            "",
+            mx,
+            122.,
+            78.,
+            "Stm Flow",
+            flow,
+            model.number(flow),
+            "t/hr",
+            1.,
+        );
+        c.meter(
+            if side == "A" { 147. } else { 757. },
+            if side == "A" { 202. } else { 220. },
+            78.,
+            "Feed Flow",
+            feed,
+            model.number(feed),
+            "t/hr",
+            1.,
+        );
+        let vx = if side == "A" { 185. } else { 799. };
+        for (y, kind) in [
+            (172., "MSIV"),
+            (if side == "A" { 250. } else { 268. }, "AuxFeed"),
+            (if side == "A" { 280. } else { 298. }, "MainFeed"),
+        ] {
+            c.valve(vx, y, &format!("Valve{kind}-{side}"), model);
+        }
+        c.box_at(if side == "A" { 153. } else { 745. }, 321., 78., 32., PANEL);
+        c.text(
+            if side == "A" { 192. } else { 784. },
+            343.,
+            if side == "A" { "1 × SG" } else { "2 × SG" },
+            13.,
+            YELLOW,
+        );
+    }
+    for (x, side) in [(165., "A"), (801., "B")] {
+        for (dx, kind) in [(0., "ADV"), (34., "MSV")] {
+            let xx = x + dx;
+            c.line(&[(xx, 111.), (xx, 89.)], BLACK, 2.);
+            c.valve(xx, 88., &format!("ValveSG_{kind}-{side}"), model);
+        }
+        c.meter(
+            if side == "A" { 40. } else { 858. },
+            68.,
+            99.,
+            "ADV/MSV Flow",
+            &format!("RELIEF_{side}"),
+            None,
+            "t/hr",
             1.,
         );
     }
-    c.pump(359., 345., "RCP-1", "Coolant pump A", model);
-    c.pump(636., 345., "RCP-2", "Coolant pump B", model);
-    // Pressurizer vessel and relief/spray fittings.
-    c.line(&[(367., 219.), (367., 258.), (437., 258.)], FLUID, 4.);
-    c.box_at(338., 85., 57., 137., PANEL, 25.);
-    c.box_at(343., 160., 47., 43., Color32::from_rgb(60, 72, 79), 4.);
-    c.line(&[(367., 85.), (367., 64.), (408., 64.)], FLUID, 3.);
-    c.valve(402., 64., "ValvePressurizerPORV1", "PORV", model);
-    c.text(366., 239., "Pressurizer", 12., MUTED);
-    c.meter(
-        420.,
-        64.,
-        135.,
-        "Pressure",
-        "P",
-        model.number("P"),
-        "kg/cm²",
-        1.,
-    );
-    c.meter(
-        420.,
-        110.,
-        135.,
-        "Level",
-        "LEV",
-        model.number("LEV"),
-        "%",
-        100.,
-    );
-    // Reactor: outlined vessel with seven recognizable fuel rods.
-    c.box_at(433., 223., 134., 229., PANEL, 62.);
-    c.box_at(429., 255., 142., 15., BORDER, 2.);
-    c.box_at(445., 277., 110., 117., Color32::from_rgb(60, 72, 79), 4.);
-    for i in 0..7 {
-        let x = 453. + i as f32 * 14.;
-        c.box_at(x, 312., 7., 77., AMBER, 3.);
-        c.line(&[(x + 3.5, 292.), (x + 3.5, 311.)], MUTED, 2.);
+    // Pressurizer, relief tank and heater elements.
+    ellipse(&c, 333., 125., 60., 52., MAROON);
+    c.box_at(333., 150., 60., 91., CYAN);
+    ellipse(&c, 333., 215., 60., 51., MAROON);
+    c.box_at(334., 162., 58., 78., CYAN);
+    for x in [340., 365.] {
+        c.box_at(x, 208., 23., 24., Color32::GREEN);
+        c.text(x + 11., 220., if x < 350. { "P" } else { "B" }, 12., BLACK);
     }
-    c.text(500., 422., "REACTOR", 16., TEXT);
+    for (x, key, label) in [
+        (340., "HeaterProportional", "Proportional heater"),
+        (365., "HeaterBackup", "Backup heater"),
+    ] {
+        c.hit(c.rect(x, 208., 23., 24.), key, label, None, "Heater", "%");
+    }
+    c.box_at(442., 178., 55., 53., CYAN);
+    c.box_at(442., 215., 55., 15., NAVY);
+    c.valve(437., 159., "ValvePressurizerPORV1", model);
+    c.valve(403., 207., "ValvePressurizerSpray", model);
+    c.panel(505., 81., 104., 120., "Pressurizer");
+    for (y, label, key, unit, mult) in [
+        (101., "Pressure", "P", "kg/cm²", 1.),
+        (133., "Level", "LEV", "%", 100.),
+        (166., "Heater Power", "HEATER_POWER", "kW", 1.),
+    ] {
+        c.meter(508., y, 98., label, key, model.number(key), unit, mult);
+    }
+    // Reactor vessel and fuel rods.
+    ellipse(&c, 423., 250., 145., 93., MAROON);
+    ellipse(&c, 423., 439., 145., 93., MAROON);
+    c.box_at(423., 282., 145., 192., BLUE);
+    c.box_at(416., 277., 159., 15., MAROON);
+    for i in 0..6 {
+        let x = 442. + i as f32 * 19.;
+        c.box_at(x, 373., 9., 95., WHITE);
+        c.box_at(x + 2., 379., 5., 85., RED);
+        c.line(&[(x + 4., 360.), (x + 4., 373.)], BLACK, 2.);
+    }
     c.hit(
-        c.rect(433., 223., 134., 229.),
+        c.rect(423., 250., 145., 282.),
         "POWR",
         "Reactor",
-        model.number("POWR").map(|value| value * 100.0),
+        model.number("POWR").map(|v| v * 100.),
         "Reactor",
         "%",
     );
-    c.meter(
-        304.,
-        395.,
-        111.,
-        "TAVG",
-        "TAVG",
-        model.number("TAVG"),
-        "°C",
-        1.,
-    );
-    c.meter(
-        585.,
-        395.,
-        111.,
-        "Loop A flow",
-        "WRCA",
-        model.number("WRCA"),
-        "",
-        1.,
-    );
-    c.text(501., 473., "WESTINGHOUSE · PWR", 17., MUTED);
-    // Right setpoint/instrument column keeps the original ordering.
-    c.panel(873., 12., 141., 123., "Reactor");
-    c.meter(
-        883.,
-        48.,
-        121.,
-        "Power",
-        "POWR",
-        model.number("POWR"),
-        "%",
-        100.,
-    );
-    c.meter(
-        883.,
-        92.,
-        121.,
-        "Control rods",
-        "RDPOS",
-        model.number("RDPOS"),
-        "%",
-        1.,
-    );
-    c.panel(873., 147., 141., 217., "Steam Generators");
-    c.meter(
-        883.,
-        184.,
-        121.,
-        "Pressure A",
-        "PSGA",
-        model.number("PSGA"),
-        "kg/cm²",
-        1.,
-    );
-    c.meter(
-        883.,
-        231.,
-        121.,
-        "Pressure B",
-        "PSGB",
-        model.number("PSGB"),
-        "kg/cm²",
-        1.,
-    );
-    c.meter(
-        883.,
-        278.,
-        121.,
-        "SG A level",
-        "LSGA",
-        model.number("LSGA"),
-        "",
-        1.,
-    );
-    c.text(943., 344., "A × 1 · B × 2", 12., MUTED);
-    c.panel(873., 376., 141., 127., "Pressurizer");
-    c.meter(
-        883.,
-        413.,
-        121.,
-        "Level",
-        "LEV",
-        model.number("LEV"),
-        "%",
-        100.,
-    );
-    c.meter(
-        883.,
-        458.,
-        121.,
-        "Pressure",
-        "P",
-        model.number("P"),
-        "kg/cm²",
-        1.,
-    );
-    // Containment, core and protection panels span the base of the original.
-    c.panel(10., 517., 173., 103., "RB Fan / Vent");
-    for x in [36., 75., 114., 153.] {
-        c.ui.painter()
-            .circle_stroke(c.p(x, 560.), 10. * scale, Stroke::new(1.5 * scale, MUTED));
-        c.line(&[(x - 6., 554.), (x + 6., 566.)], MUTED, 2.);
+    c.pump(356., 359., "RCP-1", model);
+    c.pump(630., 359., "RCP-2", model);
+    for (x, y, label, key, unit) in [
+        (335., 290., "'A' HL Temp", "HOT_LEG_A", "°C"),
+        (573., 290., "'B' HL Temp", "HOT_LEG_B", "°C"),
+        (247., 406., "'A' CL Temp", "COLD_LEG_A", "°C"),
+        (329., 406., "'A' Flow", "WRCA", "t/hr"),
+        (575., 406., "'B' Flow", "WRCB", "t/hr"),
+        (657., 406., "'B' CL Temp", "COLD_LEG_B", "°C"),
+    ] {
+        c.meter(x, y, 79., label, key, model.number(key), unit, 1.);
     }
-    c.valve(49., 596., "ValveRBVent", "Building vent", model);
-    c.text(123., 596., "VENT", 12., MUTED);
-    c.panel(195., 517., 200., 103., "Reactor Building");
+    c.text(245., 460., "Westinghouse PWR", 20., BLUE);
+    // Feedwater pump train and turbine/condenser.
+    c.polygon(
+        &[(939., 300.), (994., 288.), (994., 334.), (939., 322.)],
+        BLUE,
+    );
+    c.box_at(936., 346., 58., 31., NAVY);
+    c.box_at(938., 350., 54., 10., PANEL);
+    c.valve(892., 310., "ValveTurbineStop", model);
+    c.valve(891., 362., "ValveTurbineBypass", model);
+    for (x, y, key) in [
+        (898., 407., "MFW-1"),
+        (898., 438., "MFW-2"),
+        (898., 469., "MFW-3"),
+        (952., 407., "EFW-TB"),
+        (960., 466., "EFW-M1"),
+        (960., 498., "EFW-M2"),
+        (899., 524., "CDS"),
+    ] {
+        c.pump(x, y, key, model);
+    }
+    c.line(
+        &[
+            (872., 395.),
+            (872., 458.),
+            (923., 458.),
+            (923., 395.),
+            (975., 395.),
+            (975., 377.),
+        ],
+        BLUE,
+        3.,
+    );
+    c.line(&[(985., 450.), (985., 498.), (975., 498.)], BLUE, 3.);
+    c.box_at(968., 418., 30., 31., NAVY);
+    c.box_at(969., 419., 28., 12., Color32::from_rgb(0, 132, 0));
+    // Original control panel positions. No inferred setpoints or automation modes.
+    for (y, h, title) in [
+        (98., 91., "Reactor"),
+        (193., 91., "Steam Generators"),
+        (609., 90., "Pressurizer"),
+    ] {
+        c.panel(858., y, 144., h, title);
+    }
+    for (y, label, key, unit, mult) in [
+        (121., "Power Demand", "POWER_DEMAND", "%", 100.),
+        (154., "Rate Demand", "RAMP", "%", 1.),
+        (216., "SG Press Spt", "SG_PRESS_SETPOINT", "kg/cm²", 1.),
+        (249., "Tavg Spt", "TAVG_SETPOINT", "°C", 1.),
+        (541., "SG A Lvl Spt", "SG_LEVEL_SETPOINT_A", "%", 1.),
+        (573., "SG B Lvl Spt", "SG_LEVEL_SETPOINT_B", "%", 1.),
+        (633., "Level Spt", "LEVEL_SETPOINT", "%", 1.),
+        (666., "Press Spt", "PRESSURE_SETPOINT", "kg/cm²", 1.),
+    ] {
+        c.meter(860., y, 97., label, key, model.number(key), unit, mult);
+        for (x, label) in [(961., "A"), (981., "M")] {
+            c.box_at(x, y + 8., 18., 21., BG);
+            c.text(x + 9., y + 19., label, 12., BLACK);
+        }
+    }
+    // Lower containment, core and protection strips.
+    c.panel(144., 545., 133., 151., "RB Fan Vent");
+    for (i, x) in [155., 187., 219., 251.].into_iter().enumerate() {
+        let key = format!("Fan Cooler {}", i + 1);
+        let value = model.fan(&key);
+        let color = match value {
+            Some(v) if v > 0. => RED,
+            Some(_) => Color32::from_rgb(0, 132, 0),
+            None => PANEL,
+        };
+        c.polygon(
+            &[(x, 581.), (x + 20., 586.), (x + 20., 598.), (x, 603.)],
+            color,
+        );
+        c.text(x + 9., 592., "○", 14., WHITE);
+        c.hit(c.rect(x, 579., 22., 26.), &key, &key, value, "Fan", "%");
+    }
+    c.valve(168., 643., "ValveRBVent", model);
+    c.hx(148., 663.);
+    c.meter(197., 624., 77., "Vent Flow", "VENT_FLOW", None, "t/hr", 1.);
     c.meter(
-        205.,
-        553.,
-        86.,
-        "Pressure",
-        "PRB",
-        model.number("PRB"),
-        "kg/cm²",
+        197.,
+        657.,
+        77.,
+        "Heat",
+        "FAN_COOLING_HEAT",
+        model.number("FAN_COOLING_HEAT"),
+        "MW",
         1.,
     );
-    c.meter(
-        297.,
-        553.,
-        88.,
-        "Temperature",
-        "TRB",
-        model.number("TRB"),
-        "°C",
-        1.,
-    );
-    c.panel(407., 517., 246., 103., "Core");
-    c.meter(
-        417.,
-        553.,
-        111.,
-        "Power",
-        "POWR",
-        model.number("POWR"),
-        "%",
-        100.,
-    );
-    c.meter(
-        534.,
-        553.,
-        109.,
-        "Temperature",
-        "TPCT",
-        model.number("TPCT"),
-        "°C",
-        1.,
-    );
-    c.panel(665., 517., 349., 103., "RPS / Power Supply");
-    c.text(753., 556., "Reactor protection", 13., TEXT);
-    c.text(838., 582., "RPS signals: no stored state", 12., MUTED);
+    c.panel(281., 545., 102., 151., "Reactor Bldg");
+    for (y, label, key, unit) in [
+        (564., "Pressure", "PRB", "kg/cm²"),
+        (597., "Temperature", "TRB", "°C"),
+        (630., "Level", "LWRB", "m"),
+        (663., "Hydrogen", "HYDROGEN", "% "),
+    ] {
+        c.meter(284., y, 96., label, key, model.number(key), unit, 1.);
+    }
+    c.panel(387., 545., 207., 121., "Core");
+    for (x, y, label, key, unit, mult) in [
+        (390., 563., "Power", "POWER_MW", "MW", 1.),
+        (492., 563., "Voids", "VOIDS", "%", 1.),
+        (390., 596., "Power", "POWR", "%", 100.),
+        (492., 596., "Max Fuel Temp", "TFPK", "°C", 1.),
+        (390., 629., "Tavg", "TAVG", "°C", 1.),
+        (492., 629., "Max Clad Temp", "TPCT", "°C", 1.),
+    ] {
+        c.meter(x, y, 99., label, key, model.number(key), unit, mult);
+    }
+    c.panel(598., 545., 257., 154., "RPS / Power Supply");
+    for (y, label) in [
+        (574., "Reactor"),
+        (598., "Turbine"),
+        (622., "Offsite AC"),
+        (646., "EG Bus A"),
+        (670., "EG Bus B"),
+    ] {
+        c.box_at(605., y, 56., 22., BG);
+        c.text(633., y + 11., label, 12., BLACK);
+    }
+    for (x, y, text) in [
+        (698., 581., "Lo  RxP   Hi"),
+        (798., 581., "F×    RxL"),
+        (690., 598., "FW"),
+        (798., 598., "OTDT  PzL"),
+        (695., 614., "SGL"),
+        (798., 614., "OPDT  RxP"),
+        (699., 640., "ECCS"),
+        (792., 640., "Lo     Hi"),
+        (690., 657., "LL"),
+        (799., 657., "RxP    RBP"),
+        (697., 674., "RxP"),
+        (798., 674., "PzL    SGFL"),
+        (782., 689., "SGP"),
+    ] {
+        c.text(x, y, text, 12., CYAN);
+    }
     c.selection
+}
+fn ellipse(c: &Canvas<'_>, x: f32, y: f32, w: f32, h: f32, color: Color32) {
+    let rect = c.rect(x, y, w, h);
+    c.ui.painter().add(egui::Shape::ellipse_filled(
+        rect.center(),
+        rect.size() / 2.,
+        color,
+    ));
 }

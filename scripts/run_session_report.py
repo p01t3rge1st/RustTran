@@ -18,11 +18,33 @@ FIELDS={
  '0x54b804':('Accumulator discharge','lb/s'),
  '0x54b570':('Accumulator water volume','ft3'),
  '0x54b540':('Accumulator gas pressure','psia'),
+ '0x54b694':('Hot leg A temperature','degF'),
+ '0x54b698':('Hot leg B temperature','degF'),
+ '0x54b69c':('Cold leg A temperature','degF'),
+ '0x54b6a0':('Cold leg B temperature','degF'),
+ '0x54b750':('Containment fan heat removal','Btu/s'),
+ '0x54b544':('Containment pressure','psia'),
+ '0x54b548':('Containment temperature','degF'),
+ '0x54b54c':('Containment water level','ft'),
+ '0x54bb58':('Containment water mass increment','lb'),
+ '0x54bb14':('Containment spray flow','lb/s'),
+ '0x54bb24':('Containment spray heat removal','Btu/s'),
+ '0x54bae4':('Containment hydrogen','%'),
+ '0x54b754':('Containment hydrogen burn heat','Btu/s'),
 }
 def records(initial,steps):
  state=initial['globals']['singles'].copy();rows=[]
  for i,step in enumerate(steps):
-  state.update(step['singles']);rows.append(dict(update=i+1,clock_s=step['singles']['0x54b40c'],**{a:state.get(a) for a in FIELDS}))
+  state.update(step['singles'])
+  values={a:state.get(a) for a in FIELDS}
+  if step.get('containment_fans') is None:values['0x54b750']=None
+  if step.get('containment_balance') is None:
+   for a in ['0x54b544','0x54b548','0x54b54c','0x54bb58']:values[a]=None
+  if step.get('containment_spray') is None:
+   for a in ['0x54bb14','0x54bb24']:values[a]=None
+  if step.get('containment_thermal') is None:
+   for a in ['0x54bae4','0x54b754']:values[a]=None
+  rows.append(dict(update=i+1,clock_s=step['singles']['0x54b40c'],**values))
  return rows
 HTML='''<!doctype html><html lang="en"><meta charset="utf-8"><title>RustTran history</title>
 <style>body{background:#191d20;color:#e6eaec;font:16px system-ui;margin:36px auto;max-width:1100px;padding:0 24px}h1{color:#e7bf54}section{background:#252a2e;padding:24px;border:1px solid #414950;border-radius:10px}select{background:#30363b;color:#e6eaec;padding:10px;max-width:100%;border:1px solid #e7bf54}svg{width:100%;height:auto}p{line-height:1.5;color:#afb9c0}a{color:#e7bf54}#value{font-variant-numeric:tabular-nums;min-height:3em}</style>

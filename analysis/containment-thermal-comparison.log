@@ -1,0 +1,4 @@
+CONTAINMENTTHERMAL: 335/335 cases, 7807 output checks
+THERMALSOURCESSTEP: 8/8 cases, 3477 output checks
+THERMALSOURCESSESSION: 2/2 cases, 15546 output checks
+Total: 345/345 cases; 26830/26830 checks. analysis/containment-thermal-comparison/results.html

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "source_commit": "e5af6ce78fbc327764a3d82cb528d67327ad5973",
+  "local_working_tree": true,
+  "checks": {
+    "rusttran": {
+      "sha256": "edc90acb1ca7789a11d8e8795eaa201e5266ffb73c9d47ff88eed0f92fe3da7d",
+      "max_glibc": "2.28"
+    },
+    "rusttran-cli": {
+      "sha256": "54d3f0b89262ba0a81175712c08848b293ff47d3ea2b7930a21abc8de4f17f78",
+      "max_glibc": "2.28"
+    }
+  },
+  "cli_matches_tested_debug": true,
+  "windows_cross_build": "passed; runtime GUI not tested",
+  "whole_original_scenarios": "not validated"
+}

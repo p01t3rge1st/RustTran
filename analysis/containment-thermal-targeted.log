@@ -1,0 +1,11 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.48s
+     Running tests/containment_thermal.rs (rusttran/target/debug/deps/containment_thermal-9aa261a38b5e17b5)
+
+running 3 tests
+test invalid_sources_and_late_curve_failures_commit_nothing ... ok
+test untouched_heat_and_pressure_snapshots_need_not_exist ... ok
+test original_reaction_source_and_hydrogen_branches_match ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

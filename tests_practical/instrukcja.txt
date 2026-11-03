@@ -1,0 +1,36 @@
+Pracujemy nad rekonstrukcją oryginalnego silnika PC-TRAN w Ruście za pomocą REA.
+
+Chcę zweryfikować, czy nasza implementacja prawidłowo odtwarza fizykę reaktora, termohydraulikę, regulację i systemy zabezpieczeń.
+
+Przeprowadź walidację na podstawie **IAEA PCTRAN Generic Pressurized Water Reactor Simulator Exercise Handbook (TCS-68, 2019)**.
+
+PDF: https://www-pub.iaea.org/MTCD/Publications/PDF/TCS-68web.pdf
+
+Dodatkowo przekazuję pakiet `pctran_rust_validation` z plikami `scenarios.json`, `figures.json`, `compare.py` oraz `README.md`.
+
+**ZADANIA:**
+
+1. Sprawdź stabilność symulacji dla IC #1 – 100% POWER EOC, przez 1000 sekund bez zakłóceń. Zweryfikuj brak nieuzasadnionego dryfu parametrów i samoczynnych zabezpieczeń.
+
+2. Odtwórz ćwiczenie 2.1 – redukcję mocy turbiny ze 100% do 75% z szybkością 5%/min. Po 1000 sekundach oczekuję około 1351 MWt, 450 MWe, Tavg 296,8°C, PZR 155 bar, poziomu PZR 48,3% i SG 50%. Porównaj także przebiegi przejściowe z figurami 6–10.
+
+3. Odtwórz ćwiczenie 2.2 – zwiększenie mocy z 75% do 100%. Po 1000 sekundach oczekuję około 1805 MWt, 600 MWe, Tavg 300°C, PZR 155 bar i poziomu PZR 57%. Sprawdź przeregulowanie mocy i porównaj z figurami 13–16.
+
+4. Odtwórz ćwiczenie 2.4 – ręczny SCRAM. Zweryfikuj działanie prętów, turbine trip, bypassu pary, izolację wody zasilającej około 45. sekundy oraz automatyczne AFW około 1750. sekundy.
+
+5. Odtwórz ćwiczenie 3.1 – zatrzymanie RCP-B. Oczekuję spadku mocy przed SCRAM o około 30%, wyłączenia reaktora około 10–15. sekundy i odwrócenia przepływu pętli B około 40–50. sekundy. Porównaj figury 36–39.
+
+6. Odtwórz ćwiczenie 3.2 – utratę głównej wody zasilającej SG. Zweryfikuj spadek poziomu SG, automatyczny SCRAM około 50–60. sekundy, uruchomienie AFW i przywracanie poziomu wody. Porównaj figury 43–46.
+
+**WYMAGANIA WALIDACJI:**
+
+- Uruchamiaj prawdziwy silnik obliczeniowy Rusta, bez podstawiania sztucznych przebiegów.
+- Eksportuj parametry do CSV co 1 sekundę czasu symulacji oraz zapisuj dokładne znaczniki czasowe zdarzeń.
+- Użyj `compare.py` do porównania wyników liczbowych.
+- Wyodrębnij wykresy z oryginalnego PDF i wygeneruj porównania graficzne MAEA kontra Rust.
+- Zweryfikuj bilans masy, bilans energii, znaki przepływu i działanie zabezpieczeń.
+- Nie dopasowuj fizyki na sztywno do tabeli wyników.
+- Nie zmieniaj oczekiwanych wyników tylko po to, aby testy przechodziły.
+- Jeżeli funkcja nie jest jeszcze zaimplementowana, oznacz INCOMPLETE, nie PASS.
+
+Na koniec utwórz raport zawierający wyniki każdego testu, wykresy, odchylenia liczbowe, wykryte problemy oraz propozycje poprawek. Wyraźnie oddziel dane bezpośrednio z handbooka od przyjętych tolerancji i własnych założeń.

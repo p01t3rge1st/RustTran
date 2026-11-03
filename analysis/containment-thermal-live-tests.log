@@ -1,0 +1,13 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.14s
+     Running tests/live_readings.rs (rusttran/target/debug/deps/live_readings-53627156eb69bf6e)
+
+running 5 tests
+test live_mimic_converts_current_values_and_never_falls_back_to_ic_states ... ok
+test containment_readings_and_history_follow_selected_balance_and_reset ... ok
+test classic_mimic_uses_computed_loop_temperatures_after_stepping_and_reset ... ok
+test fan_state_and_heat_use_only_the_selected_computed_producer ... ok
+test selected_hydrogen_producer_drives_classic_meter_and_complete_burn_history ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

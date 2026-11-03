@@ -3,7 +3,7 @@
 use crate::{Result, recovered_session::RecoveredSession};
 use std::{collections::VecDeque, path::Path};
 pub const HISTORY_LIMIT: usize = 50_000;
-pub const SERIES: [(&str, &str, &str); 16] = [
+pub const SERIES: [(&str, &str, &str); 25] = [
     ("0x54b694", "Hot leg A temperature", "degF"),
     ("0x54b698", "Hot leg B temperature", "degF"),
     ("0x54b69c", "Cold leg A temperature", "degF"),
@@ -20,6 +20,15 @@ pub const SERIES: [(&str, &str, &str); 16] = [
     ("0x54b804", "Accumulator discharge", "lb/s"),
     ("0x54b570", "Accumulator water", "ft3"),
     ("0x54b540", "Accumulator gas pressure", "psia"),
+    ("0x54b750", "Containment fan heat removal", "Btu/s"),
+    ("0x54b544", "Containment pressure", "psia"),
+    ("0x54b548", "Containment temperature", "degF"),
+    ("0x54b54c", "Containment water level", "ft"),
+    ("0x54bb58", "Containment water mass increment", "lb"),
+    ("0x54bb14", "Containment spray flow", "lb/s"),
+    ("0x54bb24", "Containment spray heat removal", "Btu/s"),
+    ("0x54bae4", "Containment hydrogen", "%"),
+    ("0x54b754", "Containment hydrogen burn heat", "Btu/s"),
 ];
 #[derive(Clone, Debug)]
 pub struct HistorySample {
@@ -76,6 +85,15 @@ impl SimulationWorkspace {
     }
     pub fn advance_steps(&mut self, count: usize) -> Result<()> {
         let mut values = SERIES.map(|(a, _, _)| self.session.globals.singles.get(a).copied());
+        if self.session.controls.containment_balance.is_none() {
+            values[17..21].fill(None);
+        }
+        if self.session.controls.containment_spray.is_none() {
+            values[21..23].fill(None);
+        }
+        if self.session.controls.containment_thermal.is_none() {
+            values[23..25].fill(None);
+        }
         let results = match self.session.advance(count) {
             Ok(results) => results,
             Err(error) => {

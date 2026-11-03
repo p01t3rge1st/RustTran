@@ -1,0 +1,9 @@
+{
+  "recorded_updates": 16,
+  "history_series": 25,
+  "csv_columns": 27,
+  "recorded_csv_float32_matches_cli": true,
+  "transfer_updates": 16,
+  "stale_transfer_replaced": true,
+  "scope": "Synthetic supplied-state post-model transfer chain, not original Windows scenario"
+}

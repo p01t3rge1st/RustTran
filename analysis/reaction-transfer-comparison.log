@@ -1,0 +1,4 @@
+REACTIONTRANSFER: 206/206 cases, 1426 output checks
+REACTIONSTEP: 8/8 cases, 3589 output checks
+REACTIONSESSION: 2/2 cases, 15527 output checks
+Total: 216/216 cases; 20542/20542 checks. analysis/reaction-transfer-comparison/results.html

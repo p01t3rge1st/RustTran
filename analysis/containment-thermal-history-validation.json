@@ -1,0 +1,12 @@
+{
+  "recorded_updates": 16,
+  "history_series": 25,
+  "csv_columns": 27,
+  "hydrogen_csv_float32_matches_cli": true,
+  "decisions": {
+    "ignited": 1,
+    "burned": 10,
+    "extinguished": 1
+  },
+  "scope": "Synthetic supplied-state burn cycle; not original Windows scenario"
+}

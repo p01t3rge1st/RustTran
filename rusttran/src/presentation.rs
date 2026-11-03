@@ -15,6 +15,7 @@ pub struct Presentation {
     pub selected_id: String,
     pub thermo: Row,
     pub pumps: Row,
+    pub fans: Row,
     pub valves: Row,
     pub core: Row,
     pub malfunctions: Table,
@@ -57,6 +58,7 @@ impl Presentation {
             selected_id: String::new(),
             thermo: Row::new(),
             pumps: Row::new(),
+            fans: Row::new(),
             valves: Row::new(),
             core: Row::new(),
             malfunctions,
@@ -84,10 +86,12 @@ impl Presentation {
             return Err(format!("missing thermodynamic snapshot: {id}").into());
         }
         let pumps = row("ICPumpData");
+        let fans = row("ICFanData");
         let valves = row("ICValveData");
         let core = row("ICCoreData");
         self.thermo = thermo;
         self.pumps = pumps;
+        self.fans = fans;
         self.valves = valves;
         self.core = core;
         self.selected_id = id.into();
@@ -99,6 +103,9 @@ impl Presentation {
     }
     pub fn pump(&self, key: &str) -> Option<f64> {
         number(&self.pumps, key)
+    }
+    pub fn fan(&self, key: &str) -> Option<f64> {
+        number(&self.fans, key)
     }
     pub fn valve(&self, key: &str) -> Option<f64> {
         number(&self.valves, key)

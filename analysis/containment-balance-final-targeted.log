@@ -1,0 +1,22 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running tests/containment_balance.rs (rusttran/target/debug/deps/containment_balance-8bf346de42bf2a86)
+
+running 5 tests
+test inactive_vessel_and_small_mass_paths_do_not_read_unused_sources ... ok
+test late_errors_preserve_complete_state ... ok
+test session_resume_and_late_failure_preserve_connected_state ... ok
+test original_containment_balance_and_vessel_caller_match ... ok
+test original_composed_containment_steps_and_chains_match ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests/live_readings.rs (rusttran/target/debug/deps/live_readings-53627156eb69bf6e)
+
+running 4 tests
+test live_mimic_converts_current_values_and_never_falls_back_to_ic_states ... ok
+test containment_readings_and_history_follow_selected_balance_and_reset ... ok
+test classic_mimic_uses_computed_loop_temperatures_after_stepping_and_reset ... ok
+test fan_state_and_heat_use_only_the_selected_computed_producer ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

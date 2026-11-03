@@ -33,6 +33,19 @@ impl RecoveredSession {
                 .globals
                 .advance_recovered_primary_step(&staged.controls)
                 .map_err(|e| format!("recovered session update {i}: {e}"))?;
+            if let Some(value) = &out.containment_thermal {
+                staged.controls.containment_thermal = Some(Box::new(value.controls.clone()));
+                if let Some(events) = &mut staged.controls.event_schedule {
+                    // Native ignition writes shared event-time array +0x10.
+                    events.times[4] = value.controls.burn_time;
+                }
+            }
+            if let Some(value) = &out.containment_spray {
+                staged.controls.containment_spray = Some(value.controls.clone());
+            }
+            if let Some(value) = &out.containment_fans {
+                staged.controls.containment_fans = Some(value.controls.clone());
+            }
             if let (Some(control), Some(value)) =
                 (&mut staged.controls.devices, &out.primary_devices)
             {

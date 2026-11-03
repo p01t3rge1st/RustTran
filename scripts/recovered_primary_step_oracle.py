@@ -14,6 +14,11 @@ from connected_thermal_oracle import execute as thermal_transfer
 from accumulator_system_oracle import execute as accumulator
 from supply_system_oracle import execute as supply
 from loop_transport_oracle import execute as loop_transport
+from containment_fans_oracle import execute as containment_fans
+from containment_spray_oracle import execute as containment_spray
+from containment_thermal_oracle import execute as containment_thermal
+from reaction_transfer_oracle import execute as reaction_transfer
+from containment_balance_oracle import execute as containment_balance,feedback as containment_feedback
 from rcp_control_oracle import execute as rcp
 from primary_devices_oracle import execute as devices
 from primary_references_oracle import execute as references
@@ -52,6 +57,14 @@ def execute(q):
   accumulator_result=accumulator(dict(globals=g,valves=c['accumulator']));s.update(accumulator_result['singles']);out.update(accumulator_result['singles']);device_flags.update(accumulator_result['integers']);flags.update(accumulator_result['integers'])
  r=relief(dict(globals=g,valves=c['valves']));out.update(r['singles']);s.update(r['singles']);ints={**device_flags,**r['integers']};flags.update(ints)
  t=tail(dict(g54bf98=s['0x54bf98'],g54bf9c=s['0x54bf9c'],g54b6a8=s['0x54b6a8'],control_state=c['tail_control_state']));s['0x54bf9c']=t['g54bf9c'];out['0x54bf9c']=t['g54bf9c']
+ reaction_result=None
+ if c.get('reaction_transfer') is not None:
+  reaction_result=reaction_transfer(dict(globals=g,inputs=c['reaction_transfer']));s.update(reaction_result['singles']);out.update(reaction_result['singles'])
+ containment_thermal_result=None
+ if c.get('containment_thermal') is not None:
+  control=copy.deepcopy(c['containment_thermal'])
+  if c.get('event_schedule') is not None:control.update(burn_flag=c['event_schedule']['flags'][4],burn_time=c['event_schedule']['times'][4])
+  containment_thermal_result=containment_thermal(dict(globals=g,controls=control));s.update(containment_thermal_result['singles']);out.update(containment_thermal_result['singles']);flags.update(containment_thermal_result['integers']);ints.update(containment_thermal_result['integers'])
  thermal_result=None
  if c.get('normal_thermal') is not None:
   thermal_result=thermal_transfer(dict(globals=g,controls=c['normal_thermal']));s.update(thermal_result['singles']);out.update(thermal_result['singles'])
@@ -77,12 +90,46 @@ def execute(q):
  core=primary(dict(globals=g,command_percent=c['command_percent'],fault_flag=c['fault_flag'],pump_contributions=c['pump_contributions'],heater_controls=c['heaters'],spray_controls=c['spray']),True,c.get('capture_control_commands',False));r=core['expected'];out.update(r['singles']);s.update(r['singles']);ints.update(r['integers']);flags.update(r['integers'])
  if c.get('loop_transport'):
   transport=loop_transport(dict(globals=g));s.update(transport);out.update(transport)
+ if c.get('containment_balance') is not None:
+  feedback=containment_feedback(g);s.update(feedback);out.update(feedback)
+ spray_result=None
+ if c.get('containment_spray') is not None:
+  controls=copy.deepcopy(c['containment_spray'])
+  if device_result is not None:controls['auxiliary_percent']=device_result['controls']['auxiliary_percent']
+  if supply_result is not None:controls['mode']=supply_result['controls']['mode']
+  if c.get('containment_fans') is not None:controls['exchanger_percent']=c['containment_fans']['exchanger_percent']
+  spray_result=containment_spray(dict(globals=g,controls=controls));s.update(spray_result['singles']);out.update(spray_result['singles']);flags.update(spray_result['integers']);ints.update(spray_result['integers'])
+ fan_result=None
+ if c.get('containment_fans') is not None:
+  fan_result=containment_fans(dict(globals=g,controls=c['containment_fans']));s.update(fan_result['singles']);out.update(fan_result['singles'])
+ balance_result=None
+ if c.get('containment_balance') is not None:
+  update=c['containment_balance'];inputs=copy.deepcopy(update['inputs'])
+  if c.get('event_schedule') is not None:inputs['event_times']=[c['event_schedule']['times'][2],c['event_schedule']['times'][3]]
+  if device_result is not None:inputs['auxiliary_percent']=device_result['controls']['auxiliary_percent']
+  elif spray_result is not None:inputs['auxiliary_percent']=spray_result['controls']['auxiliary_percent']
+  if spray_result is not None:
+   inputs['outlet_temperature']=spray_result['outlet_temperature']
+   # Execute the original caller local sum and Single store, not a Python copy
+   # of the Rust expression. Avoid unrelated fan argument pushes here.
+   u=Uc(UC_ARCH_X86,UC_MODE_32);u.mem_map(BASE,(PE.OPTIONAL_HEADER.SizeOfImage+4095)&~4095);u.mem_write(BASE,PE.get_memory_mapped_image());u.mem_map(0x10000000,0x20000)
+   from unicorn.x86_const import UC_X86_REG_EBP
+   frame=0x10010000;u.reg_write(UC_X86_REG_EBP,frame);u.reg_write(UC_X86_REG_FPCW,0x027f)
+   u.mem_write(frame-0x2c,struct.pack('<f',spray_result['return_flow']));u.mem_write(frame-0x28,struct.pack('<f',supply_result['return_flow'] if supply_result is not None else update['other_return_flow']))
+   u.emu_start(0x52337d,0x523383,count=2);u.emu_start(0x5233a1,0x5233a7,count=1)
+   total=struct.unpack('<f',u.mem_read(0x54ba24,4))[0];s['0x54ba24']=total;out['0x54ba24']=total
+  balance_result=containment_balance(dict(globals=g,inputs=inputs));s.update(balance_result['singles']);out.update(balance_result['singles'])
  u=Uc(UC_ARCH_X86,UC_MODE_32);u.mem_map(BASE,(PE.OPTIONAL_HEADER.SizeOfImage+4095)&~4095);u.mem_write(BASE,PE.get_memory_mapped_image());u.reg_write(UC_X86_REG_FPCW,0x027f)
  for a in [0x54b6a4,0x54bb50,0x54ba90,0x54b738]:u.mem_write(a,struct.pack('<f',s[hex(a)]))
  u.emu_start(0x523dc8,0x523e04,count=100)
  stream={hex(a):struct.unpack('<f',u.mem_read(a,4))[0] for a in [0x54b674,0x54b4b8]};s.update(stream);out.update(stream)
  r=integration(dict(globals=g,activation_time=c['activation_time']));out.update(r['singles'])
  result=dict(singles=out,integers=ints,relief_tail=t)
+ if reaction_result is not None:result['reaction_transfer']=reaction_result
+ if containment_thermal_result is not None:result['containment_thermal']=containment_thermal_result
+ if balance_result is not None:result['containment_balance']=balance_result
+ if spray_result is not None:result['containment_spray']=spray_result
+ if fan_result is not None:result['containment_fans']=fan_result
  if c.get('capture_control_commands'):result['primary_commands']=core['control_commands']
  if supply_result is not None:result['supply']=supply_result
  if accumulator_result is not None:result['accumulator']=accumulator_result

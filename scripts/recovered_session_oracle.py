@@ -17,6 +17,11 @@ def execute(q):
  for _ in range(q['steps']):
   out=step(dict(globals=g,controls=c));g['singles'].update(out['singles']);g['integers'].update(out['integers'])
   if out.get('primary_devices') is not None:c['devices']['controls']=copy.deepcopy(out['primary_devices']['controls'])
+  if out.get('containment_thermal') is not None:
+   c['containment_thermal']=copy.deepcopy(out['containment_thermal']['controls'])
+   if c.get('event_schedule') is not None:c['event_schedule']['times'][4]=out['containment_thermal']['controls']['burn_time']
+  if out.get('containment_spray') is not None:c['containment_spray']=copy.deepcopy(out['containment_spray']['controls'])
+  if out.get('containment_fans') is not None:c['containment_fans']=copy.deepcopy(out['containment_fans']['controls'])
   if out.get('rcp') is not None:c['rcp']['pump_percent']=out['rcp']['pump_percent'].copy()
   if out.get('supply') is not None:c['supply']['controls']=copy.deepcopy(out['supply']['controls'])
   if out.get('accumulator') is not None:c['accumulator']=copy.deepcopy(out['accumulator']['valves'])
@@ -25,6 +30,10 @@ def execute(q):
    c['steam_valves']=copy.deepcopy(out['steam_valves'][-1]['controls'])
    if c.get('steam_controls') is not None:c['steam_controls']['feedwater_percent']=[v['percent'] for v in c['steam_valves']['feedwater']]
   c['heaters']=copy.deepcopy(out['primary_commands']['heaters']);c['spray']=copy.deepcopy(out['primary_commands']['spray']);c['clock']=f32(c['clock']+c['step']);results.append(out)
+ # These optional stage fields use serde skip_serializing_if=Option::is_none.
+ # Preserve the older OPTIONALS' explicit null shape; normalize only new fields.
+ for field in ['containment_spray','containment_fans','containment_balance','containment_thermal','reaction_transfer']:
+  if c.get(field) is None:c.pop(field,None)
  return dict(session=session,steps=results)
 if __name__=='__main__':
  base=json.loads((ROOT/'analysis/recovered_supply_step_fixtures.json').read_text())['cases'];cases=[]

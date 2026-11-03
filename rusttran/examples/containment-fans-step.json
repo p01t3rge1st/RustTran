@@ -1,0 +1,30 @@
+{
+  "globals": {
+    "singles": {
+      "0x54b544": 20.000001907348633,
+      "0x54b2c4": 20.0,
+      "0x54b40c": 0.0,
+      "0x54b450": 100.0,
+      "0x54b160": 70.0,
+      "0x54b2d0": 350.0,
+      "0x54b2cc": 10000.0,
+      "0x54b548": 422.3561096191406
+    },
+    "integers": {}
+  },
+  "controls": {
+    "fan_percent": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "fan_manual": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "exchanger_percent": 1
+  }
+}

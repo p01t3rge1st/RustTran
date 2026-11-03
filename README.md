@@ -2,9 +2,9 @@
 
 Repozytorium robocze analizy programu z `PC-Tran (program).zip` przy użyciu [REA](https://github.com/morluto/rea) i Ghidry. Rozpoznany cel: PCTran PWR 3LP, 32-bitowy natywny Visual Basic 6; instalator podaje wersję 6.0.0.1 i datę pliku EXE 23 listopada 2010.
 
-**Stan: częściowy port, nie pełny zamiennik PCTran.** Angielskie GUI w szarościach i żółtych akcentach udostępnia schemat IC oraz widok **Simulation**, który wykonuje rzeczywiste kroki odzyskanego silnika z dostarczonej sesji. Działają Start/Pause/Step/Reset, przeniesione sterowanie urządzeniami, wykresy i zapis sesji/CSV. Pełny start reaktora bezpośrednio z IC, pozostałe modele i automatyka oraz zgodność całych scenariuszy nadal wymagają pracy.
+**Stan: częściowy port, nie pełny zamiennik PCTran.** Angielskie GUI odtwarzające klasyczny układ i kolory PCTran udostępnia schemat IC oraz widok **Simulation**, który wykonuje rzeczywiste kroki odzyskanego silnika z dostarczonej sesji. Działają Start/Pause/Step/Reset, przeniesione sterowanie urządzeniami, wykresy i zapis sesji/CSV. Pełny start reaktora bezpośrednio z IC, pozostałe modele i automatyka oraz zgodność całych scenariuszy nadal wymagają pracy.
 
-Aktualna walidacja: **170 testów Rust, 23 912 porównań komponentów/połączonych fragmentów i 608 507 sprawdzeń wyjść**. To nie jest walidacja całych przebiegów oryginalnej aplikacji. [Postęp i otwarte zadania](analysis/CONVERSION_PROGRESS.md).
+Aktualne testy kodu: **200 testów Rust**. Nowy [raport transferu i historii](analysis/reaction-transfer-comparison/results.html): **216 przypadków / 20 542 sprawdzenia wyjść**; wcześniejsze pełne i osobne raporty zachowują własne wersje oraz zakres. To nie jest walidacja całych przebiegów oryginalnej aplikacji. [Postęp i otwarte zadania](analysis/CONVERSION_PROGRESS.md).
 
 ## Interfejs graficzny
 
@@ -14,7 +14,7 @@ dist/rusttran-linux-x86_64/rusttran
 cargo run --manifest-path rusttran/Cargo.toml --features gui --bin rusttran
 ```
 
-[Podgląd interfejsu](analysis/previews/rusttran-gray-amber.png).
+[Podgląd interfejsu](analysis/classic-ui/nsss-1024.png) · [Porównanie z oryginałem](analysis/classic-ui/comparison.html). Główny NSSS ma klasyczny układ; pełna identyczność wszystkich okien pozostaje do dopracowania.
 Interfejs zachowuje układ ECCS, dwóch grup SG (1 + 2), reaktora, paneli sterowania i wskaźników. Wybór IC oraz odczyt urządzeń działają na odzyskanych danych. Widoki IC zachowują osobny zegar podglądu. Aby wykonać odzyskane obliczenia, otwórz **Simulation → Load sample session → Start**. Wbudowany przykład jest syntetycznym stanem referencyjnym, nie pełnym scenariuszem reaktora. **View → Live simulation mimic** pokazuje obliczone ciśnienia, temperaturę, poziomy i przepływy w układzie schematu; brakujące wskazania pozostają oznaczone „—”.
 
 ## Uruchomienie Rust
@@ -155,12 +155,13 @@ oraz ubytek zbiornika zasilającego z warunkiem recyrkulacji. Wszystkie
 poprzedzające te równania i pełna obsługa instalacji pozostają nieukończone.
 
 [Nowa kolorowa tabela porównań komponentów](analysis/component-comparison/results.html)
-obejmuje 23 912 odrębnych przypadków. Jest to porównanie bloków oryginalnego
+obejmuje 24 672 odrębne przypadki wcześniejszego wydania z wentylatorami. Jest to porównanie bloków oryginalnego
 kodu x86 z RustTran, z ograniczeniami opisanymi w tabeli — nie pełnych aplikacji.
-Odtworzenie raportu z gotowej paczki:
+Szybkie porównanie nowych źródeł z bieżącego kodu, bez generowania całego starego raportu:
 
 ```sh
-python3 scripts/compare_components.py
+cargo build --manifest-path rusttran/Cargo.toml --bin rusttran-cli
+.tools/python/bin/python scripts/compare_components.py --rust-cli rusttran/target/debug/rusttran-cli --families containment_thermal recovered_thermal_sources_step recovered_thermal_sources_session --output analysis/containment-thermal-comparison
 ```
 
 

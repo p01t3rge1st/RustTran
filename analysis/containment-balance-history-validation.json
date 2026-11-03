@@ -1,0 +1,7 @@
+{
+  "recorded_updates": 4,
+  "history_series": 23,
+  "csv_columns": 25,
+  "containment_csv_float32_matches_cli": true,
+  "scope": "Existing four-step synthetic supplied-state history; no original Windows scenario comparison"
+}

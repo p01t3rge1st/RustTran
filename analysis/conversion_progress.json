@@ -1,12 +1,12 @@
 {
-  "updated_date": "2026-10-21",
+  "updated_date": "2026-11-03",
   "overall_completion_percent": null,
   "overall_reason": "Complete original behavior inventory is not established; procedure counts and field counts do not measure project completion.",
   "original_native_non_thunk_procedures": 473,
   "numeric_helpers_checked": 17,
-  "partial_procedures": 18,
+  "partial_procedures": 20,
   "evidence_only_procedures": 0,
-  "other_unconverted_procedures": 438,
+  "other_unconverted_procedures": 436,
   "scopes": [
     {
       "name": "Primary phase-flag branch numerical bodies",
@@ -1771,7 +1771,7 @@
       "address": "0x5011b0",
       "original_name": "FUN_005011b0",
       "status": "partial",
-      "note": "numeric vessel solver checked; native UI/error reporting not ported"
+      "note": "numeric vessel solver checked and native containment caller connected after complete recovered numerical balance 0x5233c5-0x523f36; 144 continuous caller cases (84 solver calls), eight composed steps and two four-step chains; external Double/array/source producers and UI/error reporting remain explicit"
     },
     {
       "address": "0x501e60",
@@ -1782,14 +1782,14 @@
     {
       "address": "0x502480",
       "original_name": "FUN_00502480",
-      "status": "unconverted",
-      "note": ""
+      "status": "partial",
+      "note": "recovered spray activation, pumps, latch, properties and cooling 0x50252b-0x5032be checked in 192 cases, eight composed steps and two four-step native chains; shared device/supply/exchanger properties bound, caller locals explicit; full containment balance and callbacks remain excluded"
     },
     {
       "address": "0x5034b0",
       "original_name": "FUN_005034b0",
-      "status": "unconverted",
-      "note": ""
+      "status": "partial",
+      "note": "complete recovered fan activation/command/heat body 0x503564-0x503cf2 checked in 720 cases with native caller operands; connected before stream/integration in 32 steps and 8 eight-step stateful chains; COM callbacks/logging/error UI and complete containment balance remain excluded"
     },
     {
       "address": "0x503f50",
@@ -1975,13 +1975,13 @@
       "address": "0x51c310",
       "original_name": "FUN_0051c310",
       "status": "partial",
-      "note": "20 Single startup constants and one I16 checked against original scalar stores; external Double/property-array initialization incomplete"
+      "note": "20 Single startup constants and one I16 checked; original seven-point hydrogen pressure/limit array stores and EBX/EDI context checked exactly and used as producer default; remaining Double/property-array initialization incomplete"
     },
     {
       "address": "0x51d3d0",
       "original_name": "FUN_0051d3d0",
       "status": "partial",
-      "note": "14-state integration, primary properties and normal/external thermal branches, properties and recovered-stage composition checked; shared-state 14-state integration/event update checked against 36 original coordinator slices; source/flux preparation, relief/primary/SG/stream/integration updates connected with explicit remaining boundaries; process-birth image storage checked separately; stream derivative bindings connected; complete step coordinator incomplete"
+      "note": "post-model transfer0x51f8c6-0x51fc92 connected with retained histories and typed Double inputs,206 native outputs plus one native singularity,8 composed steps and2 sixteen-step chains; current BFB4 feeds reaction energy0x51fc92-0x51fd6c and hydrogen ignition/delay/burn0x52059e-0x520986 connected before normal thermal/SG and containment balance; 335 native cases, eight composed steps and two16-update chains, retaining shared event4; upstream reaction/Double evolution remains explicit; 14-state integration, primary properties and normal/external thermal branches, properties and recovered-stage composition checked; shared-state 14-state integration/event update checked against 36 original coordinator slices; source/flux preparation, relief/primary/SG/stream/integration updates connected with explicit remaining boundaries; process-birth image storage checked separately; stream derivative bindings connected; complete step coordinator incomplete"
     },
     {
       "address": "0x524640",
@@ -2919,7 +2919,7 @@
       "id": "INIT",
       "name": "Pe\u0142na inicjalizacja i odtwarzanie",
       "status": "partial",
-      "done": "Wczytywanie modelu i wi\u0119kszo\u015bci IC; 130 warto\u015bci Single i 15 flag \u015bwie\u017cego startu dla 110 par model/IC; p\u00f3\u017ane odniesienia poziom\u00f3w/przep\u0142yw\u00f3w, parametry cieplne i entalpia zasilania; osobna warstwa danych obrazu procesu. Przeniesiono 11 zapis\u00f3w pocz\u0105tkowych historii sterowania z jawnym trybem awarii. Odzyskano ga\u0142\u0105\u017a odtworzonych zegara/odniesie\u0144 i 20 czas\u00f3w zdarze\u0144, z zachowaniem zapisanych historii. Pod\u0142\u0105czono wsp\u00f3\u0142czynnik wymiany cieplnej i przelicznik jednostek z odzyskanego pocz\u0105tku inicjalizacji. Odzyskano 20 sta\u0142ych Single i flag\u0119 pocz\u0105tkow\u0105 oraz geometri\u0119: sum\u0119 obj\u0119to\u015bci akumulatora, stosunek pr\u00f3bkowania i dwa wyzerowania (321 przypadk\u00f3w instrukcji orygina\u0142u). Odzyskano numeryczn\u0105 inicjalizacj\u0119 modelu Double: 33 zapisy, 12 tablic i temperatury pocz\u0105tkowe; 240 ci\u0105g\u0142ych wykona\u0144 orygina\u0142u. Z\u0142o\u017cony stan zachowuje 290 Singles i 28 p\u00f3l ca\u0142kowitych dla 110 par oraz Double i tablice. Przelicznik kroku czasu I16 zweryfikowano z oryginaln\u0105 bibliotek\u0105 VB6 (240 przypadk\u00f3w).",
+      "done": "Wczytywanie modelu i wi\u0119kszo\u015bci IC; 130 warto\u015bci Single i 15 flag \u015bwie\u017cego startu dla 110 par model/IC; p\u00f3\u017ane odniesienia poziom\u00f3w/przep\u0142yw\u00f3w, parametry cieplne i entalpia zasilania; osobna warstwa danych obrazu procesu. Przeniesiono 11 zapis\u00f3w pocz\u0105tkowych historii sterowania z jawnym trybem awarii. Odzyskano ga\u0142\u0105\u017a odtworzonych zegara/odniesie\u0144 i 20 czas\u00f3w zdarze\u0144, z zachowaniem zapisanych historii. Pod\u0142\u0105czono wsp\u00f3\u0142czynnik wymiany cieplnej i przelicznik jednostek z odzyskanego pocz\u0105tku inicjalizacji. Odzyskano 20 sta\u0142ych Single i flag\u0119 pocz\u0105tkow\u0105 oraz geometri\u0119: sum\u0119 obj\u0119to\u015bci akumulatora, stosunek pr\u00f3bkowania i dwa wyzerowania (321 przypadk\u00f3w instrukcji orygina\u0142u). Odzyskano numeryczn\u0105 inicjalizacj\u0119 modelu Double: 33 zapisy, 12 tablic i temperatury pocz\u0105tkowe; 240 ci\u0105g\u0142ych wykona\u0144 orygina\u0142u. Z\u0142o\u017cony stan zachowuje 290 Singles i 28 p\u00f3l ca\u0142kowitych dla 110 par oraz Double i tablice. Przelicznik kroku czasu I16 zweryfikowano z oryginaln\u0105 bibliotek\u0105 VB6 (240 przypadk\u00f3w). Odzyskano i sprawdzono dok\u0142adnie 14 warto\u015bci oryginalnej krzywej granicy zap\u0142onu wodoru; stanowi\u0105 domy\u015bln\u0105 tabel\u0119 nowego producenta, bez zgadywania prog\u00f3w. Dodano adapter wej\u015b\u0107 transferu z typowanego stanu inicjalizacji: odczyt Double/tablic i mas modelu bez utraty precyzji, sprawdzony dla 110 par. W tych startach frakcja ko\u0144cowego w\u0119z\u0142a jest zerowa i zachowana jest oryginalna ga\u0142\u0105\u017a pomijaj\u0105ca transfer. FCO2/FH2O/FDEC by\u0142y ju\u017c prawid\u0142owo wczytywane.",
       "remaining": "Pe\u0142ny wyb\u00f3r \u015bcie\u017cki \u015bwie\u017cej/odtworzonej i odczyt oryginalnych zapis\u00f3w, pozosta\u0142e historie/tablice oraz kompletne Reset/restore; pi\u0119\u0107 nierozstrzygni\u0119tych p\u00f3l IC. Numeryczna inicjalizacja modelu Double jest przeniesiona; jego ewolucja pozostaje w STEP.",
       "acceptance": "Ka\u017cdy obs\u0142ugiwany start/Reset/odczyt tworzy kompletny, zweryfikowany stan potrzebny do pierwszego kroku, bez zgadywanych warto\u015bci."
     },
@@ -2927,7 +2927,7 @@
       "id": "AUTO",
       "name": "Automatyka urz\u0105dze\u0144 i zabezpiecze\u0144",
       "status": "partial",
-      "done": "Grza\u0142ki, natrysk, uzupe\u0142nianie/upust/wtrysk oraz ich przeniesione blokady; numeryczne bloki pomp, zawor\u00f3w i SG. Prze\u0142\u0105czenia RCP, znaczniki czasu i docelowe przep\u0142ywy po\u0142\u0105czone z blokiem liczbowym. Pocz\u0105tkowe sterowanie SG: rozruch zasilania, regulator poziomu/ci\u015bnienia, ga\u0142\u0119zie awarii i podzia\u0142 ciep\u0142a dla obu stron. Zamkni\u0119cia SG/zasilania, obie grupy zawor\u00f3w z histerez\u0105 i blokad\u0105 r\u0119czn\u0105 oraz awaryjne ga\u0142\u0119zie przep\u0142ywu. Dalsza regulacja zasilania SG i pe\u0142na odzyskana sekwencja liczbowa/sterowania SG po\u0142\u0105czone; dok\u0142adna aktywacja flagami ==1 i wa\u017cenie dw\u00f3ch polece\u0144. Odzyskano pocz\u0105tkowe historie regulator\u00f3w SG i dok\u0142adn\u0105 ga\u0142\u0105\u017a inicjalizacji wyj\u015b\u0107 przy fladze awarii \u22121. Opcjonalna tablica zdarze\u0144 dostarcza odzyskane czasy RCP/SG i w\u0142a\u015bciwe flagi sterowania SG. Aktywacja akumulatora, blokady zawor\u00f3w i opr\u00f3\u017cnianie po\u0142\u0105czone we wsp\u00f3ln\u0105 aktualizacj\u0119; zachowane r\u0119czne zamkni\u0119cia po aktywacji. Pe\u0142ny odzyskany blok 0x510850 zasilania/wtrysku/recyrkulacji i ch\u0142odzenia po\u0142\u0105czony. Polecenia grza\u0142ek/natrysku oraz pozosta\u0142ych przeniesionych urz\u0105dze\u0144 s\u0105 zachowywane pomi\u0119dzy aktualizacjami sesji. Kontrolki rzeczywistej sesji GUI przekazuj\u0105 polecenia RCP, SG, zasilania/wtrysku, akumulatora, grza\u0142ek i natrysku do tego samego silnika co CLI. Klikni\u0119cie r\u0119cznej grza\u0142ki 25% por\u00f3wnano ze stanem CLI.",
+      "done": "Grza\u0142ki, natrysk, uzupe\u0142nianie/upust/wtrysk oraz ich przeniesione blokady; numeryczne bloki pomp, zawor\u00f3w i SG. Prze\u0142\u0105czenia RCP, znaczniki czasu i docelowe przep\u0142ywy po\u0142\u0105czone z blokiem liczbowym. Pocz\u0105tkowe sterowanie SG: rozruch zasilania, regulator poziomu/ci\u015bnienia, ga\u0142\u0119zie awarii i podzia\u0142 ciep\u0142a dla obu stron. Zamkni\u0119cia SG/zasilania, obie grupy zawor\u00f3w z histerez\u0105 i blokad\u0105 r\u0119czn\u0105 oraz awaryjne ga\u0142\u0119zie przep\u0142ywu. Dalsza regulacja zasilania SG i pe\u0142na odzyskana sekwencja liczbowa/sterowania SG po\u0142\u0105czone; dok\u0142adna aktywacja flagami ==1 i wa\u017cenie dw\u00f3ch polece\u0144. Odzyskano pocz\u0105tkowe historie regulator\u00f3w SG i dok\u0142adn\u0105 ga\u0142\u0105\u017a inicjalizacji wyj\u015b\u0107 przy fladze awarii \u22121. Opcjonalna tablica zdarze\u0144 dostarcza odzyskane czasy RCP/SG i w\u0142a\u015bciwe flagi sterowania SG. Aktywacja akumulatora, blokady zawor\u00f3w i opr\u00f3\u017cnianie po\u0142\u0105czone we wsp\u00f3ln\u0105 aktualizacj\u0119; zachowane r\u0119czne zamkni\u0119cia po aktywacji. Pe\u0142ny odzyskany blok 0x510850 zasilania/wtrysku/recyrkulacji i ch\u0142odzenia po\u0142\u0105czony. Polecenia grza\u0142ek/natrysku oraz pozosta\u0142ych przeniesionych urz\u0105dze\u0144 s\u0105 zachowywane pomi\u0119dzy aktualizacjami sesji. Kontrolki rzeczywistej sesji GUI przekazuj\u0105 polecenia RCP, SG, zasilania/wtrysku, akumulatora, grza\u0142ek i natrysku do tego samego silnika co CLI. Klikni\u0119cie r\u0119cznej grza\u0142ki 25% por\u00f3wnano ze stanem CLI. Odzyskano pr\u00f3g ci\u015bnienia/czasu i automatyczny start dw\u00f3ch pierwszych wentylator\u00f3w obudowy z blokadami r\u0119cznymi; sesja zachowuje polecenia. Przeniesiono r\u00f3wnie\u017c natrysk obudowy 0x502480: aktywacja ci\u015bnieniem/czasem, zatrzask, dwa polecenia pomp i blokady r\u0119czne; wsp\u00f3lne w\u0142a\u015bciwo\u015bci urz\u0105dze\u0144 s\u0105 wi\u0105zane z aktualnymi producentami. Przeniesiono zatrzask zap\u0142onu wodoru, zapis ci\u015bnienia/czasu, op\u00f3\u017anione spalanie i wygaszenie; obs\u0142ugiwane s\u0105 oryginalne rozr\u00f3\u017cnienia flag i \u015bcis\u0142e granice.",
       "remaining": "Pozosta\u0142e zabezpieczenia i skutki zdarze\u0144, pe\u0142ny harmonogram oraz kompletna zgodno\u015b\u0107 callback\u00f3w orygina\u0142u. Kontrolki odzyskanych urz\u0105dze\u0144 dzia\u0142aj\u0105 w widoku Simulation; wskazania na oryginalnym schemacie nadal dotycz\u0105 zapisanych IC.",
       "acceptance": "Polecenia r\u0119czne i automatyczne zmieniaj\u0105 w\u0142a\u015bciwe urz\u0105dzenia, przep\u0142ywy i zatrzaski zgodnie z orygina\u0142em."
     },
@@ -2935,15 +2935,15 @@
       "id": "STEP",
       "name": "Kompletny krok ca\u0142ej instalacji",
       "status": "partial",
-      "done": "Po\u0142\u0105czone fragmenty obiegu, obu SG, automatyki, bilansu i 14-stanowego integratora. Pocz\u0105tkowe sterowanie obu SG dzia\u0142a przed ich wymian\u0105, zachowuj\u0105c wsp\u00f3lny znacznik czasu i kontrolk\u0119 awarii; wytwarza entalpie u\u017cywane w bilansie strumieni. Producent wyp\u0142ywu SG uwzgl\u0119dnia zawory, znak przep\u0142ywu A/B, limit masy i korekt\u0119 ciep\u0142a. Zamkni\u0119to luk\u0119 regulacji zasilania obu SG; ca\u0142y odzyskany blok SG por\u00f3wnany z ci\u0105g\u0142ym wykonaniem instrukcji orygina\u0142u. Backend \u015bwie\u017cego startu dostarcza teraz p\u00f3\u017ane odniesienia i w\u0142a\u015bciwo\u015bci cieplne potrzebne odzyskanym uk\u0142adom. Powi\u0105zano odzyskane wej\u015bcia zdarze\u0144 z RCP, SG i dalsz\u0105 integracj\u0105, z wycofaniem ca\u0142ego kroku przy b\u0142\u0119dzie. Opcjonalna \u015bcie\u017cka modelu normalnego wytwarza bie\u017c\u0105ce ciep\u0142o, poziomy i historie obu p\u0119tli przed SG oraz bilansem/integracj\u0105; warto\u015bci te nie musz\u0105 by\u0107 dostarczane jako zapisane wyniki. Akumulator przed sumowaniem \u017ar\u00f3de\u0142 dostarcza aktualny przep\u0142yw, stan gazu i zapas wody do dalszych oblicze\u0144. Zasilanie, ch\u0142odzenie i recyrkulacja dostarczaj\u0105 aktualne przep\u0142ywy oraz entalpi\u0119 przed akumulatorem i bilansem. Stateful session \u0142\u0105czy kolejne kroki z zachowaniem polece\u0144. Po\u0142\u0105czono p\u00f3\u017ane sprz\u0119\u017cenie temperatur gor\u0105cych/zimnych ga\u0142\u0119zi i czterech historii filtra (0x50d1f8\u20130x50d867), w tym przep\u0142yw wsteczny i ograniczenia; 640 przypadk\u00f3w i 16 o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w oryginalnych fragment\u00f3w.",
-      "remaining": "Pozostali producenci wej\u015b\u0107, w tym p\u00f3\u017ane modele obudowy/\u017ar\u00f3de\u0142 pomocniczych (0x502480, 0x5034b0), inne \u015bcie\u017cki transportu i alternatywny model; pozosta\u0142a kolejno\u015b\u0107 uk\u0142ad\u00f3w oraz pe\u0142ny dispatcher. Zasilanie/recyrkulacja, normalna wymiana, akumulator i p\u00f3\u017ane sprz\u0119\u017cenie temperatur s\u0105 ju\u017c pod\u0142\u0105czone.",
+      "done": "Po\u0142\u0105czone fragmenty obiegu, obu SG, automatyki, bilansu i 14-stanowego integratora. Pocz\u0105tkowe sterowanie obu SG dzia\u0142a przed ich wymian\u0105, zachowuj\u0105c wsp\u00f3lny znacznik czasu i kontrolk\u0119 awarii; wytwarza entalpie u\u017cywane w bilansie strumieni. Producent wyp\u0142ywu SG uwzgl\u0119dnia zawory, znak przep\u0142ywu A/B, limit masy i korekt\u0119 ciep\u0142a. Zamkni\u0119to luk\u0119 regulacji zasilania obu SG; ca\u0142y odzyskany blok SG por\u00f3wnany z ci\u0105g\u0142ym wykonaniem instrukcji orygina\u0142u. Backend \u015bwie\u017cego startu dostarcza teraz p\u00f3\u017ane odniesienia i w\u0142a\u015bciwo\u015bci cieplne potrzebne odzyskanym uk\u0142adom. Powi\u0105zano odzyskane wej\u015bcia zdarze\u0144 z RCP, SG i dalsz\u0105 integracj\u0105, z wycofaniem ca\u0142ego kroku przy b\u0142\u0119dzie. Opcjonalna \u015bcie\u017cka modelu normalnego wytwarza bie\u017c\u0105ce ciep\u0142o, poziomy i historie obu p\u0119tli przed SG oraz bilansem/integracj\u0105; warto\u015bci te nie musz\u0105 by\u0107 dostarczane jako zapisane wyniki. Akumulator przed sumowaniem \u017ar\u00f3de\u0142 dostarcza aktualny przep\u0142yw, stan gazu i zapas wody do dalszych oblicze\u0144. Zasilanie, ch\u0142odzenie i recyrkulacja dostarczaj\u0105 aktualne przep\u0142ywy oraz entalpi\u0119 przed akumulatorem i bilansem. Stateful session \u0142\u0105czy kolejne kroki z zachowaniem polece\u0144. Po\u0142\u0105czono p\u00f3\u017ane sprz\u0119\u017cenie temperatur gor\u0105cych/zimnych ga\u0142\u0119zi i czterech historii filtra (0x50d1f8\u20130x50d867), w tym przep\u0142yw wsteczny i ograniczenia; 640 przypadk\u00f3w i 16 o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w oryginalnych fragment\u00f3w. Pod\u0142\u0105czono ca\u0142y odzyskany blok wentylator\u00f3w obudowy 0x5034b0: 720 przypadk\u00f3w, 32 po\u0142\u0105czone kroki i osiem \u0142a\u0144cuch\u00f3w po osiem krok\u00f3w. Wytwarza bie\u017c\u0105ce ciep\u0142o przed bilansem/integracj\u0105; pe\u0142ny bilans obudowy pozostaje osobny. Natrysk obudowy po\u0142\u0105czono przed wentylatorami; zachowuje polecenia, wytwarza przep\u0142yw, entalpi\u0119 i ciep\u0142o oraz jawne lokalne wyj\u015bcia dla przysz\u0142ego bilansu. 192 przypadki samodzielne, osiem po\u0142\u0105czonych krok\u00f3w i dwa czterokrokowe \u0142a\u0144cuchy zgodne z oryginalnymi fragmentami. Po\u0142\u0105czono numeryczny bilans obudowy 0x5233c5\u20130x523f36 z warunkowo wywo\u0142ywanym solverem 0x5011b0; ewoluuj\u0105 ci\u015bnienie, temperatura i poziom. Sprz\u0119\u017cenie \u015bcian i migawka starej temperatury poprzedzaj\u0105 natrysk; sumowane s\u0105 aktualne przep\u0142ywy powrotne zasilania i natrysku. 144 ci\u0105g\u0142e przypadki orygina\u0142u, osiem po\u0142\u0105czonych krok\u00f3w i dwa czterokrokowe \u0142a\u0144cuchy. Producent energii reakcji BFB8 i logika wodoru B754 wykonuj\u0105 si\u0119 przed normaln\u0105 wymian\u0105/SG i dostarczaj\u0105 bie\u017c\u0105ce ciep\u0142o do bilansu obudowy. 335 przypadk\u00f3w oryginalnych instrukcji, osiem po\u0142\u0105czonych krok\u00f3w oraz dwa 16-krokowe \u0142a\u0144cuchy obejmuj\u0105ce zap\u0142on, dziesi\u0119\u0107 krok\u00f3w spalania i wygaszenie. Przeniesiono blok transferu po modelu 0x51f8c6\u20130x51fc92: BFB4, mas\u0119 i historie BFCC/BFBC/BFE8, \u015bcis\u0142y pr\u00f3g Double0.01, ograniczenie temperatury i warunki pomijania. Bie\u017c\u0105cy transfer zasila BFB8 przed wodorem i bilansem; 206 przypadk\u00f3w liczbowych, jeden b\u0142\u0105d osobliwy, osiem po\u0142\u0105czonych krok\u00f3w i dwa 16-krokowe \u0142a\u0144cuchy. Wej\u015bcia Double prze\u017cywaj\u0105 zapis/odczyt bitowo.",
+      "remaining": "Ewolucja stanu Double/w\u0119z\u0142\u00f3w i wytwarzanie wodoru w 0x526b40, w tym \u017ar\u00f3d\u0142a BF7C/BDF4; pe\u0142ny blok 0x503f50, inne \u015bcie\u017cki transportu i dispatcher. Transfer BFB4/historie, BFB8, zap\u0142on/spalanie B754 i bilans obudowy s\u0105 ju\u017c pod\u0142\u0105czone. C000/BFFC/C004 to ju\u017c wczytywane FCO2/FH2O/FDEC, a BB08 jest sta\u0142\u0105 startow\u0105; nie s\u0105 oddzielnymi nieprzeniesionymi producentami.",
       "acceptance": "Kolejny krok otrzymuje wy\u0142\u0105cznie kompletny stan, model i polecenia; nie wymaga r\u0119cznie podawanych brakuj\u0105cych wynik\u00f3w innych uk\u0142ad\u00f3w."
     },
     {
       "id": "EVENTS",
       "name": "Awarie i scenariusze w czasie",
       "status": "partial",
-      "done": "Odzyskane ustawienia scenariuszy, wybrane warunki czasowe i zatrzaski. Przeliczanie 20 czas\u00f3w zdarze\u0144 przy odtworzeniu; czasy RCP/SG i wybrane flagi SG s\u0105 wi\u0105zane z odzyskanym krokiem. Flaga zdarzenia 7 i wsp\u00f3lny czas zdarzenia 8 steruj\u0105 odzyskan\u0105 normaln\u0105 wymian\u0105 ciepln\u0105 obu p\u0119tli.",
+      "done": "Odzyskane ustawienia scenariuszy, wybrane warunki czasowe i zatrzaski. Przeliczanie 20 czas\u00f3w zdarze\u0144 przy odtworzeniu; czasy RCP/SG i wybrane flagi SG s\u0105 wi\u0105zane z odzyskanym krokiem. Flaga zdarzenia 7 i wsp\u00f3lny czas zdarzenia 8 steruj\u0105 odzyskan\u0105 normaln\u0105 wymian\u0105 ciepln\u0105 obu p\u0119tli. Flaga zdarzenia 4 i jego aktualny czas s\u0105 wi\u0105zane z producentem wodoru; zap\u0142on aktualizuje wsp\u00f3ln\u0105 tablic\u0119 czasu, zachowywan\u0105 w sesji i zapisie/odczycie.",
       "remaining": "Pe\u0142ny harmonogram awarii, op\u00f3\u017anienia, rampy, sekwencje zabezpiecze\u0144 i ich powi\u0105zanie z krokiem.",
       "acceptance": "Zadany scenariusz wywo\u0142uje te same zdarzenia i skutki w odpowiadaj\u0105cych chwilach."
     },
@@ -2951,15 +2951,15 @@
       "id": "GUI",
       "name": "Przebiegi i sterowanie z GUI",
       "status": "partial",
-      "done": "Schemat i angielski interfejs, odczyt IC, panel odzyskanej inicjalizacji; paczki i ikona Linux. Widok Simulation wykonuje rzeczywiste kroki odzyskanego silnika: Start/Pause/Step/Reset, pr\u0119dko\u015b\u0107, polecenia urz\u0105dze\u0144, aktualne wskazania, wykresy, zapis/odczyt JSON i CSV. Wbudowany syntetyczny przyk\u0142ad uruchamia si\u0119 bez plik\u00f3w zewn\u0119trznych. Automatyczne klikni\u0119cia X11 potwierdzaj\u0105 dzia\u0142anie i zgodno\u015b\u0107 pe\u0142nego stanu po r\u0119cznej zmianie grza\u0142ki z CLI. Panel inicjalizacji korzysta ze z\u0142o\u017conego stanu z modelem Double i tablicami, zachowuje widok IC oraz eksportuje typowany JSON przyciskiem Save initialized state. Jest to stan odzyskanej inicjalizacji, jeszcze nie gotowa sesja ca\u0142ej instalacji. Dodano Live simulation mimic: oryginalny uk\u0142ad schematu pokazuje bie\u017c\u0105ce obliczone ci\u015bnienia, temperatur\u0119, poziomy i przep\u0142ywy. Jednostki odwracaj\u0105 \u017ar\u00f3d\u0142owe konwersje IC; brakuj\u0105ce odczyty i urz\u0105dzenia pokazuj\u0105 \u2014, bez zapasowych danych IC. Otwarcie schematu sprawdzono rzeczywistymi klikni\u0119ciami.",
-      "remaining": "Kompletny start scenariusza bezpo\u015brednio z IC, odczyt oryginalnych zapis\u00f3w oraz brakuj\u0105ce \u017ar\u00f3d\u0142a odczyt\u00f3w/urz\u0105dze\u0144 i scenariusze awarii. Odr\u0119bny widok IC pozostaje zapisanym stanem; Live simulation mimic pokazuje odzyskane bie\u017c\u0105ce zmienne. Przyk\u0142ad Simulation nie zast\u0119puje pe\u0142nego uruchomienia reaktora.",
-      "acceptance": "U\u017cytkownik uruchamia, zatrzymuje i steruje rzeczywist\u0105 symulacj\u0105; wskazania pochodz\u0105 z aktualnego stanu oblicze\u0144."
+      "done": "Schemat i angielski interfejs, odczyt IC, panel odzyskanej inicjalizacji; paczki i ikona Linux. Widok Simulation wykonuje rzeczywiste kroki odzyskanego silnika: Start/Pause/Step/Reset, pr\u0119dko\u015b\u0107, polecenia urz\u0105dze\u0144, aktualne wskazania, wykresy, zapis/odczyt JSON i CSV. Wbudowany syntetyczny przyk\u0142ad uruchamia si\u0119 bez plik\u00f3w zewn\u0119trznych. Automatyczne klikni\u0119cia X11 potwierdzaj\u0105 dzia\u0142anie i zgodno\u015b\u0107 pe\u0142nego stanu po r\u0119cznej zmianie grza\u0142ki z CLI. Panel inicjalizacji korzysta ze z\u0142o\u017conego stanu z modelem Double i tablicami, zachowuje widok IC oraz eksportuje typowany JSON przyciskiem Save initialized state. Jest to stan odzyskanej inicjalizacji, jeszcze nie gotowa sesja ca\u0142ej instalacji. Dodano Live simulation mimic: oryginalny uk\u0142ad schematu pokazuje bie\u017c\u0105ce obliczone ci\u015bnienia, temperatur\u0119, poziomy i przep\u0142ywy. Jednostki odwracaj\u0105 \u017ar\u00f3d\u0142owe konwersje IC; brakuj\u0105ce odczyty i urz\u0105dzenia pokazuj\u0105 \u2014, bez zapasowych danych IC. Otwarcie schematu sprawdzono rzeczywistymi klikni\u0119ciami. Odtworzono klasyczn\u0105 geometri\u0119/palet\u0119 g\u0142\u00f3wnego NSSS z handbooka i pod\u0142\u0105czono rzeczywist\u0105 sesj\u0119 do tego ekranu; bezpo\u015brednie polecenia grza\u0142ek/RCP i przyciski kroku por\u00f3wnano z CLI. Dodano cztery bie\u017c\u0105ce temperatury ga\u0142\u0119zi. Klasyczne symbole wentylator\u00f3w maj\u0105 odczyty IC i sesji, r\u0119czne sterowanie oraz bie\u017c\u0105ce ciep\u0142o MW; klikni\u0119cie 75% i Step por\u00f3wnano z CLI. Osobny syntetyczny przyk\u0142ad jest dost\u0119pny z File. Trzy klasyczne odczyty Reactor Bldg (PRB/TRB/LWRB) korzystaj\u0105 z wybranego bilansu obudowy i jego ewoluuj\u0105cych wynik\u00f3w; testy adaptera potwierdzaj\u0105 aktualizacj\u0119 i Reset, bez podstawiania IC. Dedykowane klasyczne kontrolki natrysku pozostaj\u0105 otwarte. Klasyczny wska\u017anik Hydrogen pokazuje obliczone st\u0119\u017cenie wybranego producenta; test adaptera i historii obejmuje spalanie, wygaszenie oraz Reset, bez nowego testu klikni\u0119\u0107 X11.",
+      "remaining": "Kompletny start scenariusza bezpo\u015brednio z IC, odczyt oryginalnych zapis\u00f3w oraz brakuj\u0105ce \u017ar\u00f3d\u0142a odczyt\u00f3w/urz\u0105dze\u0144 i scenariusze awarii. Odr\u0119bny widok IC pozostaje zapisanym stanem; Live simulation mimic pokazuje odzyskane bie\u017c\u0105ce zmienne. Przyk\u0142ad Simulation nie zast\u0119puje pe\u0142nego uruchomienia reaktora. Pe\u0142na zgodno\u015b\u0107 wizualna wszystkich okien klasycznego interfejsu, pozosta\u0142e ikony/geometria/czcionki oraz pe\u0142ny zestaw callback\u00f3w.",
+      "acceptance": "U\u017cytkownik uruchamia, zatrzymuje i steruje rzeczywist\u0105 symulacj\u0105; wskazania pochodz\u0105 z aktualnego stanu oblicze\u0144. Interfejs ma odtwarza\u0107 klasyczny PCTran, z zachowaniem angielskiego j\u0119zyka i nazwy RustTran."
     },
     {
       "id": "HISTORY",
       "name": "Historia, wykresy i raporty przebieg\u00f3w",
       "status": "partial",
-      "done": "Osobny wykres funkcji DECAY i infrastruktura eksport\u00f3w/por\u00f3wna\u0144 komponent\u00f3w. Eksport rzeczywistych aktualizacji odzyskanej sesji do JSON i CSV oraz osobny interaktywny raport HTML z wykresami ci\u015bnie\u0144, temperatur, poziom\u00f3w i przep\u0142yw\u00f3w. Widok Simulation zbiera rzeczywiste pr\u00f3bki, pokazuje 16 szereg\u00f3w i eksportuje CSV w jednostkach orygina\u0142u. Historia GUI zachowuje ostatnie 50 000 pr\u00f3bek z jawnym oznaczeniem; osobny raport CLI nadal eksportuje ca\u0142y zadany przebieg.",
+      "done": "Osobny wykres funkcji DECAY i infrastruktura eksport\u00f3w/por\u00f3wna\u0144 komponent\u00f3w. Eksport rzeczywistych aktualizacji odzyskanej sesji do JSON i CSV oraz osobny interaktywny raport HTML z wykresami ci\u015bnie\u0144, temperatur, poziom\u00f3w i przep\u0142yw\u00f3w. Widok Simulation zbiera rzeczywiste pr\u00f3bki, pokazuje 16 szereg\u00f3w i eksportuje CSV w jednostkach orygina\u0142u. Historia GUI zachowuje ostatnie 50 000 pr\u00f3bek z jawnym oznaczeniem; osobny raport CLI nadal eksportuje ca\u0142y zadany przebieg. Historia rozszerzona do 17 serii o obliczane ciep\u0142o wentylator\u00f3w, z zachowaniem dotychczasowej kolejno\u015bci kolumn. Dodano sze\u015b\u0107 obliczanych serii obudowy i natrysku, razem 23; stare kolumny zachowuj\u0105 kolejno\u015b\u0107, brak wybranego producenta daje brak warto\u015bci. Raport czterech krok\u00f3w i zgodno\u015b\u0107 z histori\u0105 CLI/GUI sprawdzone. Dwie kolejne serie wodoru i ciep\u0142a spalania daj\u0105 obecnie 25 serii; 16-wierszowy CSV odpowiada bitowo wyj\u015bciom CLI, a brak producenta daje brak odczyt\u00f3w.",
       "remaining": "Historie i ko\u0144cowe raporty kompletnych scenariuszy, pe\u0142ny zakres zmiennych instalacji oraz por\u00f3wnanie z orygina\u0142em. Historia odzyskanej sesji z dostarczonego stanu i syntetycznego przyk\u0142adu nie stanowi pe\u0142nego przebiegu PCTran.",
       "acceptance": "Wykresy i eksporty przedstawiaj\u0105 rzeczywiste, odtwarzalne wyniki uruchomionego scenariusza."
     },
@@ -3162,19 +3162,192 @@
       "status": "validated",
       "description": "Pod\u0142\u0105czono obliczone ci\u015bnienia/temperatur\u0119/poziomy/przep\u0142ywy do schematu podobnego do orygina\u0142u. Brakuj\u0105ce wskazania pozostaj\u0105 nieznane, bez podstawiania danych IC. Test mapowania i rzeczywiste klikni\u0119cia otwieraj\u0105ce Live simulation mimic przesz\u0142y.",
       "evidence": "FRESH_STATE_AND_DOUBLE_INITIALIZATION.md"
+    },
+    {
+      "id": "2026-11-03-classic-live-interface",
+      "milestones": [
+        "GUI",
+        "AUTO"
+      ],
+      "status": "validated_partial",
+      "description": "Zast\u0105piono nowoczesny schemat klasycznym uk\u0142adem z dokumentacji; sesja mo\u017ce dzia\u0142a\u0107 w g\u0142\u00f3wnym NSSS. Bezpo\u015brednie polecenia grza\u0142ki i RCP oraz Step daj\u0105 identyczny stan jak CLI; sprawdzono Start/Pause/Reset i wyb\u00f3r IC. Pod\u0142\u0105czono cztery obliczane temperatury ga\u0142\u0119zi. Pe\u0142na identyczno\u015b\u0107 okien i ca\u0142e scenariusze nadal otwarte.",
+      "evidence": "CLASSIC_INTERFACE_PARITY.md"
+    },
+    {
+      "id": "2026-11-03-containment-fans",
+      "milestones": [
+        "AUTO",
+        "STEP",
+        "GUI",
+        "HISTORY"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono ca\u0142y odzyskany blok wentylator\u00f3w obudowy 0x5034b0 i jego automatyk\u0119. 720 przypadk\u00f3w, 32 po\u0142\u0105czone kroki i osiem o\u015bmiokrokowych \u0142a\u0144cuch\u00f3w; sterowanie 75% z klasycznego GUI zgadza si\u0119 z CLI i daje obliczone ciep\u0142o. \u0141\u0105cznie 24672 przypadki/653483 sprawdzenia i 176 test\u00f3w Rust. Pe\u0142ny bilans obudowy oraz pozosta\u0142e uk\u0142ady pozostaj\u0105 otwarte.",
+      "evidence": "CONTAINMENT_FAN_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-11-03-containment-spray",
+      "milestones": [
+        "AUTO",
+        "STEP"
+      ],
+      "status": "validated",
+      "description": "Przeniesiono automatyk\u0119 i ch\u0142odzenie natrysku obudowy 0x502480; po\u0142\u0105czono bie\u017c\u0105ce wsp\u00f3lne polecenia i zachowanie stanu sesji. Osobny ma\u0142y raport: 202 przypadki/10424 sprawdzenia; 181 test\u00f3w Rust i Clippy przechodz\u0105. Pe\u0142ny bilans obudowy oraz sterowanie natryskiem z klasycznego GUI pozostaj\u0105 otwarte. Instalator\u00f3w nie przebudowano.",
+      "evidence": "CONTAINMENT_SPRAY_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-11-03-containment-balance",
+      "milestones": [
+        "STEP",
+        "GUI",
+        "HISTORY"
+      ],
+      "status": "validated_partial",
+      "description": "Po\u0142\u0105czono bilans obudowy, sprz\u0119\u017cenie \u015bcian i warunkowy solver r\u00f3wnowagi: ewoluuj\u0105 ci\u015bnienie/temperatura/poziom, widoczne na klasycznym schemacie i w 23 seriach historii. Aktualne przep\u0142ywy powrotne zasilania/natrysku, polecenia i czasy zdarze\u0144 s\u0105 wi\u0105zane bez starych kopii. 154 przypadki/11359 sprawdze\u0144; 187 test\u00f3w Rust i Clippy przechodz\u0105. Pozosta\u0142e \u017ar\u00f3d\u0142a cieplne/Double/stan awarii i pe\u0142na inicjalizacja nadal jawne. Bez przebudowy instalator\u00f3w.",
+      "evidence": "CONTAINMENT_BALANCE_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-11-03-containment-thermal-hydrogen",
+      "milestones": [
+        "INIT",
+        "AUTO",
+        "STEP",
+        "EVENTS",
+        "GUI",
+        "HISTORY"
+      ],
+      "status": "validated_partial",
+      "description": "Przeniesiono energi\u0119 reakcji BFB8 i zap\u0142on/op\u00f3\u017anione spalanie/wygaszenie wodoru B754, z odzyskan\u0105 oryginaln\u0105 krzyw\u0105 prog\u00f3w. Czas zap\u0142onu trafia do wsp\u00f3lnego zdarzenia4, a bie\u017c\u0105ce ciep\u0142o do bilansu. Dwa 16-krokowe \u0142a\u0144cuchy obejmuj\u0105 ca\u0142y odzyskany cykl spalania; 345 przypadk\u00f3w/26830 sprawdze\u0144 i 194 testy Rust. Klasyczny Hydrogen oraz 25 serii historii korzystaj\u0105 z wynik\u00f3w. Nadal brakuje pe\u0142nych upstreamowych stan\u00f3w reakcji/produkcji wodoru i ca\u0142ych scenariuszy. Bez przebudowy instalator\u00f3w.",
+      "evidence": "CONTAINMENT_THERMAL_CONNECTIONS.md"
+    },
+    {
+      "id": "2026-11-03-post-model-reaction-transfer",
+      "milestones": [
+        "INIT",
+        "STEP"
+      ],
+      "status": "validated_partial",
+      "description": "Przeniesiono producenta transferu BFB4 i jego historie po modelu, przed energi\u0105 reakcji/wodorem/bilansem. 216 przypadk\u00f3w/20542 sprawdzenia oraz osobny oryginalny b\u0142\u0105d osobliwy; 200 test\u00f3w Rust i Clippy przechodz\u0105. Adapter zachowuje Double dla 110 stan\u00f3w startowych. U\u015bci\u015blono backlog: FCO2/FH2O/FDEC by\u0142y ju\u017c wczytywane; pozostaje wcze\u015bniejsza zale\u017cno\u015b\u0107 ewolucji w\u0119z\u0142\u00f3w modelu, nie ponowny port BFB4. Bez nowych instalator\u00f3w i testu Windows.",
+      "evidence": "REACTION_TRANSFER_CONNECTIONS.md"
     }
   ],
-  "progress_revision": 19,
-  "scope_discoveries": [],
+  "progress_revision": 25,
+  "scope_discoveries": [
+    {
+      "date": "2026-11-03",
+      "milestone": "GUI",
+      "request": "U\u017cytkownik wymaga identycznego klasycznego wygl\u0105du PCTran; zast\u0119puje wcze\u015bniejszy szaro-\u017c\u00f3\u0142ty redesign.",
+      "acceptance": "Por\u00f3wnanie wszystkich ekran\u00f3w/okien i sterowania z orygina\u0142em; g\u0142\u00f3wny NSSS nie wyczerpuje kryterium."
+    }
+  ],
   "remaining_work_estimate": {
     "overall_percent": null,
     "remaining_hours": null,
     "reason": "Lista i zale\u017cno\u015bci zachowa\u0144 orygina\u0142u nie s\u0105 zamkni\u0119te. Pozosta\u0142o siedem du\u017cych kryteri\u00f3w odbioru, cz\u0119\u015bciowo rozpocz\u0119tych; nie jest to siedem r\u00f3wnych zada\u0144 ani siedem pojedynczych zmian."
   },
   "validated_build": {
-    "component_cases_passed": 23912,
-    "component_output_checks_passed": 608507,
-    "rust_tests_passed": 170,
+    "component_cases_passed": 24672,
+    "component_output_checks_passed": 653483,
+    "rust_tests_passed": 200,
     "original_application_end_to_end": "not validated"
+  },
+  "targeted_validations": {
+    "containment_spray": {
+      "date": "2026-11-03",
+      "source_entry": "0x502480",
+      "native_component_cases": 192,
+      "composed_steps": 8,
+      "native_session_chains": 2,
+      "steps_per_chain": 4,
+      "targeted_cases_passed": 202,
+      "targeted_output_checks_passed": 10424,
+      "rust_tests": 181,
+      "clippy": "GUI/all targets passed with -D warnings",
+      "report": "containment-spray-comparison/results.html",
+      "evidence": "CONTAINMENT_SPRAY_CONNECTIONS.md",
+      "scope": "Original numerical/control body and composed slices with explicit COM state; not full Windows scenarios",
+      "package": "Source/debug CLI only; installed/package binaries remain at containment-fan checkpoint",
+      "remaining": "Dedicated classic spray controls, upstream reaction/inventory/Double/fault sources, full initialization/events/alternate evolution and original Windows trajectories; numeric containment balance/vessel and thermal/hydrogen producers are connected"
+    },
+    "containment_balance": {
+      "date": "2026-11-03",
+      "native_body": "0x5233c5-0x523f36 with conditional 0x5011b0 callee",
+      "native_feedback_prefix": "0x5232ee-0x523358",
+      "native_component_cases": 144,
+      "native_vessel_calls": 84,
+      "composed_steps": 8,
+      "native_session_chains": 2,
+      "steps_per_chain": 4,
+      "targeted_cases_passed": 154,
+      "targeted_output_checks_passed": 11359,
+      "rust_tests": 187,
+      "clippy": "GUI/all targets passed with -D warnings",
+      "report": "containment-balance-comparison/results.html",
+      "history": "containment-balance-history/history.html",
+      "history_series": 23,
+      "evidence": "CONTAINMENT_BALANCE_CONNECTIONS.md",
+      "gui": "Selected-producer PRB/TRB/LWRB mapping, evolving state, history and Reset tested in Rust; no new actual widget/X11 test",
+      "scope": "Original numeric balance/vessel caller and composed slices with explicit remaining Double/array/COM/source inputs; not full original Windows scenarios",
+      "package": "Source/debug CLI only; installed/package binaries remain at containment-fan checkpoint",
+      "remaining": "Upstream reaction/inventory and Double/fault producers, dedicated spray controls, initialization/restore, alternate evolution, protection and original application trajectories; BFB8/B754 and original ignition curve are now ported separately",
+      "history_integrity": "containment-balance-history-validation.json",
+      "rust_cli_sha256": "5634839a593835b36db9a2f5ef4d5f0dfad7a6b25089456c99ff77a725c06fc9"
+    },
+    "containment_thermal": {
+      "date": "2026-11-03",
+      "native_source": "0x51fc92-0x51fd6c",
+      "native_hydrogen": "0x52059e-0x520986",
+      "original_curve": "0x51d326-0x51d3c6 with register context0x51c98a/0x51c998",
+      "native_component_cases": 335,
+      "composed_steps": 8,
+      "native_session_chains": 2,
+      "steps_per_chain": 16,
+      "each_chain_decisions": {
+        "ignited": 1,
+        "burned": 10,
+        "extinguished": 1
+      },
+      "targeted_cases_passed": 345,
+      "targeted_output_checks_passed": 26830,
+      "rust_tests": 194,
+      "clippy": "GUI/all targets passed with -D warnings",
+      "report": "containment-thermal-comparison/results.html",
+      "history": "containment-thermal-history/history.html",
+      "history_integrity": "containment-thermal-history-validation.json",
+      "history_series": 25,
+      "evidence": "CONTAINMENT_THERMAL_CONNECTIONS.md",
+      "original_power_constant_bits": "0x40dba7362e90363c",
+      "rust_cli_sha256": "8b342f0f77ea260c32f0bdd260d0a3a90aa01f81d0778f4a7e7dcb243488e3ab",
+      "scope": "Original source/hydrogen branches and initializer data; composed native slices with explicit upstream reaction state, not full original Windows scenarios",
+      "gui": "Computed Hydrogen meter, complete burn history/Reset/omitted producer checked in Rust; no new X11 widget run",
+      "package": "Source/debug CLI only; installed packages remain at containment-fan checkpoint",
+      "remaining": "Alternate Double/node evolution and hydrogen generation, full initialization/events and original Windows trajectories; BFB4 transfer now ported, FCO2/FH2O/FDEC already loaded model parameters"
+    },
+    "reaction_transfer": {
+      "date": "2026-11-03",
+      "native_body": "0x51f8c6-0x51fc92",
+      "native_component_cases": 206,
+      "native_active_cases": 110,
+      "native_transfer_cases": 74,
+      "native_error_cases": 1,
+      "composed_steps": 8,
+      "native_session_chains": 2,
+      "steps_per_chain": 16,
+      "targeted_cases_passed": 216,
+      "targeted_output_checks_passed": 20542,
+      "rust_tests": 200,
+      "clippy": "GUI/all targets passed with -D warnings",
+      "report": "reaction-transfer-comparison/results.html",
+      "history": "reaction-transfer-history/history.html",
+      "history_integrity": "reaction-transfer-history-validation.json",
+      "history_series": 25,
+      "initialized_input_pairs": 110,
+      "double_control_retention": "binary64 bit-for-bit in Rust and CLI report",
+      "evidence": "REACTION_TRANSFER_CONNECTIONS.md",
+      "rust_cli_sha256": "2f23e270e3ea8be14388400ab13ddd3867da59a827a3b06d513f589110eb272f",
+      "scope": "Original post-model numerical branch and composed supplied-state chains; upstream model evolution remains explicit",
+      "package": "Source/debug CLI only; packages remain fan checkpoint",
+      "remaining": "Model0x526b40 Double/node evolution and hydrogen generation, full0x503f50 and plant dispatcher/init/restore/protection/dialogs/original Windows scenarios"
+    }
   }
 }

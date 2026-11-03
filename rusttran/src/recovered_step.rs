@@ -19,6 +19,18 @@ pub struct NormalThermalControls {
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct RecoveredStepControls {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub reaction_transfer: Option<Box<crate::reaction_transfer::ReactionTransferInputs>>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub containment_thermal: Option<Box<crate::containment_thermal::ContainmentThermalControls>>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub containment_balance: Option<crate::containment_balance::ContainmentBalanceUpdate>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub containment_spray: Option<crate::containment_spray::ContainmentSprayControls>,
+    /// Original late containment fan producer, before stream balance/integration.
+    /// Omission retains the explicit boundary for previous session formats.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub containment_fans: Option<crate::containment_fans::ContainmentFanControls>,
     #[serde(default, skip_serializing_if = "is_false")]
     pub loop_transport: bool,
     #[serde(default)]
@@ -78,6 +90,16 @@ pub struct RecoveredStepRequest {
 }
 #[derive(Clone, Debug, Serialize)]
 pub struct RecoveredStepOutput {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reaction_transfer: Option<crate::reaction_transfer::ReactionTransferOutput>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub containment_thermal: Option<crate::containment_thermal::ContainmentThermalOutput>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub containment_balance: Option<crate::containment_balance::ContainmentBalanceOutput>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub containment_spray: Option<crate::containment_spray::ContainmentSprayOutput>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub containment_fans: Option<crate::containment_fans::ContainmentFanOutput>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub primary_commands: Option<PrimaryControlCommands>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -191,6 +213,28 @@ impl NativeGlobals {
         integers.extend(source.integers);
         let relief_tail = g.advance_relief_tail(c.tail_control_state)?;
         singles.insert("0x54bf9c".into(), relief_tail.g54bf9c);
+        let reaction_transfer = c
+            .reaction_transfer
+            .as_ref()
+            .map(|inputs| g.advance_reaction_transfer(inputs))
+            .transpose()?;
+        if let Some(out) = &reaction_transfer {
+            singles.extend(out.singles.clone());
+        }
+        // Original source/hydrogen producers precede normal thermal and SGs.
+        let containment_thermal = if let Some(controls) = &c.containment_thermal {
+            let mut controls = controls.clone();
+            if let Some(events) = &c.event_schedule {
+                controls.burn_flag = events.flags[4];
+                controls.burn_time = events.times[4];
+            }
+            let out = g.advance_containment_thermal(&controls)?;
+            singles.extend(out.singles.clone());
+            integers.extend(out.integers.clone());
+            Some(out)
+        } else {
+            None
+        };
         let thermal_loops = if let Some(thermal) = &c.normal_thermal {
             if g.integer(0x54bec8)? != 0 {
                 return Err("connected normal thermal transfer requires model mode 0; external-model dispatch is not connected".into());
@@ -303,12 +347,80 @@ impl NativeGlobals {
         if c.loop_transport {
             singles.extend(g.advance_loop_transport()?);
         }
+        if c.containment_balance.is_some() {
+            singles.extend(g.prepare_containment_feedback()?);
+        }
+        let containment_spray = if let Some(controls) = &c.containment_spray {
+            let mut controls = controls.clone();
+            // These are the same original COM properties, read after earlier
+            // producers. Bind their returned state rather than stale copies.
+            if let Some(out) = &primary_devices {
+                controls.auxiliary_percent = out.controls.auxiliary_percent;
+            }
+            if let Some(out) = &supply {
+                controls.mode = out.controls.mode;
+            }
+            if let Some(fans) = &c.containment_fans {
+                controls.exchanger_percent = fans.exchanger_percent;
+            }
+            let out = g.advance_containment_spray(&controls)?;
+            singles.extend(out.singles.clone());
+            integers.extend(out.integers.clone());
+            Some(out)
+        } else {
+            None
+        };
+        let containment_fans = c
+            .containment_fans
+            .as_ref()
+            .map(|controls| g.advance_containment_fans(controls))
+            .transpose()?;
+        if let Some(out) = &containment_fans {
+            singles.extend(out.singles.clone());
+        }
+        let containment_balance = if let Some(update) = &c.containment_balance {
+            let mut inputs = update.inputs.clone();
+            if let Some(events) = &c.event_schedule {
+                inputs.event_times = [events.times[2], events.times[3]];
+            }
+            if let Some(devices) = &primary_devices {
+                inputs.auxiliary_percent = devices.controls.auxiliary_percent;
+            } else if let Some(spray) = &containment_spray {
+                inputs.auxiliary_percent = spray.controls.auxiliary_percent;
+            }
+            if let Some(spray) = &containment_spray {
+                inputs.outlet_temperature = spray.outlet_temperature;
+                // Original 0x52337d–0x5233a1: both caller-local terms, rounded
+                // once to Single. Never substitute spray flow for the sum.
+                // Supply's original caller (0x51df66) binds its return output
+                // to this same EBP-0x28; prefer that current producer.
+                let other_return = supply
+                    .as_ref()
+                    .map_or(update.other_return_flow, |s| s.return_flow);
+                let total = (f64::from(spray.return_flow) + f64::from(other_return)) as f32;
+                if !other_return.is_finite() || !total.is_finite() {
+                    return Err("invalid containment combined return flow".into());
+                }
+                g.singles.insert("0x54ba24".into(), total);
+                singles.insert("0x54ba24".into(), total);
+            }
+            let out = g.advance_containment_balance(&inputs)?;
+            singles.extend(out.singles.clone());
+            Some(out)
+        } else {
+            None
+        };
         let stream = g.prepare_stream_balance()?;
         singles.insert("0x54b674".into(), stream.g54b674);
         singles.insert("0x54b4b8".into(), stream.g54b4b8);
         singles.extend(g.advance_native_integration(c.activation_time)?.singles);
         *self = g;
         Ok(RecoveredStepOutput {
+            reaction_transfer,
+            containment_thermal,
+            containment_balance,
+            containment_spray,
+            containment_fans,
             primary_commands,
             event_bindings,
             singles,

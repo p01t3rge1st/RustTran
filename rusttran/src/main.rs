@@ -69,7 +69,7 @@ fn run() -> Result<()> {
             Some("--database") => database = args.next().ok_or("--database needs a name")?,
             Some("--help" | "-h") | None => {
                 println!(
-                    "rusttran-cli [--data-root PATH] [--database NAME] COMMAND\nCommands: tables, models, parameters SET, conditions, condition IC, malfunctions, table NAME, status, math FUNCTION ARGS, vessel-step INPUT.json, pump-step INPUT.json, pump-pair-step INPUT.json, accumulator-step INPUT.json, accumulator-activate INPUT.json, accumulator-system-step INPUT.json, relief-step INPUT.json, saturated-step INPUT.json, steam-generator-step INPUT.json, controller-step INPUT.json, supply-tank-step INPUT.json, supply-system-step INPUT.json, steam-outflow-step INPUT.json, pressurizer-init INPUT.json, startup-heat INPUT.json, integration-restore INPUT.json, loop-transfer-step INPUT.json, primary-properties INPUT.json, primary-liquid-properties INPUT.json, primary-exchange INPUT.json, primary-inventory INPUT.json, normal-primary-phase INPUT.json, primary-core INPUT.json, recovered-primary-run INPUT.json, recovered-session-run INPUT.json, recovered-primary-step INPUT.json, relief-tail-state INPUT.json, steam-system-step INPUT.json, steam-auxiliary-step INPUT.json, steam-valves-step INPUT.json, steam-control-step INPUT.json, rcp-control-step INPUT.json, primary-devices-step INPUT.json, primary-sources INPUT.json, primary-relief-step INPUT.json, native-integration-step INPUT.json, restored-control-state INPUT.json, fresh-control-history INPUT.json, alternate-init INPUT.json, late-thermal-init INPUT.json, fresh-initial-state INPUT.json, fresh-thermal-startup INPUT.json, fresh-feedwater-init INPUT.json, fresh-steam-init INPUT.json, fresh-primary-startup INPUT.json, primary-control-cycle INPUT.json, fresh-primary-inventory-init INPUT.json, fresh-primary-init INPUT.json, primary-control-feedback INPUT.json, pressure-control-init INPUT.json, pressure-control-signal INPUT.json, spray-control INPUT.json, heater-control INPUT.json, primary-correction INPUT.json, primary-heat-capacity INPUT.json, primary-flow-preparation INPUT.json, primary-phase-state INPUT.json, primary-phase INPUT.json, primary-core INPUT.json, primary-correction INPUT.json, primary-heat-capacity INPUT.json, primary-flow-preparation INPUT.json, primary-phase-state INPUT.json, loop-reference-init INPUT.json, thermal-driving INPUT.json, feedwater-pi-step INPUT.json, thermal-mode-step INPUT.json, decay-heat INPUT.json, normal-loops-step INPUT.json, native-stages INPUT.json, native-seed IC, model-seed SET\nMath: DECAY time; EULER current previous step state; HFLD/HGAS/VFLD/TLIQ/VGAS pressure; PSAT temperature; HLIQ/VLIQ pressure temperature; P_FROM_VGAS volume.\nProperty units: psia, degF, Btu/lb, ft3/lb; no metric conversion.\nUse rusttran for the desktop Simulation workspace and initial-condition views. Full plant reconstruction remains incomplete."
+                    "rusttran-cli [--data-root PATH] [--database NAME] COMMAND\nCommands: tables, models, parameters SET, conditions, condition IC, malfunctions, table NAME, status, math FUNCTION ARGS, vessel-step INPUT.json, pump-step INPUT.json, pump-pair-step INPUT.json, accumulator-step INPUT.json, accumulator-activate INPUT.json, accumulator-system-step INPUT.json, relief-step INPUT.json, saturated-step INPUT.json, steam-generator-step INPUT.json, controller-step INPUT.json, supply-tank-step INPUT.json, supply-system-step INPUT.json, containment-fans-step INPUT.json, containment-spray-step INPUT.json, containment-balance-step INPUT.json, containment-thermal-step INPUT.json, reaction-transfer-step INPUT.json, steam-outflow-step INPUT.json, pressurizer-init INPUT.json, startup-heat INPUT.json, integration-restore INPUT.json, loop-transfer-step INPUT.json, primary-properties INPUT.json, primary-liquid-properties INPUT.json, primary-exchange INPUT.json, primary-inventory INPUT.json, normal-primary-phase INPUT.json, primary-core INPUT.json, recovered-primary-run INPUT.json, recovered-session-run INPUT.json, recovered-primary-step INPUT.json, relief-tail-state INPUT.json, steam-system-step INPUT.json, steam-auxiliary-step INPUT.json, steam-valves-step INPUT.json, steam-control-step INPUT.json, rcp-control-step INPUT.json, primary-devices-step INPUT.json, primary-sources INPUT.json, primary-relief-step INPUT.json, native-integration-step INPUT.json, restored-control-state INPUT.json, fresh-control-history INPUT.json, alternate-init INPUT.json, late-thermal-init INPUT.json, fresh-initial-state INPUT.json, fresh-thermal-startup INPUT.json, fresh-feedwater-init INPUT.json, fresh-steam-init INPUT.json, fresh-primary-startup INPUT.json, primary-control-cycle INPUT.json, fresh-primary-inventory-init INPUT.json, fresh-primary-init INPUT.json, primary-control-feedback INPUT.json, pressure-control-init INPUT.json, pressure-control-signal INPUT.json, spray-control INPUT.json, heater-control INPUT.json, primary-correction INPUT.json, primary-heat-capacity INPUT.json, primary-flow-preparation INPUT.json, primary-phase-state INPUT.json, primary-phase INPUT.json, primary-core INPUT.json, primary-correction INPUT.json, primary-heat-capacity INPUT.json, primary-flow-preparation INPUT.json, primary-phase-state INPUT.json, loop-reference-init INPUT.json, thermal-driving INPUT.json, feedwater-pi-step INPUT.json, thermal-mode-step INPUT.json, decay-heat INPUT.json, normal-loops-step INPUT.json, native-stages INPUT.json, native-seed IC, model-seed SET\nMath: DECAY time; EULER current previous step state; HFLD/HGAS/VFLD/TLIQ/VGAS pressure; PSAT temperature; HLIQ/VLIQ pressure temperature; P_FROM_VGAS volume.\nProperty units: psia, degF, Btu/lb, ft3/lb; no metric conversion.\nUse rusttran for the desktop Simulation workspace and initial-condition views. Full plant reconstruction remains incomplete."
                 );
                 return Ok(());
             }
@@ -92,6 +92,11 @@ fn run() -> Result<()> {
         "controller-step",
         "supply-tank-step",
         "supply-system-step",
+        "containment-fans-step",
+        "containment-spray-step",
+        "containment-balance-step",
+        "containment-thermal-step",
+        "reaction-transfer-step",
         "steam-outflow-step",
         "pressurizer-init",
         "startup-heat",
@@ -306,6 +311,41 @@ fn run() -> Result<()> {
                 serde_json::from_slice(&bytes)?;
             return print(
                 &serde_json::json!({"scope":"Recovered 14-state integration and event update; upstream derivatives/history supplied explicitly, no complete plant timestep","solution":request.globals.advance_native_integration(request.activation_time)?}),
+            );
+        }
+        if command == "reaction-transfer-step" {
+            let mut q: rusttran::reaction_transfer::ReactionTransferRequest =
+                serde_json::from_slice(&bytes)?;
+            return print(
+                &serde_json::json!({"scope":"Recovered post-model reaction transfer/history; upstream Double model state explicit, not complete alternate evolution","solution":q.globals.advance_reaction_transfer(&q.inputs)?}),
+            );
+        }
+        if command == "containment-thermal-step" {
+            let mut q: rusttran::containment_thermal::ContainmentThermalRequest =
+                serde_json::from_slice(&bytes)?;
+            return print(
+                &serde_json::json!({"scope":"Recovered thermal source and hydrogen ignition/burning; explicit upstream reaction state and curve, original UI/logging excluded","solution":q.globals.advance_containment_thermal(&q.controls)?}),
+            );
+        }
+        if command == "containment-balance-step" {
+            let mut q: rusttran::containment_balance::ContainmentBalanceRequest =
+                serde_json::from_slice(&bytes)?;
+            return print(
+                &serde_json::json!({"scope":"Recovered containment balance and equilibrium with explicit external Double/array/COM sources; not complete plant initialization or Windows dispatcher","solution":q.globals.advance_containment_balance(&q.inputs)?}),
+            );
+        }
+        if command == "containment-spray-step" {
+            let mut q: rusttran::containment_spray::ContainmentSprayRequest =
+                serde_json::from_slice(&bytes)?;
+            return print(
+                &serde_json::json!({"scope":"Recovered containment spray body; explicit COM state and returned caller locals, remaining containment balance separate","solution":q.globals.advance_containment_spray(&q.controls)?}),
+            );
+        }
+        if command == "containment-fans-step" {
+            let mut q: rusttran::containment_fans::ContainmentFanRequest =
+                serde_json::from_slice(&bytes)?;
+            return print(
+                &serde_json::json!({"scope":"Recovered containment fan activation and heat removal with explicit COM controls; remaining containment balance and plant dispatcher are separate", "solution":q.globals.advance_containment_fans(&q.controls)?}),
             );
         }
         if command == "supply-system-step" {

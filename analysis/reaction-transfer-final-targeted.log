@@ -1,0 +1,14 @@
+   Compiling rusttran v0.1.0 (/home/mati/Documents/Projekty/REA/rusttran)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.23s
+     Running tests/reaction_transfer.rs (rusttran/target/debug/deps/reaction_transfer-823412b048873f1d)
+
+running 6 tests
+test skipped_fraction_and_no_transfer_do_not_require_unread_sources ... ok
+test native_singularities_and_late_failures_preserve_all_histories ... ok
+test original_post_model_transfer_and_histories_match ... ok
+test current_transfer_feeds_energy_and_survives_resume_with_atomic_late_failure ... ok
+test original_composed_steps_and_retained_reaction_chains_match ... ok
+test assembled_initial_state_maps_double_operands_without_fabricating_reaction ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+

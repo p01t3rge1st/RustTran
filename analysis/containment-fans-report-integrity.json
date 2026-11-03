@@ -1,0 +1,12 @@
+{
+  "report_complete": true,
+  "component_cases": 24672,
+  "output_checks": 653483,
+  "fixture_sha256": {
+    "analysis/containment_fans_fixtures.json": "b19f04a184f52285a868046ba773cb0a6c821978295f2c37908e15df645e4a47",
+    "analysis/recovered_fans_step_fixtures.json": "a62327606ab1f4ba3f9405befbda571128b31ad3e7c606e5b058a7aa92e4e6fa",
+    "analysis/recovered_fans_session_fixtures.json": "0fcbb57551c379bada0f2854c18554d193c770ce57773bf938d158a0d84ddadd"
+  },
+  "cli_sha256": "eeb44a78a6a9784097885016372bf097db715f8822df96d4ecfcdac9f886e481",
+  "clock_bounds": "containment-fans-clock-range.json"
+}

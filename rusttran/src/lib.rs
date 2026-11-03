@@ -4,6 +4,8 @@ pub mod accumulator_system;
 pub mod alternate_init;
 pub mod balance;
 pub mod bindings;
+pub mod containment_fans;
+pub mod containment_spray;
 pub mod controller;
 pub mod decay_heat;
 pub mod feedwater_control;
@@ -240,3 +242,9 @@ pub mod late_thermal_init;
 pub mod fresh_control_history;
 
 pub mod restored_controls;
+
+pub mod containment_balance;
+
+pub mod containment_thermal;
+
+pub mod reaction_transfer;
